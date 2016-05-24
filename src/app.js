@@ -21,7 +21,10 @@ import LoadingMask from 'd2-ui/lib/loading-mask/LoadingMask.component';
 import 'react-tap-event-plugin';
 
 import App from './app.component';
-import './app/app.scss';
+import './app.scss';
+
+import userSettingsActions from './userSettingsActions';
+import userSettingsStore from './userSettingsStore';
 
 // Render the a LoadingMask to show the user the app is in loading
 // The consecutive render after we did our setup will replace this loading mask
@@ -34,7 +37,23 @@ render(<LoadingMask />, document.getElementById('app'));
  * @param d2 Instance of the d2 library that is returned by the `init` function.
  */
 function startApp(d2) {
-    render(<App d2={d2} />, document.querySelector('#app'));
+    
+    // userSettingsActions.load handler
+    userSettingsActions.load.subscribe((args) => {
+        Promise.all([
+            d2.currentUser.userSettings.all(),
+        ]).then(results => {
+            
+            userSettingsStore.setState(Object.assign({}, results[0]));
+            log.debug('Usersettings loaded successfully.', userSettingsStore.state);
+            console.log( userSettingsStore.state);
+            render(<App d2={d2} />, document.querySelector('#app'));
+        }, error => {
+            log.error('Failed to load user settings:', error);
+        });
+    });
+
+    userSettingsActions.load();
 }
 
 
