@@ -89,8 +89,8 @@ export default React.createClass({
         };
 
         const sideBarSections = [
-            { key: 'general', label: 'General Settings' },
-            { key: 'account', label: 'Account Settings' },
+            { key: 'profile', label: 'Profile Settings' },
+            { key: 'user', label: 'User Settings' },
         ];
 
         console.log(categories['general'].pageLabel);
