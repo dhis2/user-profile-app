@@ -21,7 +21,7 @@ export default React.createClass({
 
     getInitialState() {
         return {
-            category: 'general',
+            category: 'profile',
             snackbarMessage: '',
             showSnackbar: false,
             formValidator: undefined,
@@ -93,8 +93,6 @@ export default React.createClass({
             { key: 'user', label: 'User Settings' },
         ];
 
-        console.log(categories['general'].pageLabel);
-        console.log(this.props);
         return (
             <div className="app-wrapper">
                 <HeaderBar />

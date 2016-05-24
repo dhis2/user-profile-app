@@ -46,11 +46,27 @@ function startApp(d2) {
             
             userSettingsStore.setState(Object.assign({}, results[0]));
             log.debug('Usersettings loaded successfully.', userSettingsStore.state);
-            console.log( userSettingsStore.state);
             render(<App d2={d2} />, document.querySelector('#app'));
         }, error => {
             log.error('Failed to load user settings:', error);
         });
+    });
+
+    // userSettingsActions.saveKey handler
+    userSettingsActions.saveKey.subscribe((args) => {
+        const [fieldName, value] = args.data;
+        
+        d2.currentUser.userSettings.set(fieldName, value)
+            .then(() => {
+                log.debug('Usersetting updated successfully.');
+            })
+            .catch((err) => {
+                log.error('Failed to save configuration:', err);
+            });
+
+        const newState = settingsStore.state;
+        newState[fieldName] = value;
+        settingsStore.setState(newState);
     });
 
     userSettingsActions.load();
