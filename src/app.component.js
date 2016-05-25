@@ -7,42 +7,31 @@ import { categories } from './userSettingsCategories';
 import HeaderBar from 'd2-ui/lib/header-bar/HeaderBar.component';
 import Sidebar from 'd2-ui/lib/sidebar/Sidebar.component';
 
-import MuiThemeMixin from './mui-theme.mixin.js';
 import AppTheme from './theme';
 
-export default React.createClass({
-    propTypes: {
-        d2: React.PropTypes.object,
-    },
-
-    childContextTypes: {
-        d2: React.PropTypes.object,
-    },
-
-    getInitialState() {
-        return {
+class App extends React.Component {
+    constructor(props,context){
+        super(props);
+        this.state = Object.assign({},{
             category: 'profile',
             snackbarMessage: '',
             showSnackbar: false,
             formValidator: undefined,
-        };
-    },
-
-    mixins: [MuiThemeMixin],
-
+        });
+        this.props = props;
+    }
 
     getChildContext() {
         return {
             d2: this.props.d2,
         };
-    },
+    }
 
     componentDidMount() {
         this.subscriptions = [];
 
         /* eslint-disable complexity */
         this.subscriptions.push(settingsActions.setCategory.subscribe((arg) => {
-        	console.log(arg);
             const category = arg.data.key || arg.data || categoryOrder[0];
             this.setState({ category });
         }));
@@ -52,17 +41,17 @@ export default React.createClass({
             const message = params.data;
             this.setState({ snackbarMessage: message, showSnackbar: !!message });
         }));
-    },
+    }
 
     componentWillUnmount() {
         this.subscriptions.forEach(sub => {
             sub.dispose();
         });
-    },
+    }
 
     render() {
 
-    	const styles = {
+        const styles = {
             header: {
                 fontSize: 24,
                 fontWeight: 100,
@@ -103,10 +92,15 @@ export default React.createClass({
 
                 <div className="content-area" style={styles.forms}>
                     <div style={styles.header}>
-                    	 {this.props.d2.i18n.getTranslation(categories[this.state.category].pageLabel)}
+                         {this.props.d2.i18n.getTranslation(categories[this.state.category].pageLabel)}
                     </div>
                 </div>
             </div>
         );
-    },
-});
+    }
+}
+
+App.propTypes = { d2: React.PropTypes.object };
+App.childContextTypes = { d2: React.PropTypes.object };
+
+export default App;
