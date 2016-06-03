@@ -79,6 +79,7 @@ class App extends React.Component {
 
         const sideBarSections = [
             { key: 'profile', label: 'Profile Settings' },
+            { key: 'account', label: 'Account Settings' },
             { key: 'user', label: 'User Settings' },
         ];
 

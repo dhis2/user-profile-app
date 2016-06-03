@@ -16,6 +16,20 @@ export const categories = {
             'languages',
         ],
     },
+    account: {
+        label: 'account',
+        pageLabel: 'account_settings',
+        settings: [
+            'username',
+            'firstName',
+            'surname',
+            'oldPassword',
+            'newPassword',
+            'reNewPassword',
+            'email',
+            'phoneNumber',
+        ],
+    },
     user: {
         label: 'user',
         pageLabel: 'user_settings',
