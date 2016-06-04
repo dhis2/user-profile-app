@@ -51,13 +51,14 @@ function startApp(d2) {
         });
     });
 
-    // userSettingsActions.saveKey handler
-    userSettingsActions.saveKey.subscribe((args) => {
+    // userSettingsActions.saveProfile handler
+    userSettingsActions.saveUserKey.subscribe((args) => {
         const [fieldName, value] = args.data;
+        const key = Array.isArray(fieldData) ? fieldData.join('') : fieldData;;
         
-        d2.currentUser.userSettings.set(fieldName, value)
+        d2.currentUser.userSettings.set(fieldData, value)
             .then(() => {
-                log.debug('Usersetting updated successfully.');
+                log.debug('User Setting updated successfully.');
             })
             .catch((err) => {
                 log.error('Failed to save configuration:', err);
@@ -66,6 +67,22 @@ function startApp(d2) {
         const newState = settingsStore.state;
         newState[fieldName] = value;
         settingsStore.setState(newState);
+    });
+
+    userSettingsActions.saveProfile.subscribe((args) => {
+        const [fieldData, value] = args.data;
+        const data = Object.assign({});
+        data[fieldData] = value;
+        d2.Api.getApi().update('/24/me', data)
+            .then(() =>{
+                const newState = userSettingsStore.state;
+                newState[fieldData] = value;
+                userSettingsStore.setState(newState);
+                log.debug('User Profile updated successfully.');
+            })
+            .catch((err) => {
+                log.error('Failed to save configuration:', err);
+            });
     });
 
     userSettingsActions.load();

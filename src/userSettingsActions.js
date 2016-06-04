@@ -7,7 +7,8 @@ import log from 'loglevel';
 const settingsActions = Action.createActionsFromNames([
     'load',
     'setCategory',
-    'saveKey',
+    'saveUserKey',
+    'saveProfile',
     'showSnackbarMessage',
 ]);
 
