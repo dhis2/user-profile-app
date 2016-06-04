@@ -43,8 +43,7 @@ function startApp(d2) {
         Promise.all([
             d2.currentUser.userSettings.all(),
         ]).then(results => {
-            
-            userSettingsStore.setState(Object.assign({}, results[0]));
+            userSettingsStore.setState(Object.assign({}, results[0], d2.currentUser));
             log.debug('Usersettings loaded successfully.', userSettingsStore.state);
             render(<App d2={d2} />, document.querySelector('#app'));
         }, error => {
