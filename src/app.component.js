@@ -1,6 +1,9 @@
 import React from 'react';
 import log from 'loglevel';
 
+// Material UI
+import Snackbar from 'material-ui/lib/snackbar';
+
 import settingsActions from './userSettingsActions';
 import { categories } from './userSettingsCategories';
 import userSettingsStore from './userSettingsStore';
@@ -27,6 +30,7 @@ class App extends React.Component {
             formValidator: undefined,
         });
         this.props = props;
+        this.closeSnackbar = this.closeSnackbar.bind(this);
     }
 
     getChildContext() {
@@ -55,6 +59,10 @@ class App extends React.Component {
         this.subscriptions.forEach(sub => {
             sub.dispose();
         });
+    }
+
+    closeSnackbar() {
+        this.setState({ showSnackbar: false });
     }
 
     render() {
@@ -98,6 +106,13 @@ class App extends React.Component {
         return (
             <div className="app-wrapper">
                 <HeaderBar />
+                 <Snackbar
+                    message={this.state.snackbarMessage || ''}
+                    autoHideDuration={1250}
+                    open={this.state.showSnackbar}
+                    onRequestClose={this.closeSnackbar}
+                    style={{ left: 24, right: 'inherit' }}
+                />
                 <Sidebar
                     sections={sideBarSections}
                     onChangeSection={settingsActions.setCategory}

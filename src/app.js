@@ -62,6 +62,7 @@ function startApp(d2) {
                 newState[fieldData] = value;
                 userSettingsStore.setState(newState);
                 log.debug('User Setting updated successfully.');
+                userSettingsActions.showSnackbarMessage(d2.i18n.getTranslation('settings_updated'));
             })
             .catch((err) => {
                 log.error('Failed to save configuration:', err);
@@ -78,6 +79,7 @@ function startApp(d2) {
                 newState[fieldData] = value;
                 userSettingsStore.setState(newState);
                 log.debug('User Profile updated successfully.');
+                userSettingsActions.showSnackbarMessage(d2.i18n.getTranslation('settings_updated'));
             })
             .catch((err) => {
                 log.error('Failed to save configuration:', err);
