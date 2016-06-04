@@ -11,7 +11,7 @@ const userSettingsMapping = {
     },
     introduction: {
         label: 'introduction',
-        type: 'textfield_multi',
+        multiline: true,
     },
     jobTitle: {
         label: 'job_title',
@@ -25,9 +25,10 @@ const userSettingsMapping = {
             gender_other: 'gender_other',
         },
     },
+    //TODO calender for birthday
     birthday: {
         label: 'birthday',
-        type: 'calender',
+        type: 'textfield',
     },
     nationality: {
         label: 'nationality',
@@ -61,16 +62,16 @@ const userSettingsMapping = {
     },
     oldPassword: {
         label: 'old_password',
-        type: 'textfield_passord',
+        type: 'password',
         validators: ['required'],
     },
     newPassword: {
         label: 'new_password',
-        type: 'textfield_passord',
+        type: 'password',
     },
     reNewPassword: {
         label: 're_new_password',
-        type: 'textfield_passord',
+        type: 'password',
     },
     email: {
         label: 'user_email_address',
@@ -82,6 +83,9 @@ const userSettingsMapping = {
     /* ============================================================================================================ */
     /* [TODO] Category: User Settings                                                                                    */
     /* ============================================================================================================ */
+    keyUiLocale: {
+        label: 'keyUiLocale',
+    },
 };
 
 export default userSettingsMapping;

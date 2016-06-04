@@ -3,9 +3,17 @@ import log from 'loglevel';
 
 import settingsActions from './userSettingsActions';
 import { categories } from './userSettingsCategories';
+import userSettingsStore from './userSettingsStore';
+import userSettingsActions from './userSettingsActions';
+import userSettingsKeyMapping from './userSettingsMapping';
 
 import HeaderBar from 'd2-ui/lib/header-bar/HeaderBar.component';
 import Sidebar from 'd2-ui/lib/sidebar/Sidebar.component';
+
+import Card from 'material-ui/lib/card/card';
+import CardText from 'material-ui/lib/card/card-text';
+
+import UserSettingsFields from './userSettingsFields.component';
 
 import AppTheme from './theme';
 
@@ -83,19 +91,20 @@ class App extends React.Component {
             { key: 'user', label: 'User Settings' },
         ];
 
+        const setSidebar = (ref) => {
+            this.sidebar = ref;
+        };
+
         return (
             <div className="app-wrapper">
                 <HeaderBar />
                 <Sidebar
                     sections={sideBarSections}
                     onChangeSection={settingsActions.setCategory}
+                    ref={setSidebar}
                 />
 
-                <div className="content-area" style={styles.forms}>
-                    <div style={styles.header}>
-                         {this.props.d2.i18n.getTranslation(categories[this.state.category].pageLabel)}
-                    </div>
-                </div>
+                <UserSettingsFields category={this.state.category} currentSettings={categories[this.state.category].settings} />
             </div>
         );
     }
