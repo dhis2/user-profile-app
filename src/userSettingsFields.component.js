@@ -159,7 +159,9 @@ class UserSettingsFields extends React.Component {
         return (
             <Card style={styles.card} key={this.props.category}>
                 <CardText>
-                    <FormBuilder fields={fields} onUpdateField={userSettingsActions.saveProfile}/>
+                    {this.props.category === 'user' 
+                    ? <FormBuilder fields={fields} onUpdateField={userSettingsActions.saveUserKey}/>
+                    : <FormBuilder fields={fields} onUpdateField={userSettingsActions.saveProfile}/> }
                 </CardText>
             </Card>
         );

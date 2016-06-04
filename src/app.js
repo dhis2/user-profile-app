@@ -53,20 +53,19 @@ function startApp(d2) {
 
     // userSettingsActions.saveProfile handler
     userSettingsActions.saveUserKey.subscribe((args) => {
-        const [fieldName, value] = args.data;
+        const [fieldData, value] = args.data;
         const key = Array.isArray(fieldData) ? fieldData.join('') : fieldData;;
         
         d2.currentUser.userSettings.set(fieldData, value)
             .then(() => {
+                const newState = userSettingsStore.state;
+                newState[fieldData] = value;
+                userSettingsStore.setState(newState);
                 log.debug('User Setting updated successfully.');
             })
             .catch((err) => {
                 log.error('Failed to save configuration:', err);
             });
-
-        const newState = settingsStore.state;
-        newState[fieldName] = value;
-        settingsStore.setState(newState);
     });
 
     userSettingsActions.saveProfile.subscribe((args) => {
