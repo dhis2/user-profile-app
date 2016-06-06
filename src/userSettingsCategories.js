@@ -35,11 +35,11 @@ export const categories = {
         pageLabel: 'user_settings',
         settings: [
             'keyUiLocale',
-            // 'keyDbLocale',
-            // 'keyStyle',
-            // 'keyAnalysisDisplayProperty',
-            // 'keyMessageEmailNotification',
-            // 'keyMessageSmsNotification',
+            'keyDbLocale',
+            'keyStyle',
+            'keyAnalysisDisplayProperty',
+            'keyMessageEmailNotification',
+            'keyMessageSmsNotification',
         ],
     }
 };

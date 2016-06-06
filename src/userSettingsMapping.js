@@ -85,6 +85,41 @@ const userSettingsMapping = {
     /* ============================================================================================================ */
     keyUiLocale: {
         label: 'keyUiLocale',
+        type: 'dropdown',
+        options: {
+            en: 'en',
+            fr: 'fr',
+        },
+    },
+    keyDbLocale: {
+        label: 'keyDbLocale',
+        type: 'dropdown',
+        options: {
+            en: 'en',
+            fr: 'fr',
+        },
+    },
+    keyStyle: {
+        label: 'keyStyle',
+        type: 'dropdown',
+        options: {
+            india: 'india',
+            mayanmar: 'mayanmar',
+        },
+    },
+    keyAnalysisDisplayProperty: {
+        label: 'keyAnalysisDisplayProperty',
+        type: 'dropdown',
+        options: {
+            name: 'name',
+            shortName: 'short_name',
+        },
+    },
+    keyMessageEmailNotification: {
+        label: 'keyMessageEmailNotification',
+    },
+    keyMessageSmsNotification: {
+        label: 'keyMessageEmailNotification',
     },
 };
 
