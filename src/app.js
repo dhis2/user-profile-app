@@ -54,7 +54,7 @@ function startApp(d2) {
     // userSettingsActions.saveProfile handler
     userSettingsActions.saveUserKey.subscribe((args) => {
         const [fieldData, value] = args.data;
-        const key = Array.isArray(fieldData) ? fieldData.join('') : fieldData;;
+        const key = Array.isArray(fieldData) ? fieldData.join('') : fieldData;
         
         d2.currentUser.userSettings.set(fieldData, value)
             .then(() => {
