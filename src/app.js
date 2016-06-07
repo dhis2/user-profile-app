@@ -12,6 +12,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 import React from 'react';
 import { render } from 'react-dom';
+import { Router, Route, Link, browserHistory } from 'react-router'
 import log from 'loglevel';
 import { init, config, getUserSettings, getManifest } from 'd2/lib/d2';
 
@@ -45,7 +46,12 @@ function startApp(d2) {
         ]).then(results => {
             userSettingsStore.setState(Object.assign({}, results[0], d2.currentUser));
             log.debug('Usersettings loaded successfully.', userSettingsStore.state);
-            render(<App d2={d2} />, document.querySelector('#app'));
+            render(<Router history={browserHistory}>
+                    <Route path="/" d2={d2} component={App}/>
+                    <Route path="profile" d2={d2} component={App}/>
+                    <Route path="account" d2={d2} component={App}/>
+                    <Route path="user" d2={d2} component={App}/>
+                    </Router>, document.querySelector('#app'));
         }, error => {
             log.error('Failed to load user settings:', error);
         });
