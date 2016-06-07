@@ -1,6 +1,6 @@
 import React from 'react';
 import log from 'loglevel';
-import {browserHistory} from 'react-router';
+import {hashHistory} from 'react-router';
 
 // Material UI
 import Snackbar from 'material-ui/lib/snackbar';
@@ -48,7 +48,7 @@ class App extends React.Component {
         this.subscriptions.push(settingsActions.setCategory.subscribe((arg) => {
             const category = arg.data.key || arg.data || categoryOrder[0];
             this.setState({ category });
-            browserHistory.push(category);
+            hashHistory.push(category);
         }));
         /* eslint-enable complexity */
 
