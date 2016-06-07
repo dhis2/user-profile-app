@@ -1,5 +1,6 @@
 import React from 'react';
 import log from 'loglevel';
+import {hashHistory} from 'react-router';
 
 // Material UI
 import Snackbar from 'material-ui/lib/snackbar';
@@ -24,18 +25,19 @@ class App extends React.Component {
     constructor(props,context){
         super(props);
         this.state = Object.assign({},{
-            category: 'profile',
+            category: props.route.path === '/' ? 'profile' : props.route.path,
             snackbarMessage: '',
             showSnackbar: false,
             formValidator: undefined,
         });
         this.props = props;
         this.closeSnackbar = this.closeSnackbar.bind(this);
+        console.log(props);
     }
 
     getChildContext() {
         return {
-            d2: this.props.d2,
+            d2: this.props.route.d2,
         };
     }
 
@@ -46,6 +48,7 @@ class App extends React.Component {
         this.subscriptions.push(settingsActions.setCategory.subscribe((arg) => {
             const category = arg.data.key || arg.data || categoryOrder[0];
             this.setState({ category });
+            hashHistory.push(category);
         }));
         /* eslint-enable complexity */
 
