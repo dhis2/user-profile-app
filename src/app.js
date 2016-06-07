@@ -21,7 +21,7 @@ import LoadingMask from 'd2-ui/lib/loading-mask/LoadingMask.component';
 // The react-tap-event-plugin is required by material-ui to make touch screens work properly with onClick events
 import 'react-tap-event-plugin';
 
-import App from './app.component';
+import AppRouter from './app.router.js';
 import './app.scss';
 
 import userSettingsActions from './userSettingsActions';
@@ -46,12 +46,7 @@ function startApp(d2) {
         ]).then(results => {
             userSettingsStore.setState(Object.assign({}, results[0], d2.currentUser));
             log.debug('Usersettings loaded successfully.', userSettingsStore.state);
-            render(<Router history={hashHistory}>
-                    <Route path="/" d2={d2} component={App}/>
-                    <Route path="profile" d2={d2} component={App}/>
-                    <Route path="account" d2={d2} component={App}/>
-                    <Route path="user" d2={d2} component={App}/>
-                    </Router>, document.querySelector('#app'));
+            render(<AppRouter d2={d2}/>, document.querySelector('#app'));
         }, error => {
             log.error('Failed to load user settings:', error);
         });
