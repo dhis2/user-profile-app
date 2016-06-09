@@ -28,7 +28,7 @@ const userSettingsMapping = {
     //TODO calender for birthday
     birthday: {
         label: 'birthday',
-        type: 'textfield',
+        type: 'date',
     },
     nationality: {
         label: 'nationality',

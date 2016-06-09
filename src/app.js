@@ -43,8 +43,9 @@ function startApp(d2) {
     userSettingsActions.load.subscribe((args) => {
         Promise.all([
             d2.currentUser.userSettings.all(),
+            d2.system.settings.all(),
         ]).then(results => {
-            userSettingsStore.setState(Object.assign({}, results[0], d2.currentUser));
+            userSettingsStore.setState(Object.assign({}, results[0], {keyDateFormat: results[1].keyDateFormat}, d2.currentUser));
             log.debug('Usersettings loaded successfully.', userSettingsStore.state);
             render(<AppRouter d2={d2}/>, document.querySelector('#app'));
         }, error => {

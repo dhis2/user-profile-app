@@ -11,6 +11,7 @@ import { wordToValidatorMap } from 'd2-ui/lib/forms/Validators';
 import FormBuilder from 'd2-ui/lib/forms/FormBuilder.component';
 import SelectField from 'd2-ui/lib/form-fields/drop-down';
 import TextField from 'd2-ui/lib/form-fields/text-field';
+import DatePicker from 'd2-ui/lib/form-fields/DatePicker.component.js';
 import AppTheme from './theme';
 
 import userSettingsActions from './userSettingsActions';
@@ -119,6 +120,21 @@ class UserSettingsFields extends React.Component {
                         props: Object.assign({}, fieldBase.props, {
                             type: 'password',
                             changeEvent: 'onBlur',
+                        }),
+                    });
+
+                case 'date':
+                    return Object.assign({}, fieldBase, {
+                        component: DatePicker,
+                        props: Object.assign({}, fieldBase.props, {
+                            floatingLabelText: d2.i18n.getTranslation(mapping.label),
+                            dateFormat: userSettingsStore.state['keyDateFormat'] || '',
+                            onChange: (e) => {
+                                let data = [];
+                                data.push('birthday');
+                                data.push(e.target.value);
+                                userSettingsActions.saveProfile(data);
+                            },
                         }),
                     });
 
