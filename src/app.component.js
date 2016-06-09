@@ -97,9 +97,9 @@ class App extends React.Component {
         };
 
         const sideBarSections = [
-            { key: 'profile', label: 'Profile Settings' },
-            { key: 'account', label: 'Account Settings' },
-            { key: 'user', label: 'User Settings' },
+            { key: 'profile', label: 'Profile Settings', icon: 'face' },
+            { key: 'account', label: 'Account Settings', icon: 'account_circle' },
+            { key: 'user', label: 'User Settings', icon: 'build' },
         ];
 
         const setSidebar = (ref) => {
