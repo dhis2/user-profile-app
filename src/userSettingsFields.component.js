@@ -12,6 +12,7 @@ import FormBuilder from 'd2-ui/lib/forms/FormBuilder.component';
 import SelectField from 'd2-ui/lib/form-fields/DropDown.component';
 import TextField from 'd2-ui/lib/form-fields/TextField';
 import DatePicker from 'd2-ui/lib/form-fields/DatePicker.component.js';
+import Checkbox from 'd2-ui/lib/form-fields/CheckBox.component.js'
 import AppTheme from './theme';
 
 import userSettingsActions from './userSettingsActions';
@@ -139,6 +140,20 @@ class UserSettingsFields extends React.Component {
                             },
                             allowFuture: false,
                         }),
+                    });
+
+                case 'checkbox':
+                    return Object.assign({}, fieldBase, {
+                        component: Checkbox,
+                        props: {
+                            value:'',
+                            label: fieldBase.props.floatingLabelText,
+                            style: fieldBase.props.style,
+                            checked: fieldBase.value.toString() === 'true',
+                            onChange: (e, v) => {
+                                userSettingsActions.saveUserKey(key, v ? 'true' : 'false');
+                            },
+                        },
                     });
 
                 case 'dropdown':

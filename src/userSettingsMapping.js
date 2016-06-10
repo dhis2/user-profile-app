@@ -109,9 +109,11 @@ const userSettingsMapping = {
     },
     keyMessageEmailNotification: {
         label: 'enable_message_email_notifications',
+        type: 'checkbox',
     },
     keyMessageSmsNotification: {
         label: 'enable_message_sms_notifications',
+        type: 'checkbox',
     },
 };
 
