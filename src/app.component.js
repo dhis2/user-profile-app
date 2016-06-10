@@ -113,6 +113,7 @@ class App extends React.Component {
                     sections={sideBarSections}
                     onChangeSection={settingsActions.setCategory}
                     ref={setSidebar}
+                    currentSection={this.state.category}
                 />
 
                 <UserSettingsFields category={this.state.category} currentSettings={categories[this.state.category].settings} />
