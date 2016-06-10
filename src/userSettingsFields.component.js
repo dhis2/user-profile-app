@@ -112,6 +112,7 @@ class UserSettingsFields extends React.Component {
                         props: Object.assign({}, fieldBase.props, {
                             changeEvent: 'onBlur',
                             multiLine: !!mapping.multiLine,
+                            disabled: !!mapping.disabled,
                         }),
                     });
 

@@ -51,6 +51,7 @@ const userSettingsMapping = {
     /* ============================================================================================================ */
     username: {
         label: 'username',
+        disabled: true,
     },
     firstName: {
         label: 'first_name',
