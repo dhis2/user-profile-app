@@ -3,6 +3,7 @@ import React from 'react';
 import { Router, Route, hashHistory } from 'react-router';
 
 import App from './app.component.js'
+import Profile from './profile/profile.component.js'
 
 export default class AppRouter extends React.Component {
 	constructor(props) {
@@ -16,6 +17,7 @@ export default class AppRouter extends React.Component {
                     <Route path="profile" d2={this.props.d2} component={App}/>
                     <Route path="account" d2={this.props.d2} component={App}/>
                     <Route path="user" d2={this.props.d2} component={App}/>
+                    <Route path="user/:userID" d2={this.props.d2} component={Profile}/>
                 </Router>);
 	}
 }
