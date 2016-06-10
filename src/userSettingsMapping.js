@@ -11,7 +11,7 @@ const userSettingsMapping = {
     },
     introduction: {
         label: 'introduction',
-        multiline: true,
+        multiLine: true,
     },
     jobTitle: {
         label: 'job_title',
@@ -100,7 +100,7 @@ const userSettingsMapping = {
         source: 'styles',
     },
     keyAnalysisDisplayProperty: {
-        label: 'keyAnalysisDisplayProperty',
+        label: 'analysis_module',
         type: 'dropdown',
         options: {
             name: 'name',
