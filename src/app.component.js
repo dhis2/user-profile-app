@@ -32,7 +32,6 @@ class App extends React.Component {
         });
         this.props = props;
         this.closeSnackbar = this.closeSnackbar.bind(this);
-        console.log(props);
     }
 
     getChildContext() {
