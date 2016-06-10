@@ -7,15 +7,9 @@ import Snackbar from 'material-ui/lib/snackbar';
 
 import settingsActions from './userSettingsActions';
 import { categories } from './userSettingsCategories';
-import userSettingsStore from './userSettingsStore';
-import userSettingsActions from './userSettingsActions';
-import userSettingsKeyMapping from './userSettingsMapping';
 
 import HeaderBar from 'd2-ui/lib/header-bar/HeaderBar.component';
 import Sidebar from 'd2-ui/lib/sidebar/Sidebar.component';
-
-import Card from 'material-ui/lib/card/card';
-import CardText from 'material-ui/lib/card/card-text';
 
 import UserSettingsFields from './userSettingsFields.component';
 

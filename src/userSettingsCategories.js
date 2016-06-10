@@ -3,6 +3,8 @@ export const categories = {
         label: 'profile',
         pageLabel: 'profile_settings',
         settings: [
+            'firstName',
+            'surname',
             'email',
             'phoneNumber',
             'introduction',
@@ -21,13 +23,9 @@ export const categories = {
         pageLabel: 'account_settings',
         settings: [
             'username',
-            'firstName',
-            'surname',
             'oldPassword',
             'newPassword',
             'reNewPassword',
-            'email',
-            'phoneNumber',
         ],
     },
     user: {
