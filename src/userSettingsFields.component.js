@@ -147,7 +147,7 @@ class UserSettingsFields extends React.Component {
                         component: SelectField,
                         props: Object.assign({}, fieldBase.props, {
                             menuItems: mapping.source
-                                ? configOptionStore.state && configOptionStore.state[mapping.source] || []
+                                ? userSettingsStore.state && userSettingsStore.state[mapping.source] || []
                                 : Object.keys(mapping.options).map(id => {
                                 const displayName = !isNaN(mapping.options[id]) ?
                                     mapping.options[id] :

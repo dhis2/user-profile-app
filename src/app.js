@@ -38,14 +38,28 @@ render(<LoadingMask />, document.getElementById('app'));
  * @param d2 Instance of the d2 library that is returned by the `init` function.
  */
 function startApp(d2) {
-    
+
+    const api = d2.Api.getApi();
     // userSettingsActions.load handler
     userSettingsActions.load.subscribe((args) => {
         Promise.all([
             d2.currentUser.userSettings.all(),
             d2.system.settings.all(),
+            api.get('system/styles'),
+            api.get('locales/ui'),
+            api.get('locales/db'),
         ]).then(results => {
-            userSettingsStore.setState(Object.assign({}, results[0], {keyDateFormat: results[1].keyDateFormat}, d2.currentUser));
+            // Stylesheets
+            const styles = (results[2] || []).map(style => ({ id: style.path, displayName: style.name }));
+
+            // Locales
+            const locales = (results[3] || []).map(locale => ({ id: locale.locale, displayName: locale.name }));
+
+            // dbLocales
+            const dblocales = (results[4] || []).map(locale => ({ id: locale.locale, displayName: locale.name }));
+            
+            userSettingsStore.setState(Object.assign({}, results[0], {keyDateFormat: results[1].keyDateFormat}, d2.currentUser, {styles: styles}, {locales:locales}, {dblocales:dblocales}));
+            
             log.debug('Usersettings loaded successfully.', userSettingsStore.state);
             render(<AppRouter d2={d2}/>, document.querySelector('#app'));
         }, error => {

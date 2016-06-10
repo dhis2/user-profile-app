@@ -86,26 +86,17 @@ const userSettingsMapping = {
     keyUiLocale: {
         label: 'language',
         type: 'dropdown',
-        options: {
-            en: 'en',
-            fr: 'fr',
-        },
+        source: 'locales',
     },
     keyDbLocale: {
         label: 'db_language',
         type: 'dropdown',
-        options: {
-            en: 'en',
-            fr: 'fr',
-        },
+        source: 'dblocales',
     },
     keyStyle: {
         label: 'style',
         type: 'dropdown',
-        options: {
-            india: 'india',
-            mayanmar: 'mayanmar',
-        },
+        source: 'styles',
     },
     keyAnalysisDisplayProperty: {
         label: 'keyAnalysisDisplayProperty',
