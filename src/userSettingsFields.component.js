@@ -135,6 +135,7 @@ class UserSettingsFields extends React.Component {
                                 data.push(e.target.value);
                                 userSettingsActions.saveProfile(data);
                             },
+                            allowFuture: false,
                         }),
                     });
 
