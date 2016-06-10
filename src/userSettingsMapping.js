@@ -3,7 +3,7 @@ const userSettingsMapping = {
     /* Category: Profile                                                                                           */
     /* ============================================================================================================ */
     email: {
-        label: 'user_email_address',
+        label: 'email',
         validators: ['email'],
     },
     phoneNumber: {
@@ -70,7 +70,7 @@ const userSettingsMapping = {
         type: 'password',
     },
     reNewPassword: {
-        label: 're_new_password',
+        label: 'retype_new_password',
         type: 'password',
     },
     email: {
@@ -84,7 +84,7 @@ const userSettingsMapping = {
     /* [TODO] Category: User Settings                                                                                    */
     /* ============================================================================================================ */
     keyUiLocale: {
-        label: 'keyUiLocale',
+        label: 'language',
         type: 'dropdown',
         options: {
             en: 'en',
@@ -92,7 +92,7 @@ const userSettingsMapping = {
         },
     },
     keyDbLocale: {
-        label: 'keyDbLocale',
+        label: 'db_language',
         type: 'dropdown',
         options: {
             en: 'en',
@@ -100,7 +100,7 @@ const userSettingsMapping = {
         },
     },
     keyStyle: {
-        label: 'keyStyle',
+        label: 'style',
         type: 'dropdown',
         options: {
             india: 'india',
@@ -116,10 +116,10 @@ const userSettingsMapping = {
         },
     },
     keyMessageEmailNotification: {
-        label: 'keyMessageEmailNotification',
+        label: 'enable_message_email_notifications',
     },
     keyMessageSmsNotification: {
-        label: 'keyMessageEmailNotification',
+        label: 'enable_message_sms_notifications',
     },
 };
 

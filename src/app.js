@@ -81,7 +81,7 @@ function startApp(d2) {
                 newState[fieldData] = value;
                 userSettingsStore.setState(newState);
                 log.debug('User Profile updated successfully.');
-                userSettingsActions.showSnackbarMessage(d2.i18n.getTranslation('settings_updated'));
+                userSettingsActions.showSnackbarMessage(d2.i18n.getTranslation('update_user_profile_success'));
             })
             .catch((err) => {
                 log.error('Failed to save configuration:', err);
