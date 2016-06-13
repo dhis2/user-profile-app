@@ -62,6 +62,11 @@ function startApp(d2) {
             d2.currentUser.systemSettingsDefault = {};
             for(let key in results[5]) {
                 d2.currentUser.systemSettingsDefault[key] = results[1][key]+'';
+                
+                //TODO Unhack this
+                if(typeof results[0][key] === 'boolean') {
+                    results[0][key] = results[0][key]+'';
+                }
             }
             
             userSettingsStore.setState(Object.assign({}, results[0], {keyDateFormat: results[1].keyDateFormat}, d2.currentUser, {styles: styles}, {locales:locales}, {dblocales:dblocales}));
