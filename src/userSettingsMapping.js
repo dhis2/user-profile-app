@@ -115,8 +115,8 @@ const userSettingsMapping = {
         label: 'enable_message_email_notifications',
         type: 'dropdown',
         options: {
-            'true': 'Send notifications',
-            'false': 'Do not send notifications',
+            'true': 'true_notifications',
+            'false': 'false_notifications',
         },
         userSettingsOverride: true,
     },
@@ -124,8 +124,8 @@ const userSettingsMapping = {
         label: 'enable_message_sms_notifications',
         type: 'dropdown',
         options: {
-            'true': 'Send notifications',
-            'false': 'Do not send notifications',
+            'true': 'true_notifications',
+            'false': 'false_notifications',
         },
         userSettingsOverride: true,
     },

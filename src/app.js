@@ -59,7 +59,7 @@ function startApp(d2) {
             // dbLocales
             const dblocales = (results[4] || []).map(locale => ({ id: locale.locale, displayName: locale.name }));
             
-            d2.currentUser.systemSettingsDefault = {};
+            d2.currentUser.systemSettingsDefault = Object.assign({});
             for(let key in results[5]) {
                 d2.currentUser.systemSettingsDefault[key] = results[1][key]+'';
                 
