@@ -146,7 +146,7 @@ class UserSettingsFields extends React.Component {
                     return Object.assign({}, fieldBase, {
                         component: Checkbox,
                         props: {
-                            value:'',
+                            value: '',
                             label: fieldBase.props.floatingLabelText,
                             style: fieldBase.props.style,
                             checked: fieldBase.value.toString() === 'true',
@@ -160,9 +160,10 @@ class UserSettingsFields extends React.Component {
                     if (mapping.includeEmpty && fieldBase.value === '') {
                         fieldBase.value = 'null';
                     }
-
+                    let defaultValue = userSettingsStore.state[key] ? userSettingsStore.state[key].toString() : '';
                     return Object.assign({}, fieldBase, {
                         component: SelectField,
+                        value: defaultValue,
                         props: Object.assign({}, fieldBase.props, {
                             menuItems: mapping.source
                                 ? userSettingsStore.state && userSettingsStore.state[mapping.source] || []
@@ -187,6 +188,26 @@ class UserSettingsFields extends React.Component {
                 }
             })
             .filter(f => !!f.name)
+            .map(field => {
+                const mapping = userSettingsKeyMapping[field.name];
+                if (mapping.userSettingsOverride) {
+                    let menuItems = field.props.menuItems || [];
+                    let component = field.component;
+                    let newobj = {};
+                    if(d2.currentUser.systemSettingsDefault[field.name] !== null) {
+                        menuItems = menuItems.map( (obj) => {
+                            if(obj.id === d2.currentUser.systemSettingsDefault[field.name]) {
+                                newobj = Object.assign({}, obj, {displayName: "System Default : " + obj.displayName}); 
+                                return newobj;
+                            }
+                            return obj;
+                        });
+                    }
+                    let props = Object.assign(field.props, {menuItems});
+                    return Object.assign(field, { component }, {props});
+                }
+                return field;
+            });
 
         /* eslint-enable complexity */
 
@@ -204,9 +225,8 @@ class UserSettingsFields extends React.Component {
     render() {
         return (
             <div className="content-area">
-                <div style={styles.header}>{categories[this.props.category] ?
-                    this.context.d2.i18n.getTranslation(categories[this.props.category].pageLabel) :
-                    this.context.d2.i18n.getTranslation('search_results')}
+                <div style={styles.header}>
+                    {this.context.d2.i18n.getTranslation(categories[this.props.category].pageLabel)}
                 </div>
                 {this.renderFields(this.props.currentSettings)}
             </div>

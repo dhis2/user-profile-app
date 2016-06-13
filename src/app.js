@@ -48,6 +48,7 @@ function startApp(d2) {
             api.get('system/styles'),
             api.get('locales/ui'),
             api.get('locales/db'),
+            api.get('userSettings', { useFallback: false }),
         ]).then(results => {
             // Stylesheets
             const styles = (results[2] || []).map(style => ({ id: style.path, displayName: style.name }));
@@ -57,6 +58,11 @@ function startApp(d2) {
 
             // dbLocales
             const dblocales = (results[4] || []).map(locale => ({ id: locale.locale, displayName: locale.name }));
+            
+            d2.currentUser.systemSettingsDefault = {};
+            for(let key in results[5]) {
+                d2.currentUser.systemSettingsDefault[key] = results[1][key]+'';
+            }
             
             userSettingsStore.setState(Object.assign({}, results[0], {keyDateFormat: results[1].keyDateFormat}, d2.currentUser, {styles: styles}, {locales:locales}, {dblocales:dblocales}));
             

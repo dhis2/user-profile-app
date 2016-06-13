@@ -88,16 +88,19 @@ const userSettingsMapping = {
         label: 'language',
         type: 'dropdown',
         source: 'locales',
+        userSettingsOverride: true,
     },
     keyDbLocale: {
         label: 'db_language',
         type: 'dropdown',
         source: 'dblocales',
+        userSettingsOverride: true,
     },
     keyStyle: {
         label: 'style',
         type: 'dropdown',
         source: 'styles',
+        userSettingsOverride: true,
     },
     keyAnalysisDisplayProperty: {
         label: 'analysis_module',
@@ -106,14 +109,25 @@ const userSettingsMapping = {
             name: 'name',
             shortName: 'short_name',
         },
+        userSettingsOverride: true,
     },
     keyMessageEmailNotification: {
         label: 'enable_message_email_notifications',
-        type: 'checkbox',
+        type: 'dropdown',
+        options: {
+            'true': 'Send notifications',
+            'false': 'Do not send notifications',
+        },
+        userSettingsOverride: true,
     },
     keyMessageSmsNotification: {
         label: 'enable_message_sms_notifications',
-        type: 'checkbox',
+        type: 'dropdown',
+        options: {
+            'true': 'Send notifications',
+            'false': 'Do not send notifications',
+        },
+        userSettingsOverride: true,
     },
 };
 
