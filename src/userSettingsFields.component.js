@@ -62,6 +62,25 @@ const styles = {
     },
 };
 
+function wrapSystemSettingsDefault(d2, component, valueLabel) {
+    return class extends component {
+        render() {
+            const labelStyle = Object.assign({}, styles.userSettingsOverride);
+
+            return (
+                <div>
+                    {super.render()}
+                    {
+                    valueLabel !== undefined && valueLabel !== ''
+                        ? <div style={labelStyle}>{`${d2.i18n.getTranslation('system_setting_default')}: ${valueLabel}`}</div>
+                        : ''
+                    } 
+                </div>
+            );
+        }
+    };
+}
+
 
 class UserSettingsFields extends React.Component {
     shouldComponentUpdate(nextProps) {
@@ -194,15 +213,18 @@ class UserSettingsFields extends React.Component {
                     let menuItems = field.props.menuItems || [];
                     let component = field.component;
                     let newobj = {};
-                    if(d2.currentUser.systemSettingsDefault[field.name] !== null) {
+                    let valueLabel = '';
+                    if(d2.currentUser.systemSettingsDefault[field.name] && d2.currentUser.systemSettingsDefault[field.name] !== null) {
                         menuItems = menuItems.map( (obj) => {
                             if(obj.id === d2.currentUser.systemSettingsDefault[field.name]) {
+                                valueLabel = obj.displayName;
                                 newobj = Object.assign({}, obj, {displayName: "System Default : " + obj.displayName}); 
                                 return newobj;
                             }
                             return obj;
                         });
                     }
+                    component = wrapSystemSettingsDefault(d2, component, valueLabel);
                     let props = Object.assign(field.props, {menuItems});
                     return Object.assign(field, { component }, {props});
                 }
