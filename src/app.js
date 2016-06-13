@@ -17,6 +17,7 @@ import log from 'loglevel';
 import { init, config, getUserSettings, getManifest } from 'd2/lib/d2';
 
 import LoadingMask from 'd2-ui/lib/loading-mask/LoadingMask.component';
+import { isEmail } from 'd2-ui/lib/forms/Validators';
 
 // The react-tap-event-plugin is required by material-ui to make touch screens work properly with onClick events
 import 'react-tap-event-plugin';
@@ -92,12 +93,17 @@ function startApp(d2) {
                 userSettingsActions.showSnackbarMessage(d2.i18n.getTranslation('settings_updated'));
             })
             .catch((err) => {
+                userSettingsActions.showSnackbarMessage(d2.i18n.getTranslation('update_settings_fail'));
                 log.error('Failed to save configuration:', err);
             });
     });
 
     userSettingsActions.saveProfile.subscribe((args) => {
         const [fieldData, value] = args.data;
+        if(fieldData === 'email' && !isEmail(value)) {
+            userSettingsActions.showSnackbarMessage(d2.i18n.getTranslation('update_user_profile_fail'));
+            return;
+        }
         const data = Object.assign({});
         data[fieldData] = value;
         d2.Api.getApi().update('/24/me', data)
@@ -109,6 +115,7 @@ function startApp(d2) {
                 userSettingsActions.showSnackbarMessage(d2.i18n.getTranslation('update_user_profile_success'));
             })
             .catch((err) => {
+                userSettingsActions.showSnackbarMessage(d2.i18n.getTranslation('update_user_profile_fail'));
                 log.error('Failed to save configuration:', err);
             });
     });
