@@ -41,32 +41,6 @@ class AccountEditor extends React.Component {
 
     render() {
 
-        const styles = {
-            header: {
-                fontSize: 24,
-                fontWeight: 100,
-                color: AppTheme.rawTheme.palette.textColor,
-                padding: '6px 16px',
-            },
-            card: {
-                marginTop: 8,
-                marginRight: '1rem',
-            },
-            cardTitle: {
-                background: AppTheme.rawTheme.palette.primary2Color,
-                height: 62,
-            },
-            cardTitleText: {
-                fontSize: 28,
-                fontWeight: 100,
-                color: AppTheme.rawTheme.palette.alternateTextColor,
-            },
-            forms: {
-                minWidth: AppTheme.forms.minWidth,
-                maxWidth: AppTheme.forms.maxWidth,
-            },
-        };
-
         const fields = [
             {
                 name: 'username',
