@@ -3,7 +3,7 @@ import log from 'loglevel';
 
 import userSettingsActions from './userSettingsActions';
 
-import { wordToValidatorMap } from 'd2-ui/lib/forms/Validators';
+import { isValidPassword } from 'd2-ui/lib/forms/Validators';
 import FormBuilder from 'd2-ui/lib/forms/FormBuilder.component';
 import TextField from 'd2-ui/lib/form-fields/TextField';
 
@@ -61,7 +61,13 @@ class AccountEditor extends React.Component {
                     floatingLabelText: this.d2.i18n.getTranslation('new_password'),
                     style: { width: '100%' },
                     changeEvent: 'onBlur',
-                }
+                },
+                validators: [
+                    {
+                        validator: isValidPassword,
+                        message: this.d2.i18n.getTranslation(isValidPassword.message),
+                    },
+                ],
             },
             {
                 name: 'reNewPassword',
@@ -72,14 +78,21 @@ class AccountEditor extends React.Component {
                     floatingLabelText: this.d2.i18n.getTranslation('retype_new_password'),
                     style: { width: '100%' },
                     changeEvent: 'onBlur',
-                }
+                },
+                validators: [
+                    {
+                        validator: isValidPassword,
+                        message: this.d2.i18n.getTranslation(isValidPassword.message),
+                    },
+                ],
             },
             {
                 name: 'postbutton',
                 component: RaisedButton,
                 props: { 
                     label: this.d2.i18n.getTranslation('post_new_password'),
-                    onClick: this.updatePassword
+                    onClick: this.updatePassword,
+                    style: { marginTop: '20px' }
                 }
             }
 
