@@ -40,7 +40,6 @@ class App extends React.Component {
         /* eslint-disable complexity */
         this.subscriptions.push(settingsActions.setCategory.subscribe((arg) => {
             const category = arg.data.key || arg.data || categoryOrder[0];
-            this.setState({ category });
             hashHistory.push(category);
         }));
         /* eslint-enable complexity */
@@ -55,6 +54,10 @@ class App extends React.Component {
         this.subscriptions.forEach(sub => {
             sub.dispose();
         });
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.setState({ category: nextProps.route.path });
     }
 
     closeSnackbar() {
