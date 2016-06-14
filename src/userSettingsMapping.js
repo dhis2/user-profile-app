@@ -49,10 +49,10 @@ const userSettingsMapping = {
     /* ============================================================================================================ */
     /* Category: Account                                                                                            */
     /* ============================================================================================================ */
-    username: {
-        label: 'username',
-        disabled: true,
-    },
+    // username: {
+    //     label: 'username',
+    //     disabled: true,
+    // },
     firstName: {
         label: 'first_name',
         validators: ['required'],
@@ -61,18 +61,28 @@ const userSettingsMapping = {
         label: 'surname',
         validators: ['required'],
     },
+    /*
     oldPassword: {
         label: 'old_password',
         type: 'password',
         validators: ['required'],
     },
-    newPassword: {
-        label: 'new_password',
-        type: 'password',
-    },
-    reNewPassword: {
-        label: 'retype_new_password',
-        type: 'password',
+    */
+    // newPassword: {
+    //     label: 'new_password',
+    //     type: 'password',
+    // },
+    // reNewPassword: {
+    //     label: 'retype_new_password',
+    //     type: 'password',
+    // },
+    // submitPassword: {
+    //     label: 'submit_new_password',
+    //     type: 'postButton',
+    // },
+    accountEditor: {
+        label: 'account_editor',
+        type: 'accountEditor'
     },
     email: {
         label: 'user_email_address',

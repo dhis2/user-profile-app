@@ -22,10 +22,12 @@ export const categories = {
         label: 'account',
         pageLabel: 'account_settings',
         settings: [
-            'username',
-            'oldPassword',
-            'newPassword',
-            'reNewPassword',
+            'accountEditor',
+            // 'username',
+            // 'oldPassword',
+            // 'newPassword',
+            // 'reNewPassword',
+            // 'submitPassword',
         ],
     },
     user: {

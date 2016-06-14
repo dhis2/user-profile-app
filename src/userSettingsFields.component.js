@@ -19,6 +19,7 @@ import userSettingsActions from './userSettingsActions';
 import userSettingsStore from './userSettingsStore';
 import userSettingsKeyMapping from './userSettingsMapping';
 import { categories } from './userSettingsCategories';
+import AccountEditor from './accountEditor.component'
 
 const styles = {
     header: {
@@ -136,14 +137,6 @@ class UserSettingsFields extends React.Component {
                         }),
                     });
 
-                case 'password':
-                    return Object.assign({}, fieldBase, {
-                        props: Object.assign({}, fieldBase.props, {
-                            type: 'password',
-                            changeEvent: 'onBlur',
-                        }),
-                    });
-
                 case 'date':
                     return Object.assign({}, fieldBase, {
                         component: DatePicker,
@@ -199,6 +192,15 @@ class UserSettingsFields extends React.Component {
                             ),
                             noOptionsLabel: d2.i18n.getTranslation('no_options'),
                         }),
+                    });
+
+                case 'accountEditor':
+                    return Object.assign({}, fieldBase, {
+                        component: AccountEditor,
+                        props: {
+                            d2: d2,
+                            username: userSettingsStore.state['username']
+                        }
                     });
 
                 default:

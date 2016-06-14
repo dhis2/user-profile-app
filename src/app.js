@@ -105,7 +105,13 @@ function startApp(d2) {
             return;
         }
         const data = Object.assign({});
-        data[fieldData] = value;
+        
+        if(fieldData === 'newPassword') {
+            data['userCredentials'] = Object.assign({}, {password: value});
+        } else {
+            data[fieldData] = value;
+        }
+        
         d2.Api.getApi().update('/24/me', data)
             .then(() =>{
                 const newState = userSettingsStore.state;
