@@ -23,11 +23,6 @@ export const categories = {
         pageLabel: 'account_settings',
         settings: [
             'accountEditor',
-            // 'username',
-            // 'oldPassword',
-            // 'newPassword',
-            // 'reNewPassword',
-            // 'submitPassword',
         ],
     },
     user: {
