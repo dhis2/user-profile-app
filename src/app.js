@@ -71,8 +71,8 @@ function startApp(d2) {
             d2.currentUser.systemSettingsDefault['keyAnalysisDisplayProperty'] = results[9]['keyAnalysisDisplayProperty'];
             d2.currentUser.systemSettingsDefault['keyMessageEmailNotification'] = results[10]['keyMessageEmailNotification'];
             d2.currentUser.systemSettingsDefault['keyMessageSmsNotification'] = results[11]['keyMessageSmsNotification'];
-            d2.currentUser.systemSettingsDefault['keyUiLocale'] = 'en';
-            d2.currentUser.systemSettingsDefault['keyDbLocale'] = 'en';
+            d2.currentUser.systemSettingsDefault['keyUiLocale'] = results[0]['keyUiLocale'] == null ? 'en' : results[0]['keyUiLocale'];
+            d2.currentUser.systemSettingsDefault['keyDbLocale'] = results[0]['keyUiLocale'] == null ? 'en' : results[0]['keyUiLocale'];
             userSettingsStore.setState(Object.assign({}, results[5], {keyDateFormat: results[1].keyDateFormat}, d2.currentUser, {styles: styles}, {locales:locales}, {dblocales:dblocales}));
             
             log.debug('Usersettings loaded successfully.', userSettingsStore.state);
