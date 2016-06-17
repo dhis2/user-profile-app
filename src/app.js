@@ -71,8 +71,9 @@ function startApp(d2) {
             d2.currentUser.systemSettingsDefault['keyAnalysisDisplayProperty'] = results[9]['keyAnalysisDisplayProperty'];
             d2.currentUser.systemSettingsDefault['keyMessageEmailNotification'] = results[10]['keyMessageEmailNotification'];
             d2.currentUser.systemSettingsDefault['keyMessageSmsNotification'] = results[11]['keyMessageSmsNotification'];
-            d2.currentUser.systemSettingsDefault['keyUiLocale'] = results[0]['keyUiLocale'] == null ? 'en' : results[0]['keyUiLocale'];
-            d2.currentUser.systemSettingsDefault['keyDbLocale'] = results[0]['keyUiLocale'] == null ? 'en' : results[0]['keyUiLocale'];
+            d2.currentUser.systemSettingsDefault['keyUiLocale'] = results[6]['keyUiLocale'];
+            d2.currentUser.systemSettingsDefault['keyDbLocale'] = results[7]['keyDbLocale'];
+
             userSettingsStore.setState(Object.assign({}, results[5], {keyDateFormat: results[1].keyDateFormat}, d2.currentUser, {styles: styles}, {locales:locales}, {dblocales:dblocales}));
             
             log.debug('Usersettings loaded successfully.', userSettingsStore.state);
@@ -140,7 +141,7 @@ function startApp(d2) {
 function configI18n(userSettings) {
     const uiLocale = userSettings.keyUiLocale;
 
-    if (uiLocale !== 'en') {
+    if (uiLocale !== 'en' && uiLocale !== null) {
         config.i18n.sources.add(`i18n/module/i18n_module_${uiLocale}.properties`);
     }
     config.i18n.sources.add('i18n/module/i18n_module_en.properties');

@@ -199,10 +199,11 @@ class UserSettingsFields extends React.Component {
             .map(field => {
                 const mapping = userSettingsKeyMapping[field.name];
                 const useSystemDefaultLabel = d2.i18n.getTranslation('use_system_default');
+                const systemDefaultValue = d2.currentUser.systemSettingsDefault[field.name] ? `(${d2.currentUser.systemSettingsDefault[field.name]})` :  "";
                 if (mapping.userSettingsOverride) {
                     const items = field.props.menuItems || [];
                     let component = field.component;
-                    let sysDefault = Object.assign({}, {id: 'systemDefault', displayName: `${useSystemDefaultLabel} (${d2.currentUser.systemSettingsDefault[field.name]})`});
+                    let sysDefault = Object.assign({}, {id: 'systemDefault', displayName: useSystemDefaultLabel + " " + systemDefaultValue});
                     let valueLabel = '';
                     let menuItems = new Array(sysDefault);
                     menuItems = menuItems.concat(items);
