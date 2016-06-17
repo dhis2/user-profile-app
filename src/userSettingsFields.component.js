@@ -88,19 +88,6 @@ class UserSettingsFields extends React.Component {
         return nextProps.currentSettings.join(',') !== this.props.currentSettings.join(',');
     }
 
-    componentDidMount() {
-        this.disposables = [];
-        this.disposables.push(userSettingsStore.subscribe(() => {
-            this.forceUpdate();
-        }));
-    }
-
-    componentWillUnmount() {
-        if (Array.isArray(this.disposables)) {
-            this.disposables.forEach(d => d.dispose());
-        }
-    }
-
     renderFields(settings) {
         const d2 = this.context.d2;
 
@@ -214,21 +201,16 @@ class UserSettingsFields extends React.Component {
                 if (mapping.userSettingsOverride) {
                     let menuItems = field.props.menuItems || [];
                     let component = field.component;
-                    let newobj = {};
+                    let sysDefault = Object.assign({}, {id: 'systemDefault', displayName: `Use system default (${d2.currentUser.systemSettingsDefault[field.name]})`});
                     let valueLabel = '';
-                    if(d2.currentUser.systemSettingsDefault[field.name] && d2.currentUser.systemSettingsDefault[field.name] !== null) {
-                        menuItems = menuItems.map( (obj) => {
-                            if(obj.id === d2.currentUser.systemSettingsDefault[field.name]) {
-                                valueLabel = obj.displayName;
-                                newobj = Object.assign({}, obj, {displayName: "System Default : " + obj.displayName}); 
-                                return newobj;
-                            }
-                            return obj;
-                        });
+                    menuItems.unshift(sysDefault);
+                    let props = Object.assign(field.props, {menuItems});
+                    let value = userSettingsStore.state[field.name] ? userSettingsStore.state[field.name].toString() : 'systemDefault';
+                    if(value !== 'systemDefault') {
+                        valueLabel = d2.currentUser.systemSettingsDefault[field.name];
                     }
                     component = wrapSystemSettingsDefault(d2, component, valueLabel);
-                    let props = Object.assign(field.props, {menuItems});
-                    return Object.assign(field, { component }, {props});
+                    return Object.assign(field, { value, component }, {props});
                 }
                 return field;
             });

@@ -50,6 +50,12 @@ function startApp(d2) {
             api.get('locales/ui'),
             api.get('locales/db'),
             api.get('userSettings', { useFallback: false }),
+            api.get('systemSettings?key=keyUiLocale'),
+            api.get('systemSettings?key=keyDbLocale'),
+            api.get('systemSettings?key=keyStyle'),
+            api.get('systemSettings?key=keyAnalysisDisplayProperty'),
+            api.get('systemSettings?key=keyMessageEmailNotification'),
+            api.get('systemSettings?key=keyMessageSmsNotification'),
         ]).then(results => {
             // Stylesheets
             const styles = (results[2] || []).map(style => ({ id: style.path, displayName: style.name }));
@@ -61,16 +67,13 @@ function startApp(d2) {
             const dblocales = (results[4] || []).map(locale => ({ id: locale.locale, displayName: locale.name }));
             
             d2.currentUser.systemSettingsDefault = Object.assign({});
-            for(let key in results[5]) {
-                d2.currentUser.systemSettingsDefault[key] = results[1][key]+'';
-                
-                //TODO Unhack this
-                if(typeof results[0][key] === 'boolean') {
-                    results[0][key] = results[0][key]+'';
-                }
-            }
-            
-            userSettingsStore.setState(Object.assign({}, results[0], {keyDateFormat: results[1].keyDateFormat}, d2.currentUser, {styles: styles}, {locales:locales}, {dblocales:dblocales}));
+            d2.currentUser.systemSettingsDefault['keyStyle'] = results[8]['keyStyle'];
+            d2.currentUser.systemSettingsDefault['keyAnalysisDisplayProperty'] = results[9]['keyAnalysisDisplayProperty'];
+            d2.currentUser.systemSettingsDefault['keyMessageEmailNotification'] = results[10]['keyMessageEmailNotification'];
+            d2.currentUser.systemSettingsDefault['keyMessageSmsNotification'] = results[11]['keyMessageSmsNotification'];
+            d2.currentUser.systemSettingsDefault['keyUiLocale'] = 'en';
+            d2.currentUser.systemSettingsDefault['keyDbLocale'] = 'en';
+            userSettingsStore.setState(Object.assign({}, results[5], {keyDateFormat: results[1].keyDateFormat}, d2.currentUser, {styles: styles}, {locales:locales}, {dblocales:dblocales}));
             
             log.debug('Usersettings loaded successfully.', userSettingsStore.state);
             render(<AppRouter d2={d2}/>, document.querySelector('#app'));
@@ -83,8 +86,13 @@ function startApp(d2) {
     userSettingsActions.saveUserKey.subscribe((args) => {
         const [fieldData, value] = args.data;
         const key = Array.isArray(fieldData) ? fieldData.join('') : fieldData;
-        
-        d2.currentUser.userSettings.set(fieldData, value)
+        let val = '';
+
+        if(value !== 'systemDefault') {
+            val = value;
+        } 
+
+        d2.currentUser.userSettings.set(fieldData, val)
             .then(() => {
                 const newState = userSettingsStore.state;
                 newState[fieldData] = value;
