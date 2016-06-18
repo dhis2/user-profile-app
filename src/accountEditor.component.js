@@ -31,6 +31,10 @@ class AccountEditor extends React.Component {
     }
 
     updatePassword(e) {
+        if(!isValidPassword(this.state.newPassword)) {
+            userSettingsActions.showSnackbarMessage(this.d2.i18n.getTranslation(isValidPassword.message));
+            return;
+        }
         if(this.state.newPassword != this.state.reNewPassword) {
             userSettingsActions.showSnackbarMessage(this.d2.i18n.getTranslation('password_no_match'));
         } else {
