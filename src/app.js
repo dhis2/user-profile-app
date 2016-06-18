@@ -17,7 +17,7 @@ import log from 'loglevel';
 import { init, config, getUserSettings, getManifest } from 'd2/lib/d2';
 
 import LoadingMask from 'd2-ui/lib/loading-mask/LoadingMask.component';
-import { isEmail } from 'd2-ui/lib/forms/Validators';
+import { isEmail, isRequired } from 'd2-ui/lib/forms/Validators';
 
 // The react-tap-event-plugin is required by material-ui to make touch screens work properly with onClick events
 import 'react-tap-event-plugin';
@@ -135,6 +135,9 @@ function startApp(d2) {
         } else {
             data[fieldData] = value;
         }
+
+        if((fieldData === 'firstName' || fieldData === 'surname') && !isRequired(value)) 
+            return;
         
         d2.Api.getApi().update('/24/me', data)
             .then(() =>{
