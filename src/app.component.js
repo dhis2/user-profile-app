@@ -31,6 +31,7 @@ class App extends React.Component {
     getChildContext() {
         return {
             d2: this.props.route.d2,
+            muiTheme: AppTheme,
         };
     }
 
@@ -125,7 +126,7 @@ class App extends React.Component {
     }
 }
 
-App.propTypes = { d2: React.PropTypes.object };
-App.childContextTypes = { d2: React.PropTypes.object };
+App.propTypes = { d2: React.PropTypes.object, };
+App.childContextTypes = { d2: React.PropTypes.object, muiTheme: React.PropTypes.object, };
 
 export default App;
