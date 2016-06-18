@@ -22,6 +22,12 @@ class AccountEditor extends React.Component {
         this.d2 = this.props.d2;
         this.updatePassword = this.updatePassword.bind(this);
         this.updateState = this.updateState.bind(this);
+        this.isSamePassword = this.isSamePassword.bind(this);
+        this.message = 'password_no_match';
+    }
+
+    isSamePassword(value) {
+        return value === this.state.newPassword;
     }
 
     updatePassword(e) {
@@ -81,8 +87,8 @@ class AccountEditor extends React.Component {
                 },
                 validators: [
                     {
-                        validator: isValidPassword,
-                        message: this.d2.i18n.getTranslation(isValidPassword.message),
+                        validator: this.isSamePassword,
+                        message: this.d2.i18n.getTranslation(this.message),
                     },
                 ],
             },
