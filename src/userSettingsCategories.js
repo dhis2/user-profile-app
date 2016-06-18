@@ -1,7 +1,7 @@
 export const categories = {
     profile: {
         label: 'profile',
-        pageLabel: 'profile_settings',
+        pageLabel: 'user_profile',
         settings: [
             'firstName',
             'surname',

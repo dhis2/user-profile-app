@@ -16,8 +16,8 @@ import UserSettingsFields from './userSettingsFields.component';
 import AppTheme from './theme';
 
 class App extends React.Component {
-    constructor(props,context){
-        super(props);
+    constructor(props, context){
+        super(props, context);
         this.state = Object.assign({},{
             category: props.route.path === '/' ? 'profile' : props.route.path,
             snackbarMessage: '',
@@ -26,6 +26,7 @@ class App extends React.Component {
         });
         this.props = props;
         this.closeSnackbar = this.closeSnackbar.bind(this);
+        this.getTranslation = props.route.d2.i18n.getTranslation.bind(props.route.d2.i18n);
     }
 
     getChildContext() {
@@ -94,9 +95,9 @@ class App extends React.Component {
         };
 
         const sideBarSections = [
-            { key: 'profile', label: 'Profile Settings', icon: 'face' },
-            { key: 'account', label: 'Account Settings', icon: 'account_circle' },
-            { key: 'user', label: 'User Settings', icon: 'build' },
+            { key: 'profile', label: this.getTranslation('user_profile'), icon: 'face' },
+            { key: 'account', label: this.getTranslation('account_settings'), icon: 'account_circle' },
+            { key: 'user', label: this.getTranslation('user_settings'), icon: 'build' },
         ];
 
         const setSidebar = (ref) => {
