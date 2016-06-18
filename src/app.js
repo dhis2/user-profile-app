@@ -57,15 +57,30 @@ function startApp(d2) {
             api.get('systemSettings?key=keyMessageEmailNotification'),
             api.get('systemSettings?key=keyMessageSmsNotification'),
         ]).then(results => {
+            d2.i18n.customLabels = Object.assign({});
             // Stylesheets
-            const styles = (results[2] || []).map(style => ({ id: style.path, displayName: style.name }));
+            const styles = (results[2] || []).map(style => { 
+                d2.i18n.customLabels[style.path] = style.name;
+                return { id: style.path, displayName: style.name } 
+            });
 
             // Locales
-            const locales = (results[3] || []).map(locale => ({ id: locale.locale, displayName: locale.name }));
+            const locales = (results[3] || []).map(locale => { 
+                d2.i18n.customLabels[locale.locale] = locale.name;
+                return { id: locale.locale, displayName: locale.name } 
+            });
 
             // dbLocales
-            const dblocales = (results[4] || []).map(locale => ({ id: locale.locale, displayName: locale.name }));
-            
+            const dblocales = (results[3] || []).map(locale => { 
+                d2.i18n.customLabels[locale.locale] = locale.name;
+                return { id: locale.locale, displayName: locale.name } 
+            });
+            d2.i18n.customLabels.name = d2.i18n.getTranslation('name');
+            d2.i18n.customLabels.short_name = d2.i18n.getTranslation('short_name');
+            d2.i18n.customLabels.true = d2.i18n.getTranslation('true_notifications');
+            d2.i18n.customLabels.false = d2.i18n.getTranslation('false_notifications');
+
+            //Add default system settings to d2
             d2.currentUser.systemSettingsDefault = Object.assign({});
             d2.currentUser.systemSettingsDefault['keyStyle'] = results[8]['keyStyle'];
             d2.currentUser.systemSettingsDefault['keyAnalysisDisplayProperty'] = results[9]['keyAnalysisDisplayProperty'];
