@@ -84,8 +84,8 @@ function startApp(d2) {
             d2.currentUser.systemSettingsDefault = Object.assign({});
             d2.currentUser.systemSettingsDefault['keyStyle'] = results[8]['keyStyle'];
             d2.currentUser.systemSettingsDefault['keyAnalysisDisplayProperty'] = results[9]['keyAnalysisDisplayProperty'];
-            d2.currentUser.systemSettingsDefault['keyMessageEmailNotification'] = results[10]['keyMessageEmailNotification'];
-            d2.currentUser.systemSettingsDefault['keyMessageSmsNotification'] = results[11]['keyMessageSmsNotification'];
+            d2.currentUser.systemSettingsDefault['keyMessageEmailNotification'] = results[10]['keyMessageEmailNotification'].toString();
+            d2.currentUser.systemSettingsDefault['keyMessageSmsNotification'] = results[11]['keyMessageSmsNotification'].toString();
             d2.currentUser.systemSettingsDefault['keyUiLocale'] = results[6]['keyUiLocale'];
             d2.currentUser.systemSettingsDefault['keyDbLocale'] = results[7]['keyDbLocale'];
 

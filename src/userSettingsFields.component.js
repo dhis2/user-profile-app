@@ -159,7 +159,7 @@ class UserSettingsFields extends React.Component {
                     if (mapping.includeEmpty && fieldBase.value === '') {
                         fieldBase.value = 'null';
                     }
-                    let defaultValue = userSettingsStore.state[key] ? userSettingsStore.state[key].toString() : '';
+                    let defaultValue = userSettingsStore.state[key] || userSettingsStore.state[key] == false ? userSettingsStore.state[key].toString() : '';
                     return Object.assign({}, fieldBase, {
                         component: SelectField,
                         value: defaultValue,
@@ -208,7 +208,7 @@ class UserSettingsFields extends React.Component {
                     let menuItems = new Array(sysDefault);
                     menuItems = menuItems.concat(items);
                     let props = Object.assign(field.props, {menuItems});
-                    let value = userSettingsStore.state[field.name] ? userSettingsStore.state[field.name].toString() : 'systemDefault';
+                    let value = field.value.length > 0 ? userSettingsStore.state[field.name].toString() : 'systemDefault';
                     if(value !== 'systemDefault') {
                         valueLabel = d2.currentUser.systemSettingsDefault[field.name];
                     }
