@@ -73,7 +73,7 @@ function wrapSystemSettingsDefault(d2, component, valueLabel) {
                     {super.render()}
                     {
                     valueLabel !== undefined && valueLabel !== ''
-                        ? <div style={labelStyle}>{`${d2.i18n.getTranslation('system_setting_default')}: ${valueLabel}`}</div>
+                        ? <div style={labelStyle}>{`${d2.i18n.getTranslation('system_setting_default')}: ${d2.i18n.customLabels[valueLabel]}`}</div>
                         : ''
                     } 
                 </div>
@@ -86,6 +86,17 @@ function wrapSystemSettingsDefault(d2, component, valueLabel) {
 class UserSettingsFields extends React.Component {
     shouldComponentUpdate(nextProps) {
         return nextProps.currentSettings.join(',') !== this.props.currentSettings.join(',');
+    }
+
+    componentDidMount() {
+        this.disposables;
+        this.disposables = userSettingsStore.subscribe(() => {
+            this.forceUpdate();
+        });
+    }
+
+    componentWillUnmount() {
+        this.disposables.dispose();
     }
 
     renderFields(settings) {
