@@ -37,13 +37,16 @@ const userSettingsMapping = {
     },
     education: {
         label: 'education',
+        multiLine: true,
     },
     //todo chips component for interests and languages
     interests: {
         label: 'interests',
+        multiLine: true,
     },
     languages: {
         label: 'languages',
+        multiLine: true,
     },
     firstName: {
         label: 'first_name',

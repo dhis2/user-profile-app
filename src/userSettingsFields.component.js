@@ -148,6 +148,7 @@ class UserSettingsFields extends React.Component {
                                 data.push(e.target.value);
                                 userSettingsActions.saveProfile(data);
                             },
+                            textFieldStyle: { width: '100%' },
                             allowFuture: false,
                         }),
                     });
