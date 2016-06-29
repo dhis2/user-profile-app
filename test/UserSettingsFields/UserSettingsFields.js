@@ -10,6 +10,8 @@ describe('UserSettingsFields', () => {
 
     beforeEach(() => {
         fieldsComponent = shallow(<UserSettingsFields category="profile" currentSettings={[
+            'firstName',
+            'surname',
             'email',
             'phoneNumber',
             'introduction',

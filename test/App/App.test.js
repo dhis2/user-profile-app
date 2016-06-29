@@ -10,7 +10,7 @@ describe('App', () => {
     let appComponent;
 
     beforeEach(() => {
-        appComponent = shallow(<App route={{path:'user'}} d2={{}}/>);
+        appComponent = shallow(<App route={ {path:'user', d2:{i18n: {getTranslation: function(t) { return t;}}}} } d2={{}}/>);
     });
 
     it('should render the HeaderBar component from d2-ui', () => {
@@ -32,9 +32,9 @@ describe('App', () => {
         const sidebarSections = sidebarComponent.props().sections;
 
         expect(sidebarSections).to.deep.equal([
-            { key: 'profile', label: 'Profile Settings' },
-            { key: 'account', label: 'Account Settings' },
-            { key: 'user', label: 'User Settings' },
+            { icon: "face", key: 'profile', label: 'user_profile' },
+            { icon: "account_circle", key: 'account', label: 'account_settings' },
+            { icon: "build", key: 'user', label: 'user_settings' },
         ]);
     });
 });

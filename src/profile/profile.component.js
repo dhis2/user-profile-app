@@ -89,7 +89,7 @@ class Profile extends React.Component {
         ]
 
         const labels = {
-            email: 'email',
+            email: 'user_email_address',
             phoneNumber: 'phone_number',
             introduction: 'introduction',
             jobTitle: 'job_title',
