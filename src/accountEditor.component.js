@@ -17,17 +17,41 @@ class AccountEditor extends React.Component {
         this.state = Object.assign({},{
             newPassword: '',
             reNewPassword: '',
+            errorText: '',
         });
         this.props = props;
         this.d2 = this.props.d2;
         this.updatePassword = this.updatePassword.bind(this);
         this.updateState = this.updateState.bind(this);
         this.isSamePassword = this.isSamePassword.bind(this);
+        this.isVerifiedPassword = this.isVerifiedPassword.bind(this);
         this.message = 'password_no_match';
     }
 
     isSamePassword(value) {
         return value === this.state.newPassword;
+    }
+
+    isVerifiedPassword(value) {
+        const api = this.d2.Api.getApi();
+        api.post('24/me/verifyPassword', {password: value})
+            .then((res) => {
+                if(!res.isCorrectPassword) {
+                    this.setState({errorText: this.d2.i18n.getTranslation('wrong_old_password')});
+                    return false;
+                } else {
+                    this.setState({errorText: ''});
+                    return true;
+                }
+            }, (error) => {
+                if(value) {
+                    this.setState({errorText: this.d2.i18n.getTranslation('wrong_old_password')});
+                    return false;
+                } else {
+                    this.setState({errorText: ''});
+                    return true;
+                }
+            });
     }
 
     updatePassword(e) {
@@ -61,6 +85,24 @@ class AccountEditor extends React.Component {
                     style: { width: '100%' },
                     disabled: true,
                 }
+            },
+            {
+                name: 'oldPassword',
+                component: TextField,
+                value: this.state.oldPassword,
+                props: {
+                    type: 'password',
+                    floatingLabelText: this.d2.i18n.getTranslation('old_password'),
+                    style: { width: '100%' },
+                    errorText: this.state.errorText,
+                    changeEvent: 'onBlur',
+                },
+                validators: [
+                    {
+                        validator: this.isVerifiedPassword,
+                        message: '',
+                    },
+                ],
             },
             {
                 name: 'newPassword',
