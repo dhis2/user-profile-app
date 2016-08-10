@@ -17,7 +17,7 @@ class AccountEditor extends React.Component {
         this.state = Object.assign({},{
             newPassword: '',
             reNewPassword: '',
-            errorText: '',
+            wrongOldPasswordText: '',
         });
         this.props = props;
         this.d2 = this.props.d2;
@@ -37,24 +37,28 @@ class AccountEditor extends React.Component {
         api.post('24/me/verifyPassword', {password: value})
             .then((res) => {
                 if(!res.isCorrectPassword) {
-                    this.setState({errorText: this.d2.i18n.getTranslation('wrong_old_password')});
+                    this.setState({wrongOldPasswordText: this.d2.i18n.getTranslation('wrong_old_password')});
                     return false;
                 } else {
-                    this.setState({errorText: ''});
+                    this.setState({wrongOldPasswordText: ''});
                     return true;
                 }
             }, (error) => {
                 if(value) {
-                    this.setState({errorText: this.d2.i18n.getTranslation('wrong_old_password')});
+                    this.setState({wrongOldPasswordText: this.d2.i18n.getTranslation('wrong_old_password')});
                     return false;
                 } else {
-                    this.setState({errorText: ''});
+                    this.setState({wrongOldPasswordText: ''});
                     return true;
                 }
             });
     }
 
     updatePassword(e) {
+        if(this.state.wrongOldPasswordText != '') {
+            userSettingsActions.showSnackbarMessage(this.d2.i18n.getTranslation('wrong_old_password'));
+            return;
+        }
         if(!isValidPassword(this.state.newPassword)) {
             userSettingsActions.showSnackbarMessage(this.d2.i18n.getTranslation(isValidPassword.message));
             return;
@@ -94,7 +98,7 @@ class AccountEditor extends React.Component {
                     type: 'password',
                     floatingLabelText: this.d2.i18n.getTranslation('old_password'),
                     style: { width: '100%' },
-                    errorText: this.state.errorText,
+                    errorText: this.state.wrongOldPasswordText,
                     changeEvent: 'onBlur',
                 },
                 validators: [
