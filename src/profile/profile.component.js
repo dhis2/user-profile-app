@@ -1,3 +1,5 @@
+//To be part of dashboard app
+
 import React from 'react';
 import log from 'loglevel';
 import {hashHistory} from 'react-router';

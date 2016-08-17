@@ -12,13 +12,15 @@ export default class AppRouter extends React.Component {
 	}
 
 	render() {
-		return (<Router history={hashHistory}>
+		return (
+				<Router history={hashHistory}>
                     <Route path="/" d2={this.props.d2} component={App}/>
                     <Route path="profile" d2={this.props.d2} component={App}/>
                     <Route path="account" d2={this.props.d2} component={App}/>
                     <Route path="user" d2={this.props.d2} component={App}/>
                     <Route path="user/:userID" d2={this.props.d2} component={Profile}/>
-                </Router>);
+                </Router>
+                );
 	}
 }
 

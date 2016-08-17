@@ -118,7 +118,7 @@ function startApp(d2) {
             })
             .catch((err) => {
                 userSettingsActions.showSnackbarMessage(d2.i18n.getTranslation('update_settings_fail'));
-                log.error('Failed to save configuration:', err);
+                log.error('Failed to update user settings:', err);
             });
     });
 
@@ -149,7 +149,7 @@ function startApp(d2) {
             })
             .catch((err) => {
                 userSettingsActions.showSnackbarMessage(d2.i18n.getTranslation('update_user_profile_fail'));
-                log.error('Failed to save configuration:', err);
+                log.error('Failed to update user profile:', err);
             });
     });
 
