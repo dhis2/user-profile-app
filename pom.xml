@@ -24,6 +24,12 @@
       <organization>BITS Pilani Goa</organization>
       <organizationUrl>http://www.bits-pilani.ac.in/</organizationUrl>
     </developer>
+    <developer>
+      <name>Nicolay Ramm</name>
+      <email>nicolay@dhis2.org</email>
+      <organization>UiO</organization>
+      <organizationUrl>http://www.uio.no</organizationUrl>
+    </developer>
   </developers>
   
   <licenses>

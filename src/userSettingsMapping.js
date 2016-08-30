@@ -1,9 +1,17 @@
 const userSettingsMapping = {
     /* ============================================================================================================ */
-    /* Category: Profile                                                                                           */
+    /* Category: Profile                                                                                            */
     /* ============================================================================================================ */
+    firstName: {
+        label: 'first_name',
+        validators: ['required'],
+    },
+    surname: {
+        label: 'surname',
+        validators: ['required'],
+    },
     email: {
-        label: 'email',
+        label: 'user_email_address',
         validators: ['email'],
     },
     phoneNumber: {
@@ -39,7 +47,7 @@ const userSettingsMapping = {
         label: 'education',
         multiLine: true,
     },
-    //todo chips component for interests and languages
+    // TODO: chips component for interests and languages?
     interests: {
         label: 'interests',
         multiLine: true,
@@ -48,24 +56,12 @@ const userSettingsMapping = {
         label: 'languages',
         multiLine: true,
     },
-    firstName: {
-        label: 'first_name',
-        validators: ['required'],
-    },
-    surname: {
-        label: 'surname',
-        validators: ['required'],
-    },
+    /* ============================================================================================================ */
+    /* Category: Account                                                                                            */
+    /* ============================================================================================================ */
     accountEditor: {
         label: 'account_editor',
         type: 'accountEditor'
-    },
-    email: {
-        label: 'user_email_address',
-        validators: ['email'],
-    },
-    phoneNumber: {
-        label: 'phone_number',
     },
     /* ============================================================================================================ */
     /* Category: User Settings                                                                                    */
@@ -73,20 +69,26 @@ const userSettingsMapping = {
     keyUiLocale: {
         label: 'language',
         type: 'dropdown',
-        source: 'locales',
-        userSettingsOverride: true,
+        source: 'uiLocales',
+        includeEmpty: true,
+        emptyLabel: 'use_system_default',
+        showSystemDefault: true,
     },
     keyDbLocale: {
         label: 'db_language',
         type: 'dropdown',
-        source: 'dblocales',
-        userSettingsOverride: true,
+        source: 'dbLocales',
+        includeEmpty: true,
+        emptyLabel: 'use_system_default',
+        showSystemDefault: true,
     },
     keyStyle: {
         label: 'style',
         type: 'dropdown',
         source: 'styles',
-        userSettingsOverride: true,
+        includeEmpty: true,
+        emptyLabel: 'use_system_default',
+        showSystemDefault: true,
     },
     keyAnalysisDisplayProperty: {
         label: 'analysis_module',
@@ -95,25 +97,31 @@ const userSettingsMapping = {
             name: 'name',
             shortName: 'short_name',
         },
-        userSettingsOverride: true,
+        includeEmpty: true,
+        emptyLabel: 'use_system_default',
+        showSystemDefault: true,
     },
     keyMessageEmailNotification: {
         label: 'enable_message_email_notifications',
         type: 'dropdown',
         options: {
-            'true': 'true_notifications',
-            'false': 'false_notifications',
+            true: 'true_notifications',
+            false: 'false_notifications',
         },
-        userSettingsOverride: true,
+        includeEmpty: true,
+        emptyLabel: 'use_system_default',
+        showSystemDefault: true,
     },
     keyMessageSmsNotification: {
         label: 'enable_message_sms_notifications',
         type: 'dropdown',
         options: {
-            'true': 'true_notifications',
-            'false': 'false_notifications',
+            true: 'true_notifications',
+            false: 'false_notifications',
         },
-        userSettingsOverride: true,
+        includeEmpty: true,
+        emptyLabel: 'use_system_default',
+        showSystemDefault: true,
     },
 };
 

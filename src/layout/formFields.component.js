@@ -2,7 +2,6 @@ import React from 'react';
 import log from 'loglevel';
 
 // Material UI
-import RaisedButton from 'material-ui/lib/raised-button';
 import Card from 'material-ui/lib/card/card';
 import CardText from 'material-ui/lib/card/card-text';
 
@@ -11,15 +10,15 @@ import { wordToValidatorMap } from 'd2-ui/lib/forms/Validators';
 import FormBuilder from 'd2-ui/lib/forms/FormBuilder.component';
 import SelectField from 'd2-ui/lib/form-fields/DropDown.component';
 import TextField from 'd2-ui/lib/form-fields/TextField';
-import DatePicker from 'd2-ui/lib/form-fields/DatePicker.component.js';
-import Checkbox from 'd2-ui/lib/form-fields/CheckBox.component.js'
+import DatePicker from 'd2-ui/lib/form-fields/DatePicker.component';
+import Checkbox from 'd2-ui/lib/form-fields/CheckBox.component';
 import AppTheme from './theme';
 
-import userSettingsActions from './userSettingsActions';
-import userSettingsStore from './userSettingsStore';
-import userSettingsKeyMapping from './userSettingsMapping';
-import { categories } from './userSettingsCategories';
-import AccountEditor from './accountEditor.component'
+import userSettingsActions from '../app.actions';
+import userSettingsStore from '../settings/userSettings.store';
+import optionValueStore from '../optionValue.store';
+import userSettingsKeyMapping from '../userSettingsMapping';
+import AccountEditor from '../account/accountEditor.component';
 
 const styles = {
     header: {
@@ -48,7 +47,7 @@ const styles = {
         fontWeight: 300,
     },
     userSettingsOverride: {
-        color: AppTheme.rawTheme.palette.accent1Color,
+        color: AppTheme.rawTheme.palette.primary1Color,
         marginTop: -6,
         fontSize: '0.8rem',
         fontWeight: 400,
@@ -63,19 +62,15 @@ const styles = {
     },
 };
 
-function wrapSystemSettingsDefault(d2, component, valueLabel) {
+function wrapWithLabel(d2, component, label) {
     return class extends component {
         render() {
-            const labelStyle = Object.assign({}, styles.userSettingsOverride);
+            const labelStyle = styles.userSettingsOverride;
 
             return (
                 <div>
                     {super.render()}
-                    {
-                    valueLabel !== undefined && valueLabel !== ''
-                        ? <div style={labelStyle}>{`${d2.i18n.getTranslation('system_setting_default')}: ${d2.i18n.customLabels[valueLabel]}`}</div>
-                        : ''
-                    } 
+                    <div style={labelStyle}>{label}</div>
                 </div>
             );
         }
@@ -84,13 +79,9 @@ function wrapSystemSettingsDefault(d2, component, valueLabel) {
 
 
 class UserSettingsFields extends React.Component {
-    shouldComponentUpdate(nextProps) {
-        return nextProps.currentSettings.join(',') !== this.props.currentSettings.join(',');
-    }
-
     componentDidMount() {
         this.disposables;
-        this.disposables = userSettingsStore.subscribe(() => {
+        this.disposables = this.props.valueStore.subscribe(() => {
             this.forceUpdate();
         });
     }
@@ -101,6 +92,7 @@ class UserSettingsFields extends React.Component {
 
     renderFields(settings) {
         const d2 = this.context.d2;
+        const valueStore = this.props.valueStore;
 
         /* eslint-disable complexity */
         const fields = settings
@@ -110,7 +102,7 @@ class UserSettingsFields extends React.Component {
                 // Base config, common for all component types
                 const fieldBase = {
                     name: key,
-                    value: userSettingsStore.state && userSettingsStore.state[key] || '',
+                    value: valueStore.state && valueStore.state.hasOwnProperty(key) && String(valueStore.state[key]).trim() || '',
                     component: TextField,
                     props: {
                         floatingLabelText: d2.i18n.getTranslation(mapping.label),
@@ -138,16 +130,10 @@ class UserSettingsFields extends React.Component {
                 case 'date':
                     return Object.assign({}, fieldBase, {
                         component: DatePicker,
-                        value: userSettingsStore.state && userSettingsStore.state[key] ? new Date(userSettingsStore.state[key]) : '',
+                        value: valueStore.state && valueStore.state[key] ? new Date(valueStore.state[key]) : '',
                         props: Object.assign({}, fieldBase.props, {
                             floatingLabelText: d2.i18n.getTranslation(mapping.label),
                             dateFormat: userSettingsStore.state['keyDateFormat'] || '',
-                            onChange: (e) => {
-                                let data = [];
-                                data.push('birthday');
-                                data.push(e.target.value);
-                                userSettingsActions.saveProfile(data);
-                            },
                             textFieldStyle: { width: '100%' },
                             allowFuture: false,
                         }),
@@ -171,35 +157,37 @@ class UserSettingsFields extends React.Component {
                     if (mapping.includeEmpty && fieldBase.value === '') {
                         fieldBase.value = 'null';
                     }
-                    let defaultValue = userSettingsStore.state[key] || userSettingsStore.state[key] == false ? userSettingsStore.state[key].toString() : '';
+
+                    const value = valueStore.state[key] || valueStore.state[key] === false
+                        ? valueStore.state[key].toString()
+                        : 'null';
+
+                    const menuItems = (mapping.source
+                        ? optionValueStore.state && optionValueStore.state[mapping.source] || []
+                        : Object.keys(mapping.options).map(id => {
+                            const displayName = !isNaN(mapping.options[id])
+                                ? mapping.options[id]
+                                : d2.i18n.getTranslation(mapping.options[id]);
+                            return { id, displayName };
+                        })).slice();
+
                     return Object.assign({}, fieldBase, {
                         component: SelectField,
-                        value: defaultValue,
+                        value,
                         props: Object.assign({}, fieldBase.props, {
-                            menuItems: mapping.source
-                                ? userSettingsStore.state && userSettingsStore.state[mapping.source] || []
-                                : Object.keys(mapping.options).map(id => {
-                                const displayName = !isNaN(mapping.options[id]) ?
-                                    mapping.options[id] :
-                                    d2.i18n.getTranslation(mapping.options[id]);
-                                return { id, displayName };
-                            }),
                             includeEmpty: !!mapping.includeEmpty,
                             emptyLabel: (
                                 mapping.includeEmpty && mapping.emptyLabel &&
                                 d2.i18n.getTranslation(mapping.emptyLabel) || undefined
                             ),
                             noOptionsLabel: d2.i18n.getTranslation('no_options'),
-                        }),
+                        }, { menuItems }),
                     });
 
                 case 'accountEditor':
                     return Object.assign({}, fieldBase, {
                         component: AccountEditor,
-                        props: {
-                            d2: d2,
-                            username: userSettingsStore.state['username']
-                        }
+                        props: { d2, username: valueStore.state.username },
                     });
 
                 default:
@@ -207,37 +195,43 @@ class UserSettingsFields extends React.Component {
                     return {};
                 }
             })
-            .filter(f => !!f.name)
+            .filter(field => !!field.name)
             .map(field => {
                 const mapping = userSettingsKeyMapping[field.name];
-                const useSystemDefaultLabel = d2.i18n.getTranslation('use_system_default');
-                const systemDefaultValue = d2.currentUser.systemSettingsDefault[field.name] ? `(${ d2.i18n.customLabels[d2.currentUser.systemSettingsDefault[field.name]]})` :  "";
-                if (mapping.userSettingsOverride) {
-                    const items = field.props.menuItems || [];
-                    let component = field.component;
-                    let sysDefault = Object.assign({}, {id: 'systemDefault', displayName: useSystemDefaultLabel + " " + systemDefaultValue});
-                    let valueLabel = '';
-                    let menuItems = new Array(sysDefault);
-                    menuItems = menuItems.concat(items);
-                    let props = Object.assign(field.props, {menuItems});
-                    let value = field.value.length > 0 ? userSettingsStore.state[field.name].toString() : 'systemDefault';
-                    if(value !== 'systemDefault') {
-                        valueLabel = d2.currentUser.systemSettingsDefault[field.name];
+
+                // For settings that have a system wide default value, and is overridden by the current user, display
+                // the system wide default under the current user setting (which may be the same value)
+                if (mapping.showSystemDefault && field.value && field.value !== null && field.value !== 'null' &&
+                    optionValueStore.state.systemDefault[field.name]) {
+                    const systemValue = optionValueStore.state.systemDefault[field.name];
+                    const actualSystemValue = systemValue && systemValue !== null && systemValue !== 'null';
+                    let systemValueLabel = systemValue;
+
+                    if (mapping.source && actualSystemValue) {
+                        systemValueLabel = optionValueStore.state[mapping.source]
+                            .filter(item => item.id === systemValue)
+                            [0].displayName;
+                    } else if (field.props.menuItems && actualSystemValue) {
+                        systemValueLabel = field.props.menuItems
+                            .filter(item => item.id === systemValue || (systemValue === true && item.id === 'true'))
+                            [0].displayName;
+                    } else {
+                        systemValueLabel = d2.i18n.getTranslation(systemValue);
                     }
-                    component = wrapSystemSettingsDefault(d2, component, valueLabel);
-                    return Object.assign(field, { value, component }, {props});
+
+                    const systemDefaultLabel = `${d2.i18n.getTranslation('system_default')}: ${systemValueLabel}`;
+                    return Object.assign(field, { component: wrapWithLabel(d2, field.component, systemDefaultLabel)});
                 }
+
                 return field;
             });
 
         /* eslint-enable complexity */
 
         return (
-            <Card style={styles.card} key={this.props.category}>
+            <Card style={styles.card}>
                 <CardText>
-                    {this.props.category === 'user' 
-                    ? <FormBuilder fields={fields} onUpdateField={userSettingsActions.saveUserKey}/>
-                    : <FormBuilder fields={fields} onUpdateField={userSettingsActions.saveProfile}/> }
+                    <FormBuilder fields={fields} onUpdateField={this.props.onUpdateField} />
                 </CardText>
             </Card>
         );
@@ -246,18 +240,18 @@ class UserSettingsFields extends React.Component {
     render() {
         return (
             <div className="content-area">
-                <div style={styles.header}>
-                    {this.context.d2.i18n.getTranslation(categories[this.props.category].pageLabel)}
-                </div>
-                {this.renderFields(this.props.currentSettings)}
+                <div style={styles.header}>{this.props.pageLabel}</div>
+                {this.renderFields(this.props.fieldKeys)}
             </div>
         );
     }
 }
 
 UserSettingsFields.propTypes = {
-    category: React.PropTypes.string.isRequired,
-    currentSettings: React.PropTypes.arrayOf(React.PropTypes.string).isRequired,
+    pageLabel: React.PropTypes.string.isRequired,
+    fieldKeys: React.PropTypes.arrayOf(React.PropTypes.string).isRequired,
+    valueStore: React.PropTypes.object.isRequired,
+    onUpdateField: React.PropTypes.func.isRequired,
 };
 UserSettingsFields.contextTypes = {
     d2: React.PropTypes.object.isRequired,

@@ -1,28 +1,16 @@
 import React from 'react';
 
 import FormFields from '../layout/formFields.component';
-import userProfileActions from './profile.actions';
-import userProfileStore from './profile.store';
+import userProfileActions from '../profile/profile.actions';
+import userProfileStore from '../profile/profile.store';
 
 
 function EditProfile (props, context) {
     const fieldKeys = [
-        'firstName',
-        'surname',
-        'email',
-        'phoneNumber',
-        'introduction',
-        'jobTitle',
-        'gender',
-        'birthday',
-        'nationality',
-        'employer',
-        'education',
-        'interests',
-        'languages',
+        'accountEditor',
     ];
 
-    const pageLabel = context.d2.i18n.getTranslation('user_profile');
+    const pageLabel = context.d2.i18n.getTranslation('account_settings');
 
     return (
         <FormFields
