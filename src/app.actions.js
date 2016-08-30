@@ -49,7 +49,6 @@ appActions.init.subscribe(() => {
                 dbLocales,
                 systemDefault
             });
-            console.warn(optionValueStore.state);
 
             log.debug('Current user profile loaded:', userProfileStore.state);
             log.debug('Current user settings loaded:', userSettingsStore.state);
