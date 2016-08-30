@@ -3,9 +3,10 @@
 *.iml
 
 # Project folders/dependencies
-node_modules
-build
-coverage
+node_modules/
+build/
+coverage/
+target/
 manifest.webapp
 
 # Misc files
