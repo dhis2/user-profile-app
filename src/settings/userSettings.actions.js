@@ -24,14 +24,19 @@ userSettingsActions.save.subscribe(({data, complete, error}) => {
 
         d2.currentUser.userSettings.set(key, value)
             .then(() => {
-                updateUserSettingsStore();
+                userSettingsStore.state[key] = value;
+                userSettingsStore.setState(userSettingsStore.state);
+
+                log.debug('User Setting updated successfully.');
+                appActions.showSnackbarMessage(d2.i18n.getTranslation('settings_updated'));
+
                 complete();
             })
             .catch((err) => {
-                // TODO: Fix the API and don't swallow 500 errors
                 log.warn('API call failed:', err);
-                updateUserSettingsStore();
-                complete();
+                appActions.showSnackbarMessage(d2.i18n.getTranslation('failed_to_update_settings'));
+
+                error();
             });
     });
 });
