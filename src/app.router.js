@@ -42,10 +42,10 @@ class AppRouter extends React.Component {
                 <Snackbar />
                 <Router history={hashHistory}>
                     <Route component={WrAppadApp}>
+                        <Route path="settings" component={UserSettings} />
                         <Route path="profile" component={Profile} />
                         <Route path="account" component={Account} />
-                        <Route path="settings" component={UserSettings} />
-                        <Redirect from="/" to="/profile" />
+                        <Redirect from="/" to="/settings" />
                     </Route>
                 </Router>
             </div>
