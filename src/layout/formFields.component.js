@@ -202,9 +202,9 @@ class UserSettingsFields extends React.Component {
                 // For settings that have a system wide default value, and is overridden by the current user, display
                 // the system wide default under the current user setting (which may be the same value)
                 if (mapping.showSystemDefault && field.value && field.value !== null && field.value !== 'null' &&
-                    optionValueStore.state.systemDefault[field.name]) {
+                    optionValueStore.state.systemDefault.hasOwnProperty(field.name)) {
                     const systemValue = optionValueStore.state.systemDefault[field.name];
-                    const actualSystemValue = systemValue && systemValue !== null && systemValue !== 'null';
+                    const actualSystemValue = systemValue !== undefined && systemValue !== null && systemValue !== 'null';
                     let systemValueLabel = systemValue;
 
                     if (mapping.source && actualSystemValue) {
@@ -213,7 +213,7 @@ class UserSettingsFields extends React.Component {
                             [0].displayName;
                     } else if (field.props.menuItems && actualSystemValue) {
                         systemValueLabel = field.props.menuItems
-                            .filter(item => item.id === systemValue || (systemValue === true && item.id === 'true'))
+                            .filter(item => item.id === systemValue || String(systemValue) === item.id)
                             [0].displayName;
                     } else {
                         systemValueLabel = d2.i18n.getTranslation(systemValue);
