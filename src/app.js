@@ -1,10 +1,4 @@
-/* eslint-disable */
-const dhisDevConfig = DHIS_CONFIG;
-
-if (process.env.NODE_ENV !== 'production') {
-    jQuery.ajaxSetup({ headers: { Authorization: dhisDevConfig.authorization } });
-}
-/* eslint-enable */
+const dhisDevConfig = DHIS_CONFIG; // eslint-disable-line
 
 import React from 'react';
 import ReactDOM from 'react-dom';
