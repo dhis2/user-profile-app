@@ -26,6 +26,7 @@ userSettingsActions.save.subscribe(({data, complete, error}) => {
                 complete();
             })
             .catch((err) => {
+                userSettingsStore.setState(userSettingsStore.state);
                 log.warn('API call failed:', err);
                 appActions.showSnackbarMessage(d2.i18n.getTranslation('failed_to_update_settings'));
 
