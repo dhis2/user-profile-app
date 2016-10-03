@@ -90,19 +90,21 @@ class UserSettingsFields extends React.Component {
         this.disposables.dispose();
     }
 
-    renderFields(settings) {
+    renderFields(fieldNames) {
         const d2 = this.context.d2;
         const valueStore = this.props.valueStore;
 
         /* eslint-disable complexity */
-        const fields = settings
-            .map(key => {
-                const mapping = userSettingsKeyMapping[key];
+        const fields = fieldNames
+            .map(fieldName => {
+                const mapping = userSettingsKeyMapping[fieldName];
 
                 // Base config, common for all component types
                 const fieldBase = {
-                    name: key,
-                    value: valueStore.state && valueStore.state.hasOwnProperty(key) && String(valueStore.state[key]).trim() || '',
+                    name: fieldName,
+                    value: valueStore.state
+                        && valueStore.state.hasOwnProperty(fieldName)
+                        && String(valueStore.state[fieldName]).trim() || '',
                     component: TextField,
                     props: {
                         floatingLabelText: d2.i18n.getTranslation(mapping.label),
@@ -130,7 +132,9 @@ class UserSettingsFields extends React.Component {
                 case 'date':
                     return Object.assign({}, fieldBase, {
                         component: DatePicker,
-                        value: valueStore.state && valueStore.state[key] ? new Date(valueStore.state[key]) : '',
+                        value: valueStore.state && valueStore.state[fieldName]
+                            ? new Date(valueStore.state[fieldName])
+                            : '',
                         props: Object.assign({}, fieldBase.props, {
                             floatingLabelText: d2.i18n.getTranslation(mapping.label),
                             dateFormat: userSettingsStore.state['keyDateFormat'] || '',
@@ -148,7 +152,7 @@ class UserSettingsFields extends React.Component {
                             style: fieldBase.props.style,
                             checked: fieldBase.value.toString() === 'true',
                             onChange: (e, v) => {
-                                userSettingsActions.saveUserKey(key, v ? 'true' : 'false');
+                                userSettingsActions.saveUserKey(fieldName, v ? 'true' : 'false');
                             },
                         },
                     });
@@ -158,8 +162,8 @@ class UserSettingsFields extends React.Component {
                         fieldBase.value = 'null';
                     }
 
-                    const value = valueStore.state[key] || valueStore.state[key] === false
-                        ? valueStore.state[key].toString()
+                    const value = valueStore.state[fieldName] || valueStore.state[fieldName] === false
+                        ? valueStore.state[fieldName].toString()
                         : 'null';
 
                     const menuItems = (mapping.source
@@ -191,7 +195,7 @@ class UserSettingsFields extends React.Component {
                     });
 
                 default:
-                    log.warn(`Unknown control type "${mapping.type}" encountered for field "${key}"`);
+                    log.warn(`Unknown control type "${mapping.type}" encountered for field "${fieldName}"`);
                     return {};
                 }
             })
@@ -204,7 +208,8 @@ class UserSettingsFields extends React.Component {
                 if (mapping.showSystemDefault && field.value && field.value !== null && field.value !== 'null' &&
                     optionValueStore.state.systemDefault.hasOwnProperty(field.name)) {
                     const systemValue = optionValueStore.state.systemDefault[field.name];
-                    const actualSystemValue = systemValue !== undefined && systemValue !== null && systemValue !== 'null';
+                    const actualSystemValue = systemValue !== undefined
+                        && systemValue !== null && systemValue !== 'null';
                     let systemValueLabel = systemValue;
 
                     if (mapping.source && actualSystemValue) {

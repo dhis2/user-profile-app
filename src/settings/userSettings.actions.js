@@ -15,13 +15,6 @@ userSettingsActions.save.subscribe(({data, complete, error}) => {
     const value = data[1] === 'null' ? null : data[1];
 
     getD2().then(d2 => {
-        const updateUserSettingsStore = () => {
-            userSettingsStore.state[key] = value;
-            userSettingsStore.setState(userSettingsStore.state);
-            log.debug('User Setting updated successfully.');
-            appActions.showSnackbarMessage(d2.i18n.getTranslation('settings_updated'));
-        };
-
         d2.currentUser.userSettings.set(key, value)
             .then(() => {
                 userSettingsStore.state[key] = value;
