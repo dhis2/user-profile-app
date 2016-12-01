@@ -4,257 +4,261 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-01 00:28-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-12-01 07:44+0000\n"
+"Last-Translator: zeferino <zsaugene@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.0.0b3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.8\n"
+"X-POOTLE-MTIME: 1480578280.000000\n"
 
 #: user_profile
 msgid "User profile"
-msgstr ""
+msgstr "Perfil do usuário"
 
 #: account_settings
 msgid "Account settings"
-msgstr ""
+msgstr "Configurações da conta "
 
 #: user_settings
 msgid "User settings"
-msgstr ""
+msgstr "Configurações do usuário"
 
 #: user_email_address
 msgid "E-mail"
-msgstr ""
+msgstr "e-mail"
 
 #: surname
 msgid "Surname"
-msgstr ""
+msgstr "Apelido"
 
 #: first_name
 msgid "First name"
-msgstr ""
+msgstr "Primeiro nome"
 
 #: old_password
 msgid "Old password"
-msgstr ""
+msgstr "Senha anterior"
 
 #: new_password
 msgid "New password"
-msgstr ""
+msgstr "Nova senha"
 
 #: repeat_new_password
 msgid "Repeat new password"
-msgstr ""
+msgstr "Repita a nova senha"
 
 #: openid
 msgid "OpenID"
-msgstr ""
+msgstr "OpenID"
 
 #: username
 msgid "Username"
-msgstr ""
+msgstr "Nome de usuário"
 
 #: phone_number
 msgid "Mobile phone number"
-msgstr ""
+msgstr "Número de telemóvel"
 
 #: job_title
 msgid "Job title"
-msgstr ""
+msgstr "Profissão"
 
 #: introduction
 msgid "Introduction"
-msgstr ""
+msgstr "Apresentação"
 
 #: gender
 msgid "Gender"
-msgstr ""
+msgstr "Sexo"
 
 #: male
 msgctxt "male"
 msgid "Male"
-msgstr ""
+msgstr "Masculino"
 
 #: female
 msgctxt "female"
 msgid "Female"
-msgstr ""
+msgstr "Feminino"
 
 #: other
 msgctxt "other"
 msgid "Other"
-msgstr ""
+msgstr "Outro"
 
 #: gender_male
 msgctxt "gender_male"
 msgid "Male"
-msgstr ""
+msgstr "Masculino"
 
 #: gender_female
 msgctxt "gender_female"
 msgid "Female"
-msgstr ""
+msgstr "Feminino"
 
 #: gender_other
 msgctxt "gender_other"
 msgid "Other"
-msgstr ""
+msgstr "Outro"
 
 #: birthday
 msgid "Birthday"
-msgstr ""
+msgstr "Aniversário"
 
 #: nationality
 msgid "Nationality"
-msgstr ""
+msgstr "Nacionalidade"
 
 #: employer
 msgid "Employer"
-msgstr ""
+msgstr "Empregador"
 
 #: education
 msgid "Education"
-msgstr ""
+msgstr "Escolaridade"
 
 #: interests
 msgid "Interests"
-msgstr ""
+msgstr "Interesses"
 
 #: languages
 msgid "Languages"
-msgstr ""
+msgstr "Idiomas"
 
 #: update_user_profile_success
 msgid "User profile updated"
-msgstr ""
+msgstr "Perfil do usuário actualizado "
 
 #: settings
 msgid "Settings"
-msgstr ""
+msgstr "Configuração"
 
 #: property_to_display_in_analysis_modules
 msgctxt "property_to_display_in_analysis_modules"
 msgid "Property to display in analysis modules"
-msgstr ""
+msgstr "Propriedade a exibir nos módulos de análise"
 
 #: general
 msgid "General"
-msgstr ""
+msgstr "Geral "
 
 #: message
 msgid "Message"
-msgstr ""
+msgstr "Mensagem"
 
 #: settings_updated
 msgid "Settings updated"
-msgstr ""
+msgstr "Configurações actualizadas"
 
 #: failed_to_update_settings
 msgid "Failed to update settings"
-msgstr ""
+msgstr "Falha na actualização das configurações"
 
 #: style
 msgid "Style"
-msgstr ""
+msgstr "Estilo"
 
 #: db_language
 msgid "Database language"
-msgstr ""
+msgstr "Idioma da base de dados"
 
 #: language
 msgid "Interface language"
-msgstr ""
+msgstr "Idioma da interface"
 
 #: enable_message_email_notifications
 msgid "Enable message email notifications"
-msgstr ""
+msgstr "Receber notificações de e-mail"
 
 #: enable_message_sms_notifications
 msgid "Enable message SMS notifications"
-msgstr ""
+msgstr "Receber notificações de SMS"
 
 #: analysis_module
 msgctxt "analysis_module"
 msgid "Property to display in analysis modules"
-msgstr ""
+msgstr "Propriedade a exibir nos módulos de análise"
 
 #: name
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #: short_name
 msgid "Short name"
-msgstr ""
+msgstr "Nome curto"
 
 #: system_default
 msgid "System default"
-msgstr ""
+msgstr "Padrão do sistema"
 
 #: value_should_be_an_email
 msgid "Please enter a valid email address"
-msgstr ""
+msgstr "Por favor introduza um endereço de email válido"
 
 #: update_user_profile_fail
 msgid "Failed to update user profile"
-msgstr ""
+msgstr "Falha na atualização do perfil de usuário."
 
 #: update_settings_fail
 msgid "Fialed to update user settings"
-msgstr ""
+msgstr "Falha na actualização das configurações do usuário"
 
 #: update_password
 msgid "Update password"
-msgstr ""
+msgstr "Actualize a palavra-passe/senha"
 
 #: invalid_password
 msgid ""
 "Password should be at least 8 characters with at least 1 digit and 1 "
 "uppercase letter"
 msgstr ""
+"Deve ser uma senha com pelo menos 8 caracteres que combinem letras e "
+"números, e pelo menos 1 letra maiúscula"
 
 #: passwords_do_not_match
 msgid "The entered values do not match. Please re-enter."
-msgstr ""
+msgstr "Os valores introduzidos nao conscidem. Por favor, volte a introduzir."
 
 #: use_system_default
 msgid "Use system default"
-msgstr ""
+msgstr "Use padrão do sistema"
 
 #: true_notifications
 msgid "Yes"
-msgstr ""
+msgstr "Sim"
 
 #: false_notifications
 msgid "No"
-msgstr ""
+msgstr "Não"
 
 #: value_required
 msgid "This field can't be left blank"
-msgstr ""
+msgstr "Este campo não pode ser deixado em branco"
 
 #: please_enter_the_correct_password
 msgid "Please enter the correct password"
-msgstr ""
+msgstr "Por favor, insira um senha correcta"
 
 #: no_changes_have_been_made
 msgid "No changes have been made"
-msgstr ""
+msgstr "Nenhuma modificação foi efetuada"
 
 #: validating_please_try_again
 msgid "The form is currently being validated. Please try again."
-msgstr ""
+msgstr "O formulário esta sendo validado. Tente novamente."
 
 #: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
-msgstr ""
+msgstr "O formulário contém falhas. Corrija os erros e tente novamente."
 
 #: password_update_success
 msgid "Your password was updated successfully"
-msgstr ""
+msgstr "Senha foi alterada com sucesso. "
 
 #: password_update_failed
 msgid "Failed to update password"
-msgstr ""
+msgstr "Falha na atualização da senha"
