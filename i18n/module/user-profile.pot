@@ -1,0 +1,260 @@
+#. extracted from i18n_module_en.properties
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-01 00:28-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 2.0.0b3\n"
+
+#: user_profile
+msgid "User profile"
+msgstr ""
+
+#: account_settings
+msgid "Account settings"
+msgstr ""
+
+#: user_settings
+msgid "User settings"
+msgstr ""
+
+#: user_email_address
+msgid "E-mail"
+msgstr ""
+
+#: surname
+msgid "Surname"
+msgstr ""
+
+#: first_name
+msgid "First name"
+msgstr ""
+
+#: old_password
+msgid "Old password"
+msgstr ""
+
+#: new_password
+msgid "New password"
+msgstr ""
+
+#: repeat_new_password
+msgid "Repeat new password"
+msgstr ""
+
+#: openid
+msgid "OpenID"
+msgstr ""
+
+#: username
+msgid "Username"
+msgstr ""
+
+#: phone_number
+msgid "Mobile phone number"
+msgstr ""
+
+#: job_title
+msgid "Job title"
+msgstr ""
+
+#: introduction
+msgid "Introduction"
+msgstr ""
+
+#: gender
+msgid "Gender"
+msgstr ""
+
+#: male
+msgctxt "male"
+msgid "Male"
+msgstr ""
+
+#: female
+msgctxt "female"
+msgid "Female"
+msgstr ""
+
+#: other
+msgctxt "other"
+msgid "Other"
+msgstr ""
+
+#: gender_male
+msgctxt "gender_male"
+msgid "Male"
+msgstr ""
+
+#: gender_female
+msgctxt "gender_female"
+msgid "Female"
+msgstr ""
+
+#: gender_other
+msgctxt "gender_other"
+msgid "Other"
+msgstr ""
+
+#: birthday
+msgid "Birthday"
+msgstr ""
+
+#: nationality
+msgid "Nationality"
+msgstr ""
+
+#: employer
+msgid "Employer"
+msgstr ""
+
+#: education
+msgid "Education"
+msgstr ""
+
+#: interests
+msgid "Interests"
+msgstr ""
+
+#: languages
+msgid "Languages"
+msgstr ""
+
+#: update_user_profile_success
+msgid "User profile updated"
+msgstr ""
+
+#: settings
+msgid "Settings"
+msgstr ""
+
+#: property_to_display_in_analysis_modules
+msgctxt "property_to_display_in_analysis_modules"
+msgid "Property to display in analysis modules"
+msgstr ""
+
+#: general
+msgid "General"
+msgstr ""
+
+#: message
+msgid "Message"
+msgstr ""
+
+#: settings_updated
+msgid "Settings updated"
+msgstr ""
+
+#: failed_to_update_settings
+msgid "Failed to update settings"
+msgstr ""
+
+#: style
+msgid "Style"
+msgstr ""
+
+#: db_language
+msgid "Database language"
+msgstr ""
+
+#: language
+msgid "Interface language"
+msgstr ""
+
+#: enable_message_email_notifications
+msgid "Enable message email notifications"
+msgstr ""
+
+#: enable_message_sms_notifications
+msgid "Enable message SMS notifications"
+msgstr ""
+
+#: analysis_module
+msgctxt "analysis_module"
+msgid "Property to display in analysis modules"
+msgstr ""
+
+#: name
+msgid "Name"
+msgstr ""
+
+#: short_name
+msgid "Short name"
+msgstr ""
+
+#: system_default
+msgid "System default"
+msgstr ""
+
+#: value_should_be_an_email
+msgid "Please enter a valid email address"
+msgstr ""
+
+#: update_user_profile_fail
+msgid "Failed to update user profile"
+msgstr ""
+
+#: update_settings_fail
+msgid "Fialed to update user settings"
+msgstr ""
+
+#: update_password
+msgid "Update password"
+msgstr ""
+
+#: invalid_password
+msgid ""
+"Password should be at least 8 characters with at least 1 digit and 1 "
+"uppercase letter"
+msgstr ""
+
+#: passwords_do_not_match
+msgid "The entered values do not match. Please re-enter."
+msgstr ""
+
+#: use_system_default
+msgid "Use system default"
+msgstr ""
+
+#: true_notifications
+msgid "Yes"
+msgstr ""
+
+#: false_notifications
+msgid "No"
+msgstr ""
+
+#: value_required
+msgid "This field can't be left blank"
+msgstr ""
+
+#: please_enter_the_correct_password
+msgid "Please enter the correct password"
+msgstr ""
+
+#: no_changes_have_been_made
+msgid "No changes have been made"
+msgstr ""
+
+#: validating_please_try_again
+msgid "The form is currently being validated. Please try again."
+msgstr ""
+
+#: fix_errors_and_try_again
+msgid "The form contains errors. Please fix the errors and try again."
+msgstr ""
+
+#: password_update_success
+msgid "Your password was updated successfully"
+msgstr ""
+
+#: password_update_failed
+msgid "Failed to update password"
+msgstr ""
