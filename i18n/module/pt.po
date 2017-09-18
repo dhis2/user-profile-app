@@ -1,0 +1,264 @@
+#. extracted from i18n_module_en.properties
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-01 00:28-0400\n"
+"PO-Revision-Date: 2016-12-01 07:44+0000\n"
+"Last-Translator: zeferino <zsaugene@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.8\n"
+"X-POOTLE-MTIME: 1480578280.000000\n"
+
+#: user_profile
+msgid "User profile"
+msgstr "Perfil do usuário"
+
+#: account_settings
+msgid "Account settings"
+msgstr "Configurações da conta "
+
+#: user_settings
+msgid "User settings"
+msgstr "Configurações do usuário"
+
+#: user_email_address
+msgid "E-mail"
+msgstr "e-mail"
+
+#: surname
+msgid "Surname"
+msgstr "Apelido"
+
+#: first_name
+msgid "First name"
+msgstr "Primeiro nome"
+
+#: old_password
+msgid "Old password"
+msgstr "Senha anterior"
+
+#: new_password
+msgid "New password"
+msgstr "Nova senha"
+
+#: repeat_new_password
+msgid "Repeat new password"
+msgstr "Repita a nova senha"
+
+#: openid
+msgid "OpenID"
+msgstr "OpenID"
+
+#: username
+msgid "Username"
+msgstr "Nome de usuário"
+
+#: phone_number
+msgid "Mobile phone number"
+msgstr "Número de telemóvel"
+
+#: job_title
+msgid "Job title"
+msgstr "Profissão"
+
+#: introduction
+msgid "Introduction"
+msgstr "Apresentação"
+
+#: gender
+msgid "Gender"
+msgstr "Sexo"
+
+#: male
+msgctxt "male"
+msgid "Male"
+msgstr "Masculino"
+
+#: female
+msgctxt "female"
+msgid "Female"
+msgstr "Feminino"
+
+#: other
+msgctxt "other"
+msgid "Other"
+msgstr "Outro"
+
+#: gender_male
+msgctxt "gender_male"
+msgid "Male"
+msgstr "Masculino"
+
+#: gender_female
+msgctxt "gender_female"
+msgid "Female"
+msgstr "Feminino"
+
+#: gender_other
+msgctxt "gender_other"
+msgid "Other"
+msgstr "Outro"
+
+#: birthday
+msgid "Birthday"
+msgstr "Aniversário"
+
+#: nationality
+msgid "Nationality"
+msgstr "Nacionalidade"
+
+#: employer
+msgid "Employer"
+msgstr "Empregador"
+
+#: education
+msgid "Education"
+msgstr "Escolaridade"
+
+#: interests
+msgid "Interests"
+msgstr "Interesses"
+
+#: languages
+msgid "Languages"
+msgstr "Idiomas"
+
+#: update_user_profile_success
+msgid "User profile updated"
+msgstr "Perfil do usuário actualizado "
+
+#: settings
+msgid "Settings"
+msgstr "Configuração"
+
+#: property_to_display_in_analysis_modules
+msgctxt "property_to_display_in_analysis_modules"
+msgid "Property to display in analysis modules"
+msgstr "Propriedade a exibir nos módulos de análise"
+
+#: general
+msgid "General"
+msgstr "Geral "
+
+#: message
+msgid "Message"
+msgstr "Mensagem"
+
+#: settings_updated
+msgid "Settings updated"
+msgstr "Configurações actualizadas"
+
+#: failed_to_update_settings
+msgid "Failed to update settings"
+msgstr "Falha na actualização das configurações"
+
+#: style
+msgid "Style"
+msgstr "Estilo"
+
+#: db_language
+msgid "Database language"
+msgstr "Idioma da base de dados"
+
+#: language
+msgid "Interface language"
+msgstr "Idioma da interface"
+
+#: enable_message_email_notifications
+msgid "Enable message email notifications"
+msgstr "Receber notificações de e-mail"
+
+#: enable_message_sms_notifications
+msgid "Enable message SMS notifications"
+msgstr "Receber notificações de SMS"
+
+#: analysis_module
+msgctxt "analysis_module"
+msgid "Property to display in analysis modules"
+msgstr "Propriedade a exibir nos módulos de análise"
+
+#: name
+msgid "Name"
+msgstr "Nome"
+
+#: short_name
+msgid "Short name"
+msgstr "Nome curto"
+
+#: system_default
+msgid "System default"
+msgstr "Padrão do sistema"
+
+#: value_should_be_an_email
+msgid "Please enter a valid email address"
+msgstr "Por favor introduza um endereço de email válido"
+
+#: update_user_profile_fail
+msgid "Failed to update user profile"
+msgstr "Falha na atualização do perfil de usuário."
+
+#: update_settings_fail
+msgid "Fialed to update user settings"
+msgstr "Falha na actualização das configurações do usuário"
+
+#: update_password
+msgid "Update password"
+msgstr "Actualize a palavra-passe/senha"
+
+#: invalid_password
+msgid ""
+"Password should be at least 8 characters with at least 1 digit and 1 "
+"uppercase letter"
+msgstr ""
+"Deve ser uma senha com pelo menos 8 caracteres que combinem letras e "
+"números, e pelo menos 1 letra maiúscula"
+
+#: passwords_do_not_match
+msgid "The entered values do not match. Please re-enter."
+msgstr "Os valores introduzidos nao conscidem. Por favor, volte a introduzir."
+
+#: use_system_default
+msgid "Use system default"
+msgstr "Use padrão do sistema"
+
+#: true_notifications
+msgid "Yes"
+msgstr "Sim"
+
+#: false_notifications
+msgid "No"
+msgstr "Não"
+
+#: value_required
+msgid "This field can't be left blank"
+msgstr "Este campo não pode ser deixado em branco"
+
+#: please_enter_the_correct_password
+msgid "Please enter the correct password"
+msgstr "Por favor, insira um senha correcta"
+
+#: no_changes_have_been_made
+msgid "No changes have been made"
+msgstr "Nenhuma modificação foi efetuada"
+
+#: validating_please_try_again
+msgid "The form is currently being validated. Please try again."
+msgstr "O formulário esta sendo validado. Tente novamente."
+
+#: fix_errors_and_try_again
+msgid "The form contains errors. Please fix the errors and try again."
+msgstr "O formulário contém falhas. Corrija os erros e tente novamente."
+
+#: password_update_success
+msgid "Your password was updated successfully"
+msgstr "Senha foi alterada com sucesso. "
+
+#: password_update_failed
+msgid "Failed to update password"
+msgstr "Falha na atualização da senha"
