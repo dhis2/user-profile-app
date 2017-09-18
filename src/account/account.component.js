@@ -6,7 +6,7 @@ import userProfileActions from '../profile/profile.actions';
 import userProfileStore from '../profile/profile.store';
 
 
-function EditProfile (props, context) {
+function EditProfile(props, context) {
     const fieldKeys = [
         'accountEditor',
     ];

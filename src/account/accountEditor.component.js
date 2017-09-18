@@ -106,7 +106,7 @@ class AccountEditor extends React.Component {
                     validator: isNotEmpty,
                     message: '',
                 }],
-                asyncValidators: [ this.isVerifiedPassword ],
+                asyncValidators: [this.isVerifiedPassword],
             },
             {
                 name: 'newPassword',
