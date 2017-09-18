@@ -5,7 +5,7 @@ import { isValidPassword } from 'd2-ui/lib/forms/Validators';
 import FormBuilder from 'd2-ui/lib/forms/FormBuilder.component';
 import TextField from 'd2-ui/lib/form-fields/TextField';
 
-import RaisedButton from 'material-ui/lib/raised-button';
+import RaisedButton from 'material-ui/RaisedButton';
 
 import appActions from '../app.actions';
 import accountActions from './account.actions';

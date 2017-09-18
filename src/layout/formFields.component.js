@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import log from 'loglevel';
 
 // Material UI
-import Card from 'material-ui/lib/card/card';
-import CardText from 'material-ui/lib/card/card-text';
+import { Card, CardText } from 'material-ui/Card';
 
 // D2 UI
 import { wordToValidatorMap } from 'd2-ui/lib/forms/Validators';
