@@ -1,26 +1,35 @@
-# dhis-user-profile-app
-DHIS2 user profile app
+# DHIS2 user profile app [![Build Status](https://travis-ci.org/dhis2/user-profile-app.svg?branch=master)](https://travis-ci.org/dhis2/user-profile-app)
 
-# Project Link
-https://summerofcode.withgoogle.com/projects/#5404582838534144
+The user profile app is used for changing user profile information, user settings and user passwords.
 
-### Pre-requisites
-Since the app uses webpack as a build tool you will need to install this first.
+## Development
+
+To work on this app: Clone the repo, install the dependencies using npm or yarn, and run the start script:
+
 ```sh
-npm i -g webpack webpack-dev-server
-```
+> git clone https://github.com/dhis2/user-profile-app.git
+Cloning into 'user-profile-app'...
+remote: Counting objects: 705, done.
+remote: Total 705 (delta 0), reused 0 (delta 0), pack-reused 705
+Receiving objects: 100% (705/705), 177.76 KiB | 500.00 KiB/s, done.
+Resolving deltas: 100% (423/423), done.
 
-### Running the dev server
-The following command will start the development server which uses CORS to communicate with a DHIS2 instance. 
-```sh
-webpack-dev-server
-# or
-npm start
-```
+> cd user-profile-app
+> yarn install
+yarn install v1.0.1
+[1/4] 🔍  Resolving packages...
+[2/4] 🚚  Fetching packages...
+[3/4] 🔗  Linking dependencies...
+[4/4] 📃  Building fresh packages...
+✨  Done in 15.45s.
 
-
-### Building the project
-To build a production version of the application run the following command.
-```sh
-npm run build
+> yarn start
+yarn start v1.0.1
+$ d2-manifest package.json manifest.webapp
+Reading package data: package.json
+Validating manifest: ✓ Ok
+Writing manifest to: manifest.webapp
+Done!
+$ webpack-dev-server
+[...]
 ```
