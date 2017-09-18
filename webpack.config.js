@@ -29,8 +29,7 @@ function log(req, res, opt) {
 
 const webpackConfig = {
     context: __dirname,
-    contentBase: __dirname,
-    entry: './src/app.js',
+    entry: './src/index.js',
     devtool: 'source-map',
     output: {
         path: __dirname + '/build',
@@ -42,18 +41,18 @@ const webpackConfig = {
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
-                loader: 'babel',
+                loader: 'babel-loader',
                 query: {
                     presets: ['es2015', 'stage-0', 'react'],
                 },
             },
             {
                 test: /\.css$/,
-                loader: 'style!css',
+                loader: 'style-loader!css-loader',
             },
             {
                 test: /\.scss$/,
-                loader: 'style!css!sass',
+                loader: 'style-loader!css-loader!sass-loader',
             },
         ],
     },
@@ -64,18 +63,12 @@ const webpackConfig = {
         },
     },
     devServer: {
-        progress: true,
-        colors: true,
         port: 8081,
         inline: true,
-        compress: true,
+        // compress: true,
         historyApiFallback: true,
         proxy: [
-            { path: '/api/*', target: dhisConfig.baseUrl, bypass: log },
-            { path: '/dhis-web-commons/*', target: dhisConfig.baseUrl, bypass: log },
-            { path: '/icons/*', target: dhisConfig.baseUrl, bypass: log },
-            { path: '/css/*', target: 'http://localhost:8081/build', bypass: log },
-            { path: '/jquery.min.js', target: 'http://localhost:8081/node_modules/jquery/dist', bypass: log },
+            { path: ['/api', '/dhis-web-commons'], target: dhisConfig.baseUrl, bypass: log },
             { path: '/polyfill.min.js', target: 'http://localhost:8081/node_modules/babel-polyfill/dist', bypass: log },
         ],
     },
@@ -88,8 +81,7 @@ if (!isDevBuild) {
             'process.env.NODE_ENV': '"production"',
             DHIS_CONFIG: JSON.stringify({}),
         }),
-        new webpack.optimize.DedupePlugin(),
-        new webpack.optimize.OccurenceOrderPlugin(),
+        new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.optimize.UglifyJsPlugin({
             //     compress: {
             //         warnings: false,
