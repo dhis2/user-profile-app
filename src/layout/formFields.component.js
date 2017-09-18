@@ -62,18 +62,16 @@ const styles = {
     },
 };
 
-function wrapWithLabel(d2, component, label) {
-    return class extends component {
-        render() {
-            const labelStyle = styles.userSettingsOverride;
+function wrapWithLabel(WrappedComponent, label) {
+    return (props) => {
+        const labelStyle = styles.userSettingsOverride;
 
-            return (
-                <div>
-                    {super.render()}
-                    <div style={labelStyle}>{label}</div>
-                </div>
-            );
-        }
+        return (
+            <div>
+                <WrappedComponent {...props} />
+                <div style={labelStyle}>{label}</div>
+            </div>
+        );
     };
 }
 
@@ -113,8 +111,8 @@ class UserSettingsFields extends React.Component {
                         hintText: mapping.hintText && d2.i18n.getTranslation(mapping.hintText),
                     },
                     validators: (mapping.validators || []).map(name => (wordToValidatorMap.has(name) ? {
-                            validator: wordToValidatorMap.get(name),
-                            message: d2.i18n.getTranslation(wordToValidatorMap.get(name).message),
+                        validator: wordToValidatorMap.get(name),
+                        message: d2.i18n.getTranslation(wordToValidatorMap.get(name).message),
                     } : false))
                         .filter(v => v),
                 };
@@ -176,15 +174,23 @@ class UserSettingsFields extends React.Component {
                             return { id, displayName };
                         })).slice();
 
+                    const systemSettingValue = optionValueStore.state
+                        && optionValueStore.state.systemDefault
+                        && optionValueStore.state.systemDefault[fieldName];
+                    const systemSettingLabel = optionValueStore.state[mapping.source]
+                        ? optionValueStore.state[mapping.source]
+                            .filter(x => x.id === systemSettingValue)
+                            .map(x => x.displayName)[0] || d2.i18n.getTranslation('no_value')
+                        : d2.i18n.getTranslation(systemSettingValue === 'null' ? 'no_value' : systemSettingValue);
+
                     return Object.assign({}, fieldBase, {
                         component: SelectField,
                         value,
                         props: Object.assign({}, fieldBase.props, {
                             includeEmpty: !!mapping.includeEmpty,
-                            emptyLabel: (
-                                mapping.includeEmpty && mapping.emptyLabel &&
-                                d2.i18n.getTranslation(mapping.emptyLabel) || undefined
-                            ),
+                            emptyLabel: mapping.includeEmpty
+                                ? `${d2.i18n.getTranslation('use_system_default')} (${systemSettingLabel})`
+                                : undefined,
                             noOptionsLabel: d2.i18n.getTranslation('no_options'),
                         }, { menuItems }),
                     });
@@ -225,7 +231,7 @@ class UserSettingsFields extends React.Component {
                     }
 
                     const systemDefaultLabel = `${d2.i18n.getTranslation('system_default')}: ${systemValueLabel}`;
-                    return Object.assign(field, { component: wrapWithLabel(d2, field.component, systemDefaultLabel)});
+                    return Object.assign(field, { component: wrapWithLabel(field.component, systemDefaultLabel) });
                 }
 
                 return field;
