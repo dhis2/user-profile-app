@@ -24,14 +24,14 @@ userProfileActions.save.subscribe(({ data, complete, error }) => {
         payload = { [key]: date.toISOString() };
     }
 
-    getD2().then(d2 => {
+    getD2().then((d2) => {
         userProfileStore.state[key] = value;
         userProfileStore.setState(userProfileStore.state);
 
         // Run field validators
         if (Array.isArray(userSettingsKeyMapping[key].validators)) {
             const validators = userSettingsKeyMapping[key].validators;
-            if (!validators.reduce((prev, curr) => { return prev && wordToValidatorMap.get(curr)(value) }, true)) {
+            if (!validators.reduce((prev, curr) => prev && wordToValidatorMap.get(curr)(value), true)) {
                 log.warn(`One or more validators did not pass for field "${key}" and value "${value}"`);
                 return;
             }

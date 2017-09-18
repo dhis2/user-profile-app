@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import FormFields from '../layout/formFields.component';
 import userSettingsActions from './userSettings.actions';
 import userSettingsStore from './userSettings.store';
 
 
-function EditProfile (props, context) {
+function EditProfile(props, context) {
     const fieldKeys = [
         'keyUiLocale',
         'keyDbLocale',
@@ -27,6 +28,6 @@ function EditProfile (props, context) {
     );
 }
 
-EditProfile.contextTypes = { d2: React.PropTypes.object.isRequired };
+EditProfile.contextTypes = { d2: PropTypes.object.isRequired };
 
 export default EditProfile;

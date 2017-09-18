@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Sidebar from 'd2-ui/lib/sidebar/Sidebar.component';
 import appActions from '../app.actions';
@@ -14,12 +15,13 @@ function SidebarWrapper(props, context) {
         <Sidebar
             sections={sideBarSections}
             onChangeSection={appActions.setCategory}
-            currentSection={props.currentSection || 'profile'}
+            currentSection={props.currentSection}
         />
     );
 }
 
-SidebarWrapper.propTypes = { currentSection: React.PropTypes.string };
-SidebarWrapper.contextTypes = { d2: React.PropTypes.object.isRequired };
+SidebarWrapper.propTypes = { currentSection: PropTypes.string };
+SidebarWrapper.defaultProps = { currentSection: 'profile' };
+SidebarWrapper.contextTypes = { d2: PropTypes.object.isRequired };
 
 export default SidebarWrapper;

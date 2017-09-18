@@ -18,7 +18,7 @@ const appActions = Action.createActionsFromNames([
 ]);
 
 appActions.init.subscribe(() => {
-    getD2().then(d2 => {
+    getD2().then((d2) => {
         const api = d2.Api.getApi();
 
         Promise.all([
@@ -28,7 +28,7 @@ appActions.init.subscribe(() => {
             api.get('userSettings', { useFallback: false }),
 
             d2.system.settings.all(),
-        ]).then(results => {
+        ]).then((results) => {
             const styles = (results[0] || []).map(style => ({ id: style.path, displayName: style.name }));
             const uiLocales = (results[1] || []).map(locale => ({ id: locale.locale, displayName: locale.name }));
             const dbLocales = (results[2] || []).map(locale => ({ id: locale.locale, displayName: locale.name }));
@@ -37,7 +37,7 @@ appActions.init.subscribe(() => {
             const systemDefault = Object.keys(results[4])
                 .filter(key => userSettingsKeys.indexOf(key) !== -1)
                 .reduce((defaults, key) => {
-                    defaults[key] = results[4][key];
+                    defaults[key] = results[4][key]; // eslint-disable-line
                     return defaults;
                 }, {});
 
@@ -47,13 +47,13 @@ appActions.init.subscribe(() => {
                 styles,
                 uiLocales,
                 dbLocales,
-                systemDefault
+                systemDefault,
             });
 
             log.debug('Current user profile loaded:', userProfileStore.state);
             log.debug('Current user settings loaded:', userSettingsStore.state);
             ReactDOM.render(<AppRouter d2={d2} />, document.querySelector('#app'));
-        }, error => {
+        }, (error) => {
             log.error('Failed to load user settings:', error);
         });
     });

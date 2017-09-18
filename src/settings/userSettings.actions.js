@@ -10,11 +10,11 @@ const userSettingsActions = Action.createActionsFromNames([
     'save',
 ]);
 
-userSettingsActions.save.subscribe(({data, complete, error}) => {
+userSettingsActions.save.subscribe(({ data, complete, error }) => {
     const key = data[0];
     const value = data[1] === 'null' ? null : data[1];
 
-    getD2().then(d2 => {
+    getD2().then((d2) => {
         d2.currentUser.userSettings.set(key, value)
             .then(() => {
                 userSettingsStore.state[key] = value;

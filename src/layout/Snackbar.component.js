@@ -19,14 +19,14 @@ class SnackWrapper extends React.Component {
     componentDidMount() {
         this.subscriptions = [];
 
-        this.subscriptions.push(appActions.showSnackbarMessage.subscribe(params => {
+        this.subscriptions.push(appActions.showSnackbarMessage.subscribe((params) => {
             const message = params.data;
             this.setState({ snackbarMessage: message, showSnackbar: !!message });
         }));
     }
 
     componentWillUnmount() {
-        this.subscriptions.forEach(sub => {
+        this.subscriptions.forEach((sub) => {
             sub.dispose();
         });
     }

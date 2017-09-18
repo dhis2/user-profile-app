@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import log from 'loglevel';
 
 // Material UI
@@ -80,14 +81,13 @@ function wrapWithLabel(d2, component, label) {
 
 class UserSettingsFields extends React.Component {
     componentDidMount() {
-        this.disposables;
-        this.disposables = this.props.valueStore.subscribe(() => {
+        this.disposable = this.props.valueStore.subscribe(() => {
             this.forceUpdate();
         });
     }
 
     componentWillUnmount() {
-        this.disposables.dispose();
+        this.disposable.unsubscribe();
     }
 
     renderFields(fieldNames) {
@@ -96,25 +96,27 @@ class UserSettingsFields extends React.Component {
 
         /* eslint-disable complexity */
         const fields = fieldNames
-            .map(fieldName => {
+            .map((fieldName) => {
                 const mapping = userSettingsKeyMapping[fieldName];
 
                 // Base config, common for all component types
                 const fieldBase = {
                     name: fieldName,
-                    value: valueStore.state
+                    value: (
+                        valueStore.state
                         && valueStore.state.hasOwnProperty(fieldName)
-                        && String(valueStore.state[fieldName]).trim() || '',
+                        && String(valueStore.state[fieldName]).trim()
+                    ) || '',
                     component: TextField,
                     props: {
                         floatingLabelText: d2.i18n.getTranslation(mapping.label),
                         style: { width: '100%' },
                         hintText: mapping.hintText && d2.i18n.getTranslation(mapping.hintText),
                     },
-                    validators: (mapping.validators || []).map(name => wordToValidatorMap.has(name) ? {
+                    validators: (mapping.validators || []).map(name => (wordToValidatorMap.has(name) ? {
                             validator: wordToValidatorMap.get(name),
                             message: d2.i18n.getTranslation(wordToValidatorMap.get(name).message),
-                        } : false)
+                    } : false))
                         .filter(v => v),
                 };
 
@@ -137,7 +139,7 @@ class UserSettingsFields extends React.Component {
                             : '',
                         props: Object.assign({}, fieldBase.props, {
                             floatingLabelText: d2.i18n.getTranslation(mapping.label),
-                            dateFormat: userSettingsStore.state['keyDateFormat'] || '',
+                            dateFormat: userSettingsStore.state.keyDateFormat || '',
                             textFieldStyle: { width: '100%' },
                             allowFuture: false,
                         }),
@@ -157,7 +159,7 @@ class UserSettingsFields extends React.Component {
                         },
                     });
 
-                case 'dropdown':
+                case 'dropdown': {
                     if (mapping.includeEmpty && fieldBase.value === '') {
                         fieldBase.value = 'null';
                     }
@@ -167,8 +169,8 @@ class UserSettingsFields extends React.Component {
                         : 'null';
 
                     const menuItems = (mapping.source
-                        ? optionValueStore.state && optionValueStore.state[mapping.source] || []
-                        : Object.keys(mapping.options).map(id => {
+                        ? (optionValueStore.state && optionValueStore.state[mapping.source]) || []
+                        : Object.keys(mapping.options).map((id) => {
                             const displayName = !isNaN(mapping.options[id])
                                 ? mapping.options[id]
                                 : d2.i18n.getTranslation(mapping.options[id]);
@@ -187,6 +189,7 @@ class UserSettingsFields extends React.Component {
                             noOptionsLabel: d2.i18n.getTranslation('no_options'),
                         }, { menuItems }),
                     });
+                }
 
                 case 'accountEditor':
                     return Object.assign({}, fieldBase, {
@@ -200,7 +203,7 @@ class UserSettingsFields extends React.Component {
                 }
             })
             .filter(field => !!field.name)
-            .map(field => {
+            .map((field) => {
                 const mapping = userSettingsKeyMapping[field.name];
 
                 // For settings that have a system wide default value, and is overridden by the current user, display
@@ -214,12 +217,10 @@ class UserSettingsFields extends React.Component {
 
                     if (mapping.source && actualSystemValue) {
                         systemValueLabel = optionValueStore.state[mapping.source]
-                            .filter(item => item.id === systemValue)
-                            [0].displayName;
+                            .filter(item => item.id === systemValue)[0].displayName;
                     } else if (field.props.menuItems && actualSystemValue) {
                         systemValueLabel = field.props.menuItems
-                            .filter(item => item.id === systemValue || String(systemValue) === item.id)
-                            [0].displayName;
+                            .filter(item => item.id === systemValue || String(systemValue) === item.id)[0].displayName;
                     } else {
                         systemValueLabel = d2.i18n.getTranslation(systemValue);
                     }
@@ -253,13 +254,13 @@ class UserSettingsFields extends React.Component {
 }
 
 UserSettingsFields.propTypes = {
-    pageLabel: React.PropTypes.string.isRequired,
-    fieldKeys: React.PropTypes.arrayOf(React.PropTypes.string).isRequired,
-    valueStore: React.PropTypes.object.isRequired,
-    onUpdateField: React.PropTypes.func.isRequired,
+    pageLabel: PropTypes.string.isRequired,
+    fieldKeys: PropTypes.arrayOf(PropTypes.string).isRequired,
+    valueStore: PropTypes.object.isRequired,
+    onUpdateField: PropTypes.func.isRequired,
 };
 UserSettingsFields.contextTypes = {
-    d2: React.PropTypes.object.isRequired,
+    d2: PropTypes.object.isRequired,
 };
 
 

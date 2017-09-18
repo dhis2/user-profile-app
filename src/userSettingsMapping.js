@@ -61,7 +61,7 @@ const userSettingsMapping = {
     /* ============================================================================================================ */
     accountEditor: {
         label: 'account_editor',
-        type: 'accountEditor'
+        type: 'accountEditor',
     },
     /* ============================================================================================================ */
     /* Category: User Settings                                                                                    */
@@ -71,7 +71,6 @@ const userSettingsMapping = {
         type: 'dropdown',
         source: 'uiLocales',
         includeEmpty: true,
-        emptyLabel: 'use_system_default',
         showSystemDefault: true,
     },
     keyDbLocale: {
@@ -79,7 +78,6 @@ const userSettingsMapping = {
         type: 'dropdown',
         source: 'dbLocales',
         includeEmpty: true,
-        emptyLabel: 'use_system_default',
         showSystemDefault: true,
     },
     keyStyle: {
@@ -87,7 +85,6 @@ const userSettingsMapping = {
         type: 'dropdown',
         source: 'styles',
         includeEmpty: true,
-        emptyLabel: 'use_system_default',
         showSystemDefault: true,
     },
     keyAnalysisDisplayProperty: {
@@ -98,7 +95,6 @@ const userSettingsMapping = {
             shortName: 'short_name',
         },
         includeEmpty: true,
-        emptyLabel: 'use_system_default',
         showSystemDefault: true,
     },
     keyMessageEmailNotification: {
@@ -109,7 +105,6 @@ const userSettingsMapping = {
             false: 'false_notifications',
         },
         includeEmpty: true,
-        emptyLabel: 'use_system_default',
         showSystemDefault: true,
     },
     keyMessageSmsNotification: {
@@ -120,7 +115,6 @@ const userSettingsMapping = {
             false: 'false_notifications',
         },
         includeEmpty: true,
-        emptyLabel: 'use_system_default',
         showSystemDefault: true,
     },
 };

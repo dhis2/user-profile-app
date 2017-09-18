@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import FormFields from '../layout/formFields.component';
 import userProfileActions from '../profile/profile.actions';
@@ -22,6 +23,6 @@ function EditProfile (props, context) {
     );
 }
 
-EditProfile.contextTypes = { d2: React.PropTypes.object.isRequired };
+EditProfile.contextTypes = { d2: PropTypes.object.isRequired };
 
 export default EditProfile;

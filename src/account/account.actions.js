@@ -12,7 +12,7 @@ const accountActions = Action.createActionsFromNames([
 accountActions.setPassword.subscribe(({ data: password, complete, error }) => {
     const payload = { userCredentials: { password } };
 
-    getD2().then(d2 => {
+    getD2().then((d2) => {
         const api = d2.Api.getApi();
         api.update('me', payload)
             .then(() => {
@@ -26,6 +26,6 @@ accountActions.setPassword.subscribe(({ data: password, complete, error }) => {
                 error();
             });
     });
-})
+});
 
 export default accountActions;

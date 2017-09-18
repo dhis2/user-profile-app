@@ -1,8 +1,5 @@
 import React from 'react';
-
-import appActions from '../app.actions';
-import accountActions from './account.actions';
-import AppTheme from '../layout/theme';
+import PropTypes from 'prop-types';
 
 import { isValidPassword } from 'd2-ui/lib/forms/Validators';
 import FormBuilder from 'd2-ui/lib/forms/FormBuilder.component';
@@ -10,19 +7,8 @@ import TextField from 'd2-ui/lib/form-fields/TextField';
 
 import RaisedButton from 'material-ui/lib/raised-button';
 
-const styles = {
-    header: {
-        fontSize: 24,
-        fontWeight: 300,
-        color: AppTheme.rawTheme.palette.textColor,
-        padding: '24px 0 12px 16px',
-    },
-    card: {
-        marginTop: 8,
-        marginRight: '1rem',
-        padding: '0 1rem',
-    },
-};
+import appActions from '../app.actions';
+import accountActions from './account.actions';
 
 function isNotEmpty(value) {
     return value && String(value).trim().length > 0;
@@ -72,8 +58,9 @@ class AccountEditor extends React.Component {
         return true;
     }
 
-    updatePassword(e) {
-        const formState = this.refs.formBuilder.state.form;
+    /* eslint-disable */
+    updatePassword() {
+        const formState = this.formBuilder ? this.formBuilder.state.form : {};
 
         if (formState.pristine === true || !isNotEmpty(this.state.oldPassword)) {
             appActions.showSnackbarMessage(this.getTranslation('no_changes_have_been_made'));
@@ -87,6 +74,7 @@ class AccountEditor extends React.Component {
             accountActions.setPassword(this.state.newPassword);
         }
     }
+    /* eslint-enable */
 
     updateState(e, v) {
         this.setState({ [e]: v });
@@ -165,10 +153,12 @@ class AccountEditor extends React.Component {
             },
         ];
 
-        return <FormBuilder fields={fields} onUpdateField={this.updateState} ref="formBuilder" />;
+        const setRef = (r) => { this.formBuilder = r; };
+
+        return <FormBuilder fields={fields} onUpdateField={this.updateState} ref={setRef} />;
     }
 }
-
-AccountEditor.contextTypes = { d2: React.PropTypes.object.isRequired };
+AccountEditor.propTypes = { username: PropTypes.string.isRequired };
+AccountEditor.contextTypes = { d2: PropTypes.object.isRequired };
 
 export default AccountEditor;

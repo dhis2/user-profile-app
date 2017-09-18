@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import FormFields from '../layout/formFields.component';
 import userProfileActions from './profile.actions';
 import userProfileStore from './profile.store';
 
 
-function EditProfile (props, context) {
+function EditProfile(props, context) {
     const fieldKeys = [
         'firstName',
         'surname',
@@ -34,6 +35,6 @@ function EditProfile (props, context) {
     );
 }
 
-EditProfile.contextTypes = { d2: React.PropTypes.object.isRequired };
+EditProfile.contextTypes = { d2: PropTypes.object.isRequired };
 
 export default EditProfile;
