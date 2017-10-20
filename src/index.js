@@ -10,7 +10,7 @@ import { init, config, getUserSettings, getManifest } from 'd2/lib/d2';
 import LoadingMask from 'd2-ui/lib/loading-mask/LoadingMask.component';
 import appActions from './app.actions';
 import AppTheme from './layout/theme';
-import './layout/app.scss';
+import './layout/app.css';
 
 injectTapEventPlugin();
 const dhisDevConfig = DHIS_CONFIG; // eslint-disable-line
