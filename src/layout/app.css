@@ -1,6 +1,3 @@
-@import '../../node_modules/d2-ui/lib/css/HeaderBar.css';
-
-$left-bar-width: 295px;
 
 html {
   background-color: #f3f3f3;
@@ -17,11 +14,11 @@ html {
   padding-top: 3rem;
   position: fixed;
   top: 0;
-  width: $left-bar-width;
+  width: 295px;
 }
 
 .content-area {
-  padding-left: $left-bar-width;
+  padding-left: 295px;
   max-width: 750px;
   min-width: 400px;
 }

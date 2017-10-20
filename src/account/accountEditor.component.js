@@ -20,6 +20,7 @@ class AccountEditor extends React.Component {
         super(props, context);
 
         this.state = Object.assign({}, {
+            oldPassword: '',
             newPassword: '',
             reNewPassword: '',
             wrongOldPasswordText: '',
