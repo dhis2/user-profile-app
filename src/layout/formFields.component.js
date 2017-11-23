@@ -65,7 +65,6 @@ const styles = {
 function wrapWithLabel(WrappedComponent, label) {
     return (props) => {
         const labelStyle = styles.userSettingsOverride;
-
         return (
             <div>
                 <WrappedComponent {...props} />
@@ -75,6 +74,178 @@ function wrapWithLabel(WrappedComponent, label) {
     };
 }
 
+function getNameValidator(name, i18n) {
+    if (wordToValidatorMap.has(name)) {
+        return {
+            validator: wordToValidatorMap.get(name),
+            message: i18n.getTranslation(wordToValidatorMap.get(name).message),
+        };
+    }
+    return false;
+}
+
+function createTextField(fieldBase, mapping) {
+    return Object.assign({}, fieldBase, {
+        props: Object.assign({}, fieldBase.props, {
+            changeEvent: 'onBlur',
+            multiLine: !!mapping.multiLine,
+            disabled: !!mapping.disabled,
+        }),
+    });
+}
+
+function createDateField(fieldBase, fieldName, d2, mapping, valueStore) {
+    const state = valueStore.state;
+    return Object.assign({}, fieldBase, {
+        component: DatePicker,
+        value: state && state[fieldName]
+            ? new Date(state[fieldName])
+            : '',
+        props: Object.assign({}, fieldBase.props, {
+            floatingLabelText: d2.i18n.getTranslation(mapping.label),
+            dateFormat: userSettingsStore.state.keyDateFormat || '',
+            textFieldStyle: { width: '100%' },
+            allowFuture: false,
+        }),
+    });
+}
+
+function createCheckBox(fieldBase, fieldName) {
+    return Object.assign({}, fieldBase, {
+        component: Checkbox,
+        props: {
+            value: '',
+            label: fieldBase.props.floatingLabelText,
+            style: fieldBase.props.style,
+            checked: fieldBase.value.toString() === 'true',
+            onChange: (e, v) => {
+                userSettingsActions.saveUserKey(fieldName, v ? 'true' : 'false');
+            },
+        },
+    });
+}
+
+function createDropDown(fieldBase, fieldName, d2, valueStore, mapping) {
+    /*
+    if (mapping.includeEmpty && fieldBase.value === '') {
+        fieldBase.value = 'null';
+    }
+*/
+    const value = valueStore.state[fieldName] || valueStore.state[fieldName] === false
+        ? valueStore.state[fieldName].toString()
+        : 'null';
+
+    const menuItems = (mapping.source
+        ? (optionValueStore.state && optionValueStore.state[mapping.source]) || []
+        : Object.keys(mapping.options).map((id) => {
+            const displayName = !isNaN(mapping.options[id])
+                ? mapping.options[id]
+                : d2.i18n.getTranslation(mapping.options[id]);
+            return { id, displayName };
+        })).slice();
+
+    const systemSettingValue = optionValueStore.state
+            && optionValueStore.state.systemDefault
+            && optionValueStore.state.systemDefault[fieldName];
+
+    const systemSettingLabel = optionValueStore.state[mapping.source]
+        ? optionValueStore.state[mapping.source]
+            .filter(x => x.id === systemSettingValue)
+            .map(x => x.displayName)[0] || d2.i18n.getTranslation('no_value')
+        : d2.i18n.getTranslation(systemSettingValue === 'null' ? 'no_value' : systemSettingValue);
+
+    return Object.assign({}, fieldBase, {
+        component: SelectField,
+        value,
+        props: Object.assign({}, fieldBase.props, {
+            includeEmpty: !!mapping.includeEmpty,
+            emptyLabel: mapping.includeEmpty
+                ? `${d2.i18n.getTranslation('use_system_default')} (${systemSettingLabel})`
+                : undefined,
+            noOptionsLabel: d2.i18n.getTranslation('no_options'),
+        }, { menuItems }),
+    });
+}
+
+function createAccountEditor(fieldBase, d2, valueStore) {
+    return Object.assign({}, fieldBase, {
+        component: AccountEditor,
+        props: { d2, username: valueStore.state.username },
+    });
+}
+
+function createFieldBaseObject(fieldName, mapping, d2, valueStore) {
+    const i18n = d2.i18n;
+    const state = valueStore.state;
+    const hintText = mapping.hintText;
+
+    const valueString = state.hasOwnProperty(fieldName)
+        ? String(state[fieldName]).trim()
+        : '';
+    const propsObject = {
+        floatingLabelText: i18n.getTranslation(mapping.label),
+        style: { width: '100%' },
+        hintText: hintText && i18n.getTranslation(hintText),
+    };
+    const baseValidators =
+        (mapping.validators || [])
+            .map(name => getNameValidator(name, i18n))
+            .filter(v => v);
+
+    return Object.assign({}, {
+        name: fieldName,
+        value: valueString,
+        component: TextField,
+        props: propsObject,
+        validators: baseValidators,
+    });
+}
+
+function createField(fieldName, valueStore, d2) {
+    const mapping = userSettingsKeyMapping[fieldName];
+    const fieldBase = createFieldBaseObject(fieldName, mapping, d2, valueStore);
+    switch (mapping.type) {
+    case 'textfield': return createTextField(fieldBase, mapping);
+    case 'date': return createDateField(fieldBase, fieldName, d2, mapping, valueStore);
+    case 'checkbox': return createCheckBox(fieldBase, fieldName);
+    case 'dropdown': return createDropDown(fieldBase, fieldName, d2, valueStore, mapping);
+    case 'accountEditor': return createAccountEditor(fieldBase, d2, valueStore);
+    default:
+        log.warn(`Unknown control type "${mapping.type}" encountered for field "${fieldName}"`);
+        return {};
+    }
+}
+
+function wrapFieldWithLabel(field, d2) {
+    const mapping = userSettingsKeyMapping[field.name];
+
+    // For settings that have a system wide default value,
+    // and is overridden by the current user, display
+    // the system wide default under the current user
+    // setting (which may be the same value)
+    if (mapping.showSystemDefault && field.value && field.value !== null && field.value !== 'null' &&
+        optionValueStore.state.systemDefault.hasOwnProperty(field.name)) {
+        const systemValue = optionValueStore.state.systemDefault[field.name];
+        const actualSystemValue = systemValue !== undefined
+            && systemValue !== null && systemValue !== 'null';
+        let systemValueLabel = systemValue;
+
+        if (mapping.source && actualSystemValue) {
+            systemValueLabel = optionValueStore.state[mapping.source]
+                .filter(item => item.id === systemValue)[0].displayName;
+        } else if (field.props.menuItems && actualSystemValue) {
+            systemValueLabel = field.props.menuItems
+                .filter(item => item.id === systemValue
+                    || String(systemValue) === item.id)[0].displayName;
+        } else {
+            systemValueLabel = d2.i18n.getTranslation(systemValue);
+        }
+
+        const systemDefaultLabel = `${d2.i18n.getTranslation('system_default')}: ${systemValueLabel}`;
+        return Object.assign(field, { component: wrapWithLabel(field.component, systemDefaultLabel) });
+    }
+    return field;
+}
 
 class UserSettingsFields extends React.Component {
     componentDidMount() {
@@ -91,153 +262,10 @@ class UserSettingsFields extends React.Component {
         const d2 = this.context.d2;
         const valueStore = this.props.valueStore;
 
-        /* eslint-disable complexity */
         const fields = fieldNames
-            .map((fieldName) => {
-                const mapping = userSettingsKeyMapping[fieldName];
-
-                // Base config, common for all component types
-                const fieldBase = {
-                    name: fieldName,
-                    value: (
-                        valueStore.state
-                        && valueStore.state.hasOwnProperty(fieldName)
-                        && String(valueStore.state[fieldName]).trim()
-                    ) || '',
-                    component: TextField,
-                    props: {
-                        floatingLabelText: d2.i18n.getTranslation(mapping.label),
-                        style: { width: '100%' },
-                        hintText: mapping.hintText && d2.i18n.getTranslation(mapping.hintText),
-                    },
-                    validators: (mapping.validators || []).map(name => (wordToValidatorMap.has(name) ? {
-                        validator: wordToValidatorMap.get(name),
-                        message: d2.i18n.getTranslation(wordToValidatorMap.get(name).message),
-                    } : false))
-                        .filter(v => v),
-                };
-
-                switch (mapping.type) {
-                case 'textfield':
-                case undefined:
-                    return Object.assign({}, fieldBase, {
-                        props: Object.assign({}, fieldBase.props, {
-                            changeEvent: 'onBlur',
-                            multiLine: !!mapping.multiLine,
-                            disabled: !!mapping.disabled,
-                        }),
-                    });
-
-                case 'date':
-                    return Object.assign({}, fieldBase, {
-                        component: DatePicker,
-                        value: valueStore.state && valueStore.state[fieldName]
-                            ? new Date(valueStore.state[fieldName])
-                            : '',
-                        props: Object.assign({}, fieldBase.props, {
-                            floatingLabelText: d2.i18n.getTranslation(mapping.label),
-                            dateFormat: userSettingsStore.state.keyDateFormat || '',
-                            textFieldStyle: { width: '100%' },
-                            allowFuture: false,
-                        }),
-                    });
-
-                case 'checkbox':
-                    return Object.assign({}, fieldBase, {
-                        component: Checkbox,
-                        props: {
-                            value: '',
-                            label: fieldBase.props.floatingLabelText,
-                            style: fieldBase.props.style,
-                            checked: fieldBase.value.toString() === 'true',
-                            onChange: (e, v) => {
-                                userSettingsActions.saveUserKey(fieldName, v ? 'true' : 'false');
-                            },
-                        },
-                    });
-
-                case 'dropdown': {
-                    if (mapping.includeEmpty && fieldBase.value === '') {
-                        fieldBase.value = 'null';
-                    }
-
-                    const value = valueStore.state[fieldName] || valueStore.state[fieldName] === false
-                        ? valueStore.state[fieldName].toString()
-                        : 'null';
-
-                    const menuItems = (mapping.source
-                        ? (optionValueStore.state && optionValueStore.state[mapping.source]) || []
-                        : Object.keys(mapping.options).map((id) => {
-                            const displayName = !isNaN(mapping.options[id])
-                                ? mapping.options[id]
-                                : d2.i18n.getTranslation(mapping.options[id]);
-                            return { id, displayName };
-                        })).slice();
-
-                    const systemSettingValue = optionValueStore.state
-                        && optionValueStore.state.systemDefault
-                        && optionValueStore.state.systemDefault[fieldName];
-                    const systemSettingLabel = optionValueStore.state[mapping.source]
-                        ? optionValueStore.state[mapping.source]
-                            .filter(x => x.id === systemSettingValue)
-                            .map(x => x.displayName)[0] || d2.i18n.getTranslation('no_value')
-                        : d2.i18n.getTranslation(systemSettingValue === 'null' ? 'no_value' : systemSettingValue);
-
-                    return Object.assign({}, fieldBase, {
-                        component: SelectField,
-                        value,
-                        props: Object.assign({}, fieldBase.props, {
-                            includeEmpty: !!mapping.includeEmpty,
-                            emptyLabel: mapping.includeEmpty
-                                ? `${d2.i18n.getTranslation('use_system_default')} (${systemSettingLabel})`
-                                : undefined,
-                            noOptionsLabel: d2.i18n.getTranslation('no_options'),
-                        }, { menuItems }),
-                    });
-                }
-
-                case 'accountEditor':
-                    return Object.assign({}, fieldBase, {
-                        component: AccountEditor,
-                        props: { d2, username: valueStore.state.username },
-                    });
-
-                default:
-                    log.warn(`Unknown control type "${mapping.type}" encountered for field "${fieldName}"`);
-                    return {};
-                }
-            })
+            .map(fieldName => createField(fieldName, valueStore, d2))
             .filter(field => !!field.name)
-            .map((field) => {
-                const mapping = userSettingsKeyMapping[field.name];
-
-                // For settings that have a system wide default value, and is overridden by the current user, display
-                // the system wide default under the current user setting (which may be the same value)
-                if (mapping.showSystemDefault && field.value && field.value !== null && field.value !== 'null' &&
-                    optionValueStore.state.systemDefault.hasOwnProperty(field.name)) {
-                    const systemValue = optionValueStore.state.systemDefault[field.name];
-                    const actualSystemValue = systemValue !== undefined
-                        && systemValue !== null && systemValue !== 'null';
-                    let systemValueLabel = systemValue;
-
-                    if (mapping.source && actualSystemValue) {
-                        systemValueLabel = optionValueStore.state[mapping.source]
-                            .filter(item => item.id === systemValue)[0].displayName;
-                    } else if (field.props.menuItems && actualSystemValue) {
-                        systemValueLabel = field.props.menuItems
-                            .filter(item => item.id === systemValue || String(systemValue) === item.id)[0].displayName;
-                    } else {
-                        systemValueLabel = d2.i18n.getTranslation(systemValue);
-                    }
-
-                    const systemDefaultLabel = `${d2.i18n.getTranslation('system_default')}: ${systemValueLabel}`;
-                    return Object.assign(field, { component: wrapWithLabel(field.component, systemDefaultLabel) });
-                }
-
-                return field;
-            });
-
-        /* eslint-enable complexity */
+            .map(field => wrapFieldWithLabel(field, d2));
 
         return (
             <Card style={styles.card}>

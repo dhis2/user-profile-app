@@ -16,6 +16,7 @@ import Sidebar from './layout/Sidebar.component';
 import Profile from './profile/profile.component';
 import Account from './account/account.component';
 import UserSettings from './settings/userSettings.component';
+import ViewProfile from './viewProfile/viewProfile.component';
 
 const HeaderBar = withStateFrom(headerBarStore$, HeaderBarComponent);
 
@@ -50,7 +51,8 @@ class AppRouter extends React.Component {
                             <Route path="settings" component={UserSettings} />
                             <Route path="profile" component={Profile} />
                             <Route path="account" component={Account} />
-                            <Redirect from="/" to="/settings" />
+                            <Route path="viewProfile" component={ViewProfile} />
+                            <Redirect from="/" to="/viewProfile" />
                         </Route>
                     </Router>
                 </div>
