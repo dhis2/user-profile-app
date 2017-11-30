@@ -1,28 +1,16 @@
-const userSettingsMapping = {
-    /* ============================================================================================================ */
-    /* Category: Profile                                                                                            */
-    /* ============================================================================================================ */
+const settingsKeyMapping = {
+    /* ================================================================= */
+    /* Category: Profile Settings                                        */
+    /* ================================================================= */
     firstName: {
         label: 'first_name',
+        type: 'textfield',
         validators: ['required'],
     },
     surname: {
         label: 'surname',
+        type: 'textfield',
         validators: ['required'],
-    },
-    email: {
-        label: 'user_email_address',
-        validators: ['email'],
-    },
-    phoneNumber: {
-        label: 'phone_number',
-    },
-    introduction: {
-        label: 'introduction',
-        multiLine: true,
-    },
-    jobTitle: {
-        label: 'job_title',
     },
     gender: {
         label: 'gender',
@@ -33,44 +21,78 @@ const userSettingsMapping = {
             gender_other: 'gender_other',
         },
     },
+    email: {
+        label: 'user_email_address',
+        type: 'textfield',
+        validators: ['email'],
+    },
+    phoneNumber: {
+        label: 'phone_number',
+        type: 'textfield',
+    },
+    introduction: {
+        label: 'introduction',
+        type: 'textfield',
+        multiLine: true,
+    },
+    jobTitle: {
+        label: 'job_title',
+        type: 'textfield',
+    },
+    userRoles: {
+        label: 'user_roles',
+        type: 'userRoles',
+        validators: ['required'],
+    },
+    userOrgUnits: {
+        label: 'user_organizational_units',
+        type: 'userOrgUnits',
+        validators: ['required'],
+    },
     birthday: {
         label: 'birthday',
         type: 'date',
     },
     nationality: {
         label: 'nationality',
+        type: 'textfield',
     },
     employer: {
         label: 'employer',
+        type: 'textfield',
     },
     education: {
         label: 'education',
+        type: 'textfield',
         multiLine: true,
     },
     // TODO: chips component for interests and languages?
     interests: {
         label: 'interests',
+        type: 'textfield',
         multiLine: true,
     },
     languages: {
         label: 'languages',
+        type: 'textfield',
         multiLine: true,
     },
-    /* ============================================================================================================ */
-    /* Category: Account                                                                                            */
-    /* ============================================================================================================ */
+    /* ================================================================= */
+    /* Category: Account Settings                                        */
+    /* ================================================================= */
     accountEditor: {
         label: 'account_editor',
         type: 'accountEditor',
     },
-    /* ============================================================================================================ */
-    /* Category: User Settings                                                                                    */
-    /* ============================================================================================================ */
+    /* ================================================================= */
+    /* Category: System Settings                                         */
+    /* ================================================================= */
     keyUiLocale: {
         label: 'language',
         type: 'dropdown',
         source: 'uiLocales',
         includeEmpty: true,
+        emptyLabel: 'use_system_default',
         showSystemDefault: true,
     },
     keyDbLocale: {
@@ -78,6 +100,7 @@ const userSettingsMapping = {
         type: 'dropdown',
         source: 'dbLocales',
         includeEmpty: true,
+        emptyLabel: 'use_system_default',
         showSystemDefault: true,
     },
     keyStyle: {
@@ -85,6 +108,7 @@ const userSettingsMapping = {
         type: 'dropdown',
         source: 'styles',
         includeEmpty: true,
+        emptyLabel: 'use_system_default',
         showSystemDefault: true,
     },
     keyAnalysisDisplayProperty: {
@@ -95,6 +119,7 @@ const userSettingsMapping = {
             shortName: 'short_name',
         },
         includeEmpty: true,
+        emptyLabel: 'use_system_default',
         showSystemDefault: true,
     },
     keyMessageEmailNotification: {
@@ -105,6 +130,7 @@ const userSettingsMapping = {
             false: 'false_notifications',
         },
         includeEmpty: true,
+        emptyLabel: 'use_system_default',
         showSystemDefault: true,
     },
     keyMessageSmsNotification: {
@@ -115,8 +141,9 @@ const userSettingsMapping = {
             false: 'false_notifications',
         },
         includeEmpty: true,
+        emptyLabel: 'use_system_default',
         showSystemDefault: true,
     },
 };
 
-export default userSettingsMapping;
+export default settingsKeyMapping;

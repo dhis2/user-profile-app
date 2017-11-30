@@ -22,3 +22,24 @@ html {
   max-width: 750px;
   min-width: 400px;
 }
+
+.label-row {
+  display: block;
+  margin-top: 5px;
+}
+
+.label-name {
+  display: inline-block;
+  color: #777;
+  font-size: 12pt;
+  width: 110px;
+  text-align: right;
+  padding-right: 20px;
+  vertical-align: top;
+}
+
+.label-value {
+  display: inline-block;
+  font-size: 12pt;
+  max-width: 510px;
+}
