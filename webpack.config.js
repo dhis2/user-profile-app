@@ -3,6 +3,7 @@
 var webpack = require('webpack');
 var path = require('path');
 var colors = require('colors');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 const isDevBuild = process.argv[1].indexOf('webpack-dev-server') !== -1;
 const dhisConfigPath = process.env.DHIS2_HOME && `${process.env.DHIS2_HOME}/config`;
@@ -29,11 +30,14 @@ function log(req, res, opt) {
 
 const webpackConfig = {
     context: __dirname,
-    entry: './src/index.js',
+    entry: {
+        polyfill: 'babel-polyfill',
+        app: './src/index.js'
+    },
     devtool: 'source-map',
     output: {
         path: __dirname + '/build',
-        filename: 'app.js',
+        filename: `[name].[chunkhash:8].js`,
         publicPath: 'http://localhost:8081/',
     },
     module: {
@@ -65,7 +69,6 @@ const webpackConfig = {
         historyApiFallback: true,
         proxy: [
             { path: ['/api', '/dhis-web-commons'], target: dhisConfig.baseUrl, bypass: log },
-            { path: '/polyfill.min.js', target: 'http://localhost:8081/node_modules/babel-polyfill/dist', bypass: log },
         ],
     },
 };
@@ -85,12 +88,18 @@ if (!isDevBuild) {
             comments: false,
             beautify: true,
         }),
+        new HTMLWebpackPlugin({
+            template: './index.html'
+        })
     ];
 } else {
     webpackConfig.plugins = [
         new webpack.DefinePlugin({
             DHIS_CONFIG: JSON.stringify(dhisConfig)
         }),
+        new HTMLWebpackPlugin({
+            template: './index.html'
+        })
     ];
 }
 
