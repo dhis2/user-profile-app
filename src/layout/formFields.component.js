@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import log from 'loglevel';
 
@@ -126,11 +126,6 @@ function createCheckBox(fieldBase, fieldName) {
 }
 
 function createDropDown(fieldBase, fieldName, d2, valueStore, mapping) {
-    /*
-    if (mapping.includeEmpty && fieldBase.value === '') {
-        fieldBase.value = 'null';
-    }
-*/
     const value = valueStore.state[fieldName] || valueStore.state[fieldName] === false
         ? valueStore.state[fieldName].toString()
         : 'null';
@@ -247,7 +242,7 @@ function wrapFieldWithLabel(field, d2) {
     return field;
 }
 
-class UserSettingsFields extends React.Component {
+class UserSettingsFields extends Component {
     componentDidMount() {
         this.disposable = this.props.valueStore.subscribe(() => {
             this.forceUpdate();

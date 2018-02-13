@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Router, Route, hashHistory, Redirect } from 'react-router';
 
@@ -25,14 +25,7 @@ function WrAppadApp(props) {
 }
 WrAppadApp.propTypes = { routes: PropTypes.array.isRequired, children: PropTypes.any.isRequired };
 
-class AppRouter extends React.Component {
-    constructor(props) {
-        super(props);
-
-        const d2 = this.props.d2;
-        this.getTranslation = d2.i18n.getTranslation.bind(d2.i18n);
-    }
-
+class AppRouter extends Component {
     getChildContext() {
         return {
             d2: this.props.d2,
