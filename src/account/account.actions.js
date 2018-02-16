@@ -14,14 +14,14 @@ accountActions.setPassword.subscribe(({ data: password, complete, error }) => {
 
     getD2().then((d2) => {
         const api = d2.Api.getApi();
-        api.update('me', payload)
+        api.update('/me', payload)
             .then(() => {
                 log.debug('Password updated successfully.');
-                appActions.showSnackbarMessage(d2.i18n.getTranslation('password_update_success'));
+                appActions.showSnackbarMessage({ message: d2.i18n.getTranslation('password_update_success'), status: 'success' });
                 complete();
             })
             .catch((err) => {
-                appActions.showSnackbarMessage(d2.i18n.getTranslation('password_update_failed'));
+                appActions.showSnackbarMessage({ message: d2.i18n.getTranslation('password_update_failed'), status: 'error' });
                 log.error('Failed to update password:', err);
                 error();
             });

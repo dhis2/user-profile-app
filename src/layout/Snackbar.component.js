@@ -1,27 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import Snackbar from 'material-ui/Snackbar';
-
 import appActions from '../app.actions';
 
-class SnackWrapper extends React.Component {
-    constructor(props) {
-        super(props);
+const messageStatus = {
+    warning: { backgroundColor: '#FFA726' },
+    error: { backgroundColor: '#EF5350' },
+    neutral: { backgroundColor: 'black' },
+    success: { backgroundColor: '#9CCC65' },
+};
 
-        this.state = {
-            snackbarMessage: '',
-            showSnackbar: false,
-        };
-
-        this.closeSnackbar = this.closeSnackbar.bind(this);
-    }
-
+class SnackWrapper extends Component {
+    state = {
+        snackbarMessage: '',
+        showSnackbar: false,
+        messageStatus: messageStatus['neutral'],
+    };
+    
     componentDidMount() {
         this.subscriptions = [];
 
         this.subscriptions.push(appActions.showSnackbarMessage.subscribe((params) => {
-            const message = params.data;
-            this.setState({ snackbarMessage: message, showSnackbar: !!message });
+            const message = params.data.message;
+            const status = params.data.status ? params.data.status : 'neutral';
+            this.setState({ 
+                snackbarMessage: message, 
+                showSnackbar: !!message,
+                messageStatus: messageStatus[status],
+            });
         }));
     }
 
@@ -31,7 +37,7 @@ class SnackWrapper extends React.Component {
         });
     }
 
-    closeSnackbar() {
+    closeSnackbar = () => {
         this.setState({ showSnackbar: false });
     }
 
@@ -40,6 +46,7 @@ class SnackWrapper extends React.Component {
             <Snackbar
                 message={this.state.snackbarMessage || ''}
                 autoHideDuration={1250}
+                bodyStyle={this.state.messageStatus}
                 open={this.state.showSnackbar}
                 onRequestClose={this.closeSnackbar}
             />

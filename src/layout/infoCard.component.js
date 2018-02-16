@@ -21,13 +21,10 @@ const styles = {
 };
 
 class InfoCard extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            canRender: false,
-        };
-    }
-
+    state = {
+        canRender: false,
+    };
+    
     componentWillMount() {
         Promise.all([
             this.props.valueStore.state.getUserRoles(),
@@ -61,6 +58,7 @@ class InfoCard extends React.Component {
             ? this.props.d2.i18n.getTranslation(value)
             : 'null';
     }
+    
     /* eslint-disable */
     getLabelValue(labelName, type) {
         if (!this.labelExists(labelName, type)) {
