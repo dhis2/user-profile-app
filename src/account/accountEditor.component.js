@@ -22,7 +22,7 @@ class AccountEditor extends Component {
         };
         this.isVerifiedPassword.message = "wrong_old_password";
     }
-    
+
     isSamePassword = (value) => {
         return value === this.state.newPassword;
     }
@@ -34,7 +34,7 @@ class AccountEditor extends Component {
     isVerifiedPassword = (value) => {
         const api = this.context.d2.Api.getApi();
         return new Promise((resolve, reject) => {
-            api.post('/29/me/verifyPassword', { password: value })
+            api.post('/me/verifyPassword', { password: value })
                 .then((res) => {
                     if (res.isCorrectPassword === true) {
                         resolve();
@@ -54,7 +54,7 @@ class AccountEditor extends Component {
     updatePassword = () => {
         const formState = this.formBuilder ? this.formBuilder.state.form : {};
 
-        if (formState.pristine === true || !this.isNotEmpty(this.state.oldPassword)) {
+        if (formState.pristine === true) {
             appActions.showSnackbarMessage({ message: this.context.d2.i18n.getTranslation('no_changes_have_been_made')});
         } else if (formState.validating === true) {
             appActions.showSnackbarMessage({ message: this.context.d2.i18n.getTranslation('validating_please_try_again'), status: 'warning' });

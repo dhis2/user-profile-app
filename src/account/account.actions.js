@@ -14,7 +14,7 @@ accountActions.setPassword.subscribe(({ data: password, complete, error }) => {
 
     getD2().then((d2) => {
         const api = d2.Api.getApi();
-        api.update('29/me', payload)
+        api.update('/me', payload)
             .then(() => {
                 log.debug('Password updated successfully.');
                 appActions.showSnackbarMessage({ message: d2.i18n.getTranslation('password_update_success'), status: 'success' });

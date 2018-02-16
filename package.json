@@ -61,6 +61,9 @@
   "homepage": "https://github.com/adhbh/dhis-user-profile-app",
   "manifest.webapp": {
     "name": "DHIS2 User Profile Management",
+    "dhis2": {
+      "apiVersion": "29"
+    },
     "icons": {
       "48": "icon.png"
     },
