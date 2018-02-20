@@ -96,6 +96,7 @@ function createTextField(fieldBase, mapping) {
 
 function createDateField(fieldBase, fieldName, d2, mapping, valueStore) {
     const state = valueStore.state;
+
     return Object.assign({}, fieldBase, {
         component: DatePicker,
         value: state && state[fieldName]
@@ -103,7 +104,7 @@ function createDateField(fieldBase, fieldName, d2, mapping, valueStore) {
             : '',
         props: Object.assign({}, fieldBase.props, {
             floatingLabelText: d2.i18n.getTranslation(mapping.label),
-            dateFormat: userSettingsStore.state.keyDateFormat || '',
+            dateFormat: userSettingsStore.state.keyDateFormat || 'yyyy-MM-dd',
             textFieldStyle: { width: '100%' },
             allowFuture: false,
         }),
@@ -242,7 +243,7 @@ function wrapFieldWithLabel(field, d2) {
     return field;
 }
 
-class UserSettingsFields extends Component {
+class FormFields extends Component {
     componentDidMount() {
         this.disposable = this.props.valueStore.subscribe(() => {
             this.forceUpdate();
@@ -281,15 +282,15 @@ class UserSettingsFields extends Component {
     }
 }
 
-UserSettingsFields.propTypes = {
+FormFields.propTypes = {
     pageLabel: PropTypes.string.isRequired,
     fieldKeys: PropTypes.arrayOf(PropTypes.string).isRequired,
     valueStore: PropTypes.object.isRequired,
     onUpdateField: PropTypes.func.isRequired,
 };
-UserSettingsFields.contextTypes = {
+FormFields.contextTypes = {
     d2: PropTypes.object.isRequired,
 };
 
 
-export default UserSettingsFields;
+export default FormFields;

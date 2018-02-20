@@ -11,7 +11,7 @@ function EditProfile(props, context) {
         'accountEditor',
     ];
 
-    const pageLabel = context.d2.i18n.getTranslation('account_settings');
+    const pageLabel = context.d2.i18n.getTranslation('edit_account_settings');
 
     return (
         <FormFields

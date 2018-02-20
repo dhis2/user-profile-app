@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
 import { Card, CardText } from 'material-ui/Card';
@@ -20,7 +20,7 @@ const styles = {
     },
 };
 
-class InfoCard extends React.Component {
+class InfoCard extends Component {
     state = {
         canRender: false,
     };
@@ -58,16 +58,23 @@ class InfoCard extends React.Component {
             ? this.props.d2.i18n.getTranslation(value)
             : 'null';
     }
-    
+
+    getBirthdayDateValue(dateValue) {
+        const birthday = new Date(dateValue);
+        // Silly Date class gives day of month from getDate() and getMonth() is based from 0-11.
+        return birthday.getDate() + "-" + (birthday.getMonth()+1) + "-" + birthday.getFullYear();
+    }
+
     /* eslint-disable */
     getLabelValue(labelName, type) {
         if (!this.labelExists(labelName, type)) {
             return '';
         }
         const labelValue = String(this.props.valueStore.state[labelName]).trim();
+
         switch (type) {
         case 'textfield': return labelValue;
-        case 'date': return new Date(labelValue).toString();
+        case 'date': return this.getBirthdayDateValue(this.props.valueStore.state[labelName]);
         case 'dropdown': return this.getOptionTypeValue(labelName);
         case 'userOrgUnits': return this.getUserOrgUnitsValue();
         case 'userRoles': return this.getUserRolesValue();
@@ -82,11 +89,11 @@ class InfoCard extends React.Component {
 
     getLabelComponent(labelName) {
         const mapping = settingsKeyMapping[labelName];
-        const translateLabelName = this.getTranslatedLabelName(mapping.label);
+        const translatedLabelName = this.getTranslatedLabelName(mapping.label);
         const labelValue = this.getLabelValue(labelName, mapping.type);
         return (
-            <div key={translateLabelName} className="label-row">
-                <span className="label-name"> {translateLabelName} </span>
+            <div key={translatedLabelName} className="label-row">
+                <span className="label-name"> {translatedLabelName} </span>
                 <span className="label-value">{labelValue}</span>
             </div>);
     }

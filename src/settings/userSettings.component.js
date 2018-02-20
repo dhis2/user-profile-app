@@ -16,7 +16,7 @@ function EditProfile(props, context) {
         'keyMessageSmsNotification',
     ];
 
-    const pageLabel = context.d2.i18n.getTranslation('user_settings');
+    const pageLabel = context.d2.i18n.getTranslation('edit_user_settings');
 
     return (
         <FormFields
