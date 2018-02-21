@@ -23,7 +23,7 @@ function EditProfile(props, context) {
         'languages',
     ];
 
-    const pageLabel = context.d2.i18n.getTranslation('user_profile');
+    const pageLabel = context.d2.i18n.getTranslation('edit_user_profile');
 
     return (
         <FormFields
