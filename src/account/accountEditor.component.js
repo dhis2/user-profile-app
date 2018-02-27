@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { debounce } from 'lodash';
 
 import { isValidPassword } from 'd2-ui/lib/forms/Validators';
 import FormBuilder from 'd2-ui/lib/forms/FormBuilder.component';
@@ -46,14 +47,19 @@ class AccountEditor extends Component {
     }
 
     clearRepeatPassword = () => {
-        this.setState({ reNewPassword: '' });
+        this.setState(
+            { 
+                oldPassword: '',
+                reNewPassword: '',
+                newPassword: '',
+            }
+        );
         return true;
     }
 
     /* eslint-disable */
     updatePassword = () => {
         const formState = this.formBuilder ? this.formBuilder.state.form : {};
-
         if (formState.pristine === true) {
             appActions.showSnackbarMessage({ message: this.context.d2.i18n.getTranslation('no_changes_have_been_made')});
         } else if (formState.validating === true) {
@@ -63,7 +69,7 @@ class AccountEditor extends Component {
         } else if (!this.isNotEmpty(this.state.newPassword) || !this.isNotEmpty(this.state.reNewPassword)) {
             appActions.showSnackbarMessage({ message: this.context.d2.i18n.getTranslation('password_do_not_match'), status:'error'});
         } else {
-            accountActions.setPassword(this.state.newPassword);
+            accountActions.setPassword(this.state.newPassword, this.clearRepeatPassword);
         }
     }
     /* eslint-enable */
@@ -113,10 +119,6 @@ class AccountEditor extends Component {
                 validators: [{
                     validator: isValidPassword,
                     message: this.context.d2.i18n.getTranslation(isValidPassword.message),
-                }, {
-                    // If a new valid password is entered, this "validator" clears out the "re-enter password" field below
-                    validator: this.clearRepeatPassword,
-                    message: '',
                 }],
             },
             {
@@ -143,11 +145,6 @@ class AccountEditor extends Component {
                     style: { marginTop: '20px' },
                     secondary: true,
                 },
-                validators: [{
-                    // If a new valid password is entered, this "validator" clears out the "re-enter password" field below
-                    validator: this.clearRepeatPassword,
-                    message: '',
-                }],
             },
         ];
         const setRef = (r) => { this.formBuilder = r; };
