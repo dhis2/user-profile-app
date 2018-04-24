@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import InfoCard from '../layout/infoCard.component';
+import InfoCard from '../layout/InfoCard.component';
 import profileSettingsStore from '../profile/profile.store';
 
 function ViewProfile(props, context) {

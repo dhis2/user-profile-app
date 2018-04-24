@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import FormFields from '../layout/formFields.component';
+import FormFields from '../layout/FormFields.component';
 import userProfileActions from '../profile/profile.actions';
 import userProfileStore from '../profile/profile.store';
 

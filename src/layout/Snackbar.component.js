@@ -44,7 +44,7 @@ class SnackWrapper extends Component {
     render() {
         return (
             <Snackbar
-                message={this.state.snackbarMessage || ''}
+                message={this.state.snackbarMessage}
                 autoHideDuration={1250}
                 bodyStyle={this.state.messageStatus}
                 open={this.state.showSnackbar}

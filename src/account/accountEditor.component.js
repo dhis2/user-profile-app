@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import { isValidPassword } from 'd2-ui/lib/forms/Validators';
+
 import FormBuilder from 'd2-ui/lib/forms/FormBuilder.component';
 import TextField from 'd2-ui/lib/form-fields/TextField';
-
-import RaisedButton from 'material-ui/RaisedButton';
+import { FlatButton, RaisedButton, Dialog } from 'material-ui';
 
 import appActions from '../app.actions';
 import accountActions from './account.actions';
-
 
 class AccountEditor extends Component {
     constructor (props) {
@@ -50,7 +49,6 @@ class AccountEditor extends Component {
         return true;
     }
 
-    /* eslint-disable */
     updatePassword = () => {
         const formState = this.formBuilder ? this.formBuilder.state.form : {};
 
@@ -66,7 +64,10 @@ class AccountEditor extends Component {
             accountActions.setPassword(this.state.newPassword);
         }
     }
-    /* eslint-enable */
+
+    openTwoFactorDialog = () => {
+        appActions.setCategory('twoFactor');
+    }
 
     updateState = (e, v) => {
         this.setState({ [e]: v });
@@ -133,6 +134,16 @@ class AccountEditor extends Component {
                     validator: this.isSamePassword,
                     message: this.context.d2.i18n.getTranslation('passwords_do_not_match'),
                 }],
+            },
+            {
+                name: 'twoFactorSetupButton',
+                component: FlatButton,
+                props: {
+                    label: this.context.d2.i18n.getTranslation('setup_two_factor'),
+                    onClick: this.openTwoFactorDialog,
+                    style: { marginTop: '20px' },
+                    secondary: false,
+                },
             },
             {
                 name: 'postbutton',

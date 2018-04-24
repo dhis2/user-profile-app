@@ -7,6 +7,7 @@ import appActions from '../app.actions';
 
 const accountActions = Action.createActionsFromNames([
     'setPassword',
+    'setTwoFactorStatus',
 ]);
 
 accountActions.setPassword.subscribe(({ data: password, complete, error }) => {
@@ -17,15 +18,26 @@ accountActions.setPassword.subscribe(({ data: password, complete, error }) => {
         api.update('/me', payload)
             .then(() => {
                 log.debug('Password updated successfully.');
-                appActions.showSnackbarMessage({ message: d2.i18n.getTranslation('password_update_success'), status: 'success' });
+                appActions.showSnackbarMessage({
+                    message: d2.i18n.getTranslation('password_update_success'),
+                    status: 'success',
+                });
                 complete();
             })
             .catch((err) => {
-                appActions.showSnackbarMessage({ message: d2.i18n.getTranslation('password_update_failed'), status: 'error' });
+                appActions.showSnackbarMessage({
+                    message: d2.i18n.getTranslation('password_update_failed'),
+                    status: 'error',
+                });
                 log.error('Failed to update password:', err);
                 error();
             });
     });
+});
+
+accountActions.setTwoFactorStatus.subscribe(({ data: twoFA, complete, error }) => {
+    const payload = { userCredentials: { twoFA } };
+    const status = twoFA ? 'ON' : 'OFF';
 });
 
 export default accountActions;
