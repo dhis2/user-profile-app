@@ -4,10 +4,12 @@ import { getInstance as getD2 } from 'd2/lib/d2';
 import Action from 'd2-ui/lib/action/Action';
 
 import appActions from '../app.actions';
+import userProfileStore from '../profile/profile.store';
 
 const accountActions = Action.createActionsFromNames([
     'setPassword',
     'setTwoFactorStatus',
+    'getQrCode',
 ]);
 
 accountActions.setPassword.subscribe(({ data: password, complete, error }) => {
@@ -36,8 +38,43 @@ accountActions.setPassword.subscribe(({ data: password, complete, error }) => {
 });
 
 accountActions.setTwoFactorStatus.subscribe(({ data: twoFA, complete, error }) => {
-    const payload = { userCredentials: { twoFA } };
-    const status = twoFA ? 'ON' : 'OFF';
+    const payload = {
+        firstName: userProfileStore.state.firstName,
+        surName: userProfileStore.state.surName,
+        userCredentials: {
+            id: userProfileStore.state.userCredentialsID,
+            userName: userProfileStore.state.userName,
+            twoFA,
+        },
+    };
+    const status = twoFA ? 'on' : 'off';
+
+    getD2().then((d2) => {
+        userProfileStore.state.twoFA = twoFA;
+        userProfileStore.setState(userProfileStore.state);
+
+        const api = d2.Api.getApi();
+        api.update(`users/${userProfileStore.state.id}`, payload)
+            .then(() => {
+                log.debug(`2 Factor is now ${status}.`);
+                appActions.showSnackbarMessage({
+                    message: d2.i18n.getTranslation(`twoFA_${status}_success`),
+                    status: 'success',
+                });
+                complete();
+            })
+            .catch((err) => {
+                appActions.showSnackbarMessage({
+                    message: d2.i18n.getTranslation(`twoFA_${status}_fail`),
+                    status: 'error',
+                });
+                log.error('Failed to change 2 Factor status:', err);
+                error();
+            });
+    });
+});
+
+accountActions.getQrCode.subscribe(() => {
 });
 
 export default accountActions;

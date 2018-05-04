@@ -26,8 +26,8 @@ appActions.init.subscribe(() => {
             api.get('locales/ui'),
             api.get('locales/db'),
             api.get('userSettings', { useFallback: false }),
-
             d2.system.settings.all(),
+            api.get('2fa/qr'),
         ]).then((results) => {
             const styles = (results[0] || []).map(style => ({ id: style.path, displayName: style.name }));
             const uiLocales = (results[1] || []).map(locale => ({ id: locale.locale, displayName: locale.name }));
@@ -42,6 +42,7 @@ appActions.init.subscribe(() => {
                 }, {});
 
             userProfileStore.setState(d2.currentUser);
+            userProfileStore.state.qrCodeUrl = results[5].url;
             userSettingsStore.setState(results[3]);
             optionValueStore.setState({
                 styles,

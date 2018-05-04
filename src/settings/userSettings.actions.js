@@ -21,15 +21,19 @@ userSettingsActions.save.subscribe(({ data, complete, error }) => {
                 userSettingsStore.setState(userSettingsStore.state);
 
                 log.debug('User Setting updated successfully.');
-                appActions.showSnackbarMessage(d2.i18n.getTranslation('settings_updated'));
-
+                appActions.showSnackbarMessage({
+                    message: d2.i18n.getTranslation('settings_updated'),
+                    status: 'success',
+                });
                 complete();
             })
             .catch((err) => {
                 userSettingsStore.setState(userSettingsStore.state);
                 log.warn('API call failed:', err);
-                appActions.showSnackbarMessage(d2.i18n.getTranslation('failed_to_update_settings'));
-
+                appActions.showSnackbarMessage({
+                    message: d2.i18n.getTranslation('failed_to_update_settings'),
+                    status: 'error',
+                });
                 error();
             });
     });

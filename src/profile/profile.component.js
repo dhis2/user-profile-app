@@ -5,7 +5,6 @@ import FormFields from '../layout/FormFields.component';
 import userProfileActions from './profile.actions';
 import userProfileStore from './profile.store';
 
-
 function EditProfile(props, context) {
     const fieldKeys = [
         'firstName',

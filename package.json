@@ -22,7 +22,10 @@
   "author": "Adheesh Bhatia",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "d2-ui": "28.1.4"    
+    "@dhis2/d2-i18n": "^1.0.3",
+    "@dhis2/d2-i18n-extract": "^1.0.6",
+    "@dhis2/d2-i18n-generate": "^1.0.18",
+    "d2-ui": "28.1.4"
   },
   "devDependencies": {
     "babel-core": "^6.7.2",
