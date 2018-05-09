@@ -15,7 +15,7 @@ import Sidebar from './layout/Sidebar.component';
 
 import Profile from './profile/profile.component';
 import Account from './account/account.component';
-import TwoFactor from './account/twoFactor/twoFactor.component';
+import TwoFactor from './account/twoFactor/TwoFactor';
 import UserSettings from './settings/userSettings.component';
 import ViewProfile from './viewProfile/viewProfile.component';
 

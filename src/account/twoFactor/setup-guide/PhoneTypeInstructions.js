@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 
 import phoneTypes from './phoneTypes';
 
-const playStoreLink = <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2" target="_blank">Play store.</a>;
+const playStoreLink = <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2" rel="noopener">Play store.</a>;
+const appStoreLink = <a href="https://itunes.apple.com/no/app/google-authenticator/id388497605?mt=8" rel="noreferrer">App store.</a>;
 
 const styles = {
-    downloadInstructions: {
+    phoneTypeInstructions: {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
@@ -16,14 +17,14 @@ const styles = {
     },
 };
 
-const DownloadInstructions = ({ phoneType }, context) => (
+const PhoneTypeInstructions = ({ phoneType }, context) => (
     phoneType !== phoneTypes.DEFAULT &&
-        <div style={styles.downloadInstructions}>
+        <div style={styles.phoneTypeInstructions}>
             <div style={styles.instructionItem}>
                 <b>1. </b>
                 {`${context.d2.i18n.getTranslation('download_app_from')} `}
                 {phoneType === phoneTypes.ANDROID && playStoreLink}
-                {phoneType === phoneTypes.IPHONE && `${context.d2.i18n.getTranslation('app_store')} `}
+                {phoneType === phoneTypes.IPHONE && appStoreLink}
             </div>
             <div style={styles.instructionItem}>
                 <b>2. </b>
@@ -38,7 +39,7 @@ const DownloadInstructions = ({ phoneType }, context) => (
         </div>
 );
 
-DownloadInstructions.propTypes = { phoneType: PropTypes.number.isRequired };
-DownloadInstructions.contextTypes = { d2: PropTypes.object.isRequired };
+PhoneTypeInstructions.propTypes = { phoneType: PropTypes.number.isRequired };
+PhoneTypeInstructions.contextTypes = { d2: PropTypes.object.isRequired };
 
-export default DownloadInstructions;
+export default PhoneTypeInstructions;

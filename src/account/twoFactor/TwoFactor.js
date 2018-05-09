@@ -20,7 +20,6 @@ const styles = {
     },
 };
 
-
 const status = state => state ? 'on' : 'off';
 
 class TwoFactor extends Component {
@@ -48,7 +47,7 @@ class TwoFactor extends Component {
         this.setState({ 
             isTwoFactorOn: !this.state.isTwoFactorOn 
         }, () => {
-            // accountActions.setTwoFactorStatus(this.state.isTwoFactorOn);
+            accountActions.setTwoFactorStatus(this.state.isTwoFactorOn);
         });
     }
 

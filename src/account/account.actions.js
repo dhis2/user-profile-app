@@ -38,15 +38,7 @@ accountActions.setPassword.subscribe(({ data: password, complete, error }) => {
 });
 
 accountActions.setTwoFactorStatus.subscribe(({ data: twoFA, complete, error }) => {
-    const payload = {
-        firstName: userProfileStore.state.firstName,
-        surName: userProfileStore.state.surName,
-        userCredentials: {
-            id: userProfileStore.state.userCredentialsID,
-            userName: userProfileStore.state.userName,
-            twoFA,
-        },
-    };
+    const payload = { userCredentials: { twoFA } };
     const status = twoFA ? 'on' : 'off';
 
     getD2().then((d2) => {
@@ -54,7 +46,7 @@ accountActions.setTwoFactorStatus.subscribe(({ data: twoFA, complete, error }) =
         userProfileStore.setState(userProfileStore.state);
 
         const api = d2.Api.getApi();
-        api.update(`users/${userProfileStore.state.id}`, payload)
+        api.update('/me', payload)
             .then(() => {
                 log.debug(`2 Factor is now ${status}.`);
                 appActions.showSnackbarMessage({

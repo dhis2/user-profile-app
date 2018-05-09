@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { Paper } from 'material-ui';
 import RadioButtons from './RadioButtons';
-import DownloadInstructions from './DownloadInstructions';
+import PhoneTypeInstructions from './PhoneTypeInstructions';
 
 const styles = {
     downloadGuideWrapper: {
@@ -34,9 +34,9 @@ const DownloadGuide = ({ phoneType, onPhoneTypeChange }, context) => (
         <div style={styles.downloadGuide}>
             <div style={styles.authDownloadHeader}>{context.d2.i18n.getTranslation('download_app')}</div>
             <div >
-                {context.d2.i18n.getTranslation('what_phone')}
+                {context.d2.i18n.getTranslation('what_phone_tablet')}
                 <RadioButtons setPhoneType={onPhoneTypeChange} />
-                <DownloadInstructions phoneType={phoneType} />
+                <PhoneTypeInstructions phoneType={phoneType} />
             </div>
         </div>
     </Paper>

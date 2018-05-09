@@ -24,7 +24,7 @@ const RadioButtons = ({ setPhoneType }) => (
         />
         <RadioButton
             value={phoneTypes.IPHONE}
-            label="Iphone"
+            label="Iphone/Ipad"
             style={styles.radioButton}
         />
     </RadioButtonGroup>
