@@ -13,11 +13,11 @@ import AppTheme from './layout/theme';
 import Snackbar from './layout/Snackbar.component';
 import Sidebar from './layout/Sidebar.component';
 
-import Profile from './profile/profile.component';
-import Account from './account/account.component';
+import Profile from './profile/Profile.component';
+import Account from './account/Account.component';
 import TwoFactor from './account/twoFactor/TwoFactor';
-import UserSettings from './settings/userSettings.component';
-import ViewProfile from './viewProfile/viewProfile.component';
+import UserSettings from './settings/UserSettings.component';
+import ViewProfile from './viewProfile/ViewProfile.component';
 
 const HeaderBar = withStateFrom(headerBarStore$, HeaderBarComponent);
 
