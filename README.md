@@ -1,4 +1,5 @@
 # DHIS2 user profile app [![Build Status](https://travis-ci.org/dhis2/user-profile-app.svg?branch=master)](https://travis-ci.org/dhis2/user-profile-app)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdhis2%2Fuser-profile-app.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdhis2%2Fuser-profile-app?ref=badge_shield)
 
 The user profile app is used for changing user profile information, user settings and user passwords.
 
@@ -33,3 +34,7 @@ Done!
 $ webpack-dev-server
 [...]
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdhis2%2Fuser-profile-app.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdhis2%2Fuser-profile-app?ref=badge_large)
