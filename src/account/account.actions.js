@@ -12,9 +12,8 @@ const accountActions = Action.createActionsFromNames([
     'getQrCode',
 ]);
 
-accountActions.setPassword.subscribe(({ data: password, complete, error }) => {
+accountActions.setPassword.subscribe(({ data: [password, onSuccess], complete, error }) => {
     const payload = { userCredentials: { password } };
-
     getD2().then((d2) => {
         const api = d2.Api.getApi();
         api.update('/me', payload)
@@ -24,6 +23,7 @@ accountActions.setPassword.subscribe(({ data: password, complete, error }) => {
                     message: d2.i18n.getTranslation('password_update_success'),
                     status: 'success',
                 });
+                onSuccess();
                 complete();
             })
             .catch((err) => {

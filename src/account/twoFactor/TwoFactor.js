@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { Paper, FlatButton, RaisedButton, Dialog } from 'material-ui';
-
 import SetupGuide from './setup-guide/SetupGuide.component';
 import Status2FA from './Status2FA';
 import Status2FAChangeDialog from './Status2FAChangeDialog';
@@ -10,7 +8,6 @@ import QRCode from './QRCode';
 
 import profileSettingsStore from '../../profile/profile.store';
 import accountActions from '../account.actions';
-import userSettingsStore from '../../settings/userSettings.store';
 
 const styles = {
     header: {

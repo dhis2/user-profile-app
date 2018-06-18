@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { Paper, RadioButtonGroup, RadioButton } from 'material-ui';
 import DownloadGuide from './DownloadGuide';
 
 import phoneTypes from './phoneTypes';
