@@ -22,8 +22,9 @@
   "author": "Adheesh Bhatia",
   "license": "BSD-3-Clause",
   "dependencies": {
+    "d2": "^30.0.0",
     "d2-ui": "29.0.5",
-    "eslint-config-dhis2": "^3.0.7"
+    "eslint-config-dhis2": "^3.0.7",
     "material-ui": "^0.18.7",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",

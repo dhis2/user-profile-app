@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { debounce } from 'lodash';
 
 import { isValidPassword } from 'd2-ui/lib/forms/Validators';
 
 import FormBuilder from 'd2-ui/lib/forms/FormBuilder.component';
 import TextField from 'd2-ui/lib/form-fields/TextField';
-import { FlatButton, RaisedButton, Dialog } from 'material-ui';
+import { FlatButton, RaisedButton } from 'material-ui';
 
 import appActions from '../app.actions';
 import accountActions from './account.actions';
