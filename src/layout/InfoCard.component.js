@@ -61,7 +61,8 @@ class InfoCard extends Component {
 
     getBirthdayDateValue(dateValue) {
         const birthday = new Date(dateValue);
-        return birthday.toLocaleDateString();
+        // Silly Date class gives day of month from getDate() and getMonth() is based from 0-11.
+        return birthday.getDate() + "-" + (birthday.getMonth()+1) + "-" + birthday.getFullYear();
     }
 
     /* eslint-disable */

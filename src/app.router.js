@@ -13,15 +13,21 @@ import AppTheme from './layout/theme';
 import Snackbar from './layout/Snackbar.component';
 import Sidebar from './layout/Sidebar.component';
 
-import Profile from './profile/profile.component';
-import Account from './account/account.component';
-import UserSettings from './settings/userSettings.component';
-import ViewProfile from './viewProfile/viewProfile.component';
+import Profile from './profile/Profile.component';
+import Account from './account/Account.component';
+import TwoFactor from './account/twoFactor/TwoFactor';
+import UserSettings from './settings/UserSettings.component';
+import ViewProfile from './viewProfile/ViewProfile.component';
 
 const HeaderBar = withStateFrom(headerBarStore$, HeaderBarComponent);
 
 function WrAppadApp(props) {
-    return <div><Sidebar currentSection={props.routes[1].path} />{props.children}</div>;
+    return (
+        <div>
+            <Sidebar currentSection={props.routes[1].path} />
+            {props.children}
+        </div>
+    );
 }
 WrAppadApp.propTypes = { routes: PropTypes.array.isRequired, children: PropTypes.any.isRequired };
 
@@ -44,6 +50,7 @@ class AppRouter extends Component {
                             <Route path="settings" component={UserSettings} />
                             <Route path="profile" component={Profile} />
                             <Route path="account" component={Account} />
+                            <Route path="twoFactor" component={TwoFactor} />
                             <Route path="viewProfile" component={ViewProfile} />
                             <Redirect from="/" to="/viewProfile" />
                         </Route>
