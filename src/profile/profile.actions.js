@@ -12,12 +12,9 @@ const userProfileActions = Action.createActionsFromNames([
     'save',
 ]);
 
-
 userProfileActions.save.subscribe(({ data, complete, error }) => {
     const [key, value] = data;
-    let payload = key === 'newPassword'
-        ? ({ userCredentials: { password: value } })
-        : ({ [key]: String(value).trim() || ' ' }); // TODO: Ugly hack to allow saving empty fields
+    let payload = ({ [key]: String(value).trim() || ' ' }); // TODO: Ugly hack to allow saving empty fields
 
     if (key === 'birthday') {
         const date = new Date(value);
@@ -41,11 +38,17 @@ userProfileActions.save.subscribe(({ data, complete, error }) => {
         api.update('me', payload)
             .then(() => {
                 log.debug('User Profile updated successfully.');
-                userSettingsActions.showSnackbarMessage(d2.i18n.getTranslation('update_user_profile_success'));
+                userSettingsActions.showSnackbarMessage({
+                    message: d2.i18n.getTranslation('update_user_profile_success'),
+                    status: 'success',
+                });
                 complete();
             })
             .catch((err) => {
-                userSettingsActions.showSnackbarMessage(d2.i18n.getTranslation('update_user_profile_fail'));
+                userSettingsActions.showSnackbarMessage({
+                    message: d2.i18n.getTranslation('update_user_profile_fail'),
+                    status: 'error',
+                });
                 log.error('Failed to update user profile:', err);
                 error();
             });
