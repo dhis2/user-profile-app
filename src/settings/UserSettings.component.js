@@ -5,7 +5,6 @@ import FormFields from '../layout/FormFields.component';
 import userSettingsActions from './userSettings.actions';
 import userSettingsStore from './userSettings.store';
 
-
 function EditProfile(props, context) {
     const fieldKeys = [
         'keyUiLocale',

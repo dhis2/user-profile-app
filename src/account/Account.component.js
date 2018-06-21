@@ -9,6 +9,7 @@ import userProfileStore from '../profile/profile.store';
 function EditProfile(props, context) {
     const fieldKeys = [
         'accountEditor',
+        
     ];
 
     const pageLabel = context.d2.i18n.getTranslation('edit_account_settings');

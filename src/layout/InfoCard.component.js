@@ -6,6 +6,7 @@ import { Card, CardText } from 'material-ui/Card';
 import AppTheme from './theme';
 import settingsKeyMapping from '../userSettingsMapping';
 
+
 const styles = {
     header: {
         fontSize: 24,

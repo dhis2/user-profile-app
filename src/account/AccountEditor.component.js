@@ -5,10 +5,11 @@ import { isValidPassword } from 'd2-ui/lib/forms/Validators';
 
 import FormBuilder from 'd2-ui/lib/forms/FormBuilder.component';
 import TextField from 'd2-ui/lib/form-fields/TextField';
-import { FlatButton, RaisedButton, Dialog } from 'material-ui';
+import { FlatButton, RaisedButton } from 'material-ui';
 
 import appActions from '../app.actions';
 import accountActions from './account.actions';
+
 
 class AccountEditor extends Component {
     constructor (props) {
@@ -45,13 +46,18 @@ class AccountEditor extends Component {
     }
 
     clearRepeatPassword = () => {
-        this.setState({ reNewPassword: '' });
+        this.setState(
+            { 
+                oldPassword: '',
+                reNewPassword: '',
+                newPassword: '',
+            }
+        );
         return true;
     }
 
     updatePassword = () => {
         const formState = this.formBuilder ? this.formBuilder.state.form : {};
-
         if (formState.pristine === true) {
             appActions.showSnackbarMessage({ message: this.context.d2.i18n.getTranslation('no_changes_have_been_made')});
         } else if (formState.validating === true) {
@@ -61,7 +67,7 @@ class AccountEditor extends Component {
         } else if (!this.isNotEmpty(this.state.newPassword) || !this.isNotEmpty(this.state.reNewPassword)) {
             appActions.showSnackbarMessage({ message: this.context.d2.i18n.getTranslation('password_do_not_match'), status:'error'});
         } else {
-            accountActions.setPassword(this.state.newPassword);
+            accountActions.setPassword(this.state.newPassword, this.clearRepeatPassword);
         }
     }
 
@@ -114,10 +120,6 @@ class AccountEditor extends Component {
                 validators: [{
                     validator: isValidPassword,
                     message: this.context.d2.i18n.getTranslation(isValidPassword.message),
-                }, {
-                    // If a new valid password is entered, this "validator" clears out the "re-enter password" field below
-                    validator: this.clearRepeatPassword,
-                    message: '',
                 }],
             },
             {
@@ -154,11 +156,6 @@ class AccountEditor extends Component {
                     style: { marginTop: '20px' },
                     secondary: true,
                 },
-                validators: [{
-                    // If a new valid password is entered, this "validator" clears out the "re-enter password" field below
-                    validator: this.clearRepeatPassword,
-                    message: '',
-                }],
             },
         ];
         const setRef = (r) => { this.formBuilder = r; };
