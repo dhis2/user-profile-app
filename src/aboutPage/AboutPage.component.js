@@ -1,17 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Card, CardText } from 'material-ui/Card';
 
-import InfoItem from '../layout/InfoItem.component';
-import InfoHeader from '../layout/InfoHeader.component';
-
-const styles = {
-    card: {
-        marginTop: 8,
-        marginRight: '1rem',
-        padding: '0 1rem',
-    },
-};
+import AboutSection from './AboutSection.component';
 
 const attributes = {
     systemInfo: [
@@ -40,9 +30,9 @@ const attributes = {
     ],
 };
 
-
 class AboutPage extends Component {
     translate = s => this.context.d2.i18n.getTranslation(s);
+
     getAttributes = (selected, source) => selected
         .map(attribute => ({
             label: this.translate(attribute),
@@ -78,39 +68,5 @@ class AboutPage extends Component {
 };
 
 AboutPage.contextTypes = { d2: PropTypes.object.isRequired };
-
-const AboutSection = ({ header, attributes }) => (
-    <div>
-        <InfoHeader text={header} />
-            <Card style={styles.card}>
-                <CardText>
-                    <div className="info-content">
-                        {attributes
-                            .map(({ label, value }) => (
-                                <InfoItem
-                                    key={label}
-                                    label={label}
-                                    value={value}
-                                />
-                            )
-                        )}
-                    </div>
-                </CardText>
-            </Card>
-    </div>
-);
-
-AboutSection.propTypes = {
-    header: PropTypes.string.isRequired,
-    attributes: PropTypes.arrayOf(
-        PropTypes.shape({
-            label: PropTypes.string.isRequired,
-            value: PropTypes.oneOfType([
-                PropTypes.string,
-                PropTypes.number,
-            ]),
-        })
-    ).isRequired,
-};
 
 export default AboutPage;
