@@ -3,17 +3,12 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Card, CardText } from 'material-ui/Card';
 
-import AppTheme from './theme';
+import InfoItem from './InfoItem.component';
+import InfoHeader from './InfoHeader.component';
+
 import settingsKeyMapping from '../userSettingsMapping';
 
-
 const styles = {
-    header: {
-        fontSize: 24,
-        fontWeight: 300,
-        color: AppTheme.rawTheme.palette.textColor,
-        padding: '24px 0 12px 16px',
-    },
     card: {
         marginTop: 8,
         marginRight: '1rem',
@@ -93,10 +88,12 @@ class InfoCard extends Component {
         const translatedLabelName = this.getTranslatedLabelName(mapping.label);
         const labelValue = this.getLabelValue(labelName, mapping.type);
         return (
-            <div key={translatedLabelName} className="label-row">
-                <span className="label-name"> {translatedLabelName} </span>
-                <span className="label-value">{labelValue}</span>
-            </div>);
+            <InfoItem
+                key={translatedLabelName}
+                label={translatedLabelName}
+                value={labelValue}
+            />
+        );
     }
 
     getLabelComponents(labelNames) {
@@ -127,7 +124,7 @@ class InfoCard extends Component {
     render() {
         return (
             <div className="content-area">
-                <div style={styles.header}>{this.props.pageLabel}</div>
+                <InfoHeader text={this.props.pageLabel} />
                 {this.state.canRender && this.renderLabels(this.props.labelKeys)}
             </div>
         );

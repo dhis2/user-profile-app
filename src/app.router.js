@@ -18,6 +18,7 @@ import Account from './account/Account.component';
 import TwoFactor from './account/twoFactor/TwoFactor';
 import UserSettings from './settings/UserSettings.component';
 import ViewProfile from './viewProfile/ViewProfile.component';
+import AboutPage from './aboutPage/AboutPage.component';
 
 const HeaderBar = withStateFrom(headerBarStore$, HeaderBarComponent);
 
@@ -52,6 +53,7 @@ class AppRouter extends Component {
                             <Route path="account" component={Account} />
                             <Route path="twoFactor" component={TwoFactor} />
                             <Route path="viewProfile" component={ViewProfile} />
+                            <Route path="aboutPage" component={AboutPage} />
                             <Redirect from="/" to="/viewProfile" />
                         </Route>
                     </Router>

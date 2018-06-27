@@ -24,12 +24,15 @@ html {
 }
 
 .label-row {
-  display: block;
-  margin-top: 5px;
+  display: flex;
+  padding: 4px 0px;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .label-name {
   display: inline-block;
+  flex: 1;
   color: #777;
   font-size: 12pt;
   width: 110px;
@@ -40,6 +43,7 @@ html {
 
 .label-value {
   display: inline-block;
+  flex: 2;
   font-size: 12pt;
   max-width: 510px;
 }
