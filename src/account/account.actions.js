@@ -9,7 +9,7 @@ import userProfileStore from '../profile/profile.store';
 const accountActions = Action.createActionsFromNames([
     'setPassword',
     'setTwoFactorStatus',
-    'getQrCode',
+    'checkAuthCode',
 ]);
 
 accountActions.setPassword.subscribe(({ data: [password, onSuccess], complete, error }) => {
@@ -66,7 +66,20 @@ accountActions.setTwoFactorStatus.subscribe(({ data: twoFA, complete, error }) =
     });
 });
 
-accountActions.getQrCode.subscribe(() => {
+accountActions.checkAuthCode.subscribe(({ data: [code, success, error] }) => {
+    getD2().then((d2) => {
+        const api = d2.Api.getApi();
+        api.get('2fa/authenticate', { code })
+            .then(() => {
+                success();
+            })
+            .catch((err) => {
+                if (err.status === 'ERROR') {
+                    const errorText = d2.i18n.getTranslation('please_enter_the_correct_code');
+                    error(errorText);
+                }
+            });
+    });
 });
 
 export default accountActions;

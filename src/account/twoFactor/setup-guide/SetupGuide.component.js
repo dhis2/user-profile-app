@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-import DownloadGuide from './DownloadGuide';
-
-import phoneTypes from './phoneTypes';
+import SetupInstructions from './SetupInstructions';
 
 const styles = {
     guideHeader: {
@@ -12,28 +10,15 @@ const styles = {
     },
 };
 
-class SetupGuide extends Component {
-    state = {
-        phoneType: phoneTypes.DEFAULT,
-    }
+const SetupGuide = (props, context) => (
+    <div>
+        <div style={styles.guideHeader}>
+            {context.d2.i18n.getTranslation('qr_code_instructions')}
+        </div>
+        <SetupInstructions />
+    </div>
+);
 
-    setPhoneType = (event, value) => this.setState({ phoneType: value });
-    translate = key => this.context.d2.i18n.getTranslation(key);
-
-    render() {
-        return (
-            <div>
-                {this.props.open &&
-                <div>
-                    <div style={styles.guideHeader}>{this.translate('qr_code_instructions')}</div>
-                    <DownloadGuide phoneType={this.state.phoneType} onPhoneTypeChange={this.setPhoneType}/>
-                </div>}
-            </div>
-        );
-    }
-}
-
-SetupGuide.propTypes = { open: PropTypes.bool.isRequired };
 SetupGuide.contextTypes = { d2: PropTypes.object.isRequired };
 
 export default SetupGuide;

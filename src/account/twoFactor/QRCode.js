@@ -21,9 +21,8 @@ const styles = {
 };
 
 
-const QRCode = ({ open }, context) => (
+const QRCode = (props, context) => (
     <div style={styles.qrCodePaperWrapper} >
-        {open &&
         <Paper style={styles.qrCodePaper}>
             <div style={styles.statusMessage}>
                 <b>{context.d2.i18n.getTranslation('qr_code')}</b>
@@ -33,11 +32,10 @@ const QRCode = ({ open }, context) => (
                 alt="qrCode"
                 src={profileSettingsStore.state.qrCodeUrl}
             />
-        </Paper>}
+        </Paper>
     </div>
 );
 
-QRCode.propTypes = { open: PropTypes.bool.isRequired };
 QRCode.contextTypes = { d2: PropTypes.object.isRequired };
 
 export default QRCode;

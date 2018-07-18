@@ -141,7 +141,7 @@ class AccountEditor extends Component {
                 name: 'twoFactorSetupButton',
                 component: FlatButton,
                 props: {
-                    label: this.context.d2.i18n.getTranslation('setup_two_factor'),
+                    label: this.context.d2.i18n.getTranslation('two_factor_authentication'),
                     onClick: this.openTwoFactorDialog,
                     style: { marginTop: '20px' },
                     secondary: false,

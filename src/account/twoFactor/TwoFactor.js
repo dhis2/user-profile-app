@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import SetupGuide from './setup-guide/SetupGuide.component';
 import Status2FA from './Status2FA';
-import Status2FAChangeDialog from './Status2FAChangeDialog';
+import TwoFaStatusChangeDialog from './TwoFaStatusChangeDialog';
 import QRCode from './QRCode';
 
 import profileSettingsStore from '../../profile/profile.store';
@@ -48,7 +48,7 @@ class TwoFactor extends Component {
         });
     }
 
-    handleDialogAnswer = () => {
+    handleChangeStatus = () => {
         this.changeTwoFactorStatus();
         this.closeSetupDialog();
     };
@@ -56,7 +56,7 @@ class TwoFactor extends Component {
     render() {        
         return (
             <div className="content-area">
-                <div style={styles.header}>2 Factor</div>
+                <div style={styles.header}>{this.translate('twoFA')}</div>
                 {this.state.canRender &&
                 <div>
                     <Status2FA
@@ -65,14 +65,15 @@ class TwoFactor extends Component {
                         buttonLabel={this.translate(`turn_${status(!this.state.isTwoFactorOn)}`)}
                         statusMessage={this.translate(`twoFA_status_${status(this.state.isTwoFactorOn)}`)}
                     />
-                    <Status2FAChangeDialog
+                    <TwoFaStatusChangeDialog
                         dialogTitle={this.translate(`twoFA_turn_${status(!this.state.isTwoFactorOn)}`)}
+                        isTwoFactorOn={this.state.isTwoFactorOn}
                         closeSetupDialog={this.closeSetupDialog}
-                        handleDialogAnswer={this.handleDialogAnswer}
+                        handleChangeStatus={this.handleChangeStatus}
                         dialogOpened={this.state.dialogOpened}
                     />
-                    <SetupGuide open={this.state.isTwoFactorOn} />
-                    <QRCode open={this.state.isTwoFactorOn}/>
+                    <SetupGuide />
+                    <QRCode />
                 </div>}
             </div>
         );
