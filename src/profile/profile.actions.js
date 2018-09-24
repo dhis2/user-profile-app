@@ -35,7 +35,10 @@ userProfileActions.save.subscribe(({ data, complete, error }) => {
         }
 
         const api = d2.Api.getApi();
-        api.update('me', payload)
+        const d2Method = key === 'avatar' ? 'patch' : 'update';
+        const url = key === 'avatar' ? `/users/${userProfileStore.state.id}` : 'me';
+
+        api[d2Method](url, payload)
             .then(() => {
                 log.debug('User Profile updated successfully.');
                 userSettingsActions.showSnackbarMessage({
