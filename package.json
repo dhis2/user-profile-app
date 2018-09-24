@@ -1,6 +1,6 @@
 {
   "name": "user-profile-app",
-  "version": "30.0.0",
+  "version": "31.0.0",
   "description": "User Profile App for DHIS2",
   "main": "src/index.html",
   "scripts": {
@@ -62,7 +62,7 @@
   "manifest.webapp": {
     "name": "DHIS2 User Profile Management",
     "dhis2": {
-      "apiVersion": "29"
+      "apiVersion": "31"
     },
     "icons": {
       "48": "icon.png"
