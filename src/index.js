@@ -4,18 +4,20 @@ import log from 'loglevel';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-import injectTapEventPlugin from 'react-tap-event-plugin';
-
 import { init, config, getUserSettings, getManifest } from 'd2/lib/d2';
 import LoadingMask from 'd2-ui/lib/loading-mask/LoadingMask.component';
 import appActions from './app.actions';
 import AppTheme from './layout/theme';
 import './layout/app.css';
 
-injectTapEventPlugin();
 const dhisDevConfig = DHIS_CONFIG; // eslint-disable-line
 
-ReactDOM.render(<MuiThemeProvider theme={AppTheme}><LoadingMask /></MuiThemeProvider>, document.getElementById('app'));
+ReactDOM.render(
+    <MuiThemeProvider theme={AppTheme}>
+        <LoadingMask />
+    </MuiThemeProvider>,
+    document.getElementById('app'),
+);
 
 function configI18n(userSettings) {
     const uiLocale = userSettings.keyUiLocale;
