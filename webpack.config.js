@@ -1,8 +1,6 @@
-'use strict';
-
-var webpack = require('webpack');
-var path = require('path');
-var colors = require('colors');
+const webpack = require('webpack');
+const path = require('path');
+const colors = require('colors');
 
 const isDevBuild = process.argv[1].indexOf('webpack-dev-server') !== -1;
 const dhisConfigPath = process.env.DHIS2_HOME && `${process.env.DHIS2_HOME}/config`;
@@ -13,7 +11,7 @@ try {
     console.log('\nLoaded DHIS config:');
 } catch (e) {
     // Failed to load config file - use default config
-    console.warn(`\nWARNING! Failed to load DHIS config:`, e.message);
+    console.warn('\nWARNING! Failed to load DHIS config:', e.message);
     console.info('Using default config');
     dhisConfig = {
         baseUrl: 'http://localhost:8080',
@@ -32,7 +30,7 @@ const webpackConfig = {
     entry: './src/index.js',
     devtool: 'source-map',
     output: {
-        path: __dirname + '/build',
+        path: `${__dirname}/build`,
         filename: 'app.js',
         publicPath: 'http://localhost:8081/',
     },
@@ -51,12 +49,6 @@ const webpackConfig = {
                 loader: 'style-loader!css-loader',
             },
         ],
-    },
-    resolve: {
-        alias: {
-            react: path.resolve('./node_modules/react'),
-            'material-ui': path.resolve('./node_modules/material-ui'),
-        },
     },
     devServer: {
         port: 8081,
@@ -89,7 +81,7 @@ if (!isDevBuild) {
 } else {
     webpackConfig.plugins = [
         new webpack.DefinePlugin({
-            DHIS_CONFIG: JSON.stringify(dhisConfig)
+            DHIS_CONFIG: JSON.stringify(dhisConfig),
         }),
     ];
 }

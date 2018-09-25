@@ -11,4 +11,5 @@ manifest.webapp
 
 # Misc files
 npm-debug.log
-
+.vscode
+yarn-error.log

@@ -4,9 +4,7 @@ import { Router, Route, hashHistory, Redirect } from 'react-router';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-import HeaderBarComponent from 'd2-ui/lib/app-header/HeaderBar';
-import headerBarStore$ from 'd2-ui/lib/app-header/headerBar.store';
-import withStateFrom from 'd2-ui/lib/component-helpers/withStateFrom';
+import HeaderBar from '@dhis2/d2-ui-header-bar';
 
 import AppTheme from './layout/theme';
 
@@ -19,8 +17,6 @@ import TwoFactor from './account/twoFactor/TwoFactor';
 import UserSettings from './settings/UserSettings.component';
 import ViewProfile from './viewProfile/ViewProfile.component';
 import AboutPage from './aboutPage/AboutPage.component';
-
-const HeaderBar = withStateFrom(headerBarStore$, HeaderBarComponent);
 
 function WrAppadApp(props) {
     return (
@@ -42,9 +38,9 @@ class AppRouter extends Component {
 
     render() {
         return (
-            <MuiThemeProvider muiTheme={AppTheme} >
+            <MuiThemeProvider muiTheme={AppTheme}>
                 <div className="app-wrapper">
-                    <HeaderBar />
+                    <HeaderBar d2={this.props.d2} />
                     <Snackbar />
                     <Router history={hashHistory}>
                         <Route component={WrAppadApp}>
