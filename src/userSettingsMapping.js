@@ -5,12 +5,12 @@ const settingsKeyMapping = {
     firstName: {
         label: 'first_name',
         type: 'textfield',
-        validators: ['required']
+        validators: ['required'],
     },
     surname: {
         label: 'surname',
         type: 'textfield',
-        validators: ['required']
+        validators: ['required'],
     },
     gender: {
         label: 'gender',
@@ -18,91 +18,91 @@ const settingsKeyMapping = {
         options: {
             gender_male: 'gender_male',
             gender_female: 'gender_female',
-            gender_other: 'gender_other'
-        }
+            gender_other: 'gender_other',
+        },
     },
     email: {
         label: 'user_email_address',
         type: 'textfield',
-        validators: ['email']
+        validators: ['email'],
     },
     phoneNumber: {
         label: 'phone_number',
-        type: 'textfield'
+        type: 'textfield',
     },
     introduction: {
         label: 'introduction',
         type: 'textfield',
-        multiLine: true
+        multiLine: true,
     },
     jobTitle: {
         label: 'job_title',
-        type: 'textfield'
+        type: 'textfield',
     },
     userRoles: {
         label: 'user_roles',
         type: 'userRoles',
-        validators: ['required']
+        validators: ['required'],
     },
     userOrgUnits: {
         label: 'user_organizational_units',
         type: 'userOrgUnits',
-        validators: ['required']
+        validators: ['required'],
     },
     birthday: {
         label: 'birthday',
-        type: 'date'
+        type: 'date',
     },
     nationality: {
         label: 'nationality',
-        type: 'textfield'
+        type: 'textfield',
     },
     employer: {
         label: 'employer',
-        type: 'textfield'
+        type: 'textfield',
     },
     education: {
         label: 'education',
         type: 'textfield',
-        multiLine: true
+        multiLine: true,
     },
     // TODO: chips component for interests and languages?
     interests: {
         label: 'interests',
         type: 'textfield',
-        multiLine: true
+        multiLine: true,
     },
     languages: {
         label: 'languages',
         type: 'textfield',
-        multiLine: true
+        multiLine: true,
     },
     whatsApp: {
         label: 'whats_app',
-        type: 'textfield'
+        type: 'textfield',
     },
     facebookMessenger: {
         label: 'facebook_messenger',
-        type: 'textfield'
+        type: 'textfield',
     },
     skype: {
         label: 'skype',
-        type: 'textfield'
+        type: 'textfield',
     },
     telegram: {
         label: 'telegram',
-        type: 'textfield'
+        type: 'textfield',
     },
     twitter: {
         label: 'twitter',
-        type: 'textfield'
+        type: 'textfield',
     },
     /* ================================================================= */
     /* Category: Account Settings                                        */
     /* ================================================================= */
     accountEditor: {
         label: 'account_editor',
-        type: 'accountEditor'
+        type: 'accountEditor',
     },
     /* ================================================================= */
     /* Category: System Settings                                         */
@@ -113,7 +113,7 @@ const settingsKeyMapping = {
         source: 'uiLocales',
         includeEmpty: true,
         emptyLabel: 'use_system_default',
-        showSystemDefault: true
+        showSystemDefault: true,
     },
     keyDbLocale: {
         label: 'db_language',
@@ -121,7 +121,7 @@ const settingsKeyMapping = {
         source: 'dbLocales',
         includeEmpty: true,
         emptyLabel: 'use_system_default',
-        showSystemDefault: true
+        showSystemDefault: true,
     },
     keyStyle: {
         label: 'style',
@@ -129,41 +129,41 @@ const settingsKeyMapping = {
         source: 'styles',
         includeEmpty: true,
         emptyLabel: 'use_system_default',
-        showSystemDefault: true
+        showSystemDefault: true,
     },
     keyAnalysisDisplayProperty: {
         label: 'analysis_module',
         type: 'dropdown',
         options: {
             name: 'name',
-            shortName: 'short_name'
+            shortName: 'short_name',
         },
         includeEmpty: true,
         emptyLabel: 'use_system_default',
-        showSystemDefault: true
+        showSystemDefault: true,
     },
     keyMessageEmailNotification: {
         label: 'enable_message_email_notifications',
         type: 'dropdown',
         options: {
             true: 'true_notifications',
-            false: 'false_notifications'
+            false: 'false_notifications',
         },
         includeEmpty: true,
         emptyLabel: 'use_system_default',
-        showSystemDefault: true
+        showSystemDefault: true,
     },
     keyMessageSmsNotification: {
         label: 'enable_message_sms_notifications',
         type: 'dropdown',
         options: {
             true: 'true_notifications',
-            false: 'false_notifications'
+            false: 'false_notifications',
         },
         includeEmpty: true,
         emptyLabel: 'use_system_default',
-        showSystemDefault: true
-    }
+        showSystemDefault: true,
+    },
 };
 
 export default settingsKeyMapping;
