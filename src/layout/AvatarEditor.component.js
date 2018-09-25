@@ -12,10 +12,12 @@ class AvatarEditor extends Component {
 
         this.api = props.d2.Api.getApi();
         this.userId = props.currentUser.id;
-        
+
         this.state = {
-            avatarSrc: this.avatarId ? this.parseAvatarSrc(props.currentUser.avatar.id) : null,
-            loading: false,
+            avatarSrc: props.currentUser.avatar
+                ? this.parseAvatarSrc(props.currentUser.avatar.id)
+                : null,
+            loading: false
         };
     }
 
@@ -28,20 +30,27 @@ class AvatarEditor extends Component {
         // Setup form data for image file
         const formData = new FormData();
         const file = event.target.files[0];
-        formData.append('file', file);
-        formData.append('domain', 'USER_AVATAR');
+        formData.append("file", file);
+        formData.append("domain", "USER_AVATAR");
 
         // Send image to server and save image id as avatar
         try {
-            const postImageResponse = await this.api.post('fileResources', formData);
+            const postImageResponse = await this.api.post(
+                'fileResources',
+                formData
+            );
             const imageId = postImageResponse.response.fileResource.id;
             this.props.onChange({ target: { value: imageId } });
-            this.setState({ 
+            console.log(postImageResponse);
+            this.setState({
                 loading: false,
                 avatarSrc: this.parseAvatarSrc(imageId)
             });
         } catch (error) {
-            console.log('POST request to fileResources endpoint failed: ', error);
+            console.log(
+                'POST request to fileResources endpoint failed: ',
+                error
+            );
         }
     };
 
@@ -53,7 +62,10 @@ class AvatarEditor extends Component {
     renderAvatar() {
         return (
             <div className="avatar-editor__preview">
-                <img src={this.state.avatarSrc} className="avatar-editor__image" />
+                <img
+                    src={this.state.avatarSrc}
+                    className="avatar-editor__image"
+                />
             </div>
         );
     }
@@ -62,7 +74,9 @@ class AvatarEditor extends Component {
         const { d2 } = this.props;
         return (
             <div className="avatar-editor__not-available">
-                <div>{d2.i18n.getTranslation('no_profile_picture_available')}</div>
+                <div>
+                    {d2.i18n.getTranslation('no_profile_picture_available')}
+                </div>
             </div>
         );
     }
@@ -74,7 +88,9 @@ class AvatarEditor extends Component {
 
         return (
             <div className="avatar-editor">
-                <p className="avatar-editor__label">{d2.i18n.getTranslation('profile_picture')}</p>
+                <p className="avatar-editor__label">
+                    {d2.i18n.getTranslation('profile_picture')}
+                </p>
                 <div className="avatar-editor__preview-wrap">
                     {loading ? (
                         <CircularProgress />
@@ -91,7 +107,11 @@ class AvatarEditor extends Component {
                         label={d2.i18n.getTranslation('select_profile_picture')}
                         primary
                     >
-                        <input onChange={this.onFileSelect} style={{ display: 'none' }} type="file" />
+                        <input
+                            onChange={this.onFileSelect}
+                            style={{ display: 'none' }}
+                            type="file"
+                        />
                     </FlatButton>
                     <FlatButton
                         icon={<ActionDelete />}
