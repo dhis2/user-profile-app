@@ -34,6 +34,7 @@ userProfileActions.save.subscribe(({ data, complete, error }) => {
             }
         }
 
+        // Post avatar directly to the `/user/<ID>` endpoint, because d2 update calls to `/me` cause issues
         const api = d2.Api.getApi();
         const d2Method = key === 'avatar' ? 'patch' : 'update';
         const url = key === 'avatar' ? `/users/${userProfileStore.state.id}` : 'me';
