@@ -80,6 +80,7 @@ const settingsKeyMapping = {
     whatsApp: {
         label: 'whats_app',
         type: 'textfield',
+        validators: ['whats_app'],
     },
     facebookMessenger: {
         label: 'facebook_messenger',
