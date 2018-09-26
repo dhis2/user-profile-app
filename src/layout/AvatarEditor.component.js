@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+
 import CircularProgress from 'material-ui/CircularProgress';
 import FlatButton from 'material-ui/FlatButton';
 import FileUpload from 'material-ui/svg-icons/file/file-upload';
 import ActionDelete from 'material-ui/svg-icons/action/delete';
+
+import userSettingsActions from '../app.actions';
+
 import './avatareditor.component.css';
 
 class AvatarEditor extends Component {
@@ -17,7 +21,7 @@ class AvatarEditor extends Component {
             avatarSrc: props.currentUser.avatar
                 ? this.parseAvatarSrc(props.currentUser.avatar.id)
                 : null,
-            loading: false
+            loading: false,
         };
     }
 
@@ -26,28 +30,36 @@ class AvatarEditor extends Component {
     }
 
     onFileSelect = async event => {
-        this.setState({ loading: true });
+        const { d2, onChange } = this.props;
         // Setup form data for image file
-        const formData = new FormData();
         const file = event.target.files[0];
-        formData.append("file", file);
-        formData.append("domain", "USER_AVATAR");
+
+        // Cancel was pressed, no file provided
+        if (!file) {
+            return;
+        }
+
+        this.setState({ loading: true });
+
+        const formData = new FormData();
+        formData.append('file', file);
+        formData.append('domain', 'USER_AVATAR');
 
         // Send image to server and save image id as avatar
         try {
-            const postImageResponse = await this.api.post(
-                'fileResources',
-                formData
-            );
-            const imageId = postImageResponse.response.fileResource.id;
-            this.props.onChange({ target: { value: imageId } });
-            console.log(postImageResponse);
+            const postResponse = await this.api.post('fileResources', formData);
+            const imageId = postResponse.response.fileResource.id;
+            onChange({ target: { value: imageId } });
             this.setState({
                 loading: false,
-                avatarSrc: this.parseAvatarSrc(imageId)
+                avatarSrc: this.parseAvatarSrc(imageId),
             });
         } catch (error) {
-            console.log(
+            userSettingsActions.showSnackbarMessage({
+                message: d2.i18n.getTranslation('avatar_upload_error'),
+                status: 'error',
+            });
+            console.error(
                 'POST request to fileResources endpoint failed: ',
                 error
             );
@@ -65,6 +77,7 @@ class AvatarEditor extends Component {
                 <img
                     src={this.state.avatarSrc}
                     className="avatar-editor__image"
+                    alt="Avatar"
                 />
             </div>
         );
@@ -84,7 +97,6 @@ class AvatarEditor extends Component {
     render() {
         const { d2 } = this.props;
         const { loading, avatarSrc } = this.state;
-        console.log(`Avatar: ${avatarSrc} | loading: ${loading}`);
 
         return (
             <div className="avatar-editor">
@@ -111,6 +123,7 @@ class AvatarEditor extends Component {
                             onChange={this.onFileSelect}
                             style={{ display: 'none' }}
                             type="file"
+                            accept="image/*"
                         />
                     </FlatButton>
                     <FlatButton
@@ -124,6 +137,10 @@ class AvatarEditor extends Component {
     }
 }
 
-AvatarEditor.propTypes = {};
+AvatarEditor.propTypes = {
+    d2: PropTypes.object.isRequired,
+    currentUser: PropTypes.object.isRequired,
+    onChange: PropTypes.func.isRequired,
+};
 
 export default AvatarEditor;
