@@ -77,7 +77,7 @@ class AvatarEditor extends Component {
                 <img
                     src={this.state.avatarSrc}
                     className="avatar-editor__image"
-                    alt="Avatar"
+                    alt={this.props.d2.i18n.getTranslation('avatar')}
                 />
             </div>
         );
@@ -88,7 +88,7 @@ class AvatarEditor extends Component {
         return (
             <div className="avatar-editor__not-available">
                 <div>
-                    {d2.i18n.getTranslation('no_profile_picture_available')}
+                    {d2.i18n.getTranslation('no_avatar_available')}
                 </div>
             </div>
         );
@@ -101,7 +101,7 @@ class AvatarEditor extends Component {
         return (
             <div className="avatar-editor">
                 <p className="avatar-editor__label">
-                    {d2.i18n.getTranslation('profile_picture')}
+                    {d2.i18n.getTranslation('avatar')}
                 </p>
                 <div className="avatar-editor__preview-wrap">
                     {loading ? (
@@ -116,7 +116,7 @@ class AvatarEditor extends Component {
                     <FlatButton
                         containerElement="label"
                         icon={<FileUpload />}
-                        label={d2.i18n.getTranslation('select_profile_picture')}
+                        label={d2.i18n.getTranslation('select_avatar')}
                         primary
                     >
                         <input
@@ -128,7 +128,7 @@ class AvatarEditor extends Component {
                     </FlatButton>
                     <FlatButton
                         icon={<ActionDelete />}
-                        label={d2.i18n.getTranslation('remove_profile_picture')}
+                        label={d2.i18n.getTranslation('remove_avatar')}
                         onClick={this.onRemoveIcon}
                     />
                 </div>
