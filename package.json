@@ -7,7 +7,7 @@
         "coverage": "babel-node node_modules/.bin/isparta cover --root ./src --report text --report html --report lcov node_modules/mocha/bin/_mocha -- --reporter dot --require config/setup.js --recursive test",
         "prebuild": "rm -rf build && mkdir build && d2-manifest package.json manifest.webapp",
         "build": "webpack",
-        "postbuild": "cp -r index.html icon.png auth.png node_modules/babel-polyfill/dist/polyfill.min.js manifest.webapp i18n build/",
+        "postbuild": "cp -r package.json index.html icon.png auth.png node_modules/babel-polyfill/dist/polyfill.min.js manifest.webapp i18n build/",
         "test": "echo Everything is probably ok! # mocha --reporter spec --compilers js:babel-core/register --require config/setup.js --recursive test",
         "test-watch": "echo Everything is always ok! # mocha --reporter spec --compilers js:babel-core/register --require config/setup.js --recursive test --watch",
         "lint": "eslint --fix src/",
@@ -60,12 +60,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/adhbh/dhis-user-profile-app.git"
+        "url": "git+https://github.com/dhis2/dhis-user-profile-app.git"
     },
     "bugs": {
-        "url": "https://github.com/adhbh/dhis-user-profile-app/issues"
+        "url": "https://github.com/dhis2/dhis-user-profile-app/issues"
     },
-    "homepage": "https://github.com/adhbh/dhis-user-profile-app",
+    "homepage": "https://github.com/dhis2/dhis-user-profile-app",
     "manifest.webapp": {
         "name": "DHIS2 User Profile Management",
         "dhis2": {
