@@ -11,6 +11,7 @@ function EditProfile(props, context) {
         'firstName',
         'surname',
         'email',
+        'avatar',
         'phoneNumber',
         'introduction',
         'jobTitle',

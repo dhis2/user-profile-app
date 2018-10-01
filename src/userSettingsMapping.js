@@ -12,6 +12,10 @@ const settingsKeyMapping = {
         type: 'textfield',
         validators: ['required'],
     },
+    avatar: {
+        label: 'avatar',
+        type: 'avatar',
+    },
     gender: {
         label: 'gender',
         type: 'dropdown',

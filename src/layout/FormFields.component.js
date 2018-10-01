@@ -20,6 +20,7 @@ import userSettingsStore from '../settings/userSettings.store';
 import optionValueStore from '../optionValue.store';
 import userSettingsKeyMapping from '../userSettingsMapping';
 import AccountEditor from '../account/AccountEditor.component';
+import AvatarEditor from './AvatarEditor.component';
 
 const styles = {
     header: {
@@ -171,6 +172,13 @@ function createAccountEditor(fieldBase, d2, valueStore) {
     });
 }
 
+function createAvatarEditor(fieldBase, d2, valueStore) {
+    return Object.assign({}, fieldBase, {
+        component: AvatarEditor,
+        props: { d2, currentUser: valueStore.state },
+    });
+}
+
 function createFieldBaseObject(fieldName, mapping, d2, valueStore) {
     const i18n = d2.i18n;
     const state = valueStore.state;
@@ -207,6 +215,7 @@ function createField(fieldName, valueStore, d2) {
     case 'checkbox': return createCheckBox(fieldBase, fieldName);
     case 'dropdown': return createDropDown(fieldBase, fieldName, d2, valueStore, mapping);
     case 'accountEditor': return createAccountEditor(fieldBase, d2, valueStore);
+    case 'avatar': return createAvatarEditor(fieldBase, d2, valueStore);
     default:
         log.warn(`Unknown control type "${mapping.type}" encountered for field "${fieldName}"`);
         return {};
