@@ -2,11 +2,15 @@ import log from 'loglevel';
 
 import { getInstance as getD2 } from 'd2/lib/d2';
 import Action from 'd2-ui/lib/action/Action';
-import { wordToValidatorMap } from 'd2-ui/lib/forms/Validators';
 
 import userSettingsActions from '../app.actions';
 import userProfileStore from './profile.store';
 import userSettingsKeyMapping from '../userSettingsMapping';
+
+import { wordToValidatorMap } from 'd2-ui/lib/forms/Validators';
+import isValidWhatsApp from './isValidWhatsApp';
+// Add whatsApp validation to the validator set
+wordToValidatorMap.set('whats_app', isValidWhatsApp);
 
 const userProfileActions = Action.createActionsFromNames([
     'save',

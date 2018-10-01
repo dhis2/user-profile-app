@@ -81,6 +81,27 @@ const settingsKeyMapping = {
         type: 'textfield',
         multiLine: true,
     },
+    whatsApp: {
+        label: 'whats_app',
+        type: 'textfield',
+        validators: ['whats_app'],
+    },
+    facebookMessenger: {
+        label: 'facebook_messenger',
+        type: 'textfield',
+    },
+    skype: {
+        label: 'skype',
+        type: 'textfield',
+    },
+    telegram: {
+        label: 'telegram',
+        type: 'textfield',
+    },
+    twitter: {
+        label: 'twitter',
+        type: 'textfield',
+    },
     /* ================================================================= */
     /* Category: Account Settings                                        */
     /* ================================================================= */
