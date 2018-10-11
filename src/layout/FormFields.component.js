@@ -129,7 +129,7 @@ function createCheckBox(fieldBase, fieldName) {
 }
 
 function createDropDown(fieldBase, fieldName, d2, valueStore, mapping) {
-    let value = valueStore.state[fieldName] || valueStore.state[fieldName] === false
+    const value = valueStore.state[fieldName] || valueStore.state[fieldName] === false
         ? valueStore.state[fieldName].toString()
         : (mapping.showSystemDefault ? 'system_default' : 'null');
 
