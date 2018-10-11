@@ -32,14 +32,10 @@ appActions.init.subscribe(() => {
             const styles = (results[0] || []).map(style => ({ id: style.path, displayName: style.name }));
             const uiLocales = (results[1] || []).map(locale => ({ id: locale.locale, displayName: locale.name }));
             const dbLocales = (results[2] || []).map(locale => ({ id: locale.locale, displayName: locale.name }));
-
-            const userSettingsKeys = Object.keys(results[3]);
-            const systemDefault = Object.keys(results[4])
-                .filter(key => userSettingsKeys.indexOf(key) !== -1)
-                .reduce((defaults, key) => {
-                    defaults[key] = results[4][key]; // eslint-disable-line
-                    return defaults;
-                }, {});
+            const systemDefault = Object.keys(results[4]).reduce((defaults, key) => {
+                defaults[key] = results[4][key]; // eslint-disable-line
+                return defaults;
+            }, {});
 
             userProfileStore.setState(d2.currentUser);
             userSettingsStore.setState(results[3]);
