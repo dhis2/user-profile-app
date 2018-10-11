@@ -129,9 +129,9 @@ function createCheckBox(fieldBase, fieldName) {
 }
 
 function createDropDown(fieldBase, fieldName, d2, valueStore, mapping) {
-    const value = valueStore.state[fieldName] || valueStore.state[fieldName] === false
+    let value = valueStore.state[fieldName] || valueStore.state[fieldName] === false
         ? valueStore.state[fieldName].toString()
-        : 'null';
+        : (mapping.showSystemDefault ? 'system_default' : 'null');
 
     const menuItems = (mapping.source
         ? (optionValueStore.state && optionValueStore.state[mapping.source]) || []
@@ -146,11 +146,26 @@ function createDropDown(fieldBase, fieldName, d2, valueStore, mapping) {
             && optionValueStore.state.systemDefault
             && optionValueStore.state.systemDefault[fieldName];
 
-    const systemSettingLabel = optionValueStore.state[mapping.source]
-        ? optionValueStore.state[mapping.source]
+
+    let systemSettingLabel;    
+    if (typeof systemSettingValue === 'boolean') {
+        systemSettingLabel = d2.i18n.getTranslation(systemSettingValue.toString())
+    } else if (optionValueStore.state[mapping.source]) {
+        systemSettingLabel = optionValueStore.state[mapping.source]
             .filter(x => x.id === systemSettingValue)
             .map(x => x.displayName)[0] || d2.i18n.getTranslation('no_value')
-        : d2.i18n.getTranslation(systemSettingValue === 'null' ? 'no_value' : systemSettingValue);
+    } else if (systemSettingValue === 'null' || systemSettingValue === 'system_default' || typeof systemSettingValue === 'undefined') {
+        systemSettingLabel = d2.i18n.getTranslation('no_value');
+    } else {
+        systemSettingLabel = systemSettingValue;
+    }
+
+    if (mapping.showSystemDefault) {
+        menuItems.unshift({
+            id: 'system_default',
+            displayName: `${d2.i18n.getTranslation('use_system_default')} (${systemSettingLabel})`,
+        });
+    }
 
     return Object.assign({}, fieldBase, {
         component: SelectField,
@@ -158,7 +173,7 @@ function createDropDown(fieldBase, fieldName, d2, valueStore, mapping) {
         props: Object.assign({}, fieldBase.props, {
             includeEmpty: !!mapping.includeEmpty,
             emptyLabel: mapping.includeEmpty
-                ? `${d2.i18n.getTranslation('use_system_default')} (${systemSettingLabel})`
+                ? d2.i18n.getTranslation(mapping.emptyLabel)
                 : undefined,
             noOptionsLabel: d2.i18n.getTranslation('no_options'),
         }, { menuItems }),

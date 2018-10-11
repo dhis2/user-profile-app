@@ -116,24 +116,18 @@ const settingsKeyMapping = {
         label: 'language',
         type: 'dropdown',
         source: 'uiLocales',
-        includeEmpty: true,
-        emptyLabel: 'use_system_default',
         showSystemDefault: true,
     },
     keyDbLocale: {
         label: 'db_language',
         type: 'dropdown',
         source: 'dbLocales',
-        includeEmpty: true,
-        emptyLabel: 'use_system_default',
         showSystemDefault: true,
     },
     keyStyle: {
         label: 'style',
         type: 'dropdown',
         source: 'styles',
-        includeEmpty: true,
-        emptyLabel: 'use_system_default',
         showSystemDefault: true,
     },
     keyAnalysisDisplayProperty: {
@@ -143,8 +137,6 @@ const settingsKeyMapping = {
             name: 'name',
             shortName: 'short_name',
         },
-        includeEmpty: true,
-        emptyLabel: 'use_system_default',
         showSystemDefault: true,
     },
     keyMessageEmailNotification: {
@@ -154,9 +146,6 @@ const settingsKeyMapping = {
             true: 'true_notifications',
             false: 'false_notifications',
         },
-        includeEmpty: true,
-        emptyLabel: 'use_system_default',
-        showSystemDefault: true,
     },
     keyMessageSmsNotification: {
         label: 'enable_message_sms_notifications',
@@ -165,9 +154,6 @@ const settingsKeyMapping = {
             true: 'true_notifications',
             false: 'false_notifications',
         },
-        includeEmpty: true,
-        emptyLabel: 'use_system_default',
-        showSystemDefault: true,
     },
 };
 
