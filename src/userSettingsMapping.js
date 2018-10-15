@@ -121,6 +121,7 @@ const settingsKeyMapping = {
             true: 'true_notifications',
             false: 'false_notifications',
         },
+        showSystemDefault: true,
     },
     keyMessageSmsNotification: {
         label: 'enable_message_sms_notifications',
@@ -129,6 +130,7 @@ const settingsKeyMapping = {
             true: 'true_notifications',
             false: 'false_notifications',
         },
+        showSystemDefault: true,
     },
 };
 
