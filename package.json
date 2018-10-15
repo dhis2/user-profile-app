@@ -1,6 +1,6 @@
 {
   "name": "user-profile-app",
-  "version": "28.0.6",
+  "version": "28.0.7",
   "description": "User Profile App for DHIS2",
   "main": "src/index.html",
   "scripts": {
