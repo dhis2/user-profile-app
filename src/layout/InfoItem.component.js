@@ -10,10 +10,7 @@ const InfoItem = ({ label, value, labelStyle }) => (
 
 InfoItem.propTypes = {
     label: PropTypes.string.isRequired,
-    value: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.number,
-    ]).isRequired,
+    value: PropTypes.node.isRequired,
     labelStyle: PropTypes.object,
 };
 

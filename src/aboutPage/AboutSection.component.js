@@ -39,10 +39,7 @@ AboutSection.propTypes = {
     attributes: PropTypes.arrayOf(
         PropTypes.shape({
             label: PropTypes.string.isRequired,
-            value: PropTypes.oneOfType([
-                PropTypes.string,
-                PropTypes.number,
-            ]),
+            value: PropTypes.node,
         }),
     ).isRequired,
 };
