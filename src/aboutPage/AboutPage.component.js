@@ -82,27 +82,22 @@ class AboutPage extends Component {
 
     getAttributes = (selected, source) => selected
         .reduce((acc, attribute) => {
-            const value = typeof attribute === 'object' ? 
-                source[attribute.label] : 
-                source[attribute];
-            
-            if (!value) {
-                return acc;
-            }
-
             if (typeof attribute === 'object') {
-                acc.push({
-                    label: this.translate(attribute.label),
-                    value: attribute.getDisplayValue(
-                        value,
-                        this.context.d2,
-                        this.translate
-                    ),
-                })
-            } else {
+                const value = attribute.getDisplayValue(
+                    source[attribute.label],
+                    this.context.d2,
+                    this.translate
+                );
+                if (value) {
+                    acc.push({
+                        label: this.translate(attribute.label),
+                        value
+                    })
+                }
+            } else if (source[attribute]) {
                 acc.push({
                     label: this.translate(attribute),
-                    value,
+                    value: source[attribute],
                 })
             }
 
