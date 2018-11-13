@@ -23,7 +23,11 @@ class AvatarEditor extends Component {
                 : null,
             loading: false,
         };
+        this.inputRef = null;
     }
+
+    getInputRef = () => this.inputRef;
+    setInputRef = node => this.inputRef = node;
 
     parseAvatarSrc(avatarId) {
         return `${this.api.baseUrl}/fileResources/${avatarId}/data`;
@@ -68,6 +72,9 @@ class AvatarEditor extends Component {
 
     onRemoveIcon = () => {
         this.props.onChange({ target: { value: null } });
+        // Clear input here to ensure that a re-upload of a previously used file is not ignored
+        const input = this.getInputRef();
+        input.value = null;
         this.setState({ avatarSrc: null });
     };
 
@@ -124,13 +131,16 @@ class AvatarEditor extends Component {
                             style={{ display: 'none' }}
                             type="file"
                             accept="image/*"
+                            ref={this.setInputRef}
                         />
                     </FlatButton>
-                    <FlatButton
-                        icon={<ActionDelete />}
-                        label={d2.i18n.getTranslation('remove_avatar')}
-                        onClick={this.onRemoveIcon}
-                    />
+                    {avatarSrc && (
+                        <FlatButton
+                            icon={<ActionDelete />}
+                            label={d2.i18n.getTranslation('remove_avatar')}
+                            onClick={this.onRemoveIcon}
+                        />
+                    )}
                 </div>
             </div>
         );
