@@ -38,12 +38,7 @@ userProfileActions.save.subscribe(({ data, complete, error }) => {
             }
         }
 
-        // Post avatar directly to the `/user/<ID>` endpoint, because d2 update calls to `/me` cause issues
-        const api = d2.Api.getApi();
-        const d2Method = key === 'avatar' ? 'patch' : 'update';
-        const url = key === 'avatar' ? `/users/${userProfileStore.state.id}` : 'me';
-
-        api[d2Method](url, payload)
+        getProfileUpdatePromise(key, value, payload, userProfileStore.state.id, d2)
             .then(() => {
                 log.debug('User Profile updated successfully.');
                 userSettingsActions.showSnackbarMessage({
@@ -62,5 +57,28 @@ userProfileActions.save.subscribe(({ data, complete, error }) => {
             });
     });
 });
+
+function getProfileUpdatePromise(key, value, payload, userId, d2) {
+    const api = d2.Api.getApi();
+    if (key === 'avatar') {
+        if (value) {
+            // Set avatar
+            // Post avatar directly to the `/user/<ID>` endpoint, because d2 update calls to `/me` cause issues
+            return api.patch(`/users/${userId}`, payload);
+        } else {
+            // Clear avatar
+            return removeAvatar(userId, api);
+        }
+    }
+
+    return api.update('me', payload)
+}
+
+async function removeAvatar(userId, api) {
+    const url = `/users/${userId}`;
+    const user = await api.get(url, {fields: ':owner'});
+    delete user.avatar;
+    return api.update(url, user);
+}
 
 export default userProfileActions;
