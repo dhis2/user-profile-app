@@ -38,7 +38,7 @@ userProfileActions.save.subscribe(({ data, complete, error }) => {
             }
         }
 
-        getPromise(key, value, payload, userProfileStore.state.id, d2)
+        getProfileUpdatePromise(key, value, payload, userProfileStore.state.id, d2)
             .then(() => {
                 log.debug('User Profile updated successfully.');
                 userSettingsActions.showSnackbarMessage({
@@ -58,7 +58,7 @@ userProfileActions.save.subscribe(({ data, complete, error }) => {
     });
 });
 
-function getPromise(key, value, payload, userId, d2) {
+function getProfileUpdatePromise(key, value, payload, userId, d2) {
     const api = d2.Api.getApi();
     if (key === 'avatar') {
         if (value) {
