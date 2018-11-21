@@ -19,15 +19,17 @@ const AboutSection = ({ header, attributes }) => (
         <Card style={styles.card}>
             <CardText>
                 <div className="info-content">
-                    {attributes
-                        .map(({ label, value }) => (
-                            <InfoItem
-                                key={label}
-                                label={label}
-                                value={value}
-                            />
-                        ))
-                    }
+                    {attributes.map(({ label, value }) => (
+                        <InfoItem
+                            key={label}
+                            label={label}
+                            value={
+                                typeof value === 'boolean'
+                                    ? value.toString()
+                                    : value
+                            }
+                        />
+                    ))}
                 </div>
             </CardText>
         </Card>
@@ -39,8 +41,8 @@ AboutSection.propTypes = {
     attributes: PropTypes.arrayOf(
         PropTypes.shape({
             label: PropTypes.string.isRequired,
-            value: PropTypes.node,
-        }),
+            value: PropTypes.oneOfType([PropTypes.node, PropTypes.bool]),
+        })
     ).isRequired,
 };
 

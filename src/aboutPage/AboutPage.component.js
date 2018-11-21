@@ -92,7 +92,7 @@ class AboutPage extends Component {
                     this.context.d2,
                     this.translate
                 );
-                if (value) {
+                if (value || value === false) {
                     acc.push({
                         label: this.translate(attribute.label),
                         value
