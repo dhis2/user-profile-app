@@ -53,7 +53,7 @@ class AvatarEditor extends Component {
         try {
             const postResponse = await this.api.post('fileResources', formData);
             const imageId = postResponse.response.fileResource.id;
-            onChange({ target: { value: imageId } });
+            onChange({ target: { value: { id: imageId } } });
             this.setState({
                 loading: false,
                 avatarSrc: this.parseAvatarSrc(imageId),
