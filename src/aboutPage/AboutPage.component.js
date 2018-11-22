@@ -22,7 +22,11 @@ const attributes = {
         {
             label: 'web_api',
             getDisplayValue: (_value, d2, translate) => (
-                <a target="_blank" href={`${d2.system.systemInfo.contextPath}/api`}>
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={`${d2.system.systemInfo.contextPath}/api`}
+                >
                     {translate('browse_it_here')}
                 </a>
             ),
@@ -88,7 +92,7 @@ class AboutPage extends Component {
                     this.context.d2,
                     this.translate
                 );
-                if (value) {
+                if (value || value === false) {
                     acc.push({
                         label: this.translate(attribute.label),
                         value
