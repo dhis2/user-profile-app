@@ -1,4 +1,4 @@
-# DHIS2 user profile app [![Build Status](https://travis-ci.org/dhis2/user-profile-app.svg?branch=master)](https://travis-ci.org/dhis2/user-profile-app)
+# DHIS2 user profile app [![Build Status](https://travis-ci.com/dhis2/user-profile-app.svg)](https://travis-ci.com/dhis2/user-profile-app)
 
 The user profile app is used for changing user profile information, user settings and user passwords.
 
