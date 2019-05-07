@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { isValidPassword } from 'd2-ui/lib/forms/Validators';
-
 import FormBuilder from 'd2-ui/lib/forms/FormBuilder.component';
 import TextField from 'd2-ui/lib/form-fields/TextField';
 import { FlatButton, RaisedButton } from 'material-ui';
 
 import appActions from '../app.actions';
 import accountActions from './account.actions';
+import isValidPassword from './isValidPassword';
 
 
 class AccountEditor extends Component {
