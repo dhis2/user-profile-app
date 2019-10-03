@@ -12,11 +12,12 @@ const accountActions = Action.createActionsFromNames([
     'getQrCode',
 ]);
 
-accountActions.setPassword.subscribe(({ data: [password, onSuccess], complete, error }) => {
-    const payload = { userCredentials: { password } };
+accountActions.setPassword.subscribe(({ data: [oldPassword, newPassword, onSuccess], complete, error }) => {
+    const payload = { oldPassword, newPassword };
+
     getD2().then((d2) => {
         const api = d2.Api.getApi();
-        api.update('/me', payload)
+        api.update('/me/changePassword', payload)
             .then(() => {
                 log.debug('Password updated successfully.');
                 appActions.showSnackbarMessage({

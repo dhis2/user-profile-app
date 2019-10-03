@@ -66,7 +66,7 @@ class AccountEditor extends Component {
         } else if (!this.isNotEmpty(this.state.newPassword) || !this.isNotEmpty(this.state.reNewPassword)) {
             appActions.showSnackbarMessage({ message: this.context.d2.i18n.getTranslation('password_do_not_match'), status:'error'});
         } else {
-            accountActions.setPassword(this.state.newPassword, this.clearRepeatPassword);
+            accountActions.setPassword(this.state.oldPassword, this.state.newPassword, this.clearRepeatPassword);
         }
     }
 
