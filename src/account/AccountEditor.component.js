@@ -20,7 +20,6 @@ class AccountEditor extends Component {
             reNewPassword: '',
             wrongOldPasswordText: '',
         };
-        this.isVerifiedPassword.message = "wrong_old_password";
     }
 
     isSamePassword = (value) => {
@@ -29,20 +28,6 @@ class AccountEditor extends Component {
 
     isNotEmpty = (value) => {
         return value && String(value).trim().length > 0;
-    }
-
-    isVerifiedPassword = (value) => {
-        const api = this.context.d2.Api.getApi();
-        return new Promise((resolve, reject) => {
-            api.post('/me/verifyPassword', { password: value })
-                .then((res) => {
-                    if (res.isCorrectPassword === true) {
-                        resolve();
-                    } else {
-                        reject(this.context.d2.i18n.getTranslation('please_enter_the_correct_password'));
-                    }
-                });
-        });
     }
 
     clearRepeatPassword = () => {
@@ -65,9 +50,11 @@ class AccountEditor extends Component {
         } else if (formState.valid !== true) {
             appActions.showSnackbarMessage({ message: this.context.d2.i18n.getTranslation('fix_errors_and_try_again'), status:'error' });
         } else if (!this.isNotEmpty(this.state.newPassword) || !this.isNotEmpty(this.state.reNewPassword)) {
-            appActions.showSnackbarMessage({ message: this.context.d2.i18n.getTranslation('password_do_not_match'), status:'error'});
+            appActions.showSnackbarMessage({ message: this.context.d2.i18n.getTranslation('passwords_do_not_match'), status:'error'});
+        } else if (!this.isNotEmpty(this.state.oldPassword)) {
+            appActions.showSnackbarMessage({ message: this.context.d2.i18n.getTranslation('old_password_empty'), status:'error'});
         } else {
-            accountActions.setPassword(this.state.newPassword, this.clearRepeatPassword);
+            accountActions.setPassword(this.state.oldPassword, this.state.newPassword, this.clearRepeatPassword);
         }
     }
 
@@ -103,9 +90,8 @@ class AccountEditor extends Component {
                 },
                 validators: [{
                     validator: this.isNotEmpty,
-                    message: '',
+                    message: this.context.d2.i18n.getTranslation('value_required'),
                 }],
-                asyncValidators: [this.isVerifiedPassword],
             },
             {
                 name: 'newPassword',
