@@ -1,16 +1,20 @@
-#. extracted from i18n_module_en.properties
+# Translators:
+# phil_dhis2, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-01 00:28-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-09-02 16:42+0000\n"
+"Last-Translator: phil_dhis2, 2019\n"
+"Language-Team: Urdu (https://www.transifex.com/hisp-uio/teams/100509/ur/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ur\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Translate Toolkit 2.0.0b3\n"
 
 #: user_profile
@@ -205,9 +209,6 @@ msgstr "صارف پروفائل کو اپ ڈیٹ کرنے میں ناکام"
 msgid "Fialed to update user settings"
 msgstr "صارف ترتیبات کو اپ ڈیٹ کرنے کے لئے Fialed"
 
-msgid "Failed to update user settings"
-msgstr "صارف کی ترتیبات کو اپ ڈیٹ کرنے میں ناکام"
-
 #: update_password
 msgid "Update password"
 msgstr "پاس ورڈ اپ ڈیٹ کریں"
@@ -216,7 +217,9 @@ msgstr "پاس ورڈ اپ ڈیٹ کریں"
 msgid ""
 "Password should be at least 8 characters with at least 1 digit and 1 "
 "uppercase letter"
-msgstr "پاس ورڈ کم از کم 8 حروف ہونا چاہئے جس میں کم سے کم 1 ہندسوں اور 1 بڑے حروف موجود ہو"
+msgstr ""
+"پاس ورڈ کم از کم 8 حروف ہونا چاہئے جس میں کم سے کم 1 ہندسوں اور 1 بڑے حروف "
+"موجود ہو"
 
 #: passwords_do_not_match
 msgid "The entered values do not match. Please re-enter."
@@ -252,7 +255,8 @@ msgstr "فارم فی الحال اس کی توثیق کی جا رہی ہے. د�
 
 #: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
-msgstr "فارم میں غلطیاں شامل ہیں. براہ کرم غلطیوں کو ٹھیک کریں اور دوبارہ کوشش کریں."
+msgstr ""
+"فارم میں غلطیاں شامل ہیں. براہ کرم غلطیوں کو ٹھیک کریں اور دوبارہ کوشش کریں."
 
 #: password_update_success
 msgid "Your password was updated successfully"
