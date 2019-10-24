@@ -1,0 +1,266 @@
+# Translators:
+# phil_dhis2, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-01 00:28-0400\n"
+"PO-Revision-Date: 2019-09-02 16:42+0000\n"
+"Last-Translator: phil_dhis2, 2019\n"
+"Language-Team: Pushto (https://www.transifex.com/hisp-uio/teams/100509/ps/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ps\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Translate Toolkit 2.0.0b3\n"
+
+#: user_profile
+msgid "User profile"
+msgstr ""
+
+#: account_settings
+msgid "Account settings"
+msgstr ""
+
+#: user_settings
+msgid "User settings"
+msgstr "د کاروونکي ترتیبات"
+
+#: user_email_address
+msgid "E-mail"
+msgstr "برېښنالیک"
+
+#: surname
+msgid "Surname"
+msgstr "کورنۍ نوم یا تخلص"
+
+#: first_name
+msgid "First name"
+msgstr "لومړۍ نوم"
+
+#: old_password
+msgid "Old password"
+msgstr "مخکینۍ پټ نوم"
+
+#: new_password
+msgid "New password"
+msgstr "نوۍ پټ نوم"
+
+#: repeat_new_password
+msgid "Repeat new password"
+msgstr "د نوي پټ نوم بیا تکرارول"
+
+#: openid
+msgid "OpenID"
+msgstr "د ايي ډي جوړول"
+
+#: username
+msgid "Username"
+msgstr "کارېدونکی نوم"
+
+#: phone_number
+msgid "Mobile phone number"
+msgstr "د ګرځنده ټلیفون شمېره"
+
+#: job_title
+msgid "Job title"
+msgstr "دنده"
+
+#: introduction
+msgid "Introduction"
+msgstr "پېژندګلوي"
+
+#: gender
+msgid "Gender"
+msgstr "جنډر (ښځینه یا نارینه)"
+
+#: male
+msgctxt "male"
+msgid "Male"
+msgstr "نارینه"
+
+#: female
+msgctxt "female"
+msgid "Female"
+msgstr "ښځينه"
+
+#: other
+msgctxt "other"
+msgid "Other"
+msgstr "نور"
+
+#: gender_male
+msgctxt "gender_male"
+msgid "Male"
+msgstr "نارینه"
+
+#: gender_female
+msgctxt "gender_female"
+msgid "Female"
+msgstr "ښځينه"
+
+#: gender_other
+msgctxt "gender_other"
+msgid "Other"
+msgstr "نور"
+
+#: birthday
+msgid "Birthday"
+msgstr "د زېږېدو ورځ"
+
+#: nationality
+msgid "Nationality"
+msgstr "تابعیت یا ملیت"
+
+#: employer
+msgid "Employer"
+msgstr "ګومارونکی"
+
+#: education
+msgid "Education"
+msgstr "ښوونه او روزنه"
+
+#: interests
+msgid "Interests"
+msgstr "لېوالتیاوې (یانې هغه څه چې یو څوک علاقه ور سره لري)"
+
+#: languages
+msgid "Languages"
+msgstr "ژبې"
+
+#: update_user_profile_success
+msgid "User profile updated"
+msgstr "د کاروونکي په اړه مالومات تجدید شول"
+
+#: settings
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: property_to_display_in_analysis_modules
+msgctxt "property_to_display_in_analysis_modules"
+msgid "Property to display in analysis modules"
+msgstr "هغه مالکیت یا ځانګړتیا چې په څېړنیز لارښود یا ماډیولونو کې ښودل کیږي"
+
+#: general
+msgid "General"
+msgstr "عمومي"
+
+#: message
+msgid "Message"
+msgstr "پېغام"
+
+#: settings_updated
+msgid "Settings updated"
+msgstr "تنظیمات تجدید شول"
+
+#: failed_to_update_settings
+msgid "Failed to update settings"
+msgstr "د تنظیماتو تجدیدول ناکام شول"
+
+#: style
+msgid "Style"
+msgstr "طرز یا ډول"
+
+#: db_language
+msgid "Database language"
+msgstr "د ډاټابیس ژبه"
+
+#: language
+msgid "Interface language"
+msgstr "د انټرنېټ ژبه"
+
+#: enable_message_email_notifications
+msgid "Enable message email notifications"
+msgstr "د برېښنالیک له لارې د خبرتیاوو اړوند پېغام فعالول"
+
+#: enable_message_sms_notifications
+msgid "Enable message SMS notifications"
+msgstr "د SMS په مټ د پېغام فعالول"
+
+#: analysis_module
+msgctxt "analysis_module"
+msgid "Property to display in analysis modules"
+msgstr "هغه مالکیت یا ځانګړتیا چې په څېړنیز لارښود یا ماډیولونو کې ښودل کیږي"
+
+#: name
+msgid "Name"
+msgstr "نوم"
+
+#: short_name
+msgid "Short name"
+msgstr "لنډ نوم"
+
+#: system_default
+msgid "System default"
+msgstr "ډیفالټ سیسټم"
+
+#: value_should_be_an_email
+msgid "Please enter a valid email address"
+msgstr "مهرباني وکړئ د برېښناليک درست ادرس ور داخل کړئ"
+
+#: update_user_profile_fail
+msgid "Failed to update user profile"
+msgstr "د کاروونکي په اړه د مالوماتو تجدیدول ناکام شول"
+
+#: update_settings_fail
+msgid "Fialed to update user settings"
+msgstr "د کاروونکي په اړه د تنظیماتو تجدیدول ناکام شول"
+
+#: update_password
+msgid "Update password"
+msgstr "پټ نوم تجدید کړئ"
+
+#: invalid_password
+msgid ""
+"Password should be at least 8 characters with at least 1 digit and 1 "
+"uppercase letter"
+msgstr ""
+
+#: passwords_do_not_match
+msgid "The entered values do not match. Please re-enter."
+msgstr ""
+"دوه ځلي داخل شوي ارزښتونه یا ارقام د یو بل سره سمون نه لري. مهرباني وکړئ له "
+"بیا یې داخل کړئ"
+
+#: use_system_default
+msgid "Use system default"
+msgstr "د سیسټم اصلي بڼه وکاروئ"
+
+#: true_notifications
+msgid "Yes"
+msgstr "هو"
+
+#: false_notifications
+msgid "No"
+msgstr "نه"
+
+#: value_required
+msgid "This field can't be left blank"
+msgstr "دا کورګۍ یا ساحه باید خالي پرې نه ښودل شي"
+
+#: please_enter_the_correct_password
+msgid "Please enter the correct password"
+msgstr "مهرباني وکړئ صحیح پټ نوم داخل کړئ"
+
+#: no_changes_have_been_made
+msgid "No changes have been made"
+msgstr "هېڅ بدلونونه په کې را نه غلل"
+
+#: validating_please_try_again
+msgid "The form is currently being validated. Please try again."
+msgstr "اوسنۍ فورمه د اعتبار وړ ده. مهرباني وکړئ بیا هڅه وکړئ"
+
+#: fix_errors_and_try_again
+msgid "The form contains errors. Please fix the errors and try again."
+msgstr "دا فورمه تېروتنې لري. مهرباني وکړئ تېروتنې مو حل او بیا هڅه وکړئ."
+
+#: password_update_success
+msgid "Your password was updated successfully"
+msgstr "ستاسو پټ نوم په بریالیتوب سره تجدید شو"
+
+#: password_update_failed
+msgid "Failed to update password"
+msgstr "د پټ نوم تجدیدول ناکام شول"
