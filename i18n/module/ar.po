@@ -1,0 +1,264 @@
+# Translators:
+# phil_dhis2, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-01 00:28-0400\n"
+"PO-Revision-Date: 2019-09-02 16:41+0000\n"
+"Last-Translator: phil_dhis2, 2019\n"
+"Language-Team: Arabic (https://www.transifex.com/hisp-uio/teams/100509/ar/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Translate Toolkit 2.0.0b3\n"
+
+#: user_profile
+msgid "User profile"
+msgstr ""
+
+#: account_settings
+msgid "Account settings"
+msgstr ""
+
+#: user_settings
+msgid "User settings"
+msgstr "إعدادات المستخدم"
+
+#: user_email_address
+msgid "E-mail"
+msgstr "البريد الإلكتروني"
+
+#: surname
+msgid "Surname"
+msgstr "الكنية"
+
+#: first_name
+msgid "First name"
+msgstr "الاسم الأول"
+
+#: old_password
+msgid "Old password"
+msgstr "كلمة المرور القديمة"
+
+#: new_password
+msgid "New password"
+msgstr "كلمة المرور الجديدة"
+
+#: repeat_new_password
+msgid "Repeat new password"
+msgstr "تأكيد كلمة المرور الجديدة"
+
+#: openid
+msgid "OpenID"
+msgstr "OpenID"
+
+#: username
+msgid "Username"
+msgstr "اسم المستخدم"
+
+#: phone_number
+msgid "Mobile phone number"
+msgstr "رقم الهاتف الجوال"
+
+#: job_title
+msgid "Job title"
+msgstr "المسمى الوظيفي"
+
+#: introduction
+msgid "Introduction"
+msgstr "المقدمة"
+
+#: gender
+msgid "Gender"
+msgstr "الجنس"
+
+#: male
+msgctxt "male"
+msgid "Male"
+msgstr "ذكر"
+
+#: female
+msgctxt "female"
+msgid "Female"
+msgstr "أنثى"
+
+#: other
+msgctxt "other"
+msgid "Other"
+msgstr "أخرى"
+
+#: gender_male
+msgctxt "gender_male"
+msgid "Male"
+msgstr "ذكر"
+
+#: gender_female
+msgctxt "gender_female"
+msgid "Female"
+msgstr "أنثى"
+
+#: gender_other
+msgctxt "gender_other"
+msgid "Other"
+msgstr "أخرى"
+
+#: birthday
+msgid "Birthday"
+msgstr "تاريخ الميلاد"
+
+#: nationality
+msgid "Nationality"
+msgstr "الجنسية"
+
+#: employer
+msgid "Employer"
+msgstr "صاحب العمل"
+
+#: education
+msgid "Education"
+msgstr "التعليم"
+
+#: interests
+msgid "Interests"
+msgstr "الاهتمامات"
+
+#: languages
+msgid "Languages"
+msgstr "اللغات"
+
+#: update_user_profile_success
+msgid "User profile updated"
+msgstr "تم تحديث ملف تعريف المستخدم"
+
+#: settings
+msgid "Settings"
+msgstr "الإعدادات"
+
+#: property_to_display_in_analysis_modules
+msgctxt "property_to_display_in_analysis_modules"
+msgid "Property to display in analysis modules"
+msgstr "الخاصية للعرض في الوحدات البرمجية للتحليل"
+
+#: general
+msgid "General"
+msgstr "عام"
+
+#: message
+msgid "Message"
+msgstr "رسالة"
+
+#: settings_updated
+msgid "Settings updated"
+msgstr "تم تحديث الإعدادات"
+
+#: failed_to_update_settings
+msgid "Failed to update settings"
+msgstr "فشل تحديث الإعدادات"
+
+#: style
+msgid "Style"
+msgstr "المظهر"
+
+#: db_language
+msgid "Database language"
+msgstr "لغة قاعدة البيانات"
+
+#: language
+msgid "Interface language"
+msgstr "لغة الواجهة"
+
+#: enable_message_email_notifications
+msgid "Enable message email notifications"
+msgstr "تمكين الإشعارات عبر رسائل البريد الإلكتروني"
+
+#: enable_message_sms_notifications
+msgid "Enable message SMS notifications"
+msgstr "تمكين إرسال الإشعارات عبر رسائل الجوال القصيرة"
+
+#: analysis_module
+msgctxt "analysis_module"
+msgid "Property to display in analysis modules"
+msgstr "الخاصية للعرض في الوحدات البرمجية للتحليل"
+
+#: name
+msgid "Name"
+msgstr "الاسم"
+
+#: short_name
+msgid "Short name"
+msgstr "الاسم المختصر"
+
+#: system_default
+msgid "System default"
+msgstr "الإعدادات الافتراضية للنظام"
+
+#: value_should_be_an_email
+msgid "Please enter a valid email address"
+msgstr "الرجاء إدخال عنوان بريد إلكتروني صالح"
+
+#: update_user_profile_fail
+msgid "Failed to update user profile"
+msgstr "فشل تحديث ملف تعريف المستخدم"
+
+#: update_settings_fail
+msgid "Fialed to update user settings"
+msgstr "فشل تحديث إعدادات المستخدم"
+
+#: update_password
+msgid "Update password"
+msgstr "تحديث كلمة المرور"
+
+#: invalid_password
+msgid ""
+"Password should be at least 8 characters with at least 1 digit and 1 "
+"uppercase letter"
+msgstr ""
+
+#: passwords_do_not_match
+msgid "The entered values do not match. Please re-enter."
+msgstr "القيم المدخلة غير متطابقة. الرجاء إعادة الإدخال."
+
+#: use_system_default
+msgid "Use system default"
+msgstr "استخدام الإعدادات الافتراضية للنظام"
+
+#: true_notifications
+msgid "Yes"
+msgstr "نعم"
+
+#: false_notifications
+msgid "No"
+msgstr "No"
+
+#: value_required
+msgid "This field can't be left blank"
+msgstr "لا يمكن ترك هذا الحقل فارغاً"
+
+#: please_enter_the_correct_password
+msgid "Please enter the correct password"
+msgstr "الرجاء إدخال كلمة المرور الصحيحة"
+
+#: no_changes_have_been_made
+msgid "No changes have been made"
+msgstr "لم يتم إجراء أي تغييرات"
+
+#: validating_please_try_again
+msgid "The form is currently being validated. Please try again."
+msgstr "يتم حالياً تدقيق هذا النموذج. الرجاء المحاولة مرة أخرى."
+
+#: fix_errors_and_try_again
+msgid "The form contains errors. Please fix the errors and try again."
+msgstr "يحوي هذا النموذج أخطاء. الرجاء إصلاح الأخطاء والمحاولة مرة أخرى."
+
+#: password_update_success
+msgid "Your password was updated successfully"
+msgstr "تم تحديث كلمة مرورك بنجاح"
+
+#: password_update_failed
+msgid "Failed to update password"
+msgstr "فشل تحديث كلمة المرور"
