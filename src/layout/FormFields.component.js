@@ -301,7 +301,9 @@ class FormFields extends Component {
         return (
             <div className="content-area">
                 <div style={styles.header}>{this.props.pageLabel}</div>
-                {this.renderFields(this.props.fieldKeys)}
+                <form autoComplete="off">
+                    {this.renderFields(this.props.fieldKeys)}
+                </form>
             </div>
         );
     }
