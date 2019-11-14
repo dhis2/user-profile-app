@@ -86,6 +86,7 @@ class AccountEditor extends Component {
                     floatingLabelText: this.context.d2.i18n.getTranslation('old_password'),
                     style: { width: '100%' },
                     changeEvent: 'onBlur',
+                    autoComplete: 'new-password',
                 },
                 validators: [{
                     validator: this.isNotEmpty,
