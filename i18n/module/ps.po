@@ -19,11 +19,11 @@ msgstr ""
 
 #: user_profile
 msgid "User profile"
-msgstr ""
+msgstr "د کاروونکي په اړه مالومات."
 
 #: account_settings
 msgid "Account settings"
-msgstr ""
+msgstr "د حساب یا اکاونټ جوړولو تنظیمات"
 
 #: user_settings
 msgid "User settings"
@@ -217,7 +217,7 @@ msgstr "پټ نوم تجدید کړئ"
 msgid ""
 "Password should be at least 8 characters with at least 1 digit and 1 "
 "uppercase letter"
-msgstr ""
+msgstr "پټ نوم باید اته توري او لږ تر لږه یو عدد او یو غټ تورۍ ولري"
 
 #: passwords_do_not_match
 msgid "The entered values do not match. Please re-enter."
