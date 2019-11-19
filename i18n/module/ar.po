@@ -55,7 +55,7 @@ msgstr "تأكيد كلمة المرور الجديدة"
 
 #: openid
 msgid "OpenID"
-msgstr "OpenID"
+msgstr "فتح الهوية"
 
 #: username
 msgid "Username"
@@ -233,7 +233,7 @@ msgstr "نعم"
 
 #: false_notifications
 msgid "No"
-msgstr "No"
+msgstr ""
 
 #: value_required
 msgid "This field can't be left blank"
