@@ -142,7 +142,7 @@ msgstr "ຕັ້ງຄ່າ"
 #: property_to_display_in_analysis_modules
 msgctxt "property_to_display_in_analysis_modules"
 msgid "Property to display in analysis modules"
-msgstr "Property to display in analysis modules"
+msgstr "ສື່ງທີ່ສາມາດນໍາສະເໜີ ໃນໂມດູນຂອງການວິໄຈ"
 
 #: general
 msgid "General"
@@ -183,7 +183,7 @@ msgstr "ອະນຸຍາດໃຫ້ລະບົບສົ່ງຂໍ້ຄວ
 #: analysis_module
 msgctxt "analysis_module"
 msgid "Property to display in analysis modules"
-msgstr "Property to display in analysis modules"
+msgstr "ສື່ງທີ່ສາມາດນໍາສະເໜີ ໃນໂມດູນຂອງການວິໄຈ"
 
 #: name
 msgid "Name"
@@ -229,11 +229,11 @@ msgstr "ໃຊ້ການຕັ້ງຄ່າຂອງລະບົບ"
 
 #: true_notifications
 msgid "Yes"
-msgstr "Yes"
+msgstr "ແມ່ນ"
 
 #: false_notifications
 msgid "No"
-msgstr "No"
+msgstr "ບໍ່"
 
 #: value_required
 msgid "This field can't be left blank"
