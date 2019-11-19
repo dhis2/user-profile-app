@@ -47,7 +47,7 @@ msgstr "လျှို့ဝှက်ဂဏန်းအဟောင်း"
 
 #: new_password
 msgid "New password"
-msgstr "New password"
+msgstr ""
 
 #: repeat_new_password
 msgid "Repeat new password"
@@ -55,7 +55,7 @@ msgstr ""
 
 #: openid
 msgid "OpenID"
-msgstr "OpenID"
+msgstr ""
 
 #: username
 msgid "Username"
@@ -233,7 +233,7 @@ msgstr "Yes"
 
 #: false_notifications
 msgid "No"
-msgstr "No"
+msgstr "Nr"
 
 #: value_required
 msgid "This field can't be left blank"
