@@ -55,7 +55,7 @@ msgstr "نیا پاس ورڈ دوبارہ دو"
 
 #: openid
 msgid "OpenID"
-msgstr "OpenID"
+msgstr "اُوپن ای.ڈی"
 
 #: username
 msgid "Username"
