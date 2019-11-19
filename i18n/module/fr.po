@@ -55,7 +55,7 @@ msgstr "Répéter le mot de passe"
 
 #: openid
 msgid "OpenID"
-msgstr "OpenID"
+msgstr "La valeur doit être un entier négatif"
 
 #: username
 msgid "Username"
