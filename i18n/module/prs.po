@@ -19,15 +19,15 @@ msgstr ""
 
 #: user_profile
 msgid "User profile"
-msgstr ""
+msgstr "مشخصات استفاده کننده"
 
 #: account_settings
 msgid "Account settings"
-msgstr ""
+msgstr "تنظیمات حساب"
 
 #: user_settings
 msgid "User settings"
-msgstr ""
+msgstr "تنظیمات استفاده کننده"
 
 #: user_email_address
 msgid "E-mail"
@@ -217,7 +217,7 @@ msgstr "تجدید رمز"
 msgid ""
 "Password should be at least 8 characters with at least 1 digit and 1 "
 "uppercase letter"
-msgstr ""
+msgstr "رمز حد اقل 8 حرف باشد همرا با 1 عدد و 1 حرف کلان"
 
 #: passwords_do_not_match
 msgid "The entered values do not match. Please re-enter."
