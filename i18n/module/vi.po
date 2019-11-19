@@ -19,11 +19,11 @@ msgstr ""
 
 #: user_profile
 msgid "User profile"
-msgstr ""
+msgstr "Hồ sơ người dùng"
 
 #: account_settings
 msgid "Account settings"
-msgstr ""
+msgstr "Cài đặt tài khoản"
 
 #: user_settings
 msgid "User settings"
@@ -218,6 +218,7 @@ msgid ""
 "Password should be at least 8 characters with at least 1 digit and 1 "
 "uppercase letter"
 msgstr ""
+"Mật khẩu nên có ít nhất 8 chữ cái, ít nhất 1 ký tự số, và 1 chữ cái viết hoa"
 
 #: passwords_do_not_match
 msgid "The entered values do not match. Please re-enter."
