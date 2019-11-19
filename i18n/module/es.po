@@ -31,7 +31,7 @@ msgstr "Preferencias de usuario"
 
 #: user_email_address
 msgid "E-mail"
-msgstr "E-mail"
+msgstr "Correo electrónico"
 
 #: surname
 msgid "Surname"
