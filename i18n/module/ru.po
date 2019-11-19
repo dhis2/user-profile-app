@@ -31,7 +31,7 @@ msgstr "Пользовательские настройки"
 
 #: user_email_address
 msgid "E-mail"
-msgstr "E-mail"
+msgstr "адрес электронной почты"
 
 #: surname
 msgid "Surname"
@@ -55,7 +55,7 @@ msgstr "Повторите новый пароль"
 
 #: openid
 msgid "OpenID"
-msgstr "OpenID"
+msgstr ""
 
 #: username
 msgid "Username"
