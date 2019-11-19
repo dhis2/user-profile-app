@@ -55,7 +55,7 @@ msgstr "Repita a nova senha"
 
 #: openid
 msgid "OpenID"
-msgstr "OpenID"
+msgstr ""
 
 #: username
 msgid "Username"
