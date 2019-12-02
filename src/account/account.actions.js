@@ -20,10 +20,9 @@ accountActions.setPassword.subscribe(({ data: [oldPassword, newPassword, onSucce
         api.update('/me/changePassword', payload)
             .then(() => {
                 log.debug('Password updated successfully.');
-                appActions.showSnackbarMessage({
-                    message: d2.i18n.getTranslation('password_update_success'),
-                    status: 'success',
-                });
+                
+                appActions.setCategory('passwordChanged');
+
                 onSuccess();
                 complete();
             })
