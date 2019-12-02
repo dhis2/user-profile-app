@@ -28,9 +28,14 @@ accountActions.setPassword.subscribe(({ data: [oldPassword, newPassword, onSucce
                 complete();
             })
             .catch((err) => {
+                const message = err && err.message && typeof err.message === 'string' 
+                    ? err.message 
+                    : d2.i18n.getTranslation('password_update_failed');
+
                 appActions.showSnackbarMessage({
-                    message: d2.i18n.getTranslation('password_update_failed'),
+                    message,
                     status: 'error',
+                    permanent: true,
                 });
                 log.error('Failed to update password:', err);
                 error();
