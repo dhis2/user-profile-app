@@ -10,7 +10,6 @@ const accountActions = Action.createActionsFromNames([
     'setPassword',
     'setTwoFactorStatus',
     'getQrCode',
-    'login'
 ]);
 
 accountActions.setPassword.subscribe(({ data: [oldPassword, newPassword, onSuccess], complete, error }) => {
@@ -73,34 +72,6 @@ accountActions.setTwoFactorStatus.subscribe(({ data: twoFA, complete, error }) =
 });
 
 accountActions.getQrCode.subscribe(() => {
-});
-
-accountActions.login.subscribe(async ({ data: { username, password } }) => {
-    appActions.setCategory('account');
-
-    try {
-        const d2 = await getD2();
-        const server = d2.system.systemInfo.contextPath;
-
-        await fetch(
-                `${server}/dhis-web-commons-security/login.action`,
-                {
-                    method: 'POST',
-                    credentials: 'include',
-                    body: `j_username=${username}&j_password=${password}`,
-                    headers: {
-                        'X-Requested-With': 'XMLHttpRequest',
-                        Accept: 'application/json',
-                        'Content-Type': 'application/x-www-form-urlencoded',
-                    },
-                }
-            )
-    } catch (e) {
-        // This will always happen because we don't have a real login endpoint
-    } finally {
-        window.location.reload()
-    }
-
 });
 
 export default accountActions;
