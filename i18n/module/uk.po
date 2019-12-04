@@ -1,5 +1,6 @@
 # Translators:
 # phil_dhis2, 2019
+# Wanda <wanda@frontlineaids.org>, 2019
 # 
 #, fuzzy
 msgid ""
@@ -8,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-01 00:28-0400\n"
 "PO-Revision-Date: 2019-09-02 16:42+0000\n"
-"Last-Translator: phil_dhis2, 2019\n"
+"Last-Translator: Wanda <wanda@frontlineaids.org>, 2019\n"
 "Language-Team: Ukrainian (https://www.transifex.com/hisp-uio/teams/100509/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,11 +20,11 @@ msgstr ""
 
 #: user_profile
 msgid "User profile"
-msgstr ""
+msgstr "Профіль користувача"
 
 #: account_settings
 msgid "Account settings"
-msgstr ""
+msgstr "Налаштування облікового запису"
 
 #: user_settings
 msgid "User settings"
@@ -51,11 +52,11 @@ msgstr "Новий пароль"
 
 #: repeat_new_password
 msgid "Repeat new password"
-msgstr ""
+msgstr "Повторити новий пароль"
 
 #: openid
 msgid "OpenID"
-msgstr ""
+msgstr "OpenID"
 
 #: username
 msgid "Username"
@@ -133,7 +134,7 @@ msgstr "Мови"
 
 #: update_user_profile_success
 msgid "User profile updated"
-msgstr ""
+msgstr "Профіль користувача оновлено"
 
 #: settings
 msgid "Settings"
@@ -154,11 +155,11 @@ msgstr "Повідомлення"
 
 #: settings_updated
 msgid "Settings updated"
-msgstr ""
+msgstr "Налаштування оновлено"
 
 #: failed_to_update_settings
 msgid "Failed to update settings"
-msgstr ""
+msgstr "Не вдалося оновити налаштування"
 
 #: style
 msgid "Style"
@@ -195,37 +196,39 @@ msgstr "Коротке ім'я"
 
 #: system_default
 msgid "System default"
-msgstr ""
+msgstr "Системні налаштування за замовчуванням"
 
 #: value_should_be_an_email
 msgid "Please enter a valid email address"
-msgstr ""
+msgstr "Будь ласка, введіть дійсний емейл"
 
 #: update_user_profile_fail
 msgid "Failed to update user profile"
-msgstr ""
+msgstr "Не вдалося оновити профіль користувача"
 
 #: update_settings_fail
 msgid "Fialed to update user settings"
-msgstr ""
+msgstr "Не вдалося оновити налаштування користувача"
 
 #: update_password
 msgid "Update password"
-msgstr ""
+msgstr "Оновити пароль"
 
 #: invalid_password
 msgid ""
 "Password should be at least 8 characters with at least 1 digit and 1 "
 "uppercase letter"
 msgstr ""
+"Пароль має бути не коротшим за 8 знаків і містити щонайменше 1 цифру і 1 "
+"велику літеру"
 
 #: passwords_do_not_match
 msgid "The entered values do not match. Please re-enter."
-msgstr ""
+msgstr "Уведені значення не збігаються. Будь ласка, повторіть введення."
 
 #: use_system_default
 msgid "Use system default"
-msgstr ""
+msgstr "Використати системні установки за замовчуванням"
 
 #: true_notifications
 msgid "Yes"
@@ -237,28 +240,29 @@ msgstr "Ні"
 
 #: value_required
 msgid "This field can't be left blank"
-msgstr ""
+msgstr "Це поле не можна лишати порожнім"
 
 #: please_enter_the_correct_password
 msgid "Please enter the correct password"
-msgstr ""
+msgstr "Будь ласка, введіть правильний пароль"
 
 #: no_changes_have_been_made
 msgid "No changes have been made"
-msgstr ""
+msgstr "Змін не було зроблено"
 
 #: validating_please_try_again
 msgid "The form is currently being validated. Please try again."
-msgstr ""
+msgstr "Форма зараз проходить перевірку. Будь ласка, спробуйте ще раз."
 
 #: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
 msgstr ""
+"Форма містить помилки. Будь ласка, виправте помилки і спробуйте ще раз."
 
 #: password_update_success
 msgid "Your password was updated successfully"
-msgstr ""
+msgstr "Ваш пароль успішно оновлено"
 
 #: password_update_failed
 msgid "Failed to update password"
-msgstr ""
+msgstr "Не вдалося оновити пароль"
