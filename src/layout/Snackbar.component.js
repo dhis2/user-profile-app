@@ -10,11 +10,14 @@ const messageStatus = {
     success: { backgroundColor: '#9CCC65' },
 };
 
+const DEFAULT_AUTOHIDE_DURATION = 1250
+
 class SnackWrapper extends Component {
     state = {
         snackbarMessage: '',
         showSnackbar: false,
         messageStatus: messageStatus['neutral'],
+        autoHideDuration: DEFAULT_AUTOHIDE_DURATION
     };
     
     componentDidMount() {
@@ -23,10 +26,13 @@ class SnackWrapper extends Component {
         this.subscriptions.push(appActions.showSnackbarMessage.subscribe((params) => {
             const message = params.data.message;
             const status = params.data.status ? params.data.status : 'neutral';
+            const autoHideDuration = params.data.permanent ? undefined : DEFAULT_AUTOHIDE_DURATION
+
             this.setState({ 
                 snackbarMessage: message, 
                 showSnackbar: !!message,
                 messageStatus: messageStatus[status],
+                autoHideDuration,
             });
         }));
     }
@@ -45,7 +51,7 @@ class SnackWrapper extends Component {
         return (
             <Snackbar
                 message={this.state.snackbarMessage}
-                autoHideDuration={1250}
+                autoHideDuration={this.state.autoHideDuration}
                 bodyStyle={this.state.messageStatus}
                 open={this.state.showSnackbar}
                 onRequestClose={this.closeSnackbar}
