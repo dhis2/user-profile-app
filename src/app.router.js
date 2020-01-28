@@ -19,6 +19,7 @@ import TwoFactor from './account/twoFactor/TwoFactor';
 import UserSettings from './settings/UserSettings.component';
 import ViewProfile from './viewProfile/ViewProfile.component';
 import AboutPage from './aboutPage/AboutPage.component';
+import PasswordChangeSuccessDialog from './account/PasswordChangeSuccessDialog';
 
 const HeaderBar = withStateFrom(headerBarStore$, HeaderBarComponent);
 
@@ -52,6 +53,7 @@ class AppRouter extends Component {
                             <Route path="profile" component={Profile} />
                             <Route path="account" component={Account} />
                             <Route path="twoFactor" component={TwoFactor} />
+                            <Route path="passwordChanged" component={PasswordChangeSuccessDialog} />
                             <Route path="viewProfile" component={ViewProfile} />
                             <Route path="aboutPage" component={AboutPage} />
                             <Redirect from="/" to="/viewProfile" />
