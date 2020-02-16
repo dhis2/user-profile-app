@@ -1,6 +1,7 @@
 # Translators:
 # phil_dhis2, 2019
 # Viktor Varland <viktor@dhis2.org>, 2019
+# easylin <lin_xd@126.com>, 2020
 # 
 #, fuzzy
 msgid ""
@@ -9,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-01 00:28-0400\n"
 "PO-Revision-Date: 2019-09-02 16:41+0000\n"
-"Last-Translator: Viktor Varland <viktor@dhis2.org>, 2019\n"
+"Last-Translator: easylin <lin_xd@126.com>, 2020\n"
 "Language-Team: Chinese (https://www.transifex.com/hisp-uio/teams/100509/zh/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,15 +21,15 @@ msgstr ""
 
 #: user_profile
 msgid "User profile"
-msgstr ""
+msgstr "用户基本信息"
 
 #: account_settings
 msgid "Account settings"
-msgstr ""
+msgstr "账户设置"
 
 #: user_settings
 msgid "User settings"
-msgstr ""
+msgstr "用户设置"
 
 #: user_email_address
 msgid "E-mail"
@@ -52,11 +53,11 @@ msgstr "新口令"
 
 #: repeat_new_password
 msgid "Repeat new password"
-msgstr ""
+msgstr "重复新口令"
 
 #: openid
 msgid "OpenID"
-msgstr ""
+msgstr "OpenID"
 
 #: username
 msgid "Username"
@@ -68,11 +69,11 @@ msgstr "电话号码"
 
 #: job_title
 msgid "Job title"
-msgstr ""
+msgstr "工作头衔"
 
 #: introduction
 msgid "Introduction"
-msgstr ""
+msgstr "介绍"
 
 #: gender
 msgid "Gender"
@@ -91,7 +92,7 @@ msgstr "女性"
 #: other
 msgctxt "other"
 msgid "Other"
-msgstr ""
+msgstr "其它"
 
 #: gender_male
 msgctxt "gender_male"
@@ -106,35 +107,35 @@ msgstr "女性"
 #: gender_other
 msgctxt "gender_other"
 msgid "Other"
-msgstr ""
+msgstr "其它"
 
 #: birthday
 msgid "Birthday"
-msgstr ""
+msgstr "生日"
 
 #: nationality
 msgid "Nationality"
-msgstr ""
+msgstr "国籍"
 
 #: employer
 msgid "Employer"
-msgstr ""
+msgstr "雇主"
 
 #: education
 msgid "Education"
-msgstr ""
+msgstr "教育"
 
 #: interests
 msgid "Interests"
-msgstr ""
+msgstr "兴趣"
 
 #: languages
 msgid "Languages"
-msgstr ""
+msgstr "语言"
 
 #: update_user_profile_success
 msgid "User profile updated"
-msgstr ""
+msgstr "用户基本信息更新"
 
 #: settings
 msgid "Settings"
@@ -143,7 +144,7 @@ msgstr "设置"
 #: property_to_display_in_analysis_modules
 msgctxt "property_to_display_in_analysis_modules"
 msgid "Property to display in analysis modules"
-msgstr ""
+msgstr "在分析模块中显示的属性"
 
 #: general
 msgid "General"
@@ -159,7 +160,7 @@ msgstr "设置已经更新"
 
 #: failed_to_update_settings
 msgid "Failed to update settings"
-msgstr ""
+msgstr "更新设置失败"
 
 #: style
 msgid "Style"
@@ -167,24 +168,24 @@ msgstr "风格"
 
 #: db_language
 msgid "Database language"
-msgstr ""
+msgstr "数据库语言"
 
 #: language
 msgid "Interface language"
-msgstr ""
+msgstr "接口语言"
 
 #: enable_message_email_notifications
 msgid "Enable message email notifications"
-msgstr ""
+msgstr "激活发送邮件通知"
 
 #: enable_message_sms_notifications
 msgid "Enable message SMS notifications"
-msgstr ""
+msgstr "激活发送短信通知"
 
 #: analysis_module
 msgctxt "analysis_module"
 msgid "Property to display in analysis modules"
-msgstr ""
+msgstr "在分析模块中显示的属性"
 
 #: name
 msgid "Name"
@@ -196,37 +197,37 @@ msgstr "缩写名"
 
 #: system_default
 msgid "System default"
-msgstr ""
+msgstr "系统缺省"
 
 #: value_should_be_an_email
 msgid "Please enter a valid email address"
-msgstr ""
+msgstr "请输入有效的电子邮件"
 
 #: update_user_profile_fail
 msgid "Failed to update user profile"
-msgstr ""
+msgstr "更新用户基本信息失败"
 
 #: update_settings_fail
 msgid "Fialed to update user settings"
-msgstr ""
+msgstr "更新用户设置失败"
 
 #: update_password
 msgid "Update password"
-msgstr ""
+msgstr "更新口令"
 
 #: invalid_password
 msgid ""
 "Password should be at least 8 characters with at least 1 digit and 1 "
 "uppercase letter"
-msgstr ""
+msgstr "口令至少需要八个字符、一个数字和大写字母"
 
 #: passwords_do_not_match
 msgid "The entered values do not match. Please re-enter."
-msgstr ""
+msgstr "输入值不匹配，请重新输入"
 
 #: use_system_default
 msgid "Use system default"
-msgstr ""
+msgstr "使用系统缺省"
 
 #: true_notifications
 msgid "Yes"
@@ -238,28 +239,28 @@ msgstr "否"
 
 #: value_required
 msgid "This field can't be left blank"
-msgstr ""
+msgstr "该字段不能为空"
 
 #: please_enter_the_correct_password
 msgid "Please enter the correct password"
-msgstr ""
+msgstr "请输入正确的口令"
 
 #: no_changes_have_been_made
 msgid "No changes have been made"
-msgstr ""
+msgstr "没有发生变化"
 
 #: validating_please_try_again
 msgid "The form is currently being validated. Please try again."
-msgstr ""
+msgstr "表单当前正被验证，请重试"
 
 #: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
-msgstr ""
+msgstr "表单包括错误，请更正错误再试"
 
 #: password_update_success
 msgid "Your password was updated successfully"
-msgstr ""
+msgstr "你的口令更新成功"
 
 #: password_update_failed
 msgid "Failed to update password"
-msgstr ""
+msgstr "更新口令失败"
