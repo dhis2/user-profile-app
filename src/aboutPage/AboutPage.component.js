@@ -4,21 +4,25 @@ import PropTypes from 'prop-types';
 import AboutSection from './AboutSection.component';
 
 const parseDateFromUTCString = (utcString, d2) => {
-    if (!utcString) {
-        return d2.i18n.getTranslation('not_applicable')
+    try {
+        if (!utcString) {
+            return d2.i18n.getTranslation('never')
+        }
+    
+        const locale = d2.currentUser.userSettings.settings.keyUiLocale;
+        const date = new Date(utcString);
+        const options = {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false,
+        };
+        return new Intl.DateTimeFormat(locale, options).format(date);    
+    } catch (error) {
+        return d2.i18n.getTranslation('invalid_date')
     }
-
-    const locale = d2.currentUser.userSettings.settings.keyUiLocale;
-    const date = new Date(utcString);
-    const options = {
-        day: 'numeric',
-        month: 'long',
-        year: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit',
-        hour12: false,
-    };
-    return new Intl.DateTimeFormat(locale, options).format(date);
 };
 
 const attributes = {
