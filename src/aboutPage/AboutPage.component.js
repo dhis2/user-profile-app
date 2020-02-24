@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 
 import AboutSection from './AboutSection.component';
 
-
-
 const parseDateFromUTCString = (utcString, d2) => {
     if (!utcString) {
         return d2.i18n.getTranslation('not_applicable')
