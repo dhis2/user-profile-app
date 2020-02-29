@@ -1,5 +1,5 @@
 # Translators:
-# phil_dhis2, 2019
+# phil_dhis2, 2020
 # 
 #, fuzzy
 msgid ""
@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-01 00:28-0400\n"
-"PO-Revision-Date: 2019-09-02 16:41+0000\n"
-"Last-Translator: phil_dhis2, 2019\n"
+"PO-Revision-Date: 2020-02-28 15:08+0000\n"
+"Last-Translator: phil_dhis2, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/hisp-uio/teams/100509/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,7 +47,7 @@ msgstr "Contraseña antigua"
 
 #: new_password
 msgid "New password"
-msgstr "Contraseña nueva"
+msgstr "Nueva contraseña"
 
 #: repeat_new_password
 msgid "Repeat new password"
@@ -55,7 +55,7 @@ msgstr "Repita la contraseña"
 
 #: openid
 msgid "OpenID"
-msgstr "OpenID:"
+msgstr "OpenID\\:"
 
 #: username
 msgid "Username"
@@ -142,7 +142,7 @@ msgstr "Configuración"
 #: property_to_display_in_analysis_modules
 msgctxt "property_to_display_in_analysis_modules"
 msgid "Property to display in analysis modules"
-msgstr "Propiedad que se mostrará en los módulos de análisis"
+msgstr "Propiedad a desplegar en módulos de análisis"
 
 #: general
 msgid "General"
@@ -174,7 +174,7 @@ msgstr "Idioma de la interfaz"
 
 #: enable_message_email_notifications
 msgid "Enable message email notifications"
-msgstr "Habilitar notificaciones de correo electrónico"
+msgstr "Habilitar notificaciones por correo-e"
 
 #: enable_message_sms_notifications
 msgid "Enable message SMS notifications"
@@ -183,7 +183,7 @@ msgstr "Habilitar notificaciones para SMS"
 #: analysis_module
 msgctxt "analysis_module"
 msgid "Property to display in analysis modules"
-msgstr "Propiedad que se mostrará en los módulos de análisis"
+msgstr "Propiedad a desplegar en módulos de análisis"
 
 #: name
 msgid "Name"
@@ -199,7 +199,7 @@ msgstr "Sistema por defecto"
 
 #: value_should_be_an_email
 msgid "Please enter a valid email address"
-msgstr "Por favor, introduzca una dirección válida de correo electrónico"
+msgstr "Por favor, introduzca una dirección válida de correo-e"
 
 #: update_user_profile_fail
 msgid "Failed to update user profile"
