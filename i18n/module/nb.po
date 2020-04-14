@@ -20,15 +20,15 @@ msgstr ""
 
 #: user_profile
 msgid "User profile"
-msgstr ""
+msgstr "Brukerprofil"
 
 #: account_settings
 msgid "Account settings"
-msgstr ""
+msgstr "Brukerkontoinnstillinger"
 
 #: user_settings
 msgid "User settings"
-msgstr ""
+msgstr "Brukerinnstillinger"
 
 #: user_email_address
 msgid "E-mail"
@@ -44,15 +44,15 @@ msgstr "Fornavn"
 
 #: old_password
 msgid "Old password"
-msgstr ""
+msgstr "Gammelt passord"
 
 #: new_password
 msgid "New password"
-msgstr ""
+msgstr "Nytt passord"
 
 #: repeat_new_password
 msgid "Repeat new password"
-msgstr ""
+msgstr "Gjenta nytt passord"
 
 #: openid
 msgid "OpenID"
@@ -81,32 +81,32 @@ msgstr "Kjønn"
 #: male
 msgctxt "male"
 msgid "Male"
-msgstr ""
+msgstr "Mann"
 
 #: female
 msgctxt "female"
 msgid "Female"
-msgstr ""
+msgstr "Kvinne"
 
 #: other
 msgctxt "other"
 msgid "Other"
-msgstr ""
+msgstr "Annet"
 
 #: gender_male
 msgctxt "gender_male"
 msgid "Male"
-msgstr ""
+msgstr "Mann"
 
 #: gender_female
 msgctxt "gender_female"
 msgid "Female"
-msgstr ""
+msgstr "Kvinne"
 
 #: gender_other
 msgctxt "gender_other"
 msgid "Other"
-msgstr ""
+msgstr "Annet"
 
 #: birthday
 msgid "Birthday"
@@ -118,7 +118,7 @@ msgstr "Nasjonalitet"
 
 #: employer
 msgid "Employer"
-msgstr ""
+msgstr "Arbeidsgiver"
 
 #: education
 msgid "Education"
@@ -130,11 +130,11 @@ msgstr "Interesser"
 
 #: languages
 msgid "Languages"
-msgstr ""
+msgstr "Språk"
 
 #: update_user_profile_success
 msgid "User profile updated"
-msgstr ""
+msgstr "Brukerprofil oppdatert"
 
 #: settings
 msgid "Settings"
@@ -143,7 +143,7 @@ msgstr "Innstillinger"
 #: property_to_display_in_analysis_modules
 msgctxt "property_to_display_in_analysis_modules"
 msgid "Property to display in analysis modules"
-msgstr ""
+msgstr "Egenskap å vise i analysemoduler"
 
 #: general
 msgid "General"
@@ -155,11 +155,11 @@ msgstr "Melding"
 
 #: settings_updated
 msgid "Settings updated"
-msgstr ""
+msgstr "Innstillinger oppdatert"
 
 #: failed_to_update_settings
 msgid "Failed to update settings"
-msgstr ""
+msgstr "Kunne ikke oppdatere innstillingene"
 
 #: style
 msgid "Style"
@@ -175,16 +175,16 @@ msgstr "Grensesnittspråk"
 
 #: enable_message_email_notifications
 msgid "Enable message email notifications"
-msgstr ""
+msgstr "Aktiver meldingsvarsel på e-post"
 
 #: enable_message_sms_notifications
 msgid "Enable message SMS notifications"
-msgstr ""
+msgstr "Aktiver meldingsvarsel på SMS"
 
 #: analysis_module
 msgctxt "analysis_module"
 msgid "Property to display in analysis modules"
-msgstr ""
+msgstr "Egenskap å vise i analysemoduler"
 
 #: name
 msgid "Name"
@@ -192,41 +192,41 @@ msgstr "Navn"
 
 #: short_name
 msgid "Short name"
-msgstr ""
+msgstr "Kort navn"
 
 #: system_default
 msgid "System default"
-msgstr ""
+msgstr "Systemstandard"
 
 #: value_should_be_an_email
 msgid "Please enter a valid email address"
-msgstr ""
+msgstr "Fyll inn en gyldig e-post adresse"
 
 #: update_user_profile_fail
 msgid "Failed to update user profile"
-msgstr ""
+msgstr "Kunne ikke oppdatere brukerprofilen"
 
 #: update_settings_fail
 msgid "Fialed to update user settings"
-msgstr ""
+msgstr "Kunne ikke oppdatere brukerinnstillinger"
 
 #: update_password
 msgid "Update password"
-msgstr ""
+msgstr "Oppdater passord"
 
 #: invalid_password
 msgid ""
 "Password should be at least 8 characters with at least 1 digit and 1 "
 "uppercase letter"
-msgstr ""
+msgstr "Passordet skal være minst 8 tegn med minst 1 siffer og 1 stor bokstav"
 
 #: passwords_do_not_match
 msgid "The entered values do not match. Please re-enter."
-msgstr ""
+msgstr "De angitte verdiene stemmer ikke. Vennligst tast inn igjen."
 
 #: use_system_default
 msgid "Use system default"
-msgstr ""
+msgstr "Bruk systemstandard"
 
 #: true_notifications
 msgid "Yes"
@@ -238,28 +238,28 @@ msgstr "Nei"
 
 #: value_required
 msgid "This field can't be left blank"
-msgstr ""
+msgstr "Dette feltet kan ikke stå tomt"
 
 #: please_enter_the_correct_password
 msgid "Please enter the correct password"
-msgstr ""
+msgstr "Vennligst tast inn riktig passord"
 
 #: no_changes_have_been_made
 msgid "No changes have been made"
-msgstr ""
+msgstr "Ingen endringer er gjort"
 
 #: validating_please_try_again
 msgid "The form is currently being validated. Please try again."
-msgstr ""
+msgstr "Skjemaet er for øyeblikket under validering. Vennligst prøv igjen."
 
 #: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
-msgstr ""
+msgstr "Skjemaet inneholder feil. Rett feilene og prøv igjen."
 
 #: password_update_success
 msgid "Your password was updated successfully"
-msgstr ""
+msgstr "Passordet ditt ble oppdatert"
 
 #: password_update_failed
 msgid "Failed to update password"
-msgstr ""
+msgstr "Kunne ikke oppdatere passordet"
