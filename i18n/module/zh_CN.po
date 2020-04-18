@@ -1,6 +1,5 @@
 # Translators:
-# phil_dhis2, 2019
-# Hamza Assada <7amza.it@gmail.com>, 2020
+# 晓东 林 <13981924470@126.com>, 2020
 # 
 #, fuzzy
 msgid ""
@@ -9,259 +8,257 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-01 00:28-0400\n"
 "PO-Revision-Date: 2019-09-02 16:41+0000\n"
-"Last-Translator: Hamza Assada <7amza.it@gmail.com>, 2020\n"
-"Language-Team: Arabic (https://www.transifex.com/hisp-uio/teams/100509/ar/)\n"
+"Last-Translator: 晓东 林 <13981924470@126.com>, 2020\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/hisp-uio/teams/100509/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ar\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Translate Toolkit 2.0.0b3\n"
 
 #: user_profile
 msgid "User profile"
-msgstr "ملف المستخدم الشخصي"
+msgstr ""
 
 #: account_settings
 msgid "Account settings"
-msgstr "إعدادات الحساب"
+msgstr ""
 
 #: user_settings
 msgid "User settings"
-msgstr "إعدادات المستخدم"
+msgstr ""
 
 #: user_email_address
 msgid "E-mail"
-msgstr "البريد الإلكتروني"
+msgstr "E-mail"
 
 #: surname
 msgid "Surname"
-msgstr "الكنية"
+msgstr "姓"
 
 #: first_name
 msgid "First name"
-msgstr "الاسم الأول"
+msgstr "姓"
 
 #: old_password
 msgid "Old password"
-msgstr "كلمة المرور القديمة"
+msgstr "旧口令"
 
 #: new_password
 msgid "New password"
-msgstr "كلمة المرور الجديدة"
+msgstr "新口令"
 
 #: repeat_new_password
 msgid "Repeat new password"
-msgstr "تأكيد كلمة المرور الجديدة"
+msgstr "重复新口令"
 
 #: openid
 msgid "OpenID"
-msgstr "فتح الهوية"
+msgstr "OpenID"
 
 #: username
 msgid "Username"
-msgstr "اسم المستخدم"
+msgstr "用户名"
 
 #: phone_number
 msgid "Mobile phone number"
-msgstr "رقم الهاتف الجوال"
+msgstr "电话号码"
 
 #: job_title
 msgid "Job title"
-msgstr "المسمى الوظيفي"
+msgstr "工作职位"
 
 #: introduction
 msgid "Introduction"
-msgstr "المقدمة"
+msgstr "介绍"
 
 #: gender
 msgid "Gender"
-msgstr "الجنس"
+msgstr "性别"
 
 #: male
 msgctxt "male"
 msgid "Male"
-msgstr "ذكر"
+msgstr "男"
 
 #: female
 msgctxt "female"
 msgid "Female"
-msgstr "أنثى"
+msgstr "女"
 
 #: other
 msgctxt "other"
 msgid "Other"
-msgstr "أخرى"
+msgstr "其它"
 
 #: gender_male
 msgctxt "gender_male"
 msgid "Male"
-msgstr "ذكر"
+msgstr "男"
 
 #: gender_female
 msgctxt "gender_female"
 msgid "Female"
-msgstr "أنثى"
+msgstr "女"
 
 #: gender_other
 msgctxt "gender_other"
 msgid "Other"
-msgstr "أخرى"
+msgstr "其它"
 
 #: birthday
 msgid "Birthday"
-msgstr "تاريخ الميلاد"
+msgstr "生日"
 
 #: nationality
 msgid "Nationality"
-msgstr "الجنسية"
+msgstr "国籍"
 
 #: employer
 msgid "Employer"
-msgstr "صاحب العمل"
+msgstr "雇主"
 
 #: education
 msgid "Education"
-msgstr "التعليم"
+msgstr "教育"
 
 #: interests
 msgid "Interests"
-msgstr "الاهتمامات"
+msgstr "兴趣"
 
 #: languages
 msgid "Languages"
-msgstr "اللغات"
+msgstr "语言"
 
 #: update_user_profile_success
 msgid "User profile updated"
-msgstr "تم تحديث ملف تعريف المستخدم"
+msgstr "用户概要已经更新"
 
 #: settings
 msgid "Settings"
-msgstr "الإعدادات"
+msgstr "设置"
 
 #: property_to_display_in_analysis_modules
 msgctxt "property_to_display_in_analysis_modules"
 msgid "Property to display in analysis modules"
-msgstr "الخاصية للعرض في الوحدات البرمجية للتحليل"
+msgstr "Property to display in analysis modules"
 
 #: general
 msgid "General"
-msgstr "عام"
+msgstr "常规"
 
 #: message
 msgid "Message"
-msgstr "رسالة"
+msgstr "消息"
 
 #: settings_updated
 msgid "Settings updated"
-msgstr "تم تحديث الإعدادات"
+msgstr "设置已经更新"
 
 #: failed_to_update_settings
 msgid "Failed to update settings"
-msgstr "فشل تحديث الإعدادات"
+msgstr "Failed to update settings"
 
 #: style
 msgid "Style"
-msgstr "المظهر"
+msgstr "风格"
 
 #: db_language
 msgid "Database language"
-msgstr "لغة قاعدة البيانات"
+msgstr "数据库语言"
 
 #: language
 msgid "Interface language"
-msgstr "لغة الواجهة"
+msgstr "界面语言"
 
 #: enable_message_email_notifications
 msgid "Enable message email notifications"
-msgstr "تمكين الإشعارات عبر رسائل البريد الإلكتروني"
+msgstr "打开邮件通知"
 
 #: enable_message_sms_notifications
 msgid "Enable message SMS notifications"
-msgstr "تمكين إرسال الإشعارات عبر رسائل الجوال القصيرة"
+msgstr "打开短信通知"
 
 #: analysis_module
 msgctxt "analysis_module"
 msgid "Property to display in analysis modules"
-msgstr "الخاصية للعرض في الوحدات البرمجية للتحليل"
+msgstr "Property to display in analysis modules"
 
 #: name
 msgid "Name"
-msgstr "الاسم"
+msgstr "名称"
 
 #: short_name
 msgid "Short name"
-msgstr "الاسم المختصر"
+msgstr "缩写名"
 
 #: system_default
 msgid "System default"
-msgstr "الإعدادات الافتراضية للنظام"
+msgstr "系统缺省"
 
 #: value_should_be_an_email
 msgid "Please enter a valid email address"
-msgstr "الرجاء إدخال عنوان بريد إلكتروني صالح"
+msgstr "Please enter a valid email address"
 
 #: update_user_profile_fail
 msgid "Failed to update user profile"
-msgstr "فشل تحديث ملف تعريف المستخدم"
+msgstr "Failed to update user profile"
 
 #: update_settings_fail
 msgid "Fialed to update user settings"
-msgstr "فشل تحديث إعدادات المستخدم"
+msgstr "更新用户设置失败"
 
 #: update_password
 msgid "Update password"
-msgstr "تحديث كلمة المرور"
+msgstr "更新口令"
 
 #: invalid_password
 msgid ""
 "Password should be at least 8 characters with at least 1 digit and 1 "
 "uppercase letter"
 msgstr ""
-"يجب أن تتكون كلمة المرور من 8 أحرف على الأقل مع رقم واحد على الأقل وحرف كبير"
-" واحد"
 
 #: passwords_do_not_match
 msgid "The entered values do not match. Please re-enter."
-msgstr "القيم المدخلة غير متطابقة. الرجاء إعادة الإدخال."
+msgstr "The entered values do not match. Please re-enter."
 
 #: use_system_default
 msgid "Use system default"
-msgstr "استخدام الإعدادات الافتراضية للنظام"
+msgstr "使用系统缺省"
 
 #: true_notifications
 msgid "Yes"
-msgstr "نعم"
+msgstr "Yes"
 
 #: false_notifications
 msgid "No"
-msgstr "لا"
+msgstr "No"
 
 #: value_required
 msgid "This field can't be left blank"
-msgstr "لا يمكن ترك هذا الحقل فارغاً"
+msgstr "该字段不能为空"
 
 #: please_enter_the_correct_password
 msgid "Please enter the correct password"
-msgstr "الرجاء إدخال كلمة المرور الصحيحة"
+msgstr "请输入正确的口令"
 
 #: no_changes_have_been_made
 msgid "No changes have been made"
-msgstr "لم يتم إجراء أي تغييرات"
+msgstr "没有改变"
 
 #: validating_please_try_again
 msgid "The form is currently being validated. Please try again."
-msgstr "يتم حالياً تدقيق هذا النموذج. الرجاء المحاولة مرة أخرى."
+msgstr "The form is currently being validated. Please try again."
 
 #: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
-msgstr "يحوي هذا النموذج أخطاء. الرجاء إصلاح الأخطاء والمحاولة مرة أخرى."
+msgstr "The form contains errors. Please fix the errors and try again."
 
 #: password_update_success
 msgid "Your password was updated successfully"
-msgstr "تم تحديث كلمة مرورك بنجاح"
+msgstr "Your password was updated successfully"
 
 #: password_update_failed
 msgid "Failed to update password"
-msgstr "فشل تحديث كلمة المرور"
+msgstr "Failed to update password"
