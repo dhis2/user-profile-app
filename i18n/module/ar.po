@@ -20,11 +20,11 @@ msgstr ""
 
 #: user_profile
 msgid "User profile"
-msgstr ""
+msgstr "ملف المستخدم الشخصي"
 
 #: account_settings
 msgid "Account settings"
-msgstr ""
+msgstr "إعدادات الحساب"
 
 #: user_settings
 msgid "User settings"
@@ -219,6 +219,8 @@ msgid ""
 "Password should be at least 8 characters with at least 1 digit and 1 "
 "uppercase letter"
 msgstr ""
+"يجب أن تتكون كلمة المرور من 8 أحرف على الأقل مع رقم واحد على الأقل وحرف كبير"
+" واحد"
 
 #: passwords_do_not_match
 msgid "The entered values do not match. Please re-enter."
