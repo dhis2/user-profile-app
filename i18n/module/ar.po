@@ -57,7 +57,7 @@ msgstr "تأكيد كلمة المرور الجديدة"
 
 #: openid
 msgid "OpenID"
-msgstr "فتح الهوية"
+msgstr "OpenID"
 
 #: username
 msgid "Username"
