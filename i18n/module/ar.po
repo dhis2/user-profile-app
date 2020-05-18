@@ -57,7 +57,7 @@ msgstr "تأكيد كلمة المرور الجديدة"
 
 #: openid
 msgid "OpenID"
-msgstr "فتح الهوية"
+msgstr "OpenID"
 
 #: username
 msgid "Username"
@@ -185,7 +185,7 @@ msgstr "تمكين إرسال الإشعارات عبر رسائل الجوال 
 #: analysis_module
 msgctxt "analysis_module"
 msgid "Property to display in analysis modules"
-msgstr "الخاصية للعرض في الوحدات البرمجية للتحليل"
+msgstr "الخاصية التي يتم عرضها في الوحدات التحليلية"
 
 #: name
 msgid "Name"
@@ -205,7 +205,7 @@ msgstr "الرجاء إدخال عنوان بريد إلكتروني صالح"
 
 #: update_user_profile_fail
 msgid "Failed to update user profile"
-msgstr "فشل تحديث ملف تعريف المستخدم"
+msgstr "فشل تحديث الملف الشخصي للمستخدم"
 
 #: update_settings_fail
 msgid "Fialed to update user settings"
