@@ -4,7 +4,8 @@ import { Router, Route, hashHistory, Redirect } from 'react-router';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-import HeaderBar from '@dhis2/d2-ui-header-bar';
+import { DataProvider } from '@dhis2/app-runtime'
+import { HeaderBar } from '@dhis2/ui-widgets'
 
 import AppTheme from './layout/theme';
 
@@ -21,7 +22,7 @@ import PasswordChangeSuccessDialog from './account/PasswordChangeSuccessDialog';
 
 function WrAppadApp(props) {
     return (
-        <div>
+        <div className="content-wrap">
             <Sidebar currentSection={props.routes[1].path} />
             {props.children}
         </div>
@@ -37,26 +38,37 @@ class AppRouter extends Component {
         };
     }
 
+    getDataProviderProps() {
+        const baseUrl = this.props.d2.system.systemInfo.contextPath
+        const apiUrl = this.props.d2.system.settings.api.baseUrl;
+        const versionString = apiUrl.split('/').pop()
+        const apiVersion = isNaN(parseInt(versionString, 10)) ? '' : versionString
+
+        return { baseUrl, apiVersion }
+    }
+
     render() {
         return (
-            <MuiThemeProvider muiTheme={AppTheme}>
-                <div className="app-wrapper">
-                    <HeaderBar d2={this.props.d2} />
-                    <Snackbar />
-                    <Router history={hashHistory}>
-                        <Route component={WrAppadApp}>
-                            <Route path="settings" component={UserSettings} />
-                            <Route path="profile" component={Profile} />
-                            <Route path="account" component={Account} />
-                            <Route path="twoFactor" component={TwoFactor} />
-                            <Route path="passwordChanged" component={PasswordChangeSuccessDialog} />
-                            <Route path="viewProfile" component={ViewProfile} />
-                            <Route path="aboutPage" component={AboutPage} />
-                            <Redirect from="/" to="/viewProfile" />
-                        </Route>
-                    </Router>
-                </div>
-            </MuiThemeProvider>
+            <DataProvider {...this.getDataProviderProps()}>
+                <MuiThemeProvider muiTheme={AppTheme}>
+                    <div className="app-wrapper">
+                        <HeaderBar appName={this.props.d2.i18n.getTranslation('user_profile')}/>
+                        <Snackbar />
+                        <Router history={hashHistory}>
+                            <Route component={WrAppadApp}>
+                                <Route path="settings" component={UserSettings} />
+                                <Route path="profile" component={Profile} />
+                                <Route path="account" component={Account} />
+                                <Route path="twoFactor" component={TwoFactor} />
+                                <Route path="passwordChanged" component={PasswordChangeSuccessDialog} />
+                                <Route path="viewProfile" component={ViewProfile} />
+                                <Route path="aboutPage" component={AboutPage} />
+                                <Redirect from="/" to="/viewProfile" />
+                            </Route>
+                        </Router>
+                    </div>
+                </MuiThemeProvider>
+            </DataProvider>
         );
     }
 }

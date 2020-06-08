@@ -1,26 +1,23 @@
 
-html {
+html, body {
   background-color: #f3f3f3;
   font-family: Roboto, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-.app-wrapper {
-  padding-top: 3rem;
+.content-wrap {
+  display: flex;
 }
 
 .left-bar {
-  bottom: 0;
-  left: 0;
-  padding-top: 3rem;
-  position: fixed;
-  top: 0;
   width: 295px;
+  flex-grow: 0;
 }
 
 .content-area {
-  padding-left: 295px;
-  max-width: 750px;
-  min-width: 400px;
+  flex-grow: 1;
+  margin-bottom: 64px;
 }
 
 .label-row {
