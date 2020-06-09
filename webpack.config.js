@@ -66,13 +66,6 @@ if (!isDevBuild) {
             DHIS_CONFIG: JSON.stringify({}),
         }),
         new webpack.optimize.OccurrenceOrderPlugin(),
-        new webpack.optimize.UglifyJsPlugin({
-            //     compress: {
-            //         warnings: false,
-            //     },
-            comments: false,
-            beautify: true,
-        }),
     ];
 } else {
     webpackConfig.plugins = [
