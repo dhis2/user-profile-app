@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, CardText } from 'material-ui/Card';
 
-import InfoItem from '../layout/InfoItem.component';
+import InfoRow from '../layout/InfoRow.component';
 import InfoHeader from '../layout/InfoHeader.component';
 
 const styles = {
@@ -18,9 +18,9 @@ const AboutSection = ({ header, attributes }) => (
         <InfoHeader text={header} />
         <Card style={styles.card}>
             <CardText>
-                <div className="info-content">
+                <table className="info-content">
                     {attributes.map(({ label, value }) => (
-                        <InfoItem
+                        <InfoRow
                             key={label}
                             label={label}
                             value={
@@ -30,7 +30,7 @@ const AboutSection = ({ header, attributes }) => (
                             }
                         />
                     ))}
-                </div>
+                </table>
             </CardText>
         </Card>
     </div>
