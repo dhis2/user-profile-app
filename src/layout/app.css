@@ -25,16 +25,17 @@ html, body {
   margin: 0;
 }
 
-.label-name {
+.info-cell-name {
   color: #777;
   font-size: 12pt;
   width: 110px;
-  padding-right: 20px;
   white-space: nowrap;
   vertical-align: top;
+  padding: 4px 20px 4px 0;
 }
 
-.label-value {
+.info-cell-value {
   font-size: 12pt;
   max-width: 510px;
+  padding: 4px 0;
 }
