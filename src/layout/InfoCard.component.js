@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Card, CardText } from 'material-ui/Card';
 
-import InfoItem from './InfoItem.component';
+import InfoRow from './InfoRow.component';
 import InfoHeader from './InfoHeader.component';
 
 import settingsKeyMapping from '../userSettingsMapping';
@@ -88,7 +88,7 @@ class InfoCard extends Component {
         const translatedLabelName = this.getTranslatedLabelName(mapping.label);
         const labelValue = this.getLabelValue(labelName, mapping.type);
         return (
-            <InfoItem
+            <InfoRow
                 key={translatedLabelName}
                 label={translatedLabelName}
                 value={labelValue}
