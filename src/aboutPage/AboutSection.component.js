@@ -18,7 +18,7 @@ const AboutSection = ({ header, attributes }) => (
         <InfoHeader text={header} />
         <Card style={styles.card}>
             <CardText>
-                <div className="info-content">
+                <table className="info-content">
                     {attributes.map(({ label, value }) => (
                         <InfoItem
                             key={label}
@@ -30,7 +30,7 @@ const AboutSection = ({ header, attributes }) => (
                             }
                         />
                     ))}
-                </div>
+                </table>
             </CardText>
         </Card>
     </div>

@@ -113,9 +113,9 @@ class InfoCard extends Component {
         return (
             <Card style={styles.card}>
                 <CardText>
-                    <div className="info-content">
+                    <table className="info-content">
                         {this.getLabelComponents(labelNames)}
-                    </div>
+                    </table>
                 </CardText>
             </Card>
         );
