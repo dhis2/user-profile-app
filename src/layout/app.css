@@ -20,27 +20,22 @@ html, body {
   margin-bottom: 64px;
 }
 
-.label-row {
-  display: flex;
-  padding: 4px 0px;
-  flex-direction: row;
-  justify-content: space-between;
+.info-content {
+  width: 100%;
+  margin: 0;
 }
 
-.label-name {
-  display: inline-block;
-  flex: 1;
+.info-cell-name {
   color: #777;
   font-size: 12pt;
   width: 110px;
-  text-align: right;
-  padding-right: 20px;
+  white-space: nowrap;
   vertical-align: top;
+  padding: 4px 20px 4px 0;
 }
 
-.label-value {
-  display: inline-block;
-  flex: 2;
+.info-cell-value {
   font-size: 12pt;
   max-width: 510px;
+  padding: 4px 0;
 }
