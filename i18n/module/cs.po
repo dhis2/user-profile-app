@@ -86,7 +86,7 @@ msgstr "Male"
 #: female
 msgctxt "female"
 msgid "Female"
-msgstr ""
+msgstr "Žena"
 
 #: other
 msgctxt "other"
@@ -101,7 +101,7 @@ msgstr "Male"
 #: gender_female
 msgctxt "gender_female"
 msgid "Female"
-msgstr ""
+msgstr "Žena"
 
 #: gender_other
 msgctxt "gender_other"
