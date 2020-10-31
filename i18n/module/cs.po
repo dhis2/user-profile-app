@@ -76,7 +76,7 @@ msgstr ""
 
 #: gender
 msgid "Gender"
-msgstr ""
+msgstr "pohlaví"
 
 #: male
 msgctxt "male"
