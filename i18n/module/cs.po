@@ -234,7 +234,7 @@ msgstr "Ano"
 
 #: false_notifications
 msgid "No"
-msgstr ""
+msgstr "Ne"
 
 #: value_required
 msgid "This field can't be left blank"
