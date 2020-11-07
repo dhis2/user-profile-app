@@ -32,7 +32,7 @@ msgstr "Uživatelské nastavení"
 
 #: user_email_address
 msgid "E-mail"
-msgstr ""
+msgstr "E-mail"
 
 #: surname
 msgid "Surname"
@@ -60,7 +60,7 @@ msgstr ""
 
 #: username
 msgid "Username"
-msgstr ""
+msgstr "Uživatelské jméno"
 
 #: phone_number
 msgid "Mobile phone number"
