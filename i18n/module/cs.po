@@ -147,7 +147,7 @@ msgstr ""
 
 #: general
 msgid "General"
-msgstr ""
+msgstr "Všeobecné"
 
 #: message
 msgid "Message"
@@ -163,7 +163,7 @@ msgstr ""
 
 #: style
 msgid "Style"
-msgstr ""
+msgstr "Styl"
 
 #: db_language
 msgid "Database language"
