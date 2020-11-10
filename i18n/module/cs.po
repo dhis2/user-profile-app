@@ -36,7 +36,7 @@ msgstr "E-mail"
 
 #: surname
 msgid "Surname"
-msgstr ""
+msgstr "Příjmení"
 
 #: first_name
 msgid "First name"
@@ -72,7 +72,7 @@ msgstr "Pracovní pozice"
 
 #: introduction
 msgid "Introduction"
-msgstr ""
+msgstr "Úvod"
 
 #: gender
 msgid "Gender"
@@ -91,7 +91,7 @@ msgstr "Žena"
 #: other
 msgctxt "other"
 msgid "Other"
-msgstr ""
+msgstr "jiný"
 
 #: gender_male
 msgctxt "gender_male"
@@ -106,7 +106,7 @@ msgstr "Žena"
 #: gender_other
 msgctxt "gender_other"
 msgid "Other"
-msgstr ""
+msgstr "jiný"
 
 #: birthday
 msgid "Birthday"
@@ -118,7 +118,7 @@ msgstr ""
 
 #: employer
 msgid "Employer"
-msgstr ""
+msgstr "Zaměstnavatel"
 
 #: education
 msgid "Education"
@@ -126,7 +126,7 @@ msgstr ""
 
 #: interests
 msgid "Interests"
-msgstr ""
+msgstr "Zájmy"
 
 #: languages
 msgid "Languages"
@@ -143,7 +143,7 @@ msgstr "Nastavení"
 #: property_to_display_in_analysis_modules
 msgctxt "property_to_display_in_analysis_modules"
 msgid "Property to display in analysis modules"
-msgstr ""
+msgstr "Vlastnost k zobrazení v analytických modulech"
 
 #: general
 msgid "General"
@@ -167,7 +167,7 @@ msgstr "Styl"
 
 #: db_language
 msgid "Database language"
-msgstr ""
+msgstr "Jazyk databáze"
 
 #: language
 msgid "Interface language"
@@ -184,7 +184,7 @@ msgstr ""
 #: analysis_module
 msgctxt "analysis_module"
 msgid "Property to display in analysis modules"
-msgstr ""
+msgstr "Vlastnost k zobrazení v analytických modulech"
 
 #: name
 msgid "Name"
@@ -204,7 +204,7 @@ msgstr ""
 
 #: update_user_profile_fail
 msgid "Failed to update user profile"
-msgstr ""
+msgstr "Aktualizace uživatelského profilu se nezdařila"
 
 #: update_settings_fail
 msgid "Fialed to update user settings"
@@ -212,7 +212,7 @@ msgstr ""
 
 #: update_password
 msgid "Update password"
-msgstr ""
+msgstr "Aktualizovat heslo"
 
 #: invalid_password
 msgid ""
