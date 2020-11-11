@@ -151,7 +151,7 @@ msgstr "Všeobecné"
 
 #: message
 msgid "Message"
-msgstr ""
+msgstr "Zpráva"
 
 #: settings_updated
 msgid "Settings updated"
