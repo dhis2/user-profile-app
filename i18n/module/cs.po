@@ -20,11 +20,11 @@ msgstr ""
 
 #: user_profile
 msgid "User profile"
-msgstr ""
+msgstr "Uživatelský profil"
 
 #: account_settings
 msgid "Account settings"
-msgstr ""
+msgstr "Nastavení účtu"
 
 #: user_settings
 msgid "User settings"
@@ -40,23 +40,23 @@ msgstr "Příjmení"
 
 #: first_name
 msgid "First name"
-msgstr ""
+msgstr "Jméno"
 
 #: old_password
 msgid "Old password"
-msgstr ""
+msgstr "Staré heslo"
 
 #: new_password
 msgid "New password"
-msgstr ""
+msgstr "Nové heslo"
 
 #: repeat_new_password
 msgid "Repeat new password"
-msgstr ""
+msgstr "opakujte nové heslo"
 
 #: openid
 msgid "OpenID"
-msgstr ""
+msgstr "OpenID"
 
 #: username
 msgid "Username"
@@ -64,7 +64,7 @@ msgstr "Uživatelské jméno"
 
 #: phone_number
 msgid "Mobile phone number"
-msgstr ""
+msgstr "Číslo mobilního telefonu"
 
 #: job_title
 msgid "Job title"
@@ -110,11 +110,11 @@ msgstr "jiný"
 
 #: birthday
 msgid "Birthday"
-msgstr ""
+msgstr "Narozeniny"
 
 #: nationality
 msgid "Nationality"
-msgstr ""
+msgstr "Státní příslušnost"
 
 #: employer
 msgid "Employer"
@@ -122,7 +122,7 @@ msgstr "Zaměstnavatel"
 
 #: education
 msgid "Education"
-msgstr ""
+msgstr "Vzdělání"
 
 #: interests
 msgid "Interests"
@@ -130,11 +130,11 @@ msgstr "Zájmy"
 
 #: languages
 msgid "Languages"
-msgstr ""
+msgstr "Jazyky"
 
 #: update_user_profile_success
 msgid "User profile updated"
-msgstr ""
+msgstr "Uživatelský profil byl aktualizován"
 
 #: settings
 msgid "Settings"
@@ -155,11 +155,11 @@ msgstr "Zpráva"
 
 #: settings_updated
 msgid "Settings updated"
-msgstr ""
+msgstr "nastavení aktualizováno"
 
 #: failed_to_update_settings
 msgid "Failed to update settings"
-msgstr ""
+msgstr "Nastavení se nepodařilo aktualizovat"
 
 #: style
 msgid "Style"
@@ -171,15 +171,15 @@ msgstr "Jazyk databáze"
 
 #: language
 msgid "Interface language"
-msgstr ""
+msgstr "Jazyk rozhraní"
 
 #: enable_message_email_notifications
 msgid "Enable message email notifications"
-msgstr ""
+msgstr "Povolit e-mailová upozornění na zprávy"
 
 #: enable_message_sms_notifications
 msgid "Enable message SMS notifications"
-msgstr ""
+msgstr "Povolit upozornění na zprávy SMS"
 
 #: analysis_module
 msgctxt "analysis_module"
@@ -196,11 +196,11 @@ msgstr "Krátký název"
 
 #: system_default
 msgid "System default"
-msgstr ""
+msgstr "Výchozí systém"
 
 #: value_should_be_an_email
 msgid "Please enter a valid email address"
-msgstr ""
+msgstr "Zadejte platnou emailovou adresu"
 
 #: update_user_profile_fail
 msgid "Failed to update user profile"
@@ -208,7 +208,7 @@ msgstr "Aktualizace uživatelského profilu se nezdařila"
 
 #: update_settings_fail
 msgid "Fialed to update user settings"
-msgstr ""
+msgstr "Předem aktualizováno uživatelské nastavení"
 
 #: update_password
 msgid "Update password"
@@ -219,14 +219,15 @@ msgid ""
 "Password should be at least 8 characters with at least 1 digit and 1 "
 "uppercase letter"
 msgstr ""
+"Heslo by mělo mít alespoň 8 znaků s alespoň 1 číslicí a 1 velkým písmenem"
 
 #: passwords_do_not_match
 msgid "The entered values do not match. Please re-enter."
-msgstr ""
+msgstr "Zadané hodnoty se neshodují. Zadejte znovu."
 
 #: use_system_default
 msgid "Use system default"
-msgstr ""
+msgstr "Použít výchozí nastavení systému"
 
 #: true_notifications
 msgid "Yes"
@@ -238,28 +239,28 @@ msgstr "Ne"
 
 #: value_required
 msgid "This field can't be left blank"
-msgstr ""
+msgstr "Toto pole nesmí zůstat prázdné"
 
 #: please_enter_the_correct_password
 msgid "Please enter the correct password"
-msgstr ""
+msgstr "Zadejte správné heslo"
 
 #: no_changes_have_been_made
 msgid "No changes have been made"
-msgstr ""
+msgstr "Nebyly provedeny žádné změny"
 
 #: validating_please_try_again
 msgid "The form is currently being validated. Please try again."
-msgstr ""
+msgstr "Formulář se aktuálně ověřuje. Prosím zkuste to znovu."
 
 #: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
-msgstr ""
+msgstr "Formulář obsahuje chyby. Opravte chyby a zkuste to znovu."
 
 #: password_update_success
 msgid "Your password was updated successfully"
-msgstr ""
+msgstr "Vaše heslo bylo úspěšně aktualizováno"
 
 #: password_update_failed
 msgid "Failed to update password"
-msgstr ""
+msgstr "Aktualizace hesla se nezdařila"
