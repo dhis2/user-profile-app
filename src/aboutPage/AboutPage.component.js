@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 import AboutSection from './AboutSection.component';
 
-const parseDateFromUTCString = (utcString, d2) => {
+const parseDateFromUTCString = (utcString, d2, hideIfEmpty) => {
     try {
         if (!utcString) {
-            return d2.i18n.getTranslation('never')
+            return hideIfEmpty ? undefined : d2.i18n.getTranslation('never')
         }
     
         const locale = d2.currentUser.userSettings.settings.keyUiLocale;
@@ -61,6 +61,12 @@ const attributes = {
         },
         'intervalSinceLastAnalyticsTableSuccess',
         'lastAnalyticsTableRuntime',
+        {
+            label: 'lastAnalyticsTablePartitionSuccess',
+            getDisplayValue: (value, d2) => parseDateFromUTCString(value, d2, true),
+        },
+        'intervalSinceLastAnalyticsTablePartitionSuccess',
+        'lastAnalyticsTablePartitionRuntime',
         'environmentVariable',
         'systemId',
         {
