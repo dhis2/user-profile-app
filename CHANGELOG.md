@@ -1,3 +1,10 @@
+# [30.2.0](https://github.com/dhis2/user-profile-app/compare/v30.1.0...v30.2.0) (2020-12-15)
+
+
+### Features
+
+* add in continuous analytics properties (DHIS2-8874) ([#847](https://github.com/dhis2/user-profile-app/issues/847)) ([#853](https://github.com/dhis2/user-profile-app/issues/853)) ([6263016](https://github.com/dhis2/user-profile-app/commit/6263016ac5984c9bd53de0859e2fcba77110190b))
+
 # [30.1.0](https://github.com/dhis2/user-profile-app/compare/v30.0.0...v30.1.0) (2020-12-01)
 
 
