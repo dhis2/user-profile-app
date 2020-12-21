@@ -212,7 +212,7 @@ msgstr "Фойдаланувчи созламалари янгиланиши а�
 
 #: update_password
 msgid "Update password"
-msgstr "Парлни янгиланг"
+msgstr "Паролни янгиланг"
 
 #: invalid_password
 msgid ""
