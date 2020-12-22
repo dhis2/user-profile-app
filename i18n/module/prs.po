@@ -1,6 +1,6 @@
 # 
 # Translators:
-# phil_dhis2, 2019
+# phil_dhis2, 2020
 # 
 #, fuzzy
 msgid ""
@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-01 00:28-0400\n"
-"PO-Revision-Date: 2019-09-02 16:41+0000\n"
-"Last-Translator: phil_dhis2, 2019\n"
+"PO-Revision-Date: 2020-12-22 22:19+0000\n"
+"Last-Translator: phil_dhis2, 2020\n"
 "Language-Team: Persian (Afghanistan) (https://www.transifex.com/hisp-uio/teams/100509/fa_AF/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -56,7 +56,7 @@ msgstr "تکرار رمز جدید"
 
 #: openid
 msgid "OpenID"
-msgstr "OpenID"
+msgstr "هویت"
 
 #: username
 msgid "Username"
@@ -143,7 +143,7 @@ msgstr "تنظیمات"
 #: property_to_display_in_analysis_modules
 msgctxt "property_to_display_in_analysis_modules"
 msgid "Property to display in analysis modules"
-msgstr "ویژگی که در وقت تحلیل به نمایش بیاید"
+msgstr "ویژگی که در مادیول تحلیل به نمایش بیاید"
 
 #: general
 msgid "General"
@@ -184,7 +184,7 @@ msgstr "فعال سازی ارسال اطلاع پیام از طریق SMS"
 #: analysis_module
 msgctxt "analysis_module"
 msgid "Property to display in analysis modules"
-msgstr "ویژگی که در وقت تحلیل به نمایش بیاید"
+msgstr "ویژگی که در مادیول تحلیل به نمایش بیاید"
 
 #: name
 msgid "Name"
