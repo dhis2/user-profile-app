@@ -1,0 +1,268 @@
+# 
+# Translators:
+# Yury Rogachev <yury@dhis2.org>, 2021
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-01 00:28-0400\n"
+"PO-Revision-Date: 2019-09-02 16:42+0000\n"
+"Last-Translator: Yury Rogachev <yury@dhis2.org>, 2021\n"
+"Language-Team: Uzbek (Latin) (https://www.transifex.com/hisp-uio/teams/100509/uz@Latn/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uz@Latn\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Translate Toolkit 2.0.0b3\n"
+
+#: user_profile
+msgid "User profile"
+msgstr "Foydalanuvchi profili"
+
+#: account_settings
+msgid "Account settings"
+msgstr "Аkkaunt sozlamalari"
+
+#: user_settings
+msgid "User settings"
+msgstr "Foydalanuvchi sozlamanlari"
+
+#: user_email_address
+msgid "E-mail"
+msgstr "Elektron pochta"
+
+#: surname
+msgid "Surname"
+msgstr "Familiya"
+
+#: first_name
+msgid "First name"
+msgstr "Ism"
+
+#: old_password
+msgid "Old password"
+msgstr "Oldingi parol"
+
+#: new_password
+msgid "New password"
+msgstr "Yangi parol"
+
+#: repeat_new_password
+msgid "Repeat new password"
+msgstr "Yangi parolni takrorlang"
+
+#: openid
+msgid "OpenID"
+msgstr "Kirish ID si"
+
+#: username
+msgid "Username"
+msgstr "Фойдаланувчи исми"
+
+#: phone_number
+msgid "Mobile phone number"
+msgstr "Mobil telefon raqami"
+
+#: job_title
+msgid "Job title"
+msgstr "Lavozim"
+
+#: introduction
+msgid "Introduction"
+msgstr "Tanishtirish"
+
+#: gender
+msgid "Gender"
+msgstr "Jinsi"
+
+#: male
+msgctxt "male"
+msgid "Male"
+msgstr "Erkak"
+
+#: female
+msgctxt "female"
+msgid "Female"
+msgstr "Аyol"
+
+#: other
+msgctxt "other"
+msgid "Other"
+msgstr "Boshqa"
+
+#: gender_male
+msgctxt "gender_male"
+msgid "Male"
+msgstr "Erkak"
+
+#: gender_female
+msgctxt "gender_female"
+msgid "Female"
+msgstr "Аyol"
+
+#: gender_other
+msgctxt "gender_other"
+msgid "Other"
+msgstr "Boshqa"
+
+#: birthday
+msgid "Birthday"
+msgstr "Tugilgan kun"
+
+#: nationality
+msgid "Nationality"
+msgstr "Millati"
+
+#: employer
+msgid "Employer"
+msgstr "Ishga oluvchi"
+
+#: education
+msgid "Education"
+msgstr "Maʼlumoti"
+
+#: interests
+msgid "Interests"
+msgstr "Qiziqishi"
+
+#: languages
+msgid "Languages"
+msgstr "Til"
+
+#: update_user_profile_success
+msgid "User profile updated"
+msgstr "Foydalanuvchi profili yangilandi"
+
+#: settings
+msgid "Settings"
+msgstr "Sozlamalar"
+
+#: property_to_display_in_analysis_modules
+msgctxt "property_to_display_in_analysis_modules"
+msgid "Property to display in analysis modules"
+msgstr "Tahlil modullarini namoyish etadigan xususiyat"
+
+#: general
+msgid "General"
+msgstr "Umumiy"
+
+#: message
+msgid "Message"
+msgstr "Xabar"
+
+#: settings_updated
+msgid "Settings updated"
+msgstr "Sozlamalar yangilandi"
+
+#: failed_to_update_settings
+msgid "Failed to update settings"
+msgstr "Sozlamalar yangilanishi amalga oshmadi"
+
+#: style
+msgid "Style"
+msgstr "Услуб"
+
+#: db_language
+msgid "Database language"
+msgstr "Maʼlumotlar bazasi tili"
+
+#: language
+msgid "Interface language"
+msgstr "Interfeys tili"
+
+#: enable_message_email_notifications
+msgid "Enable message email notifications"
+msgstr "Elektron pochta xabarnomasini yoqish"
+
+#: enable_message_sms_notifications
+msgid "Enable message SMS notifications"
+msgstr "SMS xabarnomasini yoqish"
+
+#: analysis_module
+msgctxt "analysis_module"
+msgid "Property to display in analysis modules"
+msgstr "Tahlil modullarini namoyish etadigan xususiyat"
+
+#: name
+msgid "Name"
+msgstr "Исми"
+
+#: short_name
+msgid "Short name"
+msgstr "Qisqacha nomi"
+
+#: system_default
+msgid "System default"
+msgstr "Standart tizimizim"
+
+#: value_should_be_an_email
+msgid "Please enter a valid email address"
+msgstr "Iltimos, toʼgʼri ye-manzilni kiriting"
+
+#: update_user_profile_fail
+msgid "Failed to update user profile"
+msgstr "Foydalanuvchi profili yangilanishi amalga oshmadi"
+
+#: update_settings_fail
+msgid "Fialed to update user settings"
+msgstr "Foydalanuvchi sozlamalari yangilanishi amalga oshmadi"
+
+#: update_password
+msgid "Update password"
+msgstr "Parolni yangilang"
+
+#: invalid_password
+msgid ""
+"Password should be at least 8 characters with at least 1 digit and 1 "
+"uppercase letter"
+msgstr ""
+"Parol kamida 8 ta belgidan iborat boʼlishi, kamida 1 ta son va 1 ta bosh "
+"harfdan tashkil topishi lozim"
+
+#: passwords_do_not_match
+msgid "The entered values do not match. Please re-enter."
+msgstr "Kiritilgan qiymatlar mos kelmaydi. Iltimos, qayta kiriting."
+
+#: use_system_default
+msgid "Use system default"
+msgstr "Standart tizimdan foydalaning"
+
+#: true_notifications
+msgid "Yes"
+msgstr "Ҳа"
+
+#: false_notifications
+msgid "No"
+msgstr "Йўқ"
+
+#: value_required
+msgid "This field can't be left blank"
+msgstr "Ushbu satrni boʼsh qoldirib boʼlmaydi"
+
+#: please_enter_the_correct_password
+msgid "Please enter the correct password"
+msgstr "Iltimos, parolni toʼgʼri kiriting"
+
+#: no_changes_have_been_made
+msgid "No changes have been made"
+msgstr "Hech qanday oʼzgartirish qilinmagan edi"
+
+#: validating_please_try_again
+msgid "The form is currently being validated. Please try again."
+msgstr "Hozirda shakl tekshirilmoqda. Iltimos, qaytib urinib koʼring"
+
+#: fix_errors_and_try_again
+msgid "The form contains errors. Please fix the errors and try again."
+msgstr ""
+"Shaklda xatoliklar mavjud. Xatolarni toʼgʼrilab, qaytib urinib koʼring"
+
+#: password_update_success
+msgid "Your password was updated successfully"
+msgstr "Sizning parolingiz muvaffaqiyatli yangilandi"
+
+#: password_update_failed
+msgid "Failed to update password"
+msgstr "Parol yangilanishida xatolik"
