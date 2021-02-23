@@ -1,3 +1,11 @@
+## [30.2.9](https://github.com/dhis2/user-profile-app/compare/v30.2.8...v30.2.9) (2021-02-23)
+
+
+### Bug Fixes
+
+* **account-settings:** disable fields + show info for OpenIDConnect ([805b4fa](https://github.com/dhis2/user-profile-app/commit/805b4fa00b016b0d051d6735ae7634361def5c85))
+* **account-settings:** tweak OpenID Connect info text ([5d7bc2b](https://github.com/dhis2/user-profile-app/commit/5d7bc2b13428240a2df1b53faafe4cdcaaf38621))
+
 ## [30.2.8](https://github.com/dhis2/user-profile-app/compare/v30.2.7...v30.2.8) (2021-02-15)
 
 
