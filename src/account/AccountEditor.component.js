@@ -9,6 +9,14 @@ import appActions from '../app.actions';
 import accountActions from './account.actions';
 import isValidPassword from './isValidPassword';
 
+const styles= {
+    notification: {
+        border: '1px solid #bdbdbd',
+        backgroundColor: '#e5e5e5',
+        padding: 12,
+    }
+}
+
 
 class AccountEditor extends Component {
     constructor (props) {
@@ -66,6 +74,7 @@ class AccountEditor extends Component {
     }
 
     render() {
+        const usesOpenIdConnect = this.context.d2.currentUser.externalAuth
         const fields = [
             {
                 name: 'username',
@@ -87,6 +96,7 @@ class AccountEditor extends Component {
                     style: { width: '100%' },
                     changeEvent: 'onBlur',
                     autoComplete: 'new-password',
+                    disabled: usesOpenIdConnect,
                 },
                 validators: [{
                     validator: this.isNotEmpty,
@@ -103,6 +113,7 @@ class AccountEditor extends Component {
                     style: { width: '100%' },
                     changeEvent: 'onBlur',
                     autoComplete: 'new-password',
+                    disabled: usesOpenIdConnect,
                 },
                 validators: [{
                     validator: isValidPassword,
@@ -119,6 +130,7 @@ class AccountEditor extends Component {
                     style: { width: '100%' },
                     changeEvent: 'onBlur',
                     autoComplete: 'new-password',
+                    disabled: usesOpenIdConnect,
                 },
                 validators: [{
                     validator: this.isSamePassword,
@@ -133,6 +145,7 @@ class AccountEditor extends Component {
                     onClick: this.openTwoFactorDialog,
                     style: { marginTop: '20px' },
                     secondary: false,
+                    disabled: usesOpenIdConnect,
                 },
             },
             {
@@ -143,16 +156,27 @@ class AccountEditor extends Component {
                     onClick: this.updatePassword,
                     style: { marginTop: '20px' },
                     secondary: true,
+                    disabled: usesOpenIdConnect,
                 },
             },
         ];
+        
         const setRef = (r) => { this.formBuilder = r; };
 
-        return <FormBuilder 
+        return (
+            <>
+                {usesOpenIdConnect && (
+                    <div style={styles.notification}>
+                        {this.context.d2.i18n.getTranslation('open_id_connect_account_notification')}
+                    </div>
+                )}
+                <FormBuilder 
                     fields={fields} 
                     onUpdateField={this.updateState} 
                     ref={setRef} 
-                />;
+                />
+            </>
+        );
     }
 }
 AccountEditor.propTypes = { username: PropTypes.string.isRequired };
