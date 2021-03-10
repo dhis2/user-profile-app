@@ -1,82 +1,80 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-
-import CircularProgress from 'material-ui/CircularProgress';
-import FlatButton from 'material-ui/FlatButton';
-import FileUpload from 'material-ui/svg-icons/file/file-upload';
-import ActionDelete from 'material-ui/svg-icons/action/delete';
-
-import userSettingsActions from '../app.actions';
-
-import './avatareditor.component.css';
+import CircularProgress from 'material-ui/CircularProgress'
+import FlatButton from 'material-ui/FlatButton'
+import ActionDelete from 'material-ui/svg-icons/action/delete'
+import FileUpload from 'material-ui/svg-icons/file/file-upload'
+import PropTypes from 'prop-types'
+import React, { Component } from 'react'
+import userSettingsActions from '../app.actions'
+import i18n from '../locales'
+import './avatareditor.component.css'
 
 class AvatarEditor extends Component {
     constructor(props) {
-        super(props);
+        super(props)
 
-        this.api = props.d2.Api.getApi();
-        this.userId = props.currentUser.id;
+        this.api = props.d2.Api.getApi()
+        this.userId = props.currentUser.id
 
         this.state = {
             avatarSrc: props.currentUser.avatar
                 ? this.parseAvatarSrc(props.currentUser.avatar.id)
                 : null,
             loading: false,
-        };
-        this.inputRef = null;
+        }
+        this.inputRef = null
     }
 
-    getInputRef = () => this.inputRef;
-    setInputRef = node => this.inputRef = node;
+    getInputRef = () => this.inputRef
+    setInputRef = node => (this.inputRef = node)
 
     parseAvatarSrc(avatarId) {
-        return `${this.api.baseUrl}/fileResources/${avatarId}/data`;
+        return `${this.api.baseUrl}/fileResources/${avatarId}/data`
     }
 
     onFileSelect = async event => {
-        const { d2, onChange } = this.props;
+        const { onChange } = this.props
         // Setup form data for image file
-        const file = event.target.files[0];
+        const file = event.target.files[0]
 
         // Cancel was pressed, no file provided
         if (!file) {
-            return;
+            return
         }
 
-        this.setState({ loading: true });
+        this.setState({ loading: true })
 
-        const formData = new FormData();
-        formData.append('file', file);
-        formData.append('domain', 'USER_AVATAR');
+        const formData = new FormData()
+        formData.append('file', file)
+        formData.append('domain', 'USER_AVATAR')
 
         // Send image to server and save image id as avatar
         try {
-            const postResponse = await this.api.post('fileResources', formData);
-            const imageId = postResponse.response.fileResource.id;
-            onChange({ target: { value: { id: imageId } } });
+            const postResponse = await this.api.post('fileResources', formData)
+            const imageId = postResponse.response.fileResource.id
+            onChange({ target: { value: { id: imageId } } })
             this.setState({
                 loading: false,
                 avatarSrc: this.parseAvatarSrc(imageId),
-            });
+            })
         } catch (error) {
             userSettingsActions.showSnackbarMessage({
-                message: d2.i18n.getTranslation('avatar_upload_error'),
+                message: i18n.t('Failed to upload profile picture'),
                 status: 'error',
-            });
+            })
             console.error(
                 'POST request to fileResources endpoint failed: ',
                 error
-            );
+            )
         }
-    };
+    }
 
     onRemoveIcon = () => {
-        this.props.onChange({ target: { value: null } });
+        this.props.onChange({ target: { value: null } })
         // Clear input here to ensure that a re-upload of a previously used file is not ignored
-        const input = this.getInputRef();
-        input.value = null;
-        this.setState({ avatarSrc: null });
-    };
+        const input = this.getInputRef()
+        input.value = null
+        this.setState({ avatarSrc: null })
+    }
 
     renderAvatar() {
         return (
@@ -84,31 +82,27 @@ class AvatarEditor extends Component {
                 <img
                     src={this.state.avatarSrc}
                     className="avatar-editor__image"
-                    alt={this.props.d2.i18n.getTranslation('avatar')}
+                    alt={i18n.t('Profile picture')}
                 />
             </div>
-        );
+        )
     }
 
     renderPlaceholder() {
-        const { d2 } = this.props;
         return (
             <div className="avatar-editor__not-available">
-                <div>
-                    {d2.i18n.getTranslation('no_avatar_available')}
-                </div>
+                <div>{i18n.t('No profile picture available')}</div>
             </div>
-        );
+        )
     }
 
     render() {
-        const { d2 } = this.props;
-        const { loading, avatarSrc } = this.state;
+        const { loading, avatarSrc } = this.state
 
         return (
             <div className="avatar-editor">
                 <p className="avatar-editor__label">
-                    {d2.i18n.getTranslation('avatar')}
+                    {i18n.t('Profile picture')}
                 </p>
                 <div className="avatar-editor__preview-wrap">
                     {loading ? (
@@ -123,7 +117,7 @@ class AvatarEditor extends Component {
                     <FlatButton
                         containerElement="label"
                         icon={<FileUpload />}
-                        label={d2.i18n.getTranslation('select_avatar')}
+                        label={i18n.t('Select profile picture')}
                         primary
                     >
                         <input
@@ -137,20 +131,20 @@ class AvatarEditor extends Component {
                     {avatarSrc && (
                         <FlatButton
                             icon={<ActionDelete />}
-                            label={d2.i18n.getTranslation('remove_avatar')}
+                            label={i18n.t('Remove profile picture')}
                             onClick={this.onRemoveIcon}
                         />
                     )}
                 </div>
             </div>
-        );
+        )
     }
 }
 
 AvatarEditor.propTypes = {
-    d2: PropTypes.object.isRequired,
     currentUser: PropTypes.object.isRequired,
+    d2: PropTypes.object.isRequired,
     onChange: PropTypes.func.isRequired,
-};
+}
 
-export default AvatarEditor;
+export default AvatarEditor
