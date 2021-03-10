@@ -30,13 +30,13 @@ const attributes = {
         {
             label: 'web_api',
             // eslint-disable-next-line react/display-name
-            getDisplayValue: (_value, d2, translate) => (
+            getDisplayValue: (_value, d2) => (
                 <a
                     target="_blank"
                     rel="noopener noreferrer"
                     href={`${d2.system.systemInfo.contextPath}/api`}
                 >
-                    {translate('browse_it_here')}
+                    {i18n.t('Browse it here')}
                 </a>
             ),
         },
@@ -101,8 +101,7 @@ class AboutPage extends Component {
             if (typeof attribute === 'object') {
                 const value = attribute.getDisplayValue(
                     source[attribute.label],
-                    this.context.d2,
-                    this.translate
+                    this.context.d2
                 )
                 if (value || value === false) {
                     acc.push({
@@ -135,14 +134,14 @@ class AboutPage extends Component {
             <div className="content-area">
                 {systemInfo.length > 0 && (
                     <AboutSection
-                        header={this.translate('system_info')}
+                        header={i18n.t('System info')}
                         attributes={systemInfo}
                     />
                 )}
 
                 {databaseInfo.length > 0 && (
                     <AboutSection
-                        header={this.translate('database')}
+                        header={i18n.t('Database')}
                         attributes={databaseInfo}
                     />
                 )}
