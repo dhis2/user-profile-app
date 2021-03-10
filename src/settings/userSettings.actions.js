@@ -2,6 +2,7 @@ import { getInstance as getD2 } from 'd2'
 import Action from 'd2-ui/lib/action/Action'
 import log from 'loglevel'
 import appActions from '../app.actions'
+import i18n from '../locales'
 import userSettingsStore from './userSettings.store'
 
 const userSettingsActions = Action.createActionsFromNames(['save'])
@@ -20,7 +21,7 @@ userSettingsActions.save.subscribe(({ data, complete, error }) => {
 
                 log.debug('User Setting updated successfully.')
                 appActions.showSnackbarMessage({
-                    message: d2.i18n.getTranslation('settings_updated'),
+                    message: i18n.t('Settings updated'),
                     status: 'success',
                 })
                 complete()
@@ -29,9 +30,7 @@ userSettingsActions.save.subscribe(({ data, complete, error }) => {
                 userSettingsStore.setState(userSettingsStore.state)
                 log.warn('API call failed:', err)
                 appActions.showSnackbarMessage({
-                    message: d2.i18n.getTranslation(
-                        'failed_to_update_settings'
-                    ),
+                    message: i18n.t('Failed to update settings'),
                     status: 'error',
                 })
                 error()
