@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Paper } from 'material-ui';
-
-import profileSettingsStore from '../../profile/profile.store';
+import { Paper } from 'material-ui'
+import PropTypes from 'prop-types'
+import React from 'react'
+import i18n from '../../locales'
+import profileSettingsStore from '../../profile/profile.store'
 
 const styles = {
     qrCodePaperWrapper: {
@@ -18,26 +18,25 @@ const styles = {
     qrCode: {
         padding: '1rem',
     },
-};
+}
 
-
-const QRCode = ({ open }, context) => (
-    <div style={styles.qrCodePaperWrapper} >
-        {open &&
-        <Paper style={styles.qrCodePaper}>
-            <div style={styles.statusMessage}>
-                <b>{context.d2.i18n.getTranslation('qr_code')}</b>
-            </div>
-            <img
-                style={styles.qrCode}
-                alt="qrCode"
-                src={profileSettingsStore.state.qrCodeUrl}
-            />
-        </Paper>}
+const QRCode = ({ open }) => (
+    <div style={styles.qrCodePaperWrapper}>
+        {open && (
+            <Paper style={styles.qrCodePaper}>
+                <div style={styles.statusMessage}>
+                    <b>{i18n.t('Barcode/QR code to scan')}</b>
+                </div>
+                <img
+                    style={styles.qrCode}
+                    alt="qrCode"
+                    src={profileSettingsStore.state.qrCodeUrl}
+                />
+            </Paper>
+        )}
     </div>
-);
+)
 
-QRCode.propTypes = { open: PropTypes.bool.isRequired };
-QRCode.contextTypes = { d2: PropTypes.object.isRequired };
+QRCode.propTypes = { open: PropTypes.bool.isRequired }
 
-export default QRCode;
+export default QRCode

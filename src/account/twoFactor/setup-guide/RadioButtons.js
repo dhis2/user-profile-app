@@ -1,9 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
-import { RadioButtonGroup, RadioButton } from 'material-ui';
-
-import phoneTypes from './phoneTypes';
+import { RadioButtonGroup, RadioButton } from 'material-ui'
+import PropTypes from 'prop-types'
+import React from 'react'
+import phoneTypes from './phoneTypes'
 
 const styles = {
     radioGroup: {
@@ -13,10 +11,14 @@ const styles = {
     radioButton: {
         marginBottom: 5,
     },
-};
+}
 
 const RadioButtons = ({ setPhoneType }) => (
-    <RadioButtonGroup name="phoneType" style={styles.radioGroup} onChange={setPhoneType}>
+    <RadioButtonGroup
+        name="phoneType"
+        style={styles.radioGroup}
+        onChange={setPhoneType}
+    >
         <RadioButton
             value={phoneTypes.ANDROID}
             label="Android"
@@ -28,9 +30,8 @@ const RadioButtons = ({ setPhoneType }) => (
             style={styles.radioButton}
         />
     </RadioButtonGroup>
-);
+)
 
-RadioButtons.propTypes = { setPhoneType: PropTypes.func.isRequired };
+RadioButtons.propTypes = { setPhoneType: PropTypes.func.isRequired }
 
-export default RadioButtons;
-
+export default RadioButtons

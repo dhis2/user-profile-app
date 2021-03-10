@@ -1,13 +1,28 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import { FlatButton, Dialog } from 'material-ui'
+import PropTypes from 'prop-types'
+import React from 'react'
+import i18n from '../../locales'
 
-import { FlatButton, Dialog } from 'material-ui';
-
-const Status2FAChangeDialog = ({ closeSetupDialog, handleDialogAnswer, dialogOpened, dialogTitle }, context) => {
+const Status2FAChangeDialog = ({
+    closeSetupDialog,
+    handleDialogAnswer,
+    dialogOpened,
+    dialogTitle,
+}) => {
     const buttons = [
-        <FlatButton label={context.d2.i18n.getTranslation('no')} primary onClick={closeSetupDialog} />,
-        <FlatButton label={context.d2.i18n.getTranslation('yes')} primary onClick={handleDialogAnswer} />,
-    ];
+        <FlatButton
+            label={i18n.t('No')}
+            primary
+            onClick={closeSetupDialog}
+            key="no"
+        />,
+        <FlatButton
+            label={i18n.t('Yes')}
+            primary
+            onClick={handleDialogAnswer}
+            key="yes"
+        />,
+    ]
     return (
         <Dialog
             title={dialogTitle}
@@ -15,16 +30,14 @@ const Status2FAChangeDialog = ({ closeSetupDialog, handleDialogAnswer, dialogOpe
             modal
             open={dialogOpened}
         />
-    );
-};
+    )
+}
 
 Status2FAChangeDialog.propTypes = {
     closeSetupDialog: PropTypes.func.isRequired,
-    handleDialogAnswer: PropTypes.func.isRequired,
-    dialogTitle: PropTypes.string.isRequired,
     dialogOpened: PropTypes.bool.isRequired,
-};
+    dialogTitle: PropTypes.string.isRequired,
+    handleDialogAnswer: PropTypes.func.isRequired,
+}
 
-Status2FAChangeDialog.contextTypes = { d2: PropTypes.object.isRequired };
-
-export default Status2FAChangeDialog;
+export default Status2FAChangeDialog
