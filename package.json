@@ -2,87 +2,29 @@
     "name": "user-profile-app",
     "version": "31.0.0",
     "description": "User Profile App for DHIS2",
-    "main": "src/index.html",
-    "scripts": {
-        "coverage": "babel-node node_modules/.bin/isparta cover --root ./src --report text --report html --report lcov node_modules/mocha/bin/_mocha -- --reporter dot --require config/setup.js --recursive test",
-        "prebuild": "rm -rf build && mkdir build && d2-manifest package.json manifest.webapp",
-        "build": "webpack",
-        "postbuild": "cp -r index.html icon.png auth.png node_modules/babel-polyfill/dist/polyfill.min.js manifest.webapp i18n build/",
-        "test": "echo Everything is probably ok! # mocha --reporter spec --compilers js:babel-core/register --require config/setup.js --recursive test",
-        "test-watch": "echo Everything is always ok! # mocha --reporter spec --compilers js:babel-core/register --require config/setup.js --recursive test --watch",
-        "lint": "eslint --fix src/",
-        "validate": "npm ls",
-        "prestart": "d2-manifest package.json manifest.webapp",
-        "start": "webpack-dev-server"
-    },
-    "keywords": [
-        "DHIS2",
-        "App"
-    ],
-    "author": "Adheesh Bhatia",
     "license": "BSD-3-Clause",
-    "dependencies": {
-        "@dhis2/app-runtime": "^2.0.4",
-        "@dhis2/ui-widgets": "^5.0.1",
-        "babel-polyfill": "^6.26.0",
-        "d2": "^30.0.0",
-        "d2-ui": "^29.0.29",
-        "material-ui": "^0.20.0",
-        "prop-types": "^15.5.10",
-        "react": "^16.13.0",
-        "react-dom": "^16.13.0",
-        "react-router": "^3.2.1",
-        "rxjs": "^5.5.7",
-        "styled-jsx": "^3.3.0"
+    "private": true,
+    "scripts": {
+        "build": "d2-app-scripts build",
+        "start": "d2-app-scripts start",
+        "test": "d2-app-scripts test",
+        "deploy": "d2-app-scripts deploy",
+        "lint": "d2-style js check && d2-style text check",
+        "format": "d2-style js apply && d2-style text apply"
     },
     "devDependencies": {
-        "@babel/core": "^7.2.2",
-        "@babel/plugin-proposal-class-properties": "^7.2.3",
-        "@babel/plugin-transform-runtime": "^7.2.0",
-        "@babel/preset-env": "^7.2.3",
-        "@babel/preset-react": "^7.0.0",
-        "@babel/runtime": "7.3.4",
-        "babel-eslint": "^10.0.1",
-        "babel-loader": "^8.0.5",
-        "css-loader": "^0.28.4",
-        "d2-manifest": "^1.0.0",
-        "d2-utilizr": "^0.2.9",
-        "eslint": "^4.1.1",
-        "eslint-config-react-app": "^2.1.0",
-        "eslint-plugin-flowtype": "^2.34.1",
-        "eslint-plugin-import": "^2.6.0",
-        "eslint-plugin-jsx-a11y": "^5.1.1",
-        "eslint-plugin-react": "^7.1.0",
-        "loglevel": "^1.4.0",
-        "prettier": "^1.14.3",
-        "style-loader": "^0.19.0",
-        "webpack": "^4.29.6",
-        "webpack-cli": "^3.2.3",
-        "webpack-dev-server": "^3.2.1"
+        "@dhis2/cli-app-scripts": "^5.7.4",
+        "@dhis2/cli-style": "^7.3.0"
     },
-    "directories": {
-        "test": "test"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/dhis2/user-profile-app.git"
-    },
-    "bugs": {
-        "url": "https://github.com/dhis2/user-profile-app/issues"
-    },
-    "homepage": "https://github.com/dhis2/user-profile-app",
-    "manifest.webapp": {
-        "name": "DHIS2 User Profile Management",
-        "dhis2": {
-            "apiVersion": "31"
-        },
-        "icons": {
-            "48": "icon.png"
-        },
-        "activities": {
-            "dhis": {
-                "href": ".."
-            }
-        }
+    "dependencies": {
+        "@dhis2/app-runtime": "^2.7.1",
+        "@dhis2/app-runtime-adapter-d2": "^1.0.2",
+        "d2": "^31.9.0",
+        "d2-ui": "^29.0.35",
+        "loglevel": "^1.7.1",
+        "material-design-icons-iconfont": "^6.1.0",
+        "material-ui": "^0.20.0",
+        "react-router": "^3.2.1",
+        "rxjs": "^6.6.6"
     }
 }

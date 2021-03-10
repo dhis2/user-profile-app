@@ -1,35 +1,49 @@
-# DHIS2 user profile app [![Build Status](https://travis-ci.com/dhis2/user-profile-app.svg)](https://travis-ci.com/dhis2/user-profile-app)
+# DHIS2 User Profile App
 
-The user profile app is used for changing user profile information, user settings and user passwords.
+The user profile app is used for changing user profile information, user settings, and user passwords.
 
-## Development
+This project was bootstrapped with [DHIS2 Application Platform](https://github.com/dhis2/app-platform).
 
-To work on this app: Clone the repo, install the dependencies using npm or yarn, and run the start script:
+## Available Scripts
 
-```sh
-> git clone https://github.com/dhis2/user-profile-app.git
-Cloning into 'user-profile-app'...
-remote: Counting objects: 705, done.
-remote: Total 705 (delta 0), reused 0 (delta 0), pack-reused 705
-Receiving objects: 100% (705/705), 177.76 KiB | 500.00 KiB/s, done.
-Resolving deltas: 100% (423/423), done.
+In the project directory, you can run:
 
-> cd user-profile-app
-> yarn install
-yarn install v1.0.1
-[1/4] 🔍  Resolving packages...
-[2/4] 🚚  Fetching packages...
-[3/4] 🔗  Linking dependencies...
-[4/4] 📃  Building fresh packages...
-✨  Done in 15.45s.
+### `yarn start`
 
-> yarn start
-yarn start v1.0.1
-$ d2-manifest package.json manifest.webapp
-Reading package data: package.json
-Validating manifest: ✓ Ok
-Writing manifest to: manifest.webapp
-Done!
-$ webpack-dev-server
-[...]
-```
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
+
+### `yarn test`
+
+Launches the test runner and runs all available tests found in `/src`.<br />
+
+See the section about [running tests](https://platform.dhis2.nu/#/scripts/test) for more information.
+
+### `yarn build`
+
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br />
+A deployable `.zip` file can be found in `build/bundle`!
+
+See the section about [building](https://platform.dhis2.nu/#/scripts/build) for more information.
+
+### `yarn deploy`
+
+Deploys the built app in the `build` folder to a running DHIS2 instance.<br />
+This command will prompt you to enter a server URL as well as the username and password of a DHIS2 user with the App Management authority.<br/>
+You must run `yarn build` before running `yarn deploy`.<br />
+
+See the section about [deploying](https://platform.dhis2.nu/#/scripts/deploy) for more information.
+
+## Learn More
+
+You can learn more about the platform in the [DHIS2 Application Platform Documentation](https://platform.dhis2.nu/).
+
+You can learn more about the runtime in the [DHIS2 Application Runtime Documentation](https://runtime.dhis2.nu/).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
