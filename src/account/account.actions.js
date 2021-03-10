@@ -2,6 +2,7 @@ import { getInstance as getD2 } from 'd2'
 import Action from 'd2-ui/lib/action/Action'
 import log from 'loglevel'
 import appActions from '../app.actions'
+import i18n from '../locales'
 import userProfileStore from '../profile/profile.store'
 
 const accountActions = Action.createActionsFromNames([
@@ -29,7 +30,7 @@ accountActions.setPassword.subscribe(
                     const message =
                         err && err.message && typeof err.message === 'string'
                             ? err.message
-                            : d2.i18n.getTranslation('password_update_failed')
+                            : i18n.t('Failed to update password')
 
                     appActions.showSnackbarMessage({
                         message,
@@ -57,16 +58,18 @@ accountActions.setTwoFactorStatus.subscribe(
                 .then(() => {
                     log.debug(`2 Factor is now ${status}.`)
                     appActions.showSnackbarMessage({
-                        message: d2.i18n.getTranslation(
-                            `twoFA_${status}_success`
-                        ),
+                        message: twoFA
+                            ? i18n.t('2-Factor successfully turned ON')
+                            : i18n.t('2-Factor successfully turned OFF'),
                         status: 'success',
                     })
                     complete()
                 })
                 .catch(err => {
                     appActions.showSnackbarMessage({
-                        message: d2.i18n.getTranslation(`twoFA_${status}_fail`),
+                        message: twoFA
+                            ? i18n.t('Failed to turn ON 2-Factor')
+                            : i18n.t('Failed to turn OFF 2-Factor'),
                         status: 'error',
                     })
                     log.error('Failed to change 2 Factor status:', err)

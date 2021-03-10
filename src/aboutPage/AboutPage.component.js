@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-
-import AboutSection from './AboutSection.component';
+import PropTypes from 'prop-types'
+import React, { Component } from 'react'
+import i18n from '../locales'
+import AboutSection from './AboutSection.component'
 
 const parseDateFromUTCString = (utcString, d2, hideIfEmpty) => {
     try {
         if (!utcString) {
-            return hideIfEmpty ? undefined : d2.i18n.getTranslation('never')
+            return hideIfEmpty ? undefined : i18n.t('Never')
         }
-    
-        const locale = d2.currentUser.userSettings.settings.keyUiLocale;
-        const date = new Date(utcString);
+
+        const locale = d2.currentUser.userSettings.settings.keyUiLocale
+        const date = new Date(utcString)
         const options = {
             day: 'numeric',
             month: 'long',
@@ -18,17 +18,18 @@ const parseDateFromUTCString = (utcString, d2, hideIfEmpty) => {
             hour: '2-digit',
             minute: '2-digit',
             hour12: false,
-        };
-        return new Intl.DateTimeFormat(locale, options).format(date);    
+        }
+        return new Intl.DateTimeFormat(locale, options).format(date)
     } catch (error) {
-        return d2.i18n.getTranslation('invalid_date')
+        return i18n.t('Invalid date')
     }
-};
+}
 
 const attributes = {
     systemInfo: [
         {
             label: 'web_api',
+            // eslint-disable-next-line react/display-name
             getDisplayValue: (_value, d2, translate) => (
                 <a
                     target="_blank"
@@ -63,7 +64,8 @@ const attributes = {
         'lastAnalyticsTableRuntime',
         {
             label: 'lastAnalyticsTablePartitionSuccess',
-            getDisplayValue: (value, d2) => parseDateFromUTCString(value, d2, true),
+            getDisplayValue: (value, d2) =>
+                parseDateFromUTCString(value, d2, true),
         },
         'intervalSinceLastAnalyticsTablePartitionSuccess',
         'lastAnalyticsTablePartitionRuntime',
@@ -88,28 +90,24 @@ const attributes = {
         'cpuCores',
         'calendar',
     ],
-    databaseInfo: [
-        'name',
-        'user',
-        'spatialSupport',
-    ],
-};
+    databaseInfo: ['name', 'user', 'spatialSupport'],
+}
 
 class AboutPage extends Component {
-    translate = s => this.context.d2.i18n.getTranslation(s);
+    translate = s => this.context.d2.i18n.getTranslation(s)
 
-    getAttributes = (selected, source) => selected
-        .reduce((acc, attribute) => {
+    getAttributes = (selected, source) =>
+        selected.reduce((acc, attribute) => {
             if (typeof attribute === 'object') {
                 const value = attribute.getDisplayValue(
                     source[attribute.label],
                     this.context.d2,
                     this.translate
-                );
+                )
                 if (value || value === false) {
                     acc.push({
                         label: this.translate(attribute.label),
-                        value
+                        value,
                     })
                 }
             } else if (source[attribute]) {
@@ -119,13 +117,19 @@ class AboutPage extends Component {
                 })
             }
 
-            return acc;
-        }, []);
+            return acc
+        }, [])
 
     render = () => {
-        const { d2 } = this.context;
-        const systemInfo = this.getAttributes(attributes.systemInfo, d2.system.systemInfo)
-        const databaseInfo = this.getAttributes(attributes.databaseInfo, d2.system.systemInfo.databaseInfo)
+        const { d2 } = this.context
+        const systemInfo = this.getAttributes(
+            attributes.systemInfo,
+            d2.system.systemInfo
+        )
+        const databaseInfo = this.getAttributes(
+            attributes.databaseInfo,
+            d2.system.systemInfo.databaseInfo
+        )
 
         return (
             <div className="content-area">
@@ -143,10 +147,10 @@ class AboutPage extends Component {
                     />
                 )}
             </div>
-        );
+        )
     }
-};
+}
 
-AboutPage.contextTypes = { d2: PropTypes.object.isRequired };
+AboutPage.contextTypes = { d2: PropTypes.object.isRequired }
 
-export default AboutPage;
+export default AboutPage
