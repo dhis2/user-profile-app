@@ -28,7 +28,8 @@ const parseDateFromUTCString = (utcString, d2, hideIfEmpty) => {
 const attributes = {
     systemInfo: [
         {
-            label: 'web_api',
+            key: null,
+            label: i18n.t('Web API'),
             // eslint-disable-next-line react/display-name
             getDisplayValue: (_value, d2) => (
                 <a
@@ -41,56 +42,84 @@ const attributes = {
             ),
         },
         {
-            label: 'current_user',
+            key: null,
+            label: i18n.t('Current user'),
             getDisplayValue: (_value, d2) => d2.currentUser.username,
         },
-        'version',
-        'revision',
+        { key: 'version', label: i18n.t('Version') },
+        { key: 'revision', label: i18n.t('Build revision') },
         {
-            label: 'buildTime',
-            getDisplayValue: (value, d2) => parseDateFromUTCString(value, d2),
-        },
-        'jasperReportsVersion',
-        'userAgent',
-        {
-            label: 'serverDate',
+            key: 'buildTime',
+            label: i18n.t('Build date'),
             getDisplayValue: (value, d2) => parseDateFromUTCString(value, d2),
         },
         {
-            label: 'lastAnalyticsTableSuccess',
+            key: 'jasperReportsVersion',
+            label: i18n.t('Jasper reports version'),
+        },
+        { key: 'userAgent', label: i18n.t('User agent') },
+        {
+            key: 'serverDate',
+            label: i18n.t('Server date'),
             getDisplayValue: (value, d2) => parseDateFromUTCString(value, d2),
         },
-        'intervalSinceLastAnalyticsTableSuccess',
-        'lastAnalyticsTableRuntime',
         {
-            label: 'lastAnalyticsTablePartitionSuccess',
+            key: 'lastAnalyticsTableSuccess',
+            label: i18n.t('Last analytics table generation'),
+            getDisplayValue: (value, d2) => parseDateFromUTCString(value, d2),
+        },
+        {
+            key: 'intervalSinceLastAnalyticsTableSuccess',
+            label: i18n.t('Time since last analytics table generation'),
+        },
+        {
+            key: 'lastAnalyticsTableRuntime',
+            label: i18n.t('Last analytics table runtime'),
+        },
+        {
+            key: 'lastAnalyticsTablePartitionSuccess',
+            label: i18n.t('Last continuous analytics table update'),
             getDisplayValue: (value, d2) =>
                 parseDateFromUTCString(value, d2, true),
         },
-        'intervalSinceLastAnalyticsTablePartitionSuccess',
-        'lastAnalyticsTablePartitionRuntime',
-        'environmentVariable',
-        'systemId',
         {
-            label: 'lastSystemMonitoringSuccess',
+            key: 'intervalSinceLastAnalyticsTablePartitionSuccess',
+            label: i18n.t('Time since last continuous analytics table update'),
+        },
+        {
+            key: 'lastAnalyticsTablePartitionRuntime',
+            label: i18n.t('Last continuous analytics table runtime'),
+        },
+        { key: 'environmentVariable', label: i18n.t('Environment variable') },
+        { key: 'systemId', label: i18n.t('System ID') },
+        {
+            key: 'lastSystemMonitoringSuccess',
+            label: i18n.t('Last monitoring success'),
             getDisplayValue: (value, d2) => parseDateFromUTCString(value, d2),
         },
-        'externalDirectory',
-        'fileStoreProvider',
-        'nodeId',
-        'cacheProvider',
-        'readReplicaCount',
-        'javaOpts',
-        'javaVersion',
-        'javaVendor',
-        'osName',
-        'osArchitecture',
-        'osVersion',
-        'memoryInfo',
-        'cpuCores',
-        'calendar',
+        {
+            key: 'externalDirectory',
+            label: i18n.t('External configuration directory'),
+        },
+        { key: 'fileStoreProvider', label: i18n.t('File store provider') },
+        { key: 'nodeId', label: i18n.t('Node ID') },
+        { key: 'cacheProvider', label: i18n.t('Cache provider') },
+        { key: 'readReplicaCount', label: i18n.t('Read replica count') },
+        { key: 'javaOpts', label: i18n.t('Java opts') },
+        { key: 'javaVersion', label: i18n.t('Java version') },
+        { key: 'javaVendor', label: i18n.t('Java vendor') },
+        { key: 'osName', label: i18n.t('OS name') },
+        { key: 'osArchitecture', label: i18n.t('OS architecture') },
+        { key: 'osVersion', label: i18n.t('OS version') },
+        { key: 'memoryInfo', label: i18n.t('Memory info') },
+        { key: 'cpuCores', label: i18n.t('CPU cores') },
+        { key: 'calendar', label: i18n.t('Calendar') },
     ],
-    databaseInfo: ['name', 'user', 'spatialSupport'],
+    databaseInfo: [
+        { key: 'name', label: i18n.t('Name') },
+        { key: 'user', label: i18n.t('User') },
+        { key: 'spatialSupport', label: i18n.t('Spatial support') },
+    ],
 }
 
 class AboutPage extends Component {
@@ -98,21 +127,18 @@ class AboutPage extends Component {
 
     getAttributes = (selected, source) =>
         selected.reduce((acc, attribute) => {
-            if (typeof attribute === 'object') {
+            if (attribute.getDisplayValue !== undefined) {
                 const value = attribute.getDisplayValue(
-                    source[attribute.label],
+                    source[attribute.key],
                     this.context.d2
                 )
-                if (value || value === false) {
-                    acc.push({
-                        label: this.translate(attribute.label),
-                        value,
-                    })
+                if (value !== undefined) {
+                    acc.push({ label: attribute.label, value })
                 }
-            } else if (source[attribute]) {
+            } else if (source[attribute.key]) {
                 acc.push({
-                    label: this.translate(attribute),
-                    value: source[attribute],
+                    label: attribute.label,
+                    value: source[attribute.key],
                 })
             }
 
