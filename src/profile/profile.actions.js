@@ -1,24 +1,20 @@
-import log from 'loglevel';
-
-import { getInstance as getD2 } from 'd2/lib/d2';
+import { getInstance as getD2 } from 'd2';
 import Action from 'd2-ui/lib/action/Action';
-
-import userSettingsActions from '../app.actions';
-import userProfileStore from './profile.store';
-import userSettingsKeyMapping from '../userSettingsMapping';
-
 import { wordToValidatorMap } from 'd2-ui/lib/forms/Validators';
+import log from 'loglevel';
+import userSettingsActions from '../app.actions';
+import userSettingsKeyMapping from '../userSettingsMapping';
 import isValidWhatsApp from './isValidWhatsApp';
+import userProfileStore from './profile.store';
+
 // Add whatsApp validation to the validator set
 wordToValidatorMap.set('whats_app', isValidWhatsApp);
 
-const userProfileActions = Action.createActionsFromNames([
-    'save',
-]);
+const userProfileActions = Action.createActionsFromNames(['save']);
 
 userProfileActions.save.subscribe(({ data, complete, error }) => {
     const [key, value] = data;
-    let payload = ({ [key]: String(value).trim() || ' ' }); // TODO: Ugly hack to allow saving empty fields
+    let payload = { [key]: String(value).trim() || ' ' }; // TODO: Ugly hack to allow saving empty fields
 
     if (key === 'birthday') {
         const date = new Date(value);
@@ -32,17 +28,32 @@ userProfileActions.save.subscribe(({ data, complete, error }) => {
         // Run field validators
         if (Array.isArray(userSettingsKeyMapping[key].validators)) {
             const validators = userSettingsKeyMapping[key].validators;
-            if (!validators.reduce((prev, curr) => prev && wordToValidatorMap.get(curr)(value), true)) {
-                log.warn(`One or more validators did not pass for field "${key}" and value "${value}"`);
+            if (
+                !validators.reduce(
+                    (prev, curr) => prev && wordToValidatorMap.get(curr)(value),
+                    true
+                )
+            ) {
+                log.warn(
+                    `One or more validators did not pass for field "${key}" and value "${value}"`
+                );
                 return;
             }
         }
 
-        getProfileUpdatePromise(key, value, payload, userProfileStore.state.id, d2)
+        getProfileUpdatePromise({
+            key,
+            value,
+            payload,
+            userId: userProfileStore.state.id,
+            d2,
+        })
             .then(() => {
                 log.debug('User Profile updated successfully.');
                 userSettingsActions.showSnackbarMessage({
-                    message: d2.i18n.getTranslation('update_user_profile_success'),
+                    message: d2.i18n.getTranslation(
+                        'update_user_profile_success'
+                    ),
                     status: 'success',
                 });
                 complete();
@@ -58,7 +69,7 @@ userProfileActions.save.subscribe(({ data, complete, error }) => {
     });
 });
 
-function getProfileUpdatePromise(key, value, payload, userId, d2) {
+function getProfileUpdatePromise({ key, value, payload, userId, d2 }) {
     const api = d2.Api.getApi();
     if (key === 'avatar') {
         if (value) {
@@ -71,12 +82,12 @@ function getProfileUpdatePromise(key, value, payload, userId, d2) {
         }
     }
 
-    return api.update('me', payload)
+    return api.update('me', payload);
 }
 
 async function removeAvatar(userId, api) {
     const url = `/users/${userId}`;
-    const user = await api.get(url, {fields: ':owner'});
+    const user = await api.get(url, { fields: ':owner' });
     delete user.avatar;
     return api.update(url, user);
 }
