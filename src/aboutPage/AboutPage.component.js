@@ -123,8 +123,6 @@ const attributes = {
 }
 
 class AboutPage extends Component {
-    translate = s => this.context.d2.i18n.getTranslation(s)
-
     getAttributes = (selected, source) =>
         selected.reduce((acc, attribute) => {
             if (attribute.getDisplayValue !== undefined) {
