@@ -5,13 +5,124 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2021-03-10T17:21:25.182Z\n"
-"PO-Revision-Date: 2021-03-10T17:21:25.182Z\n"
+"POT-Creation-Date: 2021-03-10T23:41:34.447Z\n"
+"PO-Revision-Date: 2021-03-10T23:41:34.447Z\n"
 
 msgid "Never"
 msgstr ""
 
 msgid "Invalid date"
+msgstr ""
+
+msgid "Web API"
+msgstr ""
+
+msgid "Browse it here"
+msgstr ""
+
+msgid "Current user"
+msgstr ""
+
+msgid "Version"
+msgstr ""
+
+msgid "Build revision"
+msgstr ""
+
+msgid "Build date"
+msgstr ""
+
+msgid "Jasper reports version"
+msgstr ""
+
+msgid "User agent"
+msgstr ""
+
+msgid "Server date"
+msgstr ""
+
+msgid "Last analytics table generation"
+msgstr ""
+
+msgid "Time since last analytics table generation"
+msgstr ""
+
+msgid "Last analytics table runtime"
+msgstr ""
+
+msgid "Last continuous analytics table update"
+msgstr ""
+
+msgid "Time since last continuous analytics table update"
+msgstr ""
+
+msgid "Last continuous analytics table runtime"
+msgstr ""
+
+msgid "Environment variable"
+msgstr ""
+
+msgid "System ID"
+msgstr ""
+
+msgid "Last monitoring success"
+msgstr ""
+
+msgid "External configuration directory"
+msgstr ""
+
+msgid "File store provider"
+msgstr ""
+
+msgid "Node ID"
+msgstr ""
+
+msgid "Cache provider"
+msgstr ""
+
+msgid "Read replica count"
+msgstr ""
+
+msgid "Java opts"
+msgstr ""
+
+msgid "Java version"
+msgstr ""
+
+msgid "Java vendor"
+msgstr ""
+
+msgid "OS name"
+msgstr ""
+
+msgid "OS architecture"
+msgstr ""
+
+msgid "OS version"
+msgstr ""
+
+msgid "Memory info"
+msgstr ""
+
+msgid "CPU cores"
+msgstr ""
+
+msgid "Calendar"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "User"
+msgstr ""
+
+msgid "Spatial support"
+msgstr ""
+
+msgid "System info"
+msgstr ""
+
+msgid "Database"
 msgstr ""
 
 msgid "Edit account settings"
@@ -182,4 +293,16 @@ msgid "View full profile"
 msgstr ""
 
 msgid "About DHIS2"
+msgstr ""
+
+msgid "User profile updated"
+msgstr ""
+
+msgid "Failed to update user profile"
+msgstr ""
+
+msgid "Settings updated"
+msgstr ""
+
+msgid "Failed to update settings"
 msgstr ""
