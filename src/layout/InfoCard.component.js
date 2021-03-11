@@ -48,6 +48,7 @@ class InfoCard extends Component {
     }
 
     getOptionTypeValue(labelName) {
+        // TODO: get key from value; use value as key to get translation?
         const value = this.props.valueStore.state[labelName]
         return value || value === false
             ? this.props.d2.i18n.getTranslation(value)
@@ -57,6 +58,7 @@ class InfoCard extends Component {
     getBirthdayDateValue(dateValue) {
         const birthday = new Date(dateValue)
         // Silly Date class gives day of month from getDate() and getMonth() is based from 0-11.
+        // TODO: Use locale date formatting
         return (
             birthday.getDate() +
             '-' +
@@ -90,13 +92,9 @@ class InfoCard extends Component {
         }
     }
 
-    getTranslatedLabelName(labelName) {
-        return this.props.d2.i18n.getTranslation(labelName)
-    }
-
     getLabelComponent(labelName) {
         const mapping = settingsKeyMapping[labelName]
-        const translatedLabelName = this.getTranslatedLabelName(mapping.label)
+        const translatedLabelName = mapping.label
         const labelValue = this.getLabelValue(labelName, mapping.type)
         return (
             <InfoRow

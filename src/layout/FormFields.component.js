@@ -100,7 +100,7 @@ function createDateField(fieldBase, fieldName, d2, mapping, valueStore) {
         component: DatePicker,
         value: state && state[fieldName] ? new Date(state[fieldName]) : '',
         props: Object.assign({}, fieldBase.props, {
-            floatingLabelText: d2.i18n.getTranslation(mapping.label),
+            floatingLabelText: mapping.label,
             dateFormat: userSettingsStore.state.keyDateFormat || 'yyyy-MM-dd',
             textFieldStyle: { width: '100%' },
             allowFuture: false,
@@ -221,7 +221,7 @@ function createFieldBaseObject(fieldName, mapping, d2, valueStore) {
         ? String(state[fieldName]).trim()
         : ''
     const propsObject = {
-        floatingLabelText: i18n.getTranslation(mapping.label),
+        floatingLabelText: mapping.label,
         style: { width: '100%' },
         hintText: hintText && i18n.getTranslation(hintText),
     }
