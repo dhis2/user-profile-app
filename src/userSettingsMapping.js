@@ -155,6 +155,6 @@ const settingsKeyMapping = {
             false: 'false_notifications',
         },
     },
-};
+}
 
-export default settingsKeyMapping;
+export default settingsKeyMapping

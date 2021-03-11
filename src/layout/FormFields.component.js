@@ -136,6 +136,7 @@ function createDropDown(fieldBase, fieldName, d2, valueStore, mapping) {
         ? (optionValueStore.state && optionValueStore.state[mapping.source]) ||
           []
         : Object.keys(mapping.options).map(id => {
+              // TODO: Refactor for new 'options' format with translated displayName
               const displayName = !isNaN(mapping.options[id])
                   ? mapping.options[id]
                   : d2.i18n.getTranslation(mapping.options[id])
