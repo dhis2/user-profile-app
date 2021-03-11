@@ -5,7 +5,7 @@ import { Router, Route, hashHistory, Redirect } from 'react-router';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import { DataProvider } from '@dhis2/app-runtime'
-import { HeaderBar } from '@dhis2/ui-widgets'
+import { HeaderBar } from '@dhis2/ui'
 
 import AppTheme from './layout/theme';
 
