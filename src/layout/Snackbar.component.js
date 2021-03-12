@@ -44,7 +44,7 @@ class SnackWrapper extends Component {
 
     componentWillUnmount() {
         this.subscriptions.forEach(sub => {
-            sub.dispose()
+            sub.unsubscribe()
         })
     }
 
