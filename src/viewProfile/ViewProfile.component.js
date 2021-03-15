@@ -1,10 +1,9 @@
-import PropTypes from 'prop-types'
 import React from 'react'
 import InfoCard from '../layout/InfoCard.component'
 import i18n from '../locales'
 import profileSettingsStore from '../profile/profile.store'
 
-function ViewProfile(props, context) {
+function ViewProfile() {
     const labelKeys = [
         'firstName',
         'surname',
@@ -28,11 +27,8 @@ function ViewProfile(props, context) {
             pageLabel={pageLabel}
             labelKeys={labelKeys}
             valueStore={profileSettingsStore}
-            d2={context.d2}
         />
     )
 }
-
-ViewProfile.contextTypes = { d2: PropTypes.object.isRequired }
 
 export default ViewProfile

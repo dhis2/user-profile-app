@@ -22,9 +22,9 @@ const settingsKeyMapping = {
         label: i18n.t('Gender'),
         type: 'dropdown',
         options: {
-            gender_male: 'gender_male',
-            gender_female: 'gender_female',
-            gender_other: 'gender_other',
+            gender_male: i18n.t('Male'),
+            gender_female: i18n.t('Female'),
+            gender_other: i18n.t('Other'),
         },
     },
     email: {
@@ -136,8 +136,8 @@ const settingsKeyMapping = {
         label: i18n.t('Property to display in analysis modules'),
         type: 'dropdown',
         options: {
-            name: 'name',
-            shortName: 'short_name',
+            name: i18n.t('Name'),
+            shortName: i18n.t('Short name'),
         },
         showSystemDefault: true,
     },
@@ -145,16 +145,16 @@ const settingsKeyMapping = {
         label: i18n.t('Enable message email notifications'),
         type: 'dropdown',
         options: {
-            true: 'true_notifications',
-            false: 'false_notifications',
+            true: i18n.t('Yes'),
+            false: i18n.t('No'),
         },
     },
     keyMessageSmsNotification: {
         label: i18n.t('Enable message SMS notifications'),
         type: 'dropdown',
         options: {
-            true: 'true_notifications',
-            false: 'false_notifications',
+            true: i18n.t('Yes'),
+            false: i18n.t('No'),
         },
     },
 }

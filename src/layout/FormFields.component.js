@@ -76,6 +76,7 @@ function getNameValidator(name, i18n) {
     if (wordToValidatorMap.has(name)) {
         return {
             validator: wordToValidatorMap.get(name),
+            // TODO: modernize i18n (requires migrating away from d2-ui forms)
             message: i18n.getTranslation(wordToValidatorMap.get(name).message),
         }
     }
@@ -124,7 +125,7 @@ function createCheckBox(fieldBase, fieldName) {
 }
 
 // eslint-disable-next-line max-params
-function createDropDown(fieldBase, fieldName, d2, valueStore, mapping) {
+function createDropDown(fieldBase, fieldName, valueStore, mapping) {
     const value =
         valueStore.state[fieldName] || valueStore.state[fieldName] === false
             ? valueStore.state[fieldName].toString()
@@ -136,10 +137,7 @@ function createDropDown(fieldBase, fieldName, d2, valueStore, mapping) {
         ? (optionValueStore.state && optionValueStore.state[mapping.source]) ||
           []
         : Object.keys(mapping.options).map(id => {
-              // TODO: Refactor for new 'options' format with translated displayName
-              const displayName = !isNaN(mapping.options[id])
-                  ? mapping.options[id]
-                  : d2.i18n.getTranslation(mapping.options[id])
+              const displayName = mapping.options[id]
               return { id, displayName }
           })
     ).slice()
@@ -151,9 +149,7 @@ function createDropDown(fieldBase, fieldName, d2, valueStore, mapping) {
 
     let systemSettingLabel
     if (typeof systemSettingValue === 'boolean') {
-        systemSettingLabel = d2.i18n.getTranslation(
-            systemSettingValue.toString()
-        )
+        systemSettingLabel = systemSettingValue ? i18n.t('Yes') : i18n.t('No')
     } else if (optionValueStore.state[mapping.source]) {
         systemSettingLabel =
             optionValueStore.state[mapping.source]
@@ -172,7 +168,7 @@ function createDropDown(fieldBase, fieldName, d2, valueStore, mapping) {
     if (mapping.showSystemDefault) {
         menuItems.unshift({
             id: 'system_default',
-            // TODO: use interpolation here
+            // TODO: use i18n interpolation here
             displayName: `${i18n.t(
                 'Use system default'
             )} (${systemSettingLabel})`,
@@ -188,7 +184,7 @@ function createDropDown(fieldBase, fieldName, d2, valueStore, mapping) {
             {
                 includeEmpty: !!mapping.includeEmpty,
                 emptyLabel: mapping.includeEmpty
-                    ? d2.i18n.getTranslation(mapping.emptyLabel)
+                    ? mapping.emptyLabel
                     : undefined,
                 noOptionsLabel: i18n.t('No options'),
             },
@@ -223,7 +219,7 @@ function createFieldBaseObject(fieldName, mapping, d2, valueStore) {
     const propsObject = {
         floatingLabelText: mapping.label,
         style: { width: '100%' },
-        hintText: hintText && i18n.getTranslation(hintText),
+        hintText,
     }
     const baseValidators = (mapping.validators || [])
         .map(name => getNameValidator(name, i18n))
@@ -258,7 +254,7 @@ function createField(fieldName, valueStore, d2) {
         case 'checkbox':
             return createCheckBox(fieldBase, fieldName)
         case 'dropdown':
-            return createDropDown(fieldBase, fieldName, d2, valueStore, mapping)
+            return createDropDown(fieldBase, fieldName, valueStore, mapping)
         case 'accountEditor':
             return createAccountEditor(fieldBase, d2, valueStore)
         case 'avatar':
@@ -271,7 +267,7 @@ function createField(fieldName, valueStore, d2) {
     }
 }
 
-function wrapFieldWithLabel(field, d2) {
+function wrapFieldWithLabel(field) {
     const mapping = userSettingsKeyMapping[field.name]
 
     // For settings that have a system wide default value,
@@ -296,19 +292,19 @@ function wrapFieldWithLabel(field, d2) {
         let systemValueLabel = systemValue
 
         if (mapping.source && actualSystemValue) {
-            systemValueLabel = optionValueStore.state[mapping.source].filter(
+            systemValueLabel = optionValueStore.state[mapping.source].find(
                 item => item.id === systemValue
-            )[0].displayName
+            ).displayName
         } else if (field.props.menuItems && actualSystemValue) {
-            systemValueLabel = field.props.menuItems.filter(
+            systemValueLabel = field.props.menuItems.find(
                 item =>
                     item.id === systemValue || String(systemValue) === item.id
-            )[0].displayName
+            ).displayName
         } else {
-            systemValueLabel = d2.i18n.getTranslation(systemValue)
+            systemValueLabel = mapping.options[systemValue]
         }
 
-        // TODO: use interpolation here
+        // TODO: use i18n interpolation here
         const systemDefaultLabel = `${i18n.t(
             'System default'
         )}: ${systemValueLabel}`
@@ -337,7 +333,7 @@ class FormFields extends Component {
         const fields = fieldNames
             .map(fieldName => createField(fieldName, valueStore, d2))
             .filter(field => !!field.name)
-            .map(field => wrapFieldWithLabel(field, d2))
+            .map(field => wrapFieldWithLabel(field))
 
         return (
             <Card style={styles.card}>

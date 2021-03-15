@@ -48,10 +48,9 @@ class InfoCard extends Component {
     }
 
     getOptionTypeValue(labelName) {
-        // TODO: get key from value; use value as key to get translation?
         const value = this.props.valueStore.state[labelName]
         return value || value === false
-            ? this.props.d2.i18n.getTranslation(value)
+            ? settingsKeyMapping[labelName].options[value]
             : 'null'
     }
 
@@ -148,7 +147,6 @@ class InfoCard extends Component {
 }
 
 InfoCard.propTypes = {
-    d2: PropTypes.object.isRequired,
     labelKeys: PropTypes.arrayOf(PropTypes.string).isRequired,
     pageLabel: PropTypes.string.isRequired,
     valueStore: PropTypes.object.isRequired,
