@@ -1,3 +1,10 @@
+## [30.2.14](https://github.com/dhis2/user-profile-app/compare/v30.2.13...v30.2.14) (2021-03-15)
+
+
+### Bug Fixes
+
+* upgrade to @dhis2/cli-app-scripts@6 (DHIS2-9893) ([#895](https://github.com/dhis2/user-profile-app/issues/895)) ([cdb971b](https://github.com/dhis2/user-profile-app/commit/cdb971bb58736d9ff75a186fb1c1894fa728e95e))
+
 ## [30.2.13](https://github.com/dhis2/user-profile-app/compare/v30.2.12...v30.2.13) (2021-02-28)
 
 

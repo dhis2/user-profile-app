@@ -1,5 +1,5 @@
 import { DataProvider } from '@dhis2/app-runtime'
-import { HeaderBar } from '@dhis2/ui-widgets'
+import { HeaderBar } from '@dhis2/ui'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
