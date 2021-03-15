@@ -94,7 +94,7 @@ function createTextField(fieldBase, mapping) {
 }
 
 // eslint-disable-next-line max-params
-function createDateField(fieldBase, fieldName, d2, mapping, valueStore) {
+function createDateField(fieldBase, fieldName, mapping, valueStore) {
     const state = valueStore.state
 
     return Object.assign({}, fieldBase, {
@@ -244,13 +244,7 @@ function createField(fieldName, valueStore, d2) {
         case 'textfield':
             return createTextField(fieldBase, mapping)
         case 'date':
-            return createDateField(
-                fieldBase,
-                fieldName,
-                d2,
-                mapping,
-                valueStore
-            )
+            return createDateField(fieldBase, fieldName, mapping, valueStore)
         case 'checkbox':
             return createCheckBox(fieldBase, fieldName)
         case 'dropdown':
