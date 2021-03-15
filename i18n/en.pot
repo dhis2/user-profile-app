@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2021-03-10T23:41:34.447Z\n"
-"PO-Revision-Date: 2021-03-10T23:41:34.447Z\n"
+"POT-Creation-Date: 2021-03-15T15:17:02.277Z\n"
+"PO-Revision-Date: 2021-03-15T15:17:02.277Z\n"
 
 msgid "Never"
 msgstr ""
@@ -305,4 +305,97 @@ msgid "Settings updated"
 msgstr ""
 
 msgid "Failed to update settings"
+msgstr ""
+
+msgid "First name"
+msgstr ""
+
+msgid "Surname"
+msgstr ""
+
+msgid "Gender"
+msgstr ""
+
+msgid "Male"
+msgstr ""
+
+msgid "Female"
+msgstr ""
+
+msgid "Other"
+msgstr ""
+
+msgid "E-mail"
+msgstr ""
+
+msgid "Mobile phone number"
+msgstr ""
+
+msgid "Introduction"
+msgstr ""
+
+msgid "Job title"
+msgstr ""
+
+msgid "User roles"
+msgstr ""
+
+msgid "User org units"
+msgstr ""
+
+msgid "Birthday"
+msgstr ""
+
+msgid "Nationality"
+msgstr ""
+
+msgid "Employer"
+msgstr ""
+
+msgid "Education"
+msgstr ""
+
+msgid "Interests"
+msgstr ""
+
+msgid "Languages"
+msgstr ""
+
+msgid "WhatsApp"
+msgstr ""
+
+msgid "Facebook Messenger"
+msgstr ""
+
+msgid "Skype"
+msgstr ""
+
+msgid "Telegram"
+msgstr ""
+
+msgid "Twitter"
+msgstr ""
+
+msgid "Account editor"
+msgstr ""
+
+msgid "Interface language"
+msgstr ""
+
+msgid "Database language"
+msgstr ""
+
+msgid "Style"
+msgstr ""
+
+msgid "Property to display in analysis modules"
+msgstr ""
+
+msgid "Short name"
+msgstr ""
+
+msgid "Enable message email notifications"
+msgstr ""
+
+msgid "Enable message SMS notifications"
 msgstr ""

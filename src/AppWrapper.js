@@ -5,13 +5,14 @@ import AppRouter from './app.router.js'
 import optionValueStore from './optionValue.store'
 import userProfileStore from './profile/profile.store'
 import userSettingsStore from './settings/userSettings.store'
-// import './locales' // there are no strings to be translated
+import './locales'
 import './layout/app.css'
 
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
 const AppWrapper = () => {
     const { d2 } = useD2({
+        i18nRoot: './i18n_legacy',
         onInitialized: d2 => {
             const api = d2.Api.getApi()
 
@@ -36,13 +37,7 @@ const AppWrapper = () => {
                         id: locale.locale,
                         displayName: locale.name,
                     }))
-                    const systemDefault = Object.keys(results[4]).reduce(
-                        (defaults, key) => {
-                            defaults[key] = results[4][key]
-                            return defaults
-                        },
-                        {}
-                    )
+                    const systemDefault = { ...results[4] }
 
                     userProfileStore.setState(d2.currentUser)
                     userProfileStore.state.qrCodeUrl = results[5].url
