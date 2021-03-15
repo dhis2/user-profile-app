@@ -1,6 +1,6 @@
 const config = {
     type: 'app',
-    name: 'user-profile-app',
+    name: 'user-profile',
     title: 'User Profile',
     coreApp: true,
 
