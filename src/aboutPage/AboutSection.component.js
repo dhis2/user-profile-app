@@ -18,17 +18,19 @@ const AboutSection = ({ header, attributes }) => (
         <Card style={styles.card}>
             <CardText>
                 <table className="info-content">
-                    {attributes.map(({ label, value }) => (
-                        <InfoRow
-                            key={label}
-                            label={label}
-                            value={
-                                typeof value === 'boolean'
-                                    ? value.toString()
-                                    : value
-                            }
-                        />
-                    ))}
+                    <tbody>
+                        {attributes.map(({ label, value }) => (
+                            <InfoRow
+                                key={label}
+                                label={label}
+                                value={
+                                    typeof value === 'boolean'
+                                        ? value.toString()
+                                        : value
+                                }
+                            />
+                        ))}
+                    </tbody>
                 </table>
             </CardText>
         </Card>
