@@ -1,5 +1,4 @@
 import { DataProvider } from '@dhis2/app-runtime'
-import { HeaderBar } from '@dhis2/ui'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
@@ -11,7 +10,6 @@ import TwoFactor from './account/twoFactor/TwoFactor'
 import Sidebar from './layout/Sidebar.component'
 import Snackbar from './layout/Snackbar.component'
 import AppTheme from './layout/theme'
-import i18n from './locales'
 import Profile from './profile/Profile.component'
 import UserSettings from './settings/UserSettings.component'
 import ViewProfile from './viewProfile/ViewProfile.component'
@@ -53,7 +51,6 @@ class AppRouter extends Component {
             <DataProvider {...this.getDataProviderProps()}>
                 <MuiThemeProvider muiTheme={AppTheme}>
                     <div className="app-wrapper">
-                        <HeaderBar appName={i18n.t('User profile')} />
                         <Snackbar />
                         <Router history={hashHistory}>
                             <Route component={WrAppadApp}>
