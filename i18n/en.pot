@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2021-03-15T18:25:13.357Z\n"
-"PO-Revision-Date: 2021-03-15T18:25:13.357Z\n"
+"POT-Creation-Date: 2021-03-16T12:56:03.527Z\n"
+"PO-Revision-Date: 2021-03-16T12:56:03.527Z\n"
 
 msgid "Never"
 msgstr ""
@@ -266,6 +266,27 @@ msgid "Select profile picture"
 msgstr ""
 
 msgid "Remove profile picture"
+msgstr ""
+
+msgid "This field is required"
+msgstr ""
+
+msgid "This field should be a URL"
+msgstr ""
+
+msgid "This field should contain a list of URLs"
+msgstr ""
+
+msgid "This field should be a number"
+msgstr ""
+
+msgid "This field should be a positive number"
+msgstr ""
+
+msgid "This field should be an email"
+msgstr ""
+
+msgid "Please enter a valid international phone number (+0123456789)"
 msgstr ""
 
 msgid "No value"

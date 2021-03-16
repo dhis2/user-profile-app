@@ -12,7 +12,6 @@ import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
 const AppWrapper = () => {
     const { d2 } = useD2({
-        i18nRoot: './i18n_legacy',
         onInitialized: d2 => {
             const api = d2.Api.getApi()
 

@@ -72,12 +72,37 @@ function wrapWithLabel(WrappedComponent, label) {
     }
 }
 
-function getNameValidator(name, i18n) {
+// Handles translation keys from d2-ui form validators
+function translateValidatorMessage(validatorMessage) {
+    switch (validatorMessage) {
+        case 'value_required':
+            return i18n.t('This field is required')
+        case 'value_should_be_a_url':
+            return i18n.t('This field should be a URL')
+        case 'value_should_be_list_of_urls':
+            return i18n.t('This field should contain a list of URLs')
+        case 'value_should_be_a_number':
+            return i18n.t('This field should be a number')
+        case 'value_should_be_a_positive_number':
+            return i18n.t('This field should be a positive number')
+        case 'value_should_be_an_email':
+            return i18n.t('This field should be an email')
+        case 'invalid_whats_app':
+            return i18n.t(
+                'Please enter a valid international phone number (+0123456789)'
+            )
+        default:
+            return validatorMessage
+    }
+}
+
+function getNameValidator(name) {
     if (wordToValidatorMap.has(name)) {
         return {
             validator: wordToValidatorMap.get(name),
-            // TODO: modernize i18n (requires migrating away from d2-ui forms)
-            message: i18n.getTranslation(wordToValidatorMap.get(name).message),
+            message: translateValidatorMessage(
+                wordToValidatorMap.get(name).message
+            ),
         }
     }
     return false
@@ -207,9 +232,7 @@ function createAvatarEditor(fieldBase, d2, valueStore) {
     })
 }
 
-// eslint-disable-next-line max-params
-function createFieldBaseObject(fieldName, mapping, d2, valueStore) {
-    const i18n = d2.i18n
+function createFieldBaseObject(fieldName, mapping, valueStore) {
     const state = valueStore.state
     const hintText = mapping.hintText
 
@@ -222,7 +245,7 @@ function createFieldBaseObject(fieldName, mapping, d2, valueStore) {
         hintText,
     }
     const baseValidators = (mapping.validators || [])
-        .map(name => getNameValidator(name, i18n))
+        .map(name => getNameValidator(name))
         .filter(v => v)
 
     return Object.assign(
@@ -239,7 +262,7 @@ function createFieldBaseObject(fieldName, mapping, d2, valueStore) {
 
 function createField(fieldName, valueStore, d2) {
     const mapping = userSettingsKeyMapping[fieldName]
-    const fieldBase = createFieldBaseObject(fieldName, mapping, d2, valueStore)
+    const fieldBase = createFieldBaseObject(fieldName, mapping, valueStore)
     switch (mapping.type) {
         case 'textfield':
             return createTextField(fieldBase, mapping)
