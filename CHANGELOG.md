@@ -1,3 +1,10 @@
+## [30.2.15](https://github.com/dhis2/user-profile-app/compare/v30.2.14...v30.2.15) (2021-03-17)
+
+
+### Bug Fixes
+
+* port to app platform [DHIS2-9388] ([#899](https://github.com/dhis2/user-profile-app/issues/899)) ([c665697](https://github.com/dhis2/user-profile-app/commit/c66569730848cbc7a153a2f32204ff4ee885abfa))
+
 ## [30.2.14](https://github.com/dhis2/user-profile-app/compare/v30.2.13...v30.2.14) (2021-03-15)
 
 
