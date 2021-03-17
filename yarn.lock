@@ -4886,10 +4886,10 @@ d2-ui@^29.0.35:
   resolved "https://registry.yarnpkg.com/d2-ui/-/d2-ui-29.0.35.tgz#b0f8540957e90ded7bf2257bbd2604b7b8034c0c"
   integrity sha512-NS4YXUdDti5igBLAT+IdWnQeAygf/m2ubG8+nakkrKhP4RHGgwuZmKveLKkpmbZDATvE4Dz/0DLnTaP+/ZLgaA==
 
-d2@^31.9.0:
-  version "31.9.0"
-  resolved "https://registry.yarnpkg.com/d2/-/d2-31.9.0.tgz#83e76735f0b925a000a74ea4b48a412d0c123a36"
-  integrity sha512-wTprxiA0dUa3ZWu1VkNxhoGT9UUWjXk89XKHqG+nh5uRxXL2zsq7Q6nrcpl8XvRG2T/A7BA3ORJFLDIfzrJ9mA==
+d2@^31.9.1:
+  version "31.9.1"
+  resolved "https://registry.yarnpkg.com/d2/-/d2-31.9.1.tgz#5b0b8a520dd04a01593698e63156779cbf7f5f88"
+  integrity sha512-dnaDo4reXNt0ySQ6RBUo3EbnixTPs8TrTObYG4HA4ghXF6Xvvru9whUtiR1cRsqD/qlKXxEaUe5CFLw6l+SvyQ==
   dependencies:
     isomorphic-fetch "^2.2.1"
 
