@@ -1,11 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import FormFields from '../layout/FormFields.component'
+import i18n from '../locales'
+import userProfileActions from './profile.actions'
+import userProfileStore from './profile.store'
 
-import FormFields from '../layout/FormFields.component';
-import userProfileActions from './profile.actions';
-import userProfileStore from './profile.store';
-
-function EditProfile(props, context) {
+function EditProfile() {
     const fieldKeys = [
         'firstName',
         'surname',
@@ -25,10 +24,10 @@ function EditProfile(props, context) {
         'facebookMessenger',
         'skype',
         'telegram',
-        'twitter'
-    ];
+        'twitter',
+    ]
 
-    const pageLabel = context.d2.i18n.getTranslation('edit_user_profile');
+    const pageLabel = i18n.t('Edit user profile')
 
     return (
         <FormFields
@@ -37,9 +36,7 @@ function EditProfile(props, context) {
             valueStore={userProfileStore}
             onUpdateField={userProfileActions.save}
         />
-    );
+    )
 }
 
-EditProfile.contextTypes = { d2: PropTypes.object.isRequired };
-
-export default EditProfile;
+export default EditProfile

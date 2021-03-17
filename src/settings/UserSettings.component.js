@@ -1,11 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import FormFields from '../layout/FormFields.component'
+import i18n from '../locales'
+import userSettingsActions from './userSettings.actions'
+import userSettingsStore from './userSettings.store'
 
-import FormFields from '../layout/FormFields.component';
-import userSettingsActions from './userSettings.actions';
-import userSettingsStore from './userSettings.store';
-
-function EditProfile(props, context) {
+function EditProfile() {
     const fieldKeys = [
         'keyUiLocale',
         'keyDbLocale',
@@ -13,9 +12,9 @@ function EditProfile(props, context) {
         'keyAnalysisDisplayProperty',
         'keyMessageEmailNotification',
         'keyMessageSmsNotification',
-    ];
+    ]
 
-    const pageLabel = context.d2.i18n.getTranslation('edit_user_settings');
+    const pageLabel = i18n.t('Edit user settings')
 
     return (
         <FormFields
@@ -24,9 +23,7 @@ function EditProfile(props, context) {
             valueStore={userSettingsStore}
             onUpdateField={userSettingsActions.save}
         />
-    );
+    )
 }
 
-EditProfile.contextTypes = { d2: PropTypes.object.isRequired };
-
-export default EditProfile;
+export default EditProfile

@@ -1,7 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
-import { Paper, RaisedButton } from 'material-ui';
+import { Paper, RaisedButton } from 'material-ui'
+import PropTypes from 'prop-types'
+import React from 'react'
 
 const styles = {
     status: {
@@ -18,13 +17,11 @@ const styles = {
     statusMessage: {
         margin: '1rem',
     },
-};
+}
 
 const Status2FA = ({ openSetupDialog, statusMessage, buttonLabel }) => (
     <Paper style={styles.status}>
-        <div style={styles.statusMessage}>
-            {statusMessage}
-        </div>
+        <div style={styles.statusMessage}>{statusMessage}</div>
         <RaisedButton
             style={styles.statusButton}
             label={buttonLabel}
@@ -32,12 +29,12 @@ const Status2FA = ({ openSetupDialog, statusMessage, buttonLabel }) => (
             primary
         />
     </Paper>
-);
+)
 
 Status2FA.propTypes = {
+    buttonLabel: PropTypes.string.isRequired,
     openSetupDialog: PropTypes.func.isRequired,
     statusMessage: PropTypes.string.isRequired,
-    buttonLabel: PropTypes.string.isRequired,
-};
+}
 
-export default Status2FA;
+export default Status2FA

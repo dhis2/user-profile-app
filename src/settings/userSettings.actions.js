@@ -1,42 +1,41 @@
-import log from 'loglevel';
+import { getInstance as getD2 } from 'd2'
+import Action from 'd2-ui/lib/action/Action'
+import log from 'loglevel'
+import appActions from '../app.actions'
+import i18n from '../locales'
+import userSettingsStore from './userSettings.store'
 
-import Action from 'd2-ui/lib/action/Action';
-import { getInstance as getD2 } from 'd2/lib/d2';
-
-import appActions from '../app.actions';
-import userSettingsStore from './userSettings.store';
-
-const userSettingsActions = Action.createActionsFromNames([
-    'save',
-]);
+const userSettingsActions = Action.createActionsFromNames(['save'])
 
 userSettingsActions.save.subscribe(({ data, complete, error }) => {
-    const key = data[0];
-    const value = data[1] === 'null' || data[1] === 'system_default' ? null : data[1];
+    const key = data[0]
+    const value =
+        data[1] === 'null' || data[1] === 'system_default' ? null : data[1]
 
-    getD2().then((d2) => {
-        d2.currentUser.userSettings.set(key, value)
+    getD2().then(d2 => {
+        d2.currentUser.userSettings
+            .set(key, value)
             .then(() => {
-                userSettingsStore.state[key] = value;
-                userSettingsStore.setState(userSettingsStore.state);
+                userSettingsStore.state[key] = value
+                userSettingsStore.setState(userSettingsStore.state)
 
-                log.debug('User Setting updated successfully.');
+                log.debug('User Setting updated successfully.')
                 appActions.showSnackbarMessage({
-                    message: d2.i18n.getTranslation('settings_updated'),
+                    message: i18n.t('Settings updated'),
                     status: 'success',
-                });
-                complete();
+                })
+                complete()
             })
-            .catch((err) => {
-                userSettingsStore.setState(userSettingsStore.state);
-                log.warn('API call failed:', err);
+            .catch(err => {
+                userSettingsStore.setState(userSettingsStore.state)
+                log.warn('API call failed:', err)
                 appActions.showSnackbarMessage({
-                    message: d2.i18n.getTranslation('failed_to_update_settings'),
+                    message: i18n.t('Failed to update settings'),
                     status: 'error',
-                });
-                error();
-            });
-    });
-});
+                })
+                error()
+            })
+    })
+})
 
-export default userSettingsActions;
+export default userSettingsActions
