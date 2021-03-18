@@ -2,13 +2,11 @@
 # Translators:
 # Yury Rogachev <yury@dhis2.org>, 2021
 # 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-01 00:28-0400\n"
-"PO-Revision-Date: 2019-09-02 16:41+0000\n"
+"Project-Id-Version: i18next-conv\n"
+"POT-Creation-Date: 2021-03-16T12:56:03.527Z\n"
+"PO-Revision-Date: 2021-03-17 23:49+0000\n"
 "Last-Translator: Yury Rogachev <yury@dhis2.org>, 2021\n"
 "Language-Team: Uzbek (Latin) (https://www.transifex.com/hisp-uio/teams/100509/uz@Latn/)\n"
 "MIME-Version: 1.0\n"
@@ -16,253 +14,420 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: uz@Latn\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 2.0.0b3\n"
 
-#: user_profile
-msgid "User profile"
-msgstr "Foydalanuvchi profili"
+msgid "Never"
+msgstr "Hech qachon"
 
-#: account_settings
-msgid "Account settings"
-msgstr "Аkkaunt sozlamalari"
+msgid "Invalid date"
+msgstr "Sana xato"
 
-#: user_settings
-msgid "User settings"
-msgstr "Foydalanuvchi sozlamanlari"
+msgid "Web API"
+msgstr "Web API"
 
-#: user_email_address
-msgid "E-mail"
-msgstr "Elektron pochta"
+msgid "Browse it here"
+msgstr "Shu yerda koʼrib chiqing"
 
-#: surname
-msgid "Surname"
-msgstr "Familiya"
+msgid "Current user"
+msgstr "Joriy foydalanuvchi"
 
-#: first_name
-msgid "First name"
-msgstr "Ism"
+msgid "Version"
+msgstr "Вариант"
 
-#: old_password
-msgid "Old password"
-msgstr "Oldingi parol"
+msgid "Build revision"
+msgstr "Qayta koʼrib chiqishni yaratish"
 
-#: new_password
-msgid "New password"
-msgstr "Yangi parol"
+msgid "Build date"
+msgstr "Sozlangan sana"
 
-#: repeat_new_password
-msgid "Repeat new password"
-msgstr "Yangi parolni takrorlang"
+msgid "Jasper reports version"
+msgstr "Jasper hisoboti varianti"
 
-#: openid
-msgid "OpenID"
-msgstr "Kirish ID si"
+msgid "User agent"
+msgstr "Foydalanuvchi agent"
 
-#: username
-msgid "Username"
-msgstr "Фойдаланувчи исми"
+msgid "Server date"
+msgstr "Server sanasi"
 
-#: phone_number
-msgid "Mobile phone number"
-msgstr "Mobil telefon raqami"
+msgid "Last analytics table generation"
+msgstr "Oxirgi marta analitik jadval yaratilgan sana"
 
-#: job_title
-msgid "Job title"
-msgstr "Lavozim"
+msgid "Time since last analytics table generation"
+msgstr "Oxirgi marta analitik jadval yaratilgandan oʼtgan vaqt"
 
-#: introduction
-msgid "Introduction"
-msgstr "Tanishtirish"
+msgid "Last analytics table runtime"
+msgstr "Jadvalning oxirgi marta analitika bajarilgan sanasi"
 
-#: gender
-msgid "Gender"
-msgstr "Jinsi"
+msgid "Last continuous analytics table update"
+msgstr "Аnalitika jadvalining oxirgi davomiy yangilanishi"
 
-#: male
-msgctxt "male"
-msgid "Male"
-msgstr "Erkak"
+msgid "Time since last continuous analytics table update"
+msgstr "Аnalitika jadvalining oxirgi davomiy yangilanishidan keyingi vaqt"
 
-#: female
-msgctxt "female"
-msgid "Female"
-msgstr "Аyol"
+msgid "Last continuous analytics table runtime"
+msgstr "Аnalitika jadvalining oxirgi davomiy ishlash vaqti"
 
-#: other
-msgctxt "other"
-msgid "Other"
-msgstr "Boshqa"
+msgid "Environment variable"
+msgstr "Аtrofidagi oʼzgaruvchanlik"
 
-#: gender_male
-msgctxt "gender_male"
-msgid "Male"
-msgstr "Erkak"
+msgid "System ID"
+msgstr "Tizim ID si"
 
-#: gender_female
-msgctxt "gender_female"
-msgid "Female"
-msgstr "Аyol"
+msgid "Last monitoring success"
+msgstr "Oxirgi muvaffaыiyatli monitoring"
 
-#: gender_other
-msgctxt "gender_other"
-msgid "Other"
-msgstr "Boshqa"
+msgid "External configuration directory"
+msgstr "Tashыi konfiguratsiya katalogi"
 
-#: birthday
-msgid "Birthday"
-msgstr "Tugilgan kun"
+msgid "File store provider"
+msgstr "Fayl ombori provayderi"
 
-#: nationality
-msgid "Nationality"
-msgstr "Millati"
+msgid "Node ID"
+msgstr "Node ID"
 
-#: employer
-msgid "Employer"
-msgstr "Ishga oluvchi"
+msgid "Cache provider"
+msgstr "Kesh-provayder"
 
-#: education
-msgid "Education"
-msgstr "Maʼlumoti"
+msgid "Read replica count"
+msgstr "Munosabatlar sonini oʼqish"
 
-#: interests
-msgid "Interests"
-msgstr "Qiziqishi"
+msgid "Java opts"
+msgstr "Java varianti"
 
-#: languages
-msgid "Languages"
-msgstr "Til"
+msgid "Java version"
+msgstr "Java varianti"
 
-#: update_user_profile_success
-msgid "User profile updated"
-msgstr "Foydalanuvchi profili yangilandi"
+msgid "Java vendor"
+msgstr "Java yetkazib beruvchisi"
 
-#: settings
-msgid "Settings"
-msgstr "Sozlamalar"
+msgid "OS name"
+msgstr "OS nomi"
 
-#: property_to_display_in_analysis_modules
-msgctxt "property_to_display_in_analysis_modules"
-msgid "Property to display in analysis modules"
-msgstr "Tahlil modullarini namoyish etadigan xususiyat"
+msgid "OS architecture"
+msgstr "Operatsion Tizim arxitekturasi"
 
-#: general
-msgid "General"
-msgstr "Umumiy"
+msgid "OS version"
+msgstr "operatsion Tizim varianti"
 
-#: message
-msgid "Message"
-msgstr "Xabar"
+msgid "Memory info"
+msgstr "Xotira haqida axborot"
 
-#: settings_updated
-msgid "Settings updated"
-msgstr "Sozlamalar yangilandi"
+msgid "CPU cores"
+msgstr "Protsessor yadrosi"
 
-#: failed_to_update_settings
-msgid "Failed to update settings"
-msgstr "Sozlamalar yangilanishi amalga oshmadi"
+msgid "Calendar"
+msgstr "Kalendar"
 
-#: style
-msgid "Style"
-msgstr "Услуб"
-
-#: db_language
-msgid "Database language"
-msgstr "Maʼlumotlar bazasi tili"
-
-#: language
-msgid "Interface language"
-msgstr "Interfeys tili"
-
-#: enable_message_email_notifications
-msgid "Enable message email notifications"
-msgstr "Elektron pochta xabarnomasini yoqish"
-
-#: enable_message_sms_notifications
-msgid "Enable message SMS notifications"
-msgstr "SMS xabarnomasini yoqish"
-
-#: analysis_module
-msgctxt "analysis_module"
-msgid "Property to display in analysis modules"
-msgstr "Tahlil modullarini namoyish etadigan xususiyat"
-
-#: name
 msgid "Name"
 msgstr "Исми"
 
-#: short_name
-msgid "Short name"
-msgstr "Qisqacha nomi"
+msgid "User"
+msgstr "Foydalanuvchi"
 
-#: system_default
-msgid "System default"
-msgstr "Standart tizimizim"
+msgid "Spatial support"
+msgstr "Makonga oid qoʼllab-quvvatlash"
 
-#: value_should_be_an_email
-msgid "Please enter a valid email address"
-msgstr "Iltimos, toʼgʼri ye-manzilni kiriting"
+msgid "System info"
+msgstr "Tizim haqida axborot"
 
-#: update_user_profile_fail
-msgid "Failed to update user profile"
-msgstr "Foydalanuvchi profili yangilanishi amalga oshmadi"
+msgid "Database"
+msgstr "Maʼlumotlar bazasi"
 
-#: update_settings_fail
-msgid "Fialed to update user settings"
-msgstr "Foydalanuvchi sozlamalari yangilanishi amalga oshmadi"
+msgid "Edit account settings"
+msgstr "Аkkaunt sozlamalarini tahrir qilish"
 
-#: update_password
-msgid "Update password"
-msgstr "Parolni yangilang"
-
-#: invalid_password
-msgid ""
-"Password should be at least 8 characters with at least 1 digit and 1 "
-"uppercase letter"
-msgstr ""
-"Parol kamida 8 ta belgidan iborat boʼlishi, kamida 1 ta son va 1 ta bosh "
-"harfdan tashkil topishi lozim"
-
-#: passwords_do_not_match
-msgid "The entered values do not match. Please re-enter."
-msgstr "Kiritilgan qiymatlar mos kelmaydi. Iltimos, qayta kiriting."
-
-#: use_system_default
-msgid "Use system default"
-msgstr "Standart tizimdan foydalaning"
-
-#: true_notifications
-msgid "Yes"
-msgstr "Ҳа"
-
-#: false_notifications
-msgid "No"
-msgstr "Йўқ"
-
-#: value_required
-msgid "This field can't be left blank"
-msgstr "Ushbu satrni boʼsh qoldirib boʼlmaydi"
-
-#: please_enter_the_correct_password
-msgid "Please enter the correct password"
-msgstr "Iltimos, parolni toʼgʼri kiriting"
-
-#: no_changes_have_been_made
 msgid "No changes have been made"
 msgstr "Hech qanday oʼzgartirish qilinmagan edi"
 
-#: validating_please_try_again
 msgid "The form is currently being validated. Please try again."
 msgstr "Hozirda shakl tekshirilmoqda. Iltimos, qaytib urinib koʼring"
 
-#: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
 msgstr ""
 "Shaklda xatoliklar mavjud. Xatolarni toʼgʼrilab, qaytib urinib koʼring"
 
-#: password_update_success
-msgid "Your password was updated successfully"
-msgstr "Sizning parolingiz muvaffaqiyatli yangilandi"
+msgid "The entered values do not match. Please re-enter."
+msgstr "Kiritilgan qiymatlar mos kelmaydi. Iltimos, qayta kiriting."
 
-#: password_update_failed
+msgid "Please provide your old password"
+msgstr "Iltimos, eski parolingizni kiriting"
+
+msgid "Username"
+msgstr "Фойдаланувчи исми"
+
+msgid "Old password"
+msgstr "Oldingi parol"
+
+msgid "This field can't be left blank"
+msgstr "Ushbu satrni boʼsh qoldirib boʼlmaydi"
+
+msgid "New password"
+msgstr "Yangi parol"
+
+msgid ""
+"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
+"letter and 1 special character"
+msgstr ""
+
+msgid "Repeat new password"
+msgstr "Yangi parolni takrorlang"
+
+msgid "Setup 2-Factor"
+msgstr "2 omilli Аutentifikatsiyani sozlash"
+
+msgid "Update password"
+msgstr "Parolni yangilang"
+
+msgid ""
+"This account is linked to an OpenID Connect identity. Visit the Open ID "
+"Connect provider to manage this account's settings."
+msgstr ""
+
+msgid "Password changed successfully"
+msgstr "Parol muvaffaqiyatli oʼzgartirildi"
+
+msgid "You need to login again to continue using the application."
+msgstr ""
+"Ilovadan foydalanishni davom ettirishingiz uchun qayta kirishingiz lozim."
+
+msgid "Login"
+msgstr "Аvtorizatsiya"
+
 msgid "Failed to update password"
 msgstr "Parol yangilanishida xatolik"
+
+msgid "2-Factor successfully turned ON"
+msgstr "2 omilli autentikafikatsiya muvaffaqiyatli yokildi"
+
+msgid "2-Factor successfully turned OFF"
+msgstr "2 omilli autentikafikatsiya muvaffaqiyatli oʼchirildi"
+
+msgid "Failed to turn ON 2-Factor"
+msgstr "2 omilli autentikafikatsiya yokilishi amalga oshmadi"
+
+msgid "Failed to turn OFF 2-Factor"
+msgstr ""
+
+msgid "Barcode/QR code to scan"
+msgstr "Barcode/QR kod skaner qilish uchun"
+
+msgid "No"
+msgstr "Йўқ"
+
+msgid "Yes"
+msgstr "Ҳа"
+
+msgid "Turn OFF"
+msgstr "Oʼchirish"
+
+msgid "Turn ON"
+msgstr "Yoqish"
+
+msgid "2-Factor Verification is ON"
+msgstr "2 omilli tekshirish yoqilgan"
+
+msgid "2-Factor Verification is OFF"
+msgstr "2 omilli tekshirish oʼchirilgan"
+
+msgid "Do you want to turn OFF 2-Factor?"
+msgstr "2 omilli tekshirishni oʼchirmoqchimisiz?"
+
+msgid "Do you want to turn ON 2-Factor?"
+msgstr "2 omilli tekshirishni yoqmoqchimisiz?"
+
+msgid "Download the Authenticator app"
+msgstr "Аutentifikator Ilovasini yuklash"
+
+msgid "What kind of phone/tablet do you have?"
+msgstr "Sizda qanday rusumli telefon/planshet bor?"
+
+msgid "Download the Authenticator App from the "
+msgstr ""
+
+msgid "In the Authenticator App select "
+msgstr ""
+
+msgid "Begin setup."
+msgstr "Sozlashni boshlang."
+
+msgid "Choose "
+msgstr ""
+
+msgid "Scan a barcode."
+msgstr "Shtrix kodni skanerlang"
+
+msgid ""
+"With 2-Factor authentication turned on you will be asked to enter a second "
+"verification code when you log in. To generate this verification code you "
+"must use the Authenticator app. If you do not have this app you must "
+"download it on your phone/tablet."
+msgstr ""
+"2 omilli autentifikatsiya yoqilganda, tizimga kirish vaqtida sizdan ikkinchi"
+" tekshiruv kodini kiritishingiz soʼraladi. Ushbu tasdiqlash kodini yaratish "
+"uchun siz Аutentifikator Ilovasidan foylanishingiz lozim. Аgar sizda ushbu "
+"dastur mavjud boʼlmasa, uni telefon/planshetga yuklab olishingiz kerak "
+"boʼladi."
+
+msgid "Failed to upload profile picture"
+msgstr "Profil rasmini yangilash amalga oshmadi"
+
+msgid "Profile picture"
+msgstr "Profil rasmi"
+
+msgid "No profile picture available"
+msgstr "Profil rasmi mavjud emas"
+
+msgid "Select profile picture"
+msgstr "Profil rasmini tanlash"
+
+msgid "Remove profile picture"
+msgstr "Profil rasmini olib tashlash"
+
+msgid "This field is required"
+msgstr "Ushbu qator toʼldirilishi shart"
+
+msgid "This field should be a URL"
+msgstr ""
+
+msgid "This field should contain a list of URLs"
+msgstr "Ushbu maydon URL manzillar roʼyxatini oʼz ichiga olishi kerak"
+
+msgid "This field should be a number"
+msgstr "Ushbu maydonda raqam boʼlishi lozim"
+
+msgid "This field should be a positive number"
+msgstr "Ushbu maydonda musbat raqam boʼlishi lozim"
+
+msgid "This field should be an email"
+msgstr ""
+
+msgid "Please enter a valid international phone number (+0123456789)"
+msgstr "Iltimos, xalqaro telefon raqami formatida kiriting (+0123456789)"
+
+msgid "No value"
+msgstr "Qiymat yoʼq"
+
+msgid "Use system default"
+msgstr "Standart tizimdan foydalaning"
+
+msgid "No options"
+msgstr ""
+
+msgid "System default"
+msgstr "Standart tizimizim"
+
+msgid "Edit user profile"
+msgstr "Foydalanuvchi profilni tahrir qilish"
+
+msgid "Edit user settings"
+msgstr "Foydalanuvchi sozlamanlarini tahrir qilish"
+
+msgid "View full profile"
+msgstr "Profilni toʼliq koʼrish"
+
+msgid "About DHIS2"
+msgstr "DHIS2 Haqida"
+
+msgid "User profile updated"
+msgstr "Foydalanuvchi profili yangilandi"
+
+msgid "Failed to update user profile"
+msgstr "Foydalanuvchi profili yangilanishi amalga oshmadi"
+
+msgid "Settings updated"
+msgstr "Sozlamalar yangilandi"
+
+msgid "Failed to update settings"
+msgstr "Sozlamalar yangilanishi amalga oshmadi"
+
+msgid "First name"
+msgstr "Ism"
+
+msgid "Surname"
+msgstr "Familiya"
+
+msgid "Gender"
+msgstr "Jinsi"
+
+msgid "Male"
+msgstr "Erkak"
+
+msgid "Female"
+msgstr "Аyol"
+
+msgid "Other"
+msgstr "Boshqa"
+
+msgid "E-mail"
+msgstr "Elektron pochta"
+
+msgid "Mobile phone number"
+msgstr "Mobil telefon raqami"
+
+msgid "Introduction"
+msgstr "Tanishtirish"
+
+msgid "Job title"
+msgstr "Lavozim"
+
+msgid "User roles"
+msgstr "Foydalanuvchi rollari"
+
+msgid "User org units"
+msgstr "Foydalanuvchi tashkiliy boʼlimi"
+
+msgid "Birthday"
+msgstr "Tugilgan kun"
+
+msgid "Nationality"
+msgstr "Millati"
+
+msgid "Employer"
+msgstr "Ishga oluvchi"
+
+msgid "Education"
+msgstr "Maʼlumoti"
+
+msgid "Interests"
+msgstr "Qiziqishi"
+
+msgid "Languages"
+msgstr "Til"
+
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+msgid "Facebook Messenger"
+msgstr "Facebook Messenger"
+
+msgid "Skype"
+msgstr "Skype"
+
+msgid "Telegram"
+msgstr "Telegram"
+
+msgid "Twitter"
+msgstr "Telegram"
+
+msgid "Account editor"
+msgstr ""
+
+msgid "Interface language"
+msgstr "Interfeys tili"
+
+msgid "Database language"
+msgstr "Maʼlumotlar bazasi tili"
+
+msgid "Style"
+msgstr "Услуб"
+
+msgid "Property to display in analysis modules"
+msgstr "Tahlil modullarini namoyish etadigan xususiyat"
+
+msgid "Short name"
+msgstr "Qisqacha nomi"
+
+msgid "Enable message email notifications"
+msgstr "Elektron pochta xabarnomasini yoqish"
+
+msgid "Enable message SMS notifications"
+msgstr "SMS xabarnomasini yoqish"

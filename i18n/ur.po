@@ -1,268 +1,427 @@
 # 
 # Translators:
-# phil_dhis2, 2019
+# phil_dhis2, 2021
+# Viktor Varland <viktor@dhis2.org>, 2021
 # 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-01 00:28-0400\n"
-"PO-Revision-Date: 2019-09-02 16:41+0000\n"
-"Last-Translator: phil_dhis2, 2019\n"
+"Project-Id-Version: i18next-conv\n"
+"POT-Creation-Date: 2021-03-16T12:56:03.527Z\n"
+"PO-Revision-Date: 2021-03-17 23:49+0000\n"
+"Last-Translator: Viktor Varland <viktor@dhis2.org>, 2021\n"
 "Language-Team: Urdu (https://www.transifex.com/hisp-uio/teams/100509/ur/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ur\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 2.0.0b3\n"
 
-#: user_profile
-msgid "User profile"
-msgstr "صارف پروفائل"
+msgid "Never"
+msgstr "کبھی نہیں"
 
-#: account_settings
-msgid "Account settings"
-msgstr "اکاؤنٹ کی ترتیبات"
+msgid "Invalid date"
+msgstr ""
 
-#: user_settings
-msgid "User settings"
-msgstr "صارف کی ترتیبات"
+msgid "Web API"
+msgstr "ویب آ۔پی۔آئی"
 
-#: user_email_address
-msgid "E-mail"
-msgstr "ای میل"
+msgid "Browse it here"
+msgstr "یہاں براؤزر کرو"
 
-#: surname
-msgid "Surname"
-msgstr "پاس ورڈ"
+msgid "Current user"
+msgstr "موجودہ صارف"
 
-#: first_name
-msgid "First name"
-msgstr "پہلا نام"
+msgid "Version"
+msgstr "ورژن"
 
-#: old_password
-msgid "Old password"
-msgstr "پرانا پاسورڈ"
+msgid "Build revision"
+msgstr "بیلڈ ورژن"
 
-#: new_password
-msgid "New password"
-msgstr "نیا پاس ورڈ"
+msgid "Build date"
+msgstr "بیلڈ تاریخ"
 
-#: repeat_new_password
-msgid "Repeat new password"
-msgstr "نیا پاس ورڈ دوبارہ دو"
+msgid "Jasper reports version"
+msgstr "جیسپر ریپورٹ ورژن"
 
-#: openid
-msgid "OpenID"
-msgstr "اُوپن ای.ڈی"
+msgid "User agent"
+msgstr "یوزر ایجنٹ"
 
-#: username
-msgid "Username"
-msgstr "صارف کا نام"
+msgid "Server date"
+msgstr "تاریخ سرور پر"
 
-#: phone_number
-msgid "Mobile phone number"
-msgstr "موبائل فون نمبر"
+msgid "Last analytics table generation"
+msgstr "آخری تجزیاتی ٹیبل"
 
-#: job_title
-msgid "Job title"
-msgstr "ملازمت کا عنوان"
+msgid "Time since last analytics table generation"
+msgstr "آخری تجزیہ ٹیبل بنانے کا وقت"
 
-#: introduction
-msgid "Introduction"
-msgstr "تعارف"
+msgid "Last analytics table runtime"
+msgstr "آخری تجزیاتی کا رنٹائم"
 
-#: gender
-msgid "Gender"
-msgstr "صنف"
+msgid "Last continuous analytics table update"
+msgstr ""
 
-#: male
-msgctxt "male"
-msgid "Male"
-msgstr "مرد"
+msgid "Time since last continuous analytics table update"
+msgstr ""
 
-#: female
-msgctxt "female"
-msgid "Female"
-msgstr "عورت"
+msgid "Last continuous analytics table runtime"
+msgstr ""
 
-#: other
-msgctxt "other"
-msgid "Other"
-msgstr "دیگر"
+msgid "Environment variable"
+msgstr "اِنورمنٹ وریبل"
 
-#: gender_male
-msgctxt "gender_male"
-msgid "Male"
-msgstr "مرد"
+msgid "System ID"
+msgstr ""
 
-#: gender_female
-msgctxt "gender_female"
-msgid "Female"
-msgstr "عورت"
+msgid "Last monitoring success"
+msgstr ""
 
-#: gender_other
-msgctxt "gender_other"
-msgid "Other"
-msgstr "دیگر"
+msgid "External configuration directory"
+msgstr "بیرونی ترتیب کا فلوڈر"
 
-#: birthday
-msgid "Birthday"
-msgstr "سالگرہ"
+msgid "File store provider"
+msgstr "فائل سٹور فرام کنندہ"
 
-#: nationality
-msgid "Nationality"
-msgstr "قومیت"
+msgid "Node ID"
+msgstr "نوڈ کی شناخت"
 
-#: employer
-msgid "Employer"
-msgstr "ملازم"
+msgid "Cache provider"
+msgstr "کیش فراہم کنندہ"
 
-#: education
-msgid "Education"
-msgstr "تعلیم"
+msgid "Read replica count"
+msgstr "ڑیڈ نقل کی تعداد"
 
-#: interests
-msgid "Interests"
-msgstr "دلچسپی"
+msgid "Java opts"
+msgstr "جاؤا آپشنز"
 
-#: languages
-msgid "Languages"
-msgstr "زبانیں"
+msgid "Java version"
+msgstr "جاؤا ورژن"
 
-#: update_user_profile_success
-msgid "User profile updated"
-msgstr "صارف کا پروفائل اپ ڈیٹ"
+msgid "Java vendor"
+msgstr "جاؤا وینڈت"
 
-#: settings
-msgid "Settings"
-msgstr "ترتیبات"
+msgid "OS name"
+msgstr "آپریٹنگ سسٹم نام"
 
-#: property_to_display_in_analysis_modules
-msgctxt "property_to_display_in_analysis_modules"
-msgid "Property to display in analysis modules"
-msgstr "جائیداد تجزیہ ماڈیولز میں ظاہر کرنے کے لئے"
+msgid "OS architecture"
+msgstr "آپریٹنگ سسٹم فن تعمیر"
 
-#: general
-msgid "General"
-msgstr "جنرل"
+msgid "OS version"
+msgstr "آپریٹنگ سسٹم ورژن"
 
-#: message
-msgid "Message"
-msgstr "پیغام"
+msgid "Memory info"
+msgstr ""
 
-#: settings_updated
-msgid "Settings updated"
-msgstr "ترتیبات اپ ڈیٹ"
+msgid "CPU cores"
+msgstr "سی.پی.یو کورز"
 
-#: failed_to_update_settings
-msgid "Failed to update settings"
-msgstr "ترتیبات کو اپ ڈیٹ کرنے میں ناکام"
+msgid "Calendar"
+msgstr "کیلنڈر"
 
-#: style
-msgid "Style"
-msgstr "انداز"
-
-#: db_language
-msgid "Database language"
-msgstr "ڈیٹا بیس زبان"
-
-#: language
-msgid "Interface language"
-msgstr "انٹرفیس زبان"
-
-#: enable_message_email_notifications
-msgid "Enable message email notifications"
-msgstr "پیغام ای میل اطلاعات کو فعال کریں"
-
-#: enable_message_sms_notifications
-msgid "Enable message SMS notifications"
-msgstr "ایس ایم ایس کی اطلاعات کو فعال کریں"
-
-#: analysis_module
-msgctxt "analysis_module"
-msgid "Property to display in analysis modules"
-msgstr "جائیداد تجزیہ ماڈیولز میں ظاہر کرنے کے لئے"
-
-#: name
 msgid "Name"
-msgstr "نام"
+msgstr "ÙØ§Ù"
 
-#: short_name
-msgid "Short name"
-msgstr "مختصر نام"
+msgid "User"
+msgstr "صارف"
 
-#: system_default
-msgid "System default"
-msgstr "سسٹم ڈیفالٹ"
-
-#: value_should_be_an_email
-msgid "Please enter a valid email address"
-msgstr "برائے مہربانی قابل قبول ای میل ایڈریس لکھیں"
-
-#: update_user_profile_fail
-msgid "Failed to update user profile"
-msgstr "صارف پروفائل کو اپ ڈیٹ کرنے میں ناکام"
-
-#: update_settings_fail
-msgid "Fialed to update user settings"
-msgstr "صارف ترتیبات کو اپ ڈیٹ کرنے کے لئے Fialed"
-
-#: update_password
-msgid "Update password"
-msgstr "پاس ورڈ اپ ڈیٹ کریں"
-
-#: invalid_password
-msgid ""
-"Password should be at least 8 characters with at least 1 digit and 1 "
-"uppercase letter"
+msgid "Spatial support"
 msgstr ""
-"پاس ورڈ کم از کم 8 حروف ہونا چاہئے جس میں کم سے کم 1 ہندسوں اور 1 بڑے حروف "
-"موجود ہو"
 
-#: passwords_do_not_match
-msgid "The entered values do not match. Please re-enter."
-msgstr "درج کردہ اقدار مماثل نہیں ہیں. دوبارہ درج کریں."
+msgid "System info"
+msgstr ""
 
-#: use_system_default
-msgid "Use system default"
-msgstr "سسٹم ڈیفالٹ کا استعمال کریں"
+msgid "Database"
+msgstr ""
 
-#: true_notifications
-msgid "Yes"
-msgstr "جی ہاں"
+msgid "Edit account settings"
+msgstr ""
 
-#: false_notifications
-msgid "No"
-msgstr "نہیں"
-
-#: value_required
-msgid "This field can't be left blank"
-msgstr "یہ فیلڈ خالی نہیں جا سکتا"
-
-#: please_enter_the_correct_password
-msgid "Please enter the correct password"
-msgstr "براہ مہربانی درست پاس ورڈ درج کریں"
-
-#: no_changes_have_been_made
 msgid "No changes have been made"
-msgstr "کوئی تبدیلیاں نہیں کی گئی ہیں"
+msgstr "Ú©ÙØ¦Û ØªØ¨Ø¯ÛÙÛØ§Úº ÙÛÛÚº Ú©Û Ú¯Ø¦Û ÛÛÚº"
 
-#: validating_please_try_again
 msgid "The form is currently being validated. Please try again."
-msgstr "فارم فی الحال اس کی توثیق کی جا رہی ہے. دوبارہ کوشش کریں."
+msgstr "ÙØ§Ø±Ù"
 
-#: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
+msgstr "ÙØ§Ø±Ù"
+
+msgid "The entered values do not match. Please re-enter."
+msgstr "Ø¯Ø±Ø¬ Ú©Ø±Ø¯Û Ø§ÙØ¯Ø§Ø± Ù"
+
+msgid "Please provide your old password"
 msgstr ""
-"فارم میں غلطیاں شامل ہیں. براہ کرم غلطیوں کو ٹھیک کریں اور دوبارہ کوشش کریں."
 
-#: password_update_success
-msgid "Your password was updated successfully"
-msgstr "آپ کا پاس ورڈ کامیابی سے اپ ڈیٹ کیا گیا تھا"
+msgid "Username"
+msgstr "ØµØ§Ø±Ù Ú©Ø§ ÙØ§Ù"
 
-#: password_update_failed
+msgid "Old password"
+msgstr "Ù¾Ø±Ø§ÙØ§ Ù¾Ø§Ø³ÙØ±Ú"
+
+msgid "This field can't be left blank"
+msgstr "ÛÛ ÙÛÙÚ Ø®Ø§ÙÛ ÙÛÛÚº Ø¬Ø§ Ø³Ú©ØªØ§"
+
+msgid "New password"
+msgstr "ÙÛØ§ Ù¾Ø§Ø³ ÙØ±Ú"
+
+msgid ""
+"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
+"letter and 1 special character"
+msgstr ""
+
+msgid "Repeat new password"
+msgstr "ÙÛØ§ Ù¾Ø§Ø³ ÙØ±Ú Ø¯ÙØ¨Ø§Ø±Û Ø¯Ù"
+
+msgid "Setup 2-Factor"
+msgstr ""
+
+msgid "Update password"
+msgstr "Ù¾Ø§Ø³ ÙØ±Ú Ø§Ù¾ ÚÛÙ¹ Ú©Ø±ÛÚº"
+
+msgid ""
+"This account is linked to an OpenID Connect identity. Visit the Open ID "
+"Connect provider to manage this account's settings."
+msgstr ""
+
+msgid "Password changed successfully"
+msgstr ""
+
+msgid "You need to login again to continue using the application."
+msgstr ""
+
+msgid "Login"
+msgstr ""
+
 msgid "Failed to update password"
-msgstr "پاس ورڈ کو اپ ڈیٹ کرنے میں ناکام"
+msgstr "Ù¾Ø§Ø³ ÙØ±Ú Ú©Ù Ø§Ù¾ ÚÛÙ¹ Ú©Ø±ÙÛ Ù"
+
+msgid "2-Factor successfully turned ON"
+msgstr ""
+
+msgid "2-Factor successfully turned OFF"
+msgstr ""
+
+msgid "Failed to turn ON 2-Factor"
+msgstr ""
+
+msgid "Failed to turn OFF 2-Factor"
+msgstr ""
+
+msgid "Barcode/QR code to scan"
+msgstr ""
+
+msgid "No"
+msgstr "ÙÛÛÚº"
+
+msgid "Yes"
+msgstr "Ø¬Û ÛØ§Úº"
+
+msgid "Turn OFF"
+msgstr ""
+
+msgid "Turn ON"
+msgstr ""
+
+msgid "2-Factor Verification is ON"
+msgstr ""
+
+msgid "2-Factor Verification is OFF"
+msgstr ""
+
+msgid "Do you want to turn OFF 2-Factor?"
+msgstr ""
+
+msgid "Do you want to turn ON 2-Factor?"
+msgstr ""
+
+msgid "Download the Authenticator app"
+msgstr ""
+
+msgid "What kind of phone/tablet do you have?"
+msgstr ""
+
+msgid "Download the Authenticator App from the "
+msgstr ""
+
+msgid "In the Authenticator App select "
+msgstr ""
+
+msgid "Begin setup."
+msgstr ""
+
+msgid "Choose "
+msgstr ""
+
+msgid "Scan a barcode."
+msgstr ""
+
+msgid ""
+"With 2-Factor authentication turned on you will be asked to enter a second "
+"verification code when you log in. To generate this verification code you "
+"must use the Authenticator app. If you do not have this app you must "
+"download it on your phone/tablet."
+msgstr ""
+
+msgid "Failed to upload profile picture"
+msgstr ""
+
+msgid "Profile picture"
+msgstr ""
+
+msgid "No profile picture available"
+msgstr ""
+
+msgid "Select profile picture"
+msgstr ""
+
+msgid "Remove profile picture"
+msgstr ""
+
+msgid "This field is required"
+msgstr "اس کو پر کرنا ضروری ہے"
+
+msgid "This field should be a URL"
+msgstr ""
+
+msgid "This field should contain a list of URLs"
+msgstr "اس فیلڈ کو یو آر ایل کی فہرست پر مشتمل ہونا چاہئے"
+
+msgid "This field should be a number"
+msgstr "یہ فیلڈ ایک نمبر ہونا چاہئے"
+
+msgid "This field should be a positive number"
+msgstr "یہ میدان ایک مثبت نمبر ہونا چاہئے"
+
+msgid "This field should be an email"
+msgstr ""
+
+msgid "Please enter a valid international phone number (+0123456789)"
+msgstr ""
+
+msgid "No value"
+msgstr "Ú©ÙØ¦Û ÙØ¯Ø± ÙÛÛÚº"
+
+msgid "Use system default"
+msgstr "Ø³Ø³Ù¹Ù"
+
+msgid "No options"
+msgstr ""
+
+msgid "System default"
+msgstr "Ø³Ø³Ù¹Ù"
+
+msgid "Edit user profile"
+msgstr ""
+
+msgid "Edit user settings"
+msgstr ""
+
+msgid "View full profile"
+msgstr "Ù¾Ø±ÙÙØ§Ø¦Ù Ú©Ø§ Ù"
+
+msgid "About DHIS2"
+msgstr ""
+
+msgid "User profile updated"
+msgstr "ØµØ§Ø±Ù Ú©Ø§ Ù¾Ø±ÙÙØ§Ø¦Ù Ø§Ù¾ ÚÛÙ¹"
+
+msgid "Failed to update user profile"
+msgstr "ØµØ§Ø±Ù Ù¾Ø±ÙÙØ§Ø¦Ù Ú©Ù Ø§Ù¾ ÚÛÙ¹ Ú©Ø±ÙÛ Ù"
+
+msgid "Settings updated"
+msgstr "ØªØ±ØªÛØ¨Ø§Øª Ø§Ù¾ ÚÛÙ¹"
+
+msgid "Failed to update settings"
+msgstr "ØªØ±ØªÛØ¨Ø§Øª Ú©Ù Ø§Ù¾ ÚÛÙ¹ Ú©Ø±ÙÛ Ù"
+
+msgid "First name"
+msgstr "Ù¾ÛÙØ§ ÙØ§Ù"
+
+msgid "Surname"
+msgstr "Ù¾Ø§Ø³ ÙØ±Ú"
+
+msgid "Gender"
+msgstr "ØµÙÙ"
+
+msgid "Male"
+msgstr "Ù"
+
+msgid "Female"
+msgstr "Ø¹ÙØ±Øª"
+
+msgid "Other"
+msgstr "Ø¯ÛÚ¯Ø±"
+
+msgid "E-mail"
+msgstr "Ø§Û Ù"
+
+msgid "Mobile phone number"
+msgstr "Ù"
+
+msgid "Introduction"
+msgstr "ØªØ¹Ø§Ø±Ù"
+
+msgid "Job title"
+msgstr "Ù"
+
+msgid "User roles"
+msgstr "ØµØ§Ø±Ù Ú©Û Ú©Ø±Ø¯Ø§Ø±"
+
+msgid "User org units"
+msgstr "ØµØ§Ø±Ù Ú©Û Ø§Ø¬Ø²Ø§Ø¡"
+
+msgid "Birthday"
+msgstr "Ø³Ø§ÙÚ¯Ø±Û"
+
+msgid "Nationality"
+msgstr "ÙÙÙ"
+
+msgid "Employer"
+msgstr "Ù"
+
+msgid "Education"
+msgstr "ØªØ¹ÙÛÙ"
+
+msgid "Interests"
+msgstr "Ø¯ÙÚØ³Ù¾Û"
+
+msgid "Languages"
+msgstr "Ø²Ø¨Ø§ÙÛÚº"
+
+msgid "WhatsApp"
+msgstr ""
+
+msgid "Facebook Messenger"
+msgstr ""
+
+msgid "Skype"
+msgstr ""
+
+msgid "Telegram"
+msgstr ""
+
+msgid "Twitter"
+msgstr ""
+
+msgid "Account editor"
+msgstr ""
+
+msgid "Interface language"
+msgstr "Ø§ÙÙ¹Ø±ÙÛØ³ Ø²Ø¨Ø§Ù"
+
+msgid "Database language"
+msgstr "ÚÛÙ¹Ø§ Ø¨ÛØ³ Ø²Ø¨Ø§Ù"
+
+msgid "Style"
+msgstr "سٹائل"
+
+msgid "Property to display in analysis modules"
+msgstr "Ø¬Ø§Ø¦ÛØ¯Ø§Ø¯ ØªØ¬Ø²ÛÛ Ù"
+
+msgid "Short name"
+msgstr "Ù"
+
+msgid "Enable message email notifications"
+msgstr "Ù¾ÛØºØ§Ù"
+
+msgid "Enable message SMS notifications"
+msgstr "Ø§ÛØ³ Ø§ÛÙ"

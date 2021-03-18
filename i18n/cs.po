@@ -1,266 +1,434 @@
 # 
 # Translators:
-# trendspotter, 2020
+# trendspotter, 2021
 # 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-01 00:28-0400\n"
-"PO-Revision-Date: 2019-09-02 16:41+0000\n"
-"Last-Translator: trendspotter, 2020\n"
+"Project-Id-Version: i18next-conv\n"
+"POT-Creation-Date: 2021-03-16T12:56:03.527Z\n"
+"PO-Revision-Date: 2021-03-17 23:49+0000\n"
+"Last-Translator: trendspotter, 2021\n"
 "Language-Team: Czech (https://www.transifex.com/hisp-uio/teams/100509/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: cs\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
-"X-Generator: Translate Toolkit 2.0.0b3\n"
 
-#: user_profile
-msgid "User profile"
-msgstr "Uživatelský profil"
+msgid "Never"
+msgstr "Nikdy"
 
-#: account_settings
-msgid "Account settings"
-msgstr "Nastavení účtu"
+msgid "Invalid date"
+msgstr "Neplatné datum"
 
-#: user_settings
-msgid "User settings"
-msgstr "Uživatelské nastavení"
+msgid "Web API"
+msgstr "Webové rozhraní API"
 
-#: user_email_address
-msgid "E-mail"
-msgstr "E-mail"
+msgid "Browse it here"
+msgstr "Prohlédněte si jej zde"
 
-#: surname
-msgid "Surname"
-msgstr "Příjmení"
+msgid "Current user"
+msgstr "Současný uživatel"
 
-#: first_name
-msgid "First name"
-msgstr "Jméno"
+msgid "Version"
+msgstr "Verze"
 
-#: old_password
-msgid "Old password"
-msgstr "Staré heslo"
+msgid "Build revision"
+msgstr "Revize sestavení"
 
-#: new_password
-msgid "New password"
-msgstr "Nové heslo"
+msgid "Build date"
+msgstr "Datum sestavení"
 
-#: repeat_new_password
-msgid "Repeat new password"
-msgstr "opakujte nové heslo"
+msgid "Jasper reports version"
+msgstr "verze Jasper reports"
 
-#: openid
-msgid "OpenID"
-msgstr "OpenID"
+msgid "User agent"
+msgstr "Uživatelský agent"
 
-#: username
-msgid "Username"
-msgstr "Uživatelské jméno"
+msgid "Server date"
+msgstr "Datum serveru"
 
-#: phone_number
-msgid "Mobile phone number"
-msgstr "Číslo mobilního telefonu"
+msgid "Last analytics table generation"
+msgstr "Poslední generace analytické tabulky"
 
-#: job_title
-msgid "Job title"
-msgstr "Pracovní pozice"
+msgid "Time since last analytics table generation"
+msgstr "Čas od posledního generování analytické tabulky"
 
-#: introduction
-msgid "Introduction"
-msgstr "Úvod"
+msgid "Last analytics table runtime"
+msgstr "Poslední běh analytické tabulky"
 
-#: gender
-msgid "Gender"
-msgstr "pohlaví"
+msgid "Last continuous analytics table update"
+msgstr "Poslední průběžná aktualizace analytické tabulky"
 
-#: male
-msgctxt "male"
-msgid "Male"
-msgstr "Male"
+msgid "Time since last continuous analytics table update"
+msgstr "Čas od poslední průběžné aktualizace analytické tabulky"
 
-#: female
-msgctxt "female"
-msgid "Female"
-msgstr "Žena"
+msgid "Last continuous analytics table runtime"
+msgstr "Poslední průběžné spuštění analytické tabulky"
 
-#: other
-msgctxt "other"
-msgid "Other"
-msgstr "jiný"
+msgid "Environment variable"
+msgstr "Proměnné prostředí"
 
-#: gender_male
-msgctxt "gender_male"
-msgid "Male"
-msgstr "Male"
+msgid "System ID"
+msgstr "System ID"
 
-#: gender_female
-msgctxt "gender_female"
-msgid "Female"
-msgstr "Žena"
+msgid "Last monitoring success"
+msgstr "Úspěch posledního monitoringu"
 
-#: gender_other
-msgctxt "gender_other"
-msgid "Other"
-msgstr "jiný"
+msgid "External configuration directory"
+msgstr "Externí konfigurační adresář"
 
-#: birthday
-msgid "Birthday"
-msgstr "Narozeniny"
+msgid "File store provider"
+msgstr "Poskytovatel úložiště souborů"
 
-#: nationality
-msgid "Nationality"
-msgstr "Státní příslušnost"
+msgid "Node ID"
+msgstr "Node ID"
 
-#: employer
-msgid "Employer"
-msgstr "Zaměstnavatel"
+msgid "Cache provider"
+msgstr "Poskytovatel mezipaměti"
 
-#: education
-msgid "Education"
-msgstr "Vzdělání"
+msgid "Read replica count"
+msgstr "Přečíst počet replik"
 
-#: interests
-msgid "Interests"
-msgstr "Zájmy"
+msgid "Java opts"
+msgstr "Java opts"
 
-#: languages
-msgid "Languages"
-msgstr "Jazyky"
+msgid "Java version"
+msgstr "Java verze"
 
-#: update_user_profile_success
-msgid "User profile updated"
-msgstr "Uživatelský profil byl aktualizován"
+msgid "Java vendor"
+msgstr "Poskytovatel Java"
 
-#: settings
-msgid "Settings"
-msgstr "Nastavení"
+msgid "OS name"
+msgstr "Název OS"
 
-#: property_to_display_in_analysis_modules
-msgctxt "property_to_display_in_analysis_modules"
-msgid "Property to display in analysis modules"
-msgstr "Vlastnost k zobrazení v analytických modulech"
+msgid "OS architecture"
+msgstr "Architektura OS"
 
-#: general
-msgid "General"
-msgstr "Všeobecné"
+msgid "OS version"
+msgstr "Verze OS"
 
-#: message
-msgid "Message"
-msgstr "Zpráva"
+msgid "Memory info"
+msgstr "Informace o paměti"
 
-#: settings_updated
-msgid "Settings updated"
-msgstr "nastavení aktualizováno"
+msgid "CPU cores"
+msgstr "Jádra CPU"
 
-#: failed_to_update_settings
-msgid "Failed to update settings"
-msgstr "Nastavení se nepodařilo aktualizovat"
+msgid "Calendar"
+msgstr "Kalendář"
 
-#: style
-msgid "Style"
-msgstr "Styl"
-
-#: db_language
-msgid "Database language"
-msgstr "Jazyk databáze"
-
-#: language
-msgid "Interface language"
-msgstr "Jazyk rozhraní"
-
-#: enable_message_email_notifications
-msgid "Enable message email notifications"
-msgstr "Povolit e-mailová upozornění na zprávy"
-
-#: enable_message_sms_notifications
-msgid "Enable message SMS notifications"
-msgstr "Povolit upozornění na zprávy SMS"
-
-#: analysis_module
-msgctxt "analysis_module"
-msgid "Property to display in analysis modules"
-msgstr "Vlastnost k zobrazení v analytických modulech"
-
-#: name
 msgid "Name"
 msgstr "Název"
 
-#: short_name
-msgid "Short name"
-msgstr "Krátký název"
+msgid "User"
+msgstr "Uživatel"
 
-#: system_default
-msgid "System default"
-msgstr "Výchozí systém"
+msgid "Spatial support"
+msgstr "Prostorová podpora"
 
-#: value_should_be_an_email
-msgid "Please enter a valid email address"
-msgstr "Zadejte platnou emailovou adresu"
+msgid "System info"
+msgstr "Systémová informace"
 
-#: update_user_profile_fail
-msgid "Failed to update user profile"
-msgstr "Aktualizace uživatelského profilu se nezdařila"
+msgid "Database"
+msgstr "Databáze"
 
-#: update_settings_fail
-msgid "Fialed to update user settings"
-msgstr "Aktualizace uživatelských nastavení se nezdařila"
+msgid "Edit account settings"
+msgstr "Upravit nastavení účtu"
 
-#: update_password
-msgid "Update password"
-msgstr "Aktualizovat heslo"
-
-#: invalid_password
-msgid ""
-"Password should be at least 8 characters with at least 1 digit and 1 "
-"uppercase letter"
-msgstr ""
-"Heslo by mělo mít alespoň 8 znaků s alespoň 1 číslicí a 1 velkým písmenem"
-
-#: passwords_do_not_match
-msgid "The entered values do not match. Please re-enter."
-msgstr "Zadané hodnoty se neshodují. Zadejte znovu."
-
-#: use_system_default
-msgid "Use system default"
-msgstr "Použít výchozí nastavení systému"
-
-#: true_notifications
-msgid "Yes"
-msgstr "Ano"
-
-#: false_notifications
-msgid "No"
-msgstr "Ne"
-
-#: value_required
-msgid "This field can't be left blank"
-msgstr "Toto pole nesmí zůstat prázdné"
-
-#: please_enter_the_correct_password
-msgid "Please enter the correct password"
-msgstr "Zadejte správné heslo"
-
-#: no_changes_have_been_made
 msgid "No changes have been made"
 msgstr "Nebyly provedeny žádné změny"
 
-#: validating_please_try_again
 msgid "The form is currently being validated. Please try again."
 msgstr "Formulář se aktuálně ověřuje. Prosím zkuste to znovu."
 
-#: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
 msgstr "Formulář obsahuje chyby. Opravte chyby a zkuste to znovu."
 
-#: password_update_success
-msgid "Your password was updated successfully"
-msgstr "Vaše heslo bylo úspěšně aktualizováno"
+msgid "The entered values do not match. Please re-enter."
+msgstr "Zadané hodnoty se neshodují. Zadejte znovu."
 
-#: password_update_failed
+msgid "Please provide your old password"
+msgstr "Uveďte prosím své staré heslo"
+
+msgid "Username"
+msgstr "Uživatelské jméno"
+
+msgid "Old password"
+msgstr "Staré heslo"
+
+msgid "This field can't be left blank"
+msgstr "Toto pole nesmí zůstat prázdné"
+
+msgid "New password"
+msgstr "Nové heslo"
+
+msgid ""
+"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
+"letter and 1 special character"
+msgstr ""
+"Heslo by mělo mít alespoň 8 znaků, alespoň 1 číslici, 1 velké písmeno a 1 "
+"speciální znak"
+
+msgid "Repeat new password"
+msgstr "opakujte nové heslo"
+
+msgid "Setup 2-Factor"
+msgstr "Nastavit 2-faktor"
+
+msgid "Update password"
+msgstr "Aktualizovat heslo"
+
+msgid ""
+"This account is linked to an OpenID Connect identity. Visit the Open ID "
+"Connect provider to manage this account's settings."
+msgstr ""
+"Tento účet je propojen s identitou OpenID Connect. Chcete-li spravovat "
+"nastavení tohoto účtu, navštivte poskytovatele Open ID Connect."
+
+msgid "Password changed successfully"
+msgstr "heslo bylo úspěšně změněno"
+
+msgid "You need to login again to continue using the application."
+msgstr "Chcete-li pokračovat v používání aplikace, musíte se znovu přihlásit."
+
+msgid "Login"
+msgstr "Přihlásit se"
+
 msgid "Failed to update password"
 msgstr "Aktualizace hesla se nezdařila"
+
+msgid "2-Factor successfully turned ON"
+msgstr "2-faktor byl úspěšně zapnut"
+
+msgid "2-Factor successfully turned OFF"
+msgstr "2-faktor byl úspěšně vypnut"
+
+msgid "Failed to turn ON 2-Factor"
+msgstr "Nepodařilo se zapnout 2-faktor"
+
+msgid "Failed to turn OFF 2-Factor"
+msgstr "Nepodařilo se vypnout 2-faktorové přihlašování"
+
+msgid "Barcode/QR code to scan"
+msgstr "Čárový kód / QR kód ke skenování"
+
+msgid "No"
+msgstr "Ne"
+
+msgid "Yes"
+msgstr "Ano"
+
+msgid "Turn OFF"
+msgstr "Vypnout"
+
+msgid "Turn ON"
+msgstr "Zapnout"
+
+msgid "2-Factor Verification is ON"
+msgstr "2-faktorové ověření je ZAPNUTÉ"
+
+msgid "2-Factor Verification is OFF"
+msgstr "2-faktorové ověření je VYPNUTO"
+
+msgid "Do you want to turn OFF 2-Factor?"
+msgstr "Chcete vypnout 2-faktor?"
+
+msgid "Do you want to turn ON 2-Factor?"
+msgstr "Chcete zapnout 2-faktor?"
+
+msgid "Download the Authenticator app"
+msgstr "Stáhnout aplikaci Authenticator"
+
+msgid "What kind of phone/tablet do you have?"
+msgstr "Jaký máte telefon / tablet?"
+
+msgid "Download the Authenticator App from the "
+msgstr "Stáhněte si aplikaci Authenticator z"
+
+msgid "In the Authenticator App select "
+msgstr "V aplikaci Authenticator vyberte"
+
+msgid "Begin setup."
+msgstr "Zahajte nastavení."
+
+msgid "Choose "
+msgstr "Vybrat"
+
+msgid "Scan a barcode."
+msgstr "Naskenujte čárový kód."
+
+msgid ""
+"With 2-Factor authentication turned on you will be asked to enter a second "
+"verification code when you log in. To generate this verification code you "
+"must use the Authenticator app. If you do not have this app you must "
+"download it on your phone/tablet."
+msgstr ""
+"Při zapnutém 2-faktorovém ověřování budete při přihlášení vyzváni k zadání "
+"druhého ověřovacího kódu. Chcete-li vygenerovat tento ověřovací kód, musíte "
+"použít aplikaci Authenticator. Pokud tuto aplikaci nemáte, musíte si ji "
+"stáhnout do telefonu / tabletu."
+
+msgid "Failed to upload profile picture"
+msgstr "Nepodařilo se nahrát profilový obrázek"
+
+msgid "Profile picture"
+msgstr "Profilový obrázek"
+
+msgid "No profile picture available"
+msgstr "Žádný profilový obrázek není k dispozici"
+
+msgid "Select profile picture"
+msgstr "Vyberte profilový obrázek"
+
+msgid "Remove profile picture"
+msgstr "Odebrat profilový obrázek"
+
+msgid "This field is required"
+msgstr "Toto pole je povinné"
+
+msgid "This field should be a URL"
+msgstr "Toto pole by mělo být URL"
+
+msgid "This field should contain a list of URLs"
+msgstr "Toto pole by mělo obsahovat seznam adres URL"
+
+msgid "This field should be a number"
+msgstr "Toto pole by mělo být číslo"
+
+msgid "This field should be a positive number"
+msgstr "Toto pole by mělo být kladné číslo"
+
+msgid "This field should be an email"
+msgstr "Toto pole by měl být e-mail"
+
+msgid "Please enter a valid international phone number (+0123456789)"
+msgstr "Zadejte platné mezinárodní telefonní číslo (+0123456789)"
+
+msgid "No value"
+msgstr "Žádná hodnota"
+
+msgid "Use system default"
+msgstr "Použít výchozí nastavení systému"
+
+msgid "No options"
+msgstr "Žádné možnosti"
+
+msgid "System default"
+msgstr "Výchozí systém"
+
+msgid "Edit user profile"
+msgstr "Upravit uživatelský profil"
+
+msgid "Edit user settings"
+msgstr "Upravit uživatelské nastavení"
+
+msgid "View full profile"
+msgstr "Zobrazit celý profil"
+
+msgid "About DHIS2"
+msgstr "O DHIS2"
+
+msgid "User profile updated"
+msgstr "Uživatelský profil byl aktualizován"
+
+msgid "Failed to update user profile"
+msgstr "Aktualizace uživatelského profilu se nezdařila"
+
+msgid "Settings updated"
+msgstr "nastavení aktualizováno"
+
+msgid "Failed to update settings"
+msgstr "Nastavení se nepodařilo aktualizovat"
+
+msgid "First name"
+msgstr "Jméno"
+
+msgid "Surname"
+msgstr "Příjmení"
+
+msgid "Gender"
+msgstr "pohlaví"
+
+msgid "Male"
+msgstr "Male"
+
+msgid "Female"
+msgstr "Žena"
+
+msgid "Other"
+msgstr "jiný"
+
+msgid "E-mail"
+msgstr "E-mail"
+
+msgid "Mobile phone number"
+msgstr "Číslo mobilního telefonu"
+
+msgid "Introduction"
+msgstr "Úvod"
+
+msgid "Job title"
+msgstr "Pracovní pozice"
+
+msgid "User roles"
+msgstr "Uživatelské role"
+
+msgid "User org units"
+msgstr "Uživatelské organizační jednotky"
+
+msgid "Birthday"
+msgstr "Narozeniny"
+
+msgid "Nationality"
+msgstr "Státní příslušnost"
+
+msgid "Employer"
+msgstr "Zaměstnavatel"
+
+msgid "Education"
+msgstr "Vzdělání"
+
+msgid "Interests"
+msgstr "Zájmy"
+
+msgid "Languages"
+msgstr "Jazyky"
+
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+msgid "Facebook Messenger"
+msgstr "Facebook Messenger"
+
+msgid "Skype"
+msgstr "Skype"
+
+msgid "Telegram"
+msgstr "Telegram"
+
+msgid "Twitter"
+msgstr "Twitter"
+
+msgid "Account editor"
+msgstr "Editor účtu"
+
+msgid "Interface language"
+msgstr "Jazyk rozhraní"
+
+msgid "Database language"
+msgstr "Jazyk databáze"
+
+msgid "Style"
+msgstr "Styl"
+
+msgid "Property to display in analysis modules"
+msgstr "Vlastnost k zobrazení v analytických modulech"
+
+msgid "Short name"
+msgstr "Krátký název"
+
+msgid "Enable message email notifications"
+msgstr "Povolit e-mailová upozornění na zprávy"
+
+msgid "Enable message SMS notifications"
+msgstr "Povolit upozornění na zprávy SMS"
