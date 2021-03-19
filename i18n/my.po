@@ -1,265 +1,426 @@
 # 
 # Translators:
-# phil_dhis2, 2019
+# phil_dhis2, 2021
 # 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-01 00:28-0400\n"
-"PO-Revision-Date: 2019-09-02 16:41+0000\n"
-"Last-Translator: phil_dhis2, 2019\n"
+"Project-Id-Version: i18next-conv\n"
+"POT-Creation-Date: 2021-03-16T12:56:03.527Z\n"
+"PO-Revision-Date: 2021-03-17 23:49+0000\n"
+"Last-Translator: phil_dhis2, 2021\n"
 "Language-Team: Burmese (https://www.transifex.com/hisp-uio/teams/100509/my/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: my\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 2.0.0b3\n"
 
-#: user_profile
-msgid "User profile"
+msgid "Never"
 msgstr ""
 
-#: account_settings
-msgid "Account settings"
+msgid "Invalid date"
 msgstr ""
 
-#: user_settings
-msgid "User settings"
-msgstr "အသုံးပြုသူ၏စာရင်းတည်ဆောက်ထားသည့်အနေအထား"
-
-#: user_email_address
-msgid "E-mail"
-msgstr "အီးမေးလ်"
-
-#: surname
-msgid "Surname"
-msgstr "မျိုးရိုးအမည်"
-
-#: first_name
-msgid "First name"
-msgstr "ပထမအမည်"
-
-#: old_password
-msgid "Old password"
-msgstr "လျှို့ဝှက်ဂဏန်းအဟောင်း"
-
-#: new_password
-msgid "New password"
+msgid "Web API"
 msgstr ""
 
-#: repeat_new_password
-msgid "Repeat new password"
+msgid "Browse it here"
 msgstr ""
 
-#: openid
-msgid "OpenID"
+msgid "Current user"
+msgstr "လက်ရှိအသုံးပြုနေသူ"
+
+msgid "Version"
+msgstr "ထုတ်ဝေသည့်အကြိမ်"
+
+msgid "Build revision"
+msgstr "ထုတ်ဝေသည်"
+
+msgid "Build date"
+msgstr "ရက်သတ်မှတ်သည်"
+
+msgid "Jasper reports version"
 msgstr ""
 
-#: username
-msgid "Username"
-msgstr "အသုံးပြုသူအမည်"
+msgid "User agent"
+msgstr "အသုံးပြုသူ"
 
-#: phone_number
-msgid "Mobile phone number"
-msgstr "မိုဘိုင်းလ်ဖုန်းနံပါတ်"
+msgid "Server date"
+msgstr "ဆာဗာရှိရက်စွဲ"
 
-#: job_title
-msgid "Job title"
-msgstr "အလုပ်အကိုင်ခေါင်းစဉ်"
-
-#: introduction
-msgid "Introduction"
-msgstr "မိတ်ဆက်ခြင်း"
-
-#: gender
-msgid "Gender"
-msgstr "လိင်"
-
-#: male
-msgctxt "male"
-msgid "Male"
-msgstr "ကျား"
-
-#: female
-msgctxt "female"
-msgid "Female"
-msgstr "မ"
-
-#: other
-msgctxt "other"
-msgid "Other"
-msgstr "အခြား"
-
-#: gender_male
-msgctxt "gender_male"
-msgid "Male"
-msgstr "ကျား"
-
-#: gender_female
-msgctxt "gender_female"
-msgid "Female"
-msgstr "မ"
-
-#: gender_other
-msgctxt "gender_other"
-msgid "Other"
-msgstr "အခြား"
-
-#: birthday
-msgid "Birthday"
-msgstr "‌မွေးနေ့"
-
-#: nationality
-msgid "Nationality"
-msgstr "နိုင်ငံသား"
-
-#: employer
-msgid "Employer"
-msgstr "အလုပ်ရှင်"
-
-#: education
-msgid "Education"
-msgstr "ပညာအရည်အချင်း"
-
-#: interests
-msgid "Interests"
-msgstr "စိတ်ဝင်စားမှုများ"
-
-#: languages
-msgid "Languages"
-msgstr "ဘာသာစကားများ"
-
-#: update_user_profile_success
-msgid "User profile updated"
+msgid "Last analytics table generation"
 msgstr ""
 
-#: settings
-msgid "Settings"
-msgstr "တည်ဆောက်ထားသည့်အနေအထား"
-
-#: property_to_display_in_analysis_modules
-msgctxt "property_to_display_in_analysis_modules"
-msgid "Property to display in analysis modules"
-msgstr "အချက်အလက်များဆန်းစစ်ရာတွင်ဖော်ပြထားချက်များ"
-
-#: general
-msgid "General"
-msgstr "‌ယေဘုယျ"
-
-#: message
-msgid "Message"
-msgstr "သတင်း"
-
-#: settings_updated
-msgid "Settings updated"
+msgid "Time since last analytics table generation"
 msgstr ""
 
-#: failed_to_update_settings
-msgid "Failed to update settings"
+msgid "Last analytics table runtime"
 msgstr ""
 
-#: style
-msgid "Style"
-msgstr "ပုံစံ"
+msgid "Last continuous analytics table update"
+msgstr ""
 
-#: db_language
-msgid "Database language"
-msgstr "Database တွင်သုံးသောဘာသာစကား"
+msgid "Time since last continuous analytics table update"
+msgstr ""
 
-#: language
-msgid "Interface language"
-msgstr "အချက်အလက်များဖြည့်သွင်းရာတွင်သုံးသောဘာသာစကား"
+msgid "Last continuous analytics table runtime"
+msgstr ""
 
-#: enable_message_email_notifications
-msgid "Enable message email notifications"
-msgstr "အီးမေးလ်ဖြင့်သတိပေးစာပေးပို့ခြင်းကိုလက်ခံသည်"
+msgid "Environment variable"
+msgstr "ပတ်ဝန်းကျင်ဆိုင်ရာကွဲပြားချက်များ"
 
-#: enable_message_sms_notifications
-msgid "Enable message SMS notifications"
-msgstr "သတင်းတိုဖြင့်သတိပေးစာပေးပို့ခြင်းကိုလက်ခံသည်"
+msgid "System ID"
+msgstr ""
 
-#: analysis_module
-msgctxt "analysis_module"
-msgid "Property to display in analysis modules"
-msgstr "အချက်အလက်များဆန်းစစ်ရာတွင်ဖော်ပြထားချက်များ"
+msgid "Last monitoring success"
+msgstr ""
 
-#: name
+msgid "External configuration directory"
+msgstr "ပြင်ပအညွှန်းပြပုံ"
+
+msgid "File store provider"
+msgstr ""
+
+msgid "Node ID"
+msgstr ""
+
+msgid "Cache provider"
+msgstr ""
+
+msgid "Read replica count"
+msgstr ""
+
+msgid "Java opts"
+msgstr ""
+
+msgid "Java version"
+msgstr ""
+
+msgid "Java vendor"
+msgstr ""
+
+msgid "OS name"
+msgstr "အဓိကလုပ်ဆောင်နေသောစနစ်အမည်"
+
+msgid "OS architecture"
+msgstr "အဓိကလုပ်ဆောင်နေသောစနစ်တည်ဆောက်ပုံ"
+
+msgid "OS version"
+msgstr "အဓိကလုပ်ဆောင်နေသောစနစ်ထုတ်လုပ်သည့်အကြိမ်"
+
+msgid "Memory info"
+msgstr ""
+
+msgid "CPU cores"
+msgstr ""
+
+msgid "Calendar"
+msgstr ""
+
 msgid "Name"
 msgstr "အမည်"
 
-#: short_name
-msgid "Short name"
-msgstr "အမည်တို"
-
-#: system_default
-msgid "System default"
+msgid "User"
 msgstr ""
 
-#: value_should_be_an_email
-msgid "Please enter a valid email address"
+msgid "Spatial support"
 msgstr ""
 
-#: update_user_profile_fail
-msgid "Failed to update user profile"
+msgid "System info"
 msgstr ""
 
-#: update_settings_fail
-msgid "Fialed to update user settings"
+msgid "Database"
 msgstr ""
 
-#: update_password
-msgid "Update password"
+msgid "Edit account settings"
 msgstr ""
 
-#: invalid_password
-msgid ""
-"Password should be at least 8 characters with at least 1 digit and 1 "
-"uppercase letter"
-msgstr ""
-
-#: passwords_do_not_match
-msgid "The entered values do not match. Please re-enter."
-msgstr ""
-
-#: use_system_default
-msgid "Use system default"
-msgstr ""
-
-#: true_notifications
-msgid "Yes"
-msgstr "Yes"
-
-#: false_notifications
-msgid "No"
-msgstr "Nr"
-
-#: value_required
-msgid "This field can't be left blank"
-msgstr ""
-
-#: please_enter_the_correct_password
-msgid "Please enter the correct password"
-msgstr ""
-
-#: no_changes_have_been_made
 msgid "No changes have been made"
 msgstr ""
 
-#: validating_please_try_again
 msgid "The form is currently being validated. Please try again."
 msgstr ""
 
-#: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
 msgstr ""
 
-#: password_update_success
-msgid "Your password was updated successfully"
+msgid "The entered values do not match. Please re-enter."
 msgstr ""
 
-#: password_update_failed
+msgid "Please provide your old password"
+msgstr ""
+
+msgid "Username"
+msgstr "အသုံးပြုသူအမည်"
+
+msgid "Old password"
+msgstr "လျှို့ဝှက်ဂဏန်းအဟောင်း"
+
+msgid "This field can't be left blank"
+msgstr ""
+
+msgid "New password"
+msgstr ""
+
+msgid ""
+"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
+"letter and 1 special character"
+msgstr ""
+
+msgid "Repeat new password"
+msgstr ""
+
+msgid "Setup 2-Factor"
+msgstr ""
+
+msgid "Update password"
+msgstr ""
+
+msgid ""
+"This account is linked to an OpenID Connect identity. Visit the Open ID "
+"Connect provider to manage this account's settings."
+msgstr ""
+
+msgid "Password changed successfully"
+msgstr ""
+
+msgid "You need to login again to continue using the application."
+msgstr ""
+
+msgid "Login"
+msgstr ""
+
 msgid "Failed to update password"
 msgstr ""
+
+msgid "2-Factor successfully turned ON"
+msgstr ""
+
+msgid "2-Factor successfully turned OFF"
+msgstr ""
+
+msgid "Failed to turn ON 2-Factor"
+msgstr ""
+
+msgid "Failed to turn OFF 2-Factor"
+msgstr ""
+
+msgid "Barcode/QR code to scan"
+msgstr ""
+
+msgid "No"
+msgstr "No"
+
+msgid "Yes"
+msgstr "မှန်"
+
+msgid "Turn OFF"
+msgstr ""
+
+msgid "Turn ON"
+msgstr ""
+
+msgid "2-Factor Verification is ON"
+msgstr ""
+
+msgid "2-Factor Verification is OFF"
+msgstr ""
+
+msgid "Do you want to turn OFF 2-Factor?"
+msgstr ""
+
+msgid "Do you want to turn ON 2-Factor?"
+msgstr ""
+
+msgid "Download the Authenticator app"
+msgstr ""
+
+msgid "What kind of phone/tablet do you have?"
+msgstr ""
+
+msgid "Download the Authenticator App from the "
+msgstr ""
+
+msgid "In the Authenticator App select "
+msgstr ""
+
+msgid "Begin setup."
+msgstr ""
+
+msgid "Choose "
+msgstr ""
+
+msgid "Scan a barcode."
+msgstr ""
+
+msgid ""
+"With 2-Factor authentication turned on you will be asked to enter a second "
+"verification code when you log in. To generate this verification code you "
+"must use the Authenticator app. If you do not have this app you must "
+"download it on your phone/tablet."
+msgstr ""
+
+msgid "Failed to upload profile picture"
+msgstr ""
+
+msgid "Profile picture"
+msgstr ""
+
+msgid "No profile picture available"
+msgstr ""
+
+msgid "Select profile picture"
+msgstr ""
+
+msgid "Remove profile picture"
+msgstr ""
+
+msgid "This field is required"
+msgstr ""
+
+msgid "This field should be a URL"
+msgstr ""
+
+msgid "This field should contain a list of URLs"
+msgstr ""
+
+msgid "This field should be a number"
+msgstr ""
+
+msgid "This field should be a positive number"
+msgstr ""
+
+msgid "This field should be an email"
+msgstr ""
+
+msgid "Please enter a valid international phone number (+0123456789)"
+msgstr ""
+
+msgid "No value"
+msgstr "တန်ဖိုးမရှိပါ။"
+
+msgid "Use system default"
+msgstr ""
+
+msgid "No options"
+msgstr ""
+
+msgid "System default"
+msgstr ""
+
+msgid "Edit user profile"
+msgstr ""
+
+msgid "Edit user settings"
+msgstr ""
+
+msgid "View full profile"
+msgstr ""
+
+msgid "About DHIS2"
+msgstr ""
+
+msgid "User profile updated"
+msgstr ""
+
+msgid "Failed to update user profile"
+msgstr ""
+
+msgid "Settings updated"
+msgstr ""
+
+msgid "Failed to update settings"
+msgstr ""
+
+msgid "First name"
+msgstr "ပထမအမည်"
+
+msgid "Surname"
+msgstr "မျိုးရိုးအမည်"
+
+msgid "Gender"
+msgstr "လိင်"
+
+msgid "Male"
+msgstr "ကျား"
+
+msgid "Female"
+msgstr "မ"
+
+msgid "Other"
+msgstr "အခြား"
+
+msgid "E-mail"
+msgstr "အီးမေးလ်"
+
+msgid "Mobile phone number"
+msgstr "မိုဘိုင်းလ်ဖုန်းနံပါတ်"
+
+msgid "Introduction"
+msgstr "မိတ်ဆက်ခြင်း"
+
+msgid "Job title"
+msgstr "အလုပ်အကိုင်ခေါင်းစဉ်"
+
+msgid "User roles"
+msgstr "အသုံးပြုသူအဆင့်"
+
+msgid "User org units"
+msgstr ""
+
+msgid "Birthday"
+msgstr "‌မွေးနေ့"
+
+msgid "Nationality"
+msgstr "နိုင်ငံသား"
+
+msgid "Employer"
+msgstr "အလုပ်ရှင်"
+
+msgid "Education"
+msgstr "ပညာအရည်အချင်း"
+
+msgid "Interests"
+msgstr "စိတ်ဝင်စားမှုများ"
+
+msgid "Languages"
+msgstr "ဘာသာစကားများ"
+
+msgid "WhatsApp"
+msgstr ""
+
+msgid "Facebook Messenger"
+msgstr ""
+
+msgid "Skype"
+msgstr ""
+
+msgid "Telegram"
+msgstr ""
+
+msgid "Twitter"
+msgstr ""
+
+msgid "Account editor"
+msgstr ""
+
+msgid "Interface language"
+msgstr "အချက်အလက်များဖြည့်သွင်းရာတွင်သုံးသောဘာသာစကား"
+
+msgid "Database language"
+msgstr "Database တွင်သုံးသောဘာသာစကား"
+
+msgid "Style"
+msgstr "ပုံစံ"
+
+msgid "Property to display in analysis modules"
+msgstr "အချက်အလက်များဆန်းစစ်ရာတွင်ဖော်ပြထားချက်များ"
+
+msgid "Short name"
+msgstr "အမည်တို"
+
+msgid "Enable message email notifications"
+msgstr "အီးမေးလ်ဖြင့်သတိပေးစာပေးပို့ခြင်းကိုလက်ခံသည်"
+
+msgid "Enable message SMS notifications"
+msgstr "သတင်းတိုဖြင့်သတိပေးစာပေးပို့ခြင်းကိုလက်ခံသည်"

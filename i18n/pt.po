@@ -1,268 +1,435 @@
 # 
 # Translators:
-# phil_dhis2, 2019
-# Ge Joao <gsimango@saudigitus.org>, 2020
+# phil_dhis2, 2021
+# Viktor Varland <viktor@dhis2.org>, 2021
+# Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2021
+# Ge Joao <gsimango@saudigitus.org>, 2021
+# Sheila André <sandre@saudigitus.org>, 2021
 # 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-01 00:28-0400\n"
-"PO-Revision-Date: 2019-09-02 16:41+0000\n"
-"Last-Translator: Ge Joao <gsimango@saudigitus.org>, 2020\n"
+"Project-Id-Version: i18next-conv\n"
+"POT-Creation-Date: 2021-03-16T12:56:03.527Z\n"
+"PO-Revision-Date: 2021-03-17 23:49+0000\n"
+"Last-Translator: Sheila André <sandre@saudigitus.org>, 2021\n"
 "Language-Team: Portuguese (https://www.transifex.com/hisp-uio/teams/100509/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 2.0.0b3\n"
 
-#: user_profile
-msgid "User profile"
-msgstr "Perfil do usuário"
+msgid "Never"
+msgstr "Nunca"
 
-#: account_settings
-msgid "Account settings"
-msgstr "Configurações da conta "
+msgid "Invalid date"
+msgstr "Data inválida"
 
-#: user_settings
-msgid "User settings"
-msgstr "Configurações do usuário"
+msgid "Web API"
+msgstr "Interface Web"
 
-#: user_email_address
-msgid "E-mail"
-msgstr "e-mail"
+msgid "Browse it here"
+msgstr "Navegue por aqui"
 
-#: surname
-msgid "Surname"
-msgstr "Apelido"
+msgid "Current user"
+msgstr "Utilizador corrente"
 
-#: first_name
-msgid "First name"
-msgstr "Primeiro nome"
+msgid "Version"
+msgstr "Versão"
 
-#: old_password
-msgid "Old password"
-msgstr "Senha anterior"
+msgid "Build revision"
+msgstr "Revisão da Construção"
 
-#: new_password
-msgid "New password"
-msgstr "Nova senha"
+msgid "Build date"
+msgstr "Data construção"
 
-#: repeat_new_password
-msgid "Repeat new password"
-msgstr "Repita a nova senha"
+msgid "Jasper reports version"
+msgstr "Versão de relatórios do Jasper"
 
-#: openid
-msgid "OpenID"
-msgstr "OpenID"
+msgid "User agent"
+msgstr "Agente de utilizador"
 
-#: username
-msgid "Username"
-msgstr "Nome de usuário"
+msgid "Server date"
+msgstr "Data do servidor"
 
-#: phone_number
-msgid "Mobile phone number"
-msgstr "Número de telemóvel"
+msgid "Last analytics table generation"
+msgstr "Última geração da tabela de análise"
 
-#: job_title
-msgid "Job title"
-msgstr "Profissão"
+msgid "Time since last analytics table generation"
+msgstr "Tempo desde a última geração da tabela de análise"
 
-#: introduction
-msgid "Introduction"
-msgstr "Apresentação"
+msgid "Last analytics table runtime"
+msgstr "Tempo de execução da última tabela de análise"
 
-#: gender
-msgid "Gender"
-msgstr "Sexo"
+msgid "Last continuous analytics table update"
+msgstr ""
 
-#: male
-msgctxt "male"
-msgid "Male"
-msgstr "Masculino"
+msgid "Time since last continuous analytics table update"
+msgstr ""
 
-#: female
-msgctxt "female"
-msgid "Female"
-msgstr "Feminino"
+msgid "Last continuous analytics table runtime"
+msgstr ""
 
-#: other
-msgctxt "other"
-msgid "Other"
-msgstr "Outro"
+msgid "Environment variable"
+msgstr "Variável de ambiente"
 
-#: gender_male
-msgctxt "gender_male"
-msgid "Male"
-msgstr "Masculino"
+msgid "System ID"
+msgstr "ID do Sistema"
 
-#: gender_female
-msgctxt "gender_female"
-msgid "Female"
-msgstr "Feminino"
+msgid "Last monitoring success"
+msgstr "Último sucesso de monitoramento"
 
-#: gender_other
-msgctxt "gender_other"
-msgid "Other"
-msgstr "Outro"
+msgid "External configuration directory"
+msgstr "Directório de configuração externa"
 
-#: birthday
-msgid "Birthday"
-msgstr "Aniversário"
+msgid "File store provider"
+msgstr "Fornecedor de armazenamento de arquivos"
 
-#: nationality
-msgid "Nationality"
-msgstr "Nacionalidade"
+msgid "Node ID"
+msgstr "ID do nó"
 
-#: employer
-msgid "Employer"
-msgstr "Empregador"
+msgid "Cache provider"
+msgstr "Provedor de cache"
 
-#: education
-msgid "Education"
-msgstr "Escolaridade"
+msgid "Read replica count"
+msgstr "Ler contagem de réplicas"
 
-#: interests
-msgid "Interests"
-msgstr "Interesses"
+msgid "Java opts"
+msgstr "Opções Java"
 
-#: languages
-msgid "Languages"
-msgstr "Idiomas"
+msgid "Java version"
+msgstr "Versão do Java"
 
-#: update_user_profile_success
-msgid "User profile updated"
-msgstr "Perfil do usuário actualizado "
+msgid "Java vendor"
+msgstr "Fornecedor de Java"
 
-#: settings
-msgid "Settings"
-msgstr "Configuração"
+msgid "OS name"
+msgstr "Nome do Sistema Operativo"
 
-#: property_to_display_in_analysis_modules
-msgctxt "property_to_display_in_analysis_modules"
-msgid "Property to display in analysis modules"
-msgstr "Propriedade a exibir nos módulos de análise"
+msgid "OS architecture"
+msgstr "Arquitectura do Sistema Operativo"
 
-#: general
-msgid "General"
-msgstr "Geral "
+msgid "OS version"
+msgstr "Versão do Sistema Operativo"
 
-#: message
-msgid "Message"
-msgstr "Mensagem"
+msgid "Memory info"
+msgstr "Informação de memória"
 
-#: settings_updated
-msgid "Settings updated"
-msgstr "Configurações actualizadas"
+msgid "CPU cores"
+msgstr "Núcleos de CPU"
 
-#: failed_to_update_settings
-msgid "Failed to update settings"
-msgstr "Falha na actualização das configurações"
+msgid "Calendar"
+msgstr "Calendário"
 
-#: style
-msgid "Style"
-msgstr "Estilo"
-
-#: db_language
-msgid "Database language"
-msgstr "Idioma da base de dados"
-
-#: language
-msgid "Interface language"
-msgstr "Idioma da interface"
-
-#: enable_message_email_notifications
-msgid "Enable message email notifications"
-msgstr "Receber notificações de e-mail"
-
-#: enable_message_sms_notifications
-msgid "Enable message SMS notifications"
-msgstr "Receber notificações de SMS"
-
-#: analysis_module
-msgctxt "analysis_module"
-msgid "Property to display in analysis modules"
-msgstr "Propriedade a exibir nos módulos de análise"
-
-#: name
 msgid "Name"
 msgstr "Nome"
 
-#: short_name
-msgid "Short name"
-msgstr "Nome curto"
+msgid "User"
+msgstr "Utilizador"
 
-#: system_default
-msgid "System default"
-msgstr "Padrão do sistema"
+msgid "Spatial support"
+msgstr "Suporte espacial"
 
-#: value_should_be_an_email
-msgid "Please enter a valid email address"
-msgstr "Por favor introduza um endereço de email válido"
+msgid "System info"
+msgstr "Informação do sistema"
 
-#: update_user_profile_fail
-msgid "Failed to update user profile"
-msgstr "Falha na atualização do perfil de usuário."
+msgid "Database"
+msgstr "Base de dados "
 
-#: update_settings_fail
-msgid "Fialed to update user settings"
-msgstr "Falha na actualização das configurações do usuário"
+msgid "Edit account settings"
+msgstr "Editar a conta de utilizador "
 
-#: update_password
-msgid "Update password"
-msgstr "Actualize a palavra-passe/senha"
-
-#: invalid_password
-msgid ""
-"Password should be at least 8 characters with at least 1 digit and 1 "
-"uppercase letter"
-msgstr ""
-"Deve ser uma senha com pelo menos 8 caracteres que combinem letras e "
-"números, e pelo menos 1 letra maiúscula"
-
-#: passwords_do_not_match
-msgid "The entered values do not match. Please re-enter."
-msgstr "Os valores introduzidos nao conscidem. Por favor, volte a introduzir."
-
-#: use_system_default
-msgid "Use system default"
-msgstr "Use padrão do sistema"
-
-#: true_notifications
-msgid "Yes"
-msgstr "Sim"
-
-#: false_notifications
-msgid "No"
-msgstr "Não"
-
-#: value_required
-msgid "This field can't be left blank"
-msgstr "Este campo não pode ser deixado em branco"
-
-#: please_enter_the_correct_password
-msgid "Please enter the correct password"
-msgstr "Por favor, insira um senha correcta"
-
-#: no_changes_have_been_made
 msgid "No changes have been made"
 msgstr "Nenhuma modificação foi efetuada"
 
-#: validating_please_try_again
 msgid "The form is currently being validated. Please try again."
 msgstr "O formulário esta sendo validado. Tente novamente."
 
-#: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
 msgstr "O formulário contém falhas. Corrija os erros e tente novamente."
 
-#: password_update_success
-msgid "Your password was updated successfully"
-msgstr "Senha foi alterada com sucesso. "
+msgid "The entered values do not match. Please re-enter."
+msgstr "Os valores introduzidos nao conscidem. Por favor, volte a introduzir."
 
-#: password_update_failed
+msgid "Please provide your old password"
+msgstr "Forneça sua senha antiga"
+
+msgid "Username"
+msgstr "Nome de usuário"
+
+msgid "Old password"
+msgstr "Senha anterior"
+
+msgid "This field can't be left blank"
+msgstr "Este campo não pode ser deixado em branco"
+
+msgid "New password"
+msgstr "Nova senha"
+
+msgid ""
+"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
+"letter and 1 special character"
+msgstr ""
+
+msgid "Repeat new password"
+msgstr "Repita a nova senha"
+
+msgid "Setup 2-Factor"
+msgstr "Configuração de 2-factores"
+
+msgid "Update password"
+msgstr "Actualize a palavra-passe/senha"
+
+msgid ""
+"This account is linked to an OpenID Connect identity. Visit the Open ID "
+"Connect provider to manage this account's settings."
+msgstr ""
+
+msgid "Password changed successfully"
+msgstr "Senha alterada com sucesso"
+
+msgid "You need to login again to continue using the application."
+msgstr ""
+"Você precisa fazer login novamente para continuar usando o aplicativo."
+
+msgid "Login"
+msgstr "Entrar"
+
 msgid "Failed to update password"
 msgstr "Falha na atualização da senha"
+
+msgid "2-Factor successfully turned ON"
+msgstr "Factor 2 activado com sucesso"
+
+msgid "2-Factor successfully turned OFF"
+msgstr "Factor 2 desativado com sucesso"
+
+msgid "Failed to turn ON 2-Factor"
+msgstr "Falha ao ativar o factor 2"
+
+msgid "Failed to turn OFF 2-Factor"
+msgstr ""
+
+msgid "Barcode/QR code to scan"
+msgstr "Código de barras / códigoQR para digitalizar"
+
+msgid "No"
+msgstr "Não"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "Turn OFF"
+msgstr "Desligar "
+
+msgid "Turn ON"
+msgstr "Ligar "
+
+msgid "2-Factor Verification is ON"
+msgstr "Verificação de 2 factores está ACTIVA"
+
+msgid "2-Factor Verification is OFF"
+msgstr "Verificação de 2 factores está INACTIVA"
+
+msgid "Do you want to turn OFF 2-Factor?"
+msgstr "Deseja DESACTIVAR o 2-Factor?"
+
+msgid "Do you want to turn ON 2-Factor?"
+msgstr "Deseja ACTIVAR o 2-Factor?"
+
+msgid "Download the Authenticator app"
+msgstr "Baixar autenticador de aplicativo "
+
+msgid "What kind of phone/tablet do you have?"
+msgstr "Que tipo de telefone / tablet você possui?"
+
+msgid "Download the Authenticator App from the "
+msgstr ""
+
+msgid "In the Authenticator App select "
+msgstr ""
+
+msgid "Begin setup."
+msgstr "Comece a instalação."
+
+msgid "Choose "
+msgstr ""
+
+msgid "Scan a barcode."
+msgstr "Digitalize o código de barras."
+
+msgid ""
+"With 2-Factor authentication turned on you will be asked to enter a second "
+"verification code when you log in. To generate this verification code you "
+"must use the Authenticator app. If you do not have this app you must "
+"download it on your phone/tablet."
+msgstr ""
+"Com a autenticação de 2- factores activada, você será solicitado a inserir "
+"um segundo código de verificação ao fazer login. Para gerar esse código de "
+"verificação, você deve usar o aplicativo Autenticador. Se você não possui "
+"este aplicativo, deve baixá-lo no seu telefone / tablet."
+
+msgid "Failed to upload profile picture"
+msgstr "Falha ao carregar a foto do perfil"
+
+msgid "Profile picture"
+msgstr "Foto de perfil "
+
+msgid "No profile picture available"
+msgstr "Nenhuma foto de perfil disponivel"
+
+msgid "Select profile picture"
+msgstr "Selecionar foto do perfil"
+
+msgid "Remove profile picture"
+msgstr "Remover foto de perfil"
+
+msgid "This field is required"
+msgstr "Este campo é obrigatorio"
+
+msgid "This field should be a URL"
+msgstr ""
+
+msgid "This field should contain a list of URLs"
+msgstr "Este campo deve conter uma lista de URLs"
+
+msgid "This field should be a number"
+msgstr "Este campo deve ser um número"
+
+msgid "This field should be a positive number"
+msgstr "Este campo deve ser um número positivo"
+
+msgid "This field should be an email"
+msgstr ""
+
+msgid "Please enter a valid international phone number (+0123456789)"
+msgstr "Digite um número de telefone internacional válido (+0123456789)"
+
+msgid "No value"
+msgstr "Sem Valor"
+
+msgid "Use system default"
+msgstr "Use padrão do sistema"
+
+msgid "No options"
+msgstr ""
+
+msgid "System default"
+msgstr "Padrão do sistema"
+
+msgid "Edit user profile"
+msgstr "Editar perfil do utilizador"
+
+msgid "Edit user settings"
+msgstr "Editar configurações do usuário"
+
+msgid "View full profile"
+msgstr "Ver o perfil completo"
+
+msgid "About DHIS2"
+msgstr "Sobre DHIS2"
+
+msgid "User profile updated"
+msgstr "Perfil do usuário actualizado"
+
+msgid "Failed to update user profile"
+msgstr "Falha na atualização do perfil de usuário."
+
+msgid "Settings updated"
+msgstr "Configurações actualizadas"
+
+msgid "Failed to update settings"
+msgstr "Falha na actualização das configurações"
+
+msgid "First name"
+msgstr "Primeiro nome"
+
+msgid "Surname"
+msgstr "Apelido"
+
+msgid "Gender"
+msgstr "Sexo"
+
+msgid "Male"
+msgstr "Masculino"
+
+msgid "Female"
+msgstr "Feminino"
+
+msgid "Other"
+msgstr "Outro"
+
+msgid "E-mail"
+msgstr "e-mail"
+
+msgid "Mobile phone number"
+msgstr "Número de telemóvel"
+
+msgid "Introduction"
+msgstr "Apresentação"
+
+msgid "Job title"
+msgstr "Profissão"
+
+msgid "User roles"
+msgstr "Roles de Utilizadores"
+
+msgid "User org units"
+msgstr "Unidades orhganizacionais do utilizador"
+
+msgid "Birthday"
+msgstr "Aniversário"
+
+msgid "Nationality"
+msgstr "Nacionalidade"
+
+msgid "Employer"
+msgstr "Empregador"
+
+msgid "Education"
+msgstr "Escolaridade"
+
+msgid "Interests"
+msgstr "Interesses"
+
+msgid "Languages"
+msgstr "Idiomas"
+
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+msgid "Facebook Messenger"
+msgstr "Facebook Messenger"
+
+msgid "Skype"
+msgstr "Skype"
+
+msgid "Telegram"
+msgstr "Telegram"
+
+msgid "Twitter"
+msgstr "Twitter"
+
+msgid "Account editor"
+msgstr ""
+
+msgid "Interface language"
+msgstr "Idioma da interface"
+
+msgid "Database language"
+msgstr "Idioma da base de dados"
+
+msgid "Style"
+msgstr "Estilo"
+
+msgid "Property to display in analysis modules"
+msgstr "Propriedade a exibir nos módulos de análise"
+
+msgid "Short name"
+msgstr "Nome curto"
+
+msgid "Enable message email notifications"
+msgstr "Receber notificações de e-mail"
+
+msgid "Enable message SMS notifications"
+msgstr "Receber notificações de SMS"

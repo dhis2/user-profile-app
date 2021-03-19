@@ -1,268 +1,431 @@
 # 
 # Translators:
-# phil_dhis2, 2019
-# Hamza Assada <7amza.it@gmail.com>, 2020
+# phil_dhis2, 2021
+# Viktor Varland <viktor@dhis2.org>, 2021
+# Hamza Assada <7amza.it@gmail.com>, 2021
 # 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-01 00:28-0400\n"
-"PO-Revision-Date: 2019-09-02 16:41+0000\n"
-"Last-Translator: Hamza Assada <7amza.it@gmail.com>, 2020\n"
+"Project-Id-Version: i18next-conv\n"
+"POT-Creation-Date: 2021-03-16T12:56:03.527Z\n"
+"PO-Revision-Date: 2021-03-17 23:49+0000\n"
+"Last-Translator: Hamza Assada <7amza.it@gmail.com>, 2021\n"
 "Language-Team: Arabic (https://www.transifex.com/hisp-uio/teams/100509/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
-"X-Generator: Translate Toolkit 2.0.0b3\n"
 
-#: user_profile
-msgid "User profile"
-msgstr "ملف المستخدم الشخصي"
+msgid "Never"
+msgstr "مطلقاً"
 
-#: account_settings
-msgid "Account settings"
-msgstr "إعدادات الحساب"
+msgid "Invalid date"
+msgstr "تاريخ غير صالح"
 
-#: user_settings
-msgid "User settings"
-msgstr "إعدادات المستخدم"
+msgid "Web API"
+msgstr "ويب API"
 
-#: user_email_address
-msgid "E-mail"
-msgstr "البريد الإلكتروني"
+msgid "Browse it here"
+msgstr "استعرضها هنا"
 
-#: surname
-msgid "Surname"
-msgstr "الكنية"
+msgid "Current user"
+msgstr "المستخدم الحالي"
 
-#: first_name
-msgid "First name"
-msgstr "الاسم الأول"
+msgid "Version"
+msgstr "الإصدار"
 
-#: old_password
-msgid "Old password"
-msgstr "كلمة المرور القديمة"
+msgid "Build revision"
+msgstr "Build revision"
 
-#: new_password
-msgid "New password"
-msgstr "كلمة المرور الجديدة"
+msgid "Build date"
+msgstr "تاريخ البناء"
 
-#: repeat_new_password
-msgid "Repeat new password"
-msgstr "تأكيد كلمة المرور الجديدة"
+msgid "Jasper reports version"
+msgstr "إصدار تقارير Jasper"
 
-#: openid
-msgid "OpenID"
-msgstr "OpenID"
+msgid "User agent"
+msgstr "وكيل المستخدم"
 
-#: username
-msgid "Username"
-msgstr "اسم المستخدم"
+msgid "Server date"
+msgstr "تاريخ الخادم"
 
-#: phone_number
-msgid "Mobile phone number"
-msgstr "رقم الهاتف الجوال"
+msgid "Last analytics table generation"
+msgstr "آخر توليد لجدول التحليلات"
 
-#: job_title
-msgid "Job title"
-msgstr "المسمى الوظيفي"
+msgid "Time since last analytics table generation"
+msgstr "الوقت منذ آخر توليد لجدول التحليلات"
 
-#: introduction
-msgid "Introduction"
-msgstr "المقدمة"
+msgid "Last analytics table runtime"
+msgstr "آخر وقت تشغيل لجدول التحليلات"
 
-#: gender
-msgid "Gender"
-msgstr "الجنس"
-
-#: male
-msgctxt "male"
-msgid "Male"
-msgstr "ذكر"
-
-#: female
-msgctxt "female"
-msgid "Female"
-msgstr "أنثى"
-
-#: other
-msgctxt "other"
-msgid "Other"
-msgstr "أخرى"
-
-#: gender_male
-msgctxt "gender_male"
-msgid "Male"
-msgstr "ذكر"
-
-#: gender_female
-msgctxt "gender_female"
-msgid "Female"
-msgstr "أنثى"
-
-#: gender_other
-msgctxt "gender_other"
-msgid "Other"
-msgstr "أخرى"
-
-#: birthday
-msgid "Birthday"
-msgstr "تاريخ الميلاد"
-
-#: nationality
-msgid "Nationality"
-msgstr "الجنسية"
-
-#: employer
-msgid "Employer"
-msgstr "صاحب العمل"
-
-#: education
-msgid "Education"
-msgstr "التعليم"
-
-#: interests
-msgid "Interests"
-msgstr "الاهتمامات"
-
-#: languages
-msgid "Languages"
-msgstr "اللغات"
-
-#: update_user_profile_success
-msgid "User profile updated"
-msgstr "تم تحديث ملف تعريف المستخدم"
-
-#: settings
-msgid "Settings"
-msgstr "الإعدادات"
-
-#: property_to_display_in_analysis_modules
-msgctxt "property_to_display_in_analysis_modules"
-msgid "Property to display in analysis modules"
-msgstr "الخاصية للعرض في الوحدات البرمجية للتحليل"
-
-#: general
-msgid "General"
-msgstr "عام"
-
-#: message
-msgid "Message"
-msgstr "رسالة"
-
-#: settings_updated
-msgid "Settings updated"
-msgstr "تم تحديث الإعدادات"
-
-#: failed_to_update_settings
-msgid "Failed to update settings"
-msgstr "فشل تحديث الإعدادات"
-
-#: style
-msgid "Style"
-msgstr "المظهر"
-
-#: db_language
-msgid "Database language"
-msgstr "لغة قاعدة البيانات"
-
-#: language
-msgid "Interface language"
-msgstr "لغة الواجهة"
-
-#: enable_message_email_notifications
-msgid "Enable message email notifications"
-msgstr "تمكين الإشعارات عبر رسائل البريد الإلكتروني"
-
-#: enable_message_sms_notifications
-msgid "Enable message SMS notifications"
-msgstr "تمكين إرسال الإشعارات عبر رسائل الجوال القصيرة"
-
-#: analysis_module
-msgctxt "analysis_module"
-msgid "Property to display in analysis modules"
-msgstr "الخاصية للعرض في الوحدات البرمجية للتحليل"
-
-#: name
-msgid "Name"
-msgstr "الاسم"
-
-#: short_name
-msgid "Short name"
-msgstr "الاسم المختصر"
-
-#: system_default
-msgid "System default"
-msgstr "الإعدادات الافتراضية للنظام"
-
-#: value_should_be_an_email
-msgid "Please enter a valid email address"
-msgstr "الرجاء إدخال عنوان بريد إلكتروني صالح"
-
-#: update_user_profile_fail
-msgid "Failed to update user profile"
-msgstr "فشل تحديث ملف تعريف المستخدم"
-
-#: update_settings_fail
-msgid "Fialed to update user settings"
-msgstr "فشل تحديث إعدادات المستخدم"
-
-#: update_password
-msgid "Update password"
-msgstr "تحديث كلمة المرور"
-
-#: invalid_password
-msgid ""
-"Password should be at least 8 characters with at least 1 digit and 1 "
-"uppercase letter"
+msgid "Last continuous analytics table update"
 msgstr ""
-"يجب أن تتكون كلمة المرور من 8 أحرف على الأقل مع رقم واحد على الأقل وحرف كبير"
-" واحد"
 
-#: passwords_do_not_match
-msgid "The entered values do not match. Please re-enter."
-msgstr "القيم المدخلة غير متطابقة. الرجاء إعادة الإدخال."
+msgid "Time since last continuous analytics table update"
+msgstr ""
 
-#: use_system_default
-msgid "Use system default"
-msgstr "استخدام الإعدادات الافتراضية للنظام"
+msgid "Last continuous analytics table runtime"
+msgstr ""
 
-#: true_notifications
-msgid "Yes"
-msgstr "نعم"
+msgid "Environment variable"
+msgstr "متغير البيئة"
 
-#: false_notifications
-msgid "No"
-msgstr "لا"
+msgid "System ID"
+msgstr "معرف النظام"
 
-#: value_required
-msgid "This field can't be left blank"
-msgstr "لا يمكن ترك هذا الحقل فارغاً"
+msgid "Last monitoring success"
+msgstr "نجاح آخر نشاط مراقبة"
 
-#: please_enter_the_correct_password
-msgid "Please enter the correct password"
-msgstr "الرجاء إدخال كلمة المرور الصحيحة"
+msgid "External configuration directory"
+msgstr "دليل التهيئة الخارجي"
 
-#: no_changes_have_been_made
+msgid "File store provider"
+msgstr "مزود مخزن الملفات"
+
+msgid "Node ID"
+msgstr "معرف العقدة"
+
+msgid "Cache provider"
+msgstr "مزود ذاكرة التخزين المؤقت"
+
+msgid "Read replica count"
+msgstr "قراءة عدد النسخ"
+
+msgid "Java opts"
+msgstr "خيارات Java"
+
+msgid "Java version"
+msgstr "إصدار Java"
+
+msgid "Java vendor"
+msgstr "مورد Java"
+
+msgid "OS name"
+msgstr "اسم نظام التشغيل"
+
+msgid "OS architecture"
+msgstr "معمارية نظام التشغيل"
+
+msgid "OS version"
+msgstr "إصدار نظام التشغيل"
+
+msgid "Memory info"
+msgstr "معلومات ذاكرة التخزين"
+
+msgid "CPU cores"
+msgstr "أنوية وحدة المعالجة المركزية"
+
+msgid "Calendar"
+msgstr "التقويم"
+
+msgid "Name"
+msgstr "الإسم"
+
+msgid "User"
+msgstr "المستخدم"
+
+msgid "Spatial support"
+msgstr "الدعم المكاني"
+
+msgid "System info"
+msgstr "معلومات النظام"
+
+msgid "Database"
+msgstr "قاعدة البيانات"
+
+msgid "Edit account settings"
+msgstr "تعديل إعدادات الحساب"
+
 msgid "No changes have been made"
 msgstr "لم يتم إجراء أي تغييرات"
 
-#: validating_please_try_again
 msgid "The form is currently being validated. Please try again."
 msgstr "يتم حالياً تدقيق هذا النموذج. الرجاء المحاولة مرة أخرى."
 
-#: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
 msgstr "يحوي هذا النموذج أخطاء. الرجاء إصلاح الأخطاء والمحاولة مرة أخرى."
 
-#: password_update_success
-msgid "Your password was updated successfully"
-msgstr "تم تحديث كلمة مرورك بنجاح"
+msgid "The entered values do not match. Please re-enter."
+msgstr "القيم المدخلة غير متطابقة. الرجاء إعادة الإدخال."
 
-#: password_update_failed
+msgid "Please provide your old password"
+msgstr "يرجى تقديم كلمة المرور القديمة"
+
+msgid "Username"
+msgstr "اسم المستخدم"
+
+msgid "Old password"
+msgstr "كلمة المرور القديمة"
+
+msgid "This field can't be left blank"
+msgstr "لا يمكن ترك هذا الحقل فارغاً"
+
+msgid "New password"
+msgstr "كلمة المرور الجديدة"
+
+msgid ""
+"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
+"letter and 1 special character"
+msgstr ""
+
+msgid "Repeat new password"
+msgstr "تأكيد كلمة المرور الجديدة"
+
+msgid "Setup 2-Factor"
+msgstr "إعداد المصادقة الثنائية 2-Factor"
+
+msgid "Update password"
+msgstr "تحديث كلمة المرور"
+
+msgid ""
+"This account is linked to an OpenID Connect identity. Visit the Open ID "
+"Connect provider to manage this account's settings."
+msgstr ""
+
+msgid "Password changed successfully"
+msgstr "تم تغيير كلمة السر بنجاح"
+
+msgid "You need to login again to continue using the application."
+msgstr "تحتاج إلى تسجيل الدخول مرة أخرى لمتابعة استخدام التطبيق."
+
+msgid "Login"
+msgstr "تسجيل دخول"
+
 msgid "Failed to update password"
 msgstr "فشل تحديث كلمة المرور"
+
+msgid "2-Factor successfully turned ON"
+msgstr "تم تشغيل المصادقة الثنائية 2-Factor بنجاح"
+
+msgid "2-Factor successfully turned OFF"
+msgstr "تم ايقاف المصادقة الثنائية 2-Factor بنجاح"
+
+msgid "Failed to turn ON 2-Factor"
+msgstr "فشل تشغيل الـ 2-Factor"
+
+msgid "Failed to turn OFF 2-Factor"
+msgstr ""
+
+msgid "Barcode/QR code to scan"
+msgstr "رمز الباركود/QR المراد مسحه"
+
+msgid "No"
+msgstr "لا"
+
+msgid "Yes"
+msgstr "نعم"
+
+msgid "Turn OFF"
+msgstr "ايقاف"
+
+msgid "Turn ON"
+msgstr "تشغيل"
+
+msgid "2-Factor Verification is ON"
+msgstr "تحقق المصادقة الثنائية 2-Factor قيد التشغيل"
+
+msgid "2-Factor Verification is OFF"
+msgstr "تحقق المصادقة الثنائية 2-Factor في وضع الإيقاف"
+
+msgid "Do you want to turn OFF 2-Factor?"
+msgstr "هل تريد ايقاف تشغيل الـ 2-Factor؟"
+
+msgid "Do you want to turn ON 2-Factor?"
+msgstr "هل تريد تشغيل الـ 2-Factor؟"
+
+msgid "Download the Authenticator app"
+msgstr "تنزيل تطبيق Authenticator"
+
+msgid "What kind of phone/tablet do you have?"
+msgstr "ما نوع الهاتف/الجهاز اللوحي الذي لديك؟"
+
+msgid "Download the Authenticator App from the "
+msgstr ""
+
+msgid "In the Authenticator App select "
+msgstr ""
+
+msgid "Begin setup."
+msgstr "إبدأ التثبيت"
+
+msgid "Choose "
+msgstr ""
+
+msgid "Scan a barcode."
+msgstr "قراءة الباركود"
+
+msgid ""
+"With 2-Factor authentication turned on you will be asked to enter a second "
+"verification code when you log in. To generate this verification code you "
+"must use the Authenticator app. If you do not have this app you must "
+"download it on your phone/tablet."
+msgstr ""
+"مع تشغيل المصادقة الثنائية 2-Factor، سيُطلب منك إدخال رمز التحقق الثاني عند "
+"تسجيل الدخول. لإنشاء رمز التحقق هذا ، يجب عليك استخدام تطبيق Authenticator. "
+"إذا لم يكن لديك هذا التطبيق ، فيجب عليك تنزيله على هاتفك/جهازك اللوحي."
+
+msgid "Failed to upload profile picture"
+msgstr "فشل تحميل صورة صفحتك الشخصية"
+
+msgid "Profile picture"
+msgstr "صورة صفحتك الشخصية"
+
+msgid "No profile picture available"
+msgstr "لاتوجد صورة شخصية متاحة"
+
+msgid "Select profile picture"
+msgstr "حدد صورة لصفحتك الشخصية"
+
+msgid "Remove profile picture"
+msgstr "إزالة صورة صفحتك الشخصية"
+
+msgid "This field is required"
+msgstr "هذا الحقل مطلوب"
+
+msgid "This field should be a URL"
+msgstr ""
+
+msgid "This field should contain a list of URLs"
+msgstr "يجب أن يحتوي هذا الحقل على قائمة بعناوين URLs"
+
+msgid "This field should be a number"
+msgstr "يجب أن يكون هذا الحقل عدداً"
+
+msgid "This field should be a positive number"
+msgstr "يجب أن يكون هذا الحقل عدداً موجباً"
+
+msgid "This field should be an email"
+msgstr ""
+
+msgid "Please enter a valid international phone number (+0123456789)"
+msgstr "يرجى تقديم رقم هاتف دولي صالح (+0123456789)"
+
+msgid "No value"
+msgstr "لا توجد قيمة"
+
+msgid "Use system default"
+msgstr "استخدام الإعدادات الافتراضية للنظام"
+
+msgid "No options"
+msgstr ""
+
+msgid "System default"
+msgstr "الإعدادات الافتراضية للنظام"
+
+msgid "Edit user profile"
+msgstr "تعديل الملف الشخصي للمستخدم"
+
+msgid "Edit user settings"
+msgstr "تعديل إعدادات المستخدم"
+
+msgid "View full profile"
+msgstr "عرض الملف الشخصي كاملاً"
+
+msgid "About DHIS2"
+msgstr "عن DHIS2"
+
+msgid "User profile updated"
+msgstr "تم تحديث ملف المستخدم الشخصي"
+
+msgid "Failed to update user profile"
+msgstr "فشل تحديث ملف المستخدم الشخصي"
+
+msgid "Settings updated"
+msgstr "تم تحديث الإعدادات"
+
+msgid "Failed to update settings"
+msgstr "فشل تحديث الإعدادات"
+
+msgid "First name"
+msgstr "الاسم الأول"
+
+msgid "Surname"
+msgstr "الكنية"
+
+msgid "Gender"
+msgstr "الجنس"
+
+msgid "Male"
+msgstr "ذكر"
+
+msgid "Female"
+msgstr "أنثى"
+
+msgid "Other"
+msgstr "أخرى"
+
+msgid "E-mail"
+msgstr "البريد الإلكتروني"
+
+msgid "Mobile phone number"
+msgstr "رقم الجوال"
+
+msgid "Introduction"
+msgstr "المقدمة"
+
+msgid "Job title"
+msgstr "المسمى الوظيفي"
+
+msgid "User roles"
+msgstr "ادوار المستخدم"
+
+msgid "User org units"
+msgstr "وحدات المستخدم التنظيمية"
+
+msgid "Birthday"
+msgstr "تاريخ الميلاد"
+
+msgid "Nationality"
+msgstr "الجنسية"
+
+msgid "Employer"
+msgstr "صاحب العمل"
+
+msgid "Education"
+msgstr "التعليم"
+
+msgid "Interests"
+msgstr "الاهتمامات"
+
+msgid "Languages"
+msgstr "اللغات"
+
+msgid "WhatsApp"
+msgstr "واتس آب"
+
+msgid "Facebook Messenger"
+msgstr "ماسنجر الفيسبوك"
+
+msgid "Skype"
+msgstr "سكايب"
+
+msgid "Telegram"
+msgstr "تلجرام"
+
+msgid "Twitter"
+msgstr "تويتر"
+
+msgid "Account editor"
+msgstr ""
+
+msgid "Interface language"
+msgstr "لغة الواجهة"
+
+msgid "Database language"
+msgstr "لغة قاعدة البيانات"
+
+msgid "Style"
+msgstr "المظهر"
+
+msgid "Property to display in analysis modules"
+msgstr "الخاصية التي يتم عرضها في الوحدات التحليلية"
+
+msgid "Short name"
+msgstr "الاسم المختصر"
+
+msgid "Enable message email notifications"
+msgstr "تمكين الإشعارات عبر رسائل البريد الإلكتروني"
+
+msgid "Enable message SMS notifications"
+msgstr "تمكين إرسال الإشعارات عبر رسائل الجوال القصيرة"

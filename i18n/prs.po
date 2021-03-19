@@ -1,265 +1,426 @@
 # 
 # Translators:
-# phil_dhis2, 2019
+# phil_dhis2, 2021
 # 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-01 00:28-0400\n"
-"PO-Revision-Date: 2019-09-02 16:41+0000\n"
-"Last-Translator: phil_dhis2, 2019\n"
+"Project-Id-Version: i18next-conv\n"
+"POT-Creation-Date: 2021-03-16T12:56:03.527Z\n"
+"PO-Revision-Date: 2021-03-17 23:49+0000\n"
+"Last-Translator: phil_dhis2, 2021\n"
 "Language-Team: Persian (Afghanistan) (https://www.transifex.com/hisp-uio/teams/100509/fa_AF/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fa_AF\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Translate Toolkit 2.0.0b3\n"
 
-#: user_profile
-msgid "User profile"
-msgstr "مشخصات استفاده کننده"
+msgid "Never"
+msgstr "هیچ گاه"
 
-#: account_settings
-msgid "Account settings"
-msgstr "تنظیمات حساب"
+msgid "Invalid date"
+msgstr ""
 
-#: user_settings
-msgid "User settings"
-msgstr "تنظیمات استفاده کننده"
+msgid "Web API"
+msgstr "ویب API"
 
-#: user_email_address
-msgid "E-mail"
-msgstr "ایمل"
+msgid "Browse it here"
+msgstr "در اینجا جستجو نمائید"
 
-#: surname
-msgid "Surname"
-msgstr "تخلص"
+msgid "Current user"
+msgstr "استفاده کننده کنونی"
 
-#: first_name
-msgid "First name"
-msgstr "نام اول"
+msgid "Version"
+msgstr "نسخه"
 
-#: old_password
-msgid "Old password"
-msgstr "رمز سابقه"
+msgid "Build revision"
+msgstr "ساخت نسخه"
 
-#: new_password
-msgid "New password"
-msgstr "رمز جدید"
+msgid "Build date"
+msgstr "تعین تاریخ"
 
-#: repeat_new_password
-msgid "Repeat new password"
-msgstr "تکرار رمز جدید"
+msgid "Jasper reports version"
+msgstr "نسخه راپور های جسپر"
 
-#: openid
-msgid "OpenID"
-msgstr "OpenID"
+msgid "User agent"
+msgstr "نماینده استفاده کننده"
 
-#: username
-msgid "Username"
-msgstr "نام کاربر"
+msgid "Server date"
+msgstr "تاریخ ارایه خدمات"
 
-#: phone_number
-msgid "Mobile phone number"
-msgstr "شماره تیلیفون"
+msgid "Last analytics table generation"
+msgstr "تولید آخرین جدول تحلیلی"
 
-#: job_title
-msgid "Job title"
-msgstr "عنوان وظیفه"
+msgid "Time since last analytics table generation"
+msgstr "زمان شخص از تولید آخرین جدول تحلیلی"
 
-#: introduction
-msgid "Introduction"
-msgstr "معرفی"
+msgid "Last analytics table runtime"
+msgstr "راه اندازی آخرین جدول تحلیلی"
 
-#: gender
-msgid "Gender"
-msgstr "جنسیت"
+msgid "Last continuous analytics table update"
+msgstr ""
 
-#: male
-msgctxt "male"
-msgid "Male"
-msgstr "مذکر"
+msgid "Time since last continuous analytics table update"
+msgstr ""
 
-#: female
-msgctxt "female"
-msgid "Female"
-msgstr "مونث"
+msgid "Last continuous analytics table runtime"
+msgstr ""
 
-#: other
-msgctxt "other"
-msgid "Other"
-msgstr "دیگر"
+msgid "Environment variable"
+msgstr "متغیر محیط"
 
-#: gender_male
-msgctxt "gender_male"
-msgid "Male"
-msgstr "مذکر"
+msgid "System ID"
+msgstr ""
 
-#: gender_female
-msgctxt "gender_female"
-msgid "Female"
-msgstr "مونث"
+msgid "Last monitoring success"
+msgstr ""
 
-#: gender_other
-msgctxt "gender_other"
-msgid "Other"
-msgstr "دیگر"
+msgid "External configuration directory"
+msgstr "رهنمود ترتیب خارجی"
 
-#: birthday
-msgid "Birthday"
-msgstr "تاریخ تولد"
+msgid "File store provider"
+msgstr "ارائه دهنده ثبت فایل"
 
-#: nationality
-msgid "Nationality"
-msgstr "ملیت"
+msgid "Node ID"
+msgstr ""
 
-#: employer
-msgid "Employer"
-msgstr "ریس"
+msgid "Cache provider"
+msgstr ""
 
-#: education
-msgid "Education"
-msgstr "تحصیلات"
+msgid "Read replica count"
+msgstr "خواندن مقدار رپلیکا"
 
-#: interests
-msgid "Interests"
-msgstr "علاقه مندی"
+msgid "Java opts"
+msgstr "گزینه های انتخابی برنامه جاوا"
 
-#: languages
-msgid "Languages"
-msgstr "زبان ها"
+msgid "Java version"
+msgstr "نسخه برنامه جاوا"
 
-#: update_user_profile_success
-msgid "User profile updated"
-msgstr "مشخصات استفاده کننده تجدید گردید"
+msgid "Java vendor"
+msgstr "فروشنده برنامه جاوا"
 
-#: settings
-msgid "Settings"
-msgstr "تنظیمات"
+msgid "OS name"
+msgstr "اسم سیستم عملیاتی"
 
-#: property_to_display_in_analysis_modules
-msgctxt "property_to_display_in_analysis_modules"
-msgid "Property to display in analysis modules"
-msgstr "ویژگی که در وقت تحلیل به نمایش بیاید"
+msgid "OS architecture"
+msgstr "دیزاین کننده سیستم عملیاتی"
 
-#: general
-msgid "General"
-msgstr "عمومی"
+msgid "OS version"
+msgstr "نسخه سیستم عملیاتی"
 
-#: message
-msgid "Message"
-msgstr "پیام"
+msgid "Memory info"
+msgstr ""
 
-#: settings_updated
-msgid "Settings updated"
-msgstr "تنظیمات تجدید گردید"
+msgid "CPU cores"
+msgstr "هسته های سی پی یو"
 
-#: failed_to_update_settings
-msgid "Failed to update settings"
-msgstr "تجدید تنظیمات به ناکامی انجامید"
+msgid "Calendar"
+msgstr "تقویم"
 
-#: style
-msgid "Style"
-msgstr "استایل"
-
-#: db_language
-msgid "Database language"
-msgstr "زبان دیتابیس"
-
-#: language
-msgid "Interface language"
-msgstr "زبان صفه های اپلیکیشن"
-
-#: enable_message_email_notifications
-msgid "Enable message email notifications"
-msgstr "فعال سازی ارسال اطلاع پیام از طریق ایمل"
-
-#: enable_message_sms_notifications
-msgid "Enable message SMS notifications"
-msgstr "فعال سازی ارسال اطلاع پیام از طریق SMS"
-
-#: analysis_module
-msgctxt "analysis_module"
-msgid "Property to display in analysis modules"
-msgstr "ویژگی که در وقت تحلیل به نمایش بیاید"
-
-#: name
 msgid "Name"
 msgstr "نام"
 
-#: short_name
-msgid "Short name"
-msgstr "نام کوتاه"
+msgid "User"
+msgstr "استفاده کننده"
 
-#: system_default
-msgid "System default"
-msgstr "پیش‌فرض سیستم"
+msgid "Spatial support"
+msgstr ""
 
-#: value_should_be_an_email
-msgid "Please enter a valid email address"
-msgstr "لطفآ یک ایمل آدرس درست درج نماید"
+msgid "System info"
+msgstr ""
 
-#: update_user_profile_fail
-msgid "Failed to update user profile"
-msgstr "تجدید مشخصات استفاده کننده به ناکامی انجامید"
+msgid "Database"
+msgstr ""
 
-#: update_settings_fail
-msgid "Fialed to update user settings"
-msgstr "تجدید تنظیمات استفاده کننده به ناکامی انجامید"
+msgid "Edit account settings"
+msgstr ""
 
-#: update_password
-msgid "Update password"
-msgstr "تجدید رمز"
-
-#: invalid_password
-msgid ""
-"Password should be at least 8 characters with at least 1 digit and 1 "
-"uppercase letter"
-msgstr "رمز حد اقل 8 حرف باشد همرا با 1 عدد و 1 حرف کلان"
-
-#: passwords_do_not_match
-msgid "The entered values do not match. Please re-enter."
-msgstr "ارزش درج شده مطابقت ندارد. لطفآ دوباره درج نماید"
-
-#: use_system_default
-msgid "Use system default"
-msgstr "استفاده پیش فرض سیستم"
-
-#: true_notifications
-msgid "Yes"
-msgstr "بلی"
-
-#: false_notifications
-msgid "No"
-msgstr "نخیر"
-
-#: value_required
-msgid "This field can't be left blank"
-msgstr "این فیلد را خالی مانده نمیتوانید"
-
-#: please_enter_the_correct_password
-msgid "Please enter the correct password"
-msgstr "لطفآ رمز درست را وارد نماید"
-
-#: no_changes_have_been_made
 msgid "No changes have been made"
 msgstr "هیچ تغییرات وارد نشده است"
 
-#: validating_please_try_again
 msgid "The form is currently being validated. Please try again."
 msgstr "این فارم در حال حاضر اعتبار سنجی شده.لطفآ دوباره تکرار نماید"
 
-#: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
 msgstr "این فارم اشتباهات دارد. لطفآ اشتباهات را حل نموده دوباره کوشش نماید"
 
-#: password_update_success
-msgid "Your password was updated successfully"
-msgstr "رمز شما موفقانه تجدید گردید"
+msgid "The entered values do not match. Please re-enter."
+msgstr "ارزش درج شده مطابقت ندارد. لطفآ دوباره درج نماید"
 
-#: password_update_failed
+msgid "Please provide your old password"
+msgstr ""
+
+msgid "Username"
+msgstr "نام کاربر"
+
+msgid "Old password"
+msgstr "رمز سابقه"
+
+msgid "This field can't be left blank"
+msgstr "این فیلد را خالی مانده نمیتوانید"
+
+msgid "New password"
+msgstr "رمز جدید"
+
+msgid ""
+"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
+"letter and 1 special character"
+msgstr ""
+
+msgid "Repeat new password"
+msgstr "تکرار رمز جدید"
+
+msgid "Setup 2-Factor"
+msgstr ""
+
+msgid "Update password"
+msgstr "تجدید رمز"
+
+msgid ""
+"This account is linked to an OpenID Connect identity. Visit the Open ID "
+"Connect provider to manage this account's settings."
+msgstr ""
+
+msgid "Password changed successfully"
+msgstr ""
+
+msgid "You need to login again to continue using the application."
+msgstr ""
+
+msgid "Login"
+msgstr ""
+
 msgid "Failed to update password"
 msgstr "تجدید نمودن رمز به ناکامی انجامید"
+
+msgid "2-Factor successfully turned ON"
+msgstr ""
+
+msgid "2-Factor successfully turned OFF"
+msgstr ""
+
+msgid "Failed to turn ON 2-Factor"
+msgstr ""
+
+msgid "Failed to turn OFF 2-Factor"
+msgstr ""
+
+msgid "Barcode/QR code to scan"
+msgstr ""
+
+msgid "No"
+msgstr "نخیر"
+
+msgid "Yes"
+msgstr "بلی"
+
+msgid "Turn OFF"
+msgstr ""
+
+msgid "Turn ON"
+msgstr ""
+
+msgid "2-Factor Verification is ON"
+msgstr ""
+
+msgid "2-Factor Verification is OFF"
+msgstr ""
+
+msgid "Do you want to turn OFF 2-Factor?"
+msgstr ""
+
+msgid "Do you want to turn ON 2-Factor?"
+msgstr ""
+
+msgid "Download the Authenticator app"
+msgstr ""
+
+msgid "What kind of phone/tablet do you have?"
+msgstr ""
+
+msgid "Download the Authenticator App from the "
+msgstr ""
+
+msgid "In the Authenticator App select "
+msgstr ""
+
+msgid "Begin setup."
+msgstr ""
+
+msgid "Choose "
+msgstr ""
+
+msgid "Scan a barcode."
+msgstr ""
+
+msgid ""
+"With 2-Factor authentication turned on you will be asked to enter a second "
+"verification code when you log in. To generate this verification code you "
+"must use the Authenticator app. If you do not have this app you must "
+"download it on your phone/tablet."
+msgstr ""
+
+msgid "Failed to upload profile picture"
+msgstr ""
+
+msgid "Profile picture"
+msgstr ""
+
+msgid "No profile picture available"
+msgstr ""
+
+msgid "Select profile picture"
+msgstr ""
+
+msgid "Remove profile picture"
+msgstr ""
+
+msgid "This field is required"
+msgstr "این بخش لازمی میباشد"
+
+msgid "This field should be a URL"
+msgstr ""
+
+msgid "This field should contain a list of URLs"
+msgstr "این بخش باید شامل لیست URLs باشد"
+
+msgid "This field should be a number"
+msgstr "این بخش باید ارقام باشد"
+
+msgid "This field should be a positive number"
+msgstr "این بخش باید ارقام مثبت باشد"
+
+msgid "This field should be an email"
+msgstr ""
+
+msgid "Please enter a valid international phone number (+0123456789)"
+msgstr ""
+
+msgid "No value"
+msgstr "بدون ارقام/ ارزش"
+
+msgid "Use system default"
+msgstr "استفاده پیش فرض سیستم"
+
+msgid "No options"
+msgstr ""
+
+msgid "System default"
+msgstr "پیش‌فرض سیستم"
+
+msgid "Edit user profile"
+msgstr ""
+
+msgid "Edit user settings"
+msgstr ""
+
+msgid "View full profile"
+msgstr ""
+
+msgid "About DHIS2"
+msgstr ""
+
+msgid "User profile updated"
+msgstr "مشخصات استفاده کننده تجدید گردید"
+
+msgid "Failed to update user profile"
+msgstr "تجدید مشخصات استفاده کننده به ناکامی انجامید"
+
+msgid "Settings updated"
+msgstr "تنظیمات تجدید گردید"
+
+msgid "Failed to update settings"
+msgstr "تجدید تنظیمات به ناکامی انجامید"
+
+msgid "First name"
+msgstr "نام اول"
+
+msgid "Surname"
+msgstr "تخلص"
+
+msgid "Gender"
+msgstr "جنسیت"
+
+msgid "Male"
+msgstr "مذکر"
+
+msgid "Female"
+msgstr "مونث"
+
+msgid "Other"
+msgstr "دیگر"
+
+msgid "E-mail"
+msgstr "ایمل"
+
+msgid "Mobile phone number"
+msgstr "شماره تیلیفون"
+
+msgid "Introduction"
+msgstr "معرفی"
+
+msgid "Job title"
+msgstr "عنوان وظیفه"
+
+msgid "User roles"
+msgstr "نقش استفاده کننده"
+
+msgid "User org units"
+msgstr ""
+
+msgid "Birthday"
+msgstr "تاریخ تولد"
+
+msgid "Nationality"
+msgstr "ملیت"
+
+msgid "Employer"
+msgstr "ریس"
+
+msgid "Education"
+msgstr "تحصیلات"
+
+msgid "Interests"
+msgstr "علاقه مندی"
+
+msgid "Languages"
+msgstr "زبان ها"
+
+msgid "WhatsApp"
+msgstr ""
+
+msgid "Facebook Messenger"
+msgstr ""
+
+msgid "Skype"
+msgstr ""
+
+msgid "Telegram"
+msgstr ""
+
+msgid "Twitter"
+msgstr ""
+
+msgid "Account editor"
+msgstr ""
+
+msgid "Interface language"
+msgstr "زبان صفه های اپلیکیشن"
+
+msgid "Database language"
+msgstr "زبان دیتابیس"
+
+msgid "Style"
+msgstr "استایل"
+
+msgid "Property to display in analysis modules"
+msgstr "ویژگی که در مادیول تحلیل به نمایش بیاید"
+
+msgid "Short name"
+msgstr "نام کوتاه"
+
+msgid "Enable message email notifications"
+msgstr "فعال سازی ارسال اطلاع پیام از طریق ایمل"
+
+msgid "Enable message SMS notifications"
+msgstr "فعال سازی ارسال اطلاع پیام از طریق SMS"

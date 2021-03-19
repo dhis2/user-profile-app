@@ -1,269 +1,429 @@
 # 
 # Translators:
-# phil_dhis2, 2019
+# phil_dhis2, 2021
+# Viktor Varland <viktor@dhis2.org>, 2021
 # 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-01 00:28-0400\n"
-"PO-Revision-Date: 2019-09-02 16:41+0000\n"
-"Last-Translator: phil_dhis2, 2019\n"
+"Project-Id-Version: i18next-conv\n"
+"POT-Creation-Date: 2021-03-16T12:56:03.527Z\n"
+"PO-Revision-Date: 2021-03-17 23:49+0000\n"
+"Last-Translator: Viktor Varland <viktor@dhis2.org>, 2021\n"
 "Language-Team: Russian (https://www.transifex.com/hisp-uio/teams/100509/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
-"X-Generator: Translate Toolkit 2.0.0b3\n"
 
-#: user_profile
-msgid "User profile"
-msgstr "Профиль пользователя"
+msgid "Never"
+msgstr "Никогда"
 
-#: account_settings
-msgid "Account settings"
-msgstr "Настройки аккаунта"
-
-#: user_settings
-msgid "User settings"
-msgstr "Пользовательские настройки"
-
-#: user_email_address
-msgid "E-mail"
-msgstr "адрес электронной почты"
-
-#: surname
-msgid "Surname"
-msgstr "Фамилия"
-
-#: first_name
-msgid "First name"
-msgstr "Имя"
-
-#: old_password
-msgid "Old password"
-msgstr "Старый пароль"
-
-#: new_password
-msgid "New password"
-msgstr "Новый пароль"
-
-#: repeat_new_password
-msgid "Repeat new password"
-msgstr "Повторите новый пароль"
-
-#: openid
-msgid "OpenID"
+msgid "Invalid date"
 msgstr ""
 
-#: username
-msgid "Username"
-msgstr "Имя пользователя"
+msgid "Web API"
+msgstr "Сетевой ИПП (интерфейс программирования приложений)"
 
-#: phone_number
-msgid "Mobile phone number"
-msgstr "Номер мобильного телефона"
+msgid "Browse it here"
+msgstr "Просмотрите это здесь"
 
-#: job_title
-msgid "Job title"
-msgstr "Специальность"
+msgid "Current user"
+msgstr "Текущий пользователь"
 
-#: introduction
-msgid "Introduction"
-msgstr "Представление"
+msgid "Version"
+msgstr "Версия"
 
-#: gender
-msgid "Gender"
-msgstr "Пол"
+msgid "Build revision"
+msgstr "Пересмотр конфигурации"
 
-#: male
-msgctxt "male"
-msgid "Male"
-msgstr "Мужчина"
+msgid "Build date"
+msgstr "Дата конфигурации"
 
-#: female
-msgctxt "female"
-msgid "Female"
-msgstr "Женщина"
+msgid "Jasper reports version"
+msgstr "Версия отчетов Jasper"
 
-#: other
-msgctxt "other"
-msgid "Other"
-msgstr "Другое"
+msgid "User agent"
+msgstr "Агент пользователь"
 
-#: gender_male
-msgctxt "gender_male"
-msgid "Male"
-msgstr "Мужчина"
+msgid "Server date"
+msgstr "Дата сервера"
 
-#: gender_female
-msgctxt "gender_female"
-msgid "Female"
-msgstr "Женщина"
+msgid "Last analytics table generation"
+msgstr "Генерация последней аналитической таблицы"
 
-#: gender_other
-msgctxt "gender_other"
-msgid "Other"
-msgstr "Другое"
+msgid "Time since last analytics table generation"
+msgstr "Время с момента создания последней аналитической таблицы"
 
-#: birthday
-msgid "Birthday"
-msgstr "День рождения"
+msgid "Last analytics table runtime"
+msgstr "Время генерации последней аналитической таблицы"
 
-#: nationality
-msgid "Nationality"
-msgstr "Национальность"
+msgid "Last continuous analytics table update"
+msgstr ""
 
-#: employer
-msgid "Employer"
-msgstr "Работодатель"
+msgid "Time since last continuous analytics table update"
+msgstr ""
 
-#: education
-msgid "Education"
-msgstr "Образование"
+msgid "Last continuous analytics table runtime"
+msgstr ""
 
-#: interests
-msgid "Interests"
-msgstr "Интересы"
+msgid "Environment variable"
+msgstr "Переменная среды"
 
-#: languages
-msgid "Languages"
-msgstr "Знание языков"
+msgid "System ID"
+msgstr "ID системы"
 
-#: update_user_profile_success
-msgid "User profile updated"
-msgstr "Профиль пользователя обновлен"
+msgid "Last monitoring success"
+msgstr ""
 
-#: settings
-msgid "Settings"
-msgstr "Настройки"
+msgid "External configuration directory"
+msgstr "Внешняя директория конфигурации"
 
-#: property_to_display_in_analysis_modules
-msgctxt "property_to_display_in_analysis_modules"
-msgid "Property to display in analysis modules"
-msgstr "Свойство для отображения в модулях анализа"
+msgid "File store provider"
+msgstr "Провайдер хранилища файлов"
 
-#: general
-msgid "General"
-msgstr "Общие"
+msgid "Node ID"
+msgstr "ID узла"
 
-#: message
-msgid "Message"
-msgstr "Сообщение"
+msgid "Cache provider"
+msgstr "Провайдер кэша"
 
-#: settings_updated
-msgid "Settings updated"
-msgstr "Настройки обновлены"
+msgid "Read replica count"
+msgstr "Количество реплик чтения"
 
-#: failed_to_update_settings
-msgid "Failed to update settings"
-msgstr "Не удалось обновить настройки"
+msgid "Java opts"
+msgstr "Опции Java"
 
-#: style
-msgid "Style"
-msgstr "Стиль"
+msgid "Java version"
+msgstr "Версия Java"
 
-#: db_language
-msgid "Database language"
-msgstr "Язык базы данных"
+msgid "Java vendor"
+msgstr "Производитель Java"
 
-#: language
-msgid "Interface language"
-msgstr "Язык интерфейса"
+msgid "OS name"
+msgstr "Название ОС"
 
-#: enable_message_email_notifications
-msgid "Enable message email notifications"
-msgstr "Включить уведомления по электронной почте"
+msgid "OS architecture"
+msgstr "Архитектура ОС"
 
-#: enable_message_sms_notifications
-msgid "Enable message SMS notifications"
-msgstr "Включить SMS-уведомления о сообщениях"
+msgid "OS version"
+msgstr "Версия ОС"
 
-#: analysis_module
-msgctxt "analysis_module"
-msgid "Property to display in analysis modules"
-msgstr "Свойство для отображения в модулях анализа"
+msgid "Memory info"
+msgstr ""
 
-#: name
+msgid "CPU cores"
+msgstr "память CPU/микропроцессора"
+
+msgid "Calendar"
+msgstr "Календарь"
+
 msgid "Name"
 msgstr "Название"
 
-#: short_name
-msgid "Short name"
-msgstr "Короткое название"
+msgid "User"
+msgstr "Пользователь"
 
-#: system_default
-msgid "System default"
-msgstr "Системные установки по умолчанию"
-
-#: value_should_be_an_email
-msgid "Please enter a valid email address"
-msgstr "Пожалуйста, введите корректный адрес электронной почты"
-
-#: update_user_profile_fail
-msgid "Failed to update user profile"
-msgstr "Не удалось обновить профиль пользователя"
-
-#: update_settings_fail
-msgid "Fialed to update user settings"
-msgstr "Не удалось обновить настройки пользователя"
-
-#: update_password
-msgid "Update password"
-msgstr "Обновить пароль"
-
-#: invalid_password
-msgid ""
-"Password should be at least 8 characters with at least 1 digit and 1 "
-"uppercase letter"
+msgid "Spatial support"
 msgstr ""
-"Пароль должен содержать не менее 8 символов, минимум 1 цифру и 1 заглавную "
-"букву"
 
-#: passwords_do_not_match
-msgid "The entered values do not match. Please re-enter."
-msgstr "Введенные значения не совпадают. Пожалуйста, введите снова."
+msgid "System info"
+msgstr ""
 
-#: use_system_default
-msgid "Use system default"
-msgstr "Использовать значения по умолчанию"
+msgid "Database"
+msgstr ""
 
-#: true_notifications
-msgid "Yes"
-msgstr "Да"
+msgid "Edit account settings"
+msgstr ""
 
-#: false_notifications
-msgid "No"
-msgstr "Нет"
-
-#: value_required
-msgid "This field can't be left blank"
-msgstr "Это поле не должно быть пустым"
-
-#: please_enter_the_correct_password
-msgid "Please enter the correct password"
-msgstr "Пожалуйста, введите правильный пароль"
-
-#: no_changes_have_been_made
 msgid "No changes have been made"
 msgstr "Изменения не производились"
 
-#: validating_please_try_again
 msgid "The form is currently being validated. Please try again."
 msgstr ""
 "Форма в настоящее время проходит проверку. Пожалуйста, попробуйте еще раз."
 
-#: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
 msgstr ""
 "Форма содержит ошибки. Пожалуйста, исправьте ошибки и попробуйте снова."
 
-#: password_update_success
-msgid "Your password was updated successfully"
-msgstr "Ваш пароль был успешно обновлен"
+msgid "The entered values do not match. Please re-enter."
+msgstr "Введенные значения не совпадают. Пожалуйста, введите снова."
 
-#: password_update_failed
+msgid "Please provide your old password"
+msgstr ""
+
+msgid "Username"
+msgstr "Имя пользователя"
+
+msgid "Old password"
+msgstr "Старый пароль"
+
+msgid "This field can't be left blank"
+msgstr "Это поле не должно быть пустым"
+
+msgid "New password"
+msgstr "Новый пароль"
+
+msgid ""
+"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
+"letter and 1 special character"
+msgstr ""
+
+msgid "Repeat new password"
+msgstr "Повторите новый пароль"
+
+msgid "Setup 2-Factor"
+msgstr ""
+
+msgid "Update password"
+msgstr "Обновить пароль"
+
+msgid ""
+"This account is linked to an OpenID Connect identity. Visit the Open ID "
+"Connect provider to manage this account's settings."
+msgstr ""
+
+msgid "Password changed successfully"
+msgstr ""
+
+msgid "You need to login again to continue using the application."
+msgstr ""
+
+msgid "Login"
+msgstr ""
+
 msgid "Failed to update password"
 msgstr "Не удалось обновить пароль"
+
+msgid "2-Factor successfully turned ON"
+msgstr ""
+
+msgid "2-Factor successfully turned OFF"
+msgstr ""
+
+msgid "Failed to turn ON 2-Factor"
+msgstr ""
+
+msgid "Failed to turn OFF 2-Factor"
+msgstr ""
+
+msgid "Barcode/QR code to scan"
+msgstr ""
+
+msgid "No"
+msgstr "Нет"
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "Turn OFF"
+msgstr ""
+
+msgid "Turn ON"
+msgstr ""
+
+msgid "2-Factor Verification is ON"
+msgstr ""
+
+msgid "2-Factor Verification is OFF"
+msgstr ""
+
+msgid "Do you want to turn OFF 2-Factor?"
+msgstr ""
+
+msgid "Do you want to turn ON 2-Factor?"
+msgstr ""
+
+msgid "Download the Authenticator app"
+msgstr ""
+
+msgid "What kind of phone/tablet do you have?"
+msgstr ""
+
+msgid "Download the Authenticator App from the "
+msgstr ""
+
+msgid "In the Authenticator App select "
+msgstr ""
+
+msgid "Begin setup."
+msgstr ""
+
+msgid "Choose "
+msgstr ""
+
+msgid "Scan a barcode."
+msgstr ""
+
+msgid ""
+"With 2-Factor authentication turned on you will be asked to enter a second "
+"verification code when you log in. To generate this verification code you "
+"must use the Authenticator app. If you do not have this app you must "
+"download it on your phone/tablet."
+msgstr ""
+
+msgid "Failed to upload profile picture"
+msgstr ""
+
+msgid "Profile picture"
+msgstr ""
+
+msgid "No profile picture available"
+msgstr ""
+
+msgid "Select profile picture"
+msgstr ""
+
+msgid "Remove profile picture"
+msgstr ""
+
+msgid "This field is required"
+msgstr "Это поле обязательно к заполнению"
+
+msgid "This field should be a URL"
+msgstr ""
+
+msgid "This field should contain a list of URLs"
+msgstr "Это поле должно содержать список URL"
+
+msgid "This field should be a number"
+msgstr "Это поле должно содержать число"
+
+msgid "This field should be a positive number"
+msgstr "Это поле должно содержать положительное число"
+
+msgid "This field should be an email"
+msgstr ""
+
+msgid "Please enter a valid international phone number (+0123456789)"
+msgstr ""
+
+msgid "No value"
+msgstr "Нет значения"
+
+msgid "Use system default"
+msgstr "Использовать значения по умолчанию"
+
+msgid "No options"
+msgstr ""
+
+msgid "System default"
+msgstr "Системные установки по умолчанию"
+
+msgid "Edit user profile"
+msgstr ""
+
+msgid "Edit user settings"
+msgstr ""
+
+msgid "View full profile"
+msgstr ""
+
+msgid "About DHIS2"
+msgstr ""
+
+msgid "User profile updated"
+msgstr "Профиль пользователя обновлен"
+
+msgid "Failed to update user profile"
+msgstr "Не удалось обновить профиль пользователя"
+
+msgid "Settings updated"
+msgstr "Настройки обновлены"
+
+msgid "Failed to update settings"
+msgstr "Не удалось обновить настройки"
+
+msgid "First name"
+msgstr "Имя"
+
+msgid "Surname"
+msgstr "Фамилия"
+
+msgid "Gender"
+msgstr "Пол"
+
+msgid "Male"
+msgstr "Мужчина"
+
+msgid "Female"
+msgstr "Женщина"
+
+msgid "Other"
+msgstr "Другое"
+
+msgid "E-mail"
+msgstr "адрес электронной почты"
+
+msgid "Mobile phone number"
+msgstr "Номер мобильного телефона"
+
+msgid "Introduction"
+msgstr "Представление"
+
+msgid "Job title"
+msgstr "Специальность"
+
+msgid "User roles"
+msgstr "Уровень доступа"
+
+msgid "User org units"
+msgstr ""
+
+msgid "Birthday"
+msgstr "День рождения"
+
+msgid "Nationality"
+msgstr "Национальность"
+
+msgid "Employer"
+msgstr "Работодатель"
+
+msgid "Education"
+msgstr "Образование"
+
+msgid "Interests"
+msgstr "Интересы"
+
+msgid "Languages"
+msgstr "Знание языков"
+
+msgid "WhatsApp"
+msgstr ""
+
+msgid "Facebook Messenger"
+msgstr ""
+
+msgid "Skype"
+msgstr ""
+
+msgid "Telegram"
+msgstr ""
+
+msgid "Twitter"
+msgstr ""
+
+msgid "Account editor"
+msgstr ""
+
+msgid "Interface language"
+msgstr "Язык интерфейса"
+
+msgid "Database language"
+msgstr "Язык базы данных"
+
+msgid "Style"
+msgstr "Стиль"
+
+msgid "Property to display in analysis modules"
+msgstr "Свойство для отображения в модулях анализа"
+
+msgid "Short name"
+msgstr "Короткое название"
+
+msgid "Enable message email notifications"
+msgstr "Включить уведомления по электронной почте"
+
+msgid "Enable message SMS notifications"
+msgstr "Включить SMS-уведомления о сообщениях"

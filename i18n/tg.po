@@ -1,265 +1,427 @@
 # 
 # Translators:
-# phil_dhis2, 2019
+# phil_dhis2, 2021
+# Viktor Varland <viktor@dhis2.org>, 2021
 # 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-01 00:28-0400\n"
-"PO-Revision-Date: 2019-09-02 16:41+0000\n"
-"Last-Translator: phil_dhis2, 2019\n"
+"Project-Id-Version: i18next-conv\n"
+"POT-Creation-Date: 2021-03-16T12:56:03.527Z\n"
+"PO-Revision-Date: 2021-03-17 23:49+0000\n"
+"Last-Translator: Viktor Varland <viktor@dhis2.org>, 2021\n"
 "Language-Team: Tajik (https://www.transifex.com/hisp-uio/teams/100509/tg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: tg\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 2.0.0b3\n"
 
-#: user_profile
-msgid "User profile"
+msgid "Never"
+msgstr "Ҳеҷ гоҳ"
+
+msgid "Invalid date"
 msgstr ""
 
-#: account_settings
-msgid "Account settings"
+msgid "Web API"
 msgstr ""
 
-#: user_settings
-msgid "User settings"
-msgstr "Танзимоти корбар"
-
-#: user_email_address
-msgid "E-mail"
-msgstr "Почтаи электронӣ"
-
-#: surname
-msgid "Surname"
-msgstr "Насаб"
-
-#: first_name
-msgid "First name"
-msgstr "Ном"
-
-#: old_password
-msgid "Old password"
-msgstr "Пароли кӯҳна"
-
-#: new_password
-msgid "New password"
-msgstr "Пароли нав"
-
-#: repeat_new_password
-msgid "Repeat new password"
+msgid "Browse it here"
 msgstr ""
 
-#: openid
-msgid "OpenID"
+msgid "Current user"
+msgstr "Корбари ҷорӣ"
+
+msgid "Version"
+msgstr "Версия"
+
+msgid "Build revision"
+msgstr "Версияи сохт"
+
+msgid "Build date"
+msgstr "Санаи сохт"
+
+msgid "Jasper reports version"
 msgstr ""
 
-#: username
-msgid "Username"
-msgstr "Номи корбар"
+msgid "User agent"
+msgstr "Намояндаи корбар"
 
-#: phone_number
-msgid "Mobile phone number"
-msgstr "Рақами телефони мобилӣ"
+msgid "Server date"
+msgstr "Санаи сервер"
 
-#: job_title
-msgid "Job title"
-msgstr "Унвони вазифа"
-
-#: introduction
-msgid "Introduction"
-msgstr "Муқаддима"
-
-#: gender
-msgid "Gender"
-msgstr "Ҷинс"
-
-#: male
-msgctxt "male"
-msgid "Male"
-msgstr "Мард"
-
-#: female
-msgctxt "female"
-msgid "Female"
-msgstr "Зан"
-
-#: other
-msgctxt "other"
-msgid "Other"
-msgstr "Дигар"
-
-#: gender_male
-msgctxt "gender_male"
-msgid "Male"
-msgstr "Мард"
-
-#: gender_female
-msgctxt "gender_female"
-msgid "Female"
-msgstr "Зан"
-
-#: gender_other
-msgctxt "gender_other"
-msgid "Other"
-msgstr "Дигар"
-
-#: birthday
-msgid "Birthday"
-msgstr "Рӯзи таваллуд"
-
-#: nationality
-msgid "Nationality"
-msgstr "Миллат"
-
-#: employer
-msgid "Employer"
-msgstr "Корфармо"
-
-#: education
-msgid "Education"
-msgstr "Маълумот"
-
-#: interests
-msgid "Interests"
-msgstr "Манфиатҳо"
-
-#: languages
-msgid "Languages"
-msgstr "Забонҳо"
-
-#: update_user_profile_success
-msgid "User profile updated"
+msgid "Last analytics table generation"
 msgstr ""
 
-#: settings
-msgid "Settings"
-msgstr "Танзимот"
-
-#: property_to_display_in_analysis_modules
-msgctxt "property_to_display_in_analysis_modules"
-msgid "Property to display in analysis modules"
-msgstr "Хусусият барои нишон додан дар модулҳои таҳлилӣ"
-
-#: general
-msgid "General"
-msgstr "Умумуӣ"
-
-#: message
-msgid "Message"
-msgstr "Паём"
-
-#: settings_updated
-msgid "Settings updated"
+msgid "Time since last analytics table generation"
 msgstr ""
 
-#: failed_to_update_settings
-msgid "Failed to update settings"
+msgid "Last analytics table runtime"
 msgstr ""
 
-#: style
-msgid "Style"
-msgstr "Услуб"
+msgid "Last continuous analytics table update"
+msgstr ""
 
-#: db_language
-msgid "Database language"
-msgstr "Забони пойгоҳи иттилоотӣ"
+msgid "Time since last continuous analytics table update"
+msgstr ""
 
-#: language
-msgid "Interface language"
-msgstr "Забони интерфейс"
+msgid "Last continuous analytics table runtime"
+msgstr ""
 
-#: enable_message_email_notifications
-msgid "Enable message email notifications"
-msgstr "Фаъол кардани огоҳиҳо тавассути почтаи электронӣ"
+msgid "Environment variable"
+msgstr "тағйирёбандаи муҳит"
 
-#: enable_message_sms_notifications
-msgid "Enable message SMS notifications"
-msgstr "Фаъоли кардани огоҳиҳо тавассути паёмҳои СМС"
+msgid "System ID"
+msgstr ""
 
-#: analysis_module
-msgctxt "analysis_module"
-msgid "Property to display in analysis modules"
-msgstr "Хусусият барои нишон додан дар модулҳои таҳлилӣ"
+msgid "Last monitoring success"
+msgstr ""
 
-#: name
+msgid "External configuration directory"
+msgstr "Директорияи конфигуратсияи беруна"
+
+msgid "File store provider"
+msgstr ""
+
+msgid "Node ID"
+msgstr ""
+
+msgid "Cache provider"
+msgstr ""
+
+msgid "Read replica count"
+msgstr ""
+
+msgid "Java opts"
+msgstr "Имконоти Java"
+
+msgid "Java version"
+msgstr "Версияи Java"
+
+msgid "Java vendor"
+msgstr "Таъминкунандаи Java"
+
+msgid "OS name"
+msgstr "Номи СИ"
+
+msgid "OS architecture"
+msgstr "Меъмории СИ"
+
+msgid "OS version"
+msgstr "Версияи СИ"
+
+msgid "Memory info"
+msgstr ""
+
+msgid "CPU cores"
+msgstr "Маӯзҳои CPU"
+
+msgid "Calendar"
+msgstr ""
+
 msgid "Name"
 msgstr "Ном"
 
-#: short_name
-msgid "Short name"
-msgstr "Номи мухтасар"
+msgid "User"
+msgstr "Корбар"
 
-#: system_default
-msgid "System default"
+msgid "Spatial support"
 msgstr ""
 
-#: value_should_be_an_email
-msgid "Please enter a valid email address"
+msgid "System info"
 msgstr ""
 
-#: update_user_profile_fail
-msgid "Failed to update user profile"
+msgid "Database"
 msgstr ""
 
-#: update_settings_fail
-msgid "Fialed to update user settings"
+msgid "Edit account settings"
 msgstr ""
 
-#: update_password
-msgid "Update password"
-msgstr ""
-
-#: invalid_password
-msgid ""
-"Password should be at least 8 characters with at least 1 digit and 1 "
-"uppercase letter"
-msgstr ""
-
-#: passwords_do_not_match
-msgid "The entered values do not match. Please re-enter."
-msgstr ""
-
-#: use_system_default
-msgid "Use system default"
-msgstr ""
-
-#: true_notifications
-msgid "Yes"
-msgstr "Ҳа"
-
-#: false_notifications
-msgid "No"
-msgstr "Не"
-
-#: value_required
-msgid "This field can't be left blank"
-msgstr ""
-
-#: please_enter_the_correct_password
-msgid "Please enter the correct password"
-msgstr ""
-
-#: no_changes_have_been_made
 msgid "No changes have been made"
 msgstr ""
 
-#: validating_please_try_again
 msgid "The form is currently being validated. Please try again."
 msgstr ""
 
-#: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
 msgstr ""
 
-#: password_update_success
-msgid "Your password was updated successfully"
+msgid "The entered values do not match. Please re-enter."
 msgstr ""
 
-#: password_update_failed
+msgid "Please provide your old password"
+msgstr ""
+
+msgid "Username"
+msgstr "Номи корбар"
+
+msgid "Old password"
+msgstr "Пароли кӯҳна"
+
+msgid "This field can't be left blank"
+msgstr ""
+
+msgid "New password"
+msgstr "Пароли нав"
+
+msgid ""
+"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
+"letter and 1 special character"
+msgstr ""
+
+msgid "Repeat new password"
+msgstr ""
+
+msgid "Setup 2-Factor"
+msgstr ""
+
+msgid "Update password"
+msgstr ""
+
+msgid ""
+"This account is linked to an OpenID Connect identity. Visit the Open ID "
+"Connect provider to manage this account's settings."
+msgstr ""
+
+msgid "Password changed successfully"
+msgstr ""
+
+msgid "You need to login again to continue using the application."
+msgstr ""
+
+msgid "Login"
+msgstr ""
+
 msgid "Failed to update password"
 msgstr ""
+
+msgid "2-Factor successfully turned ON"
+msgstr ""
+
+msgid "2-Factor successfully turned OFF"
+msgstr ""
+
+msgid "Failed to turn ON 2-Factor"
+msgstr ""
+
+msgid "Failed to turn OFF 2-Factor"
+msgstr ""
+
+msgid "Barcode/QR code to scan"
+msgstr ""
+
+msgid "No"
+msgstr "Не"
+
+msgid "Yes"
+msgstr "Ҳа"
+
+msgid "Turn OFF"
+msgstr ""
+
+msgid "Turn ON"
+msgstr ""
+
+msgid "2-Factor Verification is ON"
+msgstr ""
+
+msgid "2-Factor Verification is OFF"
+msgstr ""
+
+msgid "Do you want to turn OFF 2-Factor?"
+msgstr ""
+
+msgid "Do you want to turn ON 2-Factor?"
+msgstr ""
+
+msgid "Download the Authenticator app"
+msgstr ""
+
+msgid "What kind of phone/tablet do you have?"
+msgstr ""
+
+msgid "Download the Authenticator App from the "
+msgstr ""
+
+msgid "In the Authenticator App select "
+msgstr ""
+
+msgid "Begin setup."
+msgstr ""
+
+msgid "Choose "
+msgstr ""
+
+msgid "Scan a barcode."
+msgstr ""
+
+msgid ""
+"With 2-Factor authentication turned on you will be asked to enter a second "
+"verification code when you log in. To generate this verification code you "
+"must use the Authenticator app. If you do not have this app you must "
+"download it on your phone/tablet."
+msgstr ""
+
+msgid "Failed to upload profile picture"
+msgstr ""
+
+msgid "Profile picture"
+msgstr ""
+
+msgid "No profile picture available"
+msgstr ""
+
+msgid "Select profile picture"
+msgstr ""
+
+msgid "Remove profile picture"
+msgstr ""
+
+msgid "This field is required"
+msgstr "Ин майдон ҳатмист"
+
+msgid "This field should be a URL"
+msgstr ""
+
+msgid "This field should contain a list of URLs"
+msgstr ""
+
+msgid "This field should be a number"
+msgstr ""
+
+msgid "This field should be a positive number"
+msgstr ""
+
+msgid "This field should be an email"
+msgstr ""
+
+msgid "Please enter a valid international phone number (+0123456789)"
+msgstr ""
+
+msgid "No value"
+msgstr "Лутфан интихоб кунед"
+
+msgid "Use system default"
+msgstr ""
+
+msgid "No options"
+msgstr ""
+
+msgid "System default"
+msgstr ""
+
+msgid "Edit user profile"
+msgstr ""
+
+msgid "Edit user settings"
+msgstr ""
+
+msgid "View full profile"
+msgstr ""
+
+msgid "About DHIS2"
+msgstr ""
+
+msgid "User profile updated"
+msgstr ""
+
+msgid "Failed to update user profile"
+msgstr ""
+
+msgid "Settings updated"
+msgstr ""
+
+msgid "Failed to update settings"
+msgstr ""
+
+msgid "First name"
+msgstr "Ном"
+
+msgid "Surname"
+msgstr "Насаб"
+
+msgid "Gender"
+msgstr "Ҷинс"
+
+msgid "Male"
+msgstr "Мард"
+
+msgid "Female"
+msgstr "Зан"
+
+msgid "Other"
+msgstr "Дигар"
+
+msgid "E-mail"
+msgstr "Почтаи электронӣ"
+
+msgid "Mobile phone number"
+msgstr "Рақами телефони мобилӣ"
+
+msgid "Introduction"
+msgstr "Муқаддима"
+
+msgid "Job title"
+msgstr "Унвони вазифа"
+
+msgid "User roles"
+msgstr "Вазифаҳои корбар"
+
+msgid "User org units"
+msgstr ""
+
+msgid "Birthday"
+msgstr "Рӯзи таваллуд"
+
+msgid "Nationality"
+msgstr "Миллат"
+
+msgid "Employer"
+msgstr "Корфармо"
+
+msgid "Education"
+msgstr "Маълумот"
+
+msgid "Interests"
+msgstr "Манфиатҳо"
+
+msgid "Languages"
+msgstr "Забонҳо"
+
+msgid "WhatsApp"
+msgstr ""
+
+msgid "Facebook Messenger"
+msgstr ""
+
+msgid "Skype"
+msgstr ""
+
+msgid "Telegram"
+msgstr ""
+
+msgid "Twitter"
+msgstr ""
+
+msgid "Account editor"
+msgstr ""
+
+msgid "Interface language"
+msgstr "Забони интерфейс"
+
+msgid "Database language"
+msgstr "Забони пойгоҳи иттилоотӣ"
+
+msgid "Style"
+msgstr "Услуб"
+
+msgid "Property to display in analysis modules"
+msgstr "Хусусият барои нишон додан дар модулҳои таҳлилӣ"
+
+msgid "Short name"
+msgstr "Номи мухтасар"
+
+msgid "Enable message email notifications"
+msgstr "Фаъол кардани огоҳиҳо тавассути почтаи электронӣ"
+
+msgid "Enable message SMS notifications"
+msgstr "Фаъоли кардани огоҳиҳо тавассути паёмҳои СМС"

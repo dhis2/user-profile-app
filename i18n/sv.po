@@ -1,265 +1,426 @@
 # 
 # Translators:
-# phil_dhis2, 2019
+# phil_dhis2, 2021
 # 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-01 00:28-0400\n"
-"PO-Revision-Date: 2019-09-02 16:41+0000\n"
-"Last-Translator: phil_dhis2, 2019\n"
+"Project-Id-Version: i18next-conv\n"
+"POT-Creation-Date: 2021-03-16T12:56:03.527Z\n"
+"PO-Revision-Date: 2021-03-17 23:49+0000\n"
+"Last-Translator: phil_dhis2, 2021\n"
 "Language-Team: Swedish (https://www.transifex.com/hisp-uio/teams/100509/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 2.0.0b3\n"
 
-#: user_profile
-msgid "User profile"
-msgstr "Användarprofil"
+msgid "Never"
+msgstr ""
 
-#: account_settings
-msgid "Account settings"
-msgstr "Kontoinställningar"
+msgid "Invalid date"
+msgstr ""
 
-#: user_settings
-msgid "User settings"
-msgstr "Användarinställningar"
+msgid "Web API"
+msgstr ""
 
-#: user_email_address
-msgid "E-mail"
-msgstr "E-post"
+msgid "Browse it here"
+msgstr "Bläddra det här"
 
-#: surname
-msgid "Surname"
-msgstr "Efternamn"
+msgid "Current user"
+msgstr "Nuvarande användaren"
 
-#: first_name
-msgid "First name"
-msgstr "Förnamn"
+msgid "Version"
+msgstr ""
 
-#: old_password
-msgid "Old password"
-msgstr "Gammalt lösenord"
+msgid "Build revision"
+msgstr "bygga revidering"
 
-#: new_password
-msgid "New password"
-msgstr "Nytt lösenord"
+msgid "Build date"
+msgstr "bygga datum"
 
-#: repeat_new_password
-msgid "Repeat new password"
-msgstr "Upprepa nytt lösenord"
+msgid "Jasper reports version"
+msgstr ""
 
-#: openid
-msgid "OpenID"
-msgstr "OpenID"
+msgid "User agent"
+msgstr "user agent"
 
-#: username
-msgid "Username"
-msgstr "Användarnamn"
+msgid "Server date"
+msgstr "serverdatum"
 
-#: phone_number
-msgid "Mobile phone number"
-msgstr "Mobilnummer"
+msgid "Last analytics table generation"
+msgstr "Sista analystabellen generation"
 
-#: job_title
-msgid "Job title"
-msgstr "Titel"
+msgid "Time since last analytics table generation"
+msgstr "Tid sedan senaste analytics tabell generation"
 
-#: introduction
-msgid "Introduction"
-msgstr "Introduktion"
+msgid "Last analytics table runtime"
+msgstr "Sista analystabellen runtime"
 
-#: gender
-msgid "Gender"
-msgstr "Kön"
+msgid "Last continuous analytics table update"
+msgstr ""
 
-#: male
-msgctxt "male"
-msgid "Male"
-msgstr "Man"
+msgid "Time since last continuous analytics table update"
+msgstr ""
 
-#: female
-msgctxt "female"
-msgid "Female"
-msgstr "Kvinna"
+msgid "Last continuous analytics table runtime"
+msgstr ""
 
-#: other
-msgctxt "other"
-msgid "Other"
-msgstr "Övrig"
+msgid "Environment variable"
+msgstr "miljövariabel"
 
-#: gender_male
-msgctxt "gender_male"
-msgid "Male"
-msgstr "Man"
+msgid "System ID"
+msgstr ""
 
-#: gender_female
-msgctxt "gender_female"
-msgid "Female"
-msgstr "Kvinna"
+msgid "Last monitoring success"
+msgstr ""
 
-#: gender_other
-msgctxt "gender_other"
-msgid "Other"
-msgstr "Övrig"
+msgid "External configuration directory"
+msgstr "Extern konfigurationskatalog"
 
-#: birthday
-msgid "Birthday"
-msgstr "Födelsedag"
+msgid "File store provider"
+msgstr ""
 
-#: nationality
-msgid "Nationality"
-msgstr "Nationalitet"
+msgid "Node ID"
+msgstr ""
 
-#: employer
-msgid "Employer"
-msgstr "Arbetsgivare"
+msgid "Cache provider"
+msgstr ""
 
-#: education
-msgid "Education"
-msgstr "Utbildning"
+msgid "Read replica count"
+msgstr ""
 
-#: interests
-msgid "Interests"
-msgstr "Intressen"
+msgid "Java opts"
+msgstr "java väljer"
 
-#: languages
-msgid "Languages"
-msgstr "Språk"
+msgid "Java version"
+msgstr "Java-version"
 
-#: update_user_profile_success
-msgid "User profile updated"
-msgstr "Användarprofil uppdaterad"
+msgid "Java vendor"
+msgstr "java försäljaren"
 
-#: settings
-msgid "Settings"
-msgstr "Inställningar"
+msgid "OS name"
+msgstr "OS namn"
 
-#: property_to_display_in_analysis_modules
-msgctxt "property_to_display_in_analysis_modules"
-msgid "Property to display in analysis modules"
-msgstr "Egenskap som ska visas i analysmoduler"
+msgid "OS architecture"
+msgstr "OS arkitektur"
 
-#: general
-msgid "General"
-msgstr "Allmänt"
+msgid "OS version"
+msgstr "OS-version"
 
-#: message
-msgid "Message"
-msgstr "Meddelande"
+msgid "Memory info"
+msgstr ""
 
-#: settings_updated
-msgid "Settings updated"
-msgstr "Inställningar uppdaterad"
+msgid "CPU cores"
+msgstr "CPU-kärnor"
 
-#: failed_to_update_settings
-msgid "Failed to update settings"
-msgstr "Det gick inte att uppdatera inställningar"
+msgid "Calendar"
+msgstr ""
 
-#: style
-msgid "Style"
-msgstr "Stil"
-
-#: db_language
-msgid "Database language"
-msgstr "Databas språk"
-
-#: language
-msgid "Interface language"
-msgstr "Användargränssnittspråk"
-
-#: enable_message_email_notifications
-msgid "Enable message email notifications"
-msgstr "Aktivera e-postmeddelanden"
-
-#: enable_message_sms_notifications
-msgid "Enable message SMS notifications"
-msgstr "Aktivera SMS-meddelanden"
-
-#: analysis_module
-msgctxt "analysis_module"
-msgid "Property to display in analysis modules"
-msgstr "Egenskap som ska visas i analysmoduler"
-
-#: name
 msgid "Name"
 msgstr "Namn"
 
-#: short_name
-msgid "Short name"
-msgstr "Kort namn"
+msgid "User"
+msgstr ""
 
-#: system_default
-msgid "System default"
-msgstr "System standard"
+msgid "Spatial support"
+msgstr ""
 
-#: value_should_be_an_email
-msgid "Please enter a valid email address"
-msgstr "Vänligen ange en giltig e-postadress"
+msgid "System info"
+msgstr ""
 
-#: update_user_profile_fail
-msgid "Failed to update user profile"
-msgstr "Det gick inte att uppdatera användare profil"
+msgid "Database"
+msgstr ""
 
-#: update_settings_fail
-msgid "Fialed to update user settings"
-msgstr "Fel med uppdatering av användarens inställningar"
+msgid "Edit account settings"
+msgstr ""
 
-#: update_password
-msgid "Update password"
-msgstr "Uppdatera lösenord"
-
-#: invalid_password
-msgid ""
-"Password should be at least 8 characters with at least 1 digit and 1 "
-"uppercase letter"
-msgstr "Lösenord bör vara minst 8 tecken med minst 1 siffra och 1 bokstav"
-
-#: passwords_do_not_match
-msgid "The entered values do not match. Please re-enter."
-msgstr "De angivna värdena matchar inte. Vänligen försök igen."
-
-#: use_system_default
-msgid "Use system default"
-msgstr "Använda system standard"
-
-#: true_notifications
-msgid "Yes"
-msgstr "Ja"
-
-#: false_notifications
-msgid "No"
-msgstr "Nej"
-
-#: value_required
-msgid "This field can't be left blank"
-msgstr "Detta fält kan inte vara tomt"
-
-#: please_enter_the_correct_password
-msgid "Please enter the correct password"
-msgstr "Vänligen ange rätt lösenord"
-
-#: no_changes_have_been_made
 msgid "No changes have been made"
 msgstr "Inga ändringar har gjorts"
 
-#: validating_please_try_again
 msgid "The form is currently being validated. Please try again."
 msgstr "Formuläret för närvarande valideras. Var god försök igen."
 
-#: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
 msgstr "Formuläret innehåller fel. Vänligen åtgärda felen och försök igen."
 
-#: password_update_success
-msgid "Your password was updated successfully"
-msgstr "Ditt lösenord har uppdaterats"
+msgid "The entered values do not match. Please re-enter."
+msgstr "De angivna värdena matchar inte. Vänligen försök igen."
 
-#: password_update_failed
+msgid "Please provide your old password"
+msgstr ""
+
+msgid "Username"
+msgstr "Användarnamn"
+
+msgid "Old password"
+msgstr "Gammalt lösenord"
+
+msgid "This field can't be left blank"
+msgstr "Detta fält kan inte vara tomt"
+
+msgid "New password"
+msgstr "Nytt lösenord"
+
+msgid ""
+"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
+"letter and 1 special character"
+msgstr ""
+
+msgid "Repeat new password"
+msgstr "Upprepa nytt lösenord"
+
+msgid "Setup 2-Factor"
+msgstr ""
+
+msgid "Update password"
+msgstr "Uppdatera lösenord"
+
+msgid ""
+"This account is linked to an OpenID Connect identity. Visit the Open ID "
+"Connect provider to manage this account's settings."
+msgstr ""
+
+msgid "Password changed successfully"
+msgstr ""
+
+msgid "You need to login again to continue using the application."
+msgstr ""
+
+msgid "Login"
+msgstr ""
+
 msgid "Failed to update password"
 msgstr "Det gick inte att uppdatera lösenord"
+
+msgid "2-Factor successfully turned ON"
+msgstr ""
+
+msgid "2-Factor successfully turned OFF"
+msgstr ""
+
+msgid "Failed to turn ON 2-Factor"
+msgstr ""
+
+msgid "Failed to turn OFF 2-Factor"
+msgstr ""
+
+msgid "Barcode/QR code to scan"
+msgstr ""
+
+msgid "No"
+msgstr "Nej"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "Turn OFF"
+msgstr ""
+
+msgid "Turn ON"
+msgstr ""
+
+msgid "2-Factor Verification is ON"
+msgstr ""
+
+msgid "2-Factor Verification is OFF"
+msgstr ""
+
+msgid "Do you want to turn OFF 2-Factor?"
+msgstr ""
+
+msgid "Do you want to turn ON 2-Factor?"
+msgstr ""
+
+msgid "Download the Authenticator app"
+msgstr ""
+
+msgid "What kind of phone/tablet do you have?"
+msgstr ""
+
+msgid "Download the Authenticator App from the "
+msgstr ""
+
+msgid "In the Authenticator App select "
+msgstr ""
+
+msgid "Begin setup."
+msgstr ""
+
+msgid "Choose "
+msgstr ""
+
+msgid "Scan a barcode."
+msgstr ""
+
+msgid ""
+"With 2-Factor authentication turned on you will be asked to enter a second "
+"verification code when you log in. To generate this verification code you "
+"must use the Authenticator app. If you do not have this app you must "
+"download it on your phone/tablet."
+msgstr ""
+
+msgid "Failed to upload profile picture"
+msgstr ""
+
+msgid "Profile picture"
+msgstr ""
+
+msgid "No profile picture available"
+msgstr ""
+
+msgid "Select profile picture"
+msgstr ""
+
+msgid "Remove profile picture"
+msgstr ""
+
+msgid "This field is required"
+msgstr "Fältet är nödvändigt"
+
+msgid "This field should be a URL"
+msgstr ""
+
+msgid "This field should contain a list of URLs"
+msgstr ""
+
+msgid "This field should be a number"
+msgstr ""
+
+msgid "This field should be a positive number"
+msgstr ""
+
+msgid "This field should be an email"
+msgstr ""
+
+msgid "Please enter a valid international phone number (+0123456789)"
+msgstr ""
+
+msgid "No value"
+msgstr ""
+
+msgid "Use system default"
+msgstr "Använda system standard"
+
+msgid "No options"
+msgstr ""
+
+msgid "System default"
+msgstr "System standard"
+
+msgid "Edit user profile"
+msgstr ""
+
+msgid "Edit user settings"
+msgstr ""
+
+msgid "View full profile"
+msgstr ""
+
+msgid "About DHIS2"
+msgstr ""
+
+msgid "User profile updated"
+msgstr "Användarprofil uppdaterad"
+
+msgid "Failed to update user profile"
+msgstr "Det gick inte att uppdatera användare profil"
+
+msgid "Settings updated"
+msgstr "Inställningar uppdaterad"
+
+msgid "Failed to update settings"
+msgstr "Det gick inte att uppdatera inställningar"
+
+msgid "First name"
+msgstr "Förnamn"
+
+msgid "Surname"
+msgstr "Efternamn"
+
+msgid "Gender"
+msgstr "Kön"
+
+msgid "Male"
+msgstr "Man"
+
+msgid "Female"
+msgstr "Kvinna"
+
+msgid "Other"
+msgstr "Övrig"
+
+msgid "E-mail"
+msgstr "E-post"
+
+msgid "Mobile phone number"
+msgstr "Mobilnummer"
+
+msgid "Introduction"
+msgstr "Introduktion"
+
+msgid "Job title"
+msgstr "Titel"
+
+msgid "User roles"
+msgstr "Användarroller roller~~POS\\=HEADCOMP"
+
+msgid "User org units"
+msgstr ""
+
+msgid "Birthday"
+msgstr "Födelsedag"
+
+msgid "Nationality"
+msgstr "Nationalitet"
+
+msgid "Employer"
+msgstr "Arbetsgivare"
+
+msgid "Education"
+msgstr "Utbildning"
+
+msgid "Interests"
+msgstr "Intressen"
+
+msgid "Languages"
+msgstr "Språk"
+
+msgid "WhatsApp"
+msgstr ""
+
+msgid "Facebook Messenger"
+msgstr ""
+
+msgid "Skype"
+msgstr ""
+
+msgid "Telegram"
+msgstr ""
+
+msgid "Twitter"
+msgstr ""
+
+msgid "Account editor"
+msgstr ""
+
+msgid "Interface language"
+msgstr "Gränssnittsspråk språk~~POS\\=HEADCOMP"
+
+msgid "Database language"
+msgstr "Databas språk"
+
+msgid "Style"
+msgstr "Stil"
+
+msgid "Property to display in analysis modules"
+msgstr "Egenskap som ska visas i analysmoduler"
+
+msgid "Short name"
+msgstr "Kort namn"
+
+msgid "Enable message email notifications"
+msgstr "Aktivera e-postmeddelanden"
+
+msgid "Enable message SMS notifications"
+msgstr "Aktivera SMS-meddelanden"
