@@ -2,13 +2,14 @@
 # Translators:
 # phil_dhis2, 2021
 # Wanda <wanda@frontlineaids.org>, 2021
+# Nadiia <semchuk@aph.org.ua>, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2021-03-16T12:56:03.527Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Wanda <wanda@frontlineaids.org>, 2021\n"
+"Last-Translator: Nadiia <semchuk@aph.org.ua>, 2021\n"
 "Language-Team: Ukrainian (https://www.transifex.com/hisp-uio/teams/100509/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,16 +18,16 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 msgid "Never"
-msgstr ""
+msgstr "Ніколи"
 
 msgid "Invalid date"
-msgstr ""
+msgstr "Невірний формат дати"
 
 msgid "Web API"
 msgstr "Web API (Інтернет-API)"
 
 msgid "Browse it here"
-msgstr "Продивитися тут"
+msgstr "Переглянути це тут "
 
 msgid "Current user"
 msgstr "Поточний користувач"
@@ -71,7 +72,7 @@ msgid "Environment variable"
 msgstr "Змінна середовища"
 
 msgid "System ID"
-msgstr "System ID"
+msgstr "Ідентифікатор системи"
 
 msgid "Last monitoring success"
 msgstr "Останній успішний моніторинг"
@@ -101,19 +102,19 @@ msgid "Java vendor"
 msgstr "Постачальник Java"
 
 msgid "OS name"
-msgstr "Назва ОС (операційної системи)"
+msgstr "Назва операційної системи"
 
 msgid "OS architecture"
-msgstr "Архітектура ОС (операційної системи)"
+msgstr "Архітектура операційної системи"
 
 msgid "OS version"
-msgstr "Версія ОС (операційної системи)"
+msgstr "Версія операційної системи"
 
 msgid "Memory info"
 msgstr "Інформація про пам'ять"
 
 msgid "CPU cores"
-msgstr "ядра CPU (центрального процесора)"
+msgstr "Ядра центрального процесора"
 
 msgid "Calendar"
 msgstr "Календар"
@@ -128,7 +129,7 @@ msgid "Spatial support"
 msgstr "Просторова підтримка"
 
 msgid "System info"
-msgstr "Системна інформація"
+msgstr "Інформація про систему"
 
 msgid "Database"
 msgstr "База даних"
@@ -137,7 +138,7 @@ msgid "Edit account settings"
 msgstr "Редагувати налаштування облікового запису"
 
 msgid "No changes have been made"
-msgstr "Змін не було зроблено"
+msgstr "Зміни не було зроблено"
 
 msgid "The form is currently being validated. Please try again."
 msgstr "Форма зараз проходить перевірку. Будь ласка, спробуйте ще раз."
@@ -150,7 +151,7 @@ msgid "The entered values do not match. Please re-enter."
 msgstr "Уведені значення не збігаються. Будь ласка, повторіть введення."
 
 msgid "Please provide your old password"
-msgstr "Будь ласка, надайте ваш старий пароль"
+msgstr "Будь ласка, введіть свій старий пароль"
 
 msgid "Username"
 msgstr "Ім'я користувача"
@@ -159,7 +160,7 @@ msgid "Old password"
 msgstr "Старий пароль"
 
 msgid "This field can't be left blank"
-msgstr "Це поле не можна лишати порожнім"
+msgstr "Це поле не може бути порожнім"
 
 msgid "New password"
 msgstr "Новий пароль"
@@ -168,6 +169,8 @@ msgid ""
 "Password should be at least 8 characters with at least 1 digit, 1 uppercase "
 "letter and 1 special character"
 msgstr ""
+"Пароль має бути не коротший за 8 знаків і містити щонайменше 1 цифру, 1 "
+"велику літеру та 1 спеціальний символ"
 
 msgid "Repeat new password"
 msgstr "Повторити новий пароль"
@@ -184,13 +187,13 @@ msgid ""
 msgstr ""
 
 msgid "Password changed successfully"
-msgstr ""
+msgstr "Пароль успішно змінено"
 
 msgid "You need to login again to continue using the application."
-msgstr ""
+msgstr "Вам потрібно увійти знову для того, щоб використовувати додаток"
 
 msgid "Login"
-msgstr ""
+msgstr "Логін"
 
 msgid "Failed to update password"
 msgstr "Не вдалося оновити пароль"
@@ -205,7 +208,7 @@ msgid "Failed to turn ON 2-Factor"
 msgstr "Не вдалося ВВІМКНУТИ 2-факторну верифікацію"
 
 msgid "Failed to turn OFF 2-Factor"
-msgstr ""
+msgstr "Не вдалося ВИМКНУТИ 2-факторну верифікацію"
 
 msgid "Barcode/QR code to scan"
 msgstr "Штрихкод/QR для сканування"
@@ -229,28 +232,28 @@ msgid "2-Factor Verification is OFF"
 msgstr "2-факторну верифікацію ВИМКНЕНО"
 
 msgid "Do you want to turn OFF 2-Factor?"
-msgstr "Чи хочете ви ВИМКНУТИ 2-факторну верифікацію?"
+msgstr "Чи хочете Ви ВИМКНУТИ 2-факторну верифікацію?"
 
 msgid "Do you want to turn ON 2-Factor?"
-msgstr "Чи хочете ви ВВІМКНУТИ 2-факторну верифікацію?"
+msgstr "Чи хочете Ви ВВІМКНУТИ 2-факторну верифікацію?"
 
 msgid "Download the Authenticator app"
 msgstr "Завантажити додаток Authenticator"
 
 msgid "What kind of phone/tablet do you have?"
-msgstr "Який у вас телефон/планшет?"
+msgstr "Який у Вас телефон/планшет?"
 
 msgid "Download the Authenticator App from the "
-msgstr ""
+msgstr "Завантажте додаток Authenticator з"
 
 msgid "In the Authenticator App select "
-msgstr ""
+msgstr "У додатку Authenticator оберіть"
 
 msgid "Begin setup."
-msgstr "Почати установлення"
+msgstr "Почати встановлення"
 
 msgid "Choose "
-msgstr ""
+msgstr "Обрати"
 
 msgid "Scan a barcode."
 msgstr "Сканувати штрихкод."
@@ -261,10 +264,11 @@ msgid ""
 "must use the Authenticator app. If you do not have this app you must "
 "download it on your phone/tablet."
 msgstr ""
-"Коли 2-факторну верифікацію увімкнено, вам буде треба увести другий "
-"верифікаційний код, коли ви входите у систему. Аби згенерувати цей "
-"верифікаційний код, вам треба використовувати додаток Authenticator. Якщо у "
-"вас немає цього додатка, вам треба завантажити його на свій телефон/планшет."
+"Коли 2-факторну верифікацію увімкнено, Вам потрібно ввести другий "
+"верифікаційний код при вході в систему. Для того, щоб згенерувати цей "
+"верифікаційний код, Вам потрібно скористатись додатком Authenticator. Якщо у"
+" Вас немає цього додатку, Вам потрібно його завантажити на свій "
+"телефон/планшет."
 
 msgid "Failed to upload profile picture"
 msgstr "Не вдалося завантажити зображення профілю"
@@ -282,7 +286,7 @@ msgid "Remove profile picture"
 msgstr "Прибрати зображення профілю"
 
 msgid "This field is required"
-msgstr ""
+msgstr "Обов'язкове поле"
 
 msgid "This field should be a URL"
 msgstr ""
@@ -308,7 +312,7 @@ msgid "No value"
 msgstr "Немає значення"
 
 msgid "Use system default"
-msgstr "Використати системні установки за замовчуванням"
+msgstr "Використати системні налаштування за замовчуванням"
 
 msgid "No options"
 msgstr ""
@@ -347,31 +351,31 @@ msgid "Surname"
 msgstr "Прізвище"
 
 msgid "Gender"
-msgstr "Ґендер / Гендер"
+msgstr "Ґендер "
 
 msgid "Male"
-msgstr "Чол"
+msgstr "Чоловік"
 
 msgid "Female"
-msgstr "Жін"
+msgstr "Жінка"
 
 msgid "Other"
 msgstr "Інше"
 
 msgid "E-mail"
-msgstr "Електронна пошта (емейл)"
+msgstr "Електронна пошта "
 
 msgid "Mobile phone number"
 msgstr "Номер мобільного телефону"
 
 msgid "Introduction"
-msgstr "Введення"
+msgstr "Коротко про себе"
 
 msgid "Job title"
 msgstr "Посада"
 
 msgid "User roles"
-msgstr "Рівні доступу"
+msgstr "Ролі користувача"
 
 msgid "User org units"
 msgstr "Організаційні підрозділи користувача"
@@ -383,13 +387,13 @@ msgid "Nationality"
 msgstr "Громадянство"
 
 msgid "Employer"
-msgstr "Працедавець"
+msgstr "Місце роботи"
 
 msgid "Education"
 msgstr "Освіта"
 
 msgid "Interests"
-msgstr "Зацікавленості"
+msgstr "Хобі"
 
 msgid "Languages"
 msgstr "Мови"
@@ -428,7 +432,8 @@ msgid "Short name"
 msgstr "Коротке ім'я"
 
 msgid "Enable message email notifications"
-msgstr "Ввімкнути надсилання сповіщень про повідомлення електронною поштою"
+msgstr ""
+"Ввімкнути надсилання сповіщень про повідомлення через електронну пошту"
 
 msgid "Enable message SMS notifications"
 msgstr "Ввімкнути надсилання сповіщень про повідомлення через СМС"
