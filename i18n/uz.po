@@ -166,6 +166,8 @@ msgid ""
 "Password should be at least 8 characters with at least 1 digit, 1 uppercase "
 "letter and 1 special character"
 msgstr ""
+"парол камида 8 та белгидан: камида 1 та рақамдан, 1 та бош ҳарфдан ва 1 та "
+"махсус белгидан ташкил топган бўлиши лозим"
 
 msgid "Repeat new password"
 msgstr "Янги паролни такрорланг"
@@ -180,6 +182,8 @@ msgid ""
 "This account is linked to an OpenID Connect identity. Visit the Open ID "
 "Connect provider to manage this account's settings."
 msgstr ""
+"Ушбу аккаунт OpenID Connect идентификатори билан боғланган. Ушбу аккаунт "
+"созламаларини бошқариш учун OpenID Connect провайдерига мурожаат қилинг."
 
 msgid "Password changed successfully"
 msgstr "Пароль муваффақиятли ўзгартирилди"
@@ -203,7 +207,7 @@ msgid "Failed to turn ON 2-Factor"
 msgstr "2 омилли аутентикафикация ёкилиши амалга ошмади"
 
 msgid "Failed to turn OFF 2-Factor"
-msgstr ""
+msgstr "2-омилли аутентификацияни ўчириб бўлмади"
 
 msgid "Barcode/QR code to scan"
 msgstr "Barcode/QR код сканер қилиш учун"
@@ -239,16 +243,16 @@ msgid "What kind of phone/tablet do you have?"
 msgstr "Сизда қандай русумли телефон/планшет бор?"
 
 msgid "Download the Authenticator App from the "
-msgstr ""
+msgstr "Аутентификатор дастурини ...дан юклаб олиш"
 
 msgid "In the Authenticator App select "
-msgstr ""
+msgstr "Аутентификатор иловасида танланг"
 
 msgid "Begin setup."
 msgstr "Созлашни бошланг."
 
 msgid "Choose "
-msgstr ""
+msgstr "Танлаш"
 
 msgid "Scan a barcode."
 msgstr "Штрих кодни сканерланг"
@@ -283,7 +287,7 @@ msgid "This field is required"
 msgstr "Ушбу қатор тўлдирилиши шарт"
 
 msgid "This field should be a URL"
-msgstr ""
+msgstr "Ушбу сатрда URL бўлиши лозим"
 
 msgid "This field should contain a list of URLs"
 msgstr "Ушбу майдон URL манзиллар рўйхатини ўз ичига олиши керак"
@@ -295,7 +299,7 @@ msgid "This field should be a positive number"
 msgstr "Ушбу майдонда мусбат рақам бўлиши лозим"
 
 msgid "This field should be an email"
-msgstr ""
+msgstr "Ушбу сатрда email бўлиши лозим"
 
 msgid "Please enter a valid international phone number (+0123456789)"
 msgstr "Илтимос, халқаро телефон рақами форматида киритинг (+0123456789)"
@@ -307,7 +311,7 @@ msgid "Use system default"
 msgstr "Стандарт тизимдан фойдаланинг"
 
 msgid "No options"
-msgstr ""
+msgstr "Вариант йўқ"
 
 msgid "System default"
 msgstr "Стандарт тизимизим"
@@ -406,7 +410,7 @@ msgid "Twitter"
 msgstr "Telegram"
 
 msgid "Account editor"
-msgstr ""
+msgstr "Аккаунт муҳаррири"
 
 msgid "Interface language"
 msgstr "Интерфейс тили"
