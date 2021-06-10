@@ -286,19 +286,19 @@ msgid "This field is required"
 msgstr "Ce champs est requis"
 
 msgid "This field should be a URL"
-msgstr ""
+msgstr "Ce champ doit être une URL"
 
 msgid "This field should contain a list of URLs"
-msgstr ""
+msgstr "Ce champ doit contenir une liste d'URL"
 
 msgid "This field should be a number"
-msgstr ""
+msgstr "Ce champ doit être un nombre"
 
 msgid "This field should be a positive number"
-msgstr ""
+msgstr "Ce champ doit être un nombre positif"
 
 msgid "This field should be an email"
-msgstr ""
+msgstr "Ce champ doit être un e-mail"
 
 msgid "Please enter a valid international phone number (+0123456789)"
 msgstr ""
@@ -310,7 +310,7 @@ msgid "Use system default"
 msgstr "Utiliser les paramètres du système"
 
 msgid "No options"
-msgstr ""
+msgstr "Aucune option"
 
 msgid "System default"
 msgstr "Valeur par défaut du système"
