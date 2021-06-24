@@ -190,7 +190,8 @@ msgid "Password changed successfully"
 msgstr "Пароль успішно змінено"
 
 msgid "You need to login again to continue using the application."
-msgstr "Вам потрібно увійти знову для того, щоб використовувати додаток"
+msgstr ""
+"Вам потрібно увійти знову для того, щоб продовжити користування додатком "
 
 msgid "Login"
 msgstr "Логін"
@@ -289,19 +290,19 @@ msgid "This field is required"
 msgstr "Обов'язкове поле"
 
 msgid "This field should be a URL"
-msgstr ""
+msgstr "Це поле повинно містити веб-адресу"
 
 msgid "This field should contain a list of URLs"
 msgstr ""
 
 msgid "This field should be a number"
-msgstr ""
+msgstr "Це поле повинно включати цифри"
 
 msgid "This field should be a positive number"
 msgstr ""
 
 msgid "This field should be an email"
-msgstr ""
+msgstr "Це поле повинно включати адресу електронної пошти"
 
 msgid "Please enter a valid international phone number (+0123456789)"
 msgstr ""
@@ -309,7 +310,7 @@ msgstr ""
 "(+0123456789)"
 
 msgid "No value"
-msgstr "Немає значення"
+msgstr "Відсутнє значення"
 
 msgid "Use system default"
 msgstr "Використати системні налаштування за замовчуванням"
@@ -426,7 +427,7 @@ msgid "Style"
 msgstr "Стиль"
 
 msgid "Property to display in analysis modules"
-msgstr "Властивість для відображення у модулях аналізу"
+msgstr "Характеристика відображення у модулях аналізу"
 
 msgid "Short name"
 msgstr "Коротке ім'я"
