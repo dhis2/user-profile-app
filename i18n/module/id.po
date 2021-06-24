@@ -3,6 +3,7 @@
 # Aprisa Chrysantina <aprisa.chrysantina@gmail.com>, 2019
 # Viktor Varland <viktor@dhis2.org>, 2019
 # Carwoto Sa'an <carwoto@gmail.com>, 2020
+# Untoro Dwi Raharjo <untoro.dwi.raharjo@mail.ugm.ac.id>, 2021
 # 
 #, fuzzy
 msgid ""
@@ -11,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-01 00:28-0400\n"
 "PO-Revision-Date: 2019-09-02 16:42+0000\n"
-"Last-Translator: Carwoto Sa'an <carwoto@gmail.com>, 2020\n"
+"Last-Translator: Untoro Dwi Raharjo <untoro.dwi.raharjo@mail.ugm.ac.id>, 2021\n"
 "Language-Team: Indonesian (https://www.transifex.com/hisp-uio/teams/100509/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -93,7 +94,7 @@ msgstr "Wanita"
 #: other
 msgctxt "other"
 msgid "Other"
-msgstr ""
+msgstr "Lainnya"
 
 #: gender_male
 msgctxt "gender_male"
@@ -108,7 +109,7 @@ msgstr "Wanita"
 #: gender_other
 msgctxt "gender_other"
 msgid "Other"
-msgstr ""
+msgstr "Lainnya"
 
 #: birthday
 msgid "Birthday"
