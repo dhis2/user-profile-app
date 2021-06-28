@@ -1,3 +1,4 @@
+# 
 # Translators:
 # phil_dhis2, 2019
 # Hamza Assada <7amza.it@gmail.com>, 2020
@@ -56,7 +57,7 @@ msgstr "تأكيد كلمة المرور الجديدة"
 
 #: openid
 msgid "OpenID"
-msgstr "فتح الهوية"
+msgstr "OpenID"
 
 #: username
 msgid "Username"
