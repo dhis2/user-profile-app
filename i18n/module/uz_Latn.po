@@ -1,6 +1,6 @@
 # 
 # Translators:
-# phil_dhis2, 2019
+# Yury Rogachev <yury@dhis2.org>, 2021
 # 
 #, fuzzy
 msgid ""
@@ -9,261 +9,260 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-01 00:28-0400\n"
 "PO-Revision-Date: 2019-09-02 16:42+0000\n"
-"Last-Translator: phil_dhis2, 2019\n"
-"Language-Team: French (https://www.transifex.com/hisp-uio/teams/100509/fr/)\n"
+"Last-Translator: Yury Rogachev <yury@dhis2.org>, 2021\n"
+"Language-Team: Uzbek (Latin) (https://www.transifex.com/hisp-uio/teams/100509/uz@Latn/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: uz@Latn\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Translate Toolkit 2.0.0b3\n"
 
 #: user_profile
 msgid "User profile"
-msgstr "Profil utilisateur"
+msgstr "Foydalanuvchi profili"
 
 #: account_settings
 msgid "Account settings"
-msgstr "Paramètres de compte"
+msgstr "Аkkaunt sozlamalari"
 
 #: user_settings
 msgid "User settings"
-msgstr "Paramètres d'utilisateur"
+msgstr "Foydalanuvchi sozlamanlari"
 
 #: user_email_address
 msgid "E-mail"
-msgstr "Courrier électronique"
+msgstr "Elektron pochta"
 
 #: surname
 msgid "Surname"
-msgstr "Nom de famille"
+msgstr "Familiya"
 
 #: first_name
 msgid "First name"
-msgstr "Prénom"
+msgstr "Ism"
 
 #: old_password
 msgid "Old password"
-msgstr "Ancien mot de passe"
+msgstr "Oldingi parol"
 
 #: new_password
 msgid "New password"
-msgstr "Nouveau mot de passe"
+msgstr "Yangi parol"
 
 #: repeat_new_password
 msgid "Repeat new password"
-msgstr "Répéter le mot de passe"
+msgstr "Yangi parolni takrorlang"
 
 #: openid
 msgid "OpenID"
-msgstr "La valeur doit être un entier négatif"
+msgstr "Kirish ID si"
 
 #: username
 msgid "Username"
-msgstr "Nom d'utilisateur"
+msgstr "Фойдаланувчи исми"
 
 #: phone_number
 msgid "Mobile phone number"
-msgstr "Numéro de téléphone portable"
+msgstr "Mobil telefon raqami"
 
 #: job_title
 msgid "Job title"
-msgstr "Intitulé de l'emploi"
+msgstr "Lavozim"
 
 #: introduction
 msgid "Introduction"
-msgstr "Introduction"
+msgstr "Tanishtirish"
 
 #: gender
 msgid "Gender"
-msgstr "Genre"
+msgstr "Jinsi"
 
 #: male
 msgctxt "male"
 msgid "Male"
-msgstr "Masculin"
+msgstr "Erkak"
 
 #: female
 msgctxt "female"
 msgid "Female"
-msgstr "Féminin"
+msgstr "Аyol"
 
 #: other
 msgctxt "other"
 msgid "Other"
-msgstr "Autre"
+msgstr "Boshqa"
 
 #: gender_male
 msgctxt "gender_male"
 msgid "Male"
-msgstr "Masculin"
+msgstr "Erkak"
 
 #: gender_female
 msgctxt "gender_female"
 msgid "Female"
-msgstr "Féminin"
+msgstr "Аyol"
 
 #: gender_other
 msgctxt "gender_other"
 msgid "Other"
-msgstr "Autre"
+msgstr "Boshqa"
 
 #: birthday
 msgid "Birthday"
-msgstr "Date de naissance"
+msgstr "Tugilgan kun"
 
 #: nationality
 msgid "Nationality"
-msgstr "Nationalité"
+msgstr "Millati"
 
 #: employer
 msgid "Employer"
-msgstr "Employeur"
+msgstr "Ishga oluvchi"
 
 #: education
 msgid "Education"
-msgstr "Éducation"
+msgstr "Maʼlumoti"
 
 #: interests
 msgid "Interests"
-msgstr "Intérêts"
+msgstr "Qiziqishi"
 
 #: languages
 msgid "Languages"
-msgstr "Langues"
+msgstr "Til"
 
 #: update_user_profile_success
 msgid "User profile updated"
-msgstr "Profil d’utilisateur mis à jour."
+msgstr "Foydalanuvchi profili yangilandi"
 
 #: settings
 msgid "Settings"
-msgstr "Paramètres"
+msgstr "Sozlamalar"
 
 #: property_to_display_in_analysis_modules
 msgctxt "property_to_display_in_analysis_modules"
 msgid "Property to display in analysis modules"
-msgstr "Propriété à afficher dans les modules analytiques"
+msgstr "Tahlil modullarini namoyish etadigan xususiyat"
 
 #: general
 msgid "General"
-msgstr "Général"
+msgstr "Umumiy"
 
 #: message
 msgid "Message"
-msgstr "Message"
+msgstr "Xabar"
 
 #: settings_updated
 msgid "Settings updated"
-msgstr "Paramètres mis à jour"
+msgstr "Sozlamalar yangilandi"
 
 #: failed_to_update_settings
 msgid "Failed to update settings"
-msgstr "Échec de l'enregistrement des paramètres"
+msgstr "Sozlamalar yangilanishi amalga oshmadi"
 
 #: style
 msgid "Style"
-msgstr "Style"
+msgstr "Услуб"
 
 #: db_language
 msgid "Database language"
-msgstr "Langue de la base de données"
+msgstr "Maʼlumotlar bazasi tili"
 
 #: language
 msgid "Interface language"
-msgstr "Langue de l'interface"
+msgstr "Interfeys tili"
 
 #: enable_message_email_notifications
 msgid "Enable message email notifications"
-msgstr "Autoriser les notifications de messages email"
+msgstr "Elektron pochta xabarnomasini yoqish"
 
 #: enable_message_sms_notifications
 msgid "Enable message SMS notifications"
-msgstr "Autoriser les notifications de messages SMS"
+msgstr "SMS xabarnomasini yoqish"
 
 #: analysis_module
 msgctxt "analysis_module"
 msgid "Property to display in analysis modules"
-msgstr "Propriété à afficher dans les modules analytiques"
+msgstr "Tahlil modullarini namoyish etadigan xususiyat"
 
 #: name
 msgid "Name"
-msgstr "Nom"
+msgstr "Исми"
 
 #: short_name
 msgid "Short name"
-msgstr "Nom court"
+msgstr "Qisqacha nomi"
 
 #: system_default
 msgid "System default"
-msgstr "Valeur par défaut du système"
+msgstr "Standart tizimizim"
 
 #: value_should_be_an_email
 msgid "Please enter a valid email address"
-msgstr "Veuillez saisir une adresse e-mail valide."
+msgstr "Iltimos, toʼgʼri ye-manzilni kiriting"
 
 #: update_user_profile_fail
 msgid "Failed to update user profile"
-msgstr "Echec de la mise à jour du profil utilisateur"
+msgstr "Foydalanuvchi profili yangilanishi amalga oshmadi"
 
 #: update_settings_fail
 msgid "Fialed to update user settings"
-msgstr "Echec de la mise à jour des paramètres utilisateur"
+msgstr "Foydalanuvchi sozlamalari yangilanishi amalga oshmadi"
 
 #: update_password
 msgid "Update password"
-msgstr "Mettre à jour un mot de passe"
+msgstr "Parolni yangilang"
 
 #: invalid_password
 msgid ""
 "Password should be at least 8 characters with at least 1 digit and 1 "
 "uppercase letter"
 msgstr ""
-"Le mot de passe devrait contenir au moins 8 caractères dont au moins un "
-"chiffre et une lettre majuscule"
+"Parol kamida 8 ta belgidan iborat boʼlishi, kamida 1 ta son va 1 ta bosh "
+"harfdan tashkil topishi lozim"
 
 #: passwords_do_not_match
 msgid "The entered values do not match. Please re-enter."
-msgstr "Les valeurs saisies ne correspondent pas. Veuillez resaisir."
+msgstr "Kiritilgan qiymatlar mos kelmaydi. Iltimos, qayta kiriting."
 
 #: use_system_default
 msgid "Use system default"
-msgstr "Utiliser les paramètres du système"
+msgstr "Standart tizimdan foydalaning"
 
 #: true_notifications
 msgid "Yes"
-msgstr "Oui"
+msgstr "Ҳа"
 
 #: false_notifications
 msgid "No"
-msgstr "Non"
+msgstr "Йўқ"
 
 #: value_required
 msgid "This field can't be left blank"
-msgstr "Ce champ ne peut rester vide"
+msgstr "Ushbu satrni boʼsh qoldirib boʼlmaydi"
 
 #: please_enter_the_correct_password
 msgid "Please enter the correct password"
-msgstr "Veuillez saisir votre mot de passe correcte"
+msgstr "Iltimos, parolni toʼgʼri kiriting"
 
 #: no_changes_have_been_made
 msgid "No changes have been made"
-msgstr "Aucune modification effectuée"
+msgstr "Hech qanday oʼzgartirish qilinmagan edi"
 
 #: validating_please_try_again
 msgid "The form is currently being validated. Please try again."
-msgstr "Le formulaire est en cours de validation. Veuillez ressayer."
+msgstr "Hozirda shakl tekshirilmoqda. Iltimos, qaytib urinib koʼring"
 
 #: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
 msgstr ""
-"Le formulaire contient des erreurs. Veuillez corriger les erreurs puis "
-"ressayer."
+"Shaklda xatoliklar mavjud. Xatolarni toʼgʼrilab, qaytib urinib koʼring"
 
 #: password_update_success
 msgid "Your password was updated successfully"
-msgstr "Votre mot de passe a été changé avec succès"
+msgstr "Sizning parolingiz muvaffaqiyatli yangilandi"
 
 #: password_update_failed
 msgid "Failed to update password"
-msgstr "Impossible de mettre à jour le mot de passe"
+msgstr "Parol yangilanishida xatolik"
