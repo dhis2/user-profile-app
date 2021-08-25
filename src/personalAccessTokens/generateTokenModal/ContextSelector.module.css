@@ -1,0 +1,38 @@
+.header {
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: var(--spacers-dp12);
+    color: var(--colors-grey800);
+}
+
+.contexts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacers-dp16);
+    margin-bottom: var(--spacers-dp12);
+}
+
+.context {
+    /* Disable vertical centering */
+    display: grid;
+    border: none;
+    background: white;
+    padding: var(--spacers-dp8);
+    text-align: start;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.context:hover, .context:focus {
+    background: var(--colors-grey100);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.contextTitle {
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: var(--spacers-dp8);
+    font-size: 16px;
+}

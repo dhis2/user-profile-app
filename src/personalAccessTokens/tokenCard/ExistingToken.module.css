@@ -1,0 +1,34 @@
+.items {
+    display: grid;
+    gap: var(--spacers-dp8);
+    margin: 0;
+}
+
+.item {
+    display: grid;
+    gap: var(--spacers-dp4);
+}
+
+.singleLineItem {
+    composes: item;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.itemTitle {
+    font-weight: 500;
+}
+
+.itemValue {
+    margin: 0;
+}
+
+.allowedMethods {
+    display: flex;
+    gap: var(--spacers-dp4);
+}
+
+.allowedList {
+    list-style-type: none;
+    padding: 0;
+}

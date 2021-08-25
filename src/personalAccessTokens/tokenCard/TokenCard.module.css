@@ -1,0 +1,23 @@
+.token {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: var(--spacers-dp16);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.newToken {
+    composes: token;
+    background: var(--colors-green100);
+}
+
+.tokenData {
+    display: flex;
+    align-items: center;
+}
+
+.copyToClipboard {
+    cursor: pointer;
+    background: none;
+    border: none;
+}

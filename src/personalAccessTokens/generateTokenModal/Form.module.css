@@ -1,0 +1,22 @@
+.restrictions {
+    margin-top: var(--spacers-dp16);
+    margin-bottom: var(--spacers-dp4);
+}
+
+.subheader {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: var(--spacers-dp4);
+}
+
+.fieldWithExplanation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacers-dp16);
+}
+
+.explanation {
+    font-size: 13px;
+    color: var(--colors-grey700);
+}

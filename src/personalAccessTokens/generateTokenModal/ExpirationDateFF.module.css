@@ -1,0 +1,16 @@
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--spacers-dp16);
+}
+
+.flex {
+    display: flex;
+}
+
+.expirationDateText {
+    align-self: flex-end;
+    padding-bottom: var(--spacers-dp12);
+    color: var(--colors-grey700);
+    font-size: 14px;
+}

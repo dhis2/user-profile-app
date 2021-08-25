@@ -1,0 +1,9 @@
+.copyTokenNotice {
+    margin-bottom: var(--spacers-dp16);
+}
+
+.list {
+    display: grid;
+    row-gap: var(--spacers-dp12);
+    margin-bottom: var(--spacers-dp24);
+}
