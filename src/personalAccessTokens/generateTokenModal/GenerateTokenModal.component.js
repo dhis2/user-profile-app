@@ -103,6 +103,17 @@ const GenerateTokenModal = ({ onGenerate, onClose }) => {
     const [context, setContext] = useState(null)
 
     const handleGenerate = formParams => {
+        if (
+            context === 'BROWSER' &&
+            !confirm(
+                i18n.t(
+                    'Personal access tokens should only be used in a browser context for public access instances. For private instances, tokens should be treated like passwords and be kept private — requests should instead be routed through a proxy.'
+                )
+            )
+        ) {
+            return
+        }
+
         const params = {
             expire: getExpire(formParams),
             attributes: [
