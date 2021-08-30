@@ -23,6 +23,7 @@
     cursor: pointer;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
+    background: var(--colors-grey050);
 }
 
 .context:hover, .context:focus {
