@@ -1819,12 +1819,11 @@
   dependencies:
     moment "^2.24.0"
 
-"@dhis2/app-runtime-adapter-d2@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@dhis2/app-runtime-adapter-d2/-/app-runtime-adapter-d2-1.0.2.tgz#b1a88d371830bfe63fbc00068f7eda98f3c9259f"
-  integrity sha512-HbkkRdt4qMHAv3EKjZUuXXm7QfHK7NuxEHhxR33xxLfZHGdI+doRqvqzmpvJYkPDv4PaY91V4FKgnyznbDdlkQ==
+"@dhis2/app-runtime-adapter-d2@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@dhis2/app-runtime-adapter-d2/-/app-runtime-adapter-d2-1.1.0.tgz#4da0b620a5552b3d7f01b1cc470bb4f2de684025"
+  integrity sha512-Qlff432iw1IljuRoexNCBhpdThYQ6WMNhSIrHQuNpF8JARKmq/W1WhSsnUrYbHy2FL8yBKsORXOWbfMpVY5vRw==
   dependencies:
-    "@dhis2/ui-core" "^4.6.1"
     prop-types "^15.7.2"
 
 "@dhis2/app-runtime@^2.8.0":
@@ -2010,17 +2009,6 @@
     "@dhis2/ui-constants" "6.18.1"
     classnames "^2.3.1"
     prop-types "^15.7.2"
-
-"@dhis2/ui-core@^4.6.1":
-  version "4.21.1"
-  resolved "https://registry.yarnpkg.com/@dhis2/ui-core/-/ui-core-4.21.1.tgz#2b5518f6bd5de75404df3eefa83452e0c40852aa"
-  integrity sha512-dpK4UwktLw9qcRkDe5wU76j35ntoulqKpcaBoxXZ1+/rzR2FeaJ+w4l+I+bg45jcK9WjLLsFClc1zi+O/MG1MA==
-  dependencies:
-    "@dhis2/prop-types" "^1.6.4"
-    "@popperjs/core" "^2.4.0"
-    classnames "^2.2.6"
-    react-popper "^2.2.3"
-    resize-observer-polyfill "^1.5.1"
 
 "@dhis2/ui-forms@6.18.1":
   version "6.18.1"
@@ -2534,7 +2522,7 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
-"@popperjs/core@^2.4.0", "@popperjs/core@^2.6.0":
+"@popperjs/core@^2.6.0":
   version "2.9.3"
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.9.3.tgz#8b68da1ebd7fc603999cf6ebee34a4899a14b88e"
   integrity sha512-xDu17cEfh7Kid/d95kB6tZsLOmSWKCZKtprnhVepjsSaCij+lM3mItSJDuuHDMbCWTh8Ejmebwb+KONcCJ0eXQ==
@@ -12106,7 +12094,7 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
-react-popper@^2.2.3, react-popper@^2.2.5:
+react-popper@^2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/react-popper/-/react-popper-2.2.5.tgz#1214ef3cec86330a171671a4fbcbeeb65ee58e96"
   integrity sha512-kxGkS80eQGtLl18+uig1UIf9MKixFSyPxglsgLBxlYnyDf65BiY9B3nZSc6C9XUNDgStROB0fMQlTEz1KxGddw==
@@ -14647,10 +14635,8 @@ watchpack@^1.7.4:
   resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-1.7.5.tgz#1267e6c55e0b9b5be44c2023aed5437a2c26c453"
   integrity sha512-9P3MWk6SrKjHsGkLT2KHXdQ/9SNkyoJbabxnKOoJepsvJjJG8uYTR3yTPxPQvNDI3w4Nz1xnE0TLHK4RIVe/MQ==
   dependencies:
-    chokidar "^3.4.1"
     graceful-fs "^4.1.2"
     neo-async "^2.5.0"
-    watchpack-chokidar2 "^2.0.1"
   optionalDependencies:
     chokidar "^3.4.1"
     watchpack-chokidar2 "^2.0.1"
