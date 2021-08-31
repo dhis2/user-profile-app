@@ -5444,10 +5444,10 @@ d2-ui@^29.0.35:
   resolved "https://registry.yarnpkg.com/d2-ui/-/d2-ui-29.0.35.tgz#b0f8540957e90ded7bf2257bbd2604b7b8034c0c"
   integrity sha512-NS4YXUdDti5igBLAT+IdWnQeAygf/m2ubG8+nakkrKhP4RHGgwuZmKveLKkpmbZDATvE4Dz/0DLnTaP+/ZLgaA==
 
-d2@^31.9.0:
-  version "31.9.0"
-  resolved "https://registry.yarnpkg.com/d2/-/d2-31.9.0.tgz#83e76735f0b925a000a74ea4b48a412d0c123a36"
-  integrity sha512-wTprxiA0dUa3ZWu1VkNxhoGT9UUWjXk89XKHqG+nh5uRxXL2zsq7Q6nrcpl8XvRG2T/A7BA3ORJFLDIfzrJ9mA==
+d2@^31.10.0:
+  version "31.10.0"
+  resolved "https://registry.yarnpkg.com/d2/-/d2-31.10.0.tgz#0b7e14d0c33edfe4b1cd77bc8fee3edb293d7a04"
+  integrity sha512-H1g0qXYAmAoHi57I4wBvKcuNjz4XEakSpt4Dpau0ubUee9Zmk0SlbzFQA47s43F09iQRY1Cw189TzAfkC4YK+Q==
   dependencies:
     isomorphic-fetch "^2.2.1"
 
@@ -14647,10 +14647,8 @@ watchpack@^1.7.4:
   resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-1.7.5.tgz#1267e6c55e0b9b5be44c2023aed5437a2c26c453"
   integrity sha512-9P3MWk6SrKjHsGkLT2KHXdQ/9SNkyoJbabxnKOoJepsvJjJG8uYTR3yTPxPQvNDI3w4Nz1xnE0TLHK4RIVe/MQ==
   dependencies:
-    chokidar "^3.4.1"
     graceful-fs "^4.1.2"
     neo-async "^2.5.0"
-    watchpack-chokidar2 "^2.0.1"
   optionalDependencies:
     chokidar "^3.4.1"
     watchpack-chokidar2 "^2.0.1"
