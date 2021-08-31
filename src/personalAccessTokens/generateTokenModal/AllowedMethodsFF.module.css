@@ -5,7 +5,7 @@
     margin-bottom: 4px;
 }
 
-/* Fix rendering of switches inside a modal */
+/* Fix rendering of switches inside a modal (https://jira.dhis2.org/browse/LIBS-207) */
 .switch {
     position: relative;
     z-index: 9999;
