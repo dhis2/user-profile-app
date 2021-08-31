@@ -1,4 +1,4 @@
-import { ReactFinalForm, SwitchFieldFF } from '@dhis2/ui'
+import { ReactFinalForm, CheckboxFieldFF } from '@dhis2/ui'
 import React from 'react'
 import i18n from '../../locales'
 import styles from './AllowedMethodsFF.module.css'
@@ -10,42 +10,40 @@ const AllowedMethodsFF = () => (
             name="allowedMethodsGET"
             label={i18n.t('GET', { context: 'HTTP method' })}
             type="checkbox"
-            component={SwitchFieldFF}
+            component={CheckboxFieldFF}
             initialValue={true}
-            className={styles.switch}
         />
         <ReactFinalForm.Field
             name="allowedMethodsPOST"
             label={i18n.t('POST', { context: 'HTTP method' })}
             type="checkbox"
-            component={SwitchFieldFF}
+            component={CheckboxFieldFF}
             initialValue={false}
-            className={styles.switch}
         />
         <ReactFinalForm.Field
             name="allowedMethodsPUT"
             label={i18n.t('PUT', { context: 'HTTP method' })}
             type="checkbox"
-            component={SwitchFieldFF}
+            component={CheckboxFieldFF}
             initialValue={false}
-            className={styles.switch}
         />
         <ReactFinalForm.Field
             name="allowedMethodsPATCH"
             label={i18n.t('PATCH', { context: 'HTTP method' })}
             type="checkbox"
-            component={SwitchFieldFF}
+            component={CheckboxFieldFF}
             initialValue={false}
-            className={styles.switch}
         />
         <ReactFinalForm.Field
             name="allowedMethodsDELETE"
             label={i18n.t('DELETE', { context: 'HTTP method' })}
             type="checkbox"
-            component={SwitchFieldFF}
+            component={CheckboxFieldFF}
             initialValue={false}
-            className={styles.switch}
         />
+        <small className={styles.helpText}>
+            {i18n.t('Only choose the HTTP methods this token needs to allow.')}
+        </small>
     </>
 )
 

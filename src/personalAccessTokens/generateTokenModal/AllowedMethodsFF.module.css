@@ -5,8 +5,7 @@
     margin-bottom: 4px;
 }
 
-/* Fix rendering of switches inside a modal (https://jira.dhis2.org/browse/LIBS-207) */
-.switch {
-    position: relative;
-    z-index: 9999;
+.helpText {
+    font-size: 12px;
+    color: var(--colors-grey700);
 }
