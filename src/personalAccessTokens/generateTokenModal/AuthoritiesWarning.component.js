@@ -42,9 +42,7 @@ const AuthoritiesWarning = () => {
         <NoticeBox
             className={styles.noticeBox}
             warning
-            title={i18n.t(
-                'This personal access token will have the following authorities'
-            )}
+            title={i18n.t('This token will have the following authorities')}
         >
             <ul>
                 {data.authorities.authorities.map(authority => (
