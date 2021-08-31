@@ -1,3 +1,17 @@
+# [30.3.0](https://github.com/dhis2/user-profile-app/compare/v30.2.26...v30.3.0) (2021-08-31)
+
+
+### Bug Fixes
+
+* add background to token and context cards ([da92536](https://github.com/dhis2/user-profile-app/commit/da92536bd526385a43b72dbf368829ded20332d1))
+* remove list margin ([d713bb5](https://github.com/dhis2/user-profile-app/commit/d713bb5e3588a7826946717e8a379efb168bf49b))
+
+
+### Features
+
+* add confirmation warning for browser contexts ([e930dde](https://github.com/dhis2/user-profile-app/commit/e930dde4363c3576e18ee73b28d5dbf9c6d442b8))
+* allow managing of personal access tokens ([3a8ada9](https://github.com/dhis2/user-profile-app/commit/3a8ada9bbab9431567aad7156b3bfd30c57ca890))
+
 ## [30.2.26](https://github.com/dhis2/user-profile-app/compare/v30.2.25...v30.2.26) (2021-08-31)
 
 
