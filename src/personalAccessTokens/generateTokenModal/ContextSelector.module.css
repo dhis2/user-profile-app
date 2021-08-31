@@ -1,8 +1,8 @@
 .header {
     font-weight: normal;
-    font-size: 18px;
+    font-size: 14px;
     margin-top: 0;
-    margin-bottom: var(--spacers-dp12);
+    margin-bottom: var(--spacers-dp8);
     color: var(--colors-grey800);
 }
 
@@ -14,26 +14,28 @@
 }
 
 .context {
-    /* Disable vertical centering */
     display: grid;
-    border: none;
-    background: white;
-    padding: var(--spacers-dp8);
-    text-align: start;
-    cursor: pointer;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
-    background: var(--colors-grey050);
+    grid-template-columns: auto 1fr;
+    gap: var(--spacers-dp4);
+    border: 1px solid var(--colors-grey300);
+    padding: var(--spacers-dp12);
+    border-radius: 6px;
 }
 
-.context:hover, .context:focus {
-    background: var(--colors-grey100);
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+.selectedContext {
+    composes: context;
+    border-color: var(--colors-teal400);
+    background: var(--colors-teal050);
 }
 
 .contextTitle {
     font-weight: 500;
     margin-top: 0;
     margin-bottom: var(--spacers-dp8);
-    font-size: 16px;
+    font-size: 14px;
+}
+
+.contextDescription {
+    font-size: 13px;
+    color: var(--colors-grey800);
 }

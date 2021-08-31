@@ -126,19 +126,21 @@ const GenerateTokenModal = ({ onGenerate, onClose }) => {
     }
 
     return (
-        <Modal onClose={onClose}>
+        <Modal onClose={onClose} large>
             <ModalTitle>{i18n.t('Generate new token')}</ModalTitle>
             <ReactFinalForm.Form onSubmit={handleGenerate}>
                 {({ handleSubmit, valid, values }) => (
                     <>
                         <ModalContent>
-                            {context ? (
+                            <ContextSelector
+                                context={context}
+                                setContext={setContext}
+                            />
+                            {context && (
                                 <>
-                                    <AuthoritiesWarning />
                                     {renderContext({ context, values })}
+                                    <AuthoritiesWarning />
                                 </>
-                            ) : (
-                                <ContextSelector setContext={setContext} />
                             )}
                         </ModalContent>
                         <ModalActions>

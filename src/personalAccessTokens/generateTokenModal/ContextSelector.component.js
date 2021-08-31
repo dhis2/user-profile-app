@@ -1,42 +1,52 @@
+import { Radio } from '@dhis2/ui'
 import PropTypes from 'prop-types'
 import React from 'react'
 import i18n from '../../locales'
 import styles from './ContextSelector.module.css'
 
-const Context = ({ title, children, onClick }) => (
-    <button className={styles.context} onClick={onClick}>
-        <h3 className={styles.contextTitle}>{title}</h3>
-        <div>{children}</div>
-    </button>
+const Context = ({ title, children, selected, onSelect }) => (
+    <div
+        className={selected ? styles.selectedContext : styles.context}
+        onClick={onSelect}
+    >
+        <Radio checked={selected} onChange={onSelect} dense />
+        <div>
+            <h3 className={styles.contextTitle}>{title}</h3>
+            <div className={styles.contextDescription}>{children}</div>
+        </div>
+    </div>
 )
 
 Context.propTypes = {
     children: PropTypes.node.isRequired,
+    selected: PropTypes.bool.isRequired,
     title: PropTypes.string.isRequired,
-    onClick: PropTypes.func.isRequired,
+    onSelect: PropTypes.func.isRequired,
 }
 
-const ContextSelector = ({ setContext }) => (
+const ContextSelector = ({ context, setContext }) => (
     <>
         <h2 className={styles.header}>
-            {i18n.t(
-                'In which context will this personal access token be used?'
-            )}
+            {i18n.t('Choose the context where this token will be used.')}
         </h2>
         <div className={styles.contexts}>
             <Context
                 title={i18n.t('Server/script context')}
-                onClick={() => setContext('SERVER')}
+                selected={context === 'SERVER'}
+                onSelect={() => setContext('SERVER')}
             >
-                {i18n.t('Use cases: Integrations and scripts', {
-                    nsSeparator: '-:-',
-                })}
+                {i18n.t(
+                    `Used for integrations and scripts that won't be accessed by a browser.`
+                )}
             </Context>
             <Context
                 title={i18n.t('Browser context')}
-                onClick={() => setContext('BROWSER')}
+                selected={context === 'BROWSER'}
+                onSelect={() => setContext('BROWSER')}
             >
-                {i18n.t('Use cases: Public portals', { nsSeparator: '-:-' })}
+                {i18n.t(
+                    'Used for applications, like public portals, that will be accessed with a web browser.'
+                )}
             </Context>
         </div>
     </>
@@ -44,6 +54,7 @@ const ContextSelector = ({ setContext }) => (
 
 ContextSelector.propTypes = {
     setContext: PropTypes.func.isRequired,
+    context: PropTypes.string,
 }
 
 export default ContextSelector
