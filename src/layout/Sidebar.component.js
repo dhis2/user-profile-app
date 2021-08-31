@@ -27,6 +27,11 @@ function SidebarWrapper(props) {
             icon: 'face',
         },
         {
+            key: 'personalAccessTokens',
+            label: i18n.t('Manage personal access tokens'),
+            icon: 'badge',
+        },
+        {
             key: 'aboutPage',
             label: i18n.t('About DHIS2'),
             icon: 'public',

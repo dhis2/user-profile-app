@@ -1,0 +1,11 @@
+.header {
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.helpText {
+    font-size: 12px;
+    color: var(--colors-grey700);
+}

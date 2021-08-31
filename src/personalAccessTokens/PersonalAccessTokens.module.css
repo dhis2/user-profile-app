@@ -1,0 +1,15 @@
+.heading {
+    font-size: 24px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.87);
+    margin: 24px 0px 12px 16px;
+}
+
+.cardWrapper {
+    margin-top: 8px;
+    margin-right: 1rem;
+}
+
+.card {
+    padding: 1rem 2rem;
+}

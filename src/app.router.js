@@ -1,4 +1,5 @@
 import { DataProvider } from '@dhis2/app-runtime'
+import { CssVariables } from '@dhis2/ui'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
@@ -10,11 +11,12 @@ import TwoFactor from './account/twoFactor/TwoFactor'
 import Sidebar from './layout/Sidebar.component'
 import Snackbar from './layout/Snackbar.component'
 import AppTheme from './layout/theme'
+import PersonalAccessTokens from './personalAccessTokens/PersonalAccessTokens.component'
 import Profile from './profile/Profile.component'
 import UserSettings from './settings/UserSettings.component'
 import ViewProfile from './viewProfile/ViewProfile.component'
 
-function WrAppadApp(props) {
+function WrappedApp(props) {
     return (
         <div className="content-wrap">
             <Sidebar currentSection={props.routes[1].path} />
@@ -22,7 +24,7 @@ function WrAppadApp(props) {
         </div>
     )
 }
-WrAppadApp.propTypes = {
+WrappedApp.propTypes = {
     children: PropTypes.any.isRequired,
     routes: PropTypes.array.isRequired,
 }
@@ -49,11 +51,12 @@ class AppRouter extends Component {
     render() {
         return (
             <DataProvider {...this.getDataProviderProps()}>
+                <CssVariables colors spacers />
                 <MuiThemeProvider muiTheme={AppTheme}>
                     <div className="app-wrapper">
                         <Snackbar />
                         <Router history={hashHistory}>
-                            <Route component={WrAppadApp}>
+                            <Route component={WrappedApp}>
                                 <Route
                                     path="settings"
                                     component={UserSettings}
@@ -68,6 +71,10 @@ class AppRouter extends Component {
                                 <Route
                                     path="viewProfile"
                                     component={ViewProfile}
+                                />
+                                <Route
+                                    path="personalAccessTokens"
+                                    component={PersonalAccessTokens}
                                 />
                                 <Route path="aboutPage" component={AboutPage} />
                                 <Redirect from="/" to="/viewProfile" />

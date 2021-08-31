@@ -16,6 +16,7 @@ html, body {
 }
 
 .content-area {
+  max-width: 960px;
   flex-grow: 1;
   margin-bottom: 64px;
 }
