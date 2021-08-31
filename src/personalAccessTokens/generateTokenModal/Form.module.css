@@ -1,22 +1,27 @@
-.restrictions {
-    margin-top: var(--spacers-dp16);
-    margin-bottom: var(--spacers-dp4);
+.header {
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: var(--spacers-dp12);
 }
 
-.subheader {
-    font-weight: 500;
-    font-size: 18px;
-    margin-top: 0;
-    margin-bottom: var(--spacers-dp4);
+.field {
+    margin-bottom: var(--spacers-dp16);
 }
 
 .fieldWithExplanation {
+    composes: field;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacers-dp16);
+    grid-template-columns: 0.75fr 1fr;
+    gap: var(--spacers-dp8);
 }
 
 .explanation {
-    font-size: 13px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 6px;
+    margin-top: 28px;
+    font-size: 12px;
+    line-height: 14px;
     color: var(--colors-grey700);
 }

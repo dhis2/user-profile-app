@@ -1,3 +1,4 @@
+import { IconWarning16 } from '@dhis2/ui'
 import PropTypes from 'prop-types'
 import React from 'react'
 import i18n from '../../locales'
@@ -8,20 +9,21 @@ import styles from './Form.module.css'
 
 const ServerForm = ({ values }) => (
     <>
-        <ExpirationDateFF values={values} />
-        <section className={styles.restrictions}>
-            <h2 className={styles.subheader}>Restrictions</h2>
-            <div className={styles.fieldWithExplanation}>
-                <AllowedIpsFF />
-                <div className={styles.explanation}>
-                    {i18n.t(
-                        'IP address validation relies on the X-Forwarded-For header, which can be vulnerable to spoofing under certain configurations. Ensure that your load balancer or reverse proxy overwrites this header.'
-                    )}
-                </div>
+        <div className={styles.field}>
+            <ExpirationDateFF values={values} />
+        </div>
+        <div className={styles.fieldWithExplanation}>
+            <AllowedIpsFF />
+            <div className={styles.explanation}>
+                <IconWarning16 />
+                {i18n.t(
+                    'Important: IP address validation relies on the X-Forwarded-For header, which can be spoofed. For security, make sure a load balancer or reverse proxy overwrites this header.'
+                )}
             </div>
-            <br />
+        </div>
+        <div className={styles.field}>
             <AllowedMethodsFF />
-        </section>
+        </div>
     </>
 )
 

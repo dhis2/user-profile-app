@@ -14,6 +14,7 @@ import i18n from '../../locales'
 import AuthoritiesWarning from './AuthoritiesWarning.component.js'
 import BrowserForm from './BrowserForm.component.js'
 import ContextSelector from './ContextSelector.component.js'
+import formStyles from './Form.module.css'
 import getTokenExpirationDate from './getTokenExpirationDate.js'
 import ServerForm from './ServerForm.component.js'
 
@@ -138,6 +139,9 @@ const GenerateTokenModal = ({ onGenerate, onClose }) => {
                             />
                             {context && (
                                 <>
+                                    <h2 className={formStyles.header}>
+                                        {i18n.t('Token details')}
+                                    </h2>
                                     {renderContext({ context, values })}
                                     <AuthoritiesWarning />
                                 </>

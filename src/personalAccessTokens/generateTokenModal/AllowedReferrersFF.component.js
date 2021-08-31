@@ -29,8 +29,8 @@ const AllowedReferrersFF = () => (
         name="allowedReferrers"
         label={i18n.t('Allowed referrers')}
         component={TextAreaFieldFF}
-        helpText={i18n.t('One referrer per line')}
-        rows={2}
+        helpText={i18n.t('List one referrer per line.')}
+        rows={3}
         validate={referrerValidator}
     />
 )

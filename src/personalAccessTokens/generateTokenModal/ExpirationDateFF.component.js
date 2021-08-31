@@ -45,11 +45,11 @@ const expirationTimeOptions = [
 ]
 
 const renderExpirationDate = value => {
-    if (!value) {
+    if (!value || value === 'CUSTOM') {
         return null
     }
 
-    return i18n.t('The token will expire on {{- tokenExpirationDate}}', {
+    return i18n.t('The token will expire on {{- tokenExpirationDate}}.', {
         tokenExpirationDate: getTokenExpirationDate(value).format('LL'),
     })
 }
@@ -67,9 +67,10 @@ const ExpirationDateFF = ({ values }) => {
                 component={SingleSelectFieldFF}
                 options={expirationTimeOptions}
                 validate={hasValue}
+                helpText={renderExpirationDate(value)}
             />
             <div className={styles.flex}>
-                {value === 'CUSTOM' ? (
+                {value === 'CUSTOM' && (
                     <ReactFinalForm.Field
                         required
                         name="customExpirationDate"
@@ -82,10 +83,6 @@ const ExpirationDateFF = ({ values }) => {
                             futureDateValidator
                         )}
                     />
-                ) : (
-                    <div className={styles.expirationDateText}>
-                        {renderExpirationDate(value)}
-                    </div>
                 )}
             </div>
         </div>

@@ -23,8 +23,8 @@ const AllowedIpsFF = () => (
         name="allowedIps"
         label={i18n.t('Allowed IP addresses')}
         component={TextAreaFieldFF}
-        helpText={i18n.t('One IP address per line')}
-        rows={2}
+        helpText={i18n.t('List one IP address per line.')}
+        rows={3}
         validate={ipAddresesValidator}
     />
 )

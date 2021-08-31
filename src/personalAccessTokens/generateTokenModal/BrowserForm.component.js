@@ -1,3 +1,4 @@
+import { IconWarning16 } from '@dhis2/ui'
 import PropTypes from 'prop-types'
 import React from 'react'
 import i18n from '../../locales'
@@ -8,20 +9,21 @@ import styles from './Form.module.css'
 
 const BrowserForm = ({ values }) => (
     <>
-        <ExpirationDateFF values={values} />
-        <section className={styles.restrictions}>
-            <h2 className={styles.subheader}>Restrictions</h2>
-            <div className={styles.fieldWithExplanation}>
-                <AllowedReferrersFF />
-                <div className={styles.explanation}>
-                    {i18n.t(
-                        'This setting is not a security feature — the Referer header can be spoofed trivially. Using an allowlist of referrers is useful in discouraging third party developers from reusing this personal access token in their own websites and apps.'
-                    )}
-                </div>
+        <div className={styles.field}>
+            <ExpirationDateFF values={values} />
+        </div>
+        <div className={styles.fieldWithExplanation}>
+            <AllowedReferrersFF />
+            <div className={styles.explanation}>
+                <IconWarning16 />
+                {i18n.t(
+                    'Important: this is not a security feature. The referrer header can easily be spoofed. This setting is intended to discourage unauthorised third-party developers from connecting to public access instances.'
+                )}
             </div>
-            <br />
+        </div>
+        <div className={styles.field}>
             <AllowedMethodsFF />
-        </section>
+        </div>
     </>
 )
 
