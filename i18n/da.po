@@ -442,7 +442,7 @@ msgid ""
 msgstr ""
 
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel"
 
 msgid ""
 "IP address validation relies on the X-Forwarded-For header, which can be "
@@ -477,7 +477,7 @@ msgid "Copy token to clipboard"
 msgstr ""
 
 msgid "Delete"
-msgstr ""
+msgstr "Delete"
 
 msgid "User profile updated"
 msgstr ""

@@ -1,27 +1,22 @@
 # 
 # Translators:
-# Guardian Sanjaya <gysanjaya@ugm.ac.id>, 2021
-# Viktor Varland <viktor@dhis2.org>, 2021
-# Carwoto Sa'an <carwoto@gmail.com>, 2021
-# Yusuf Setiawan <mohammadyusufsetiawan@gmail.com>, 2021
-# Aprisa Chrysantina <aprisa.chrysantina@gmail.com>, 2021
-# Untoro Dwi Raharjo <untoro.dwi.raharjo@mail.ugm.ac.id>, 2021
+# Cherise Beek <cherise.beek@gmail.com>, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2021-08-30T19:22:36.292Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Untoro Dwi Raharjo <untoro.dwi.raharjo@mail.ugm.ac.id>, 2021\n"
-"Language-Team: Indonesian (https://www.transifex.com/hisp-uio/teams/100509/id/)\n"
+"Last-Translator: Cherise Beek <cherise.beek@gmail.com>, 2021\n"
+"Language-Team: Dutch (https://www.transifex.com/hisp-uio/teams/100509/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: id\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Never"
-msgstr "Tidak Pernah"
+msgstr ""
 
 msgid "Invalid date"
 msgstr ""
@@ -36,7 +31,7 @@ msgid "Current user"
 msgstr ""
 
 msgid "Version"
-msgstr "Versi"
+msgstr ""
 
 msgid "Build revision"
 msgstr ""
@@ -123,7 +118,7 @@ msgid "Calendar"
 msgstr ""
 
 msgid "Name"
-msgstr "Nama"
+msgstr ""
 
 msgid "User"
 msgstr ""
@@ -156,7 +151,7 @@ msgid "Please provide your old password"
 msgstr ""
 
 msgid "Username"
-msgstr "User name"
+msgstr ""
 
 msgid "Old password"
 msgstr ""
@@ -214,10 +209,10 @@ msgid "Barcode/QR code to scan"
 msgstr ""
 
 msgid "No"
-msgstr "Tidak"
+msgstr ""
 
 msgid "Yes"
-msgstr "Ya"
+msgstr ""
 
 msgid "Turn OFF"
 msgstr ""
@@ -281,7 +276,7 @@ msgid "Remove profile picture"
 msgstr ""
 
 msgid "This field is required"
-msgstr "Kolom ini harus terisi"
+msgstr ""
 
 msgid "This field should be a URL"
 msgstr ""
@@ -302,7 +297,7 @@ msgid "Please enter a valid international phone number (+0123456789)"
 msgstr ""
 
 msgid "No value"
-msgstr "NO_VALUE"
+msgstr "Geen waarde"
 
 msgid "Use system default"
 msgstr ""
@@ -447,7 +442,7 @@ msgid ""
 msgstr ""
 
 msgid "Cancel"
-msgstr "Batal"
+msgstr ""
 
 msgid ""
 "IP address validation relies on the X-Forwarded-For header, which can be "
@@ -473,7 +468,7 @@ msgid "Expires"
 msgstr ""
 
 msgid "Created"
-msgstr "Dibuat"
+msgstr ""
 
 msgid "Copied token to clipboard"
 msgstr ""
@@ -482,7 +477,7 @@ msgid "Copy token to clipboard"
 msgstr ""
 
 msgid "Delete"
-msgstr "Hapus"
+msgstr "Verwijderen"
 
 msgid "User profile updated"
 msgstr ""
@@ -506,16 +501,16 @@ msgid "Gender"
 msgstr ""
 
 msgid "Male"
-msgstr "Pria"
+msgstr ""
 
 msgid "Female"
-msgstr "Wanita"
+msgstr ""
 
 msgid "Other"
-msgstr "Lainnya"
+msgstr ""
 
 msgid "E-mail"
-msgstr "E-mail"
+msgstr ""
 
 msgid "Mobile phone number"
 msgstr ""
@@ -575,13 +570,13 @@ msgid "Database language"
 msgstr ""
 
 msgid "Style"
-msgstr "Gaya"
+msgstr ""
 
 msgid "Property to display in analysis modules"
 msgstr ""
 
 msgid "Short name"
-msgstr "Nama singkat"
+msgstr ""
 
 msgid "Enable message email notifications"
 msgstr ""
