@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2021-08-30T19:22:36.292Z\n"
-"PO-Revision-Date: 2021-08-30T19:22:36.292Z\n"
+"POT-Creation-Date: 2021-09-02T12:38:31.736Z\n"
+"PO-Revision-Date: 2021-09-02T12:38:31.736Z\n"
 
 msgid "Never"
 msgstr ""
@@ -339,7 +339,7 @@ msgstr ""
 msgid "Allowed IP addresses"
 msgstr ""
 
-msgid "One IP address per line"
+msgid "List one IP address per line."
 msgstr ""
 
 msgid "Allowed HTTP methods"
@@ -360,13 +360,16 @@ msgstr ""
 msgid "DELETE"
 msgstr ""
 
+msgid "Only choose the HTTP methods this token needs to allow."
+msgstr ""
+
 msgid "Invalid referrer '{{- referrer}}'"
 msgstr ""
 
 msgid "Allowed referrers"
 msgstr ""
 
-msgid "One referrer per line"
+msgid "List one referrer per line."
 msgstr ""
 
 msgid "Error fetching your authorities"
@@ -375,29 +378,30 @@ msgstr ""
 msgid "Retry loading authorities"
 msgstr ""
 
-msgid "This personal access token will have the following authorities"
+msgid "This token will have the following authorities"
 msgstr ""
 
 msgid ""
-"This setting is not a security feature — the Referer header can be spoofed "
-"trivially. Using an allowlist of referrers is useful in discouraging third "
-"party developers from reusing this personal access token in their own "
-"websites and apps."
+"Important: this is not a security feature. The referrer header can easily "
+"be spoofed. This setting is intended to discourage unauthorised third-party "
+"developers from connecting to public access instances."
 msgstr ""
 
-msgid "In which context will this personal access token be used?"
+msgid "Choose the context where this token will be used."
 msgstr ""
 
 msgid "Server/script context"
 msgstr ""
 
-msgid "Use cases: Integrations and scripts"
+msgid "Used for integrations and scripts that won't be accessed by a browser."
 msgstr ""
 
 msgid "Browser context"
 msgstr ""
 
-msgid "Use cases: Public portals"
+msgid ""
+"Used for applications, like public portals, that will be accessed with a "
+"web browser."
 msgstr ""
 
 msgid "Token expiration date must be in the future"
@@ -418,7 +422,7 @@ msgstr ""
 msgid "Custom..."
 msgstr ""
 
-msgid "The token will expire on {{- tokenExpirationDate}}"
+msgid "The token will expire on {{- tokenExpirationDate}}."
 msgstr ""
 
 msgid "Expiration (required)"
@@ -434,13 +438,16 @@ msgid ""
 "proxy."
 msgstr ""
 
+msgid "Token details"
+msgstr ""
+
 msgid "Cancel"
 msgstr ""
 
 msgid ""
-"IP address validation relies on the X-Forwarded-For header, which can be "
-"vulnerable to spoofing under certain configurations. Ensure that your load "
-"balancer or reverse proxy overwrites this header."
+"Important: IP address validation relies on the X-Forwarded-For header, "
+"which can be spoofed. For security, make sure a load balancer or reverse "
+"proxy overwrites this header."
 msgstr ""
 
 msgid "Are you sure you want to delete this token?"
@@ -466,7 +473,10 @@ msgstr ""
 msgid "Copied token to clipboard"
 msgstr ""
 
-msgid "Copy token to clipboard"
+msgid "Newly created token"
+msgstr ""
+
+msgid "Copy to clipboard"
 msgstr ""
 
 msgid "Delete"
