@@ -1,3 +1,10 @@
+## [30.3.3](https://github.com/dhis2/user-profile-app/compare/v30.3.2...v30.3.3) (2021-09-02)
+
+
+### Bug Fixes
+
+* **personal-access-tokens:** set nsSeparator for translations with colons ([424fe80](https://github.com/dhis2/user-profile-app/commit/424fe80f28650f4cd89349db76b92890c172d979))
+
 ## [30.3.2](https://github.com/dhis2/user-profile-app/compare/v30.3.1...v30.3.2) (2021-09-02)
 
 
