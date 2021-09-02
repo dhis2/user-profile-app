@@ -1,8 +1,8 @@
 # 
 # Translators:
-# phil_dhis2, 2021
 # Viktor Varland <viktor@dhis2.org>, 2021
 # ericbp <ericbarredap@gmail.com>, 2021
+# phil_dhis2, 2021
 # Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2021
 # 
 msgid ""
@@ -446,7 +446,7 @@ msgid ""
 msgstr ""
 
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 msgid ""
 "IP address validation relies on the X-Forwarded-For header, which can be "
@@ -472,7 +472,7 @@ msgid "Expires"
 msgstr ""
 
 msgid "Created"
-msgstr ""
+msgstr "Creado"
 
 msgid "Copied token to clipboard"
 msgstr ""
@@ -481,7 +481,7 @@ msgid "Copy token to clipboard"
 msgstr ""
 
 msgid "Delete"
-msgstr ""
+msgstr "Eliminar"
 
 msgid "User profile updated"
 msgstr "Perfil de usuario actualizado"
