@@ -17,7 +17,8 @@ const BrowserForm = ({ values }) => (
             <div className={styles.explanation}>
                 <IconWarning16 />
                 {i18n.t(
-                    'Important: this is not a security feature. The referrer header can easily be spoofed. This setting is intended to discourage unauthorised third-party developers from connecting to public access instances.'
+                    'Important: this is not a security feature. The referrer header can easily be spoofed. This setting is intended to discourage unauthorised third-party developers from connecting to public access instances.',
+                    { nsSeparator: '-:-' }
                 )}
             </div>
         </div>
