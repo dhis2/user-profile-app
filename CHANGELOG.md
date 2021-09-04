@@ -1,3 +1,10 @@
+## [30.3.5](https://github.com/dhis2/user-profile-app/compare/v30.3.4...v30.3.5) (2021-09-04)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([1ff1136](https://github.com/dhis2/user-profile-app/commit/1ff1136a2d23bf4639f27316266f98847ab999f3))
+
 ## [30.3.4](https://github.com/dhis2/user-profile-app/compare/v30.3.3...v30.3.4) (2021-09-03)
 
 
