@@ -492,7 +492,7 @@ msgid "Newly created token"
 msgstr ""
 
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Copier dans le presse-papier"
 
 msgid "Delete"
 msgstr "Supprimer"
