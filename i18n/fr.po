@@ -5,13 +5,14 @@
 # Viktor Varland <viktor@dhis2.org>, 2021
 # Karoline Tufte Lien <karoline@dhis2.org>, 2021
 # Yao Selom Saka <ysaka@hispwca.org>, 2021
+# Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2021
 # Yayra Gomado <ygomado@hispwca.org>, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2021-08-30T19:22:36.292Z\n"
-"PO-Revision-Date: 2021-03-17 23:49+0000\n"
+"PO-Revision-Date: 2021-09-04 00:45+0000\n"
 "Last-Translator: Yayra Gomado <ygomado@hispwca.org>, 2021\n"
 "Language-Team: French (https://www.transifex.com/hisp-uio/teams/100509/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -449,7 +450,7 @@ msgid ""
 msgstr ""
 
 msgid "Cancel"
-msgstr ""
+msgstr "Annuler"
 
 msgid ""
 "IP address validation relies on the X-Forwarded-For header, which can be "
@@ -475,7 +476,7 @@ msgid "Expires"
 msgstr ""
 
 msgid "Created"
-msgstr ""
+msgstr "Créé"
 
 msgid "Copied token to clipboard"
 msgstr ""
@@ -484,7 +485,7 @@ msgid "Copy token to clipboard"
 msgstr ""
 
 msgid "Delete"
-msgstr ""
+msgstr "Supprimer"
 
 msgid "User profile updated"
 msgstr "Profil d’utilisateur mis à jour."
@@ -505,7 +506,7 @@ msgid "Surname"
 msgstr "Nom de famille"
 
 msgid "Gender"
-msgstr "Genre"
+msgstr "Sexe"
 
 msgid "Male"
 msgstr "Masculin"
