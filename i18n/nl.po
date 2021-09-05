@@ -1,168 +1,166 @@
 # 
 # Translators:
-# phil_dhis2, 2021
-# Viktor Varland <viktor@dhis2.org>, 2021
-# Mai Nguyen <thanhmai.jica@gmail.com>, 2021
+# Cherise Beek <cherise.beek@gmail.com>, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2021-08-30T19:22:36.292Z\n"
 "PO-Revision-Date: 2021-09-04 00:45+0000\n"
-"Last-Translator: Mai Nguyen <thanhmai.jica@gmail.com>, 2021\n"
-"Language-Team: Vietnamese (https://www.transifex.com/hisp-uio/teams/100509/vi/)\n"
+"Last-Translator: Cherise Beek <cherise.beek@gmail.com>, 2021\n"
+"Language-Team: Dutch (https://www.transifex.com/hisp-uio/teams/100509/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: vi\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Never"
-msgstr "Chưa bao giờ"
+msgstr ""
 
 msgid "Invalid date"
-msgstr "Ngày không hợp lệ"
+msgstr ""
 
 msgid "Web API"
-msgstr "Web API"
+msgstr ""
 
 msgid "Browse it here"
-msgstr "Mở ở đây"
+msgstr ""
 
 msgid "Current user"
-msgstr "Người dùng hiện tại"
+msgstr ""
 
 msgid "Version"
-msgstr "Phiên bản"
+msgstr ""
 
 msgid "Build revision"
-msgstr "Bản sửa đổi"
+msgstr ""
 
 msgid "Build date"
-msgstr "Ngày triển khai"
+msgstr ""
 
 msgid "Jasper reports version"
-msgstr "Phiên bản Jasper"
+msgstr ""
 
 msgid "User agent"
-msgstr "Người đại diện"
+msgstr ""
 
 msgid "Server date"
-msgstr "Ngày trên máy chủ"
+msgstr ""
 
 msgid "Last analytics table generation"
-msgstr "Bảng phân tích mới nhất được xuất ra"
+msgstr ""
 
 msgid "Time since last analytics table generation"
-msgstr "Thời điểm cuối cùng được trích xuất dữ liệu"
+msgstr ""
 
 msgid "Last analytics table runtime"
-msgstr "Thời gian trích xuất dữ liệu mới nhất"
+msgstr ""
 
 msgid "Last continuous analytics table update"
-msgstr "Cập nhật bảng phân tích liên tục gần đây nhất"
+msgstr ""
 
 msgid "Time since last continuous analytics table update"
-msgstr "Thời gian kể từ lần cập nhật bảng phân tích liên tục gần đây nhất"
+msgstr ""
 
 msgid "Last continuous analytics table runtime"
-msgstr "Thời gian chạy bảng phân tích liên tục gần đây nhất"
+msgstr ""
 
 msgid "Environment variable"
-msgstr "Biến môi trường"
+msgstr ""
 
 msgid "System ID"
-msgstr "Mã hệ thống"
+msgstr ""
 
 msgid "Last monitoring success"
-msgstr "Giám sát lần cuối thành công "
+msgstr ""
 
 msgid "External configuration directory"
-msgstr "Thư mục chứa cấu hình"
+msgstr ""
 
 msgid "File store provider"
-msgstr "Dịch vụ lưu trữ tập tin"
+msgstr ""
 
 msgid "Node ID"
-msgstr "Node ID"
+msgstr ""
 
 msgid "Cache provider"
-msgstr "Nhà cung cấp bộ nhớ đệm"
+msgstr ""
 
 msgid "Read replica count"
-msgstr "Đọc số lượng bản sao"
+msgstr ""
 
 msgid "Java opts"
-msgstr "Java opts"
+msgstr ""
 
 msgid "Java version"
-msgstr "Java version"
+msgstr ""
 
 msgid "Java vendor"
-msgstr "Java vendor"
+msgstr ""
 
 msgid "OS name"
-msgstr "Tên hệ điều hành"
+msgstr ""
 
 msgid "OS architecture"
-msgstr "Cấu trúc hệ điều hành"
+msgstr ""
 
 msgid "OS version"
-msgstr "Phiên bản hệ điều hành"
+msgstr ""
 
 msgid "Memory info"
-msgstr "Thông tin bộ nhớ"
+msgstr ""
 
 msgid "CPU cores"
-msgstr "CPU cores"
+msgstr ""
 
 msgid "Calendar"
-msgstr "Lịch"
+msgstr ""
 
 msgid "Name"
-msgstr "Tên"
+msgstr ""
 
 msgid "User"
-msgstr "Người dùng"
+msgstr ""
 
 msgid "Spatial support"
-msgstr "Hỗ trợ không gian"
+msgstr ""
 
 msgid "System info"
-msgstr "Thông tin hệ thống"
+msgstr ""
 
 msgid "Database"
-msgstr "Cơ sở dữ liệu"
+msgstr ""
 
 msgid "Edit account settings"
-msgstr "Chỉnh sửa cài đặt tài khoản"
+msgstr ""
 
 msgid "No changes have been made"
-msgstr "Không có thay đổi nào được áp dụng"
+msgstr ""
 
 msgid "The form is currently being validated. Please try again."
-msgstr "Biểu mẫu đang được kiểm tra tính hợp lệ. Xin vui lòng thử lại."
+msgstr ""
 
 msgid "The form contains errors. Please fix the errors and try again."
-msgstr "Biểu mẫu có lỗi. Xin vui lòng sửa lỗi và thử lại."
+msgstr ""
 
 msgid "The entered values do not match. Please re-enter."
-msgstr "Giá trị đã nhập không giống. Xin vui lòng nhập lại."
+msgstr ""
 
 msgid "Please provide your old password"
-msgstr "Nhập mật khẩu cũ"
+msgstr ""
 
 msgid "Username"
-msgstr "Tên đăng nhập"
+msgstr ""
 
 msgid "Old password"
-msgstr "Mật khẩu cũ"
+msgstr ""
 
 msgid "This field can't be left blank"
-msgstr "Trường này không được để trống."
+msgstr ""
 
 msgid "New password"
-msgstr "Mật khẩu mới"
+msgstr ""
 
 msgid ""
 "Password should be at least 8 characters with at least 1 digit, 1 uppercase "
@@ -170,13 +168,13 @@ msgid ""
 msgstr ""
 
 msgid "Repeat new password"
-msgstr "Gõ lại mật khẩu mới"
+msgstr ""
 
 msgid "Setup 2-Factor"
-msgstr "Cài đặt 2 yếu tô"
+msgstr ""
 
 msgid "Update password"
-msgstr "Cập nhật mật khẩu"
+msgstr ""
 
 msgid ""
 "This account is linked to an OpenID Connect identity. Visit the Open ID "
@@ -184,61 +182,61 @@ msgid ""
 msgstr ""
 
 msgid "Password changed successfully"
-msgstr "Đổi mật khẩu thành công"
+msgstr ""
 
 msgid "You need to login again to continue using the application."
-msgstr "Bạn cần đăng nhập lại để tiếp tục dùng ứng dụng."
+msgstr ""
 
 msgid "Login"
-msgstr "Đăng nhập"
+msgstr ""
 
 msgid "Failed to update password"
-msgstr "Không thể cập nhật mật khẩu"
+msgstr ""
 
 msgid "2-Factor successfully turned ON"
-msgstr "Bật thành công xác thực 2 yếu tố"
+msgstr ""
 
 msgid "2-Factor successfully turned OFF"
-msgstr "Tắt thành công xác thực 2 yếu tố"
+msgstr ""
 
 msgid "Failed to turn ON 2-Factor"
-msgstr "Không thể bật xác thực 2 yếu tố"
+msgstr ""
 
 msgid "Failed to turn OFF 2-Factor"
 msgstr ""
 
 msgid "Barcode/QR code to scan"
-msgstr "Mã vạch/Mã QR"
+msgstr ""
 
 msgid "No"
-msgstr "Không"
+msgstr ""
 
 msgid "Yes"
-msgstr "Có"
+msgstr ""
 
 msgid "Turn OFF"
-msgstr "Tắt"
+msgstr ""
 
 msgid "Turn ON"
-msgstr "Bật"
+msgstr ""
 
 msgid "2-Factor Verification is ON"
-msgstr "Bật xác thực 2 yếu tố"
+msgstr ""
 
 msgid "2-Factor Verification is OFF"
-msgstr "Tắt xác thực 2 yếu tố"
+msgstr ""
 
 msgid "Do you want to turn OFF 2-Factor?"
-msgstr "Bạn có muốn tắt xác thực 2 yếu tố"
+msgstr ""
 
 msgid "Do you want to turn ON 2-Factor?"
-msgstr "Bạn có muốn bật xác thực 2 yếu tố?"
+msgstr ""
 
 msgid "Download the Authenticator app"
-msgstr "Tải ứng dụng xác thực"
+msgstr ""
 
 msgid "What kind of phone/tablet do you have?"
-msgstr "Bạn dùng loại điện thoại/máy tính bảng nào?"
+msgstr ""
 
 msgid "Download the Authenticator App from the "
 msgstr ""
@@ -247,13 +245,13 @@ msgid "In the Authenticator App select "
 msgstr ""
 
 msgid "Begin setup."
-msgstr "Bắt đầu cài đặt"
+msgstr ""
 
 msgid "Choose "
 msgstr ""
 
 msgid "Scan a barcode."
-msgstr "Quét mã vạch."
+msgstr ""
 
 msgid ""
 "With 2-Factor authentication turned on you will be asked to enter a second "
@@ -261,73 +259,69 @@ msgid ""
 "must use the Authenticator app. If you do not have this app you must "
 "download it on your phone/tablet."
 msgstr ""
-"Khi bật chế độ xác thực 2 yếu tố, bạn sẽ được yêu cầu nhập mã xác minh thứ "
-"hai khi đăng nhập. Để tạo mã xác minh này, bạn phải sử dụng ứng dụng Xác "
-"thực. Nếu bạn không có ứng dụng này, bạn phải tải xuống trên điện thoại/máy "
-"tính bảng của mình."
 
 msgid "Failed to upload profile picture"
-msgstr "Không thể tải ảnh hồ sơ"
+msgstr ""
 
 msgid "Profile picture"
-msgstr "Ảnh hồ sơ"
+msgstr ""
 
 msgid "No profile picture available"
-msgstr "Không có sẵn hình ảnh hồ sơ "
+msgstr ""
 
 msgid "Select profile picture"
-msgstr "Chọn ảnh hồ sơ"
+msgstr ""
 
 msgid "Remove profile picture"
-msgstr "Xóa ảnh hồ sơ"
+msgstr ""
 
 msgid "This field is required"
-msgstr "Trường này yêu cầu"
+msgstr ""
 
 msgid "This field should be a URL"
 msgstr ""
 
 msgid "This field should contain a list of URLs"
-msgstr "Trường này phải chứa danh sách đường dẫn liên kết (URL)"
+msgstr ""
 
 msgid "This field should be a number"
-msgstr "Trường này phải là số"
+msgstr ""
 
 msgid "This field should be a positive number"
-msgstr "Trường này phải là số dương"
+msgstr ""
 
 msgid "This field should be an email"
 msgstr ""
 
 msgid "Please enter a valid international phone number (+0123456789)"
-msgstr "Nhật số điện thoại quốc tế hợp lệ"
+msgstr ""
 
 msgid "No value"
-msgstr "Không có giá trị"
+msgstr "Geen waarde"
 
 msgid "Use system default"
-msgstr "Dùng mặc định hệ thống"
+msgstr ""
 
 msgid "No options"
 msgstr ""
 
 msgid "System default"
-msgstr "Mặc định hệ thống"
+msgstr ""
 
 msgid "Edit user profile"
-msgstr "Chỉnh sửa hồ sơ người dùng"
+msgstr ""
 
 msgid "Edit user settings"
-msgstr "Chỉnh sửa cài đặt người dùng"
+msgstr ""
 
 msgid "View full profile"
-msgstr "Xem hồ sơ đầy đủ"
+msgstr ""
 
 msgid "Manage personal access tokens"
 msgstr ""
 
 msgid "About DHIS2"
-msgstr "Giới thiệu DHIS2"
+msgstr ""
 
 msgid "Generate new token"
 msgstr ""
@@ -448,7 +442,7 @@ msgid ""
 msgstr ""
 
 msgid "Cancel"
-msgstr "Hủy"
+msgstr ""
 
 msgid ""
 "IP address validation relies on the X-Forwarded-For header, which can be "
@@ -474,7 +468,7 @@ msgid "Expires"
 msgstr ""
 
 msgid "Created"
-msgstr "Đã tạo"
+msgstr ""
 
 msgid "Copied token to clipboard"
 msgstr ""
@@ -483,112 +477,112 @@ msgid "Copy token to clipboard"
 msgstr ""
 
 msgid "Delete"
-msgstr "Xóa"
+msgstr "Verwijderen"
 
 msgid "User profile updated"
-msgstr "Hồ sơ người dùng đã cập nhật"
+msgstr ""
 
 msgid "Failed to update user profile"
-msgstr "Cập nhật hồ sơ người dùng KHÔNG THÀNH CÔNG"
+msgstr ""
 
 msgid "Settings updated"
-msgstr "Cài đặt đã được cập nhật"
+msgstr ""
 
 msgid "Failed to update settings"
-msgstr "Cập nhật cài đặt KHÔNG THÀNH CÔNG"
+msgstr ""
 
 msgid "First name"
-msgstr "Tên"
+msgstr ""
 
 msgid "Surname"
-msgstr "Họ"
+msgstr ""
 
 msgid "Gender"
-msgstr "Giới tính"
+msgstr ""
 
 msgid "Male"
-msgstr "Nam"
+msgstr ""
 
 msgid "Female"
-msgstr "Nữ"
+msgstr ""
 
 msgid "Other"
-msgstr "Khác"
+msgstr ""
 
 msgid "E-mail"
-msgstr "Thư điện tử"
+msgstr ""
 
 msgid "Mobile phone number"
-msgstr "Số điện thoại di động"
+msgstr ""
 
 msgid "Introduction"
-msgstr "Giới thiệu"
+msgstr ""
 
 msgid "Job title"
-msgstr "Chức vụ"
+msgstr ""
 
 msgid "User roles"
-msgstr "Quyền người dùng"
+msgstr ""
 
 msgid "User org units"
-msgstr "Đơn vị người dùng"
+msgstr ""
 
 msgid "Birthday"
-msgstr "Ngày sinh"
+msgstr ""
 
 msgid "Nationality"
-msgstr "Quốc tịch"
+msgstr ""
 
 msgid "Employer"
-msgstr "Công ty/Tổ chức"
+msgstr ""
 
 msgid "Education"
-msgstr "Trình độ"
+msgstr ""
 
 msgid "Interests"
-msgstr "Quan tâm"
+msgstr ""
 
 msgid "Languages"
-msgstr "Ngôn ngữ"
+msgstr ""
 
 msgid "WhatsApp"
-msgstr "WhatsApp"
+msgstr ""
 
 msgid "Facebook Messenger"
-msgstr "Facebook Messenger"
+msgstr ""
 
 msgid "Skype"
-msgstr "Skype"
+msgstr ""
 
 msgid "Telegram"
-msgstr "Telegram"
+msgstr ""
 
 msgid "Twitter"
-msgstr "Twitter"
+msgstr ""
 
 msgid "Account editor"
 msgstr ""
 
 msgid "Interface language"
-msgstr "Ngôn ngữ giao diện"
+msgstr ""
 
 msgid "Database language"
-msgstr "Ngôn ngữ cơ sở dữ liệu"
+msgstr ""
 
 msgid "Style"
-msgstr "Kiểu dáng"
+msgstr ""
 
 msgid "Property to display in analysis modules"
-msgstr "Thuộc tính hiện trong các chức năng phân tích dữ liệu"
+msgstr ""
 
 msgid "Short name"
-msgstr "Tên rút gọn"
+msgstr ""
 
 msgid "Enable message email notifications"
-msgstr "Cho phép gửi thông báo email"
+msgstr ""
 
 msgid "Enable message SMS notifications"
-msgstr "Cho phép gửi thông báo SMS"
+msgstr ""
 
 msgctxt "HTTP method"
 msgid "GET"
