@@ -16,7 +16,9 @@ const referrerValidator = value => {
         return
     }
 
-    const referrers = value.split('\n')
+    const referrers = value
+        .split('\n')
+        .filter(referrer => referrer.trim() !== '')
     for (const referrer of referrers) {
         if (!isValidUrl(referrer)) {
             return i18n.t(`Invalid referrer '{{- referrer}}'`, { referrer })

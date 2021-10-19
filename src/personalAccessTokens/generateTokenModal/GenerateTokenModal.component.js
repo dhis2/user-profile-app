@@ -50,7 +50,9 @@ const getAllowedIpsAttribute = ({ allowedIps }) => {
 
     return {
         type: 'IpAllowedList',
-        allowedIps: allowedIps.split('\n'),
+        allowedIps: allowedIps
+            .split('\n')
+            .filter(ipAddress => ipAddress.trim() !== ''),
     }
 }
 
@@ -80,7 +82,9 @@ const getAllowedReferersAttribute = ({ allowedReferrers }) => {
 
     return {
         type: 'RefererAllowedList',
-        allowedReferrers: allowedReferrers.split('\n'),
+        allowedReferrers: allowedReferrers
+            .split('\n')
+            .filter(referrer => referrer.trim() !== ''),
     }
 }
 
