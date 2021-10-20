@@ -1,3 +1,10 @@
+## [30.3.7](https://github.com/dhis2/user-profile-app/compare/v30.3.6...v30.3.7) (2021-10-20)
+
+
+### Bug Fixes
+
+* **personal-access-tokens:** more lax validation for allowed IPs/referrers ([#1034](https://github.com/dhis2/user-profile-app/issues/1034)) ([9dcb06d](https://github.com/dhis2/user-profile-app/commit/9dcb06df47290f00e9347a1d7ed79610a93644c7))
+
 ## [30.3.6](https://github.com/dhis2/user-profile-app/compare/v30.3.5...v30.3.6) (2021-09-05)
 
 
