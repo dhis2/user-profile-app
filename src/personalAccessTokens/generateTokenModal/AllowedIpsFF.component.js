@@ -10,7 +10,9 @@ const ipAddresesValidator = value => {
         return
     }
 
-    const ipAddresses = value.split('\n')
+    const ipAddresses = value
+        .split('\n')
+        .filter(ipAddress => ipAddress.trim() !== '')
     for (const ipAddress of ipAddresses) {
         if (!isValidIpAddress(ipAddress)) {
             return i18n.t(`Invalid IP address '{{- ipAddress}}'`, { ipAddress })
