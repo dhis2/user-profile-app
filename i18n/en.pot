@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2021-10-19T15:10:29.839Z\n"
-"PO-Revision-Date: 2021-10-19T15:10:29.839Z\n"
+"POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
+"PO-Revision-Date: 2021-10-22T15:09:53.622Z\n"
 
 msgid "Never"
 msgstr ""
@@ -301,19 +301,25 @@ msgstr ""
 msgid "System default"
 msgstr ""
 
-msgid "Edit user profile"
+msgid "User profile"
 msgstr ""
 
-msgid "Edit user settings"
+msgid "User settings"
 msgstr ""
 
-msgid "View full profile"
+msgid "Account settings"
 msgstr ""
 
-msgid "Manage personal access tokens"
+msgid "Full profile"
+msgstr ""
+
+msgid "Personal access tokens"
 msgstr ""
 
 msgid "About DHIS2"
+msgstr ""
+
+msgid "Manage personal access tokens"
 msgstr ""
 
 msgid "Generate new token"
@@ -482,10 +488,16 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
+msgid "Edit user profile"
+msgstr ""
+
 msgid "User profile updated"
 msgstr ""
 
 msgid "Failed to update user profile"
+msgstr ""
+
+msgid "Edit user settings"
 msgstr ""
 
 msgid "Settings updated"
@@ -585,6 +597,9 @@ msgid "Enable message email notifications"
 msgstr ""
 
 msgid "Enable message SMS notifications"
+msgstr ""
+
+msgid "View full profile"
 msgstr ""
 
 msgctxt "HTTP method"

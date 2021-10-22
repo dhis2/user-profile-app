@@ -8,27 +8,27 @@ function SidebarWrapper(props) {
     const sideBarSections = [
         {
             key: 'profile',
-            label: i18n.t('Edit user profile'),
+            label: i18n.t('User profile'),
             icon: 'create',
         },
         {
             key: 'settings',
-            label: i18n.t('Edit user settings'),
+            label: i18n.t('User settings'),
             icon: 'build',
         },
         {
             key: 'account',
-            label: i18n.t('Edit account settings'),
+            label: i18n.t('Account settings'),
             icon: 'settings',
         },
         {
             key: 'viewProfile',
-            label: i18n.t('View full profile'),
+            label: i18n.t('Full profile'),
             icon: 'face',
         },
         {
             key: 'personalAccessTokens',
-            label: i18n.t('Manage personal access tokens'),
+            label: i18n.t('Personal access tokens'),
             icon: 'badge',
         },
         {
