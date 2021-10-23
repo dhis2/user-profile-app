@@ -1,3 +1,10 @@
+## [30.3.9](https://github.com/dhis2/user-profile-app/compare/v30.3.8...v30.3.9) (2021-10-23)
+
+
+### Bug Fixes
+
+* **sidebar:** remove verbs from sidebar menu item labels ([#1038](https://github.com/dhis2/user-profile-app/issues/1038)) ([8b57f13](https://github.com/dhis2/user-profile-app/commit/8b57f136c39fdc6660aafd54a4c122b9964eeda5))
+
 ## [30.3.8](https://github.com/dhis2/user-profile-app/compare/v30.3.7...v30.3.8) (2021-10-21)
 
 
