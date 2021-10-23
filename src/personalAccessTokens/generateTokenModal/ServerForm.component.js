@@ -17,7 +17,8 @@ const ServerForm = ({ values }) => (
             <div className={styles.explanation}>
                 <IconWarning16 />
                 {i18n.t(
-                    'Important: IP address validation relies on the X-Forwarded-For header, which can be spoofed. For security, make sure a load balancer or reverse proxy overwrites this header.'
+                    'Important: IP address validation relies on the X-Forwarded-For header, which can be spoofed. For security, make sure a load balancer or reverse proxy overwrites this header.',
+                    { nsSeparator: '-:-' }
                 )}
             </div>
         </div>
