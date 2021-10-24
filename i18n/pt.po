@@ -1,17 +1,17 @@
 # 
 # Translators:
-# phil_dhis2, 2021
 # Viktor Varland <viktor@dhis2.org>, 2021
-# Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2021
 # Ge Joao <gsimango@saudigitus.org>, 2021
 # Sheila André <sandre@saudigitus.org>, 2021
+# phil_dhis2, 2021
+# Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2021-10-22T15:14:54.283Z\n"
 "PO-Revision-Date: 2021-09-04 00:45+0000\n"
-"Last-Translator: Sheila André <sandre@saudigitus.org>, 2021\n"
+"Last-Translator: Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2021\n"
 "Language-Team: Portuguese (https://www.transifex.com/hisp-uio/teams/100509/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -318,13 +318,13 @@ msgid "System default"
 msgstr "Padrão do sistema"
 
 msgid "User profile"
-msgstr ""
+msgstr "Perfil do usuário"
 
 msgid "User settings"
-msgstr ""
+msgstr "Configurações do usuário"
 
 msgid "Account settings"
-msgstr ""
+msgstr "Configurações da conta"
 
 msgid "Full profile"
 msgstr ""
@@ -499,7 +499,7 @@ msgid "Newly created token"
 msgstr ""
 
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Copiar para área de transferência"
 
 msgid "Delete"
 msgstr "Suprimir"

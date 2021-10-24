@@ -317,13 +317,13 @@ msgid "System default"
 msgstr "Стандарт тизимизим"
 
 msgid "User profile"
-msgstr ""
+msgstr "Фойдаланувчи профили"
 
 msgid "User settings"
-msgstr ""
+msgstr "Фойдаланувчи созламанлари"
 
 msgid "Account settings"
-msgstr ""
+msgstr "Аккаунт созламалари"
 
 msgid "Full profile"
 msgstr ""
@@ -498,7 +498,7 @@ msgid "Newly created token"
 msgstr ""
 
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Буферга нусха олиш"
 
 msgid "Delete"
 msgstr "Ўчириб ташлаш"

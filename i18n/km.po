@@ -312,7 +312,7 @@ msgid "User profile"
 msgstr ""
 
 msgid "User settings"
-msgstr ""
+msgstr "ការ​កំណត់​​អ្នក​ប្រើប្រាស់"
 
 msgid "Account settings"
 msgstr ""
