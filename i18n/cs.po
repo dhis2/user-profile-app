@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2021-10-19T15:10:29.839Z\n"
+"POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
 "Last-Translator: trendspotter <jirka.p@volny.cz>, 2021\n"
 "Language-Team: Czech (https://www.transifex.com/hisp-uio/teams/100509/cs/)\n"
@@ -316,20 +316,26 @@ msgstr "Žádné možnosti"
 msgid "System default"
 msgstr "Výchozí systém"
 
-msgid "Edit user profile"
-msgstr "Upravit uživatelský profil"
+msgid "User profile"
+msgstr "Uživatelský profil"
 
-msgid "Edit user settings"
-msgstr "Upravit uživatelské nastavení"
+msgid "User settings"
+msgstr "Uživatelské nastavení"
 
-msgid "View full profile"
-msgstr "Zobrazit celý profil"
+msgid "Account settings"
+msgstr "Nastavení účtu"
 
-msgid "Manage personal access tokens"
-msgstr "Spravovat osobní přístupové tokeny"
+msgid "Full profile"
+msgstr ""
+
+msgid "Personal access tokens"
+msgstr ""
 
 msgid "About DHIS2"
 msgstr "O DHIS2"
+
+msgid "Manage personal access tokens"
+msgstr "Spravovat osobní přístupové tokeny"
 
 msgid "Generate new token"
 msgstr "Vytvořit nový token"
@@ -512,11 +518,17 @@ msgstr "Zkopírovat do schránky"
 msgid "Delete"
 msgstr "Smazat"
 
+msgid "Edit user profile"
+msgstr "Upravit uživatelský profil"
+
 msgid "User profile updated"
 msgstr "Uživatelský profil byl aktualizován"
 
 msgid "Failed to update user profile"
 msgstr "Aktualizace uživatelského profilu se nezdařila"
+
+msgid "Edit user settings"
+msgstr "Upravit uživatelské nastavení"
 
 msgid "Settings updated"
 msgstr "nastavení aktualizováno"
@@ -616,6 +628,9 @@ msgstr "Povolit e-mailová upozornění na zprávy"
 
 msgid "Enable message SMS notifications"
 msgstr "Povolit upozornění na zprávy SMS"
+
+msgid "View full profile"
+msgstr "Zobrazit celý profil"
 
 msgctxt "HTTP method"
 msgid "GET"

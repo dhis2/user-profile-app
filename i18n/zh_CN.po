@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2021-10-19T15:10:29.839Z\n"
+"POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
 "Last-Translator: easylin <lin_xd@126.com>, 2021\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/hisp-uio/teams/100509/zh_CN/)\n"
@@ -313,20 +313,26 @@ msgstr ""
 msgid "System default"
 msgstr "系统缺省"
 
-msgid "Edit user profile"
-msgstr "编辑用户简历"
+msgid "User profile"
+msgstr "用户基本信息"
 
-msgid "Edit user settings"
-msgstr "编辑用户设置"
+msgid "User settings"
+msgstr "用户设置"
 
-msgid "View full profile"
-msgstr "查看全部简历"
+msgid "Account settings"
+msgstr "帐号设置"
 
-msgid "Manage personal access tokens"
+msgid "Full profile"
+msgstr ""
+
+msgid "Personal access tokens"
 msgstr ""
 
 msgid "About DHIS2"
 msgstr "关于DHIS2"
+
+msgid "Manage personal access tokens"
+msgstr ""
 
 msgid "Generate new token"
 msgstr ""
@@ -494,11 +500,17 @@ msgstr "复制到剪贴板"
 msgid "Delete"
 msgstr "删除"
 
+msgid "Edit user profile"
+msgstr "编辑用户简历"
+
 msgid "User profile updated"
 msgstr "用户概要已经更新"
 
 msgid "Failed to update user profile"
 msgstr "Failed to update user profile"
+
+msgid "Edit user settings"
+msgstr "编辑用户设置"
 
 msgid "Settings updated"
 msgstr "设置已经更新"
@@ -598,6 +610,9 @@ msgstr "激活发送邮件通知"
 
 msgid "Enable message SMS notifications"
 msgstr "激活发送短信通知"
+
+msgid "View full profile"
+msgstr "查看全部简历"
 
 msgctxt "HTTP method"
 msgid "GET"

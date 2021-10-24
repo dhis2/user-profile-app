@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2021-10-19T15:10:29.839Z\n"
+"POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
 "Last-Translator: Viktor Varland <viktor@dhis2.org>, 2021\n"
 "Language-Team: Swedish (https://www.transifex.com/hisp-uio/teams/100509/sv/)\n"
@@ -309,19 +309,25 @@ msgstr ""
 msgid "System default"
 msgstr "System standard"
 
-msgid "Edit user profile"
+msgid "User profile"
 msgstr ""
 
-msgid "Edit user settings"
+msgid "User settings"
 msgstr ""
 
-msgid "View full profile"
+msgid "Account settings"
 msgstr ""
 
-msgid "Manage personal access tokens"
+msgid "Full profile"
+msgstr ""
+
+msgid "Personal access tokens"
 msgstr ""
 
 msgid "About DHIS2"
+msgstr ""
+
+msgid "Manage personal access tokens"
 msgstr ""
 
 msgid "Generate new token"
@@ -490,11 +496,17 @@ msgstr ""
 msgid "Delete"
 msgstr "Radera"
 
+msgid "Edit user profile"
+msgstr ""
+
 msgid "User profile updated"
 msgstr "Användarprofil uppdaterad"
 
 msgid "Failed to update user profile"
 msgstr "Det gick inte att uppdatera användare profil"
+
+msgid "Edit user settings"
+msgstr ""
 
 msgid "Settings updated"
 msgstr "Inställningar uppdaterad"
@@ -594,6 +606,9 @@ msgstr "Aktivera e-postmeddelanden"
 
 msgid "Enable message SMS notifications"
 msgstr "Aktivera SMS-meddelanden"
+
+msgid "View full profile"
+msgstr ""
 
 msgctxt "HTTP method"
 msgid "GET"

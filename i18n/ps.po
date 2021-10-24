@@ -1,14 +1,14 @@
 # 
 # Translators:
-# phil_dhis2, 2021
 # Viktor Varland <viktor@dhis2.org>, 2021
+# phil_dhis2, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2021-10-19T15:10:29.839Z\n"
+"POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Viktor Varland <viktor@dhis2.org>, 2021\n"
+"Last-Translator: phil_dhis2, 2021\n"
 "Language-Team: Pashto (https://www.transifex.com/hisp-uio/teams/100509/ps/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -311,19 +311,25 @@ msgstr ""
 msgid "System default"
 msgstr "ډیفالټ سیسټم"
 
-msgid "Edit user profile"
+msgid "User profile"
+msgstr "د کاروونکي په اړه مالومات."
+
+msgid "User settings"
+msgstr "د کاروونکي ترتیبات"
+
+msgid "Account settings"
+msgstr "د حساب یا اکاونټ جوړولو تنظیمات"
+
+msgid "Full profile"
 msgstr ""
 
-msgid "Edit user settings"
-msgstr ""
-
-msgid "View full profile"
-msgstr ""
-
-msgid "Manage personal access tokens"
+msgid "Personal access tokens"
 msgstr ""
 
 msgid "About DHIS2"
+msgstr ""
+
+msgid "Manage personal access tokens"
 msgstr ""
 
 msgid "Generate new token"
@@ -492,11 +498,17 @@ msgstr ""
 msgid "Delete"
 msgstr "خذف یې کړئ"
 
+msgid "Edit user profile"
+msgstr ""
+
 msgid "User profile updated"
 msgstr "د کاروونکي په اړه مالومات تجدید شول"
 
 msgid "Failed to update user profile"
 msgstr "د کاروونکي په اړه د مالوماتو تجدیدول ناکام شول"
+
+msgid "Edit user settings"
+msgstr ""
 
 msgid "Settings updated"
 msgstr "تنظیمات تجدید شول"
@@ -596,6 +608,9 @@ msgstr "د برېښنالیک له لارې د خبرتیاوو اړوند پې�
 
 msgid "Enable message SMS notifications"
 msgstr "د SMS په مټ د پېغام فعالول"
+
+msgid "View full profile"
+msgstr ""
 
 msgctxt "HTTP method"
 msgid "GET"
