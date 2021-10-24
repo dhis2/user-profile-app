@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2021-08-30T19:22:36.292Z\n"
+"POT-Creation-Date: 2021-10-22T15:14:54.283Z\n"
 "PO-Revision-Date: 2021-09-04 00:45+0000\n"
 "Last-Translator: easylin <lin_xd@126.com>, 2021\n"
 "Language-Team: Chinese (https://www.transifex.com/hisp-uio/teams/100509/zh/)\n"
@@ -312,20 +312,26 @@ msgstr "没有选项"
 msgid "System default"
 msgstr "系统缺省"
 
-msgid "Edit user profile"
-msgstr "编辑用户简历"
+msgid "User profile"
+msgstr "用户基本信息"
 
-msgid "Edit user settings"
-msgstr "编辑用户设置"
+msgid "User settings"
+msgstr "用户设置"
 
-msgid "View full profile"
-msgstr "查看全部简历"
+msgid "Account settings"
+msgstr "账户设置"
 
-msgid "Manage personal access tokens"
-msgstr "管理个人访问令牌"
+msgid "Full profile"
+msgstr ""
+
+msgid "Personal access tokens"
+msgstr ""
 
 msgid "About DHIS2"
 msgstr "关于DHIS2"
+
+msgid "Manage personal access tokens"
+msgstr "管理个人访问令牌"
 
 msgid "Generate new token"
 msgstr "生成新令牌"
@@ -350,8 +356,8 @@ msgstr "无效的 IP 地址“{{- ipAddress}}”"
 msgid "Allowed IP addresses"
 msgstr "允许的 IP 地址"
 
-msgid "One IP address per line"
-msgstr "每行一个 IP 地址"
+msgid "List one IP address per line."
+msgstr ""
 
 msgid "Allowed HTTP methods"
 msgstr "允许的 HTTP 方法"
@@ -371,14 +377,17 @@ msgstr "PATCH"
 msgid "DELETE"
 msgstr "DELETE"
 
+msgid "Only choose the HTTP methods this token needs to allow."
+msgstr ""
+
 msgid "Invalid referrer '{{- referrer}}'"
 msgstr "无效的推荐人 '{{-referrer}}'"
 
 msgid "Allowed referrers"
 msgstr "允许的推荐人"
 
-msgid "One referrer per line"
-msgstr "每行一个推荐人"
+msgid "List one referrer per line."
+msgstr ""
 
 msgid "Error fetching your authorities"
 msgstr "获取您的权限时出错"
@@ -386,31 +395,31 @@ msgstr "获取您的权限时出错"
 msgid "Retry loading authorities"
 msgstr "重试加载权限"
 
-msgid "This personal access token will have the following authorities"
-msgstr "此个人访问令牌将具有以下权限"
+msgid "This token will have the following authorities"
+msgstr ""
 
 msgid ""
-"This setting is not a security feature — the Referer header can be spoofed "
-"trivially. Using an allowlist of referrers is useful in discouraging third "
-"party developers from reusing this personal access token in their own "
-"websites and apps."
+"Important: this is not a security feature. The referrer header can easily be"
+" spoofed. This setting is intended to discourage unauthorised third-party "
+"developers from connecting to public access instances."
 msgstr ""
-"此设置不是安全功能——Referer 标头很容易被欺骗。使用推荐人许可名单有助于阻止第三方开发人员在他们自己的网站和应用程序中重复使用此个人访问令牌。"
 
-msgid "In which context will this personal access token be used?"
-msgstr "在什么情况下会使用这个个人访问令牌？"
+msgid "Choose the context where this token will be used."
+msgstr ""
 
 msgid "Server/script context"
 msgstr "服务器/脚本上下文"
 
-msgid "Use cases: Integrations and scripts"
-msgstr "用例：集成和脚本"
+msgid "Used for integrations and scripts that won't be accessed by a browser."
+msgstr ""
 
 msgid "Browser context"
 msgstr "浏览器上下文"
 
-msgid "Use cases: Public portals"
-msgstr "用例：公共门户"
+msgid ""
+"Used for applications, like public portals, that will be accessed with a web"
+" browser."
+msgstr ""
 
 msgid "Token expiration date must be in the future"
 msgstr "令牌到期日期必须在未来"
@@ -430,8 +439,8 @@ msgstr "90 天"
 msgid "Custom..."
 msgstr "定制..."
 
-msgid "The token will expire on {{- tokenExpirationDate}}"
-msgstr "令牌将在 {{- tokenExpirationDate}} 到期"
+msgid "The token will expire on {{- tokenExpirationDate}}."
+msgstr ""
 
 msgid "Expiration (required)"
 msgstr "到期（必填）"
@@ -446,14 +455,17 @@ msgid ""
 "proxy."
 msgstr "个人访问令牌应仅用于公共访问实例的浏览器上下文。对于私有实例，令牌应该像密码一样对待并保持私有——请求应该通过代理路由。"
 
+msgid "Token details"
+msgstr ""
+
 msgid "Cancel"
 msgstr "取消"
 
 msgid ""
-"IP address validation relies on the X-Forwarded-For header, which can be "
-"vulnerable to spoofing under certain configurations. Ensure that your load "
-"balancer or reverse proxy overwrites this header."
-msgstr "IP 地址验证依赖于 X-Forwarded-For 标头，在某些配置下可能容易受到欺骗。确保您的负载平衡器或反向代理覆盖此标头。"
+"Important: IP address validation relies on the X-Forwarded-For header, which"
+" can be spoofed. For security, make sure a load balancer or reverse proxy "
+"overwrites this header."
+msgstr ""
 
 msgid "Are you sure you want to delete this token?"
 msgstr "您确定要删除此令牌吗？"
@@ -478,17 +490,26 @@ msgstr "已创建"
 msgid "Copied token to clipboard"
 msgstr "将令牌复制到剪贴板"
 
-msgid "Copy token to clipboard"
-msgstr "将令牌复制到剪贴板"
+msgid "Newly created token"
+msgstr ""
+
+msgid "Copy to clipboard"
+msgstr "复制到剪贴板"
 
 msgid "Delete"
 msgstr "删除"
+
+msgid "Edit user profile"
+msgstr "编辑用户简历"
 
 msgid "User profile updated"
 msgstr "用户概要已经更新"
 
 msgid "Failed to update user profile"
 msgstr "Failed to update user profile"
+
+msgid "Edit user settings"
+msgstr "编辑用户设置"
 
 msgid "Settings updated"
 msgstr "设置已经更新"
@@ -588,6 +609,9 @@ msgstr "打开消息邮件通知"
 
 msgid "Enable message SMS notifications"
 msgstr "打开消息短信通知"
+
+msgid "View full profile"
+msgstr "查看全部简历"
 
 msgctxt "HTTP method"
 msgid "GET"

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2021-08-30T19:22:36.292Z\n"
+"POT-Creation-Date: 2021-10-22T15:14:54.283Z\n"
 "PO-Revision-Date: 2021-09-04 00:45+0000\n"
 "Last-Translator: trendspotter <jirka.p@volny.cz>, 2021\n"
 "Language-Team: Czech (https://www.transifex.com/hisp-uio/teams/100509/cs/)\n"
@@ -316,20 +316,26 @@ msgstr "Žádné možnosti"
 msgid "System default"
 msgstr "Výchozí systém"
 
-msgid "Edit user profile"
-msgstr "Upravit uživatelský profil"
+msgid "User profile"
+msgstr "Uživatelský profil"
 
-msgid "Edit user settings"
-msgstr "Upravit uživatelské nastavení"
+msgid "User settings"
+msgstr "Uživatelské nastavení"
 
-msgid "View full profile"
-msgstr "Zobrazit celý profil"
+msgid "Account settings"
+msgstr "Nastavení účtu"
 
-msgid "Manage personal access tokens"
-msgstr "Spravovat osobní přístupové tokeny"
+msgid "Full profile"
+msgstr ""
+
+msgid "Personal access tokens"
+msgstr ""
 
 msgid "About DHIS2"
 msgstr "O DHIS2"
+
+msgid "Manage personal access tokens"
+msgstr "Spravovat osobní přístupové tokeny"
 
 msgid "Generate new token"
 msgstr "Vytvořit nový token"
@@ -354,8 +360,8 @@ msgstr "Neplatná adresa IP '{{- ipAddress}}'"
 msgid "Allowed IP addresses"
 msgstr "Povolené IP adresy"
 
-msgid "One IP address per line"
-msgstr "Jedna IP adresa na řádek"
+msgid "List one IP address per line."
+msgstr "Uveďte jednu IP adresu na řádek."
 
 msgid "Allowed HTTP methods"
 msgstr "Povolené metody HTTP"
@@ -375,14 +381,17 @@ msgstr "PATCH"
 msgid "DELETE"
 msgstr "DELETE"
 
+msgid "Only choose the HTTP methods this token needs to allow."
+msgstr "Vyberte pouze metody HTTP, které tento token musí povolit."
+
 msgid "Invalid referrer '{{- referrer}}'"
 msgstr "Neplatný referrer '{{- referrer}}'"
 
 msgid "Allowed referrers"
 msgstr "Povolený referrer"
 
-msgid "One referrer per line"
-msgstr "Jeden referer na řádek"
+msgid "List one referrer per line."
+msgstr "Vypsat jeden referrer na řádek."
 
 msgid "Error fetching your authorities"
 msgstr "Chyba při načítání vašich authorities"
@@ -390,34 +399,37 @@ msgstr "Chyba při načítání vašich authorities"
 msgid "Retry loading authorities"
 msgstr "Zkuste znovu načíst authorities"
 
-msgid "This personal access token will have the following authorities"
-msgstr "Tento osobní přístupový token bude mít následující oprávnění"
+msgid "This token will have the following authorities"
+msgstr "Tento token bude mít následující oprávnění"
 
 msgid ""
-"This setting is not a security feature — the Referer header can be spoofed "
-"trivially. Using an allowlist of referrers is useful in discouraging third "
-"party developers from reusing this personal access token in their own "
-"websites and apps."
+"Important: this is not a security feature. The referrer header can easily be"
+" spoofed. This setting is intended to discourage unauthorised third-party "
+"developers from connecting to public access instances."
 msgstr ""
-"Toto nastavení není funkcí zabezpečení - záhlaví doporučujícího může být "
-"triviálně podvrženo. Použití seznamu povolených doporučení je užitečné při "
-"odrazování vývojářů třetích stran od opětovného použití tohoto osobního "
-"přístupového tokenu na jejich vlastních webech a aplikacích."
+"Důležité: toto není bezpečnostní funkce. Záhlaví doporučení lze snadno "
+"podvrhnout. Toto nastavení má odradit neautorizované vývojáře třetích stran "
+"od připojení k veřejně přístupným instancím."
 
-msgid "In which context will this personal access token be used?"
-msgstr "V jakém kontextu bude tento token osobního přístupu používán?"
+msgid "Choose the context where this token will be used."
+msgstr "Vyberte kontext, ve kterém bude tento token použit."
 
 msgid "Server/script context"
 msgstr "Kontext serveru / skriptu"
 
-msgid "Use cases: Integrations and scripts"
-msgstr "Případy použití: Integrace a skripty"
+msgid "Used for integrations and scripts that won't be accessed by a browser."
+msgstr ""
+"Používá se pro integrace a skripty, ke kterým nebude mít prohlížeč přístup."
 
 msgid "Browser context"
 msgstr "Kontext prohlížeče"
 
-msgid "Use cases: Public portals"
-msgstr "Případy použití: Veřejné portály"
+msgid ""
+"Used for applications, like public portals, that will be accessed with a web"
+" browser."
+msgstr ""
+"Používá se pro aplikace, jako jsou veřejné portály, ke kterým bude přístup "
+"prostřednictvím webového prohlížeče."
 
 msgid "Token expiration date must be in the future"
 msgstr "Datum vypršení platnosti tokenu musí být v budoucnosti"
@@ -437,8 +449,8 @@ msgstr "90 dní"
 msgid "Custom..."
 msgstr "Vlastní..."
 
-msgid "The token will expire on {{- tokenExpirationDate}}"
-msgstr "Platnost tokenu vyprší {{- tokenExpirationDate}}"
+msgid "The token will expire on {{- tokenExpirationDate}}."
+msgstr "Platnost tokenu vyprší {{- tokenExpirationDate}}."
 
 msgid "Expiration (required)"
 msgstr "Vypršení platnosti (povinné)"
@@ -457,17 +469,20 @@ msgstr ""
 "zacházet jako s hesly a měla by být uchovávána jako soukromá - požadavky by "
 "měly být místo toho směrovány prostřednictvím serveru proxy."
 
+msgid "Token details"
+msgstr "Podrobnosti o tokenu"
+
 msgid "Cancel"
 msgstr "Zrušit"
 
 msgid ""
-"IP address validation relies on the X-Forwarded-For header, which can be "
-"vulnerable to spoofing under certain configurations. Ensure that your load "
-"balancer or reverse proxy overwrites this header."
+"Important: IP address validation relies on the X-Forwarded-For header, which"
+" can be spoofed. For security, make sure a load balancer or reverse proxy "
+"overwrites this header."
 msgstr ""
-"Ověření IP adresy závisí na hlavičce X-Forwarded-For, která může být za "
-"určitých konfigurací náchylná k podvržení. Zajistěte, aby nástroj pro "
-"vyrovnávání zatížení nebo reverzní proxy přepsal toto záhlaví."
+"Důležité: Ověření IP adresy závisí na hlavičce X-Forwarded-For, kterou lze "
+"podvrhnout. Z důvodu zabezpečení zajistěte, aby nástroj pro vyrovnávání "
+"zatížení nebo reverzní proxy přepsal toto záhlaví."
 
 msgid "Are you sure you want to delete this token?"
 msgstr "Opravdu chcete tento token smazat?"
@@ -494,17 +509,26 @@ msgstr "Vytvořeno"
 msgid "Copied token to clipboard"
 msgstr "Token byl zkopírován do schránky"
 
-msgid "Copy token to clipboard"
-msgstr "Kopírovat token do schránky"
+msgid "Newly created token"
+msgstr "Nově vytvořený token"
+
+msgid "Copy to clipboard"
+msgstr "Zkopírovat do schránky"
 
 msgid "Delete"
 msgstr "Smazat"
+
+msgid "Edit user profile"
+msgstr "Upravit uživatelský profil"
 
 msgid "User profile updated"
 msgstr "Uživatelský profil byl aktualizován"
 
 msgid "Failed to update user profile"
 msgstr "Aktualizace uživatelského profilu se nezdařila"
+
+msgid "Edit user settings"
+msgstr "Upravit uživatelské nastavení"
 
 msgid "Settings updated"
 msgstr "nastavení aktualizováno"
@@ -604,6 +628,9 @@ msgstr "Povolit e-mailová upozornění na zprávy"
 
 msgid "Enable message SMS notifications"
 msgstr "Povolit upozornění na zprávy SMS"
+
+msgid "View full profile"
+msgstr "Zobrazit celý profil"
 
 msgctxt "HTTP method"
 msgid "GET"
