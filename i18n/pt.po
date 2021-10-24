@@ -3,15 +3,15 @@
 # Viktor Varland <viktor@dhis2.org>, 2021
 # Ge Joao <gsimango@saudigitus.org>, 2021
 # Sheila André <sandre@saudigitus.org>, 2021
-# phil_dhis2, 2021
 # Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2021
+# phil_dhis2, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2021-10-19T15:10:29.839Z\n"
+"POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2021\n"
+"Last-Translator: phil_dhis2, 2021\n"
 "Language-Team: Portuguese (https://www.transifex.com/hisp-uio/teams/100509/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -317,20 +317,26 @@ msgstr ""
 msgid "System default"
 msgstr "Padrão do sistema"
 
-msgid "Edit user profile"
-msgstr "Editar perfil do utilizador"
+msgid "User profile"
+msgstr "Perfil do usuário"
 
-msgid "Edit user settings"
-msgstr "Editar configurações do usuário"
+msgid "User settings"
+msgstr "Configurações do usuário"
 
-msgid "View full profile"
-msgstr "Ver o perfil completo"
+msgid "Account settings"
+msgstr "Configurações da conta"
 
-msgid "Manage personal access tokens"
+msgid "Full profile"
+msgstr ""
+
+msgid "Personal access tokens"
 msgstr ""
 
 msgid "About DHIS2"
 msgstr "Sobre DHIS2"
+
+msgid "Manage personal access tokens"
+msgstr ""
 
 msgid "Generate new token"
 msgstr ""
@@ -498,11 +504,17 @@ msgstr "Copiar para área de transferência"
 msgid "Delete"
 msgstr "Suprimir"
 
+msgid "Edit user profile"
+msgstr "Editar perfil do utilizador"
+
 msgid "User profile updated"
 msgstr "Perfil do usuário actualizado"
 
 msgid "Failed to update user profile"
 msgstr "Falha na atualização do perfil de usuário."
+
+msgid "Edit user settings"
+msgstr "Editar configurações do usuário"
 
 msgid "Settings updated"
 msgstr "Configurações actualizadas"
@@ -602,6 +614,9 @@ msgstr "Receber notificações de e-mail"
 
 msgid "Enable message SMS notifications"
 msgstr "Receber notificações de SMS"
+
+msgid "View full profile"
+msgstr "Ver o perfil completo"
 
 msgctxt "HTTP method"
 msgid "GET"

@@ -1,14 +1,14 @@
 # 
 # Translators:
-# phil_dhis2, 2021
 # Viktor Varland <viktor@dhis2.org>, 2021
+# phil_dhis2, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2021-10-19T15:10:29.839Z\n"
+"POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Viktor Varland <viktor@dhis2.org>, 2021\n"
+"Last-Translator: phil_dhis2, 2021\n"
 "Language-Team: Urdu (https://www.transifex.com/hisp-uio/teams/100509/ur/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -309,19 +309,25 @@ msgstr ""
 msgid "System default"
 msgstr "Ø³Ø³Ù¹Ù"
 
-msgid "Edit user profile"
+msgid "User profile"
+msgstr "صارف پروفائل"
+
+msgid "User settings"
+msgstr "صارف کی ترتیبات"
+
+msgid "Account settings"
+msgstr "اکاؤنٹ کی ترتیبات"
+
+msgid "Full profile"
 msgstr ""
 
-msgid "Edit user settings"
-msgstr ""
-
-msgid "View full profile"
-msgstr "Ù¾Ø±ÙÙØ§Ø¦Ù Ú©Ø§ Ù"
-
-msgid "Manage personal access tokens"
+msgid "Personal access tokens"
 msgstr ""
 
 msgid "About DHIS2"
+msgstr ""
+
+msgid "Manage personal access tokens"
 msgstr ""
 
 msgid "Generate new token"
@@ -490,11 +496,17 @@ msgstr ""
 msgid "Delete"
 msgstr "حذف"
 
+msgid "Edit user profile"
+msgstr ""
+
 msgid "User profile updated"
 msgstr "ØµØ§Ø±Ù Ú©Ø§ Ù¾Ø±ÙÙØ§Ø¦Ù Ø§Ù¾ ÚÛÙ¹"
 
 msgid "Failed to update user profile"
 msgstr "ØµØ§Ø±Ù Ù¾Ø±ÙÙØ§Ø¦Ù Ú©Ù Ø§Ù¾ ÚÛÙ¹ Ú©Ø±ÙÛ Ù"
+
+msgid "Edit user settings"
+msgstr ""
 
 msgid "Settings updated"
 msgstr "ØªØ±ØªÛØ¨Ø§Øª Ø§Ù¾ ÚÛÙ¹"
@@ -594,6 +606,9 @@ msgstr "Ù¾ÛØºØ§Ù"
 
 msgid "Enable message SMS notifications"
 msgstr "Ø§ÛØ³ Ø§ÛÙ"
+
+msgid "View full profile"
+msgstr "Ù¾Ø±ÙÙØ§Ø¦Ù Ú©Ø§ Ù"
 
 msgctxt "HTTP method"
 msgid "GET"

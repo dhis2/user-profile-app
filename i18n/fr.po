@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2021-10-19T15:10:29.839Z\n"
+"POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
 "Last-Translator: Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2021\n"
 "Language-Team: French (https://www.transifex.com/hisp-uio/teams/100509/fr/)\n"
@@ -316,20 +316,26 @@ msgstr "Aucune option"
 msgid "System default"
 msgstr "Valeur par défaut du système"
 
-msgid "Edit user profile"
-msgstr "Modifier profil utilisateur"
-
-msgid "Edit user settings"
-msgstr "Modifier paramètres utilisateur"
-
-msgid "View full profile"
+msgid "User profile"
 msgstr ""
 
-msgid "Manage personal access tokens"
+msgid "User settings"
+msgstr ""
+
+msgid "Account settings"
+msgstr ""
+
+msgid "Full profile"
+msgstr ""
+
+msgid "Personal access tokens"
 msgstr ""
 
 msgid "About DHIS2"
 msgstr "A propos de DHIS2"
+
+msgid "Manage personal access tokens"
+msgstr ""
 
 msgid "Generate new token"
 msgstr ""
@@ -497,11 +503,17 @@ msgstr "Copier dans le presse-papier"
 msgid "Delete"
 msgstr "Supprimer"
 
+msgid "Edit user profile"
+msgstr "Modifier profil utilisateur"
+
 msgid "User profile updated"
 msgstr "Profil d’utilisateur mis à jour."
 
 msgid "Failed to update user profile"
 msgstr "Echec de la mise à jour du profil utilisateur"
+
+msgid "Edit user settings"
+msgstr "Modifier paramètres utilisateur"
 
 msgid "Settings updated"
 msgstr "Paramètres mis à jour"
@@ -601,6 +613,9 @@ msgstr "Autoriser les notifications de messages email"
 
 msgid "Enable message SMS notifications"
 msgstr "Autoriser les notifications de messages SMS"
+
+msgid "View full profile"
+msgstr ""
 
 msgctxt "HTTP method"
 msgid "GET"

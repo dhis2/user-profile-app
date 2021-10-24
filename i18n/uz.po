@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2021-10-19T15:10:29.839Z\n"
+"POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
 "Last-Translator: Ibatov <ibatovk@who.int>, 2021\n"
 "Language-Team: Uzbek (Cyrillic) (https://www.transifex.com/hisp-uio/teams/100509/uz@Cyrl/)\n"
@@ -316,20 +316,26 @@ msgstr "Вариант йўқ"
 msgid "System default"
 msgstr "Стандарт тизимизим"
 
-msgid "Edit user profile"
-msgstr "Фойдаланувчи профилни таҳрир қилиш"
+msgid "User profile"
+msgstr "Фойдаланувчи профили"
 
-msgid "Edit user settings"
-msgstr "Фойдаланувчи созламанларини таҳрир қилиш"
+msgid "User settings"
+msgstr "Фойдаланувчи созламанлари"
 
-msgid "View full profile"
-msgstr "Профилни тўлиқ кўриш"
+msgid "Account settings"
+msgstr "Аккаунт созламалари"
 
-msgid "Manage personal access tokens"
+msgid "Full profile"
+msgstr ""
+
+msgid "Personal access tokens"
 msgstr ""
 
 msgid "About DHIS2"
 msgstr "DHIS2 Ҳақида"
+
+msgid "Manage personal access tokens"
+msgstr ""
 
 msgid "Generate new token"
 msgstr ""
@@ -497,11 +503,17 @@ msgstr "Буферга нусха олиш"
 msgid "Delete"
 msgstr "Ўчириб ташлаш"
 
+msgid "Edit user profile"
+msgstr "Фойдаланувчи профилни таҳрир қилиш"
+
 msgid "User profile updated"
 msgstr "Фойдаланувчи профили янгиланди"
 
 msgid "Failed to update user profile"
 msgstr "Фойдаланувчи профили янгиланиши амалга ошмади"
+
+msgid "Edit user settings"
+msgstr "Фойдаланувчи созламанларини таҳрир қилиш"
 
 msgid "Settings updated"
 msgstr "Созламалар янгиланди"
@@ -601,6 +613,9 @@ msgstr "Электрон почта хабарномасини ёқиш"
 
 msgid "Enable message SMS notifications"
 msgstr "СМС хабарномасини ёқиш"
+
+msgid "View full profile"
+msgstr "Профилни тўлиқ кўриш"
 
 msgctxt "HTTP method"
 msgid "GET"

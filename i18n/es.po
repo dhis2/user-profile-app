@@ -2,16 +2,16 @@
 # Translators:
 # Viktor Varland <viktor@dhis2.org>, 2021
 # ericbp <ericbarredap@gmail.com>, 2021
-# phil_dhis2, 2021
 # Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2021
 # Pablo Pajuelo Cabezas <ppajuelo@quadram.mobi>, 2021
+# phil_dhis2, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2021-10-19T15:10:29.839Z\n"
+"POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Pablo Pajuelo Cabezas <ppajuelo@quadram.mobi>, 2021\n"
+"Last-Translator: phil_dhis2, 2021\n"
 "Language-Team: Spanish (https://www.transifex.com/hisp-uio/teams/100509/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -313,20 +313,26 @@ msgstr ""
 msgid "System default"
 msgstr "Sistema por defecto"
 
-msgid "Edit user profile"
+msgid "User profile"
+msgstr "Perfil de usuario"
+
+msgid "User settings"
+msgstr "Preferencias de usuario"
+
+msgid "Account settings"
+msgstr "Configuración de la cuenta"
+
+msgid "Full profile"
 msgstr ""
 
-msgid "Edit user settings"
-msgstr ""
-
-msgid "View full profile"
-msgstr ""
-
-msgid "Manage personal access tokens"
+msgid "Personal access tokens"
 msgstr ""
 
 msgid "About DHIS2"
 msgstr "Acerca de DHIS2"
+
+msgid "Manage personal access tokens"
+msgstr ""
 
 msgid "Generate new token"
 msgstr ""
@@ -494,11 +500,17 @@ msgstr "Copiar al portapapeles"
 msgid "Delete"
 msgstr "Eliminar"
 
+msgid "Edit user profile"
+msgstr ""
+
 msgid "User profile updated"
 msgstr "Perfil de usuario actualizado"
 
 msgid "Failed to update user profile"
 msgstr "Error al actualizar el perfil de usuario"
+
+msgid "Edit user settings"
+msgstr ""
 
 msgid "Settings updated"
 msgstr "Configuración actualizada"
@@ -598,6 +610,9 @@ msgstr "Habilitar notificaciones por correo-e"
 
 msgid "Enable message SMS notifications"
 msgstr "Habilitar notificaciones para SMS"
+
+msgid "View full profile"
+msgstr ""
 
 msgctxt "HTTP method"
 msgid "GET"

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2021-10-19T15:10:29.839Z\n"
+"POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
 "Last-Translator: Viktor Varland <viktor@dhis2.org>, 2021\n"
 "Language-Team: Lao (https://www.transifex.com/hisp-uio/teams/100509/lo/)\n"
@@ -309,19 +309,25 @@ msgstr ""
 msgid "System default"
 msgstr "ໂຫຼດການຕັ້ງຄ່າດັ່ງເດີມ"
 
-msgid "Edit user profile"
+msgid "User profile"
 msgstr ""
 
-msgid "Edit user settings"
+msgid "User settings"
 msgstr ""
 
-msgid "View full profile"
-msgstr "ສະແດງໂປຟາຍ"
+msgid "Account settings"
+msgstr ""
 
-msgid "Manage personal access tokens"
+msgid "Full profile"
+msgstr ""
+
+msgid "Personal access tokens"
 msgstr ""
 
 msgid "About DHIS2"
+msgstr ""
+
+msgid "Manage personal access tokens"
 msgstr ""
 
 msgid "Generate new token"
@@ -490,11 +496,17 @@ msgstr ""
 msgid "Delete"
 msgstr "ລົບ"
 
+msgid "Edit user profile"
+msgstr ""
+
 msgid "User profile updated"
 msgstr "ໂປຟາຍຜູ້ໃຊ້ໄດ້ຖືກອັບເດດ"
 
 msgid "Failed to update user profile"
 msgstr "ບໍ່ສາມາດອັບເດດຂໍ້ມູນຜູ້ໃຊ້ໄດ້"
+
+msgid "Edit user settings"
+msgstr ""
 
 msgid "Settings updated"
 msgstr "ການຕັ້ງຄ່ານີ້ໄດ້ຖືກບັນທຶກ"
@@ -594,6 +606,9 @@ msgstr "ອະນຸຍາດໃຫ້ລະບົບສົ່ງອິເມວ
 
 msgid "Enable message SMS notifications"
 msgstr "ອະນຸຍາດໃຫ້ລະບົບສົ່ງຂໍ້ຄວາມແຈ້ງເຕືອນໄດ້"
+
+msgid "View full profile"
+msgstr "ສະແດງໂປຟາຍ"
 
 msgctxt "HTTP method"
 msgid "GET"

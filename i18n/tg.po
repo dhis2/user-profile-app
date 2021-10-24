@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2021-10-19T15:10:29.839Z\n"
+"POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
 "Last-Translator: phil_dhis2, 2021\n"
 "Language-Team: Tajik (https://www.transifex.com/hisp-uio/teams/100509/tg/)\n"
@@ -309,19 +309,25 @@ msgstr ""
 msgid "System default"
 msgstr ""
 
-msgid "Edit user profile"
+msgid "User profile"
 msgstr ""
 
-msgid "Edit user settings"
+msgid "User settings"
 msgstr ""
 
-msgid "View full profile"
+msgid "Account settings"
 msgstr ""
 
-msgid "Manage personal access tokens"
+msgid "Full profile"
+msgstr ""
+
+msgid "Personal access tokens"
 msgstr ""
 
 msgid "About DHIS2"
+msgstr ""
+
+msgid "Manage personal access tokens"
 msgstr ""
 
 msgid "Generate new token"
@@ -490,10 +496,16 @@ msgstr ""
 msgid "Delete"
 msgstr "Нест кардан"
 
+msgid "Edit user profile"
+msgstr ""
+
 msgid "User profile updated"
 msgstr ""
 
 msgid "Failed to update user profile"
+msgstr ""
+
+msgid "Edit user settings"
 msgstr ""
 
 msgid "Settings updated"
@@ -594,6 +606,9 @@ msgstr "Фаъол кардани огоҳиҳо тавассути почтаи
 
 msgid "Enable message SMS notifications"
 msgstr "Фаъоли кардани огоҳиҳо тавассути паёмҳои СМС"
+
+msgid "View full profile"
+msgstr ""
 
 msgctxt "HTTP method"
 msgid "GET"
