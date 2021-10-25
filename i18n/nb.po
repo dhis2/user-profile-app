@@ -316,13 +316,13 @@ msgid "System default"
 msgstr "Systemstandard"
 
 msgid "User profile"
-msgstr ""
+msgstr "Brukerprofil"
 
 msgid "User settings"
-msgstr ""
+msgstr "Brukerinnstillinger"
 
 msgid "Account settings"
-msgstr ""
+msgstr "Brukerkontoinnstillinger"
 
 msgid "Full profile"
 msgstr ""
