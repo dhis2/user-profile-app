@@ -312,13 +312,13 @@ msgid "System default"
 msgstr "Системные установки по умолчанию"
 
 msgid "User profile"
-msgstr ""
+msgstr "Профиль пользователя"
 
 msgid "User settings"
-msgstr ""
+msgstr "Пользовательские настройки"
 
 msgid "Account settings"
-msgstr ""
+msgstr "Настройки аккаунта"
 
 msgid "Full profile"
 msgstr ""

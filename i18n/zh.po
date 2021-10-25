@@ -313,13 +313,13 @@ msgid "System default"
 msgstr "系统缺省"
 
 msgid "User profile"
-msgstr ""
+msgstr "用户基本信息"
 
 msgid "User settings"
-msgstr ""
+msgstr "用户设置"
 
 msgid "Account settings"
-msgstr ""
+msgstr "账户设置"
 
 msgid "Full profile"
 msgstr ""
