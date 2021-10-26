@@ -322,10 +322,10 @@ msgid "Account settings"
 msgstr "账户设置"
 
 msgid "Full profile"
-msgstr ""
+msgstr "完整档案"
 
 msgid "Personal access tokens"
-msgstr ""
+msgstr "个人访问令牌"
 
 msgid "About DHIS2"
 msgstr "关于DHIS2"
@@ -357,7 +357,7 @@ msgid "Allowed IP addresses"
 msgstr "允许的 IP 地址"
 
 msgid "List one IP address per line."
-msgstr ""
+msgstr "每行列出一个 IP 地址。"
 
 msgid "Allowed HTTP methods"
 msgstr "允许的 HTTP 方法"
@@ -378,7 +378,7 @@ msgid "DELETE"
 msgstr "DELETE"
 
 msgid "Only choose the HTTP methods this token needs to allow."
-msgstr ""
+msgstr "仅选择此令牌需要允许的 HTTP 方法。"
 
 msgid "Invalid referrer '{{- referrer}}'"
 msgstr "无效的推荐人 '{{-referrer}}'"
@@ -387,7 +387,7 @@ msgid "Allowed referrers"
 msgstr "允许的推荐人"
 
 msgid "List one referrer per line."
-msgstr ""
+msgstr "每行列出一个引用者。"
 
 msgid "Error fetching your authorities"
 msgstr "获取您的权限时出错"
@@ -396,22 +396,22 @@ msgid "Retry loading authorities"
 msgstr "重试加载权限"
 
 msgid "This token will have the following authorities"
-msgstr ""
+msgstr "此令牌将具有以下权限"
 
 msgid ""
 "Important: this is not a security feature. The referrer header can easily be"
 " spoofed. This setting is intended to discourage unauthorised third-party "
 "developers from connecting to public access instances."
-msgstr ""
+msgstr "重要提示：这不是安全功能。引荐来源标头很容易被欺骗。此设置旨在阻止未经授权的第三方开发人员连接到公共访问实例。"
 
 msgid "Choose the context where this token will be used."
-msgstr ""
+msgstr "选择将使用此令牌的上下文。"
 
 msgid "Server/script context"
 msgstr "服务器/脚本上下文"
 
 msgid "Used for integrations and scripts that won't be accessed by a browser."
-msgstr ""
+msgstr "用于浏览器无法访问的集成和脚本。"
 
 msgid "Browser context"
 msgstr "浏览器上下文"
@@ -419,7 +419,7 @@ msgstr "浏览器上下文"
 msgid ""
 "Used for applications, like public portals, that will be accessed with a web"
 " browser."
-msgstr ""
+msgstr "用于将通过 Web 浏览器访问的应用程序，例如公共门户。"
 
 msgid "Token expiration date must be in the future"
 msgstr "令牌到期日期必须在未来"
@@ -440,7 +440,7 @@ msgid "Custom..."
 msgstr "定制..."
 
 msgid "The token will expire on {{- tokenExpirationDate}}."
-msgstr ""
+msgstr "令牌将在 {{- tokenExpirationDate}} 到期。"
 
 msgid "Expiration (required)"
 msgstr "到期（必填）"
@@ -456,7 +456,7 @@ msgid ""
 msgstr "个人访问令牌应仅用于公共访问实例的浏览器上下文。对于私有实例，令牌应该像密码一样对待并保持私有——请求应该通过代理路由。"
 
 msgid "Token details"
-msgstr ""
+msgstr "代币详情"
 
 msgid "Cancel"
 msgstr "取消"
@@ -465,7 +465,7 @@ msgid ""
 "Important: IP address validation relies on the X-Forwarded-For header, which"
 " can be spoofed. For security, make sure a load balancer or reverse proxy "
 "overwrites this header."
-msgstr ""
+msgstr "重要提示：IP 地址验证依赖于 X-Forwarded-For 标头，它可以被欺骗。为了安全起见，请确保负载平衡器或反向代理覆盖此标头。"
 
 msgid "Are you sure you want to delete this token?"
 msgstr "您确定要删除此令牌吗？"
@@ -491,7 +491,7 @@ msgid "Copied token to clipboard"
 msgstr "将令牌复制到剪贴板"
 
 msgid "Newly created token"
-msgstr ""
+msgstr "新创建的令牌"
 
 msgid "Copy to clipboard"
 msgstr "复制到剪贴板"
