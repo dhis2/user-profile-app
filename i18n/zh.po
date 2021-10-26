@@ -322,10 +322,10 @@ msgid "Account settings"
 msgstr "账户设置"
 
 msgid "Full profile"
-msgstr ""
+msgstr "完整档案"
 
 msgid "Personal access tokens"
-msgstr ""
+msgstr "个人访问令牌"
 
 msgid "About DHIS2"
 msgstr "关于DHIS2"
