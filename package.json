@@ -1,6 +1,6 @@
 {
     "name": "user-profile-app",
-    "version": "30.3.12",
+    "version": "30.3.13",
     "description": "User Profile App for DHIS2",
     "license": "BSD-3-Clause",
     "scripts": {
