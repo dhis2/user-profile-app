@@ -30,7 +30,7 @@
         "d2": "^31.9.0",
         "d2-ui": "^29.0.35",
         "ip-regex": "^4.3.0",
-        "loglevel": "^1.7.1",
+        "loglevel": "^1.8.0",
         "material-design-icons-iconfont": "^6.1.0",
         "material-ui": "^0.20.0",
         "react-router": "^3.2.1",
