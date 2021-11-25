@@ -326,10 +326,10 @@ msgid "Account settings"
 msgstr "Nastavení účtu"
 
 msgid "Full profile"
-msgstr ""
+msgstr "Celý profil"
 
 msgid "Personal access tokens"
-msgstr ""
+msgstr "Osobní přístupové tokeny"
 
 msgid "About DHIS2"
 msgstr "O DHIS2"
