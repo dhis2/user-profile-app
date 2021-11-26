@@ -7,13 +7,14 @@
 # Edem Kossi <ekossi@hispwca.org>, 2021
 # Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2021
 # phil_dhis2, 2021
+# tx_e2f_fr r25 <tx_e2f_fr_r25@ate2f.com>, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: phil_dhis2, 2021\n"
+"Last-Translator: tx_e2f_fr r25 <tx_e2f_fr_r25@ate2f.com>, 2021\n"
 "Language-Team: French (https://www.transifex.com/hisp-uio/teams/100509/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -79,7 +80,7 @@ msgid "System ID"
 msgstr "ID du système"
 
 msgid "Last monitoring success"
-msgstr ""
+msgstr "Dernier succès de surveillance"
 
 msgid "External configuration directory"
 msgstr "Répertoire de configuration externe"
@@ -115,7 +116,7 @@ msgid "OS version"
 msgstr "Version de l'OS"
 
 msgid "Memory info"
-msgstr ""
+msgstr "Infos mémoire"
 
 msgid "CPU cores"
 msgstr "noyaux CPU"
@@ -130,10 +131,10 @@ msgid "User"
 msgstr "Utilisateur"
 
 msgid "Spatial support"
-msgstr ""
+msgstr "Soutien géographique"
 
 msgid "System info"
-msgstr ""
+msgstr "Infos système"
 
 msgid "Database"
 msgstr "La base de données"
@@ -156,7 +157,7 @@ msgid "The entered values do not match. Please re-enter."
 msgstr "Les valeurs saisies ne correspondent pas. Veuillez resaisir."
 
 msgid "Please provide your old password"
-msgstr ""
+msgstr "Veuillez indiquer votre ancien mot de passe"
 
 msgid "Username"
 msgstr "Nom d'utilisateur"
@@ -179,7 +180,7 @@ msgid "Repeat new password"
 msgstr "Répéter le mot de passe"
 
 msgid "Setup 2-Factor"
-msgstr ""
+msgstr "Configurer la vérification à 2 facteurs"
 
 msgid "Update password"
 msgstr "Mettre à jour un mot de passe"
@@ -190,31 +191,33 @@ msgid ""
 msgstr ""
 
 msgid "Password changed successfully"
-msgstr ""
+msgstr "Mot de passe modifié avec succès"
 
 msgid "You need to login again to continue using the application."
 msgstr ""
+"Vous devez de nouveau vous connecter afin de poursuivre l'utilisation de "
+"l'application."
 
 msgid "Login"
-msgstr ""
+msgstr "Connexion"
 
 msgid "Failed to update password"
 msgstr "Impossible de mettre à jour le mot de passe"
 
 msgid "2-Factor successfully turned ON"
-msgstr ""
+msgstr "Vérification à 2 facteurs activée avec succès"
 
 msgid "2-Factor successfully turned OFF"
-msgstr ""
+msgstr "Vérification à 2 facteurs désactivée avec succès"
 
 msgid "Failed to turn ON 2-Factor"
-msgstr ""
+msgstr "Impossible d'activer la vérification à 2 facteurs"
 
 msgid "Failed to turn OFF 2-Factor"
 msgstr ""
 
 msgid "Barcode/QR code to scan"
-msgstr ""
+msgstr "Code-barres/code QR à scanner"
 
 msgid "No"
 msgstr "Non"
@@ -223,28 +226,28 @@ msgid "Yes"
 msgstr "Oui"
 
 msgid "Turn OFF"
-msgstr ""
+msgstr "Désactiver"
 
 msgid "Turn ON"
-msgstr ""
+msgstr "Activer"
 
 msgid "2-Factor Verification is ON"
-msgstr ""
+msgstr "Vérification à 2 facteurs activée"
 
 msgid "2-Factor Verification is OFF"
-msgstr ""
+msgstr "Vérification à 2 facteurs désactivée"
 
 msgid "Do you want to turn OFF 2-Factor?"
-msgstr ""
+msgstr "Voulez-vous désactiver la vérification à 2 facteurs ?"
 
 msgid "Do you want to turn ON 2-Factor?"
-msgstr ""
+msgstr "Voulez-vous activer la vérification à 2 facteurs ?"
 
 msgid "Download the Authenticator app"
-msgstr ""
+msgstr "Télécharger l'application Authenticator"
 
 msgid "What kind of phone/tablet do you have?"
-msgstr ""
+msgstr "De quel type de téléphone/tablette disposez-vous ?"
 
 msgid "Download the Authenticator App from the "
 msgstr ""
@@ -253,13 +256,13 @@ msgid "In the Authenticator App select "
 msgstr ""
 
 msgid "Begin setup."
-msgstr ""
+msgstr "Commencez la configuration."
 
 msgid "Choose "
 msgstr ""
 
 msgid "Scan a barcode."
-msgstr ""
+msgstr "Scannez un code-barres."
 
 msgid ""
 "With 2-Factor authentication turned on you will be asked to enter a second "
@@ -267,21 +270,26 @@ msgid ""
 "must use the Authenticator app. If you do not have this app you must "
 "download it on your phone/tablet."
 msgstr ""
+"Lorsque l'authentification à 2 facteurs est activée, vous devez saisir un "
+"deuxième code de vérification au moment de votre connexion. Pour générer ce "
+"code de vérification, vous devez utiliser l'application Authenticator. Si "
+"vous ne possédez pas cette application, vous devez la télécharger sur votre "
+"téléphone/tablette."
 
 msgid "Failed to upload profile picture"
-msgstr ""
+msgstr "Échec du téléchargement de la photo de profil"
 
 msgid "Profile picture"
-msgstr ""
+msgstr "Photo de profil"
 
 msgid "No profile picture available"
-msgstr ""
+msgstr "Aucune photo de profil disponible"
 
 msgid "Select profile picture"
-msgstr ""
+msgstr "Sélectionner une photo de profil"
 
 msgid "Remove profile picture"
-msgstr ""
+msgstr "Supprimer la photo de profil"
 
 msgid "This field is required"
 msgstr "Ce champs est requis"
@@ -303,6 +311,7 @@ msgstr "Ce champ doit être un e-mail"
 
 msgid "Please enter a valid international phone number (+0123456789)"
 msgstr ""
+"Veuillez saisir un numéro de téléphone international valide (+0123456789)"
 
 msgid "No value"
 msgstr "Pas de valeur"
@@ -615,7 +624,7 @@ msgid "Enable message SMS notifications"
 msgstr "Autoriser les notifications de messages SMS"
 
 msgid "View full profile"
-msgstr ""
+msgstr "Voir le profil complet"
 
 msgctxt "HTTP method"
 msgid "GET"
