@@ -9819,10 +9819,10 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-material-design-icons-iconfont@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/material-design-icons-iconfont/-/material-design-icons-iconfont-6.1.0.tgz#ffad21a71f2000336fd410cbeba36ddbf301f0f2"
-  integrity sha512-wRJtOo1v1ch+gN8PRsj0IGJznk+kQ8mz13ds/nuhLI+Qyf/931ZlRpd92oq0IRPpZIb+bhX8pRjzIVdcPDKmiQ==
+material-design-icons-iconfont@^6.4.2:
+  version "6.4.2"
+  resolved "https://registry.yarnpkg.com/material-design-icons-iconfont/-/material-design-icons-iconfont-6.4.2.tgz#e45b6faa560a6c972715acead96d56b37652e345"
+  integrity sha512-MLbuHqK9c99SJb48rEnWpMm+VR4WNT7atQiyGkvQqDzx1Aw24dCjDTyX5aN8WruCHdS7XtNgRMCrsiN5lPRjyQ==
 
 material-ui@^0.20.0:
   version "0.20.2"
@@ -14647,10 +14647,8 @@ watchpack@^1.7.4:
   resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-1.7.5.tgz#1267e6c55e0b9b5be44c2023aed5437a2c26c453"
   integrity sha512-9P3MWk6SrKjHsGkLT2KHXdQ/9SNkyoJbabxnKOoJepsvJjJG8uYTR3yTPxPQvNDI3w4Nz1xnE0TLHK4RIVe/MQ==
   dependencies:
-    chokidar "^3.4.1"
     graceful-fs "^4.1.2"
     neo-async "^2.5.0"
-    watchpack-chokidar2 "^2.0.1"
   optionalDependencies:
     chokidar "^3.4.1"
     watchpack-chokidar2 "^2.0.1"
