@@ -1,20 +1,21 @@
 # 
 # Translators:
-# Viktor Varland <viktor@dhis2.org>, 2021
-# Karoline Tufte Lien <karoline@dhis2.org>, 2021
-# Yao Selom Saka <ysaka@hispwca.org>, 2021
-# Yayra Gomado <ygomado@hispwca.org>, 2021
-# Edem Kossi <ekossi@hispwca.org>, 2021
-# Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2021
-# phil_dhis2, 2021
-# tx_e2f_fr r25 <tx_e2f_fr_r25@ate2f.com>, 2021
+# Viktor Varland <viktor@dhis2.org>, 2022
+# Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2022
+# Yao Selom Saka <ysaka@hispwca.org>, 2022
+# Yayra Gomado <ygomado@hispwca.org>, 2022
+# Karoline Tufte Lien <karoline@dhis2.org>, 2022
+# tx_e2f_fr r25 <tx_e2f_fr_r25@ate2f.com>, 2022
+# Edem Kossi <ekossi@hispwca.org>, 2022
+# tx_e2f_frfr r6 <tx_e2f_frfr_r661@ate2f.com>, 2022
+# phil_dhis2, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
-"PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: tx_e2f_fr r25 <tx_e2f_fr_r25@ate2f.com>, 2021\n"
+"PO-Revision-Date: 2022-04-20 11:06+0000\n"
+"Last-Translator: phil_dhis2, 2022\n"
 "Language-Team: French (https://www.transifex.com/hisp-uio/teams/100509/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -195,11 +196,11 @@ msgstr "Mot de passe modifié avec succès"
 
 msgid "You need to login again to continue using the application."
 msgstr ""
-"Vous devez de nouveau vous connecter afin de poursuivre l'utilisation de "
-"l'application."
+"Vous devez de nouveau vous connecter afin de poursuivre l’utilisation de "
+"l’application."
 
 msgid "Login"
-msgstr "Connexion"
+msgstr "Se connecter"
 
 msgid "Failed to update password"
 msgstr "Impossible de mettre à jour le mot de passe"
@@ -211,7 +212,7 @@ msgid "2-Factor successfully turned OFF"
 msgstr "Vérification à 2 facteurs désactivée avec succès"
 
 msgid "Failed to turn ON 2-Factor"
-msgstr "Impossible d'activer la vérification à 2 facteurs"
+msgstr "Impossible d’activer la vérification à 2 facteurs"
 
 msgid "Failed to turn OFF 2-Factor"
 msgstr ""
@@ -244,7 +245,7 @@ msgid "Do you want to turn ON 2-Factor?"
 msgstr "Voulez-vous activer la vérification à 2 facteurs ?"
 
 msgid "Download the Authenticator app"
-msgstr "Télécharger l'application Authenticator"
+msgstr "Télécharger l’application Authenticator"
 
 msgid "What kind of phone/tablet do you have?"
 msgstr "De quel type de téléphone/tablette disposez-vous ?"
@@ -270,9 +271,9 @@ msgid ""
 "must use the Authenticator app. If you do not have this app you must "
 "download it on your phone/tablet."
 msgstr ""
-"Lorsque l'authentification à 2 facteurs est activée, vous devez saisir un "
+"Lorsque l’authentification à 2 facteurs est activée, vous devez saisir un "
 "deuxième code de vérification au moment de votre connexion. Pour générer ce "
-"code de vérification, vous devez utiliser l'application Authenticator. Si "
+"code de vérification, vous devez utiliser l’application Authenticator. Si "
 "vous ne possédez pas cette application, vous devez la télécharger sur votre "
 "téléphone/tablette."
 
@@ -537,7 +538,7 @@ msgid "Surname"
 msgstr "Nom de famille"
 
 msgid "Gender"
-msgstr "Genre"
+msgstr "Sexe"
 
 msgid "Male"
 msgstr "Masculin"
@@ -549,7 +550,7 @@ msgid "Other"
 msgstr "Autre"
 
 msgid "E-mail"
-msgstr "Courrier électronique"
+msgstr "Adresse email"
 
 msgid "Mobile phone number"
 msgstr "Numéro de téléphone portable"
