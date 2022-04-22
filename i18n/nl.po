@@ -1,13 +1,14 @@
 # 
 # Translators:
 # Cherise Beek <cherise.beek@gmail.com>, 2021
+# Rica Zamora Duchateau, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2021-10-22T15:14:54.283Z\n"
 "PO-Revision-Date: 2021-09-04 00:45+0000\n"
-"Last-Translator: Cherise Beek <cherise.beek@gmail.com>, 2021\n"
+"Last-Translator: Rica Zamora Duchateau, 2022\n"
 "Language-Team: Dutch (https://www.transifex.com/hisp-uio/teams/100509/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -118,7 +119,7 @@ msgid "Calendar"
 msgstr ""
 
 msgid "Name"
-msgstr ""
+msgstr "Naam"
 
 msgid "User"
 msgstr ""
@@ -209,10 +210,10 @@ msgid "Barcode/QR code to scan"
 msgstr ""
 
 msgid "No"
-msgstr ""
+msgstr "Nee"
 
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 msgid "Turn OFF"
 msgstr ""
@@ -276,7 +277,7 @@ msgid "Remove profile picture"
 msgstr ""
 
 msgid "This field is required"
-msgstr ""
+msgstr "Dit veld is verplicht."
 
 msgid "This field should be a URL"
 msgstr ""
@@ -455,7 +456,7 @@ msgid "Token details"
 msgstr ""
 
 msgid "Cancel"
-msgstr ""
+msgstr "Annuleer"
 
 msgid ""
 "Important: IP address validation relies on the X-Forwarded-For header, which"
@@ -592,13 +593,13 @@ msgid "Database language"
 msgstr ""
 
 msgid "Style"
-msgstr ""
+msgstr "Stijl"
 
 msgid "Property to display in analysis modules"
 msgstr ""
 
 msgid "Short name"
-msgstr ""
+msgstr "Korte naam"
 
 msgid "Enable message email notifications"
 msgstr ""
