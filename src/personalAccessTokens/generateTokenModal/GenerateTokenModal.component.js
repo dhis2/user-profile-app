@@ -32,10 +32,10 @@ const renderContext = ({ context, values }) => {
 const generateTokenMutation = {
     resource: 'apiToken',
     type: 'create',
-    data: data => data,
+    data: (data) => data,
 }
 
-const getExpire = formParams => {
+const getExpire = (formParams) => {
     const expirationDate =
         formParams.expirationDate === 'CUSTOM'
             ? new Date(formParams.customExpirationDate)
@@ -52,7 +52,7 @@ const getAllowedIpsAttribute = ({ allowedIps }) => {
         type: 'IpAllowedList',
         allowedIps: allowedIps
             .split('\n')
-            .filter(ipAddress => ipAddress.trim() !== ''),
+            .filter((ipAddress) => ipAddress.trim() !== ''),
     }
 }
 
@@ -71,7 +71,7 @@ const getAllowedMethodsAttribute = ({
             allowedMethodsPUT && 'PUT',
             allowedMethodsPATCH && 'PATCH',
             allowedMethodsDELETE && 'DELETE',
-        ].filter(am => typeof am === 'string'),
+        ].filter((am) => typeof am === 'string'),
     }
 }
 
@@ -84,7 +84,7 @@ const getAllowedReferersAttribute = ({ allowedReferrers }) => {
         type: 'RefererAllowedList',
         allowedReferrers: allowedReferrers
             .split('\n')
-            .filter(referrer => referrer.trim() !== ''),
+            .filter((referrer) => referrer.trim() !== ''),
     }
 }
 
@@ -95,19 +95,19 @@ const GenerateTokenModal = ({ onGenerate, onClose }) => {
     const [generateToken, { loading }] = useDataMutation(
         generateTokenMutation,
         {
-            onComplete: data => {
+            onComplete: (data) => {
                 const { uid: id, key } = data.response
                 onGenerate({ id, key })
                 onClose()
             },
-            onError: error => {
+            onError: (error) => {
                 errorAlert.show({ error })
             },
         }
     )
     const [context, setContext] = useState(null)
 
-    const handleGenerate = formParams => {
+    const handleGenerate = (formParams) => {
         if (
             context === 'BROWSER' &&
             !confirm(
@@ -125,7 +125,7 @@ const GenerateTokenModal = ({ onGenerate, onClose }) => {
                 getAllowedIpsAttribute(formParams),
                 getAllowedMethodsAttribute(formParams),
                 getAllowedReferersAttribute(formParams),
-            ].filter(a => a !== null),
+            ].filter((a) => a !== null),
         }
         generateToken(params)
     }

@@ -23,7 +23,7 @@ class SnackWrapper extends Component {
         this.subscriptions = []
 
         this.subscriptions.push(
-            appActions.showSnackbarMessage.subscribe(params => {
+            appActions.showSnackbarMessage.subscribe((params) => {
                 const message = params.data.message
                 const status = params.data.status
                     ? params.data.status
@@ -43,7 +43,7 @@ class SnackWrapper extends Component {
     }
 
     componentWillUnmount() {
-        this.subscriptions.forEach(sub => {
+        this.subscriptions.forEach((sub) => {
             sub.unsubscribe()
         })
     }

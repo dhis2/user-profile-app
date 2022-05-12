@@ -15,7 +15,7 @@ accountActions.setPassword.subscribe(
     ({ data: [oldPassword, newPassword, onSuccess], complete, error }) => {
         const payload = { oldPassword, newPassword }
 
-        getD2().then(d2 => {
+        getD2().then((d2) => {
             const api = d2.Api.getApi()
             api.update('/me/changePassword', payload)
                 .then(() => {
@@ -26,7 +26,7 @@ accountActions.setPassword.subscribe(
                     onSuccess()
                     complete()
                 })
-                .catch(err => {
+                .catch((err) => {
                     const message =
                         err && err.message && typeof err.message === 'string'
                             ? err.message
@@ -49,7 +49,7 @@ accountActions.setTwoFactorStatus.subscribe(
         const payload = { userCredentials: { twoFA } }
         const status = twoFA ? 'on' : 'off'
 
-        getD2().then(d2 => {
+        getD2().then((d2) => {
             userProfileStore.state.twoFA = twoFA
             userProfileStore.setState(userProfileStore.state)
 
@@ -65,7 +65,7 @@ accountActions.setTwoFactorStatus.subscribe(
                     })
                     complete()
                 })
-                .catch(err => {
+                .catch((err) => {
                     appActions.showSnackbarMessage({
                         message: twoFA
                             ? i18n.t('Failed to turn ON 2-Factor')

@@ -27,11 +27,11 @@ class AccountEditor extends Component {
         }
     }
 
-    isSamePassword = value => {
+    isSamePassword = (value) => {
         return value === this.state.newPassword
     }
 
-    isNotEmpty = value => {
+    isNotEmpty = (value) => {
         return value && String(value).trim().length > 0
     }
 
@@ -194,7 +194,7 @@ class AccountEditor extends Component {
             },
         ]
 
-        const setRef = r => {
+        const setRef = (r) => {
             this.formBuilder = r
         }
 

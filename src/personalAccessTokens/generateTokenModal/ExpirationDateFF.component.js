@@ -11,7 +11,7 @@ import i18n from '../../locales'
 import styles from './ExpirationDateFF.module.css'
 import getTokenExpirationDate from './getTokenExpirationDate.js'
 
-const futureDateValidator = value => {
+const futureDateValidator = (value) => {
     if (!value) {
         return null
     }
@@ -44,7 +44,7 @@ const expirationTimeOptions = [
     },
 ]
 
-const renderExpirationDate = value => {
+const renderExpirationDate = (value) => {
     if (!value || value === 'CUSTOM') {
         return null
     }

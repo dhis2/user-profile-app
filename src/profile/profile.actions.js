@@ -22,7 +22,7 @@ userProfileActions.save.subscribe(({ data, complete, error }) => {
         payload = { [key]: date.toISOString() }
     }
 
-    getD2().then(d2 => {
+    getD2().then((d2) => {
         userProfileStore.state[key] = value
         userProfileStore.setState(userProfileStore.state)
 
@@ -57,7 +57,7 @@ userProfileActions.save.subscribe(({ data, complete, error }) => {
                 })
                 complete()
             })
-            .catch(err => {
+            .catch((err) => {
                 userSettingsActions.showSnackbarMessage({
                     message: i18n.t('Failed to update user profile'),
                     status: 'error',

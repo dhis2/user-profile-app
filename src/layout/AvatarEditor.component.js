@@ -25,13 +25,13 @@ class AvatarEditor extends Component {
     }
 
     getInputRef = () => this.inputRef
-    setInputRef = node => (this.inputRef = node)
+    setInputRef = (node) => (this.inputRef = node)
 
     parseAvatarSrc(avatarId) {
         return `${this.api.baseUrl}/fileResources/${avatarId}/data`
     }
 
-    onFileSelect = async event => {
+    onFileSelect = async (event) => {
         const { onChange } = this.props
         // Setup form data for image file
         const file = event.target.files[0]

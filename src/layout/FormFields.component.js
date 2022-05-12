@@ -61,7 +61,7 @@ const styles = {
 
 function wrapWithLabel(WrappedComponent, label) {
     // eslint-disable-next-line react/display-name
-    return props => {
+    return (props) => {
         const labelStyle = styles.userSettingsOverride
         return (
             <div>
@@ -158,13 +158,15 @@ function createDropDown(fieldBase, fieldName, valueStore, mapping) {
             ? 'system_default'
             : 'null'
 
-    const menuItems = (mapping.source
-        ? (optionValueStore.state && optionValueStore.state[mapping.source]) ||
-          []
-        : Object.keys(mapping.options).map(id => {
-              const displayName = mapping.options[id]
-              return { id, displayName }
-          })
+    const menuItems = (
+        mapping.source
+            ? (optionValueStore.state &&
+                  optionValueStore.state[mapping.source]) ||
+              []
+            : Object.keys(mapping.options).map((id) => {
+                  const displayName = mapping.options[id]
+                  return { id, displayName }
+              })
     ).slice()
 
     const systemSettingValue =
@@ -178,8 +180,8 @@ function createDropDown(fieldBase, fieldName, valueStore, mapping) {
     } else if (optionValueStore.state[mapping.source]) {
         systemSettingLabel =
             optionValueStore.state[mapping.source]
-                .filter(x => x.id === systemSettingValue)
-                .map(x => x.displayName)[0] || i18n.t('No value')
+                .filter((x) => x.id === systemSettingValue)
+                .map((x) => x.displayName)[0] || i18n.t('No value')
     } else if (
         systemSettingValue === 'null' ||
         systemSettingValue === 'system_default' ||
@@ -245,8 +247,8 @@ function createFieldBaseObject(fieldName, mapping, valueStore) {
         hintText,
     }
     const baseValidators = (mapping.validators || [])
-        .map(name => getNameValidator(name))
-        .filter(v => v)
+        .map((name) => getNameValidator(name))
+        .filter((v) => v)
 
     return Object.assign(
         {},
@@ -310,11 +312,11 @@ function wrapFieldWithLabel(field) {
 
         if (mapping.source && actualSystemValue) {
             systemValueLabel = optionValueStore.state[mapping.source].find(
-                item => item.id === systemValue
+                (item) => item.id === systemValue
             ).displayName
         } else if (field.props.menuItems && actualSystemValue) {
             systemValueLabel = field.props.menuItems.find(
-                item =>
+                (item) =>
                     item.id === systemValue || String(systemValue) === item.id
             ).displayName
         } else {
@@ -348,9 +350,9 @@ class FormFields extends Component {
         const valueStore = this.props.valueStore
 
         const fields = fieldNames
-            .map(fieldName => createField(fieldName, valueStore, d2))
-            .filter(field => !!field.name)
-            .map(field => wrapFieldWithLabel(field))
+            .map((fieldName) => createField(fieldName, valueStore, d2))
+            .filter((field) => !!field.name)
+            .map((field) => wrapFieldWithLabel(field))
 
         return (
             <Card style={styles.card}>

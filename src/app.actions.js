@@ -16,7 +16,7 @@ const appActions = Action.createActionsFromNames([
 ])
 
 appActions.init.subscribe(() => {
-    getD2().then(d2 => {
+    getD2().then((d2) => {
         const api = d2.Api.getApi()
 
         Promise.all([
@@ -27,16 +27,16 @@ appActions.init.subscribe(() => {
             d2.system.settings.all(),
             api.get('2fa/qr'),
         ]).then(
-            results => {
-                const styles = (results[0] || []).map(style => ({
+            (results) => {
+                const styles = (results[0] || []).map((style) => ({
                     id: style.path,
                     displayName: style.name,
                 }))
-                const uiLocales = (results[1] || []).map(locale => ({
+                const uiLocales = (results[1] || []).map((locale) => ({
                     id: locale.locale,
                     displayName: locale.name,
                 }))
-                const dbLocales = (results[2] || []).map(locale => ({
+                const dbLocales = (results[2] || []).map((locale) => ({
                     id: locale.locale,
                     displayName: locale.name,
                 }))
@@ -71,7 +71,7 @@ appActions.init.subscribe(() => {
                     document.querySelector('#app')
                 )
             },
-            error => {
+            (error) => {
                 log.error('Failed to load user settings:', error)
             }
         )

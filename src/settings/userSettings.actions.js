@@ -12,7 +12,7 @@ userSettingsActions.save.subscribe(({ data, complete, error }) => {
     const value =
         data[1] === 'null' || data[1] === 'system_default' ? null : data[1]
 
-    getD2().then(d2 => {
+    getD2().then((d2) => {
         d2.currentUser.userSettings
             .set(key, value)
             .then(() => {
@@ -26,7 +26,7 @@ userSettingsActions.save.subscribe(({ data, complete, error }) => {
                 })
                 complete()
             })
-            .catch(err => {
+            .catch((err) => {
                 userSettingsStore.setState(userSettingsStore.state)
                 log.warn('API call failed:', err)
                 appActions.showSnackbarMessage({

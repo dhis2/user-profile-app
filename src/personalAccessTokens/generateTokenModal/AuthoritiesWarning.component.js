@@ -45,7 +45,7 @@ const AuthoritiesWarning = () => {
             title={i18n.t('This token will have the following authorities')}
         >
             <ul>
-                {data.authorities.authorities.map(authority => (
+                {data.authorities.authorities.map((authority) => (
                     <li key={authority}>{authority}</li>
                 ))}
             </ul>

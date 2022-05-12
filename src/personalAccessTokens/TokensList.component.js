@@ -44,7 +44,7 @@ const TokensList = ({ loading, error, tokens, onDelete }) => {
                 </NoticeBox>
             ) : null}
             <div className={styles.list}>
-                {tokens.map(token => (
+                {tokens.map((token) => (
                     <TokenCard
                         key={token.id}
                         token={token}
