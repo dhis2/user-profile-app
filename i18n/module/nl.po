@@ -20,15 +20,15 @@ msgstr ""
 
 #: user_profile
 msgid "User profile"
-msgstr ""
+msgstr "Gebruikersprofiel"
 
 #: account_settings
 msgid "Account settings"
-msgstr ""
+msgstr "Accountinstellingen"
 
 #: user_settings
 msgid "User settings"
-msgstr ""
+msgstr "Gebruikersinstellingen"
 
 #: user_email_address
 msgid "E-mail"
@@ -44,15 +44,15 @@ msgstr ""
 
 #: old_password
 msgid "Old password"
-msgstr ""
+msgstr "Oud paswoord"
 
 #: new_password
 msgid "New password"
-msgstr ""
+msgstr "Nieuw paswoord"
 
 #: repeat_new_password
 msgid "Repeat new password"
-msgstr ""
+msgstr "Herhaal nieuw paswoord"
 
 #: openid
 msgid "OpenID"
@@ -60,7 +60,7 @@ msgstr ""
 
 #: username
 msgid "Username"
-msgstr ""
+msgstr "Gebruikersnaam"
 
 #: phone_number
 msgid "Mobile phone number"
@@ -212,7 +212,7 @@ msgstr ""
 
 #: update_password
 msgid "Update password"
-msgstr ""
+msgstr "Paswoord updaten"
 
 #: invalid_password
 msgid ""
@@ -222,7 +222,7 @@ msgstr ""
 
 #: passwords_do_not_match
 msgid "The entered values do not match. Please re-enter."
-msgstr ""
+msgstr "De ingevoerde waarden zijn niet hetzelfde. Voeg a.u.b. opnieuw in."
 
 #: use_system_default
 msgid "Use system default"
@@ -238,7 +238,7 @@ msgstr "Nee"
 
 #: value_required
 msgid "This field can't be left blank"
-msgstr ""
+msgstr "Dit veld kan niet blanco gelaten worden"
 
 #: please_enter_the_correct_password
 msgid "Please enter the correct password"
@@ -246,15 +246,16 @@ msgstr ""
 
 #: no_changes_have_been_made
 msgid "No changes have been made"
-msgstr ""
+msgstr "Er werden geen verandering gemaakt"
 
 #: validating_please_try_again
 msgid "The form is currently being validated. Please try again."
-msgstr ""
+msgstr "Dit formulier wordt gevalideerd. Probeer a.u.b. opniew."
 
 #: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
 msgstr ""
+"Dit formulier bevat fouten. Los a.u.b. de fouten op en probeer opnieuw."
 
 #: password_update_success
 msgid "Your password was updated successfully"
@@ -262,4 +263,4 @@ msgstr ""
 
 #: password_update_failed
 msgid "Failed to update password"
-msgstr ""
+msgstr "Updaten van paswoord gefaald"
