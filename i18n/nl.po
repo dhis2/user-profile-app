@@ -17,197 +17,202 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Never"
-msgstr ""
+msgstr "Nooit"
 
 msgid "Invalid date"
-msgstr ""
+msgstr "Ongeldige datum"
 
 msgid "Web API"
-msgstr ""
+msgstr "Web-API"
 
 msgid "Browse it here"
-msgstr ""
+msgstr "Blader er hier door"
 
 msgid "Current user"
-msgstr ""
+msgstr "Huidige gebruiker"
 
 msgid "Version"
-msgstr ""
+msgstr "Versie"
 
 msgid "Build revision"
-msgstr ""
+msgstr "Bouwrevisie"
 
 msgid "Build date"
-msgstr ""
+msgstr "Bouwdatu;"
 
 msgid "Jasper reports version"
-msgstr ""
+msgstr "Jasper-rapportversie"
 
 msgid "User agent"
-msgstr ""
+msgstr "Gebruikersagent"
 
 msgid "Server date"
-msgstr ""
+msgstr "Serverdatum"
 
 msgid "Last analytics table generation"
-msgstr ""
+msgstr "Laatste generatie analytiektabel"
 
 msgid "Time since last analytics table generation"
-msgstr ""
+msgstr "Tijd sinds laatste generatie analytiektabel"
 
 msgid "Last analytics table runtime"
-msgstr ""
+msgstr "Laatste looptijd analytiektabel"
 
 msgid "Last continuous analytics table update"
-msgstr ""
+msgstr "Laatste continue update analytiektabel"
 
 msgid "Time since last continuous analytics table update"
-msgstr ""
+msgstr "Tijd sinds laatste update continue analytiektabel"
 
 msgid "Last continuous analytics table runtime"
-msgstr ""
+msgstr "Laatste looptijd continue analytiektabel"
 
 msgid "Environment variable"
-msgstr ""
+msgstr "Omgevingsvariabel"
 
 msgid "System ID"
-msgstr ""
+msgstr "Systeem-ID"
 
 msgid "Last monitoring success"
-msgstr ""
+msgstr "Laatste succes controle"
 
 msgid "External configuration directory"
-msgstr ""
+msgstr "Externe configuratiemap"
 
 msgid "File store provider"
-msgstr ""
+msgstr "Provide bestandsopslag"
 
 msgid "Node ID"
-msgstr ""
+msgstr "Node-ID"
 
 msgid "Cache provider"
-msgstr ""
+msgstr "Provider cache"
 
 msgid "Read replica count"
-msgstr ""
+msgstr "Lees tel van replica's"
 
 msgid "Java opts"
-msgstr ""
+msgstr "Java opties"
 
 msgid "Java version"
-msgstr ""
+msgstr "Javaversies"
 
 msgid "Java vendor"
-msgstr ""
+msgstr "Javaverkoper"
 
 msgid "OS name"
-msgstr ""
+msgstr "Naam OS"
 
 msgid "OS architecture"
-msgstr ""
+msgstr "Architectuur OS"
 
 msgid "OS version"
-msgstr ""
+msgstr "Versie OS"
 
 msgid "Memory info"
-msgstr ""
+msgstr "Geheugeninfo"
 
 msgid "CPU cores"
-msgstr ""
+msgstr "CPU-kernen"
 
 msgid "Calendar"
-msgstr ""
+msgstr "Kalender"
 
 msgid "Name"
 msgstr "Naam"
 
 msgid "User"
-msgstr ""
+msgstr "Gebruiker"
 
 msgid "Spatial support"
-msgstr ""
+msgstr "Ruimtelijke ondersteuning"
 
 msgid "System info"
-msgstr ""
+msgstr "Systeeminfo"
 
 msgid "Database"
-msgstr ""
+msgstr "Databank"
 
 msgid "Edit account settings"
-msgstr ""
+msgstr "Wijzig accountinstellingen"
 
 msgid "No changes have been made"
-msgstr ""
+msgstr "Er werden geen verandering gemaakt"
 
 msgid "The form is currently being validated. Please try again."
-msgstr ""
+msgstr "Dit formulier wordt gevalideerd. Probeer a.u.b. opniew."
 
 msgid "The form contains errors. Please fix the errors and try again."
 msgstr ""
+"Dit formulier bevat fouten. Los a.u.b. de fouten op en probeer opnieuw."
 
 msgid "The entered values do not match. Please re-enter."
-msgstr ""
+msgstr "De ingevoerde waarden zijn niet hetzelfde. Voeg a.u.b. opnieuw in."
 
 msgid "Please provide your old password"
-msgstr ""
+msgstr "Bezorg a.u.b. uw oude paswoord"
 
 msgid "Username"
-msgstr ""
+msgstr "Gebruikersnaam"
 
 msgid "Old password"
-msgstr ""
+msgstr "Oud paswoord"
 
 msgid "This field can't be left blank"
-msgstr ""
+msgstr "Dit veld kan niet blanco gelaten worden"
 
 msgid "New password"
-msgstr ""
+msgstr "Nieuw paswoord"
 
 msgid ""
 "Password should be at least 8 characters with at least 1 digit, 1 uppercase "
 "letter and 1 special character"
 msgstr ""
+"Paswoord moet ten minste 8 lettertekens lang zijn met ten minste 1 cijfer, 1"
+" hoofdletter en 1 speciaal letterteken"
 
 msgid "Repeat new password"
-msgstr ""
+msgstr "Herhaal nieuw paswoord"
 
 msgid "Setup 2-Factor"
-msgstr ""
+msgstr "Stel 2-factor in"
 
 msgid "Update password"
-msgstr ""
+msgstr "Paswoord updaten"
 
 msgid ""
 "This account is linked to an OpenID Connect identity. Visit the Open ID "
 "Connect provider to manage this account's settings."
 msgstr ""
+"Dit account is gelinkt aan een OpenID Connectidentiteit. Bezoek de Open ID "
+"Connectprovider om de instellingen van dit account te beheren."
 
 msgid "Password changed successfully"
-msgstr ""
+msgstr "Paswoord met succes veranderd"
 
 msgid "You need to login again to continue using the application."
-msgstr ""
+msgstr "U moet opnieuw inloggen om de toepassing verder te gebruiken."
 
 msgid "Login"
-msgstr ""
+msgstr "Login"
 
 msgid "Failed to update password"
-msgstr ""
+msgstr "Updaten van paswoord gefaald"
 
 msgid "2-Factor successfully turned ON"
-msgstr ""
+msgstr "2-factor met success INgeschakeld"
 
 msgid "2-Factor successfully turned OFF"
-msgstr ""
+msgstr "2-factor met succes UITgeschakeld"
 
 msgid "Failed to turn ON 2-Factor"
-msgstr ""
+msgstr "INschakelen van 2-Factor gefaald"
 
 msgid "Failed to turn OFF 2-Factor"
-msgstr ""
+msgstr "UITschakelen van 2-factor gefaald"
 
 msgid "Barcode/QR code to scan"
-msgstr ""
+msgstr "Bar-/QR-code om te scannen"
 
 msgid "No"
 msgstr "Nee"
@@ -216,43 +221,43 @@ msgid "Yes"
 msgstr "Ja"
 
 msgid "Turn OFF"
-msgstr ""
+msgstr "UITschakelen"
 
 msgid "Turn ON"
-msgstr ""
+msgstr "INschakelen"
 
 msgid "2-Factor Verification is ON"
-msgstr ""
+msgstr "2-factorverificatie staat AAN"
 
 msgid "2-Factor Verification is OFF"
-msgstr ""
+msgstr "2-factorverificatie staat UIT"
 
 msgid "Do you want to turn OFF 2-Factor?"
-msgstr ""
+msgstr "Wilt u 2-Factor UITschakelen?"
 
 msgid "Do you want to turn ON 2-Factor?"
-msgstr ""
+msgstr "Wilt u 2-Factor INschakelen?"
 
 msgid "Download the Authenticator app"
-msgstr ""
+msgstr "Download de Authenticatortoepassing"
 
 msgid "What kind of phone/tablet do you have?"
-msgstr ""
+msgstr "Wat type telefoon/tablet heeft u?"
 
 msgid "Download the Authenticator App from the "
-msgstr ""
+msgstr "Download de Authenticatortoepassing van het"
 
 msgid "In the Authenticator App select "
-msgstr ""
+msgstr "In de Authenticatortoepassing selecteer"
 
 msgid "Begin setup."
-msgstr ""
+msgstr "Begin opstelling"
 
 msgid "Choose "
-msgstr ""
+msgstr "Kies"
 
 msgid "Scan a barcode."
-msgstr ""
+msgstr "Scan een barcode."
 
 msgid ""
 "With 2-Factor authentication turned on you will be asked to enter a second "
@@ -262,19 +267,19 @@ msgid ""
 msgstr ""
 
 msgid "Failed to upload profile picture"
-msgstr ""
+msgstr "Uploaden profielfoto gefaald"
 
 msgid "Profile picture"
-msgstr ""
+msgstr "Profielfoto"
 
 msgid "No profile picture available"
-msgstr ""
+msgstr "Geen profielfoto beschikbaar"
 
 msgid "Select profile picture"
-msgstr ""
+msgstr "Selecteer profielfoto"
 
 msgid "Remove profile picture"
-msgstr ""
+msgstr "Verwijder profielfoto"
 
 msgid "This field is required"
 msgstr "Dit veld is verplicht."
@@ -304,22 +309,22 @@ msgid "Use system default"
 msgstr ""
 
 msgid "No options"
-msgstr ""
+msgstr "Geen opties"
 
 msgid "System default"
 msgstr ""
 
 msgid "User profile"
-msgstr ""
+msgstr "Gebruikersprofiel"
 
 msgid "User settings"
-msgstr ""
+msgstr "Gebruikersinstellingen"
 
 msgid "Account settings"
-msgstr ""
+msgstr "Accountinstellingen"
 
 msgid "Full profile"
-msgstr ""
+msgstr "Volledig profiel"
 
 msgid "Personal access tokens"
 msgstr ""
@@ -360,19 +365,19 @@ msgid "Allowed HTTP methods"
 msgstr ""
 
 msgid "GET"
-msgstr ""
+msgstr "GET"
 
 msgid "POST"
-msgstr ""
+msgstr "POST"
 
 msgid "PUT"
-msgstr ""
+msgstr "PUT"
 
 msgid "PATCH"
-msgstr ""
+msgstr "PATCH"
 
 msgid "DELETE"
-msgstr ""
+msgstr "DELETE"
 
 msgid "Only choose the HTTP methods this token needs to allow."
 msgstr ""
@@ -612,20 +617,20 @@ msgstr ""
 
 msgctxt "HTTP method"
 msgid "GET"
-msgstr ""
+msgstr "GET"
 
 msgctxt "HTTP method"
 msgid "POST"
-msgstr ""
+msgstr "POST"
 
 msgctxt "HTTP method"
 msgid "PUT"
-msgstr ""
+msgstr "PUT"
 
 msgctxt "HTTP method"
 msgid "PATCH"
-msgstr ""
+msgstr "PATCH"
 
 msgctxt "HTTP method"
 msgid "DELETE"
-msgstr ""
+msgstr "DELETE"
