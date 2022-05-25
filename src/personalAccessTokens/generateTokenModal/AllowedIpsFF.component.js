@@ -1,7 +1,7 @@
 import { ReactFinalForm, TextAreaFieldFF } from '@dhis2/ui'
 import ipRegex from 'ip-regex'
 import React from 'react'
-import i18n from '../../locales'
+import i18n from '../../locales/index.js'
 
 const isValidIpAddress = (ipAddress) => ipRegex({ exact: true }).test(ipAddress)
 

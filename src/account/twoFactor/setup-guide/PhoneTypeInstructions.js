@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import i18n from '../../../locales'
-import phoneTypes from './phoneTypes'
+import i18n from '../../../locales/index.js'
+import phoneTypes from './phoneTypes.js'
 
 const playStoreLink = (
     <a

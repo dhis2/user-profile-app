@@ -1,9 +1,9 @@
 import { Card, CardText } from 'material-ui/Card'
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import settingsKeyMapping from '../userSettingsMapping'
-import InfoHeader from './InfoHeader.component'
-import InfoRow from './InfoRow.component'
+import settingsKeyMapping from '../userSettingsMapping.js'
+import InfoHeader from './InfoHeader.component.js'
+import InfoRow from './InfoRow.component.js'
 
 const styles = {
     card: {

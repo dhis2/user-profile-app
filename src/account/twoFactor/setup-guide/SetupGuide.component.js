@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import i18n from '../../../locales'
-import DownloadGuide from './DownloadGuide'
-import phoneTypes from './phoneTypes'
+import i18n from '../../../locales/index.js'
+import DownloadGuide from './DownloadGuide.js'
+import phoneTypes from './phoneTypes.js'
 
 const styles = {
     guideHeader: {

@@ -3,10 +3,10 @@ import FormBuilder from 'd2-ui/lib/forms/FormBuilder.component'
 import { FlatButton, RaisedButton } from 'material-ui'
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import appActions from '../app.actions'
-import i18n from '../locales'
-import accountActions from './account.actions'
-import isValidPassword from './isValidPassword'
+import appActions from '../app.actions.js'
+import i18n from '../locales/index.js'
+import accountActions from './account.actions.js'
+import isValidPassword from './isValidPassword.js'
 
 const styles = {
     notification: {

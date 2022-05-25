@@ -2,7 +2,7 @@ import { Tag, Tooltip } from '@dhis2/ui'
 import moment from 'moment'
 import PropTypes from 'prop-types'
 import React from 'react'
-import i18n from '../../locales'
+import i18n from '../../locales/index.js'
 import styles from './ExistingToken.module.css'
 import TokenPropType from './TokenPropType.js'
 

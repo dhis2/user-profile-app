@@ -1,7 +1,7 @@
 import { useDataQuery } from '@dhis2/app-runtime'
 import { Card, Button } from '@dhis2/ui'
 import React, { useState } from 'react'
-import i18n from '../locales'
+import i18n from '../locales/index.js'
 import GenerateTokenModal from './generateTokenModal/GenerateTokenModal.component.js'
 import styles from './PersonalAccessTokens.module.css'
 import TokensList from './TokensList.component.js'

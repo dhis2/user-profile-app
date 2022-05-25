@@ -1,7 +1,7 @@
 import React from 'react'
-import InfoCard from '../layout/InfoCard.component'
-import i18n from '../locales'
-import profileSettingsStore from '../profile/profile.store'
+import InfoCard from '../layout/InfoCard.component.js'
+import i18n from '../locales/index.js'
+import profileSettingsStore from '../profile/profile.store.js'
 
 function ViewProfile() {
     const labelKeys = [

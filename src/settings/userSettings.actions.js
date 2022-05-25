@@ -1,9 +1,9 @@
 import { getInstance as getD2 } from 'd2'
-import Action from 'd2-ui/lib/action/Action'
+import Action from 'd2-ui/lib/action/Action.js'
 import log from 'loglevel'
-import appActions from '../app.actions'
-import i18n from '../locales'
-import userSettingsStore from './userSettings.store'
+import appActions from '../app.actions.js'
+import i18n from '../locales/index.js'
+import userSettingsStore from './userSettings.store.js'
 
 const userSettingsActions = Action.createActionsFromNames(['save'])
 

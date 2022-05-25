@@ -10,7 +10,7 @@ import {
 } from '@dhis2/ui'
 import PropTypes from 'prop-types'
 import React, { useState } from 'react'
-import i18n from '../../locales'
+import i18n from '../../locales/index.js'
 import AuthoritiesWarning from './AuthoritiesWarning.component.js'
 import BrowserForm from './BrowserForm.component.js'
 import ContextSelector from './ContextSelector.component.js'

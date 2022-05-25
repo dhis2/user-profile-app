@@ -1,8 +1,8 @@
 import { Paper } from 'material-ui'
 import PropTypes from 'prop-types'
 import React from 'react'
-import i18n from '../../locales'
-import profileSettingsStore from '../../profile/profile.store'
+import i18n from '../../locales/index.js'
+import profileSettingsStore from '../../profile/profile.store.js'
 
 const styles = {
     qrCodePaperWrapper: {

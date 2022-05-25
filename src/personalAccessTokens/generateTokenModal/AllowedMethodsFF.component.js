@@ -1,6 +1,6 @@
 import { ReactFinalForm, CheckboxFieldFF } from '@dhis2/ui'
 import React from 'react'
-import i18n from '../../locales'
+import i18n from '../../locales/index.js'
 import styles from './AllowedMethodsFF.module.css'
 
 const AllowedMethodsFF = () => (

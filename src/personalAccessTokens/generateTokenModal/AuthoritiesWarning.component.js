@@ -1,7 +1,7 @@
 import { useDataQuery } from '@dhis2/app-runtime'
 import { CenteredContent, CircularLoader, NoticeBox, Button } from '@dhis2/ui'
 import React from 'react'
-import i18n from '../../locales'
+import i18n from '../../locales/index.js'
 import styles from './AuthoritiesWarning.module.css'
 
 const query = {

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import AppTheme from '../layout/theme'
+import AppTheme from '../layout/theme.js'
 
 const styles = {
     header: {

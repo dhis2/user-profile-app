@@ -1,9 +1,9 @@
 import { Paper } from 'material-ui'
 import PropTypes from 'prop-types'
 import React from 'react'
-import i18n from '../../../locales'
-import PhoneTypeInstructions from './PhoneTypeInstructions'
-import RadioButtons from './RadioButtons'
+import i18n from '../../../locales/index.js'
+import PhoneTypeInstructions from './PhoneTypeInstructions.js'
+import RadioButtons from './RadioButtons.js'
 
 const styles = {
     downloadGuideWrapper: {

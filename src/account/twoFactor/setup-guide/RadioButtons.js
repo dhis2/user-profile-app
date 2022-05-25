@@ -1,7 +1,7 @@
 import { RadioButtonGroup, RadioButton } from 'material-ui'
 import PropTypes from 'prop-types'
 import React from 'react'
-import phoneTypes from './phoneTypes'
+import phoneTypes from './phoneTypes.js'
 
 const styles = {
     radioGroup: {

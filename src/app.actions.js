@@ -1,13 +1,13 @@
 import { getInstance as getD2 } from 'd2'
-import Action from 'd2-ui/lib/action/Action'
+import Action from 'd2-ui/lib/action/Action.js'
 import log from 'loglevel'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { hashHistory } from 'react-router'
-import AppRouter from './app.router'
-import optionValueStore from './optionValue.store'
-import userProfileStore from './profile/profile.store'
-import userSettingsStore from './settings/userSettings.store'
+import AppRouter from './app.router.js'
+import optionValueStore from './optionValue.store.js'
+import userProfileStore from './profile/profile.store.js'
+import userSettingsStore from './settings/userSettings.store.js'
 
 const appActions = Action.createActionsFromNames([
     'init',

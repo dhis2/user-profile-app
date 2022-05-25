@@ -1,9 +1,9 @@
 import { getInstance as getD2 } from 'd2'
 import Action from 'd2-ui/lib/action/Action'
 import log from 'loglevel'
-import appActions from '../app.actions'
-import i18n from '../locales'
-import userProfileStore from '../profile/profile.store'
+import appActions from '../app.actions.js'
+import i18n from '../locales/index.js'
+import userProfileStore from '../profile/profile.store.js'
 
 const accountActions = Action.createActionsFromNames([
     'setPassword',
