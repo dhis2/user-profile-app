@@ -455,7 +455,7 @@ msgid "Token details"
 msgstr ""
 
 msgid "Cancel"
-msgstr ""
+msgstr "Anulare"
 
 msgid ""
 "Important: IP address validation relies on the X-Forwarded-For header, which"
