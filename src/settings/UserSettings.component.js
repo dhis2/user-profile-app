@@ -1,8 +1,8 @@
 import React from 'react'
-import FormFields from '../layout/FormFields.component'
-import i18n from '../locales'
-import userSettingsActions from './userSettings.actions'
-import userSettingsStore from './userSettings.store'
+import FormFields from '../layout/FormFields.component.js'
+import i18n from '../locales/index.js'
+import userSettingsActions from './userSettings.actions.js'
+import userSettingsStore from './userSettings.store.js'
 
 function EditProfile() {
     const fieldKeys = [

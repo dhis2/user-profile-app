@@ -1,7 +1,7 @@
 import { CenteredContent, CircularLoader, NoticeBox } from '@dhis2/ui'
 import PropTypes from 'prop-types'
 import React from 'react'
-import i18n from '../locales'
+import i18n from '../locales/index.js'
 import TokenCard from './tokenCard/TokenCard.component.js'
 import styles from './TokensList.module.css'
 
@@ -44,7 +44,7 @@ const TokensList = ({ loading, error, tokens, onDelete }) => {
                 </NoticeBox>
             ) : null}
             <div className={styles.list}>
-                {tokens.map(token => (
+                {tokens.map((token) => (
                     <TokenCard
                         key={token.id}
                         token={token}

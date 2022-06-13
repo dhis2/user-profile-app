@@ -1,7 +1,7 @@
 import { useAlert } from '@dhis2/app-runtime'
 import { Button, IconCopy16 } from '@dhis2/ui'
 import React from 'react'
-import i18n from '../../locales'
+import i18n from '../../locales/index.js'
 import styles from './NewToken.module.css'
 import TokenPropType from './TokenPropType.js'
 

@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import i18n from '../../locales'
-import profileSettingsStore from '../../profile/profile.store'
-import accountActions from '../account.actions'
-import QRCode from './QRCode'
-import SetupGuide from './setup-guide/SetupGuide.component'
-import Status2FA from './Status2FA'
-import Status2FAChangeDialog from './Status2FAChangeDialog'
+import i18n from '../../locales/index.js'
+import profileSettingsStore from '../../profile/profile.store.js'
+import accountActions from '../account.actions.js'
+import QRCode from './QRCode.js'
+import SetupGuide from './setup-guide/SetupGuide.component.js'
+import Status2FA from './Status2FA.js'
+import Status2FAChangeDialog from './Status2FAChangeDialog.js'
 
 const styles = {
     header: {

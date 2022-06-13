@@ -1,13 +1,13 @@
 import { getInstance as getD2 } from 'd2'
-import Action from 'd2-ui/lib/action/Action'
+import Action from 'd2-ui/lib/action/Action.js'
 import log from 'loglevel'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { hashHistory } from 'react-router'
-import AppRouter from './app.router'
-import optionValueStore from './optionValue.store'
-import userProfileStore from './profile/profile.store'
-import userSettingsStore from './settings/userSettings.store'
+import AppRouter from './app.router.js'
+import optionValueStore from './optionValue.store.js'
+import userProfileStore from './profile/profile.store.js'
+import userSettingsStore from './settings/userSettings.store.js'
 
 const appActions = Action.createActionsFromNames([
     'init',
@@ -16,7 +16,7 @@ const appActions = Action.createActionsFromNames([
 ])
 
 appActions.init.subscribe(() => {
-    getD2().then(d2 => {
+    getD2().then((d2) => {
         const api = d2.Api.getApi()
 
         Promise.all([
@@ -27,16 +27,16 @@ appActions.init.subscribe(() => {
             d2.system.settings.all(),
             api.get('2fa/qr'),
         ]).then(
-            results => {
-                const styles = (results[0] || []).map(style => ({
+            (results) => {
+                const styles = (results[0] || []).map((style) => ({
                     id: style.path,
                     displayName: style.name,
                 }))
-                const uiLocales = (results[1] || []).map(locale => ({
+                const uiLocales = (results[1] || []).map((locale) => ({
                     id: locale.locale,
                     displayName: locale.name,
                 }))
-                const dbLocales = (results[2] || []).map(locale => ({
+                const dbLocales = (results[2] || []).map((locale) => ({
                     id: locale.locale,
                     displayName: locale.name,
                 }))
@@ -71,7 +71,7 @@ appActions.init.subscribe(() => {
                     document.querySelector('#app')
                 )
             },
-            error => {
+            (error) => {
                 log.error('Failed to load user settings:', error)
             }
         )

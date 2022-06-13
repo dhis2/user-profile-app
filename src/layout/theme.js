@@ -8,10 +8,10 @@ import {
     darkBlack,
     white,
     grey400,
-} from 'material-ui/styles/colors'
-import getMuiTheme from 'material-ui/styles/getMuiTheme'
-import Spacing from 'material-ui/styles/spacing'
-import { fade } from 'material-ui/utils/colorManipulator'
+} from 'material-ui/styles/colors.js'
+import getMuiTheme from 'material-ui/styles/getMuiTheme.js'
+import Spacing from 'material-ui/styles/spacing.js'
+import { fade } from 'material-ui/utils/colorManipulator.js'
 
 const theme = {
     spacing: Spacing,

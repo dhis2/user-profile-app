@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import i18n from '../locales'
-import AboutSection from './AboutSection.component'
+import i18n from '../locales/index.js'
+import AboutSection from './AboutSection.component.js'
 
 const parseDateFromUTCString = (utcString, d2, hideIfEmpty) => {
     try {
@@ -30,7 +30,6 @@ const attributes = {
         {
             key: null,
             label: i18n.t('Web API'),
-            // eslint-disable-next-line react/display-name
             getDisplayValue: (_value, d2) => (
                 <a
                     target="_blank"

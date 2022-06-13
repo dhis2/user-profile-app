@@ -1,7 +1,7 @@
 import { Button } from '@dhis2/ui'
 import PropTypes from 'prop-types'
 import React from 'react'
-import i18n from '../../locales'
+import i18n from '../../locales/index.js'
 import { useModal } from '../use-modal.js'
 import ConfirmDeleteModal from './ConfirmDeleteModal.component.js'
 import ExistingToken from './ExistingToken.component.js'

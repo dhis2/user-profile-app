@@ -1,8 +1,8 @@
 import { Card, CardText } from 'material-ui/Card'
 import PropTypes from 'prop-types'
 import React from 'react'
-import InfoHeader from '../layout/InfoHeader.component'
-import InfoRow from '../layout/InfoRow.component'
+import InfoHeader from '../layout/InfoHeader.component.js'
+import InfoRow from '../layout/InfoRow.component.js'
 
 const styles = {
     card: {

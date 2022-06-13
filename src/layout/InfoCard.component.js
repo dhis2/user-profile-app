@@ -1,9 +1,9 @@
 import { Card, CardText } from 'material-ui/Card'
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import settingsKeyMapping from '../userSettingsMapping'
-import InfoHeader from './InfoHeader.component'
-import InfoRow from './InfoRow.component'
+import settingsKeyMapping from '../userSettingsMapping.js'
+import InfoHeader from './InfoHeader.component.js'
+import InfoRow from './InfoRow.component.js'
 
 const styles = {
     card: {
@@ -22,7 +22,7 @@ class InfoCard extends Component {
         Promise.all([
             this.props.valueStore.state.getUserRoles(),
             this.props.valueStore.state.getOrganisationUnits(),
-        ]).then(response => {
+        ]).then((response) => {
             this.userRoles = response[0]
             this.userOrgUnits = response[1]
             this.setState({
@@ -33,7 +33,7 @@ class InfoCard extends Component {
 
     getUserOrgUnitsValue() {
         const userOrgUnitsValues = []
-        this.userOrgUnits.valuesContainerMap.forEach(value =>
+        this.userOrgUnits.valuesContainerMap.forEach((value) =>
             userOrgUnitsValues.push(value.name)
         )
         return userOrgUnitsValues.join(', ')
@@ -41,7 +41,7 @@ class InfoCard extends Component {
 
     getUserRolesValue() {
         const userRolesValues = []
-        this.userRoles.valuesContainerMap.forEach(value =>
+        this.userRoles.valuesContainerMap.forEach((value) =>
             userRolesValues.push(value.name)
         )
         return userRolesValues.join(', ')
@@ -105,7 +105,7 @@ class InfoCard extends Component {
     }
 
     getLabelComponents(labelNames) {
-        const labelComponents = labelNames.map(labelName =>
+        const labelComponents = labelNames.map((labelName) =>
             this.getLabelComponent(labelName)
         )
         return labelComponents

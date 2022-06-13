@@ -1,6 +1,6 @@
 import moment from 'moment'
 
-const getTokenExpirationDate = value => {
+const getTokenExpirationDate = (value) => {
     const today = moment()
 
     switch (value) {

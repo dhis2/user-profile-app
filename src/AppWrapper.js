@@ -2,17 +2,17 @@ import { useD2 } from '@dhis2/app-runtime-adapter-d2'
 import log from 'loglevel'
 import React from 'react'
 import AppRouter from './app.router.js'
-import optionValueStore from './optionValue.store'
-import userProfileStore from './profile/profile.store'
-import userSettingsStore from './settings/userSettings.store'
-import './locales'
+import optionValueStore from './optionValue.store.js'
+import userProfileStore from './profile/profile.store.js'
+import userSettingsStore from './settings/userSettings.store.js'
+import './locales/index.js'
 import './layout/app.css'
 
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
 const AppWrapper = () => {
     const { d2 } = useD2({
-        onInitialized: d2 => {
+        onInitialized: (d2) => {
             const api = d2.Api.getApi()
 
             return Promise.all([
@@ -23,16 +23,16 @@ const AppWrapper = () => {
                 d2.system.settings.all(),
                 api.get('2fa/qr'),
             ]).then(
-                results => {
-                    const styles = (results[0] || []).map(style => ({
+                (results) => {
+                    const styles = (results[0] || []).map((style) => ({
                         id: style.path,
                         displayName: style.name,
                     }))
-                    const uiLocales = (results[1] || []).map(locale => ({
+                    const uiLocales = (results[1] || []).map((locale) => ({
                         id: locale.locale,
                         displayName: locale.name,
                     }))
-                    const dbLocales = (results[2] || []).map(locale => ({
+                    const dbLocales = (results[2] || []).map((locale) => ({
                         id: locale.locale,
                         displayName: locale.name,
                     }))
@@ -57,7 +57,7 @@ const AppWrapper = () => {
                         userSettingsStore.state
                     )
                 },
-                error => {
+                (error) => {
                     log.error('Failed to load user settings:', error)
                 }
             )

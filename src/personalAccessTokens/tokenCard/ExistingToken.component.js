@@ -2,12 +2,12 @@ import { Tag, Tooltip } from '@dhis2/ui'
 import moment from 'moment'
 import PropTypes from 'prop-types'
 import React from 'react'
-import i18n from '../../locales'
+import i18n from '../../locales/index.js'
 import styles from './ExistingToken.module.css'
 import TokenPropType from './TokenPropType.js'
 
 const getAttribute = (attributes, type, field) => {
-    const attribute = attributes.find(attribute => attribute.type === type)
+    const attribute = attributes.find((attribute) => attribute.type === type)
     if (!attribute) {
         return null
     }
@@ -66,7 +66,7 @@ const ExistingToken = ({ token }) => {
             {allowedMethods && (
                 <Item title={i18n.t('Allowed HTTP methods')}>
                     <div className={styles.allowedMethods}>
-                        {allowedMethods.map(method => (
+                        {allowedMethods.map((method) => (
                             <Tag key={method} positive>
                                 {method}
                             </Tag>
@@ -77,7 +77,7 @@ const ExistingToken = ({ token }) => {
             {allowedIps && (
                 <Item title={i18n.t('Allowed IP addresses')}>
                     <ul className={styles.allowedList}>
-                        {allowedIps.map(ip => (
+                        {allowedIps.map((ip) => (
                             <li key={ip}>{ip}</li>
                         ))}
                     </ul>
@@ -86,7 +86,7 @@ const ExistingToken = ({ token }) => {
             {allowedReferrers && (
                 <Item title={i18n.t('Allowed referrers')}>
                     <ul className={styles.allowedList}>
-                        {allowedReferrers.map(referrer => (
+                        {allowedReferrers.map((referrer) => (
                             <li key={referrer}>{referrer}</li>
                         ))}
                     </ul>

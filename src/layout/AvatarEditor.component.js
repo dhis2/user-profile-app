@@ -1,11 +1,11 @@
 import CircularProgress from 'material-ui/CircularProgress'
 import FlatButton from 'material-ui/FlatButton'
-import ActionDelete from 'material-ui/svg-icons/action/delete'
-import FileUpload from 'material-ui/svg-icons/file/file-upload'
+import ActionDelete from 'material-ui/svg-icons/action/delete.js'
+import FileUpload from 'material-ui/svg-icons/file/file-upload.js'
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import userSettingsActions from '../app.actions'
-import i18n from '../locales'
+import userSettingsActions from '../app.actions.js'
+import i18n from '../locales/index.js'
 import './avatareditor.component.css'
 
 class AvatarEditor extends Component {
@@ -25,13 +25,13 @@ class AvatarEditor extends Component {
     }
 
     getInputRef = () => this.inputRef
-    setInputRef = node => (this.inputRef = node)
+    setInputRef = (node) => (this.inputRef = node)
 
     parseAvatarSrc(avatarId) {
         return `${this.api.baseUrl}/fileResources/${avatarId}/data`
     }
 
-    onFileSelect = async event => {
+    onFileSelect = async (event) => {
         const { onChange } = this.props
         // Setup form data for image file
         const file = event.target.files[0]

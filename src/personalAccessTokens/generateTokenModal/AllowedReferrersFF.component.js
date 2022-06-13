@@ -1,8 +1,8 @@
 import { ReactFinalForm, TextAreaFieldFF } from '@dhis2/ui'
 import React from 'react'
-import i18n from '../../locales'
+import i18n from '../../locales/index.js'
 
-const isValidUrl = url => {
+const isValidUrl = (url) => {
     try {
         const parsedUrl = new URL(url)
         return ['http:', 'https:'].includes(parsedUrl.protocol)
@@ -11,14 +11,14 @@ const isValidUrl = url => {
     }
 }
 
-const referrerValidator = value => {
+const referrerValidator = (value) => {
     if (!value) {
         return
     }
 
     const referrers = value
         .split('\n')
-        .filter(referrer => referrer.trim() !== '')
+        .filter((referrer) => referrer.trim() !== '')
     for (const referrer of referrers) {
         if (!isValidUrl(referrer)) {
             return i18n.t(`Invalid referrer '{{- referrer}}'`, { referrer })

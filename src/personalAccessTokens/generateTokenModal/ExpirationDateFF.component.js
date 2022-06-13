@@ -7,11 +7,11 @@ import {
 } from '@dhis2/ui'
 import PropTypes from 'prop-types'
 import React from 'react'
-import i18n from '../../locales'
+import i18n from '../../locales/index.js'
 import styles from './ExpirationDateFF.module.css'
 import getTokenExpirationDate from './getTokenExpirationDate.js'
 
-const futureDateValidator = value => {
+const futureDateValidator = (value) => {
     if (!value) {
         return null
     }
@@ -44,7 +44,7 @@ const expirationTimeOptions = [
     },
 ]
 
-const renderExpirationDate = value => {
+const renderExpirationDate = (value) => {
     if (!value || value === 'CUSTOM') {
         return null
     }
