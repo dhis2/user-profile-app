@@ -1,18 +1,18 @@
 [main]
-host = https://www.transifex.com
-lang_map = fa_AF: prs, uz@Cyrl: uz, uz@Latn: uz_Latn
+host     = https://www.transifex.com
+lang_map = uz@Latn: uz_Latn, fa_AF: prs, uz@Cyrl: uz
 
-[app-user-profile.user-profile-pot]
-file_filter = i18n/module/<lang>.po
+[o:hisp-uio:p:app-user-profile:r:i18n-module-en-properties]
+file_filter  = i18n/module/i18n_module_<lang>.properties
+source_file  = i18n/module/i18n_module_en.properties
+source_lang  = en
+type         = PROPERTIES
 minimum_perc = 0
-source_file = i18n/module/user-profile.pot
-source_lang = en
-type = PO
 
-
-[app-user-profile.i18n-module-en-properties]
-file_filter = i18n/module/i18n_module_<lang>.properties
+[o:hisp-uio:p:app-user-profile:r:user-profile-pot]
+file_filter  = i18n/module/<lang>.po
+source_file  = i18n/module/user-profile.pot
+source_lang  = en
+type         = PO
 minimum_perc = 0
-source_file = i18n/module/i18n_module_en.properties
-source_lang = en
-type = PROPERTIES
+
