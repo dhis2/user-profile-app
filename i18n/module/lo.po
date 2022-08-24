@@ -1,6 +1,7 @@
 # 
 # Translators:
 # phil_dhis2, 2019
+# Thuy Nguyen <thuynguyen@hispvietnam.org>, 2022
 # 
 #, fuzzy
 msgid ""
@@ -9,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-01 00:28-0400\n"
 "PO-Revision-Date: 2019-09-02 16:41+0000\n"
-"Last-Translator: phil_dhis2, 2019\n"
+"Last-Translator: Thuy Nguyen <thuynguyen@hispvietnam.org>, 2022\n"
 "Language-Team: Lao (https://www.transifex.com/hisp-uio/teams/100509/lo/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -234,7 +235,7 @@ msgstr "ແມ່ນ"
 
 #: false_notifications
 msgid "No"
-msgstr "ບໍ່"
+msgstr "ບໍ່ແມນ"
 
 #: value_required
 msgid "This field can't be left blank"
