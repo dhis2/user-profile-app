@@ -5,13 +5,14 @@
 # Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2021
 # Pablo Pajuelo Cabezas <ppajuelo@quadram.mobi>, 2021
 # phil_dhis2, 2021
+# Carlos Tejo Alonso, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: phil_dhis2, 2021\n"
+"Last-Translator: Carlos Tejo Alonso, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/hisp-uio/teams/100509/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +24,7 @@ msgid "Never"
 msgstr "Nunca"
 
 msgid "Invalid date"
-msgstr ""
+msgstr "Fecha no válida"
 
 msgid "Web API"
 msgstr "Web de la API"
@@ -74,7 +75,7 @@ msgid "Environment variable"
 msgstr "Variable de ambiente"
 
 msgid "System ID"
-msgstr ""
+msgstr "ID del sistema"
 
 msgid "Last monitoring success"
 msgstr ""
@@ -131,10 +132,10 @@ msgid "Spatial support"
 msgstr ""
 
 msgid "System info"
-msgstr ""
+msgstr "Información del sistema"
 
 msgid "Database"
-msgstr ""
+msgstr "Base de datos"
 
 msgid "Edit account settings"
 msgstr ""
@@ -171,6 +172,8 @@ msgid ""
 "Password should be at least 8 characters with at least 1 digit, 1 uppercase "
 "letter and 1 special character"
 msgstr ""
+"La contraseña debe tener al menos 8 caracteres con al menos 1 dígito, 1 "
+"letra mayúscula y un carácter especial"
 
 msgid "Repeat new password"
 msgstr "Repita la contraseña"
@@ -187,7 +190,7 @@ msgid ""
 msgstr ""
 
 msgid "Password changed successfully"
-msgstr ""
+msgstr "Contraseña actualizada correctamente."
 
 msgid "You need to login again to continue using the application."
 msgstr ""
@@ -426,16 +429,16 @@ msgid "Token expiration date must be in the future"
 msgstr ""
 
 msgid "7 days"
-msgstr ""
+msgstr "7 días"
 
 msgid "30 days"
-msgstr ""
+msgstr "30 días"
 
 msgid "60 days"
-msgstr ""
+msgstr "60 días"
 
 msgid "90 days"
-msgstr ""
+msgstr "90 días"
 
 msgid "Custom..."
 msgstr ""

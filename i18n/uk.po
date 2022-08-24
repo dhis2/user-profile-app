@@ -4,13 +4,14 @@
 # Viktor Varland <viktor@dhis2.org>, 2021
 # phil_dhis2, 2021
 # Wanda <wanda@frontlineaids.org>, 2021
+# Éva Tamási, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Wanda <wanda@frontlineaids.org>, 2021\n"
+"Last-Translator: Éva Tamási, 2022\n"
 "Language-Team: Ukrainian (https://www.transifex.com/hisp-uio/teams/100509/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -294,13 +295,13 @@ msgid "This field should be a URL"
 msgstr "Це поле повинно містити веб-адресу"
 
 msgid "This field should contain a list of URLs"
-msgstr ""
+msgstr "Це поле має містити список URL-адрес"
 
 msgid "This field should be a number"
 msgstr "Це поле повинно включати цифри"
 
 msgid "This field should be a positive number"
-msgstr ""
+msgstr "Це поле має бути додатним числом"
 
 msgid "This field should be an email"
 msgstr "Це поле повинно включати адресу електронної пошти"
@@ -317,7 +318,7 @@ msgid "Use system default"
 msgstr "Використати системні налаштування за замовчуванням"
 
 msgid "No options"
-msgstr ""
+msgstr "Немає параметрів"
 
 msgid "System default"
 msgstr "Системні налаштування за замовчуванням"
