@@ -310,7 +310,7 @@ msgid "Use system default"
 msgstr "Bruk systemstandard"
 
 msgid "No options"
-msgstr ""
+msgstr "Ingen alternativer"
 
 msgid "System default"
 msgstr "Systemstandard"
