@@ -496,7 +496,7 @@ msgid "Newly created token"
 msgstr ""
 
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Menyalin ke clipboard"
 
 msgid "Delete"
 msgstr "Hapus"
