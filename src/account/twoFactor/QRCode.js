@@ -1,8 +1,8 @@
+import { useConfig } from '@dhis2/app-runtime'
 import { Paper } from 'material-ui'
 import PropTypes from 'prop-types'
 import React from 'react'
 import i18n from '../../locales/index.js'
-import profileSettingsStore from '../../profile/profile.store.js'
 
 const styles = {
     qrCodePaperWrapper: {
@@ -20,22 +20,27 @@ const styles = {
     },
 }
 
-const QRCode = ({ open }) => (
-    <div style={styles.qrCodePaperWrapper}>
-        {open && (
-            <Paper style={styles.qrCodePaper}>
-                <div style={styles.statusMessage}>
-                    <b>{i18n.t('Barcode/QR code to scan')}</b>
-                </div>
-                <img
-                    style={styles.qrCode}
-                    alt="qrCode"
-                    src={profileSettingsStore.state.qrCodeUrl}
-                />
-            </Paper>
-        )}
-    </div>
-)
+const QRCode = ({ open }) => {
+    const { baseUrl, apiVersion } = useConfig()
+
+    return (
+        <div style={styles.qrCodePaperWrapper}>
+            {open && (
+                <Paper style={styles.qrCodePaper}>
+                    <h1>Henkie</h1>
+                    <div style={styles.statusMessage}>
+                        <b>{i18n.t('Barcode/QR code to scan')}</b>
+                    </div>
+                    <img
+                        style={styles.qrCode}
+                        alt="qrCode"
+                        src={`${baseUrl}/api/${apiVersion}/2fa/qrCode`}
+                    />
+                </Paper>
+            )}
+        </div>
+    )
+}
 
 QRCode.propTypes = { open: PropTypes.bool.isRequired }
 
