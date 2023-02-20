@@ -27,7 +27,6 @@ const QRCode = ({ open }) => {
         <div style={styles.qrCodePaperWrapper}>
             {open && (
                 <Paper style={styles.qrCodePaper}>
-                    <h1>Henkie</h1>
                     <div style={styles.statusMessage}>
                         <b>{i18n.t('Barcode/QR code to scan')}</b>
                     </div>
