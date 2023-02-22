@@ -22,6 +22,11 @@ function SidebarWrapper(props) {
             icon: 'settings',
         },
         {
+            key: 'twoFactor',
+            label: i18n.t('Two factor authentication'),
+            icon: 'phonelink_lock',
+        },
+        {
             key: 'viewProfile',
             label: i18n.t('Full profile'),
             icon: 'face',
