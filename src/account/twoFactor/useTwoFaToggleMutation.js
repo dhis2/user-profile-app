@@ -16,17 +16,8 @@ const disableMutation = {
     resource: '/2fa/disabled',
 }
 
-const getAlertMessage = ({ originalIsTwoFactorOn, error }) => {
-    if (originalIsTwoFactorOn) {
-        if (error) {
-            return (
-                error?.message ??
-                i18n.t('Could not disable two factor authentication')
-            )
-        } else {
-            return i18n.t('Two factor authentication was disabled successfully')
-        }
-    } else {
+const getAlertMessage = ({ nextIsTwoFaEnabled, error }) => {
+    if (nextIsTwoFaEnabled) {
         if (error) {
             return (
                 error?.message ??
@@ -35,40 +26,49 @@ const getAlertMessage = ({ originalIsTwoFactorOn, error }) => {
         } else {
             return i18n.t('Two factor authentication was enabled successfully')
         }
+    } else {
+        if (error) {
+            return (
+                error?.message ??
+                i18n.t('Could not disable two factor authentication')
+            )
+        } else {
+            return i18n.t('Two factor authentication was disabled successfully')
+        }
     }
 }
 
 const getAlertOptions = ({ error }) =>
     error ? { critical: true } : { success: true }
 
-export default function useTwoFaToggleMutation({ isTwoFactorOn }) {
+export default function useTwoFaToggleMutation({ isTwoFaEnabled }) {
     const [
         lastActionWasTwoFaDisableSuccess,
         setLastActionWasTwoFaDisableSuccess,
     ] = useState(false)
     const { show: showAlert } = useAlert(getAlertMessage, getAlertOptions)
-    const mutationOptions = useMemo(
-        () => ({
+    const mutationOptions = useMemo(() => {
+        const nextIsTwoFaEnabled = !isTwoFaEnabled
+        return {
             onComplete: () => {
-                userProfileStore.state.twoFaEnabled = !isTwoFactorOn
+                userProfileStore.state.twoFaEnabled = nextIsTwoFaEnabled
                 userProfileStore.setState(userProfileStore.state)
-                setLastActionWasTwoFaDisableSuccess(isTwoFactorOn)
-                showAlert({ originalIsTwoFactorOn: isTwoFactorOn })
+                setLastActionWasTwoFaDisableSuccess(!nextIsTwoFaEnabled)
+                showAlert({ nextIsTwoFaEnabled })
             },
             onError: (error) => {
                 console.error(error)
                 setLastActionWasTwoFaDisableSuccess(false)
-                showAlert({ originalIsTwoFactorOn: isTwoFactorOn, error })
+                showAlert({ nextIsTwoFaEnabled, error })
             },
-        }),
-        [isTwoFactorOn, showAlert]
-    )
+        }
+    }, [isTwoFaEnabled, showAlert])
     const enableDataMutation = useDataMutation(enableMutation, mutationOptions)
     const disableDataMutation = useDataMutation(
         disableMutation,
         mutationOptions
     )
-    const [toggleTwoFa, currentMutation] = isTwoFactorOn
+    const [toggleTwoFa, currentMutation] = isTwoFaEnabled
         ? disableDataMutation
         : enableDataMutation
 

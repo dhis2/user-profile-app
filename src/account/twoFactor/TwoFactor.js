@@ -13,18 +13,18 @@ import TwoFactorToggler from './TwoFactorToggler.js'
 import useTwoFaToggleMutation from './useTwoFaToggleMutation.js'
 
 const TwoFactor = () => {
-    const [isTwoFactorOn, setIsTwoFactorOn] = useState(
+    const [isTwoFaEnabled, setIsTwoFaEnabled] = useState(
         profileSettingsStore.state.twoFaEnabled
     )
     const { toggleTwoFa, loading, error, lastActionWasTwoFaDisableSuccess } =
         useTwoFaToggleMutation({
-            isTwoFactorOn,
+            isTwoFaEnabled,
         })
 
     useEffect(() => {
         const subscription = profileSettingsStore.subscribe(
             ({ twoFaEnabled }) => {
-                setIsTwoFactorOn(twoFaEnabled)
+                setIsTwoFaEnabled(twoFaEnabled)
             }
         )
         return () => subscription.unsubscribe()
@@ -36,22 +36,22 @@ const TwoFactor = () => {
                 {i18n.t('2 Factor Authentication')}
             </div>
             <Card className={styles.card}>
-                <TwoFactorStatus isTwoFactorOn={isTwoFactorOn} />
+                <TwoFactorStatus isTwoFaEnabled={isTwoFaEnabled} />
                 {lastActionWasTwoFaDisableSuccess && (
                     <TwoFactorDisableNoticeBox />
                 )}
-                {isTwoFactorOn ? (
+                {isTwoFaEnabled ? (
                     <TwoFactorDisableInstructions />
                 ) : (
                     <TwoFactorEnableInstructions />
                 )}
                 <TwoFactorToggler
-                    isTwoFactorOn={isTwoFactorOn}
+                    isTwoFaEnabled={isTwoFaEnabled}
                     toggleTwoFa={toggleTwoFa}
                     error={error}
                     loading={loading}
                 />
-                {!isTwoFactorOn && !lastActionWasTwoFaDisableSuccess && (
+                {!isTwoFaEnabled && !lastActionWasTwoFaDisableSuccess && (
                     <TwoFactorEnableNoticeBox />
                 )}
             </Card>

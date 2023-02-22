@@ -4,17 +4,17 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styles from './TwoFactorStatus.module.css'
 
-const TwoFactorStatus = ({ isTwoFactorOn }) => (
+const TwoFactorStatus = ({ isTwoFaEnabled }) => (
     <h4 className={styles.statusHeader}>
         {i18n.t('2 Factor Authentication is currently')}{' '}
-        <Tag positive={isTwoFactorOn} bold>
-            {isTwoFactorOn ? i18n.t('enabled') : i18n.t('disabled')}
+        <Tag positive={isTwoFaEnabled} bold>
+            {isTwoFaEnabled ? i18n.t('enabled') : i18n.t('disabled')}
         </Tag>
     </h4>
 )
 
 TwoFactorStatus.propTypes = {
-    isTwoFactorOn: PropTypes.bool.isRequired,
+    isTwoFaEnabled: PropTypes.bool.isRequired,
 }
 
 export default TwoFactorStatus

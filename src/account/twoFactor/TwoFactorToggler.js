@@ -19,7 +19,7 @@ const getValidationText = (hasErrorState, error) => {
     }
 }
 
-const TwoFactorToggler = ({ error, isTwoFactorOn, loading, toggleTwoFa }) => {
+const TwoFactorToggler = ({ error, isTwoFaEnabled, loading, toggleTwoFa }) => {
     const [touched, setTouched] = useState(false)
     const [twoFaConfirmationCode, setTwoFaConfirmationCode] = useState('')
     const isTwoFaConfirmationCodeValid =
@@ -53,7 +53,7 @@ const TwoFactorToggler = ({ error, isTwoFactorOn, loading, toggleTwoFa }) => {
                 large
                 className={styles.button}
             >
-                {isTwoFactorOn ? i18n.t('Disable') : i18n.t('Enable')}
+                {isTwoFaEnabled ? i18n.t('Disable') : i18n.t('Enable')}
             </Button>
         </div>
     )
@@ -61,7 +61,7 @@ const TwoFactorToggler = ({ error, isTwoFactorOn, loading, toggleTwoFa }) => {
 
 TwoFactorToggler.propTypes = {
     error: PropTypes.object.isRequired,
-    isTwoFactorOn: PropTypes.bool.isRequired,
+    isTwoFaEnabled: PropTypes.bool.isRequired,
     loading: PropTypes.bool.isRequired,
     toggleTwoFa: PropTypes.func.isRequired,
 }
