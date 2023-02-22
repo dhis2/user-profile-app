@@ -1,0 +1,12 @@
+.header {
+    font-size: 24px;
+    font-weight: 300;
+    padding: 24px 0 12px 16px;
+}
+.container .card {
+    display: block;
+    width: auto;
+    margin-right: 16px;
+    padding: 16px;
+    max-width: 960px;
+}

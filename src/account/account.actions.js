@@ -44,41 +44,38 @@ accountActions.setPassword.subscribe(
     }
 )
 
-accountActions.setTwoFactorStatus.subscribe(
-    ({ data: twoFA, complete, error }) => {
-        const payload = { userCredentials: { twoFA } }
-        const status = twoFA ? 'on' : 'off'
+accountActions.setTwoFactorStatus.subscribe(({ data, complete, error }) => {
+    const { twoFaEnabled, twoFaConfirmationCode } = data
 
-        getD2().then((d2) => {
-            userProfileStore.state.twoFA = twoFA
-            userProfileStore.setState(userProfileStore.state)
+    getD2().then((d2) => {
+        const api = d2.Api.getApi()
+        const url = twoFaEnabled ? '/2fa/enabled' : '/2fa/disabled'
+        const payload = { code: twoFaConfirmationCode }
 
-            const api = d2.Api.getApi()
-            api.update('/me', payload)
-                .then(() => {
-                    log.debug(`2 Factor is now ${status}.`)
-                    appActions.showSnackbarMessage({
-                        message: twoFA
-                            ? i18n.t('2-Factor successfully turned ON')
-                            : i18n.t('2-Factor successfully turned OFF'),
-                        status: 'success',
-                    })
-                    complete()
+        api.post(url, payload)
+            .then(() => {
+                log.debug(`2 Factor is now ${twoFaEnabled}.`)
+                appActions.showSnackbarMessage({
+                    message: twoFaEnabled
+                        ? i18n.t('2-Factor successfully turned ON')
+                        : i18n.t('2-Factor successfully turned OFF'),
+                    status: 'success',
                 })
-                .catch((err) => {
-                    appActions.showSnackbarMessage({
-                        message: twoFA
-                            ? i18n.t('Failed to turn ON 2-Factor')
-                            : i18n.t('Failed to turn OFF 2-Factor'),
-                        status: 'error',
-                    })
-                    log.error('Failed to change 2 Factor status:', err)
-                    error()
+                userProfileStore.state.twoFaEnabled = twoFaEnabled
+                userProfileStore.setState(userProfileStore.state)
+                complete()
+            })
+            .catch((err) => {
+                appActions.showSnackbarMessage({
+                    message: twoFaEnabled
+                        ? i18n.t('Failed to turn ON 2-Factor')
+                        : i18n.t('Failed to turn OFF 2-Factor'),
+                    status: 'error',
                 })
-        })
-    }
-)
-
-accountActions.getQrCode.subscribe(() => {})
+                log.error('Failed to change 2 Factor status:', err)
+                error()
+            })
+    })
+})
 
 export default accountActions

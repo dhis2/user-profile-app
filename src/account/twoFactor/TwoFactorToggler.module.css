@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    /* prevent content shift when showing error */
+    min-height: 80px;
+    margin-bottom: 16px;
+}
+.button {
+    margin-top: 18px;
+}

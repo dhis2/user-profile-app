@@ -1,0 +1,16 @@
+.qrCode {
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+.orderedList {
+    padding-inline-start: 24px;
+    line-height: 24px;
+}
+
+.unOrderedList {
+    padding-inline-start: 16px;
+    line-height: 20px;
+}
+

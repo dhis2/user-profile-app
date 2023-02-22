@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2023-02-21T14:30:10.297Z\n"
-"PO-Revision-Date: 2023-02-21T14:30:10.297Z\n"
+"POT-Creation-Date: 2023-02-22T11:53:09.643Z\n"
+"PO-Revision-Date: 2023-02-22T11:53:09.643Z\n"
 
 msgid "Never"
 msgstr "Never"
@@ -202,41 +202,62 @@ msgstr "Failed to turn ON 2-Factor"
 msgid "Failed to turn OFF 2-Factor"
 msgstr "Failed to turn OFF 2-Factor"
 
-msgid "Turn OFF"
-msgstr "Turn OFF"
-
-msgid "Turn ON"
-msgstr "Turn ON"
-
-msgid "2-Factor Verification is ON"
-msgstr "2-Factor Verification is ON"
-
-msgid "2-Factor Verification is OFF"
-msgstr "2-Factor Verification is OFF"
-
-msgid "Cancel"
-msgstr "Cancel"
-
-msgid "Confirm"
-msgstr "Confirm"
-
-msgid "2FA confirmation code"
-msgstr "2FA confirmation code"
-
-msgid "Please enter a 6 digit code"
-msgstr "Please enter a 6 digit code"
-
 msgid "2 Factor Authentication"
 msgstr "2 Factor Authentication"
 
-msgid "Do you want to turn OFF 2-Factor?"
-msgstr "Do you want to turn OFF 2-Factor?"
+msgid ""
+"To disable 2 Factor Authentication for your account, first enter the "
+"confirmation code from the Authenticator App and then click \"Disable\"."
+msgstr ""
+"To disable 2 Factor Authentication for your account, first enter the "
+"confirmation code from the Authenticator App and then click \"Disable\"."
 
-msgid "Do you want to turn ON 2-Factor?"
-msgstr "Do you want to turn ON 2-Factor?"
+msgid "Instructions after disabling 2FA"
+msgstr "Instructions after disabling 2FA"
 
-msgid "2-factor authentication is currently"
-msgstr "2-factor authentication is currently"
+msgid ""
+"When disabling 2-factor authentication from you account we recommend to "
+"also remove the account from the Authenticator App on your phone/tablet, so "
+"you don't run into problems if you want to re-enable it in the future."
+msgstr ""
+"When disabling 2-factor authentication from you account we recommend to "
+"also remove the account from the Authenticator App on your phone/tablet, so "
+"you don't run into problems if you want to re-enable it in the future."
+
+msgid "Play store"
+msgstr "Play store"
+
+msgid "App store"
+msgstr "App store"
+
+msgid "In the Authenticator App, click the ➕ sign to add a new entry."
+msgstr "In the Authenticator App, click the ➕ sign to add a new entry."
+
+msgid "Choose \"Scan a barcode\""
+msgstr "Choose \"Scan a barcode\""
+
+msgid "Scan the barcode below"
+msgstr "Scan the barcode below"
+
+msgid "Now enter the code from the Authenticator app below and click \"enable\""
+msgstr "Now enter the code from the Authenticator app below and click \"enable\""
+
+msgid "Instructions for re-enabling 2-Factor Authentication"
+msgstr "Instructions for re-enabling 2-Factor Authentication"
+
+msgid ""
+"When enabling 2 Factor Authentication, you have to add a new entry to the "
+"Authenticator App. If you previously had configured the Authenticator App "
+"for this user account you need to remove this entry and create a new one, "
+"otherwise two Factor Authentication can not be enabled."
+msgstr ""
+"When enabling 2 Factor Authentication, you have to add a new entry to the "
+"Authenticator App. If you previously had configured the Authenticator App "
+"for this user account you need to remove this entry and create a new one, "
+"otherwise two Factor Authentication can not be enabled."
+
+msgid "2 Factor Authentication is currently"
+msgstr "2 Factor Authentication is currently"
 
 msgid "enabled"
 msgstr "enabled"
@@ -244,81 +265,35 @@ msgstr "enabled"
 msgid "disabled"
 msgstr "disabled"
 
-msgid "Instructions for enabling 2-Factor Authentication"
-msgstr "Instructions for enabling 2-Factor Authentication"
+msgid "Could not update 2 Factor authentication status"
+msgstr "Could not update 2 Factor authentication status"
 
-msgid ""
-"To enable 2-Factor Authentication you need to enter a verification code. To "
-"generate this verification code you must use the Authenticator app. If you "
-"do not have this app you must download it on your phone/tablet."
-msgstr ""
-"To enable 2-Factor Authentication you need to enter a verification code. To "
-"generate this verification code you must use the Authenticator app. If you "
-"do not have this app you must download it on your phone/tablet."
+msgid "Please enter a 6 digit code"
+msgstr "Please enter a 6 digit code"
 
-msgid "Hide Authenticator app download instructions"
-msgstr "Hide Authenticator app download instructions"
+msgid "2 Factor Authentication code"
+msgstr "2 Factor Authentication code"
 
-msgid "Show Authenticator app download instructions"
-msgstr "Show Authenticator app download instructions"
+msgid "XXXXXX"
+msgstr "XXXXXX"
 
-msgid "Instructions for disabling 2FA"
-msgstr "Instructions for disabling 2FA"
+msgid "Disable"
+msgstr "Disable"
 
-msgid ""
-"When disabling 2-factor authentication from you account we recommend to "
-"also remove the account from the Authenticator app on your phone/tablet, so "
-"you don't run into problems if you want to re-anable it in the future."
-msgstr ""
-"When disabling 2-factor authentication from you account we recommend to "
-"also remove the account from the Authenticator app on your phone/tablet, so "
-"you don't run into problems if you want to re-anable it in the future."
+msgid "Enable"
+msgstr "Enable"
 
-msgid "Download the Authenticator app"
-msgstr "Download the Authenticator app"
+msgid "Could not disable two factor authentication"
+msgstr "Could not disable two factor authentication"
 
-msgid "What kind of phone/tablet do you have?"
-msgstr "What kind of phone/tablet do you have?"
+msgid "Two factor authentication was disabled successfully"
+msgstr "Two factor authentication was disabled successfully"
 
-msgid "Download the Authenticator App from the "
-msgstr "Download the Authenticator App from the "
+msgid "Could not enable 2 Factor Authentication"
+msgstr "Could not enable 2 Factor Authentication"
 
-msgid "In the Authenticator App select "
-msgstr "In the Authenticator App select "
-
-msgid "Begin setup."
-msgstr "Begin setup."
-
-msgid "Choose "
-msgstr "Choose "
-
-msgid "Scan a barcode."
-msgstr "Scan a barcode."
-
-msgid "Barcode/QR code to scan"
-msgstr "Barcode/QR code to scan"
-
-msgid "Instructions"
-msgstr "Instructions"
-
-msgid ""
-"To use 2-Factor authentication when logging in, and also when "
-"enabling/disablinbg 2FA for your user account, you will be asked to enter a "
-"verification code. To generate this verification code you must use the "
-"Authenticator app. If you do not have this app you must download it on your "
-"phone/tablet."
-msgstr ""
-"To use 2-Factor authentication when logging in, and also when "
-"enabling/disablinbg 2FA for your user account, you will be asked to enter a "
-"verification code. To generate this verification code you must use the "
-"Authenticator app. If you do not have this app you must download it on your "
-"phone/tablet."
-
-msgid "Hide instructions"
-msgstr "Hide instructions"
-
-msgid "Show instructions"
-msgstr "Show instructions"
+msgid "Two factor authentication was enabled successfully"
+msgstr "Two factor authentication was enabled successfully"
 
 msgid "Failed to upload profile picture"
 msgstr "Failed to upload profile picture"
@@ -530,6 +505,9 @@ msgstr ""
 
 msgid "Token details"
 msgstr "Token details"
+
+msgid "Cancel"
+msgstr "Cancel"
 
 msgid ""
 "Important: IP address validation relies on the X-Forwarded-For header, "
