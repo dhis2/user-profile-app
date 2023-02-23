@@ -29,7 +29,7 @@ const TwoFactorToggler = ({ error, isTwoFaEnabled, loading, toggleTwoFa }) => {
     const hasErrorState = (!isTwoFaConfirmationCodeValid && touched) || !!error
 
     return (
-        <div className={styles.container}>
+        <form className={styles.container}>
             <InputField
                 label={i18n.t('2 Factor Authentication code')}
                 placeholder={i18n.t('XXXXXX')} // As seen on GitHub
@@ -52,10 +52,11 @@ const TwoFactorToggler = ({ error, isTwoFaEnabled, loading, toggleTwoFa }) => {
                 primary
                 large
                 className={styles.button}
+                type="submit"
             >
                 {isTwoFaEnabled ? i18n.t('Disable') : i18n.t('Enable')}
             </Button>
-        </div>
+        </form>
     )
 }
 
