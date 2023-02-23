@@ -6,7 +6,7 @@ import styles from './TwoFactorEnableInstructions.module.css'
 const PlayStoreLink = () => (
     <a
         href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2"
-        rel="noopener"
+        rel="noopener noreferrer"
     >
         {i18n.t('Play store')}
     </a>
@@ -14,8 +14,8 @@ const PlayStoreLink = () => (
 
 const AppStoreLink = () => (
     <a
-        href="https://itunes.apple.com/no/app/google-authenticator/id388497605?mt=8"
-        rel="noreferrer"
+        href="https://itunes.apple.com/app/google-authenticator/id388497605?mt=8"
+        rel="noopener noreferrer"
     >
         {i18n.t('App store')}
     </a>
