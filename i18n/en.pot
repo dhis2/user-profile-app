@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2023-02-22T11:53:09.643Z\n"
-"PO-Revision-Date: 2023-02-22T11:53:09.643Z\n"
+"POT-Creation-Date: 2023-02-23T14:26:05.271Z\n"
+"PO-Revision-Date: 2023-02-23T14:26:05.271Z\n"
 
 msgid "Never"
 msgstr "Never"
@@ -190,18 +190,6 @@ msgstr "Login"
 msgid "Failed to update password"
 msgstr "Failed to update password"
 
-msgid "2-Factor successfully turned ON"
-msgstr "2-Factor successfully turned ON"
-
-msgid "2-Factor successfully turned OFF"
-msgstr "2-Factor successfully turned OFF"
-
-msgid "Failed to turn ON 2-Factor"
-msgstr "Failed to turn ON 2-Factor"
-
-msgid "Failed to turn OFF 2-Factor"
-msgstr "Failed to turn OFF 2-Factor"
-
 msgid "2 Factor Authentication"
 msgstr "2 Factor Authentication"
 
@@ -216,11 +204,11 @@ msgid "Instructions after disabling 2FA"
 msgstr "Instructions after disabling 2FA"
 
 msgid ""
-"When disabling 2-factor authentication from you account we recommend to "
+"After disabling 2-factor authentication on your account we recommend to "
 "also remove the account from the Authenticator App on your phone/tablet, so "
 "you don't run into problems if you want to re-enable it in the future."
 msgstr ""
-"When disabling 2-factor authentication from you account we recommend to "
+"After disabling 2-factor authentication on your account we recommend to "
 "also remove the account from the Authenticator App on your phone/tablet, so "
 "you don't run into problems if you want to re-enable it in the future."
 
@@ -283,17 +271,17 @@ msgstr "Disable"
 msgid "Enable"
 msgstr "Enable"
 
-msgid "Could not disable two factor authentication"
-msgstr "Could not disable two factor authentication"
-
-msgid "Two factor authentication was disabled successfully"
-msgstr "Two factor authentication was disabled successfully"
-
 msgid "Could not enable 2 Factor Authentication"
 msgstr "Could not enable 2 Factor Authentication"
 
 msgid "Two factor authentication was enabled successfully"
 msgstr "Two factor authentication was enabled successfully"
+
+msgid "Could not disable two factor authentication"
+msgstr "Could not disable two factor authentication"
+
+msgid "Two factor authentication was disabled successfully"
+msgstr "Two factor authentication was disabled successfully"
 
 msgid "Failed to upload profile picture"
 msgstr "Failed to upload profile picture"
@@ -357,6 +345,9 @@ msgstr "User settings"
 
 msgid "Account settings"
 msgstr "Account settings"
+
+msgid "Two factor authentication"
+msgstr "Two factor authentication"
 
 msgid "Full profile"
 msgstr "Full profile"

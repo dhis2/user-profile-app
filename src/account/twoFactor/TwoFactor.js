@@ -1,8 +1,7 @@
 import i18n from '@dhis2/d2-i18n'
 import { Card } from '@dhis2/ui'
 import cx from 'classnames'
-import React, { useState, useEffect } from 'react'
-import profileSettingsStore from '../../profile/profile.store.js'
+import React from 'react'
 import styles from './TwoFactor.module.css'
 import TwoFactorDisableInstructions from './TwoFactorDisableInstructions.js'
 import TwoFactorDisableNoticeBox from './TwoFactorDisableNoticeBox.js'
@@ -13,22 +12,13 @@ import TwoFactorToggler from './TwoFactorToggler.js'
 import useTwoFaToggleMutation from './useTwoFaToggleMutation.js'
 
 const TwoFactor = () => {
-    const [isTwoFaEnabled, setIsTwoFaEnabled] = useState(
-        profileSettingsStore.state.twoFaEnabled
-    )
-    const { toggleTwoFa, loading, error, lastActionWasTwoFaDisableSuccess } =
-        useTwoFaToggleMutation({
-            isTwoFaEnabled,
-        })
-
-    useEffect(() => {
-        const subscription = profileSettingsStore.subscribe(
-            ({ twoFaEnabled }) => {
-                setIsTwoFaEnabled(twoFaEnabled)
-            }
-        )
-        return () => subscription.unsubscribe()
-    }, [])
+    const {
+        isTwoFaEnabled,
+        toggleTwoFa,
+        loading,
+        error,
+        lastActionWasTwoFaDisableSuccess,
+    } = useTwoFaToggleMutation()
 
     return (
         <div className={cx('content-area', styles.container)}>

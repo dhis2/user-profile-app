@@ -1,23 +1,23 @@
 import { useDataMutation, useAlert } from '@dhis2/app-runtime'
 import i18n from '@dhis2/d2-i18n'
-import { useMemo, useState } from 'react'
+import { useMemo, useState, useEffect } from 'react'
 import userProfileStore from '../../profile/profile.store.js'
 
-const mutationBase = {
+const mutationDefinitionBase = {
     type: 'create',
     data: ({ code }) => ({ code }),
 }
-const enableMutation = {
-    ...mutationBase,
+const enableMutationDefinition = {
+    ...mutationDefinitionBase,
     resource: '/2fa/enabled',
 }
-const disableMutation = {
-    ...mutationBase,
+const disableMutationDefinition = {
+    ...mutationDefinitionBase,
     resource: '/2fa/disabled',
 }
 
-const getAlertMessage = ({ nextIsTwoFaEnabled, error }) => {
-    if (nextIsTwoFaEnabled) {
+const getAlertMessage = ({ attemptingToEnableTwoFa, error }) => {
+    if (attemptingToEnableTwoFa) {
         if (error) {
             return (
                 error?.message ??
@@ -41,38 +41,52 @@ const getAlertMessage = ({ nextIsTwoFaEnabled, error }) => {
 const getAlertOptions = ({ error }) =>
     error ? { critical: true } : { success: true }
 
-export default function useTwoFaToggleMutation({ isTwoFaEnabled }) {
+export default function useTwoFaToggleMutation() {
+    const [isTwoFaEnabled, setIsTwoFaEnabled] = useState(
+        userProfileStore.state.twoFaEnabled
+    )
     const [
         lastActionWasTwoFaDisableSuccess,
         setLastActionWasTwoFaDisableSuccess,
     ] = useState(false)
     const { show: showAlert } = useAlert(getAlertMessage, getAlertOptions)
     const mutationOptions = useMemo(() => {
-        const nextIsTwoFaEnabled = !isTwoFaEnabled
+        const attemptingToEnableTwoFa = !isTwoFaEnabled
         return {
             onComplete: () => {
-                userProfileStore.state.twoFaEnabled = nextIsTwoFaEnabled
+                userProfileStore.state.twoFaEnabled = attemptingToEnableTwoFa
                 userProfileStore.setState(userProfileStore.state)
-                setLastActionWasTwoFaDisableSuccess(!nextIsTwoFaEnabled)
-                showAlert({ nextIsTwoFaEnabled })
+                setLastActionWasTwoFaDisableSuccess(!attemptingToEnableTwoFa)
+                showAlert({ attemptingToEnableTwoFa })
             },
             onError: (error) => {
                 console.error(error)
                 setLastActionWasTwoFaDisableSuccess(false)
-                showAlert({ nextIsTwoFaEnabled, error })
+                showAlert({ attemptingToEnableTwoFa, error })
             },
         }
     }, [isTwoFaEnabled, showAlert])
-    const enableDataMutation = useDataMutation(enableMutation, mutationOptions)
+    const enableDataMutation = useDataMutation(
+        enableMutationDefinition,
+        mutationOptions
+    )
     const disableDataMutation = useDataMutation(
-        disableMutation,
+        disableMutationDefinition,
         mutationOptions
     )
     const [toggleTwoFa, currentMutation] = isTwoFaEnabled
         ? disableDataMutation
         : enableDataMutation
 
+    useEffect(() => {
+        const subscription = userProfileStore.subscribe(({ twoFaEnabled }) => {
+            setIsTwoFaEnabled(twoFaEnabled)
+        })
+        return () => subscription.unsubscribe()
+    }, [])
+
     return {
+        isTwoFaEnabled,
         loading: currentMutation.loading || currentMutation.fetching,
         error: currentMutation.error,
         toggleTwoFa,
