@@ -5,12 +5,12 @@ import React from 'react'
 import styles from './TwoFactorStatus.module.css'
 
 const TwoFactorStatus = ({ isTwoFaEnabled }) => (
-    <h4 className={styles.statusHeader}>
+    <div className={styles.statusHeader}>
         {i18n.t('2 Factor Authentication is currently')}{' '}
         <Tag positive={isTwoFaEnabled} bold>
             {isTwoFaEnabled ? i18n.t('enabled') : i18n.t('disabled')}
         </Tag>
-    </h4>
+    </div>
 )
 
 TwoFactorStatus.propTypes = {
