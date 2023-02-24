@@ -1,15 +1,18 @@
 import i18n from '@dhis2/d2-i18n'
-import { Tag } from '@dhis2/ui'
+import { NoticeBox } from '@dhis2/ui'
 import PropTypes from 'prop-types'
 import React from 'react'
 import styles from './TwoFactorStatus.module.css'
 
 const TwoFactorStatus = ({ isTwoFaEnabled }) => (
     <div className={styles.statusHeader}>
-        {i18n.t('2 Factor Authentication is currently')}{' '}
-        <Tag positive={isTwoFaEnabled} bold>
-            {isTwoFaEnabled ? i18n.t('enabled') : i18n.t('disabled')}
-        </Tag>
+        {isTwoFaEnabled ? (
+            <NoticeBox valid>
+                {i18n.t('Two-factor authentication is on.')}
+            </NoticeBox>
+        ) : (
+            <NoticeBox>{i18n.t('Two-factor authentication is off.')}</NoticeBox>
+        )}
     </div>
 )
 

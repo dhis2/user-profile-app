@@ -1,12 +1,21 @@
 import i18n from '@dhis2/d2-i18n'
 import React from 'react'
+import styles from './TwoFactorDisableInstructions.module.css'
 
 const TwoFactorDisableInstructions = () => (
-    <p>
-        {i18n.t(
-            'To disable 2 Factor Authentication for your account, first enter the confirmation code from the Authenticator App and then click "Disable".'
-        )}
-    </p>
+    <>
+        <p className={styles.instructionsHeader}>
+            {i18n.t('Turn off two-factor authentication')}
+        </p>
+        <ol className={styles.orderedList}>
+            <li>{i18n.t('Open your authenticator app.')}</li>
+            <li>
+                {i18n.t(
+                    'Now, enter the authentication code below and click the "Turn off" button.'
+                )}
+            </li>
+        </ol>
+    </>
 )
 
 export default TwoFactorDisableInstructions

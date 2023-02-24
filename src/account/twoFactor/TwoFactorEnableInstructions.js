@@ -35,40 +35,35 @@ const QRCode = () => {
 
 const TwoFactorEnableInstructions = () => (
     <>
-        <p className={styles.intro}>
-            {i18n.t(
-                'To enable 2 Factor Authentication for your account, follow the following steps:'
-            )}
+        <p className={styles.instructionsHeader}>
+            {i18n.t('Turn on two-factor authentication')}
         </p>
         <ol className={styles.orderedList}>
             <li>
+                {i18n.t(
+                    'Make sure you have an authenticator app installed on your device. We recommend Google Authenticator'
+                )}
+                {' ('}
+                <span className={styles.downloadLink}>
+                    <PlayStoreLink />
+                </span>
+                {', '}
+                <span className={styles.downloadLink}>
+                    <AppStoreLink />
+                </span>
+                {').'}
+            </li>
+            <li>
                 <span>
                     {i18n.t(
-                        'Ensure you have the Authenticator App installed on you phone or tablet. It is available for download here:'
+                        'Use the authenticator app to scan the QR code below:'
                     )}
                 </span>
-                <ul className={styles.unOrderedList}>
-                    <li>
-                        <PlayStoreLink />
-                    </li>
-                    <li>
-                        <AppStoreLink />
-                    </li>
-                </ul>
-            </li>
-            <li>
-                {i18n.t(
-                    'In the Authenticator App, click the ➕ sign to add a new entry.'
-                )}
-            </li>
-            <li>{i18n.t('Choose "Scan a barcode"')}</li>
-            <li>
-                <span>{i18n.t('Scan the barcode below')}</span>
                 <QRCode />
             </li>
             <li>
                 {i18n.t(
-                    'Now enter the code from the Authenticator app below and click "enable"'
+                    'Now, enter the code from your authenticator app below and click the "Turn on" button.'
                 )}
             </li>
         </ol>
