@@ -1,0 +1,25 @@
+.qrCode {
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+.instructionsHeader {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--colors-grey900);
+}
+
+.orderedList {
+    padding-inline-start: 24px;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.orderedList li + li {
+    margin-top: var(--spacers-dp8);
+}
+
+.downloadLink a {
+    color: var(--colors-grey900);
+}

@@ -21,7 +21,7 @@ const AppWrapper = () => {
                 api.get('locales/db'),
                 api.get('userSettings', { useFallback: false }),
                 d2.system.settings.all(),
-                api.get('2fa/qr'),
+                api.get('2fa/enabled'),
             ]).then(
                 (results) => {
                     const styles = (results[0] || []).map((style) => ({
@@ -38,8 +38,13 @@ const AppWrapper = () => {
                     }))
                     const systemDefault = { ...results[4] }
 
+                    // Deleting this property because this is no longer valid
+                    // it will be removed from the response object in the
+                    // future, but until then, we remove it here...
+                    delete d2.currentUser.twoFA
+
                     userProfileStore.setState(d2.currentUser)
-                    userProfileStore.state.qrCodeUrl = results[5].url
+                    userProfileStore.state.twoFaEnabled = results[5]
                     userSettingsStore.setState(results[3])
                     optionValueStore.setState({
                         styles,

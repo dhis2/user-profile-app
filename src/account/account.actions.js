@@ -3,13 +3,8 @@ import Action from 'd2-ui/lib/action/Action'
 import log from 'loglevel'
 import appActions from '../app.actions.js'
 import i18n from '../locales/index.js'
-import userProfileStore from '../profile/profile.store.js'
 
-const accountActions = Action.createActionsFromNames([
-    'setPassword',
-    'setTwoFactorStatus',
-    'getQrCode',
-])
+const accountActions = Action.createActionsFromNames(['setPassword'])
 
 accountActions.setPassword.subscribe(
     ({ data: [oldPassword, newPassword, onSuccess], complete, error }) => {
@@ -43,42 +38,5 @@ accountActions.setPassword.subscribe(
         })
     }
 )
-
-accountActions.setTwoFactorStatus.subscribe(
-    ({ data: twoFA, complete, error }) => {
-        const payload = { userCredentials: { twoFA } }
-        const status = twoFA ? 'on' : 'off'
-
-        getD2().then((d2) => {
-            userProfileStore.state.twoFA = twoFA
-            userProfileStore.setState(userProfileStore.state)
-
-            const api = d2.Api.getApi()
-            api.update('/me', payload)
-                .then(() => {
-                    log.debug(`2 Factor is now ${status}.`)
-                    appActions.showSnackbarMessage({
-                        message: twoFA
-                            ? i18n.t('2-Factor successfully turned ON')
-                            : i18n.t('2-Factor successfully turned OFF'),
-                        status: 'success',
-                    })
-                    complete()
-                })
-                .catch((err) => {
-                    appActions.showSnackbarMessage({
-                        message: twoFA
-                            ? i18n.t('Failed to turn ON 2-Factor')
-                            : i18n.t('Failed to turn OFF 2-Factor'),
-                        status: 'error',
-                    })
-                    log.error('Failed to change 2 Factor status:', err)
-                    error()
-                })
-        })
-    }
-)
-
-accountActions.getQrCode.subscribe(() => {})
 
 export default accountActions

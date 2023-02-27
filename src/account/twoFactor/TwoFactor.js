@@ -1,94 +1,54 @@
-import React, { Component } from 'react'
-import i18n from '../../locales/index.js'
-import profileSettingsStore from '../../profile/profile.store.js'
-import accountActions from '../account.actions.js'
-import QRCode from './QRCode.js'
-import SetupGuide from './setup-guide/SetupGuide.component.js'
-import Status2FA from './Status2FA.js'
-import Status2FAChangeDialog from './Status2FAChangeDialog.js'
+import i18n from '@dhis2/d2-i18n'
+import { Card } from '@dhis2/ui'
+import cx from 'classnames'
+import React from 'react'
+import styles from './TwoFactor.module.css'
+import TwoFactorDisableInstructions from './TwoFactorDisableInstructions.js'
+import TwoFactorDisableNoticeBox from './TwoFactorDisableNoticeBox.js'
+import TwoFactorEnableInstructions from './TwoFactorEnableInstructions.js'
+import TwoFactorEnableNotice from './TwoFactorEnableNotice.js'
+import TwoFactorIntroduction from './TwoFactorIntroduction.js'
+import TwoFactorStatus from './TwoFactorStatus.js'
+import TwoFactorToggler from './TwoFactorToggler.js'
+import useTwoFaToggleMutation from './useTwoFaToggleMutation.js'
 
-const styles = {
-    header: {
-        fontSize: 24,
-        fontWeight: 300,
-        padding: '24px 0 12px 16px',
-    },
-}
+const TwoFactor = () => {
+    const {
+        isTwoFaEnabled,
+        toggleTwoFa,
+        loading,
+        error,
+        lastActionWasTwoFaDisableSuccess,
+    } = useTwoFaToggleMutation()
 
-class TwoFactor extends Component {
-    state = {
-        canRender: false,
-        isTwoFactorOn: false,
-        dialogOpened: false,
-    }
-
-    componentDidMount() {
-        const status = profileSettingsStore.state.twoFA
-        this.setState({
-            isTwoFactorOn: status,
-            canRender: true,
-        })
-    }
-
-    closeSetupDialog = () => this.setState({ dialogOpened: false })
-
-    openSetupDialog = () => this.setState({ dialogOpened: true })
-
-    changeTwoFactorStatus = () => {
-        this.setState(
-            {
-                isTwoFactorOn: !this.state.isTwoFactorOn,
-            },
-            () => {
-                accountActions.setTwoFactorStatus(this.state.isTwoFactorOn)
-            }
-        )
-    }
-
-    handleDialogAnswer = () => {
-        this.changeTwoFactorStatus()
-        this.closeSetupDialog()
-    }
-
-    render() {
-        return (
-            <div className="content-area">
-                <div style={styles.header}>2 Factor</div>
-                {this.state.canRender && (
-                    <div>
-                        <Status2FA
-                            isTwoFactorOn={this.state.isTwoFactorOn}
-                            openSetupDialog={this.openSetupDialog}
-                            buttonLabel={
-                                this.state.isTwoFactorOn
-                                    ? i18n.t('Turn OFF')
-                                    : i18n.t('Turn ON')
-                            }
-                            statusMessage={
-                                this.state.isTwoFactorOn
-                                    ? i18n.t('2-Factor Verification is ON')
-                                    : i18n.t('2-Factor Verification is OFF')
-                            }
-                        />
-                        <Status2FAChangeDialog
-                            dialogTitle={
-                                this.state.isTwoFactorOn
-                                    ? i18n.t(
-                                          'Do you want to turn OFF 2-Factor?'
-                                      )
-                                    : i18n.t('Do you want to turn ON 2-Factor?')
-                            }
-                            closeSetupDialog={this.closeSetupDialog}
-                            handleDialogAnswer={this.handleDialogAnswer}
-                            dialogOpened={this.state.dialogOpened}
-                        />
-                        <SetupGuide open={this.state.isTwoFactorOn} />
-                        <QRCode open={this.state.isTwoFactorOn} />
-                    </div>
-                )}
+    return (
+        <div className={cx('content-area', styles.container)}>
+            <div className={styles.header}>
+                {i18n.t('Two-factor Authentication', { keySeparator: '<|>' })}
             </div>
-        )
-    }
+            <Card className={styles.card}>
+                <TwoFactorIntroduction />
+                <TwoFactorStatus isTwoFaEnabled={isTwoFaEnabled} />
+                {lastActionWasTwoFaDisableSuccess && (
+                    <TwoFactorDisableNoticeBox />
+                )}
+                {isTwoFaEnabled ? (
+                    <TwoFactorDisableInstructions />
+                ) : (
+                    <TwoFactorEnableInstructions />
+                )}
+                <TwoFactorToggler
+                    isTwoFaEnabled={isTwoFaEnabled}
+                    toggleTwoFa={toggleTwoFa}
+                    error={error}
+                    loading={loading}
+                />
+                {!isTwoFaEnabled && !lastActionWasTwoFaDisableSuccess && (
+                    <TwoFactorEnableNotice />
+                )}
+            </Card>
+        </div>
+    )
 }
 
 export default TwoFactor

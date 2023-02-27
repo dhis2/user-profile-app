@@ -1,0 +1,4 @@
+.statusHeader {
+    width: 100%;
+    margin: var(--spacers-dp16) 0 var(--spacers-dp32);
+}
