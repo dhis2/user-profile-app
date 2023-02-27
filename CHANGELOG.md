@@ -1,3 +1,10 @@
+## [30.3.30](https://github.com/dhis2/user-profile-app/compare/v30.3.29...v30.3.30) (2023-02-27)
+
+
+### Bug Fixes
+
+* adjust 2fa configuration ui to new api ([#1244](https://github.com/dhis2/user-profile-app/issues/1244)) ([84a04e1](https://github.com/dhis2/user-profile-app/commit/84a04e1d96f1aaa094423f5b471484c36f16b3f5)), closes [#1245](https://github.com/dhis2/user-profile-app/issues/1245)
+
 ## [30.3.29](https://github.com/dhis2/user-profile-app/compare/v30.3.28...v30.3.29) (2022-11-29)
 
 
