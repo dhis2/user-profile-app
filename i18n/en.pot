@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2023-02-24T10:07:13.705Z\n"
-"PO-Revision-Date: 2023-02-24T10:07:13.705Z\n"
+"POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
+"PO-Revision-Date: 2023-02-27T14:55:39.217Z\n"
 
 msgid "Never"
 msgstr "Never"
@@ -193,18 +193,26 @@ msgstr "Failed to update password"
 msgid "Two-factor Authentication"
 msgstr "Two-factor Authentication"
 
-msgid ""
-"To disable 2 Factor Authentication for your account, first enter the "
-"confirmation code from the Authenticator App and then click \"Disable\"."
-msgstr ""
-"To disable 2 Factor Authentication for your account, first enter the "
-"confirmation code from the Authenticator App and then click \"Disable\"."
+msgid "Turn off two-factor authentication"
+msgstr "Turn off two-factor authentication"
+
+msgid "Open your authenticator app."
+msgstr "Open your authenticator app."
+
+msgid "Now, enter the authentication code below and click the \"Turn off\" button."
+msgstr "Now, enter the authentication code below and click the \"Turn off\" button."
 
 msgid "Remove two-factor account"
 msgstr "Remove two-factor account"
 
-msgid ""Two-factor authentication is now turned off. It is recommended to remove the account from your authenticator app now to prevent any future issues re-enabling two-factor authentication."
-msgstr "Two-factor authentication is now turned off. It is recommended to remove the account from your authenticator app now to prevent any future issues re-enabling two-factor authentication."
+msgid ""
+"Two-factor authentication is now turned off. It is recommended to remove "
+"the account from your authenticator app now to prevent any future issues "
+"re-enabling two-factor authentication."
+msgstr ""
+"Two-factor authentication is now turned off. It is recommended to remove "
+"the account from your authenticator app now to prevent any future issues "
+"re-enabling two-factor authentication."
 
 msgid "Play store"
 msgstr "Play store"
@@ -228,13 +236,6 @@ msgid ""
 msgstr ""
 "Now, enter the code from your authenticator app below and click the \"Turn "
 "on\" button."
-
-msgid ""
-"Now, enter the authentication code below and click the \"Turn "
-"off\" button."
-msgstr ""
-"Now, enter the authentication code below and click the \"Turn "
-"off\" button."
 
 msgid "Already set up two-factor authentication before?"
 msgstr "Already set up two-factor authentication before?"
@@ -263,10 +264,6 @@ msgstr "Two-factor authentication is on."
 msgid "Two-factor authentication is off."
 msgstr "Two-factor authentication is off."
 
-msgid "Open your authenticator app."
-msgstr "Open your authenticator app."
-
-
 msgid "Could not update two-factor authentication"
 msgstr "Could not update two-factor authentication"
 
@@ -279,9 +276,6 @@ msgstr ""
 
 msgid "Six digit authentication code"
 msgstr "Six digit authentication code"
-
-msgid "Turn off two-factor authentication"
-msgstr "Turn off two-factor authentication"
 
 msgid "Could not enable 2 Factor Authentication"
 msgstr "Could not enable 2 Factor Authentication"

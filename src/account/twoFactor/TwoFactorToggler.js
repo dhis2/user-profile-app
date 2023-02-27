@@ -10,7 +10,9 @@ const getValidationText = (hasErrorState, error) => {
     if (error) {
         return (
             error?.message ??
-            i18n.t('Could not update two-factor authentication')
+            i18n.t('Could not update two-factor authentication', {
+                keySeparator: '<|>',
+            })
         )
     } else if (hasErrorState) {
         return i18n.t(
@@ -55,8 +57,12 @@ const TwoFactorToggler = ({ error, isTwoFaEnabled, loading, toggleTwoFa }) => {
                 type="submit"
             >
                 {isTwoFaEnabled
-                    ? i18n.t('Turn off two-factor authentication')
-                    : i18n.t('Turn on two-factor authentication')}
+                    ? i18n.t('Turn off two-factor authentication', {
+                          keySeparator: '<|>',
+                      })
+                    : i18n.t('Turn on two-factor authentication', {
+                          keySeparator: '<|>',
+                      })}
             </Button>
         </form>
     )

@@ -7,10 +7,11 @@ const TwoFactorDisableNoticeBox = () => (
     <NoticeBox
         className={styles.container}
         warning
-        title={i18n.t('Remove two-factor account')}
+        title={i18n.t('Remove two-factor account', { keySeparator: '<|>' })}
     >
         {i18n.t(
-            'Two-factor authentication is now turned off. It is recommended to remove the account from your authenticator app now to prevent any future issues re-enabling two-factor authentication.'
+            'Two-factor authentication is now turned off. It is recommended to remove the account from your authenticator app now to prevent any future issues re-enabling two-factor authentication.',
+            { keySeparator: '<|>' }
         )}
     </NoticeBox>
 )

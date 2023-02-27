@@ -8,10 +8,16 @@ const TwoFactorStatus = ({ isTwoFaEnabled }) => (
     <div className={styles.statusHeader}>
         {isTwoFaEnabled ? (
             <NoticeBox valid>
-                {i18n.t('Two-factor authentication is on.')}
+                {i18n.t('Two-factor authentication is on.', {
+                    keySeparator: '<|>',
+                })}
             </NoticeBox>
         ) : (
-            <NoticeBox>{i18n.t('Two-factor authentication is off.')}</NoticeBox>
+            <NoticeBox>
+                {i18n.t('Two-factor authentication is off.', {
+                    keySeparator: '<|>',
+                })}
+            </NoticeBox>
         )}
     </div>
 )

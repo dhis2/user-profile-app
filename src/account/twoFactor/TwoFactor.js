@@ -24,7 +24,7 @@ const TwoFactor = () => {
     return (
         <div className={cx('content-area', styles.container)}>
             <div className={styles.header}>
-                {i18n.t('Two-factor Authentication')}
+                {i18n.t('Two-factor Authentication', { keySeparator: '<|>' })}
             </div>
             <Card className={styles.card}>
                 <TwoFactorIntroduction />
