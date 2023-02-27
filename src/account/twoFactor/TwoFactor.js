@@ -6,7 +6,8 @@ import styles from './TwoFactor.module.css'
 import TwoFactorDisableInstructions from './TwoFactorDisableInstructions.js'
 import TwoFactorDisableNoticeBox from './TwoFactorDisableNoticeBox.js'
 import TwoFactorEnableInstructions from './TwoFactorEnableInstructions.js'
-import TwoFactorEnableNoticeBox from './TwoFactorEnableNoticeBox.js'
+import TwoFactorEnableNotice from './TwoFactorEnableNotice.js'
+import TwoFactorIntroduction from './TwoFactorIntroduction.js'
 import TwoFactorStatus from './TwoFactorStatus.js'
 import TwoFactorToggler from './TwoFactorToggler.js'
 import useTwoFaToggleMutation from './useTwoFaToggleMutation.js'
@@ -23,9 +24,10 @@ const TwoFactor = () => {
     return (
         <div className={cx('content-area', styles.container)}>
             <div className={styles.header}>
-                {i18n.t('2 Factor Authentication')}
+                {i18n.t('Two-factor Authentication', { keySeparator: '<|>' })}
             </div>
             <Card className={styles.card}>
+                <TwoFactorIntroduction />
                 <TwoFactorStatus isTwoFaEnabled={isTwoFaEnabled} />
                 {lastActionWasTwoFaDisableSuccess && (
                     <TwoFactorDisableNoticeBox />
@@ -42,7 +44,7 @@ const TwoFactor = () => {
                     loading={loading}
                 />
                 {!isTwoFaEnabled && !lastActionWasTwoFaDisableSuccess && (
-                    <TwoFactorEnableNoticeBox />
+                    <TwoFactorEnableNotice />
                 )}
             </Card>
         </div>

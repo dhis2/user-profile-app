@@ -7,6 +7,7 @@
     display: block;
     width: auto;
     margin-right: 16px;
-    padding: 16px;
+    padding: var(--spacers-dp24);
     max-width: 960px;
+    height: auto;
 }

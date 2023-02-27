@@ -1,9 +1,3 @@
-.qrCode {
-    width: 200px;
-    height: 200px;
-    display: block;
-}
-
 .instructionsHeader {
     font-size: 18px;
     font-weight: 500;
@@ -18,8 +12,4 @@
 
 .orderedList li + li {
     margin-top: var(--spacers-dp8);
-}
-
-.downloadLink a {
-    color: var(--colors-grey900);
 }

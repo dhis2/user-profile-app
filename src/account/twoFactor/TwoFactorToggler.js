@@ -10,10 +10,14 @@ const getValidationText = (hasErrorState, error) => {
     if (error) {
         return (
             error?.message ??
-            i18n.t('Could not update 2 Factor authentication status')
+            i18n.t('Could not update two-factor authentication', {
+                keySeparator: '<|>',
+            })
         )
     } else if (hasErrorState) {
-        return i18n.t('Please enter a 6 digit code')
+        return i18n.t(
+            'This code does not look right. Enter the six digit code from your authentication app.'
+        )
     } else {
         return undefined
     }
@@ -31,8 +35,7 @@ const TwoFactorToggler = ({ error, isTwoFaEnabled, loading, toggleTwoFa }) => {
     return (
         <form className={styles.container}>
             <InputField
-                label={i18n.t('2 Factor Authentication code')}
-                placeholder={i18n.t('XXXXXX')} // As seen on GitHub
+                label={i18n.t('Six digit authentication code')}
                 value={twoFaConfirmationCode}
                 onChange={({ value }) => setTwoFaConfirmationCode(value)}
                 onBlur={() => setTouched(true)}
@@ -50,11 +53,16 @@ const TwoFactorToggler = ({ error, isTwoFaEnabled, loading, toggleTwoFa }) => {
                     setTwoFaConfirmationCode('')
                 }}
                 primary
-                large
                 className={styles.button}
                 type="submit"
             >
-                {isTwoFaEnabled ? i18n.t('Disable') : i18n.t('Enable')}
+                {isTwoFaEnabled
+                    ? i18n.t('Turn off two-factor authentication', {
+                          keySeparator: '<|>',
+                      })
+                    : i18n.t('Turn on two-factor authentication', {
+                          keySeparator: '<|>',
+                      })}
             </Button>
         </form>
     )
