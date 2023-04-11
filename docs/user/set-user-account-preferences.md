@@ -15,7 +15,7 @@ such as "Joe" in the analysis modules, rather than your full name.
 
 In **Edit account settings**, you can reset your password and setup 2-Factor
 authentication. Setting up 2-Factor authentication will require you to
-download the Google Authenticator app on you mobile device.
+download an authenticator app such as the Google Authenticator app on your mobile device.
 
 In the **View full profile** section, you find a summary of your profile details.
 This section includes a few fields that you cannot edit yourself,
