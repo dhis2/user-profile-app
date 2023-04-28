@@ -1,3 +1,10 @@
+## [30.3.31](https://github.com/dhis2/user-profile-app/compare/v30.3.30...v30.3.31) (2023-04-28)
+
+
+### Bug Fixes
+
+* update endpoint used to update profile photo ([0bc3bcd](https://github.com/dhis2/user-profile-app/commit/0bc3bcd42a97d1fd0974a0d124d27d7ffe97a8ed))
+
 ## [30.3.30](https://github.com/dhis2/user-profile-app/compare/v30.3.29...v30.3.30) (2023-02-27)
 
 
