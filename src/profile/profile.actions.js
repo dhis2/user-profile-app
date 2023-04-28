@@ -73,8 +73,7 @@ function getProfileUpdatePromise({ key, value, payload, userId, d2 }) {
     if (key === 'avatar') {
         if (value) {
             // Set avatar
-            // Post avatar directly to the `/user/<ID>` endpoint, because d2 update calls to `/me` cause issues
-            return api.patch(`/users/${userId}`, { avatar: value.id })
+            return api.update('me', { avatar: { id: value.id } })
         } else {
             // Clear avatar
             return removeAvatar(userId, api)
