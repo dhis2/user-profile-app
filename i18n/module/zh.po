@@ -1,9 +1,9 @@
 # 
 # Translators:
-# easylin <lin_xd@126.com>, 2021
 # phil_dhis2, 2021
 # Viktor Varland <viktor@dhis2.org>, 2021
 # 晓东 林 <13981924470@126.com>, 2021
+# easylin <lin_xd@126.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -12,8 +12,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-01 00:28-0400\n"
 "PO-Revision-Date: 2021-03-09 23:24+0000\n"
-"Last-Translator: 晓东 林 <13981924470@126.com>, 2021\n"
-"Language-Team: Chinese (https://www.transifex.com/hisp-uio/teams/100509/zh/)\n"
+"Last-Translator: easylin <lin_xd@126.com>, 2023\n"
+"Language-Team: Chinese (https://app.transifex.com/hisp-uio/teams/100509/zh/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -39,11 +39,11 @@ msgstr "E-mail"
 
 #: surname
 msgid "Surname"
-msgstr "姓"
+msgstr "称谓"
 
 #: first_name
 msgid "First name"
-msgstr "姓"
+msgstr "姓名"
 
 #: old_password
 msgid "Old password"
@@ -121,7 +121,7 @@ msgstr "国籍"
 
 #: employer
 msgid "Employer"
-msgstr "雇员"
+msgstr "服务机构"
 
 #: education
 msgid "Education"
