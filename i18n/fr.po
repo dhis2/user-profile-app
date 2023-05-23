@@ -1,21 +1,22 @@
 # 
 # Translators:
-# Viktor Varland <viktor@dhis2.org>, 2021
-# Karoline Tufte Lien <karoline@dhis2.org>, 2021
-# Yayra Gomado <ygomado@hispwca.org>, 2021
-# Edem Kossi <ekossi@hispwca.org>, 2021
-# Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2021
-# phil_dhis2, 2021
-# tx_e2f_fr r25 <tx_e2f_fr_r25@ate2f.com>, 2021
-# Yao Selom SAKA (HISP WCA) <ysaka@hispwca.org>, 2022
+# Edem Kossi <ekossi@hispwca.org>, 2023
+# Viktor Varland <viktor@dhis2.org>, 2023
+# Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2023
+# tx_e2f_frfr r6 <tx_e2f_frfr_r661@ate2f.com>, 2023
+# Yao Selom SAKA (HISP WCA) <ysaka@hispwca.org>, 2023
+# tx_e2f_fr r25 <tx_e2f_fr_r25@ate2f.com>, 2023
+# phil_dhis2, 2023
+# Yayra Gomado <ygomado@hispwca.org>, 2023
+# Karoline Tufte Lien <karoline@dhis2.org>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
-"PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Yao Selom SAKA (HISP WCA) <ysaka@hispwca.org>, 2022\n"
-"Language-Team: French (https://www.transifex.com/hisp-uio/teams/100509/fr/)\n"
+"POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
+"PO-Revision-Date: 2023-05-22 19:26+0000\n"
+"Last-Translator: Karoline Tufte Lien <karoline@dhis2.org>, 2023\n"
+"Language-Team: French (https://app.transifex.com/hisp-uio/teams/100509/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -124,7 +125,7 @@ msgid "CPU cores"
 msgstr "noyaux CPU"
 
 msgid "Calendar"
-msgstr "Calendar"
+msgstr "Calendrier"
 
 msgid "Name"
 msgstr "Nom"
@@ -201,86 +202,99 @@ msgstr "Mot de passe modifié avec succès"
 
 msgid "You need to login again to continue using the application."
 msgstr ""
-"Vous devez de nouveau vous connecter afin de poursuivre l'utilisation de "
-"l'application."
+"Vous devez de nouveau vous connecter afin de poursuivre l’utilisation de "
+"l’application."
 
 msgid "Login"
-msgstr "Connexion"
+msgstr "Se connecter"
 
 msgid "Failed to update password"
 msgstr "Impossible de mettre à jour le mot de passe"
 
-msgid "2-Factor successfully turned ON"
-msgstr "Vérification à 2 facteurs activée avec succès"
+msgid "Two-factor Authentication"
+msgstr ""
 
-msgid "2-Factor successfully turned OFF"
-msgstr "Vérification à 2 facteurs désactivée avec succès"
+msgid "Turn off two-factor authentication"
+msgstr ""
 
-msgid "Failed to turn ON 2-Factor"
-msgstr "Impossible d'activer la vérification à 2 facteurs"
-
-msgid "Failed to turn OFF 2-Factor"
-msgstr "Impossible de désactiver la vérification à 2 facteurs"
-
-msgid "Barcode/QR code to scan"
-msgstr "Code-barres/code QR à scanner"
-
-msgid "No"
-msgstr "Non"
-
-msgid "Yes"
-msgstr "Oui"
-
-msgid "Turn OFF"
-msgstr "Désactiver"
-
-msgid "Turn ON"
-msgstr "Activer"
-
-msgid "2-Factor Verification is ON"
-msgstr "Vérification à 2 facteurs activée"
-
-msgid "2-Factor Verification is OFF"
-msgstr "Vérification à 2 facteurs désactivée"
-
-msgid "Do you want to turn OFF 2-Factor?"
-msgstr "Voulez-vous désactiver la vérification à 2 facteurs ?"
-
-msgid "Do you want to turn ON 2-Factor?"
-msgstr "Voulez-vous activer la vérification à 2 facteurs ?"
-
-msgid "Download the Authenticator app"
-msgstr "Télécharger l'application Authenticator"
-
-msgid "What kind of phone/tablet do you have?"
-msgstr "De quel type de téléphone/tablette disposez-vous ?"
-
-msgid "Download the Authenticator App from the "
-msgstr "Télécharger l’application Authenticator à partir de"
-
-msgid "In the Authenticator App select "
-msgstr "Dans l'application Authenticator, sélectionnez"
-
-msgid "Begin setup."
-msgstr "Commencez la configuration."
-
-msgid "Choose "
-msgstr "Choisir"
-
-msgid "Scan a barcode."
-msgstr "Scannez un code-barres."
+msgid "Open your authenticator app."
+msgstr ""
 
 msgid ""
-"With 2-Factor authentication turned on you will be asked to enter a second "
-"verification code when you log in. To generate this verification code you "
-"must use the Authenticator app. If you do not have this app you must "
-"download it on your phone/tablet."
+"Now, enter the authentication code below and click the \"Turn off\" button."
 msgstr ""
-"Lorsque l'authentification à 2 facteurs est activée, vous devez saisir un "
-"deuxième code de vérification au moment de votre connexion. Pour générer ce "
-"code de vérification, vous devez utiliser l'application Authenticator. Si "
-"vous ne possédez pas cette application, vous devez la télécharger sur votre "
-"téléphone/tablette."
+
+msgid "Remove two-factor account"
+msgstr ""
+
+msgid ""
+"Two-factor authentication is now turned off. It is recommended to remove the"
+" account from your authenticator app now to prevent any future issues re-"
+"enabling two-factor authentication."
+msgstr ""
+
+msgid "Play store"
+msgstr ""
+
+msgid "App store"
+msgstr "App Store"
+
+msgid "Turn on two-factor authentication"
+msgstr ""
+
+msgid ""
+"Make sure you have an authenticator app installed on your device. We "
+"recommend Google Authenticator"
+msgstr ""
+
+msgid ""
+"Now, enter the code from your authenticator app below and click the \"Turn "
+"on\" button."
+msgstr ""
+
+msgid "Already set up two-factor authentication before?"
+msgstr ""
+
+msgid ""
+"If you have set up two-factor authentication for this account before, you "
+"need to remove that entry from your authenticator app before setting it up "
+"again."
+msgstr ""
+
+msgid ""
+"Two-factor authentication protects your account with an extra layer of "
+"security. With two-factor authentication turned on, you will need to enter "
+"an authentication code from your device every time you log in."
+msgstr ""
+
+msgid "Two-factor authentication is on."
+msgstr ""
+
+msgid "Two-factor authentication is off."
+msgstr ""
+
+msgid "Could not update two-factor authentication"
+msgstr ""
+
+msgid ""
+"This code does not look right. Enter the six digit code from your "
+"authentication app."
+msgstr ""
+
+msgid "Six digit authentication code"
+msgstr ""
+
+msgid "Could not enable 2 Factor Authentication"
+msgstr ""
+
+msgid "Two factor authentication was enabled successfully"
+msgstr ""
+
+msgid "Could not disable two factor authentication"
+msgstr ""
+
+msgid "Two factor authentication was disabled successfully"
+msgstr ""
 
 msgid "Failed to upload profile picture"
 msgstr "Échec du téléchargement de la photo de profil"
@@ -319,6 +333,12 @@ msgid "Please enter a valid international phone number (+0123456789)"
 msgstr ""
 "Veuillez saisir un numéro de téléphone international valide (+0123456789)"
 
+msgid "Yes"
+msgstr "Oui"
+
+msgid "No"
+msgstr "Non"
+
 msgid "No value"
 msgstr "Pas de valeur"
 
@@ -339,6 +359,9 @@ msgstr "Paramètres d'utilisateur"
 
 msgid "Account settings"
 msgstr "Paramètres de compte"
+
+msgid "Two factor authentication"
+msgstr ""
 
 msgid "Full profile"
 msgstr "Profil complet"
@@ -414,17 +437,17 @@ msgid "Error fetching your authorities"
 msgstr "Erreur de récupération de vos autorités"
 
 msgid "Retry loading authorities"
-msgstr "Réessayer le chargement des autorisations"
+msgstr "Réessayer le chargement des autorités"
 
 msgid "This token will have the following authorities"
-msgstr "Ce jeton aura les autorisations suivantes"
+msgstr "Ce token aura les autorités suivantes"
 
 msgid ""
 "Important: this is not a security feature. The referrer header can easily be"
 " spoofed. This setting is intended to discourage unauthorised third-party "
 "developers from connecting to public access instances."
 msgstr ""
-"Important : il ne s'agit pas d'une fonction de sécurité. L'en-tête referrer "
+"Attention : il ne s'agit pas d'une fonction de sécurité. L'en-tête referrer "
 "peut facilement être usurpé. Ce paramètre est destiné à décourager les "
 "développeurs tiers non autorisés qui pourraient se connecter à des instances"
 " d'accès public."
@@ -562,7 +585,7 @@ msgid "Surname"
 msgstr "Nom de famille"
 
 msgid "Gender"
-msgstr "Genre"
+msgstr "Sexe"
 
 msgid "Male"
 msgstr "Masculin"
@@ -574,7 +597,7 @@ msgid "Other"
 msgstr "Autre"
 
 msgid "E-mail"
-msgstr "Courrier électronique"
+msgstr "Adresse email"
 
 msgid "Mobile phone number"
 msgstr "Numéro de téléphone portable"
