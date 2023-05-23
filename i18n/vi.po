@@ -1,17 +1,17 @@
 # 
 # Translators:
-# Mai Nguyen <thanhmai.jica@gmail.com>, 2021
 # Viktor Varland <viktor@dhis2.org>, 2021
 # phil_dhis2, 2021
 # Thuy Nguyen <thuynguyen@hispvietnam.org>, 2022
+# Mai Nguyen <thanhmai.jica@gmail.com>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
+"POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Thuy Nguyen <thuynguyen@hispvietnam.org>, 2022\n"
-"Language-Team: Vietnamese (https://www.transifex.com/hisp-uio/teams/100509/vi/)\n"
+"Last-Translator: Mai Nguyen <thanhmai.jica@gmail.com>, 2023\n"
+"Language-Team: Vietnamese (https://app.transifex.com/hisp-uio/teams/100509/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -196,76 +196,90 @@ msgstr "Đăng nhập"
 msgid "Failed to update password"
 msgstr "Không thể cập nhật mật khẩu"
 
-msgid "2-Factor successfully turned ON"
-msgstr "Bật thành công xác thực 2 yếu tố"
-
-msgid "2-Factor successfully turned OFF"
-msgstr "Tắt thành công xác thực 2 yếu tố"
-
-msgid "Failed to turn ON 2-Factor"
-msgstr "Không thể bật xác thực 2 yếu tố"
-
-msgid "Failed to turn OFF 2-Factor"
+msgid "Two-factor Authentication"
 msgstr ""
 
-msgid "Barcode/QR code to scan"
-msgstr "Mã vạch/Mã QR"
-
-msgid "No"
-msgstr "Không"
-
-msgid "Yes"
-msgstr "Có"
-
-msgid "Turn OFF"
-msgstr "Tắt"
-
-msgid "Turn ON"
-msgstr "Bật"
-
-msgid "2-Factor Verification is ON"
-msgstr "Bật xác thực 2 yếu tố"
-
-msgid "2-Factor Verification is OFF"
-msgstr "Tắt xác thực 2 yếu tố"
-
-msgid "Do you want to turn OFF 2-Factor?"
-msgstr "Bạn có muốn tắt xác thực 2 yếu tố"
-
-msgid "Do you want to turn ON 2-Factor?"
-msgstr "Bạn có muốn bật xác thực 2 yếu tố?"
-
-msgid "Download the Authenticator app"
-msgstr "Tải ứng dụng xác thực"
-
-msgid "What kind of phone/tablet do you have?"
-msgstr "Bạn dùng loại điện thoại/máy tính bảng nào?"
-
-msgid "Download the Authenticator App from the "
+msgid "Turn off two-factor authentication"
 msgstr ""
 
-msgid "In the Authenticator App select "
+msgid "Open your authenticator app."
 msgstr ""
-
-msgid "Begin setup."
-msgstr "Bắt đầu cài đặt"
-
-msgid "Choose "
-msgstr ""
-
-msgid "Scan a barcode."
-msgstr "Quét mã vạch."
 
 msgid ""
-"With 2-Factor authentication turned on you will be asked to enter a second "
-"verification code when you log in. To generate this verification code you "
-"must use the Authenticator app. If you do not have this app you must "
-"download it on your phone/tablet."
+"Now, enter the authentication code below and click the \"Turn off\" button."
 msgstr ""
-"Khi bật chế độ xác thực 2 yếu tố, bạn sẽ được yêu cầu nhập mã xác minh thứ "
-"hai khi đăng nhập. Để tạo mã xác minh này, bạn phải sử dụng ứng dụng Xác "
-"thực. Nếu bạn không có ứng dụng này, bạn phải tải xuống trên điện thoại/máy "
-"tính bảng của mình."
+
+msgid "Remove two-factor account"
+msgstr ""
+
+msgid ""
+"Two-factor authentication is now turned off. It is recommended to remove the"
+" account from your authenticator app now to prevent any future issues re-"
+"enabling two-factor authentication."
+msgstr ""
+
+msgid "Play store"
+msgstr ""
+
+msgid "App store"
+msgstr "Kho ứng dụng"
+
+msgid "Turn on two-factor authentication"
+msgstr ""
+
+msgid ""
+"Make sure you have an authenticator app installed on your device. We "
+"recommend Google Authenticator"
+msgstr ""
+
+msgid ""
+"Now, enter the code from your authenticator app below and click the \"Turn "
+"on\" button."
+msgstr ""
+
+msgid "Already set up two-factor authentication before?"
+msgstr ""
+
+msgid ""
+"If you have set up two-factor authentication for this account before, you "
+"need to remove that entry from your authenticator app before setting it up "
+"again."
+msgstr ""
+
+msgid ""
+"Two-factor authentication protects your account with an extra layer of "
+"security. With two-factor authentication turned on, you will need to enter "
+"an authentication code from your device every time you log in."
+msgstr ""
+
+msgid "Two-factor authentication is on."
+msgstr ""
+
+msgid "Two-factor authentication is off."
+msgstr ""
+
+msgid "Could not update two-factor authentication"
+msgstr ""
+
+msgid ""
+"This code does not look right. Enter the six digit code from your "
+"authentication app."
+msgstr ""
+
+msgid "Six digit authentication code"
+msgstr ""
+
+msgid "Could not enable 2 Factor Authentication"
+msgstr ""
+
+msgid "Two factor authentication was enabled successfully"
+msgstr ""
+
+msgid "Could not disable two factor authentication"
+msgstr ""
+
+msgid "Two factor authentication was disabled successfully"
+msgstr ""
 
 msgid "Failed to upload profile picture"
 msgstr "Không thể tải ảnh hồ sơ"
@@ -303,6 +317,12 @@ msgstr ""
 msgid "Please enter a valid international phone number (+0123456789)"
 msgstr "Nhật số điện thoại quốc tế hợp lệ"
 
+msgid "Yes"
+msgstr "Có"
+
+msgid "No"
+msgstr "Không"
+
 msgid "No value"
 msgstr "Không có giá trị"
 
@@ -323,6 +343,9 @@ msgstr "Cài đặt người dùng"
 
 msgid "Account settings"
 msgstr "Cài đặt tài khoản"
+
+msgid "Two factor authentication"
+msgstr ""
 
 msgid "Full profile"
 msgstr ""
