@@ -1,18 +1,18 @@
 # 
 # Translators:
-# Viktor Varland <viktor@dhis2.org>, 2021
-# phil_dhis2, 2021
-# Wanda <wanda@frontlineaids.org>, 2021
-# Éva Tamási, 2022
-# Nadiia <semchuk@aph.org.ua>, 2022
+# Viktor Varland <viktor@dhis2.org>, 2023
+# Nadiia <semchuk@aph.org.ua>, 2023
+# phil_dhis2, 2023
+# Éva Tamási, 2023
+# Wanda <wanda@frontlineaids.org>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
-"PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Nadiia <semchuk@aph.org.ua>, 2022\n"
-"Language-Team: Ukrainian (https://www.transifex.com/hisp-uio/teams/100509/uk/)\n"
+"POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
+"PO-Revision-Date: 2023-05-22 19:26+0000\n"
+"Last-Translator: Wanda <wanda@frontlineaids.org>, 2023\n"
+"Language-Team: Ukrainian (https://app.transifex.com/hisp-uio/teams/100509/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -50,7 +50,7 @@ msgid "User agent"
 msgstr "Агент користувача"
 
 msgid "Server date"
-msgstr "Дата сервера"
+msgstr "Дата серверу"
 
 msgid "Last analytics table generation"
 msgstr "Генерування останньої аналітичної таблиці"
@@ -140,20 +140,20 @@ msgid "Edit account settings"
 msgstr "Редагувати налаштування облікового запису"
 
 msgid "No changes have been made"
-msgstr "Зміни не було зроблено"
+msgstr "Не було зроблено змін"
 
 msgid "The form is currently being validated. Please try again."
-msgstr "Форма зараз проходить перевірку. Будь ласка, спробуйте ще раз."
+msgstr "Форма наразі проходить перевірку. Будь ласка, спробуйте ще раз."
 
 msgid "The form contains errors. Please fix the errors and try again."
 msgstr ""
 "Форма містить помилки. Будь ласка, виправте помилки і спробуйте ще раз."
 
 msgid "The entered values do not match. Please re-enter."
-msgstr "Уведені значення не збігаються. Будь ласка, повторіть введення."
+msgstr "Введені значення не збігаються. Будь ласка, повторіть ще раз."
 
 msgid "Please provide your old password"
-msgstr "Будь ласка, введіть свій старий пароль"
+msgstr "Будь ласка, введіть ваш старий пароль"
 
 msgid "Username"
 msgstr "Ім'я користувача"
@@ -201,77 +201,90 @@ msgstr "Логін"
 msgid "Failed to update password"
 msgstr "Не вдалося оновити пароль"
 
-msgid "2-Factor successfully turned ON"
-msgstr "2-факторну верифікацію успішно ВВІМКНЕНО"
+msgid "Two-factor Authentication"
+msgstr ""
 
-msgid "2-Factor successfully turned OFF"
-msgstr "2-факторну верифікацію успішно ВИМКНЕНО"
+msgid "Turn off two-factor authentication"
+msgstr ""
 
-msgid "Failed to turn ON 2-Factor"
-msgstr "Не вдалося ВВІМКНУТИ 2-факторну верифікацію"
-
-msgid "Failed to turn OFF 2-Factor"
-msgstr "Не вдалося ВИМКНУТИ 2-факторну верифікацію"
-
-msgid "Barcode/QR code to scan"
-msgstr "Штрихкод/QR для сканування"
-
-msgid "No"
-msgstr "Ні"
-
-msgid "Yes"
-msgstr "Так"
-
-msgid "Turn OFF"
-msgstr "ВИМКНУТИ"
-
-msgid "Turn ON"
-msgstr "ВВІМКНУТИ"
-
-msgid "2-Factor Verification is ON"
-msgstr "2-факторну верифікацію ВВІМКНЕНО"
-
-msgid "2-Factor Verification is OFF"
-msgstr "2-факторну верифікацію ВИМКНЕНО"
-
-msgid "Do you want to turn OFF 2-Factor?"
-msgstr "Чи хочете Ви ВИМКНУТИ 2-факторну верифікацію?"
-
-msgid "Do you want to turn ON 2-Factor?"
-msgstr "Чи хочете Ви ВВІМКНУТИ 2-факторну верифікацію?"
-
-msgid "Download the Authenticator app"
-msgstr "Завантажити додаток Authenticator"
-
-msgid "What kind of phone/tablet do you have?"
-msgstr "Який у Вас телефон/планшет?"
-
-msgid "Download the Authenticator App from the "
-msgstr "Завантажте додаток Authenticator з"
-
-msgid "In the Authenticator App select "
-msgstr "У додатку Authenticator оберіть"
-
-msgid "Begin setup."
-msgstr "Почати встановлення"
-
-msgid "Choose "
-msgstr "Обрати"
-
-msgid "Scan a barcode."
-msgstr "Сканувати штрихкод."
+msgid "Open your authenticator app."
+msgstr ""
 
 msgid ""
-"With 2-Factor authentication turned on you will be asked to enter a second "
-"verification code when you log in. To generate this verification code you "
-"must use the Authenticator app. If you do not have this app you must "
-"download it on your phone/tablet."
+"Now, enter the authentication code below and click the \"Turn off\" button."
 msgstr ""
-"Коли 2-факторну верифікацію увімкнено, Вам потрібно ввести другий "
-"верифікаційний код при вході в систему. Для того, щоб згенерувати цей "
-"верифікаційний код, Вам потрібно скористатись додатком Authenticator. Якщо у"
-" Вас немає цього додатку, Вам потрібно його завантажити на свій "
-"телефон/планшет."
+
+msgid "Remove two-factor account"
+msgstr ""
+
+msgid ""
+"Two-factor authentication is now turned off. It is recommended to remove the"
+" account from your authenticator app now to prevent any future issues re-"
+"enabling two-factor authentication."
+msgstr ""
+
+msgid "Play store"
+msgstr ""
+
+msgid "App store"
+msgstr "App store"
+
+msgid "Turn on two-factor authentication"
+msgstr ""
+
+msgid ""
+"Make sure you have an authenticator app installed on your device. We "
+"recommend Google Authenticator"
+msgstr ""
+
+msgid ""
+"Now, enter the code from your authenticator app below and click the \"Turn "
+"on\" button."
+msgstr ""
+
+msgid "Already set up two-factor authentication before?"
+msgstr ""
+
+msgid ""
+"If you have set up two-factor authentication for this account before, you "
+"need to remove that entry from your authenticator app before setting it up "
+"again."
+msgstr ""
+
+msgid ""
+"Two-factor authentication protects your account with an extra layer of "
+"security. With two-factor authentication turned on, you will need to enter "
+"an authentication code from your device every time you log in."
+msgstr ""
+
+msgid "Two-factor authentication is on."
+msgstr ""
+
+msgid "Two-factor authentication is off."
+msgstr ""
+
+msgid "Could not update two-factor authentication"
+msgstr ""
+
+msgid ""
+"This code does not look right. Enter the six digit code from your "
+"authentication app."
+msgstr ""
+
+msgid "Six digit authentication code"
+msgstr ""
+
+msgid "Could not enable 2 Factor Authentication"
+msgstr ""
+
+msgid "Two factor authentication was enabled successfully"
+msgstr ""
+
+msgid "Could not disable two factor authentication"
+msgstr ""
+
+msgid "Two factor authentication was disabled successfully"
+msgstr ""
 
 msgid "Failed to upload profile picture"
 msgstr "Не вдалося завантажити зображення профілю"
@@ -311,6 +324,12 @@ msgstr ""
 "Будь ласка, введіть дійсний номер телефону в міжнародному форматі "
 "(+0123456789)"
 
+msgid "Yes"
+msgstr "Так"
+
+msgid "No"
+msgstr "Ні"
+
 msgid "No value"
 msgstr "Відсутнє значення"
 
@@ -331,6 +350,9 @@ msgstr "Налаштування користувача"
 
 msgid "Account settings"
 msgstr "Налаштування облікового запису"
+
+msgid "Two factor authentication"
+msgstr ""
 
 msgid "Full profile"
 msgstr ""
@@ -535,7 +557,7 @@ msgid "Surname"
 msgstr "Прізвище"
 
 msgid "Gender"
-msgstr "Ґендер "
+msgstr "Стать "
 
 msgid "Male"
 msgstr "Чоловік"
@@ -547,19 +569,19 @@ msgid "Other"
 msgstr "Інше"
 
 msgid "E-mail"
-msgstr "Електронна пошта "
+msgstr "Електронна пошта"
 
 msgid "Mobile phone number"
 msgstr "Номер мобільного телефону"
 
 msgid "Introduction"
-msgstr "Коротко про себе"
+msgstr "Вступ"
 
 msgid "Job title"
 msgstr "Посада"
 
 msgid "User roles"
-msgstr "Ролі користувача"
+msgstr "Ролі користувачів"
 
 msgid "User org units"
 msgstr "Організаційні підрозділи користувача"
@@ -577,7 +599,7 @@ msgid "Education"
 msgstr "Освіта"
 
 msgid "Interests"
-msgstr "Хобі"
+msgstr "Зацікавленості"
 
 msgid "Languages"
 msgstr "Мови"
@@ -610,14 +632,13 @@ msgid "Style"
 msgstr "Стиль"
 
 msgid "Property to display in analysis modules"
-msgstr "Характеристика відображення у модулях аналізу"
+msgstr "Властивість для відображення у модулях аналізу"
 
 msgid "Short name"
 msgstr "Коротке ім'я"
 
 msgid "Enable message email notifications"
-msgstr ""
-"Ввімкнути надсилання сповіщень про повідомлення через електронну пошту"
+msgstr "Ввімкнути надсилання сповіщень про повідомлення електронною поштою"
 
 msgid "Enable message SMS notifications"
 msgstr "Ввімкнути надсилання сповіщень про повідомлення через СМС"

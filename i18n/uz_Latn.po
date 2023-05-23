@@ -1,14 +1,14 @@
 # 
 # Translators:
-# Yury Rogachev <yury@dhis2.org>, 2021
+# Yury Rogachev <yury@dhis2.org>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
-"PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Yury Rogachev <yury@dhis2.org>, 2021\n"
-"Language-Team: Uzbek (Latin) (https://www.transifex.com/hisp-uio/teams/100509/uz@Latn/)\n"
+"POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
+"PO-Revision-Date: 2023-05-22 19:26+0000\n"
+"Last-Translator: Yury Rogachev <yury@dhis2.org>, 2023\n"
+"Language-Team: Uzbek (Latin) (https://app.transifex.com/hisp-uio/teams/100509/uz@Latn/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -195,77 +195,90 @@ msgstr "Аvtorizatsiya"
 msgid "Failed to update password"
 msgstr "Parol yangilanishida xatolik"
 
-msgid "2-Factor successfully turned ON"
-msgstr "2 omilli autentikafikatsiya muvaffaqiyatli yokildi"
-
-msgid "2-Factor successfully turned OFF"
-msgstr "2 omilli autentikafikatsiya muvaffaqiyatli oʼchirildi"
-
-msgid "Failed to turn ON 2-Factor"
-msgstr "2 omilli autentikafikatsiya yokilishi amalga oshmadi"
-
-msgid "Failed to turn OFF 2-Factor"
+msgid "Two-factor Authentication"
 msgstr ""
 
-msgid "Barcode/QR code to scan"
-msgstr "Barcode/QR kod skaner qilish uchun"
-
-msgid "No"
-msgstr "Йўқ"
-
-msgid "Yes"
-msgstr "Ҳа"
-
-msgid "Turn OFF"
-msgstr "Oʼchirish"
-
-msgid "Turn ON"
-msgstr "Yoqish"
-
-msgid "2-Factor Verification is ON"
-msgstr "2 omilli tekshirish yoqilgan"
-
-msgid "2-Factor Verification is OFF"
-msgstr "2 omilli tekshirish oʼchirilgan"
-
-msgid "Do you want to turn OFF 2-Factor?"
-msgstr "2 omilli tekshirishni oʼchirmoqchimisiz?"
-
-msgid "Do you want to turn ON 2-Factor?"
-msgstr "2 omilli tekshirishni yoqmoqchimisiz?"
-
-msgid "Download the Authenticator app"
-msgstr "Аutentifikator Ilovasini yuklash"
-
-msgid "What kind of phone/tablet do you have?"
-msgstr "Sizda qanday rusumli telefon/planshet bor?"
-
-msgid "Download the Authenticator App from the "
+msgid "Turn off two-factor authentication"
 msgstr ""
 
-msgid "In the Authenticator App select "
+msgid "Open your authenticator app."
 msgstr ""
-
-msgid "Begin setup."
-msgstr "Sozlashni boshlang."
-
-msgid "Choose "
-msgstr ""
-
-msgid "Scan a barcode."
-msgstr "Shtrix kodni skanerlang"
 
 msgid ""
-"With 2-Factor authentication turned on you will be asked to enter a second "
-"verification code when you log in. To generate this verification code you "
-"must use the Authenticator app. If you do not have this app you must "
-"download it on your phone/tablet."
+"Now, enter the authentication code below and click the \"Turn off\" button."
 msgstr ""
-"2 omilli autentifikatsiya yoqilganda, tizimga kirish vaqtida sizdan ikkinchi"
-" tekshiruv kodini kiritishingiz soʼraladi. Ushbu tasdiqlash kodini yaratish "
-"uchun siz Аutentifikator Ilovasidan foylanishingiz lozim. Аgar sizda ushbu "
-"dastur mavjud boʼlmasa, uni telefon/planshetga yuklab olishingiz kerak "
-"boʼladi."
+
+msgid "Remove two-factor account"
+msgstr ""
+
+msgid ""
+"Two-factor authentication is now turned off. It is recommended to remove the"
+" account from your authenticator app now to prevent any future issues re-"
+"enabling two-factor authentication."
+msgstr ""
+
+msgid "Play store"
+msgstr ""
+
+msgid "App store"
+msgstr "Ilovalar doʼkoni"
+
+msgid "Turn on two-factor authentication"
+msgstr ""
+
+msgid ""
+"Make sure you have an authenticator app installed on your device. We "
+"recommend Google Authenticator"
+msgstr ""
+
+msgid ""
+"Now, enter the code from your authenticator app below and click the \"Turn "
+"on\" button."
+msgstr ""
+
+msgid "Already set up two-factor authentication before?"
+msgstr ""
+
+msgid ""
+"If you have set up two-factor authentication for this account before, you "
+"need to remove that entry from your authenticator app before setting it up "
+"again."
+msgstr ""
+
+msgid ""
+"Two-factor authentication protects your account with an extra layer of "
+"security. With two-factor authentication turned on, you will need to enter "
+"an authentication code from your device every time you log in."
+msgstr ""
+
+msgid "Two-factor authentication is on."
+msgstr ""
+
+msgid "Two-factor authentication is off."
+msgstr ""
+
+msgid "Could not update two-factor authentication"
+msgstr ""
+
+msgid ""
+"This code does not look right. Enter the six digit code from your "
+"authentication app."
+msgstr ""
+
+msgid "Six digit authentication code"
+msgstr ""
+
+msgid "Could not enable 2 Factor Authentication"
+msgstr ""
+
+msgid "Two factor authentication was enabled successfully"
+msgstr ""
+
+msgid "Could not disable two factor authentication"
+msgstr ""
+
+msgid "Two factor authentication was disabled successfully"
+msgstr ""
 
 msgid "Failed to upload profile picture"
 msgstr "Profil rasmini yangilash amalga oshmadi"
@@ -303,6 +316,12 @@ msgstr ""
 msgid "Please enter a valid international phone number (+0123456789)"
 msgstr "Iltimos, xalqaro telefon raqami formatida kiriting (+0123456789)"
 
+msgid "Yes"
+msgstr "Ҳа"
+
+msgid "No"
+msgstr "Йўқ"
+
 msgid "No value"
 msgstr "Qiymat yoʼq"
 
@@ -323,6 +342,9 @@ msgstr "Foydalanuvchi sozlamanlari"
 
 msgid "Account settings"
 msgstr "Аkkaunt sozlamalari"
+
+msgid "Two factor authentication"
+msgstr ""
 
 msgid "Full profile"
 msgstr ""

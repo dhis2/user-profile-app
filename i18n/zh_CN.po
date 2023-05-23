@@ -1,15 +1,15 @@
 # 
 # Translators:
-# 晓东 林 <13981924470@126.com>, 2021
-# easylin <lin_xd@126.com>, 2021
+# easylin <lin_xd@126.com>, 2023
+# 晓东 林 <13981924470@126.com>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
-"PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: easylin <lin_xd@126.com>, 2021\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/hisp-uio/teams/100509/zh_CN/)\n"
+"POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
+"PO-Revision-Date: 2023-05-22 19:26+0000\n"
+"Last-Translator: 晓东 林 <13981924470@126.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/hisp-uio/teams/100509/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -194,76 +194,90 @@ msgstr "登录"
 msgid "Failed to update password"
 msgstr "Failed to update password"
 
-msgid "2-Factor successfully turned ON"
-msgstr "2-Factor 成功打开"
-
-msgid "2-Factor successfully turned OFF"
-msgstr "2-Factor 成功关闭"
-
-msgid "Failed to turn ON 2-Factor"
-msgstr "打开ON 2-Factor失败"
-
-msgid "Failed to turn OFF 2-Factor"
+msgid "Two-factor Authentication"
 msgstr ""
 
-msgid "Barcode/QR code to scan"
-msgstr "扫描的二维码"
-
-msgid "No"
-msgstr "否"
-
-msgid "Yes"
-msgstr "是"
-
-msgid "Turn OFF"
-msgstr "关闭"
-
-msgid "Turn ON"
-msgstr "打开"
-
-msgid "2-Factor Verification is ON"
-msgstr "2-因子认证已经打开"
-
-msgid "2-Factor Verification is OFF"
-msgstr "双因子认证已经关闭"
-
-msgid "Do you want to turn OFF 2-Factor?"
-msgstr "你要关闭双因子认证?"
-
-msgid "Do you want to turn ON 2-Factor?"
-msgstr "你要打开双因子认证?"
-
-msgid "Download the Authenticator app"
-msgstr "下载认证  app"
-
-msgid "What kind of phone/tablet do you have?"
-msgstr "What kind of phone/tablet do you have?"
-
-msgid "Download the Authenticator App from the "
+msgid "Turn off two-factor authentication"
 msgstr ""
 
-msgid "In the Authenticator App select "
+msgid "Open your authenticator app."
 msgstr ""
-
-msgid "Begin setup."
-msgstr "开始设置."
-
-msgid "Choose "
-msgstr ""
-
-msgid "Scan a barcode."
-msgstr "扫描二维码."
 
 msgid ""
-"With 2-Factor authentication turned on you will be asked to enter a second "
-"verification code when you log in. To generate this verification code you "
-"must use the Authenticator app. If you do not have this app you must "
-"download it on your phone/tablet."
+"Now, enter the authentication code below and click the \"Turn off\" button."
 msgstr ""
-"With 2-Factor authentication turned on you will be asked to enter a second "
-"verification code when you log in. To generate this verification code you "
-"must use the Authenticator app. If you do not have this app you must "
-"download it on your phone/tablet."
+
+msgid "Remove two-factor account"
+msgstr ""
+
+msgid ""
+"Two-factor authentication is now turned off. It is recommended to remove the"
+" account from your authenticator app now to prevent any future issues re-"
+"enabling two-factor authentication."
+msgstr ""
+
+msgid "Play store"
+msgstr ""
+
+msgid "App store"
+msgstr "App 商店"
+
+msgid "Turn on two-factor authentication"
+msgstr ""
+
+msgid ""
+"Make sure you have an authenticator app installed on your device. We "
+"recommend Google Authenticator"
+msgstr ""
+
+msgid ""
+"Now, enter the code from your authenticator app below and click the \"Turn "
+"on\" button."
+msgstr ""
+
+msgid "Already set up two-factor authentication before?"
+msgstr ""
+
+msgid ""
+"If you have set up two-factor authentication for this account before, you "
+"need to remove that entry from your authenticator app before setting it up "
+"again."
+msgstr ""
+
+msgid ""
+"Two-factor authentication protects your account with an extra layer of "
+"security. With two-factor authentication turned on, you will need to enter "
+"an authentication code from your device every time you log in."
+msgstr ""
+
+msgid "Two-factor authentication is on."
+msgstr ""
+
+msgid "Two-factor authentication is off."
+msgstr ""
+
+msgid "Could not update two-factor authentication"
+msgstr ""
+
+msgid ""
+"This code does not look right. Enter the six digit code from your "
+"authentication app."
+msgstr ""
+
+msgid "Six digit authentication code"
+msgstr ""
+
+msgid "Could not enable 2 Factor Authentication"
+msgstr ""
+
+msgid "Two factor authentication was enabled successfully"
+msgstr ""
+
+msgid "Could not disable two factor authentication"
+msgstr ""
+
+msgid "Two factor authentication was disabled successfully"
+msgstr ""
 
 msgid "Failed to upload profile picture"
 msgstr "更新简历照片失败"
@@ -301,6 +315,12 @@ msgstr ""
 msgid "Please enter a valid international phone number (+0123456789)"
 msgstr "请输入有效的国际电话号码"
 
+msgid "Yes"
+msgstr "是"
+
+msgid "No"
+msgstr "否"
+
 msgid "No value"
 msgstr "没有值"
 
@@ -321,6 +341,9 @@ msgstr "用户设置"
 
 msgid "Account settings"
 msgstr "帐号设置"
+
+msgid "Two factor authentication"
+msgstr ""
 
 msgid "Full profile"
 msgstr ""
