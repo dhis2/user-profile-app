@@ -3,15 +3,15 @@
 # phil_dhis2, 2021
 # Viktor Varland <viktor@dhis2.org>, 2021
 # 晓东 林 <13981924470@126.com>, 2021
-# easylin <lin_xd@126.com>, 2021
+# easylin <lin_xd@126.com>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2021-10-22T15:14:54.283Z\n"
 "PO-Revision-Date: 2021-09-04 00:45+0000\n"
-"Last-Translator: easylin <lin_xd@126.com>, 2021\n"
-"Language-Team: Chinese (https://www.transifex.com/hisp-uio/teams/100509/zh/)\n"
+"Last-Translator: easylin <lin_xd@126.com>, 2023\n"
+"Language-Team: Chinese (https://app.transifex.com/hisp-uio/teams/100509/zh/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -456,7 +456,7 @@ msgid ""
 msgstr "个人访问令牌应仅用于公共访问实例的浏览器上下文。对于私有实例，令牌应该像密码一样对待并保持私有——请求应该通过代理路由。"
 
 msgid "Token details"
-msgstr "代币详情"
+msgstr "令牌详情"
 
 msgid "Cancel"
 msgstr "取消"
@@ -518,10 +518,10 @@ msgid "Failed to update settings"
 msgstr "无法更新设置"
 
 msgid "First name"
-msgstr "姓"
+msgstr "姓名"
 
 msgid "Surname"
-msgstr "姓"
+msgstr "称谓"
 
 msgid "Gender"
 msgstr "性别"
@@ -560,7 +560,7 @@ msgid "Nationality"
 msgstr "国籍"
 
 msgid "Employer"
-msgstr "雇员"
+msgstr "服务机构"
 
 msgid "Education"
 msgstr "教育"
