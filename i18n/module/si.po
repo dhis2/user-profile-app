@@ -151,7 +151,7 @@ msgstr ""
 
 #: message
 msgid "Message"
-msgstr ""
+msgstr "පණිවිඩය"
 
 #: settings_updated
 msgid "Settings updated"
@@ -188,7 +188,7 @@ msgstr ""
 
 #: name
 msgid "Name"
-msgstr ""
+msgstr "නම"
 
 #: short_name
 msgid "Short name"
