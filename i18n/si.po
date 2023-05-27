@@ -118,7 +118,7 @@ msgid "Calendar"
 msgstr ""
 
 msgid "Name"
-msgstr ""
+msgstr "නම"
 
 msgid "User"
 msgstr ""
