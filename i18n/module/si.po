@@ -32,7 +32,7 @@ msgstr ""
 
 #: user_email_address
 msgid "E-mail"
-msgstr ""
+msgstr "ඊමේල්"
 
 #: surname
 msgid "Surname"
@@ -40,7 +40,7 @@ msgstr ""
 
 #: first_name
 msgid "First name"
-msgstr ""
+msgstr "මුල් නම"
 
 #: old_password
 msgid "Old password"
