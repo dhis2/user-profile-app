@@ -541,7 +541,7 @@ msgid "Failed to update settings"
 msgstr ""
 
 msgid "First name"
-msgstr ""
+msgstr "මුල් නම"
 
 msgid "Surname"
 msgstr ""
@@ -559,7 +559,7 @@ msgid "Other"
 msgstr "වෙනත්"
 
 msgid "E-mail"
-msgstr ""
+msgstr "ඊමේල්"
 
 msgid "Mobile phone number"
 msgstr ""
@@ -595,19 +595,19 @@ msgid "Languages"
 msgstr ""
 
 msgid "WhatsApp"
-msgstr ""
+msgstr "WhatsApp"
 
 msgid "Facebook Messenger"
 msgstr ""
 
 msgid "Skype"
-msgstr ""
+msgstr "Skype"
 
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 msgid "Account editor"
 msgstr ""
