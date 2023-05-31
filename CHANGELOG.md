@@ -1,3 +1,10 @@
+## [30.3.36](https://github.com/dhis2/user-profile-app/compare/v30.3.35...v30.3.36) (2023-05-31)
+
+
+### Bug Fixes
+
+* update language display [DHIS2-15293] ([#1262](https://github.com/dhis2/user-profile-app/issues/1262)) ([46d6fd5](https://github.com/dhis2/user-profile-app/commit/46d6fd5506fdeab4a65c02774c61918d38c64c9e))
+
 ## [30.3.35](https://github.com/dhis2/user-profile-app/compare/v30.3.34...v30.3.35) (2023-05-28)
 
 
