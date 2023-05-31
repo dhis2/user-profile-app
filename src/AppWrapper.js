@@ -30,11 +30,17 @@ const AppWrapper = () => {
                     }))
                     const uiLocales = (results[1] || []).map((locale) => ({
                         id: locale.locale,
-                        displayName: locale.name,
+                        displayName:
+                            locale.name === locale.displayName
+                                ? locale.name
+                                : `${locale.name} — ${locale.displayName}`,
                     }))
                     const dbLocales = (results[2] || []).map((locale) => ({
                         id: locale.locale,
-                        displayName: locale.name,
+                        displayName:
+                            locale.name === locale.displayName
+                                ? locale.name
+                                : `${locale.name} — ${locale.displayName}`,
                     }))
                     const systemDefault = { ...results[4] }
 
