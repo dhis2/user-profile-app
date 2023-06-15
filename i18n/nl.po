@@ -2,13 +2,14 @@
 # Translators:
 # Cherise Beek <cherise.beek@gmail.com>, 2021
 # Rica Zamora Duchateau, 2022
+# Charel van den Elsen, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Rica Zamora Duchateau, 2022\n"
+"Last-Translator: Charel van den Elsen, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/hisp-uio/teams/100509/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -514,7 +515,7 @@ msgid "Expires"
 msgstr ""
 
 msgid "Created"
-msgstr ""
+msgstr "Gemaakt"
 
 msgid "Copied token to clipboard"
 msgstr ""
@@ -565,7 +566,7 @@ msgid "Other"
 msgstr ""
 
 msgid "E-mail"
-msgstr ""
+msgstr "E-mail"
 
 msgid "Mobile phone number"
 msgstr ""
