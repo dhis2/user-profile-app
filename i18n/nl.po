@@ -201,89 +201,106 @@ msgid "Failed to update password"
 msgstr "Updaten van paswoord gefaald"
 
 msgid "Two-factor Authentication"
-msgstr ""
+msgstr "Twee-factor-authenticatie"
 
 msgid "Turn off two-factor authentication"
-msgstr ""
+msgstr "Schakel tweefactorauthenticatie uit"
 
 msgid "Open your authenticator app."
-msgstr ""
+msgstr "Open uw authenticatie-app."
 
 msgid ""
 "Now, enter the authentication code below and click the \"Turn off\" button."
 msgstr ""
+"Voer nu de onderstaande authenticatiecode in en klik op de knop "
+"\"Uitschakelen\"."
 
 msgid "Remove two-factor account"
-msgstr ""
+msgstr "Tweefactoraccount verwijderen"
 
 msgid ""
 "Two-factor authentication is now turned off. It is recommended to remove the"
 " account from your authenticator app now to prevent any future issues re-"
 "enabling two-factor authentication."
 msgstr ""
+"Tweefactorauthenticatie is nu uitgeschakeld. Het wordt aanbevolen om het "
+"account nu uit uw authenticator-app te verwijderen om toekomstige problemen "
+"met het opnieuw inschakelen van tweefactorauthenticatie te voorkomen."
 
 msgid "Play store"
-msgstr ""
+msgstr "Play store"
 
 msgid "App store"
-msgstr ""
+msgstr "App store"
 
 msgid "Turn on two-factor authentication"
-msgstr ""
+msgstr "Schakel tweefactorauthenticatie in"
 
 msgid ""
 "Make sure you have an authenticator app installed on your device. We "
 "recommend Google Authenticator"
 msgstr ""
+"Zorg ervoor dat er een authenticatie-app op uw apparaat is geïnstalleerd. We"
+" raden Google Authenticator aan"
 
 msgid ""
 "Now, enter the code from your authenticator app below and click the \"Turn "
 "on\" button."
 msgstr ""
+"Voer nu de code van uw authenticator-app hieronder in en klik op de knop "
+"\"Inschakelen\"."
 
 msgid "Already set up two-factor authentication before?"
-msgstr ""
+msgstr "Heb je twee-factor-authenticatie al eerder ingesteld?"
 
 msgid ""
 "If you have set up two-factor authentication for this account before, you "
 "need to remove that entry from your authenticator app before setting it up "
 "again."
 msgstr ""
+"Als u eerder tweefactorauthenticatie voor dit account heeft ingesteld, moet "
+"u die invoer uit uw authenticatie-app verwijderen voordat u deze opnieuw "
+"instelt."
 
 msgid ""
 "Two-factor authentication protects your account with an extra layer of "
 "security. With two-factor authentication turned on, you will need to enter "
 "an authentication code from your device every time you log in."
 msgstr ""
+"Tweefactorauthenticatie beschermt uw account met een extra beveiligingslaag."
+" Als tweefactorauthenticatie is ingeschakeld, moet u elke keer dat u zich "
+"aanmeldt een authenticatiecode van uw apparaat invoeren."
 
 msgid "Two-factor authentication is on."
-msgstr ""
+msgstr "Twee-factor-authenticatie staat aan."
 
 msgid "Two-factor authentication is off."
-msgstr ""
+msgstr "Tweefactorauthenticatie staat uit."
 
 msgid "Could not update two-factor authentication"
-msgstr ""
+msgstr "Kan tweefactorauthenticatie niet updaten"
 
 msgid ""
 "This code does not look right. Enter the six digit code from your "
 "authentication app."
 msgstr ""
+"Deze code ziet er niet goed uit. Voer de zescijferige code van uw "
+"authenticatie-app in."
 
 msgid "Six digit authentication code"
-msgstr ""
+msgstr "Zescijferige authenticatiecode"
 
 msgid "Could not enable 2 Factor Authentication"
-msgstr ""
+msgstr "Kan 2-factor-authenticatie niet inschakelen"
 
 msgid "Two factor authentication was enabled successfully"
-msgstr ""
+msgstr "Twee-factor-authenticatie is ingeschakeld"
 
 msgid "Could not disable two factor authentication"
-msgstr ""
+msgstr "Kan twee-factor-authenticatie niet uitschakelen"
 
 msgid "Two factor authentication was disabled successfully"
-msgstr ""
+msgstr "Twee-factor-authenticatie is uitgeschakeld"
 
 msgid "Failed to upload profile picture"
 msgstr "Uploaden profielfoto gefaald"
@@ -304,22 +321,22 @@ msgid "This field is required"
 msgstr "Dit veld is verplicht."
 
 msgid "This field should be a URL"
-msgstr ""
+msgstr "Dit veld moet een URL zijn"
 
 msgid "This field should contain a list of URLs"
-msgstr ""
+msgstr "Dit veld moet een lijst met URL's bevatten"
 
 msgid "This field should be a number"
-msgstr ""
+msgstr "Dit veld moet een getal zijn"
 
 msgid "This field should be a positive number"
-msgstr ""
+msgstr "Dit veld moet een positief getal zijn"
 
 msgid "This field should be an email"
-msgstr ""
+msgstr "Dit veld moet een e-mail zijn"
 
 msgid "Please enter a valid international phone number (+0123456789)"
-msgstr ""
+msgstr "Voer een geldig internationaal telefoonnummer in (+0123456789)"
 
 msgid "Yes"
 msgstr "Ja"
@@ -331,13 +348,13 @@ msgid "No value"
 msgstr "Geen waarde"
 
 msgid "Use system default"
-msgstr ""
+msgstr "Gebruik systeemstandaard"
 
 msgid "No options"
 msgstr "Geen opties"
 
 msgid "System default"
-msgstr ""
+msgstr "Systeem standaard"
 
 msgid "User profile"
 msgstr "Gebruikersprofiel"
@@ -349,16 +366,16 @@ msgid "Account settings"
 msgstr "Accountinstellingen"
 
 msgid "Two factor authentication"
-msgstr ""
+msgstr "Twee-factor-authenticatie"
 
 msgid "Full profile"
 msgstr "Volledig profiel"
 
 msgid "Personal access tokens"
-msgstr ""
+msgstr "Persoonlijke toegangstokens"
 
 msgid "About DHIS2"
-msgstr ""
+msgstr "Over DHIS2"
 
 msgid "Manage personal access tokens"
 msgstr ""
@@ -539,109 +556,109 @@ msgid "Failed to update user profile"
 msgstr ""
 
 msgid "Edit user settings"
-msgstr ""
+msgstr "Gebruikersinstellingen bewerken"
 
 msgid "Settings updated"
-msgstr ""
+msgstr "Instellingen bijgewerkt"
 
 msgid "Failed to update settings"
-msgstr ""
+msgstr "Kan instellingen niet updaten"
 
 msgid "First name"
-msgstr ""
+msgstr "Voornaam"
 
 msgid "Surname"
-msgstr ""
+msgstr "Achternaam"
 
 msgid "Gender"
-msgstr ""
+msgstr "Geslacht"
 
 msgid "Male"
-msgstr ""
+msgstr "Mannelijk"
 
 msgid "Female"
-msgstr ""
+msgstr "Vrouwelijk"
 
 msgid "Other"
-msgstr ""
+msgstr "Anders"
 
 msgid "E-mail"
 msgstr "E-mail"
 
 msgid "Mobile phone number"
-msgstr ""
+msgstr "Mobiele telefoonnummer"
 
 msgid "Introduction"
-msgstr ""
+msgstr "Introductie"
 
 msgid "Job title"
-msgstr ""
+msgstr "Functietitel"
 
 msgid "User roles"
-msgstr ""
+msgstr "Gebruikersrollen"
 
 msgid "User org units"
-msgstr ""
+msgstr "Organisatie-eenheden van gebruiker"
 
 msgid "Birthday"
-msgstr ""
+msgstr "Verjaardag"
 
 msgid "Nationality"
-msgstr ""
+msgstr "Nationaliteit"
 
 msgid "Employer"
-msgstr ""
+msgstr "Werkgever"
 
 msgid "Education"
-msgstr ""
+msgstr "Onderwijs"
 
 msgid "Interests"
-msgstr ""
+msgstr "Interesses"
 
 msgid "Languages"
-msgstr ""
+msgstr "Talen"
 
 msgid "WhatsApp"
-msgstr ""
+msgstr "WhatsApp"
 
 msgid "Facebook Messenger"
-msgstr ""
+msgstr "Facebook messenger"
 
 msgid "Skype"
-msgstr ""
+msgstr "Skype"
 
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 msgid "Account editor"
-msgstr ""
+msgstr "Account-editor"
 
 msgid "Interface language"
-msgstr ""
+msgstr "Interfacetaal"
 
 msgid "Database language"
-msgstr ""
+msgstr "Database taal"
 
 msgid "Style"
 msgstr "Stijl"
 
 msgid "Property to display in analysis modules"
-msgstr ""
+msgstr "Eigenschap om weer te geven in analysemodules"
 
 msgid "Short name"
 msgstr "Korte naam"
 
 msgid "Enable message email notifications"
-msgstr ""
+msgstr "E-mailmeldingen voor berichten inschakelen"
 
 msgid "Enable message SMS notifications"
-msgstr ""
+msgstr "SMS-berichtmeldingen inschakelen"
 
 msgid "View full profile"
-msgstr ""
+msgstr "Bekijk volledig profiel"
 
 msgctxt "HTTP method"
 msgid "GET"
