@@ -286,34 +286,34 @@ msgid "This field is required"
 msgstr "Dit veld is verplicht."
 
 msgid "This field should be a URL"
-msgstr ""
+msgstr "Dit veld moet een URL zijn"
 
 msgid "This field should contain a list of URLs"
-msgstr ""
+msgstr "Dit veld moet een lijst met URL's bevatten"
 
 msgid "This field should be a number"
-msgstr ""
+msgstr "Dit veld moet een getal zijn"
 
 msgid "This field should be a positive number"
-msgstr ""
+msgstr "Dit veld moet een positief getal zijn"
 
 msgid "This field should be an email"
-msgstr ""
+msgstr "Dit veld moet een e-mail zijn"
 
 msgid "Please enter a valid international phone number (+0123456789)"
-msgstr ""
+msgstr "Voer een geldig internationaal telefoonnummer in (+0123456789)"
 
 msgid "No value"
 msgstr "Geen waarde"
 
 msgid "Use system default"
-msgstr ""
+msgstr "Gebruik systeemstandaard"
 
 msgid "No options"
 msgstr "Geen opties"
 
 msgid "System default"
-msgstr ""
+msgstr "Systeem standaard"
 
 msgid "User profile"
 msgstr "Gebruikersprofiel"
@@ -328,10 +328,10 @@ msgid "Full profile"
 msgstr "Volledig profiel"
 
 msgid "Personal access tokens"
-msgstr ""
+msgstr "Persoonlijke toegangstokens"
 
 msgid "About DHIS2"
-msgstr ""
+msgstr "Over DHIS2"
 
 msgid "Manage personal access tokens"
 msgstr ""
@@ -512,109 +512,109 @@ msgid "Failed to update user profile"
 msgstr ""
 
 msgid "Edit user settings"
-msgstr ""
+msgstr "Gebruikersinstellingen bewerken"
 
 msgid "Settings updated"
-msgstr ""
+msgstr "Instellingen bijgewerkt"
 
 msgid "Failed to update settings"
-msgstr ""
+msgstr "Kan instellingen niet updaten"
 
 msgid "First name"
-msgstr ""
+msgstr "Voornaam"
 
 msgid "Surname"
-msgstr ""
+msgstr "Achternaam"
 
 msgid "Gender"
-msgstr ""
+msgstr "Geslacht"
 
 msgid "Male"
-msgstr ""
+msgstr "Mannelijk"
 
 msgid "Female"
-msgstr ""
+msgstr "Vrouwelijk"
 
 msgid "Other"
-msgstr ""
+msgstr "Anders"
 
 msgid "E-mail"
 msgstr "E-mail"
 
 msgid "Mobile phone number"
-msgstr ""
+msgstr "Mobiele telefoonnummer"
 
 msgid "Introduction"
-msgstr ""
+msgstr "Introductie"
 
 msgid "Job title"
-msgstr ""
+msgstr "Functietitel"
 
 msgid "User roles"
-msgstr ""
+msgstr "Gebruikersrollen"
 
 msgid "User org units"
-msgstr ""
+msgstr "Organisatie-eenheden van gebruiker"
 
 msgid "Birthday"
-msgstr ""
+msgstr "Verjaardag"
 
 msgid "Nationality"
-msgstr ""
+msgstr "Nationaliteit"
 
 msgid "Employer"
-msgstr ""
+msgstr "Werkgever"
 
 msgid "Education"
-msgstr ""
+msgstr "Onderwijs"
 
 msgid "Interests"
-msgstr ""
+msgstr "Interesses"
 
 msgid "Languages"
-msgstr ""
+msgstr "Talen"
 
 msgid "WhatsApp"
-msgstr ""
+msgstr "WhatsApp"
 
 msgid "Facebook Messenger"
-msgstr ""
+msgstr "Facebook messenger"
 
 msgid "Skype"
-msgstr ""
+msgstr "Skype"
 
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 msgid "Account editor"
-msgstr ""
+msgstr "Account-editor"
 
 msgid "Interface language"
-msgstr ""
+msgstr "Interfacetaal"
 
 msgid "Database language"
-msgstr ""
+msgstr "Database taal"
 
 msgid "Style"
 msgstr "Stijl"
 
 msgid "Property to display in analysis modules"
-msgstr ""
+msgstr "Eigenschap om weer te geven in analysemodules"
 
 msgid "Short name"
 msgstr "Korte naam"
 
 msgid "Enable message email notifications"
-msgstr ""
+msgstr "E-mailmeldingen voor berichten inschakelen"
 
 msgid "Enable message SMS notifications"
-msgstr ""
+msgstr "SMS-berichtmeldingen inschakelen"
 
 msgid "View full profile"
-msgstr ""
+msgstr "Bekijk volledig profiel"
 
 msgctxt "HTTP method"
 msgid "GET"
