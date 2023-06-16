@@ -37,11 +37,11 @@ msgstr "E-mail"
 
 #: surname
 msgid "Surname"
-msgstr ""
+msgstr "Achternaam"
 
 #: first_name
 msgid "First name"
-msgstr ""
+msgstr "Voornaam"
 
 #: old_password
 msgid "Old password"
@@ -65,73 +65,73 @@ msgstr "Gebruikersnaam"
 
 #: phone_number
 msgid "Mobile phone number"
-msgstr ""
+msgstr "Mobiele telefoonnummer"
 
 #: job_title
 msgid "Job title"
-msgstr ""
+msgstr "Functietitel"
 
 #: introduction
 msgid "Introduction"
-msgstr ""
+msgstr "Introductie"
 
 #: gender
 msgid "Gender"
-msgstr ""
+msgstr "Geslacht"
 
 #: male
 msgctxt "male"
 msgid "Male"
-msgstr ""
+msgstr "Mannelijk"
 
 #: female
 msgctxt "female"
 msgid "Female"
-msgstr ""
+msgstr "Vrouwelijk"
 
 #: other
 msgctxt "other"
 msgid "Other"
-msgstr ""
+msgstr "Anders"
 
 #: gender_male
 msgctxt "gender_male"
 msgid "Male"
-msgstr ""
+msgstr "Mannelijk"
 
 #: gender_female
 msgctxt "gender_female"
 msgid "Female"
-msgstr ""
+msgstr "Vrouwelijk"
 
 #: gender_other
 msgctxt "gender_other"
 msgid "Other"
-msgstr ""
+msgstr "Anders"
 
 #: birthday
 msgid "Birthday"
-msgstr ""
+msgstr "Verjaardag"
 
 #: nationality
 msgid "Nationality"
-msgstr ""
+msgstr "Nationaliteit"
 
 #: employer
 msgid "Employer"
-msgstr ""
+msgstr "Werkgever"
 
 #: education
 msgid "Education"
-msgstr ""
+msgstr "Onderwijs"
 
 #: interests
 msgid "Interests"
-msgstr ""
+msgstr "Interesses"
 
 #: languages
 msgid "Languages"
-msgstr ""
+msgstr "Talen"
 
 #: update_user_profile_success
 msgid "User profile updated"
@@ -144,7 +144,7 @@ msgstr "Instellingen"
 #: property_to_display_in_analysis_modules
 msgctxt "property_to_display_in_analysis_modules"
 msgid "Property to display in analysis modules"
-msgstr ""
+msgstr "Eigenschap om weer te geven in analysemodules"
 
 #: general
 msgid "General"
@@ -156,11 +156,11 @@ msgstr "Bericht"
 
 #: settings_updated
 msgid "Settings updated"
-msgstr ""
+msgstr "Instellingen bijgewerkt"
 
 #: failed_to_update_settings
 msgid "Failed to update settings"
-msgstr ""
+msgstr "Kan instellingen niet updaten"
 
 #: style
 msgid "Style"
@@ -168,24 +168,24 @@ msgstr "Stijl"
 
 #: db_language
 msgid "Database language"
-msgstr ""
+msgstr "Database taal"
 
 #: language
 msgid "Interface language"
-msgstr ""
+msgstr "Interfacetaal"
 
 #: enable_message_email_notifications
 msgid "Enable message email notifications"
-msgstr ""
+msgstr "E-mailmeldingen voor berichten inschakelen"
 
 #: enable_message_sms_notifications
 msgid "Enable message SMS notifications"
-msgstr ""
+msgstr "SMS-berichtmeldingen inschakelen"
 
 #: analysis_module
 msgctxt "analysis_module"
 msgid "Property to display in analysis modules"
-msgstr ""
+msgstr "Eigenschap om weer te geven in analysemodules"
 
 #: name
 msgid "Name"
@@ -197,7 +197,7 @@ msgstr "Korte naam"
 
 #: system_default
 msgid "System default"
-msgstr ""
+msgstr "Systeem standaard"
 
 #: value_should_be_an_email
 msgid "Please enter a valid email address"
@@ -227,7 +227,7 @@ msgstr "De ingevoerde waarden zijn niet hetzelfde. Voeg a.u.b. opnieuw in."
 
 #: use_system_default
 msgid "Use system default"
-msgstr ""
+msgstr "Gebruik systeemstandaard"
 
 #: true_notifications
 msgid "Yes"
