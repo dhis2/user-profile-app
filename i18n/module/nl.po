@@ -135,7 +135,7 @@ msgstr "Talen"
 
 #: update_user_profile_success
 msgid "User profile updated"
-msgstr ""
+msgstr "Gebruikersprofiel bijgewerkt"
 
 #: settings
 msgid "Settings"
@@ -205,7 +205,7 @@ msgstr ""
 
 #: update_user_profile_fail
 msgid "Failed to update user profile"
-msgstr ""
+msgstr "Kan gebruikersprofiel niet bijwerken"
 
 #: update_settings_fail
 msgid "Fialed to update user settings"
