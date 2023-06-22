@@ -243,10 +243,10 @@ msgid "Do you want to turn ON 2-Factor?"
 msgstr ""
 
 msgid "Download the Authenticator app"
-msgstr ""
+msgstr "Descargar la aplicación Authenticator"
 
 msgid "What kind of phone/tablet do you have?"
-msgstr ""
+msgstr "¿Qué tipo de teléfono/tableta tiene?"
 
 msgid "Download the Authenticator App from the "
 msgstr ""
@@ -277,7 +277,7 @@ msgid "Profile picture"
 msgstr "Foto de perfil"
 
 msgid "No profile picture available"
-msgstr ""
+msgstr "No hay foto de perfil disponible"
 
 msgid "Select profile picture"
 msgstr "Seleccionar foto de perfil"
