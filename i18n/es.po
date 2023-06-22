@@ -295,7 +295,7 @@ msgid "Profile picture"
 msgstr "Foto de perfil"
 
 msgid "No profile picture available"
-msgstr ""
+msgstr "No hay foto de perfil disponible"
 
 msgid "Select profile picture"
 msgstr "Seleccionar foto de perfil"
