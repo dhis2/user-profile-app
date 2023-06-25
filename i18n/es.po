@@ -369,10 +369,10 @@ msgid "Invalid IP address '{{- ipAddress}}'"
 msgstr "Dirección IP no válida '{{- ipAddress}}'"
 
 msgid "Allowed IP addresses"
-msgstr ""
+msgstr "Direcciones IP permitidas"
 
 msgid "List one IP address per line."
-msgstr ""
+msgstr "Indique una dirección IP por línea."
 
 msgid "Allowed HTTP methods"
 msgstr "Métodos HTTP permitidos"
@@ -393,7 +393,7 @@ msgid "DELETE"
 msgstr ""
 
 msgid "Only choose the HTTP methods this token needs to allow."
-msgstr ""
+msgstr "Seleccione sólo los métodos HTTP que este token debe permitir."
 
 msgid "Invalid referrer '{{- referrer}}'"
 msgstr "Referencia no válida '{{- referrer}}'"
@@ -402,7 +402,7 @@ msgid "Allowed referrers"
 msgstr "Referencias permitidas"
 
 msgid "List one referrer per line."
-msgstr ""
+msgstr "Indique un referente por línea."
 
 msgid "Error fetching your authorities"
 msgstr "Error al obtener sus autoridades"
@@ -420,13 +420,15 @@ msgid ""
 msgstr ""
 
 msgid "Choose the context where this token will be used."
-msgstr ""
+msgstr "Eligir el contexto en el que se utilizará este token."
 
 msgid "Server/script context"
 msgstr "Contexto de servidor/script"
 
 msgid "Used for integrations and scripts that won't be accessed by a browser."
 msgstr ""
+"Se utiliza para integraciones y scripts que no serán accesibles desde un "
+"navegador."
 
 msgid "Browser context"
 msgstr "Contexto del navegador"
@@ -435,6 +437,8 @@ msgid ""
 "Used for applications, like public portals, that will be accessed with a web"
 " browser."
 msgstr ""
+"Se utiliza para aplicaciones, como portales públicos, a los que se accederá "
+"con un navegador web."
 
 msgid "Token expiration date must be in the future"
 msgstr "La fecha de caducidad del token debe ser futura"
