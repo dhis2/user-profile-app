@@ -11,20 +11,20 @@ import { useModal } from './use-modal.js'
 const query = {
     tokens: {
         resource: 'apiToken',
-        params: (({userId}) => ({
+        params: ({ userId }) => ({
             fields: ['id', 'created', 'expire', 'attributes'],
             paging: false,
-            filter: `createdBy.id:eq:${userId}`
-        })),
-    }
+            filter: `createdBy.id:eq:${userId}`,
+        }),
+    },
 }
 
 const PersonalAccessTokens = () => {
-
     const userId = userProfileStore.state.id
     const [tokenKeys, setTokenKeys] = useState(new Map())
-    const {loading, error, data, refetch} =
-        useDataQuery(query, {variables: {userId}})
+    const { loading, error, data, refetch } = useDataQuery(query, {
+        variables: { userId },
+    })
     const generateTokenModal = useModal()
 
     const tokens = data?.tokens.apiToken
