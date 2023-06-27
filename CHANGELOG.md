@@ -1,3 +1,10 @@
+# [30.4.0](https://github.com/dhis2/user-profile-app/compare/v30.3.45...v30.4.0) (2023-06-27)
+
+
+### Features
+
+* only show pats that you created ([#1319](https://github.com/dhis2/user-profile-app/issues/1319)) ([37b723a](https://github.com/dhis2/user-profile-app/commit/37b723ab5ebe86e5dc2dd92a4f60804c7dc6a47e))
+
 ## [30.3.45](https://github.com/dhis2/user-profile-app/compare/v30.3.44...v30.3.45) (2023-06-27)
 
 
