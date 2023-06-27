@@ -2,13 +2,14 @@
 # Translators:
 # Cherise Beek <cherise.beek@gmail.com>, 2021
 # Rica Zamora Duchateau, 2022
+# Charel van den Elsen, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Rica Zamora Duchateau, 2022\n"
+"Last-Translator: Charel van den Elsen, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/hisp-uio/teams/100509/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -200,89 +201,106 @@ msgid "Failed to update password"
 msgstr "Updaten van paswoord gefaald"
 
 msgid "Two-factor Authentication"
-msgstr ""
+msgstr "Twee-factor-authenticatie"
 
 msgid "Turn off two-factor authentication"
-msgstr ""
+msgstr "Schakel tweefactorauthenticatie uit"
 
 msgid "Open your authenticator app."
-msgstr ""
+msgstr "Open uw authenticatie-app."
 
 msgid ""
 "Now, enter the authentication code below and click the \"Turn off\" button."
 msgstr ""
+"Voer nu de onderstaande authenticatiecode in en klik op de knop "
+"\"Uitschakelen\"."
 
 msgid "Remove two-factor account"
-msgstr ""
+msgstr "Tweefactoraccount verwijderen"
 
 msgid ""
 "Two-factor authentication is now turned off. It is recommended to remove the"
 " account from your authenticator app now to prevent any future issues re-"
 "enabling two-factor authentication."
 msgstr ""
+"Tweefactorauthenticatie is nu uitgeschakeld. Het wordt aanbevolen om het "
+"account nu uit uw authenticator-app te verwijderen om toekomstige problemen "
+"met het opnieuw inschakelen van tweefactorauthenticatie te voorkomen."
 
 msgid "Play store"
-msgstr ""
+msgstr "Play store"
 
 msgid "App store"
-msgstr ""
+msgstr "App store"
 
 msgid "Turn on two-factor authentication"
-msgstr ""
+msgstr "Schakel tweefactorauthenticatie in"
 
 msgid ""
 "Make sure you have an authenticator app installed on your device. We "
 "recommend Google Authenticator"
 msgstr ""
+"Zorg ervoor dat er een authenticatie-app op uw apparaat is geïnstalleerd. We"
+" raden Google Authenticator aan"
 
 msgid ""
 "Now, enter the code from your authenticator app below and click the \"Turn "
 "on\" button."
 msgstr ""
+"Voer nu de code van uw authenticator-app hieronder in en klik op de knop "
+"\"Inschakelen\"."
 
 msgid "Already set up two-factor authentication before?"
-msgstr ""
+msgstr "Heb je twee-factor-authenticatie al eerder ingesteld?"
 
 msgid ""
 "If you have set up two-factor authentication for this account before, you "
 "need to remove that entry from your authenticator app before setting it up "
 "again."
 msgstr ""
+"Als u eerder tweefactorauthenticatie voor dit account heeft ingesteld, moet "
+"u die invoer uit uw authenticatie-app verwijderen voordat u deze opnieuw "
+"instelt."
 
 msgid ""
 "Two-factor authentication protects your account with an extra layer of "
 "security. With two-factor authentication turned on, you will need to enter "
 "an authentication code from your device every time you log in."
 msgstr ""
+"Tweefactorauthenticatie beschermt uw account met een extra beveiligingslaag."
+" Als tweefactorauthenticatie is ingeschakeld, moet u elke keer dat u zich "
+"aanmeldt een authenticatiecode van uw apparaat invoeren."
 
 msgid "Two-factor authentication is on."
-msgstr ""
+msgstr "Twee-factor-authenticatie staat aan."
 
 msgid "Two-factor authentication is off."
-msgstr ""
+msgstr "Tweefactorauthenticatie staat uit."
 
 msgid "Could not update two-factor authentication"
-msgstr ""
+msgstr "Kan tweefactorauthenticatie niet updaten"
 
 msgid ""
 "This code does not look right. Enter the six digit code from your "
 "authentication app."
 msgstr ""
+"Deze code ziet er niet goed uit. Voer de zescijferige code van uw "
+"authenticatie-app in."
 
 msgid "Six digit authentication code"
-msgstr ""
+msgstr "Zescijferige authenticatiecode"
 
 msgid "Could not enable 2 Factor Authentication"
-msgstr ""
+msgstr "Kan 2-factor-authenticatie niet inschakelen"
 
 msgid "Two factor authentication was enabled successfully"
-msgstr ""
+msgstr "Twee-factor-authenticatie is ingeschakeld"
 
 msgid "Could not disable two factor authentication"
-msgstr ""
+msgstr "Kan twee-factor-authenticatie niet uitschakelen"
 
 msgid "Two factor authentication was disabled successfully"
-msgstr ""
+msgstr "Twee-factor-authenticatie is uitgeschakeld"
 
 msgid "Failed to upload profile picture"
 msgstr "Uploaden profielfoto gefaald"
@@ -303,22 +321,22 @@ msgid "This field is required"
 msgstr "Dit veld is verplicht."
 
 msgid "This field should be a URL"
-msgstr ""
+msgstr "Dit veld moet een URL zijn"
 
 msgid "This field should contain a list of URLs"
-msgstr ""
+msgstr "Dit veld moet een lijst met URL's bevatten"
 
 msgid "This field should be a number"
-msgstr ""
+msgstr "Dit veld moet een getal zijn"
 
 msgid "This field should be a positive number"
-msgstr ""
+msgstr "Dit veld moet een positief getal zijn"
 
 msgid "This field should be an email"
-msgstr ""
+msgstr "Dit veld moet een e-mail zijn"
 
 msgid "Please enter a valid international phone number (+0123456789)"
-msgstr ""
+msgstr "Voer een geldig internationaal telefoonnummer in (+0123456789)"
 
 msgid "Yes"
 msgstr "Ja"
@@ -330,13 +348,13 @@ msgid "No value"
 msgstr "Geen waarde"
 
 msgid "Use system default"
-msgstr ""
+msgstr "Gebruik systeemstandaard"
 
 msgid "No options"
 msgstr "Geen opties"
 
 msgid "System default"
-msgstr ""
+msgstr "Systeem standaard"
 
 msgid "User profile"
 msgstr "Gebruikersprofiel"
@@ -348,134 +366,144 @@ msgid "Account settings"
 msgstr "Accountinstellingen"
 
 msgid "Two factor authentication"
-msgstr ""
+msgstr "Twee-factor-authenticatie"
 
 msgid "Full profile"
 msgstr "Volledig profiel"
 
 msgid "Personal access tokens"
-msgstr ""
+msgstr "Persoonlijke toegangstokens"
 
 msgid "About DHIS2"
-msgstr ""
+msgstr "Over DHIS2"
 
 msgid "Manage personal access tokens"
-msgstr ""
+msgstr "Beheer persoonlijke toegangstokens"
 
 msgid "Generate new token"
-msgstr ""
+msgstr "Genereer een nieuw token"
 
 msgid "Error loading personal access tokens"
-msgstr ""
+msgstr "Fout bij het laden van persoonlijke toegangstokens"
 
 msgid "You don't have any active personal access tokens"
-msgstr ""
+msgstr "U heeft geen actieve persoonlijke toegangstokens"
 
 msgid "You'll only be shown your token once"
-msgstr ""
+msgstr "Je krijgt je token maar één keer te zien"
 
 msgid ""
 "Make sure to copy your personal access token now. You won't be able to see "
 "it again"
 msgstr ""
+"Zorg ervoor dat u nu uw persoonlijke toegangstoken kopieert. Hierna is deze "
+"niet meer zichtbaar"
 
 msgid "Invalid IP address '{{- ipAddress}}'"
-msgstr ""
+msgstr "Ongeldig IP-adres '{{- ipAddress}}'"
 
 msgid "Allowed IP addresses"
-msgstr ""
+msgstr "Toegestane IP-adressen"
 
 msgid "List one IP address per line."
-msgstr ""
+msgstr "Maak een lijst van één IP-adres per regel."
 
 msgid "Allowed HTTP methods"
-msgstr ""
+msgstr "Toegestane HTTP-methoden"
 
 msgid "GET"
-msgstr "GET"
+msgstr "KRIJGEN"
 
 msgid "POST"
-msgstr "POST"
+msgstr "PLAATSEN"
 
 msgid "PUT"
-msgstr "PUT"
+msgstr "NEERZETTEN"
 
 msgid "PATCH"
 msgstr "PATCH"
 
 msgid "DELETE"
-msgstr "DELETE"
+msgstr "VERWIJDEREN"
 
 msgid "Only choose the HTTP methods this token needs to allow."
-msgstr ""
+msgstr "Kies alleen de HTTP-methoden die dit token moet toestaan."
 
 msgid "Invalid referrer '{{- referrer}}'"
-msgstr ""
+msgstr "Ongeldige verwijzer '{{- verwijzer}}'"
 
 msgid "Allowed referrers"
-msgstr ""
+msgstr "Toegestane verwijzers"
 
 msgid "List one referrer per line."
-msgstr ""
+msgstr "Maak een lijst van één verwijzer per regel."
 
 msgid "Error fetching your authorities"
-msgstr ""
+msgstr "Fout bij het ophalen van uw autoriteiten"
 
 msgid "Retry loading authorities"
-msgstr ""
+msgstr "Probeer de laadautoriteiten opnieuw"
 
 msgid "This token will have the following authorities"
-msgstr ""
+msgstr "Dit token heeft de volgende bevoegdheden"
 
 msgid ""
 "Important: this is not a security feature. The referrer header can easily be"
 " spoofed. This setting is intended to discourage unauthorised third-party "
 "developers from connecting to public access instances."
 msgstr ""
+"Belangrijk: dit is geen beveiligingskenmerk. De referrer-header kan "
+"eenvoudig worden vervalst. Deze instelling is bedoeld om ongeautoriseerde "
+"externe ontwikkelaars te ontmoedigen om verbinding te maken met openbare "
+"toegangsinstanties."
 
 msgid "Choose the context where this token will be used."
-msgstr ""
+msgstr "Kies de context waarin dit token zal worden gebruikt."
 
 msgid "Server/script context"
-msgstr ""
+msgstr "Server-/scriptcontext"
 
 msgid "Used for integrations and scripts that won't be accessed by a browser."
 msgstr ""
+"Wordt gebruikt voor integraties en scripts waartoe een browser geen toegang "
+"heeft."
 
 msgid "Browser context"
-msgstr ""
+msgstr "Browsercontext"
 
 msgid ""
 "Used for applications, like public portals, that will be accessed with a web"
 " browser."
 msgstr ""
+"Wordt gebruikt voor toepassingen, zoals openbare portalen, die toegankelijk "
+"zijn met een webbrowser."
 
 msgid "Token expiration date must be in the future"
-msgstr ""
+msgstr "De vervaldatum van het token moet in de toekomst liggen"
 
 msgid "7 days"
-msgstr ""
+msgstr "7 dagen"
 
 msgid "30 days"
-msgstr ""
+msgstr "30 dagen"
 
 msgid "60 days"
-msgstr ""
+msgstr "60 dagen"
 
 msgid "90 days"
-msgstr ""
+msgstr "90 dagen"
 
 msgid "Custom..."
-msgstr ""
+msgstr "Aangepast..."
 
 msgid "The token will expire on {{- tokenExpirationDate}}."
-msgstr ""
+msgstr "Het token verloopt op {{- Vervaldatumtoken}}."
 
 msgid "Expiration (required)"
-msgstr ""
+msgstr "Vervaldatum (vereist)"
 
 msgid "Custom expiration date (required)"
-msgstr ""
+msgstr "Aangepaste vervaldatum (vereist)"
 
 msgid ""
 "Personal access tokens should only be used in a browser context for public "
@@ -483,9 +511,13 @@ msgid ""
 "passwords and be kept private — requests should instead be routed through a "
 "proxy."
 msgstr ""
+"Persoonlijke toegangstokens mogen alleen in een browsercontext worden "
+"gebruikt voor openbare toegangsinstanties. Voor privé-instanties moeten "
+"tokens worden behandeld als wachtwoorden en privé worden gehouden - "
+"verzoeken moeten in plaats daarvan via een proxy worden gerouteerd."
 
 msgid "Token details"
-msgstr ""
+msgstr "Tokengegevens"
 
 msgid "Cancel"
 msgstr "Annuleer"
@@ -495,164 +527,169 @@ msgid ""
 " can be spoofed. For security, make sure a load balancer or reverse proxy "
 "overwrites this header."
 msgstr ""
+"Belangrijk: IP-adresvalidatie is afhankelijk van de X-Forwarded-For-header, "
+"die kan worden vervalst. Zorg er voor de veiligheid voor dat een load "
+"balancer of reverse proxy deze header overschrijft."
 
 msgid "Are you sure you want to delete this token?"
-msgstr ""
+msgstr "Weet u zeker dat u dit token wilt verwijderen?"
 
 msgid "Error deleting token"
-msgstr ""
+msgstr "Fout bij verwijderen token"
 
 msgid ""
 "Any application or script using this token will no longer be able to access "
 "this instance's API. You cannot undo this action."
 msgstr ""
+"Elke toepassing of elk script dat dit token gebruikt, heeft geen toegang "
+"meer tot de API van deze instantie. U kunt deze actie niet ongedaan maken."
 
 msgid "Delete token"
-msgstr ""
+msgstr "Token verwijderen"
 
 msgid "Expires"
-msgstr ""
+msgstr "Verloopt"
 
 msgid "Created"
-msgstr ""
+msgstr "Gemaakt"
 
 msgid "Copied token to clipboard"
-msgstr ""
+msgstr "Gekopieerd token naar klembord"
 
 msgid "Newly created token"
-msgstr ""
+msgstr "Nieuw aangemaakt token"
 
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Kopieer naar klembord"
 
 msgid "Delete"
 msgstr "Verwijderen"
 
 msgid "Edit user profile"
-msgstr ""
+msgstr "Gebruikersprofiel bewerken"
 
 msgid "User profile updated"
-msgstr ""
+msgstr "Gebruikersprofiel bijgewerkt"
 
 msgid "Failed to update user profile"
-msgstr ""
+msgstr "Kan gebruikersprofiel niet bijwerken"
 
 msgid "Edit user settings"
-msgstr ""
+msgstr "Gebruikersinstellingen bewerken"
 
 msgid "Settings updated"
-msgstr ""
+msgstr "Instellingen bijgewerkt"
 
 msgid "Failed to update settings"
-msgstr ""
+msgstr "Kan instellingen niet updaten"
 
 msgid "First name"
-msgstr ""
+msgstr "Voornaam"
 
 msgid "Surname"
-msgstr ""
+msgstr "Achternaam"
 
 msgid "Gender"
-msgstr ""
+msgstr "Geslacht"
 
 msgid "Male"
-msgstr ""
+msgstr "Mannelijk"
 
 msgid "Female"
-msgstr ""
+msgstr "Vrouwelijk"
 
 msgid "Other"
-msgstr ""
+msgstr "Anders"
 
 msgid "E-mail"
-msgstr ""
+msgstr "E-mail"
 
 msgid "Mobile phone number"
-msgstr ""
+msgstr "Mobiele telefoonnummer"
 
 msgid "Introduction"
-msgstr ""
+msgstr "Introductie"
 
 msgid "Job title"
-msgstr ""
+msgstr "Functietitel"
 
 msgid "User roles"
-msgstr ""
+msgstr "Gebruikersrollen"
 
 msgid "User org units"
-msgstr ""
+msgstr "Organisatie-eenheden van gebruiker"
 
 msgid "Birthday"
-msgstr ""
+msgstr "Verjaardag"
 
 msgid "Nationality"
-msgstr ""
+msgstr "Nationaliteit"
 
 msgid "Employer"
-msgstr ""
+msgstr "Werkgever"
 
 msgid "Education"
-msgstr ""
+msgstr "Onderwijs"
 
 msgid "Interests"
-msgstr ""
+msgstr "Interesses"
 
 msgid "Languages"
-msgstr ""
+msgstr "Talen"
 
 msgid "WhatsApp"
-msgstr ""
+msgstr "WhatsApp"
 
 msgid "Facebook Messenger"
-msgstr ""
+msgstr "Facebook messenger"
 
 msgid "Skype"
-msgstr ""
+msgstr "Skype"
 
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 msgid "Account editor"
-msgstr ""
+msgstr "Account-editor"
 
 msgid "Interface language"
-msgstr ""
+msgstr "Interfacetaal"
 
 msgid "Database language"
-msgstr ""
+msgstr "Database taal"
 
 msgid "Style"
 msgstr "Stijl"
 
 msgid "Property to display in analysis modules"
-msgstr ""
+msgstr "Eigenschap om weer te geven in analysemodules"
 
 msgid "Short name"
 msgstr "Korte naam"
 
 msgid "Enable message email notifications"
-msgstr ""
+msgstr "E-mailmeldingen voor berichten inschakelen"
 
 msgid "Enable message SMS notifications"
-msgstr ""
+msgstr "SMS-berichtmeldingen inschakelen"
 
 msgid "View full profile"
-msgstr ""
+msgstr "Bekijk volledig profiel"
 
 msgctxt "HTTP method"
 msgid "GET"
-msgstr "GET"
+msgstr "KRIJGEN"
 
 msgctxt "HTTP method"
 msgid "POST"
-msgstr "POST"
+msgstr "PLAATSEN"
 
 msgctxt "HTTP method"
 msgid "PUT"
-msgstr "PUT"
+msgstr "NEERZETTEN"
 
 msgctxt "HTTP method"
 msgid "PATCH"
@@ -660,4 +697,4 @@ msgstr "PATCH"
 
 msgctxt "HTTP method"
 msgid "DELETE"
-msgstr "DELETE"
+msgstr "VERWIJDEREN"

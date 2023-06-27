@@ -1,3 +1,73 @@
+## [30.3.45](https://github.com/dhis2/user-profile-app/compare/v30.3.44...v30.3.45) (2023-06-27)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([0931ed8](https://github.com/dhis2/user-profile-app/commit/0931ed8deb68cc67f0967b2a09d6f289a5429440))
+
+## [30.3.44](https://github.com/dhis2/user-profile-app/compare/v30.3.43...v30.3.44) (2023-06-25)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([ad630ba](https://github.com/dhis2/user-profile-app/commit/ad630ba185420db1f18926b7342969cfac29d232))
+
+## [30.3.43](https://github.com/dhis2/user-profile-app/compare/v30.3.42...v30.3.43) (2023-06-24)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([0dbad6f](https://github.com/dhis2/user-profile-app/commit/0dbad6f49c1a6ce12078dcdaa61eaa1e13c5077a))
+
+## [30.3.42](https://github.com/dhis2/user-profile-app/compare/v30.3.41...v30.3.42) (2023-06-23)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([42bd80d](https://github.com/dhis2/user-profile-app/commit/42bd80d74632415c0ac0da23d01c7073f1d9f65c))
+
+## [30.3.41](https://github.com/dhis2/user-profile-app/compare/v30.3.40...v30.3.41) (2023-06-22)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([bbaa0e2](https://github.com/dhis2/user-profile-app/commit/bbaa0e2ca495d1cdeb50e88953cb087a7fafa404))
+
+## [30.3.40](https://github.com/dhis2/user-profile-app/compare/v30.3.39...v30.3.40) (2023-06-21)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([afad869](https://github.com/dhis2/user-profile-app/commit/afad86945e1cfa05a9326ae8e39966ca526868a0))
+
+## [30.3.39](https://github.com/dhis2/user-profile-app/compare/v30.3.38...v30.3.39) (2023-06-20)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([948c42f](https://github.com/dhis2/user-profile-app/commit/948c42fac5dbfa790763e566a24fd85e9db6f6c5))
+
+## [30.3.38](https://github.com/dhis2/user-profile-app/compare/v30.3.37...v30.3.38) (2023-06-16)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([02b6afb](https://github.com/dhis2/user-profile-app/commit/02b6afb6f3705601f2d27fe28013fe2b3cb90feb))
+
+## [30.3.37](https://github.com/dhis2/user-profile-app/compare/v30.3.36...v30.3.37) (2023-06-15)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([733b49b](https://github.com/dhis2/user-profile-app/commit/733b49b20832cc2274d009e7ad3cb2e3dcf8208d))
+
+## [30.3.36](https://github.com/dhis2/user-profile-app/compare/v30.3.35...v30.3.36) (2023-05-31)
+
+
+### Bug Fixes
+
+* update language display [DHIS2-15293] ([#1262](https://github.com/dhis2/user-profile-app/issues/1262)) ([46d6fd5](https://github.com/dhis2/user-profile-app/commit/46d6fd5506fdeab4a65c02774c61918d38c64c9e))
+
 ## [30.3.35](https://github.com/dhis2/user-profile-app/compare/v30.3.34...v30.3.35) (2023-05-28)
 
 
