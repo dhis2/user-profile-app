@@ -47,7 +47,7 @@ msgid "Build date"
 msgstr "Fecha de ensamblado"
 
 msgid "Jasper reports version"
-msgstr ""
+msgstr "Versión de Jasper Reports"
 
 msgid "User agent"
 msgstr "Agente de usuario"
@@ -65,13 +65,13 @@ msgid "Last analytics table runtime"
 msgstr "Último tiempo de ejecución de tablas analíticas"
 
 msgid "Last continuous analytics table update"
-msgstr ""
+msgstr "Última actualización continua de tablas analíticas"
 
 msgid "Time since last continuous analytics table update"
-msgstr ""
+msgstr "Tiempo desde la última actualización continua de tablas analíticas"
 
 msgid "Last continuous analytics table runtime"
-msgstr ""
+msgstr "Última ejecución continúa de tablas analíticas"
 
 msgid "Environment variable"
 msgstr "Variable de ambiente"
@@ -80,7 +80,7 @@ msgid "System ID"
 msgstr "ID del sistema"
 
 msgid "Last monitoring success"
-msgstr ""
+msgstr " Último seguimiento realizado con éxito"
 
 msgid "External configuration directory"
 msgstr "Carpeta de configuración externa"
@@ -199,7 +199,7 @@ msgstr ""
 "Necesita iniciar sesión nuevamente para continuar usando la aplicación."
 
 msgid "Login"
-msgstr ""
+msgstr "Iniciar sesión"
 
 msgid "Failed to update password"
 msgstr "No se pudo cambiar la contraseña"
@@ -612,7 +612,7 @@ msgid "Twitter"
 msgstr "Twitter"
 
 msgid "Account editor"
-msgstr ""
+msgstr "Editor de la cuenta"
 
 msgid "Interface language"
 msgstr "Idioma de la interfaz"
