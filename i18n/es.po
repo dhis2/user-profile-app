@@ -96,7 +96,7 @@ msgid "Cache provider"
 msgstr "Proveedor de caché"
 
 msgid "Read replica count"
-msgstr "Leer recuento de réplicas"
+msgstr "Recuento de réplicas de lectura"
 
 msgid "Java opts"
 msgstr "Opciones de java"
@@ -108,7 +108,7 @@ msgid "Java vendor"
 msgstr "Proveedor de Java"
 
 msgid "OS name"
-msgstr "Nombre SO"
+msgstr "Nombre del SO"
 
 msgid "OS architecture"
 msgstr "Arquitectura del SO"
@@ -406,7 +406,7 @@ msgid "Allowed referrers"
 msgstr "Referencias permitidas"
 
 msgid "List one referrer per line."
-msgstr "Indique un referente por línea."
+msgstr "Indique una referencia por línea."
 
 msgid "Error fetching your authorities"
 msgstr "Error al obtener sus autoridades"
@@ -638,7 +638,7 @@ msgid "Property to display in analysis modules"
 msgstr "Propiedad a mostrar en módulos de análisis"
 
 msgid "Short name"
-msgstr "Nombre abreviado"
+msgstr "Nombre corto"
 
 msgid "Enable message email notifications"
 msgstr "Habilitar notificaciones por correo electrónico"
