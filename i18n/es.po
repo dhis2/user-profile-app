@@ -81,7 +81,7 @@ msgid "System ID"
 msgstr "ID del sistema"
 
 msgid "Last monitoring success"
-msgstr " Último seguimiento realizado con éxito"
+msgstr "Último seguimiento realizado con éxito"
 
 msgid "External configuration directory"
 msgstr "Carpeta de configuración externa"
@@ -96,7 +96,7 @@ msgid "Cache provider"
 msgstr "Proveedor de caché"
 
 msgid "Read replica count"
-msgstr "Leer recuento de réplicas"
+msgstr "Recuento de réplicas de lectura"
 
 msgid "Java opts"
 msgstr "Opciones de java"
@@ -108,7 +108,7 @@ msgid "Java vendor"
 msgstr "Proveedor de Java"
 
 msgid "OS name"
-msgstr "Nombre SO"
+msgstr "Nombre del SO"
 
 msgid "OS architecture"
 msgstr "Arquitectura del SO"
@@ -220,7 +220,7 @@ msgstr "Abra su aplicación authenticator."
 msgid ""
 "Now, enter the authentication code below and click the \"Turn off\" button."
 msgstr ""
-"Ahora, introduzca el código de autenticación a continuación y haga clic en "
+"Ahora, introduzca el código de autenticación y a continuación haga click en "
 "el botón \"Desactivar\"."
 
 msgid "Remove two-factor account"
@@ -232,7 +232,7 @@ msgid ""
 "enabling two-factor authentication."
 msgstr ""
 "La autenticación de dos factores ahora está desactivada. Se recomienda "
-"eliminar la cuenta de la aplicación authenticator ahora para evitar "
+"eliminar la cuenta de la aplicación de autenticación ahora para evitar "
 "problemas en el futuro al volver a activar la autenticación de dos factores."
 
 msgid "Play store"
@@ -678,7 +678,7 @@ msgid "Property to display in analysis modules"
 msgstr "Propiedad a mostrar en módulos de análisis"
 
 msgid "Short name"
-msgstr "Nombre abreviado"
+msgstr "Nombre corto"
 
 msgid "Enable message email notifications"
 msgstr "Habilitar notificaciones por correo electrónico"
