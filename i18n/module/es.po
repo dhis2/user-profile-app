@@ -193,7 +193,7 @@ msgstr "Nombre"
 
 #: short_name
 msgid "Short name"
-msgstr "Abreviatura"
+msgstr "Nombre corto"
 
 #: system_default
 msgid "System default"
