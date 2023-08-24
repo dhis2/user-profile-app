@@ -7,9 +7,12 @@ import i18n from '../locales/index.js'
 import userSettingsKeyMapping from '../userSettingsMapping.js'
 import isValidWhatsApp from './isValidWhatsApp.js'
 import userProfileStore from './profile.store.js'
+import isValidTextField from './isValidTextField.js'
 
 // Add whatsApp validation to the validator set
 wordToValidatorMap.set('whats_app', isValidWhatsApp)
+wordToValidatorMap.set('job', isValidTextField)
+
 
 const userProfileActions = Action.createActionsFromNames(['save'])
 

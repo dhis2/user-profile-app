@@ -7,12 +7,12 @@ const settingsKeyMapping = {
     firstName: {
         label: i18n.t('First name'),
         type: 'textfield',
-        validators: ['required'],
+        validators: ['required','job'],
     },
     surname: {
         label: i18n.t('Surname'),
         type: 'textfield',
-        validators: ['required'],
+        validators: ['required','job'],
     },
     avatar: {
         label: i18n.t('Profile picture'),
@@ -35,15 +35,18 @@ const settingsKeyMapping = {
     phoneNumber: {
         label: i18n.t('Mobile phone number'),
         type: 'textfield',
+        validators: ['whats_app'],
     },
     introduction: {
         label: i18n.t('Introduction'),
         type: 'textfield',
         multiLine: true,
+        validators: ['job'],
     },
     jobTitle: {
         label: i18n.t('Job title'),
         type: 'textfield',
+        validators: ['job'],
     },
     userRoles: {
         label: i18n.t('User roles'),
@@ -62,25 +65,30 @@ const settingsKeyMapping = {
     nationality: {
         label: i18n.t('Nationality'),
         type: 'textfield',
+        validators: ['job'],
     },
     employer: {
         label: i18n.t('Employer'),
         type: 'textfield',
+        validators: ['job'],
     },
     education: {
         label: i18n.t('Education'),
         type: 'textfield',
+        validators: ['job'],
         multiLine: true,
     },
     // TODO: chips component for interests and languages?
     interests: {
         label: i18n.t('Interests'),
         type: 'textfield',
+        validators: ['job'],
         multiLine: true,
     },
     languages: {
         label: i18n.t('Languages'),
         type: 'textfield',
+        validators: ['job'],
         multiLine: true,
     },
     whatsApp: {
@@ -91,18 +99,22 @@ const settingsKeyMapping = {
     facebookMessenger: {
         label: i18n.t('Facebook Messenger'),
         type: 'textfield',
+        validators: ['job'],
     },
     skype: {
         label: i18n.t('Skype'),
         type: 'textfield',
+        validators: ['job'],
     },
     telegram: {
         label: i18n.t('Telegram'),
         type: 'textfield',
+        validators: ['job'],
     },
     twitter: {
         label: i18n.t('Twitter'),
         type: 'textfield',
+        validators: ['job'],
     },
     /* ================================================================= */
     /* Category: Account Settings                                        */
