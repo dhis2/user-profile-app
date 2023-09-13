@@ -1,0 +1,638 @@
+# 
+# Translators:
+# Ibatov <ibatovk@who.int>, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: i18next-conv\n"
+"POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
+"PO-Revision-Date: 2022-10-15 22:33+0000\n"
+"Last-Translator: Ibatov <ibatovk@who.int>, 2022\n"
+"Language-Team: Uzbek (Cyrillic) (https://app.transifex.com/hisp-uio/teams/100509/uz@Cyrl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uz@Cyrl\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Never"
+msgstr "Ҳеч қачон"
+
+msgid "Invalid date"
+msgstr "Сана хато"
+
+msgid "Web API"
+msgstr "Web API"
+
+msgid "Browse it here"
+msgstr "Шу ерда кўриб чиқинг"
+
+msgid "Current user"
+msgstr "Жорий фойдаланувчи"
+
+msgid "Version"
+msgstr "Вариант"
+
+msgid "Build revision"
+msgstr "Қайта кўриб чиқишни яратиш"
+
+msgid "Build date"
+msgstr "Санани шакллантиринг"
+
+msgid "Jasper reports version"
+msgstr "Jasper ҳисоботи варианти"
+
+msgid "User agent"
+msgstr "Фойдаланувчи агент"
+
+msgid "Server date"
+msgstr "Сервер санаси"
+
+msgid "Last analytics table generation"
+msgstr "Охирги марта аналитик жадвал яратилган сана"
+
+msgid "Time since last analytics table generation"
+msgstr "Охирги марта аналитик жадвал яратилгандан ўтган вақт"
+
+msgid "Last analytics table runtime"
+msgstr "Жадвалнинг охирги марта аналитика бажарилган санаси"
+
+msgid "Last continuous analytics table update"
+msgstr "Аналитика жадвалининг охирги давомий янгиланиши"
+
+msgid "Time since last continuous analytics table update"
+msgstr "Аналитика жадвалининг охирги давомий янгиланишидан кейинги вақт"
+
+msgid "Last continuous analytics table runtime"
+msgstr "Аналитика жадвалининг охирги давомий ишлаш вақти"
+
+msgid "Environment variable"
+msgstr "Атрофидаги ўзгарувчанлик"
+
+msgid "System ID"
+msgstr "Тизим ID си"
+
+msgid "Last monitoring success"
+msgstr "Охирги муваффаыиятли мониторинг"
+
+msgid "External configuration directory"
+msgstr "Ташыи конфигурация каталоги"
+
+msgid "File store provider"
+msgstr "Файл омбори провайдери"
+
+msgid "Node ID"
+msgstr "Node ID"
+
+msgid "Cache provider"
+msgstr "Кеш-провайдер"
+
+msgid "Read replica count"
+msgstr "Муносабатлар сонини ўқиш"
+
+msgid "Java opts"
+msgstr "Java варианти"
+
+msgid "Java version"
+msgstr "Java варианти"
+
+msgid "Java vendor"
+msgstr "Java етказиб берувчиси"
+
+msgid "OS name"
+msgstr "Операцион Тизим номи"
+
+msgid "OS architecture"
+msgstr "Операцион Тизим архитектураси"
+
+msgid "OS version"
+msgstr "операцион Тизим варианти"
+
+msgid "Memory info"
+msgstr "Хотира ҳақида ахборот"
+
+msgid "CPU cores"
+msgstr "Процессор ядроси"
+
+msgid "Calendar"
+msgstr "Календар"
+
+msgid "Name"
+msgstr "Исми"
+
+msgid "User"
+msgstr "Фойдаланувчи"
+
+msgid "Spatial support"
+msgstr "Маконга оид қўллаб-қувватлаш"
+
+msgid "System info"
+msgstr "Тизим ҳақида ахборот"
+
+msgid "Database"
+msgstr "Маълумотлар базаси"
+
+msgid "Edit account settings"
+msgstr "Аккаунт созламаларини таҳрир қилиш"
+
+msgid "No changes have been made"
+msgstr "Ҳеч қандай ўзгартириш қилинмаган эди"
+
+msgid "The form is currently being validated. Please try again."
+msgstr "Ҳозирда шакл текширилмоқда. Илтимос, қайтиб уриниб кўринг"
+
+msgid "The form contains errors. Please fix the errors and try again."
+msgstr "Шаклда хатоликлар мавжуд. Хатоларни тўғрилаб, қайтиб уриниб кўринг"
+
+msgid "The entered values do not match. Please re-enter."
+msgstr "Киритилган қийматлар мос келмайди. Илтимос, қайта киритинг."
+
+msgid "Please provide your old password"
+msgstr "Илтимос, эски паролингизни киритинг"
+
+msgid "Username"
+msgstr "Фойдаланувчи исми"
+
+msgid "Old password"
+msgstr "Олдинги пароль"
+
+msgid "This field can't be left blank"
+msgstr "Ушбу сатрни бўш қолдириб бўлмайди"
+
+msgid "New password"
+msgstr "Янги пароль"
+
+msgid ""
+"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
+"letter and 1 special character"
+msgstr ""
+"парол камида 8 та белгидан: камида 1 та рақамдан, 1 та бош ҳарфдан ва 1 та "
+"махсус белгидан ташкил топган бўлиши лозим"
+
+msgid "Repeat new password"
+msgstr "Янги паролни такрорланг"
+
+msgid "Setup 2-Factor"
+msgstr "2 омилли Аутентификацияни созлаш"
+
+msgid "Update password"
+msgstr "Паролни янгиланг"
+
+msgid ""
+"This account is linked to an OpenID Connect identity. Visit the Open ID "
+"Connect provider to manage this account's settings."
+msgstr ""
+"Ушбу аккаунт OpenID Connect идентификатори билан боғланган. Ушбу аккаунт "
+"созламаларини бошқариш учун OpenID Connect провайдерига мурожаат қилинг."
+
+msgid "Password changed successfully"
+msgstr "Пароль муваффақиятли ўзгартирилди"
+
+msgid "You need to login again to continue using the application."
+msgstr "Иловадан фойдаланишни давом эттиришингиз учун қайта киришингиз лозим."
+
+msgid "Login"
+msgstr "Авторизация"
+
+msgid "Failed to update password"
+msgstr "Пароль янгиланишида хатолик"
+
+msgid "2-Factor successfully turned ON"
+msgstr "2 омилли аутентикафикация муваффақиятли ёкилди"
+
+msgid "2-Factor successfully turned OFF"
+msgstr "2 омилли аутентикафикация муваффақиятли ўчирилди"
+
+msgid "Failed to turn ON 2-Factor"
+msgstr "2 омилли аутентикафикация ёкилиши амалга ошмади"
+
+msgid "Failed to turn OFF 2-Factor"
+msgstr "2-омилли аутентификацияни ўчириб бўлмади"
+
+msgid "Barcode/QR code to scan"
+msgstr "Barcode/QR код сканер қилиш учун"
+
+msgid "No"
+msgstr "Йўқ"
+
+msgid "Yes"
+msgstr "Ҳа"
+
+msgid "Turn OFF"
+msgstr "Ўчириш"
+
+msgid "Turn ON"
+msgstr "Ёқиш"
+
+msgid "2-Factor Verification is ON"
+msgstr "2 омилли текшириш ёқилган"
+
+msgid "2-Factor Verification is OFF"
+msgstr "2 омилли текшириш ўчирилган"
+
+msgid "Do you want to turn OFF 2-Factor?"
+msgstr "2 омилли текширишни ўчирмоқчимисиз?"
+
+msgid "Do you want to turn ON 2-Factor?"
+msgstr "2 омилли текширишни ёқмоқчимисиз?"
+
+msgid "Download the Authenticator app"
+msgstr "Аутентификатор Иловасини юклаш"
+
+msgid "What kind of phone/tablet do you have?"
+msgstr "Сизда қандай русумли телефон/планшет бор?"
+
+msgid "Download the Authenticator App from the "
+msgstr "Аутентификатор дастурини ...дан юклаб олиш"
+
+msgid "In the Authenticator App select "
+msgstr "Аутентификатор иловасида танланг"
+
+msgid "Begin setup."
+msgstr "Созлашни бошланг."
+
+msgid "Choose "
+msgstr "Танлаш"
+
+msgid "Scan a barcode."
+msgstr "Штрих кодни сканерланг"
+
+msgid ""
+"With 2-Factor authentication turned on you will be asked to enter a second "
+"verification code when you log in. To generate this verification code you "
+"must use the Authenticator app. If you do not have this app you must "
+"download it on your phone/tablet."
+msgstr ""
+"2 омилли аутентификация ёқилганда, тизимга кириш вақтида сиздан иккинчи "
+"текширув кодини киритишингиз сўралади. Ушбу тасдиқлаш кодини яратиш учун сиз"
+" Аутентификатор Иловасидан фойланишингиз лозим. Агар сизда ушбу дастур "
+"мавжуд бўлмаса, уни телефон/планшетга юклаб олишингиз керак бўлади."
+
+msgid "Failed to upload profile picture"
+msgstr "Профиль расмини янгилаш амалга ошмади"
+
+msgid "Profile picture"
+msgstr "Профиль расми"
+
+msgid "No profile picture available"
+msgstr "Профиль расми мавжуд эмас"
+
+msgid "Select profile picture"
+msgstr "Профиль расмини танлаш"
+
+msgid "Remove profile picture"
+msgstr "Профиль расмини олиб ташлаш"
+
+msgid "This field is required"
+msgstr "Ушбу қатор тўлдирилиши шарт"
+
+msgid "This field should be a URL"
+msgstr "Ушбу сатрда URL бўлиши лозим"
+
+msgid "This field should contain a list of URLs"
+msgstr "Ушбу майдон URL манзиллар рўйхатини ўз ичига олиши керак"
+
+msgid "This field should be a number"
+msgstr "Ушбу майдонда рақам бўлиши лозим"
+
+msgid "This field should be a positive number"
+msgstr "Ушбу майдонда мусбат рақам бўлиши лозим"
+
+msgid "This field should be an email"
+msgstr "Ушбу сатрда email бўлиши лозим"
+
+msgid "Please enter a valid international phone number (+0123456789)"
+msgstr "Илтимос, халқаро телефон рақами форматида киритинг (+0123456789)"
+
+msgid "No value"
+msgstr "Қиймат йўқ"
+
+msgid "Use system default"
+msgstr "Стандарт тизимдан фойдаланинг"
+
+msgid "No options"
+msgstr "Вариант йўқ"
+
+msgid "System default"
+msgstr "Стандарт тизимизим"
+
+msgid "User profile"
+msgstr "Фойдаланувчи профили"
+
+msgid "User settings"
+msgstr "Фойдаланувчи созламанлари"
+
+msgid "Account settings"
+msgstr "Аккаунт созламалари"
+
+msgid "Full profile"
+msgstr ""
+
+msgid "Personal access tokens"
+msgstr ""
+
+msgid "About DHIS2"
+msgstr "DHIS2 Ҳақида"
+
+msgid "Manage personal access tokens"
+msgstr ""
+
+msgid "Generate new token"
+msgstr ""
+
+msgid "Error loading personal access tokens"
+msgstr ""
+
+msgid "You don't have any active personal access tokens"
+msgstr ""
+
+msgid "You'll only be shown your token once"
+msgstr ""
+
+msgid ""
+"Make sure to copy your personal access token now. You won't be able to see "
+"it again"
+msgstr ""
+
+msgid "Invalid IP address '{{- ipAddress}}'"
+msgstr ""
+
+msgid "Allowed IP addresses"
+msgstr ""
+
+msgid "List one IP address per line."
+msgstr ""
+
+msgid "Allowed HTTP methods"
+msgstr ""
+
+msgid "GET"
+msgstr ""
+
+msgid "POST"
+msgstr ""
+
+msgid "PUT"
+msgstr ""
+
+msgid "PATCH"
+msgstr ""
+
+msgid "DELETE"
+msgstr ""
+
+msgid "Only choose the HTTP methods this token needs to allow."
+msgstr ""
+
+msgid "Invalid referrer '{{- referrer}}'"
+msgstr ""
+
+msgid "Allowed referrers"
+msgstr ""
+
+msgid "List one referrer per line."
+msgstr ""
+
+msgid "Error fetching your authorities"
+msgstr ""
+
+msgid "Retry loading authorities"
+msgstr ""
+
+msgid "This token will have the following authorities"
+msgstr ""
+
+msgid ""
+"Important: this is not a security feature. The referrer header can easily be"
+" spoofed. This setting is intended to discourage unauthorised third-party "
+"developers from connecting to public access instances."
+msgstr ""
+
+msgid "Choose the context where this token will be used."
+msgstr ""
+
+msgid "Server/script context"
+msgstr ""
+
+msgid "Used for integrations and scripts that won't be accessed by a browser."
+msgstr ""
+
+msgid "Browser context"
+msgstr ""
+
+msgid ""
+"Used for applications, like public portals, that will be accessed with a web"
+" browser."
+msgstr ""
+
+msgid "Token expiration date must be in the future"
+msgstr ""
+
+msgid "7 days"
+msgstr ""
+
+msgid "30 days"
+msgstr ""
+
+msgid "60 days"
+msgstr ""
+
+msgid "90 days"
+msgstr ""
+
+msgid "Custom..."
+msgstr ""
+
+msgid "The token will expire on {{- tokenExpirationDate}}."
+msgstr ""
+
+msgid "Expiration (required)"
+msgstr ""
+
+msgid "Custom expiration date (required)"
+msgstr ""
+
+msgid ""
+"Personal access tokens should only be used in a browser context for public "
+"access instances. For private instances, tokens should be treated like "
+"passwords and be kept private — requests should instead be routed through a "
+"proxy."
+msgstr ""
+
+msgid "Token details"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Бекор қилиш"
+
+msgid ""
+"Important: IP address validation relies on the X-Forwarded-For header, which"
+" can be spoofed. For security, make sure a load balancer or reverse proxy "
+"overwrites this header."
+msgstr ""
+
+msgid "Are you sure you want to delete this token?"
+msgstr ""
+
+msgid "Error deleting token"
+msgstr ""
+
+msgid ""
+"Any application or script using this token will no longer be able to access "
+"this instance's API. You cannot undo this action."
+msgstr ""
+
+msgid "Delete token"
+msgstr ""
+
+msgid "Expires"
+msgstr ""
+
+msgid "Created"
+msgstr "Яратилган"
+
+msgid "Copied token to clipboard"
+msgstr ""
+
+msgid "Newly created token"
+msgstr ""
+
+msgid "Copy to clipboard"
+msgstr "Буферга нусха олиш"
+
+msgid "Delete"
+msgstr "Ўчириб ташлаш"
+
+msgid "Edit user profile"
+msgstr "Фойдаланувчи профилни таҳрир қилиш"
+
+msgid "User profile updated"
+msgstr "Фойдаланувчи профили янгиланди"
+
+msgid "Failed to update user profile"
+msgstr "Фойдаланувчи профили янгиланиши амалга ошмади"
+
+msgid "Edit user settings"
+msgstr "Фойдаланувчи созламанларини таҳрир қилиш"
+
+msgid "Settings updated"
+msgstr "Созламалар янгиланди"
+
+msgid "Failed to update settings"
+msgstr "Созламалар янгиланиши амалга ошмади"
+
+msgid "First name"
+msgstr "Исм"
+
+msgid "Surname"
+msgstr "Фамилия"
+
+msgid "Gender"
+msgstr "Жинси"
+
+msgid "Male"
+msgstr "Эркак"
+
+msgid "Female"
+msgstr "Аёл"
+
+msgid "Other"
+msgstr "Бошқа"
+
+msgid "E-mail"
+msgstr "Электрон почта"
+
+msgid "Mobile phone number"
+msgstr "Мобил телефон рақами"
+
+msgid "Introduction"
+msgstr "Таништириш"
+
+msgid "Job title"
+msgstr "Лавозим"
+
+msgid "User roles"
+msgstr "Фойдаланувчи роллари"
+
+msgid "User org units"
+msgstr "Фойдаланувчи ташкилий бўлими"
+
+msgid "Birthday"
+msgstr "Тугилган кун"
+
+msgid "Nationality"
+msgstr "Миллати"
+
+msgid "Employer"
+msgstr "Иш берувчи"
+
+msgid "Education"
+msgstr "Маълумоти"
+
+msgid "Interests"
+msgstr "Қизиқиши"
+
+msgid "Languages"
+msgstr "Тиллар"
+
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+msgid "Facebook Messenger"
+msgstr "Facebook Messenger"
+
+msgid "Skype"
+msgstr "Skype"
+
+msgid "Telegram"
+msgstr "Telegram"
+
+msgid "Twitter"
+msgstr "Telegram"
+
+msgid "Account editor"
+msgstr "Аккаунт муҳаррири"
+
+msgid "Interface language"
+msgstr "Интерфейс тили"
+
+msgid "Database language"
+msgstr "Маълумотлар базаси тили"
+
+msgid "Style"
+msgstr "Услуб"
+
+msgid "Property to display in analysis modules"
+msgstr "Таҳлил модулларини намойиш этиш хислати"
+
+msgid "Short name"
+msgstr "Қисқача номи"
+
+msgid "Enable message email notifications"
+msgstr "Электрон почта хабарномасини ёқиш"
+
+msgid "Enable message SMS notifications"
+msgstr "СМС хабарномасини ёқиш"
+
+msgid "View full profile"
+msgstr "Профилни тўлиқ кўриш"
+
+msgctxt "HTTP method"
+msgid "GET"
+msgstr ""
+
+msgctxt "HTTP method"
+msgid "POST"
+msgstr ""
+
+msgctxt "HTTP method"
+msgid "PUT"
+msgstr ""
+
+msgctxt "HTTP method"
+msgid "PATCH"
+msgstr ""
+
+msgctxt "HTTP method"
+msgid "DELETE"
+msgstr ""
