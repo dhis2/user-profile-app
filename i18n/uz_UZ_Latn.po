@@ -1,0 +1,659 @@
+# 
+# Translators:
+# Yury Rogachev <yury@dhis2.org>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: i18next-conv\n"
+"POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
+"PO-Revision-Date: 2021-03-17 23:49+0000\n"
+"Last-Translator: Yury Rogachev <yury@dhis2.org>, 2023\n"
+"Language-Team: Uzbek (Latin) (https://app.transifex.com/hisp-uio/teams/100509/uz@Latn/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uz@Latn\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Never"
+msgstr "Hech qachon"
+
+msgid "Invalid date"
+msgstr "Sana xato"
+
+msgid "Web API"
+msgstr "Web API"
+
+msgid "Browse it here"
+msgstr "Shu yerda koʼrib chiqing"
+
+msgid "Current user"
+msgstr "Joriy foydalanuvchi"
+
+msgid "Version"
+msgstr "Вариант"
+
+msgid "Build revision"
+msgstr "Qayta koʼrib chiqishni yaratish"
+
+msgid "Build date"
+msgstr "Sozlangan sana"
+
+msgid "Jasper reports version"
+msgstr "Jasper hisoboti varianti"
+
+msgid "User agent"
+msgstr "Foydalanuvchi agent"
+
+msgid "Server date"
+msgstr "Server sanasi"
+
+msgid "Last analytics table generation"
+msgstr "Oxirgi marta analitik jadval yaratilgan sana"
+
+msgid "Time since last analytics table generation"
+msgstr "Oxirgi marta analitik jadval yaratilgandan oʼtgan vaqt"
+
+msgid "Last analytics table runtime"
+msgstr "Jadvalning oxirgi marta analitika bajarilgan sanasi"
+
+msgid "Last continuous analytics table update"
+msgstr "Аnalitika jadvalining oxirgi davomiy yangilanishi"
+
+msgid "Time since last continuous analytics table update"
+msgstr "Аnalitika jadvalining oxirgi davomiy yangilanishidan keyingi vaqt"
+
+msgid "Last continuous analytics table runtime"
+msgstr "Аnalitika jadvalining oxirgi davomiy ishlash vaqti"
+
+msgid "Environment variable"
+msgstr "Аtrofidagi oʼzgaruvchanlik"
+
+msgid "System ID"
+msgstr "Tizim ID si"
+
+msgid "Last monitoring success"
+msgstr "Oxirgi muvaffaыiyatli monitoring"
+
+msgid "External configuration directory"
+msgstr "Tashыi konfiguratsiya katalogi"
+
+msgid "File store provider"
+msgstr "Fayl ombori provayderi"
+
+msgid "Node ID"
+msgstr "Node ID"
+
+msgid "Cache provider"
+msgstr "Kesh-provayder"
+
+msgid "Read replica count"
+msgstr "Munosabatlar sonini oʼqish"
+
+msgid "Java opts"
+msgstr "Java varianti"
+
+msgid "Java version"
+msgstr "Java varianti"
+
+msgid "Java vendor"
+msgstr "Java yetkazib beruvchisi"
+
+msgid "OS name"
+msgstr "OS nomi"
+
+msgid "OS architecture"
+msgstr "Operatsion Tizim arxitekturasi"
+
+msgid "OS version"
+msgstr "operatsion Tizim varianti"
+
+msgid "Memory info"
+msgstr "Xotira haqida axborot"
+
+msgid "CPU cores"
+msgstr "Protsessor yadrosi"
+
+msgid "Calendar"
+msgstr "Kalendar"
+
+msgid "Name"
+msgstr "Исми"
+
+msgid "User"
+msgstr "Foydalanuvchi"
+
+msgid "Spatial support"
+msgstr "Makonga oid qoʼllab-quvvatlash"
+
+msgid "System info"
+msgstr "Tizim haqida axborot"
+
+msgid "Database"
+msgstr "Maʼlumotlar bazasi"
+
+msgid "Edit account settings"
+msgstr "Аkkaunt sozlamalarini tahrir qilish"
+
+msgid "No changes have been made"
+msgstr "Hech qanday oʼzgartirish qilinmagan edi"
+
+msgid "The form is currently being validated. Please try again."
+msgstr "Hozirda shakl tekshirilmoqda. Iltimos, qaytib urinib koʼring"
+
+msgid "The form contains errors. Please fix the errors and try again."
+msgstr ""
+"Shaklda xatoliklar mavjud. Xatolarni toʼgʼrilab, qaytib urinib koʼring"
+
+msgid "The entered values do not match. Please re-enter."
+msgstr "Kiritilgan qiymatlar mos kelmaydi. Iltimos, qayta kiriting."
+
+msgid "Please provide your old password"
+msgstr "Iltimos, eski parolingizni kiriting"
+
+msgid "Username"
+msgstr "Фойдаланувчи исми"
+
+msgid "Old password"
+msgstr "Oldingi parol"
+
+msgid "This field can't be left blank"
+msgstr "Ushbu satrni boʼsh qoldirib boʼlmaydi"
+
+msgid "New password"
+msgstr "Yangi parol"
+
+msgid ""
+"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
+"letter and 1 special character"
+msgstr ""
+
+msgid "Repeat new password"
+msgstr "Yangi parolni takrorlang"
+
+msgid "Setup 2-Factor"
+msgstr "2 omilli Аutentifikatsiyani sozlash"
+
+msgid "Update password"
+msgstr "Parolni yangilang"
+
+msgid ""
+"This account is linked to an OpenID Connect identity. Visit the Open ID "
+"Connect provider to manage this account's settings."
+msgstr ""
+
+msgid "Password changed successfully"
+msgstr "Parol muvaffaqiyatli oʼzgartirildi"
+
+msgid "You need to login again to continue using the application."
+msgstr ""
+"Ilovadan foydalanishni davom ettirishingiz uchun qayta kirishingiz lozim."
+
+msgid "Login"
+msgstr "Аvtorizatsiya"
+
+msgid "Failed to update password"
+msgstr "Parol yangilanishida xatolik"
+
+msgid "Two-factor Authentication"
+msgstr ""
+
+msgid "Turn off two-factor authentication"
+msgstr ""
+
+msgid "Open your authenticator app."
+msgstr ""
+
+msgid ""
+"Now, enter the authentication code below and click the \"Turn off\" button."
+msgstr ""
+
+msgid "Remove two-factor account"
+msgstr ""
+
+msgid ""
+"Two-factor authentication is now turned off. It is recommended to remove the"
+" account from your authenticator app now to prevent any future issues re-"
+"enabling two-factor authentication."
+msgstr ""
+
+msgid "Play store"
+msgstr ""
+
+msgid "App store"
+msgstr "Ilovalar doʼkoni"
+
+msgid "Turn on two-factor authentication"
+msgstr ""
+
+msgid ""
+"Make sure you have an authenticator app installed on your device. We "
+"recommend Google Authenticator"
+msgstr ""
+
+msgid ""
+"Now, enter the code from your authenticator app below and click the \"Turn "
+"on\" button."
+msgstr ""
+
+msgid "Already set up two-factor authentication before?"
+msgstr ""
+
+msgid ""
+"If you have set up two-factor authentication for this account before, you "
+"need to remove that entry from your authenticator app before setting it up "
+"again."
+msgstr ""
+
+msgid ""
+"Two-factor authentication protects your account with an extra layer of "
+"security. With two-factor authentication turned on, you will need to enter "
+"an authentication code from your device every time you log in."
+msgstr ""
+
+msgid "Two-factor authentication is on."
+msgstr ""
+
+msgid "Two-factor authentication is off."
+msgstr ""
+
+msgid "Could not update two-factor authentication"
+msgstr ""
+
+msgid ""
+"This code does not look right. Enter the six digit code from your "
+"authentication app."
+msgstr ""
+
+msgid "Six digit authentication code"
+msgstr ""
+
+msgid "Could not enable 2 Factor Authentication"
+msgstr ""
+
+msgid "Two factor authentication was enabled successfully"
+msgstr ""
+
+msgid "Could not disable two factor authentication"
+msgstr ""
+
+msgid "Two factor authentication was disabled successfully"
+msgstr ""
+
+msgid "Failed to upload profile picture"
+msgstr "Profil rasmini yangilash amalga oshmadi"
+
+msgid "Profile picture"
+msgstr "Profil rasmi"
+
+msgid "No profile picture available"
+msgstr "Profil rasmi mavjud emas"
+
+msgid "Select profile picture"
+msgstr "Profil rasmini tanlash"
+
+msgid "Remove profile picture"
+msgstr "Profil rasmini olib tashlash"
+
+msgid "This field is required"
+msgstr "Ushbu qator toʼldirilishi shart"
+
+msgid "This field should be a URL"
+msgstr ""
+
+msgid "This field should contain a list of URLs"
+msgstr "Ushbu maydon URL manzillar roʼyxatini oʼz ichiga olishi kerak"
+
+msgid "This field should be a number"
+msgstr "Ushbu maydonda raqam boʼlishi lozim"
+
+msgid "This field should be a positive number"
+msgstr "Ushbu maydonda musbat raqam boʼlishi lozim"
+
+msgid "This field should be an email"
+msgstr ""
+
+msgid "Please enter a valid international phone number (+0123456789)"
+msgstr "Iltimos, xalqaro telefon raqami formatida kiriting (+0123456789)"
+
+msgid "Yes"
+msgstr "Ҳа"
+
+msgid "No"
+msgstr "Йўқ"
+
+msgid "No value"
+msgstr "Qiymat yoʼq"
+
+msgid "Use system default"
+msgstr "Standart tizimdan foydalaning"
+
+msgid "No options"
+msgstr ""
+
+msgid "System default"
+msgstr "Standart tizimizim"
+
+msgid "User profile"
+msgstr "Foydalanuvchi profili"
+
+msgid "User settings"
+msgstr "Foydalanuvchi sozlamanlari"
+
+msgid "Account settings"
+msgstr "Аkkaunt sozlamalari"
+
+msgid "Two factor authentication"
+msgstr ""
+
+msgid "Full profile"
+msgstr ""
+
+msgid "Personal access tokens"
+msgstr ""
+
+msgid "About DHIS2"
+msgstr "DHIS2 Haqida"
+
+msgid "Manage personal access tokens"
+msgstr ""
+
+msgid "Generate new token"
+msgstr ""
+
+msgid "Error loading personal access tokens"
+msgstr ""
+
+msgid "You don't have any active personal access tokens"
+msgstr ""
+
+msgid "You'll only be shown your token once"
+msgstr ""
+
+msgid ""
+"Make sure to copy your personal access token now. You won't be able to see "
+"it again"
+msgstr ""
+
+msgid "Invalid IP address '{{- ipAddress}}'"
+msgstr ""
+
+msgid "Allowed IP addresses"
+msgstr ""
+
+msgid "List one IP address per line."
+msgstr ""
+
+msgid "Allowed HTTP methods"
+msgstr ""
+
+msgid "GET"
+msgstr ""
+
+msgid "POST"
+msgstr ""
+
+msgid "PUT"
+msgstr ""
+
+msgid "PATCH"
+msgstr ""
+
+msgid "DELETE"
+msgstr ""
+
+msgid "Only choose the HTTP methods this token needs to allow."
+msgstr ""
+
+msgid "Invalid referrer '{{- referrer}}'"
+msgstr ""
+
+msgid "Allowed referrers"
+msgstr ""
+
+msgid "List one referrer per line."
+msgstr ""
+
+msgid "Error fetching your authorities"
+msgstr ""
+
+msgid "Retry loading authorities"
+msgstr ""
+
+msgid "This token will have the following authorities"
+msgstr ""
+
+msgid ""
+"Important: this is not a security feature. The referrer header can easily be"
+" spoofed. This setting is intended to discourage unauthorised third-party "
+"developers from connecting to public access instances."
+msgstr ""
+
+msgid "Choose the context where this token will be used."
+msgstr ""
+
+msgid "Server/script context"
+msgstr ""
+
+msgid "Used for integrations and scripts that won't be accessed by a browser."
+msgstr ""
+
+msgid "Browser context"
+msgstr ""
+
+msgid ""
+"Used for applications, like public portals, that will be accessed with a web"
+" browser."
+msgstr ""
+
+msgid "Token expiration date must be in the future"
+msgstr ""
+
+msgid "7 days"
+msgstr ""
+
+msgid "30 days"
+msgstr ""
+
+msgid "60 days"
+msgstr ""
+
+msgid "90 days"
+msgstr ""
+
+msgid "Custom..."
+msgstr ""
+
+msgid "The token will expire on {{- tokenExpirationDate}}."
+msgstr ""
+
+msgid "Expiration (required)"
+msgstr ""
+
+msgid "Custom expiration date (required)"
+msgstr ""
+
+msgid ""
+"Personal access tokens should only be used in a browser context for public "
+"access instances. For private instances, tokens should be treated like "
+"passwords and be kept private — requests should instead be routed through a "
+"proxy."
+msgstr ""
+
+msgid "Token details"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Бекор қилиш"
+
+msgid ""
+"Important: IP address validation relies on the X-Forwarded-For header, which"
+" can be spoofed. For security, make sure a load balancer or reverse proxy "
+"overwrites this header."
+msgstr ""
+
+msgid "Are you sure you want to delete this token?"
+msgstr ""
+
+msgid "Error deleting token"
+msgstr ""
+
+msgid ""
+"Any application or script using this token will no longer be able to access "
+"this instance's API. You cannot undo this action."
+msgstr ""
+
+msgid "Delete token"
+msgstr ""
+
+msgid "Expires"
+msgstr ""
+
+msgid "Created"
+msgstr "Yaratilgan"
+
+msgid "Copied token to clipboard"
+msgstr ""
+
+msgid "Newly created token"
+msgstr ""
+
+msgid "Copy to clipboard"
+msgstr "Buferga nusxa olish"
+
+msgid "Delete"
+msgstr "Oʼchirib tashlash"
+
+msgid "Edit user profile"
+msgstr "Foydalanuvchi profilni tahrir qilish"
+
+msgid "User profile updated"
+msgstr "Foydalanuvchi profili yangilandi"
+
+msgid "Failed to update user profile"
+msgstr "Foydalanuvchi profili yangilanishi amalga oshmadi"
+
+msgid "Edit user settings"
+msgstr "Foydalanuvchi sozlamanlarini tahrir qilish"
+
+msgid "Settings updated"
+msgstr "Sozlamalar yangilandi"
+
+msgid "Failed to update settings"
+msgstr "Sozlamalar yangilanishi amalga oshmadi"
+
+msgid "First name"
+msgstr "Ism"
+
+msgid "Surname"
+msgstr "Familiya"
+
+msgid "Gender"
+msgstr "Jinsi"
+
+msgid "Male"
+msgstr "Erkak"
+
+msgid "Female"
+msgstr "Аyol"
+
+msgid "Other"
+msgstr "Boshqa"
+
+msgid "E-mail"
+msgstr "Elektron pochta"
+
+msgid "Mobile phone number"
+msgstr "Mobil telefon raqami"
+
+msgid "Introduction"
+msgstr "Tanishtirish"
+
+msgid "Job title"
+msgstr "Lavozim"
+
+msgid "User roles"
+msgstr "Foydalanuvchi rollari"
+
+msgid "User org units"
+msgstr "Foydalanuvchi tashkiliy boʼlimi"
+
+msgid "Birthday"
+msgstr "Tugilgan kun"
+
+msgid "Nationality"
+msgstr "Millati"
+
+msgid "Employer"
+msgstr "Ishga oluvchi"
+
+msgid "Education"
+msgstr "Maʼlumoti"
+
+msgid "Interests"
+msgstr "Qiziqishi"
+
+msgid "Languages"
+msgstr "Til"
+
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+msgid "Facebook Messenger"
+msgstr "Facebook Messenger"
+
+msgid "Skype"
+msgstr "Skype"
+
+msgid "Telegram"
+msgstr "Telegram"
+
+msgid "Twitter"
+msgstr "Telegram"
+
+msgid "Account editor"
+msgstr ""
+
+msgid "Interface language"
+msgstr "Interfeys tili"
+
+msgid "Database language"
+msgstr "Maʼlumotlar bazasi tili"
+
+msgid "Style"
+msgstr "Услуб"
+
+msgid "Property to display in analysis modules"
+msgstr "Tahlil modullarini namoyish etadigan xususiyat"
+
+msgid "Short name"
+msgstr "Qisqacha nomi"
+
+msgid "Enable message email notifications"
+msgstr "Elektron pochta xabarnomasini yoqish"
+
+msgid "Enable message SMS notifications"
+msgstr "SMS xabarnomasini yoqish"
+
+msgid "View full profile"
+msgstr "Profilni toʼliq koʼrish"
+
+msgctxt "HTTP method"
+msgid "GET"
+msgstr ""
+
+msgctxt "HTTP method"
+msgid "POST"
+msgstr ""
+
+msgctxt "HTTP method"
+msgid "PUT"
+msgstr ""
+
+msgctxt "HTTP method"
+msgid "PATCH"
+msgstr ""
+
+msgctxt "HTTP method"
+msgid "DELETE"
+msgstr ""
