@@ -349,28 +349,28 @@ msgid "Two factor authentication"
 msgstr ""
 
 msgid "Full profile"
-msgstr ""
+msgstr "Тўлиқ профиль"
 
 msgid "Personal access tokens"
-msgstr ""
+msgstr "Персонал кириш токени"
 
 msgid "About DHIS2"
 msgstr "DHIS2 Ҳақида"
 
 msgid "Manage personal access tokens"
-msgstr ""
+msgstr "Персонал кириш токенини бошқариш"
 
 msgid "Generate new token"
-msgstr ""
+msgstr "Янги умумий токен"
 
 msgid "Error loading personal access tokens"
-msgstr ""
+msgstr "Персонал кириш токени юклашда хатолик"
 
 msgid "You don't have any active personal access tokens"
-msgstr ""
+msgstr "Сизда актив персонал токен мавжуд эмас"
 
 msgid "You'll only be shown your token once"
-msgstr ""
+msgstr "Токенингиз фақат бир марта кўрсатилади"
 
 msgid ""
 "Make sure to copy your personal access token now. You won't be able to see "
@@ -378,31 +378,31 @@ msgid ""
 msgstr ""
 
 msgid "Invalid IP address '{{- ipAddress}}'"
-msgstr ""
+msgstr "IP адрессда носозлик '{{- ipAddress}}'"
 
 msgid "Allowed IP addresses"
-msgstr ""
+msgstr "Рухсат этилган IP манзиллар"
 
 msgid "List one IP address per line."
 msgstr ""
 
 msgid "Allowed HTTP methods"
-msgstr ""
+msgstr "HTTP рухсат этилган усуллари"
 
 msgid "GET"
-msgstr ""
+msgstr "GET"
 
 msgid "POST"
-msgstr ""
+msgstr "POST"
 
 msgid "PUT"
-msgstr ""
+msgstr "PUT"
 
 msgid "PATCH"
-msgstr ""
+msgstr "ЯМАШ"
 
 msgid "DELETE"
-msgstr ""
+msgstr "ЎЧИРИШ"
 
 msgid "Only choose the HTTP methods this token needs to allow."
 msgstr ""
@@ -452,19 +452,19 @@ msgid "Token expiration date must be in the future"
 msgstr ""
 
 msgid "7 days"
-msgstr ""
+msgstr "7 кун"
 
 msgid "30 days"
-msgstr ""
+msgstr "30 кун"
 
 msgid "60 days"
-msgstr ""
+msgstr "60 кун"
 
 msgid "90 days"
-msgstr ""
+msgstr "90 кун"
 
 msgid "Custom..."
-msgstr ""
+msgstr "Мижоз..."
 
 msgid "The token will expire on {{- tokenExpirationDate}}."
 msgstr ""
@@ -495,10 +495,10 @@ msgid ""
 msgstr ""
 
 msgid "Are you sure you want to delete this token?"
-msgstr ""
+msgstr "Ушбу токенни ўчиришни хохлайсизми?"
 
 msgid "Error deleting token"
-msgstr ""
+msgstr "Токенни ўчиришда хатолик"
 
 msgid ""
 "Any application or script using this token will no longer be able to access "
@@ -506,19 +506,19 @@ msgid ""
 msgstr ""
 
 msgid "Delete token"
-msgstr ""
+msgstr "Токенни ўчириш"
 
 msgid "Expires"
-msgstr ""
+msgstr "Муддати тугайди"
 
 msgid "Created"
 msgstr "Яратилган"
 
 msgid "Copied token to clipboard"
-msgstr ""
+msgstr "Токенни буферга нусха олиш"
 
 msgid "Newly created token"
-msgstr ""
+msgstr "Янги яратилган токен"
 
 msgid "Copy to clipboard"
 msgstr "Буферга нусха олиш"
@@ -642,20 +642,20 @@ msgstr "Профилни тўлиқ кўриш"
 
 msgctxt "HTTP method"
 msgid "GET"
-msgstr ""
+msgstr "GET"
 
 msgctxt "HTTP method"
 msgid "POST"
-msgstr ""
+msgstr "POST"
 
 msgctxt "HTTP method"
 msgid "PUT"
-msgstr ""
+msgstr "PUT"
 
 msgctxt "HTTP method"
 msgid "PATCH"
-msgstr ""
+msgstr "ЯМАШ"
 
 msgctxt "HTTP method"
 msgid "DELETE"
-msgstr ""
+msgstr "ЎЧИРИШ"
