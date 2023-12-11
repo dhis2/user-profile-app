@@ -7,10 +7,18 @@ import React, { Component } from 'react'
 import userSettingsActions from '../app.actions'
 import i18n from '../locales'
 import './avatareditor.component.css'
+import optionValueStore from '../optionValue.store.js'
+
+const MAX_PROFILE_PICTURE_SIZE_IN_MB = 2 // maximum allowed file size for an avatar (2MB)
 
 class AvatarEditor extends Component {
     constructor(props) {
         super(props)
+
+        // This system setting does not exist currently, but leaving it here in case 1MB is not enough in some contexts
+        this.maxPhotoSize =
+            optionValueStore?.state.systemDefault?.keyMaxAvatarSizeInMB ??
+            MAX_PROFILE_PICTURE_SIZE_IN_MB
 
         this.api = props.d2.Api.getApi()
         this.userId = props.currentUser.id
@@ -35,6 +43,23 @@ class AvatarEditor extends Component {
         const { onChange } = this.props
         // Setup form data for image file
         const file = event.target.files[0]
+
+        // reject files bigger than the maximum allowed size
+        const maxSize = this.maxPhotoSize * 1000 * 1024 // maximum size in bytes
+        if (file?.size > maxSize) {
+            userSettingsActions.showSnackbarMessage({
+                message: i18n.t(
+                    `Please choose a profile avatar less than {{- maxSize}}MB in size.`,
+                    {
+                        maxSize: this.maxPhotoSize,
+                    }
+                ),
+                status: 'error',
+                permanent: true,
+            })
+
+            return
+        }
 
         // Cancel was pressed, no file provided
         if (!file) {
