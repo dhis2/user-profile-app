@@ -1,7 +1,8 @@
 # 
 # Translators:
-# phil_dhis2, 2021
+# Philip Larsen Donnelly, 2021
 # Viktor Varland <viktor@dhis2.org>, 2021
+# Thiago Rocha, 2024
 # 
 #, fuzzy
 msgid ""
@@ -10,8 +11,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-01 00:28-0400\n"
 "PO-Revision-Date: 2021-03-09 23:24+0000\n"
-"Last-Translator: Viktor Varland <viktor@dhis2.org>, 2021\n"
-"Language-Team: Portuguese (Brazil) (https://www.transifex.com/hisp-uio/teams/100509/pt_BR/)\n"
+"Last-Translator: Thiago Rocha, 2024\n"
+"Language-Team: Portuguese (Brazil) (https://app.transifex.com/hisp-uio/teams/100509/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,11 +22,11 @@ msgstr ""
 
 #: user_profile
 msgid "User profile"
-msgstr ""
+msgstr "Perfil de usuário"
 
 #: account_settings
 msgid "Account settings"
-msgstr ""
+msgstr "Configurações de Conta"
 
 #: user_settings
 msgid "User settings"
@@ -53,7 +54,7 @@ msgstr "Nova password"
 
 #: repeat_new_password
 msgid "Repeat new password"
-msgstr ""
+msgstr "Repetir a nova senha"
 
 #: openid
 msgid "OpenID"
@@ -135,7 +136,7 @@ msgstr "Idiomas"
 
 #: update_user_profile_success
 msgid "User profile updated"
-msgstr ""
+msgstr "Perfil de usuário atualizado"
 
 #: settings
 msgid "Settings"
@@ -144,7 +145,7 @@ msgstr "Configurações"
 #: property_to_display_in_analysis_modules
 msgctxt "property_to_display_in_analysis_modules"
 msgid "Property to display in analysis modules"
-msgstr ""
+msgstr "Propriedade a ser exibida nos módulos de análise"
 
 #: general
 msgid "General"
@@ -160,7 +161,7 @@ msgstr "Definições foram actualizados com sucesso"
 
 #: failed_to_update_settings
 msgid "Failed to update settings"
-msgstr ""
+msgstr "Falha ao atualizar as configurações"
 
 #: style
 msgid "Style"
@@ -185,7 +186,7 @@ msgstr "Activar notificações por sms"
 #: analysis_module
 msgctxt "analysis_module"
 msgid "Property to display in analysis modules"
-msgstr ""
+msgstr "Propriedade a ser exibida nos módulos de análise"
 
 #: name
 msgid "Name"
@@ -197,7 +198,7 @@ msgstr "Nome curto"
 
 #: system_default
 msgid "System default"
-msgstr ""
+msgstr "Sistema padrão"
 
 #: value_should_be_an_email
 msgid "Please enter a valid email address"
@@ -205,7 +206,7 @@ msgstr ""
 
 #: update_user_profile_fail
 msgid "Failed to update user profile"
-msgstr ""
+msgstr "Falha ao atualizar o perfil do usuário"
 
 #: update_settings_fail
 msgid "Fialed to update user settings"
@@ -213,7 +214,7 @@ msgstr ""
 
 #: update_password
 msgid "Update password"
-msgstr ""
+msgstr "Alterar a senha"
 
 #: invalid_password
 msgid ""
@@ -223,11 +224,11 @@ msgstr ""
 
 #: passwords_do_not_match
 msgid "The entered values do not match. Please re-enter."
-msgstr ""
+msgstr "Os valores introduzidos nao conscidem. Por favor, volte a introduzir."
 
 #: use_system_default
 msgid "Use system default"
-msgstr ""
+msgstr "Usar o padrão do sistema"
 
 #: true_notifications
 msgid "Yes"
@@ -239,7 +240,7 @@ msgstr "nenhum"
 
 #: value_required
 msgid "This field can't be left blank"
-msgstr ""
+msgstr "Este campo não pode ser deixado em branco"
 
 #: please_enter_the_correct_password
 msgid "Please enter the correct password"
@@ -247,15 +248,15 @@ msgstr ""
 
 #: no_changes_have_been_made
 msgid "No changes have been made"
-msgstr ""
+msgstr "Nenhuma modificação foi efetuada"
 
 #: validating_please_try_again
 msgid "The form is currently being validated. Please try again."
-msgstr ""
+msgstr "O formulário esta sendo validado. Tente novamente."
 
 #: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
-msgstr ""
+msgstr "O formulário contém falhas. Corrija os erros e tente novamente."
 
 #: password_update_success
 msgid "Your password was updated successfully"
@@ -263,4 +264,4 @@ msgstr ""
 
 #: password_update_failed
 msgid "Failed to update password"
-msgstr ""
+msgstr "Falha na alteração da senha"
