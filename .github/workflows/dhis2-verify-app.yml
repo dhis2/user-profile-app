@@ -9,7 +9,6 @@ env:
     GIT_COMMITTER_EMAIL: 'apps@dhis2.org'
     D2_VERBOSE: true
 
-
 jobs:
     install:
         runs-on: ubuntu-latest
