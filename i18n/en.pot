@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
-"PO-Revision-Date: 2023-02-27T14:55:39.217Z\n"
+"POT-Creation-Date: 2024-02-29T09:59:56.207Z\n"
+"PO-Revision-Date: 2024-02-29T09:59:56.208Z\n"
 
 msgid "Never"
 msgstr "Never"
@@ -288,6 +288,9 @@ msgstr "Could not disable two factor authentication"
 
 msgid "Two factor authentication was disabled successfully"
 msgstr "Two factor authentication was disabled successfully"
+
+msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
+msgstr "Please choose a profile avatar less than {{- maxSize}}MB in size."
 
 msgid "Failed to upload profile picture"
 msgstr "Failed to upload profile picture"
