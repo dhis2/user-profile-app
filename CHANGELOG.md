@@ -1,3 +1,15 @@
+# [100.0.0](https://github.com/dhis2/user-profile-app/compare/v99.9.9...v100.0.0) (2024-03-01)
+
+
+### chore
+
+* semantic release ([#1398](https://github.com/dhis2/user-profile-app/issues/1398)) ([050b695](https://github.com/dhis2/user-profile-app/commit/050b695f862f535b48e34280035a9e151a4a9c33))
+
+
+### BREAKING CHANGES
+
+* trigger the first release on CR
+
 # [31.0.0](https://github.com/dhis2/user-profile-app/compare/v30.4.7...v31.0.0) (2024-03-01)
 
 
