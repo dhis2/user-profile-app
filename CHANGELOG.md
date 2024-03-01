@@ -1,3 +1,15 @@
+# [31.0.0](https://github.com/dhis2/user-profile-app/compare/v30.4.7...v31.0.0) (2024-03-01)
+
+
+### Features
+
+* trigger first release ([a4a6bf0](https://github.com/dhis2/user-profile-app/commit/a4a6bf09efd1aaf8138baf450337f19a50a6817f))
+
+
+### BREAKING CHANGES
+
+* trigger the first release on CR
+
 ## [30.4.7](https://github.com/dhis2/user-profile-app/compare/v30.4.6...v30.4.7) (2024-02-28)
 
 
