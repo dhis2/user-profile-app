@@ -12,7 +12,6 @@ env:
     GH_TOKEN: ${{secrets.DHIS2_BOT_GITHUB_TOKEN}}
     CI: true
 
-
 jobs:
     install:
         runs-on: ubuntu-latest
