@@ -1,3 +1,17 @@
+## [30.4.7](https://github.com/dhis2/user-profile-app/compare/v30.4.6...v30.4.7) (2024-02-28)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([77d025c](https://github.com/dhis2/user-profile-app/commit/77d025cf398e4d0693125d521bb3c1950d148184))
+
+## [30.4.6](https://github.com/dhis2/user-profile-app/compare/v30.4.5...v30.4.6) (2023-12-15)
+
+
+### Bug Fixes
+
+* reject profile photos bigger than 1MB ([8f1d8e9](https://github.com/dhis2/user-profile-app/commit/8f1d8e9a5185b1960dd00622a4734d98d6c99097))
+
 ## [30.4.5](https://github.com/dhis2/user-profile-app/compare/v30.4.4...v30.4.5) (2023-11-26)
 
 
