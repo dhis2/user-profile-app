@@ -5,246 +5,250 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
-"PO-Revision-Date: 2021-10-22T15:09:53.622Z\n"
+"POT-Creation-Date: 2023-08-24T09:51:21.808Z\n"
+"PO-Revision-Date: 2023-08-24T09:51:21.808Z\n"
 
 msgid "Never"
-msgstr ""
+msgstr "Never"
 
 msgid "Invalid date"
-msgstr ""
+msgstr "Invalid date"
 
 msgid "Web API"
-msgstr ""
+msgstr "Web API"
 
 msgid "Browse it here"
-msgstr ""
+msgstr "Browse it here"
 
 msgid "Current user"
-msgstr ""
+msgstr "Current user"
 
 msgid "Version"
-msgstr ""
+msgstr "Version"
 
 msgid "Build revision"
-msgstr ""
+msgstr "Build revision"
 
 msgid "Build date"
-msgstr ""
+msgstr "Build date"
 
 msgid "Jasper reports version"
-msgstr ""
+msgstr "Jasper reports version"
 
 msgid "User agent"
-msgstr ""
+msgstr "User agent"
 
 msgid "Server date"
-msgstr ""
+msgstr "Server date"
 
 msgid "Last analytics table generation"
-msgstr ""
+msgstr "Last analytics table generation"
 
 msgid "Time since last analytics table generation"
-msgstr ""
+msgstr "Time since last analytics table generation"
 
 msgid "Last analytics table runtime"
-msgstr ""
+msgstr "Last analytics table runtime"
 
 msgid "Last continuous analytics table update"
-msgstr ""
+msgstr "Last continuous analytics table update"
 
 msgid "Time since last continuous analytics table update"
-msgstr ""
+msgstr "Time since last continuous analytics table update"
 
 msgid "Last continuous analytics table runtime"
-msgstr ""
+msgstr "Last continuous analytics table runtime"
 
 msgid "Environment variable"
-msgstr ""
+msgstr "Environment variable"
 
 msgid "System ID"
-msgstr ""
+msgstr "System ID"
 
 msgid "Last monitoring success"
-msgstr ""
+msgstr "Last monitoring success"
 
 msgid "External configuration directory"
-msgstr ""
+msgstr "External configuration directory"
 
 msgid "File store provider"
-msgstr ""
+msgstr "File store provider"
 
 msgid "Node ID"
-msgstr ""
+msgstr "Node ID"
 
 msgid "Cache provider"
-msgstr ""
+msgstr "Cache provider"
 
 msgid "Read replica count"
-msgstr ""
+msgstr "Read replica count"
 
 msgid "Java opts"
-msgstr ""
+msgstr "Java opts"
 
 msgid "Java version"
-msgstr ""
+msgstr "Java version"
 
 msgid "Java vendor"
-msgstr ""
+msgstr "Java vendor"
 
 msgid "OS name"
-msgstr ""
+msgstr "OS name"
 
 msgid "OS architecture"
-msgstr ""
+msgstr "OS architecture"
 
 msgid "OS version"
-msgstr ""
+msgstr "OS version"
 
 msgid "Memory info"
-msgstr ""
+msgstr "Memory info"
 
 msgid "CPU cores"
-msgstr ""
+msgstr "CPU cores"
 
 msgid "Calendar"
-msgstr ""
+msgstr "Calendar"
 
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgid "User"
-msgstr ""
+msgstr "User"
 
 msgid "Spatial support"
-msgstr ""
+msgstr "Spatial support"
 
 msgid "System info"
-msgstr ""
+msgstr "System info"
 
 msgid "Database"
-msgstr ""
+msgstr "Database"
 
 msgid "Edit account settings"
-msgstr ""
+msgstr "Edit account settings"
 
 msgid "No changes have been made"
-msgstr ""
+msgstr "No changes have been made"
 
 msgid "The form is currently being validated. Please try again."
-msgstr ""
+msgstr "The form is currently being validated. Please try again."
 
 msgid "The form contains errors. Please fix the errors and try again."
-msgstr ""
+msgstr "The form contains errors. Please fix the errors and try again."
 
 msgid "The entered values do not match. Please re-enter."
-msgstr ""
+msgstr "The entered values do not match. Please re-enter."
 
 msgid "Please provide your old password"
-msgstr ""
+msgstr "Please provide your old password"
 
 msgid "Username"
-msgstr ""
+msgstr "Username"
 
 msgid "Old password"
-msgstr ""
+msgstr "Old password"
 
 msgid "This field can't be left blank"
-msgstr ""
+msgstr "This field can't be left blank"
 
 msgid "New password"
-msgstr ""
+msgstr "New password"
 
 msgid ""
 "Password should be at least 8 characters with at least 1 digit, 1 uppercase "
 "letter and 1 special character"
 msgstr ""
+"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
+"letter and 1 special character"
 
 msgid "Repeat new password"
-msgstr ""
+msgstr "Repeat new password"
 
 msgid "Setup 2-Factor"
-msgstr ""
+msgstr "Setup 2-Factor"
 
 msgid "Update password"
-msgstr ""
+msgstr "Update password"
 
 msgid ""
 "This account is linked to an OpenID Connect identity. Visit the Open ID "
 "Connect provider to manage this account's settings."
 msgstr ""
+"This account is linked to an OpenID Connect identity. Visit the Open ID "
+"Connect provider to manage this account's settings."
 
 msgid "Password changed successfully"
-msgstr ""
+msgstr "Password changed successfully"
 
 msgid "You need to login again to continue using the application."
-msgstr ""
+msgstr "You need to login again to continue using the application."
 
 msgid "Login"
-msgstr ""
+msgstr "Login"
 
 msgid "Failed to update password"
-msgstr ""
+msgstr "Failed to update password"
 
 msgid "2-Factor successfully turned ON"
-msgstr ""
+msgstr "2-Factor successfully turned ON"
 
 msgid "2-Factor successfully turned OFF"
-msgstr ""
+msgstr "2-Factor successfully turned OFF"
 
 msgid "Failed to turn ON 2-Factor"
-msgstr ""
+msgstr "Failed to turn ON 2-Factor"
 
 msgid "Failed to turn OFF 2-Factor"
-msgstr ""
+msgstr "Failed to turn OFF 2-Factor"
 
 msgid "Barcode/QR code to scan"
-msgstr ""
+msgstr "Barcode/QR code to scan"
 
 msgid "No"
-msgstr ""
+msgstr "No"
 
 msgid "Yes"
-msgstr ""
+msgstr "Yes"
 
 msgid "Turn OFF"
-msgstr ""
+msgstr "Turn OFF"
 
 msgid "Turn ON"
-msgstr ""
+msgstr "Turn ON"
 
 msgid "2-Factor Verification is ON"
-msgstr ""
+msgstr "2-Factor Verification is ON"
 
 msgid "2-Factor Verification is OFF"
-msgstr ""
+msgstr "2-Factor Verification is OFF"
 
 msgid "Do you want to turn OFF 2-Factor?"
-msgstr ""
+msgstr "Do you want to turn OFF 2-Factor?"
 
 msgid "Do you want to turn ON 2-Factor?"
-msgstr ""
+msgstr "Do you want to turn ON 2-Factor?"
 
 msgid "Download the Authenticator app"
-msgstr ""
+msgstr "Download the Authenticator app"
 
 msgid "What kind of phone/tablet do you have?"
-msgstr ""
+msgstr "What kind of phone/tablet do you have?"
 
 msgid "Download the Authenticator App from the "
-msgstr ""
+msgstr "Download the Authenticator App from the "
 
 msgid "In the Authenticator App select "
-msgstr ""
+msgstr "In the Authenticator App select "
 
 msgid "Begin setup."
-msgstr ""
+msgstr "Begin setup."
 
 msgid "Choose "
-msgstr ""
+msgstr "Choose "
 
 msgid "Scan a barcode."
-msgstr ""
+msgstr "Scan a barcode."
 
 msgid ""
 "With 2-Factor authentication turned on you will be asked to enter a second "
@@ -252,190 +256,201 @@ msgid ""
 "must use the Authenticator app. If you do not have this app you must "
 "download it on your phone/tablet."
 msgstr ""
+"With 2-Factor authentication turned on you will be asked to enter a second "
+"verification code when you log in. To generate this verification code you "
+"must use the Authenticator app. If you do not have this app you must "
+"download it on your phone/tablet."
 
 msgid "Failed to upload profile picture"
-msgstr ""
+msgstr "Failed to upload profile picture"
 
 msgid "Profile picture"
-msgstr ""
+msgstr "Profile picture"
 
 msgid "No profile picture available"
-msgstr ""
+msgstr "No profile picture available"
 
 msgid "Select profile picture"
-msgstr ""
+msgstr "Select profile picture"
 
 msgid "Remove profile picture"
-msgstr ""
+msgstr "Remove profile picture"
 
 msgid "This field is required"
-msgstr ""
+msgstr "This field is required"
 
 msgid "This field should be a URL"
-msgstr ""
+msgstr "This field should be a URL"
 
 msgid "This field should contain a list of URLs"
-msgstr ""
+msgstr "This field should contain a list of URLs"
 
 msgid "This field should be a number"
-msgstr ""
+msgstr "This field should be a number"
 
 msgid "This field should be a positive number"
-msgstr ""
+msgstr "This field should be a positive number"
 
 msgid "This field should be an email"
-msgstr ""
+msgstr "This field should be an email"
 
 msgid "Please enter a valid international phone number (+0123456789)"
-msgstr ""
+msgstr "Please enter a valid international phone number (+0123456789)"
 
 msgid "No value"
-msgstr ""
+msgstr "No value"
 
 msgid "Use system default"
-msgstr ""
+msgstr "Use system default"
 
 msgid "No options"
-msgstr ""
+msgstr "No options"
 
 msgid "System default"
-msgstr ""
+msgstr "System default"
 
 msgid "User profile"
-msgstr ""
+msgstr "User profile"
 
 msgid "User settings"
-msgstr ""
+msgstr "User settings"
 
 msgid "Account settings"
-msgstr ""
+msgstr "Account settings"
 
 msgid "Full profile"
-msgstr ""
+msgstr "Full profile"
 
 msgid "Personal access tokens"
-msgstr ""
+msgstr "Personal access tokens"
 
 msgid "About DHIS2"
-msgstr ""
+msgstr "About DHIS2"
 
 msgid "Manage personal access tokens"
-msgstr ""
+msgstr "Manage personal access tokens"
 
 msgid "Generate new token"
-msgstr ""
+msgstr "Generate new token"
 
 msgid "Error loading personal access tokens"
-msgstr ""
+msgstr "Error loading personal access tokens"
 
 msgid "You don't have any active personal access tokens"
-msgstr ""
+msgstr "You don't have any active personal access tokens"
 
 msgid "You'll only be shown your token once"
-msgstr ""
+msgstr "You'll only be shown your token once"
 
 msgid ""
 "Make sure to copy your personal access token now. You won't be able to see "
 "it again"
 msgstr ""
+"Make sure to copy your personal access token now. You won't be able to see "
+"it again"
 
 msgid "Invalid IP address '{{- ipAddress}}'"
-msgstr ""
+msgstr "Invalid IP address '{{- ipAddress}}'"
 
 msgid "Allowed IP addresses"
-msgstr ""
+msgstr "Allowed IP addresses"
 
 msgid "List one IP address per line."
-msgstr ""
+msgstr "List one IP address per line."
 
 msgid "Allowed HTTP methods"
-msgstr ""
+msgstr "Allowed HTTP methods"
 
 msgid "GET"
-msgstr ""
+msgstr "GET"
 
 msgid "POST"
-msgstr ""
+msgstr "POST"
 
 msgid "PUT"
-msgstr ""
+msgstr "PUT"
 
 msgid "PATCH"
-msgstr ""
+msgstr "PATCH"
 
 msgid "DELETE"
-msgstr ""
+msgstr "DELETE"
 
 msgid "Only choose the HTTP methods this token needs to allow."
-msgstr ""
+msgstr "Only choose the HTTP methods this token needs to allow."
 
 msgid "Invalid referrer '{{- referrer}}'"
-msgstr ""
+msgstr "Invalid referrer '{{- referrer}}'"
 
 msgid "Allowed referrers"
-msgstr ""
+msgstr "Allowed referrers"
 
 msgid "List one referrer per line."
-msgstr ""
+msgstr "List one referrer per line."
 
 msgid "Error fetching your authorities"
-msgstr ""
+msgstr "Error fetching your authorities"
 
 msgid "Retry loading authorities"
-msgstr ""
+msgstr "Retry loading authorities"
 
 msgid "This token will have the following authorities"
-msgstr ""
+msgstr "This token will have the following authorities"
 
 msgid ""
 "Important: this is not a security feature. The referrer header can easily "
 "be spoofed. This setting is intended to discourage unauthorised third-party "
 "developers from connecting to public access instances."
 msgstr ""
+"Important: this is not a security feature. The referrer header can easily "
+"be spoofed. This setting is intended to discourage unauthorised third-party "
+"developers from connecting to public access instances."
 
 msgid "Choose the context where this token will be used."
-msgstr ""
+msgstr "Choose the context where this token will be used."
 
 msgid "Server/script context"
-msgstr ""
+msgstr "Server/script context"
 
 msgid "Used for integrations and scripts that won't be accessed by a browser."
-msgstr ""
+msgstr "Used for integrations and scripts that won't be accessed by a browser."
 
 msgid "Browser context"
-msgstr ""
+msgstr "Browser context"
 
 msgid ""
 "Used for applications, like public portals, that will be accessed with a "
 "web browser."
 msgstr ""
+"Used for applications, like public portals, that will be accessed with a "
+"web browser."
 
 msgid "Token expiration date must be in the future"
-msgstr ""
+msgstr "Token expiration date must be in the future"
 
 msgid "7 days"
-msgstr ""
+msgstr "7 days"
 
 msgid "30 days"
-msgstr ""
+msgstr "30 days"
 
 msgid "60 days"
-msgstr ""
+msgstr "60 days"
 
 msgid "90 days"
-msgstr ""
+msgstr "90 days"
 
 msgid "Custom..."
-msgstr ""
+msgstr "Custom..."
 
 msgid "The token will expire on {{- tokenExpirationDate}}."
-msgstr ""
+msgstr "The token will expire on {{- tokenExpirationDate}}."
 
 msgid "Expiration (required)"
-msgstr ""
+msgstr "Expiration (required)"
 
 msgid "Custom expiration date (required)"
-msgstr ""
+msgstr "Custom expiration date (required)"
 
 msgid ""
 "Personal access tokens should only be used in a browser context for public "
@@ -443,181 +458,190 @@ msgid ""
 "passwords and be kept private — requests should instead be routed through a "
 "proxy."
 msgstr ""
+"Personal access tokens should only be used in a browser context for public "
+"access instances. For private instances, tokens should be treated like "
+"passwords and be kept private — requests should instead be routed through a "
+"proxy."
 
 msgid "Token details"
-msgstr ""
+msgstr "Token details"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel"
 
 msgid ""
 "Important: IP address validation relies on the X-Forwarded-For header, "
 "which can be spoofed. For security, make sure a load balancer or reverse "
 "proxy overwrites this header."
 msgstr ""
+"Important: IP address validation relies on the X-Forwarded-For header, "
+"which can be spoofed. For security, make sure a load balancer or reverse "
+"proxy overwrites this header."
 
 msgid "Are you sure you want to delete this token?"
-msgstr ""
+msgstr "Are you sure you want to delete this token?"
 
 msgid "Error deleting token"
-msgstr ""
+msgstr "Error deleting token"
 
 msgid ""
 "Any application or script using this token will no longer be able to access "
 "this instance's API. You cannot undo this action."
 msgstr ""
+"Any application or script using this token will no longer be able to access "
+"this instance's API. You cannot undo this action."
 
 msgid "Delete token"
-msgstr ""
+msgstr "Delete token"
 
 msgid "Expires"
-msgstr ""
+msgstr "Expires"
 
 msgid "Created"
-msgstr ""
+msgstr "Created"
 
 msgid "Copied token to clipboard"
-msgstr ""
+msgstr "Copied token to clipboard"
 
 msgid "Newly created token"
-msgstr ""
+msgstr "Newly created token"
 
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Copy to clipboard"
 
 msgid "Delete"
-msgstr ""
+msgstr "Delete"
 
 msgid "Edit user profile"
-msgstr ""
+msgstr "Edit user profile"
 
 msgid "User profile updated"
-msgstr ""
+msgstr "User profile updated"
 
 msgid "Failed to update user profile"
-msgstr ""
+msgstr "Failed to update user profile"
 
 msgid "Edit user settings"
-msgstr ""
+msgstr "Edit user settings"
 
 msgid "Settings updated"
-msgstr ""
+msgstr "Settings updated"
 
 msgid "Failed to update settings"
-msgstr ""
+msgstr "Failed to update settings"
 
 msgid "First name"
-msgstr ""
+msgstr "First name"
 
 msgid "Surname"
-msgstr ""
+msgstr "Surname"
 
 msgid "Gender"
-msgstr ""
+msgstr "Gender"
 
 msgid "Male"
-msgstr ""
+msgstr "Male"
 
 msgid "Female"
-msgstr ""
+msgstr "Female"
 
 msgid "Other"
-msgstr ""
+msgstr "Other"
 
 msgid "E-mail"
-msgstr ""
+msgstr "E-mail"
 
 msgid "Mobile phone number"
-msgstr ""
+msgstr "Mobile phone number"
 
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 msgid "Job title"
-msgstr ""
+msgstr "Job title"
 
 msgid "User roles"
-msgstr ""
+msgstr "User roles"
 
 msgid "User org units"
-msgstr ""
+msgstr "User org units"
 
 msgid "Birthday"
-msgstr ""
+msgstr "Birthday"
 
 msgid "Nationality"
-msgstr ""
+msgstr "Nationality"
 
 msgid "Employer"
-msgstr ""
+msgstr "Employer"
 
 msgid "Education"
-msgstr ""
+msgstr "Education"
 
 msgid "Interests"
-msgstr ""
+msgstr "Interests"
 
 msgid "Languages"
-msgstr ""
+msgstr "Languages"
 
 msgid "WhatsApp"
-msgstr ""
+msgstr "WhatsApp"
 
 msgid "Facebook Messenger"
-msgstr ""
+msgstr "Facebook Messenger"
 
 msgid "Skype"
-msgstr ""
+msgstr "Skype"
 
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 msgid "Account editor"
-msgstr ""
+msgstr "Account editor"
 
 msgid "Interface language"
-msgstr ""
+msgstr "Interface language"
 
 msgid "Database language"
-msgstr ""
+msgstr "Database language"
 
 msgid "Style"
-msgstr ""
+msgstr "Style"
 
 msgid "Property to display in analysis modules"
-msgstr ""
+msgstr "Property to display in analysis modules"
 
 msgid "Short name"
-msgstr ""
+msgstr "Short name"
 
 msgid "Enable message email notifications"
-msgstr ""
+msgstr "Enable message email notifications"
 
 msgid "Enable message SMS notifications"
-msgstr ""
+msgstr "Enable message SMS notifications"
 
 msgid "View full profile"
-msgstr ""
+msgstr "View full profile"
 
 msgctxt "HTTP method"
 msgid "GET"
-msgstr ""
+msgstr "GET"
 
 msgctxt "HTTP method"
 msgid "POST"
-msgstr ""
+msgstr "POST"
 
 msgctxt "HTTP method"
 msgid "PUT"
-msgstr ""
+msgstr "PUT"
 
 msgctxt "HTTP method"
 msgid "PATCH"
-msgstr ""
+msgstr "PATCH"
 
 msgctxt "HTTP method"
 msgid "DELETE"
-msgstr ""
+msgstr "DELETE"
