@@ -9,13 +9,14 @@
 # Yayra Gomado <ygomado@hispwca.org>, 2023
 # Karoline Tufte Lien <karoline@dhis2.org>, 2023
 # Philip Larsen Donnelly, 2024
+# Elise Desailly, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
 "PO-Revision-Date: 2023-05-22 19:26+0000\n"
-"Last-Translator: Philip Larsen Donnelly, 2024\n"
+"Last-Translator: Elise Desailly, 2024\n"
 "Language-Team: French (https://app.transifex.com/hisp-uio/teams/100509/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -225,7 +226,7 @@ msgid ""
 msgstr ""
 
 msgid "Remove two-factor account"
-msgstr ""
+msgstr "Retirer l'authentification à deux facteurs"
 
 msgid ""
 "Two-factor authentication is now turned off. It is recommended to remove the"
@@ -240,7 +241,7 @@ msgid "App store"
 msgstr "App Store"
 
 msgid "Turn on two-factor authentication"
-msgstr ""
+msgstr "Activer l'authentification à deux facteurs"
 
 msgid ""
 "Make sure you have an authenticator app installed on your device. We "
@@ -268,10 +269,10 @@ msgid ""
 msgstr ""
 
 msgid "Two-factor authentication is on."
-msgstr ""
+msgstr "L'authentification à deux facteurs est activée."
 
 msgid "Two-factor authentication is off."
-msgstr ""
+msgstr "L'authentification à deux facteurs est désactivée."
 
 msgid "Could not update two-factor authentication"
 msgstr ""
@@ -280,9 +281,11 @@ msgid ""
 "This code does not look right. Enter the six digit code from your "
 "authentication app."
 msgstr ""
+"Ce code semble incorrect. Saisissez le code à six chiffres de votre "
+"application d'authentification."
 
 msgid "Six digit authentication code"
-msgstr ""
+msgstr "Code d'identification à six chiffres"
 
 msgid "Could not enable 2 Factor Authentication"
 msgstr ""
@@ -361,7 +364,7 @@ msgid "Account settings"
 msgstr "Paramètres de compte"
 
 msgid "Two factor authentication"
-msgstr ""
+msgstr "Authentification à deux facteurs"
 
 msgid "Full profile"
 msgstr "Profil complet"
