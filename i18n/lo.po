@@ -352,7 +352,7 @@ msgid "System default"
 msgstr "ໂຫຼດການຕັ້ງຄ່າດັ່ງເດີມ"
 
 msgid "User profile"
-msgstr "ໂປຣຟາຍຜູ້ໃຊ້"
+msgstr "ຂໍ້ມູນສ່ວນຕົວຜູ້ໃຊ້"
 
 msgid "User settings"
 msgstr "ການຕັ້ງຄ່າສໍາລັບຜູ້ຊົມໃຊ້"
@@ -364,7 +364,7 @@ msgid "Two factor authentication"
 msgstr "ກວດສອບຄວາມຖືກຕ້ອງແບບ 2 ຂັ້ນ"
 
 msgid "Full profile"
-msgstr "ໂປຣຟາຍເຕັມ"
+msgstr "ຂໍ້ມູນສ່ວນຕົວເຕັມ"
 
 msgid "Personal access tokens"
 msgstr "ໂທເຄັນການເຂົ້າເຖີງສ່ວນບຸກຄົນ"
