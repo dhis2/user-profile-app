@@ -358,7 +358,6 @@ class FormFields extends Component {
     renderFields(fieldNames) {
         const d2 = this.context.d2
         const valueStore = this.props.valueStore
-
         // Create the regular fields
         const fields = fieldNames
             .map((fieldName) => createField(fieldName, valueStore, d2))
@@ -368,10 +367,12 @@ class FormFields extends Component {
         // Append the Verify Email button after the 'email' field
         const emailFieldIndex = fieldNames.indexOf('email')
         if (emailFieldIndex !== -1) {
+            // check if user has an email configured
+            const emailValue = valueStore.state['email'] || ''
             const verifyEmailField = {
                 name: 'emailVerification',
                 component: VerifyEmail,
-                props: {},
+                props: { userEmail: emailValue },
             }
 
             fields.splice(emailFieldIndex + 1, 0, verifyEmailField)

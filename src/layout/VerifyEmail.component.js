@@ -1,19 +1,39 @@
-import { useAlert } from '@dhis2/app-runtime'
-import { CircularLoader } from '@dhis2/ui'
+import { useAlert, useDataQuery } from '@dhis2/app-runtime'
+import { Button, CircularLoader } from '@dhis2/ui'
 import { getInstance as getD2 } from 'd2'
+import PropTypes from 'prop-types'
 import React, { useState } from 'react'
 
-export function VerifyEmail() {
+const systemSettingsQuery = {
+    systemSettings: {
+        resource: 'systemSettings',
+    },
+}
+
+export function VerifyEmail({ userEmail }) {
     const errorAlert = useAlert(({ message }) => message, { critical: true })
     const successAlert = useAlert(({ message }) => message, { success: true })
     const [isLoading, setIsLoading] = useState(false)
+    const { data, loading: systemInfoLoading } =
+        useDataQuery(systemSettingsQuery)
 
+    const keyEmailHostname = data?.systemSettings?.keyEmailHostname
+    const keyEmailUsername = data?.systemSettings?.keyEmailUsername
+
+    const emailConfigured = !!keyEmailHostname && !!keyEmailUsername
+
+    const isButtonDisabled =
+        systemInfoLoading || !emailConfigured || !userEmail?.trim() || isLoading
+
+    if (systemInfoLoading) {
+        return <CircularLoader />
+    }
     const handleEmailVerification = async () => {
         setIsLoading(true)
         try {
             const d2 = await getD2()
             const api = d2.Api.getApi()
-            api.baseUrl = 'http://localhost:8080/'
+            api.baseUrl = 'http://localhost:8080/api/'
 
             await api.post('account/sendEmailVerification')
             successAlert.show({
@@ -32,22 +52,17 @@ export function VerifyEmail() {
 
     return (
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <button
-                type="button"
-                style={{
-                    background: 'white',
-                    border: '1px solid',
-                    borderColor: '#1976D2',
-                    color: '#1976D2',
-                    padding: '10px',
-                    cursor: isLoading ? 'not-allowed' : 'pointer',
-                }}
+            <Button
+                secondary
                 onClick={handleEmailVerification}
-                disabled={isLoading}
+                disabled={isButtonDisabled}
             >
                 Verify Email
-            </button>
+            </Button>
             {isLoading && <CircularLoader small />}
         </div>
     )
+}
+VerifyEmail.propTypes = {
+    userEmail: PropTypes.string.isRequired,
 }

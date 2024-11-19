@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2024-11-19T05:39:42.631Z\n"
-"PO-Revision-Date: 2024-11-19T05:39:42.631Z\n"
+"POT-Creation-Date: 2024-11-19T09:39:21.743Z\n"
+"PO-Revision-Date: 2024-11-19T09:39:21.743Z\n"
 
 msgid "Never"
 msgstr "Never"
@@ -345,9 +345,6 @@ msgstr "No options"
 
 msgid "System default"
 msgstr "System default"
-
-msgid "Verify Email"
-msgstr "Verify Email"
 
 msgid "User profile"
 msgstr "User profile"
