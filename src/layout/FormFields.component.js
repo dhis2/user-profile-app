@@ -236,8 +236,6 @@ function createAvatarEditor(fieldBase, d2, valueStore) {
 }
 
 function createFieldBaseObject(fieldName, mapping, valueStore) {
-    console.log('Field:', fieldName, 'Mapping:', mapping)
-
     if (!mapping) {
         log.warn(`Mapping not found for field: ${fieldName}`)
         return null // Skip this field
