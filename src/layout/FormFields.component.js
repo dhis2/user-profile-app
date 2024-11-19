@@ -16,6 +16,7 @@ import userSettingsStore from '../settings/userSettings.store.js'
 import userSettingsKeyMapping from '../userSettingsMapping.js'
 import AvatarEditor from './AvatarEditor.component.js'
 import AppTheme from './theme.js'
+import { VerifyEmail } from './VerifyEmail.component.js'
 
 const styles = {
     header: {
@@ -235,8 +236,15 @@ function createAvatarEditor(fieldBase, d2, valueStore) {
 }
 
 function createFieldBaseObject(fieldName, mapping, valueStore) {
+    console.log('Field:', fieldName, 'Mapping:', mapping)
+
+    if (!mapping) {
+        log.warn(`Mapping not found for field: ${fieldName}`)
+        return null // Skip this field
+    }
+
     const state = valueStore.state
-    const hintText = mapping.hintText
+    const hintText = mapping.hintText || ''
 
     const valueString = Object.prototype.hasOwnProperty.call(state, fieldName)
         ? String(state[fieldName]).trim()
@@ -345,14 +353,31 @@ class FormFields extends Component {
         this.disposable.unsubscribe()
     }
 
+    handleEmailVerification = async () => {
+        await VerifyEmail()
+    }
+
     renderFields(fieldNames) {
         const d2 = this.context.d2
         const valueStore = this.props.valueStore
 
+        // Create the regular fields
         const fields = fieldNames
             .map((fieldName) => createField(fieldName, valueStore, d2))
             .filter((field) => !!field.name)
             .map((field) => wrapFieldWithLabel(field))
+
+        // Append the Verify Email button after the 'email' field
+        const emailFieldIndex = fieldNames.indexOf('email')
+        if (emailFieldIndex !== -1) {
+            const verifyEmailField = {
+                name: 'emailVerification',
+                component: VerifyEmail,
+                props: {},
+            }
+
+            fields.splice(emailFieldIndex + 1, 0, verifyEmailField)
+        }
 
         return (
             <Card style={styles.card}>

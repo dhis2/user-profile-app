@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
-"PO-Revision-Date: 2023-02-27T14:55:39.217Z\n"
+"POT-Creation-Date: 2024-11-19T05:39:42.631Z\n"
+"PO-Revision-Date: 2024-11-19T05:39:42.631Z\n"
 
 msgid "Never"
 msgstr "Never"
@@ -289,6 +289,9 @@ msgstr "Could not disable two factor authentication"
 msgid "Two factor authentication was disabled successfully"
 msgstr "Two factor authentication was disabled successfully"
 
+msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
+msgstr "Please choose a profile avatar less than {{- maxSize}}MB in size."
+
 msgid "Failed to upload profile picture"
 msgstr "Failed to upload profile picture"
 
@@ -342,6 +345,9 @@ msgstr "No options"
 
 msgid "System default"
 msgstr "System default"
+
+msgid "Verify Email"
+msgstr "Verify Email"
 
 msgid "User profile"
 msgstr "User profile"
@@ -587,6 +593,9 @@ msgstr "Other"
 
 msgid "E-mail"
 msgstr "E-mail"
+
+msgid "E-mail Verification"
+msgstr "E-mail Verification"
 
 msgid "Mobile phone number"
 msgstr "Mobile phone number"

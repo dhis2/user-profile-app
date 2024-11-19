@@ -25,6 +25,7 @@ function EditProfile() {
         'skype',
         'telegram',
         'twitter',
+        'emailVerification',
     ]
 
     const pageLabel = i18n.t('Edit user profile')
