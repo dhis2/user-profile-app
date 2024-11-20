@@ -3,6 +3,8 @@ import { Button, CircularLoader } from '@dhis2/ui'
 import { getInstance as getD2 } from 'd2'
 import PropTypes from 'prop-types'
 import React, { useState } from 'react'
+import { DEV_BASE_URL } from '../constants.js'
+import i18n from '../locales/index.js'
 
 const systemSettingsQuery = {
     systemSettings: {
@@ -33,17 +35,18 @@ export function VerifyEmail({ userEmail }) {
         try {
             const d2 = await getD2()
             const api = d2.Api.getApi()
-            api.baseUrl = 'http://localhost:8080/api/'
+            api.baseUrl = DEV_BASE_URL
 
             await api.post('account/sendEmailVerification')
             successAlert.show({
-                message: 'Email verification link sent successfully!',
+                message: i18n.t('Email verification link sent successfully!'),
             })
         } catch (err) {
             console.error('Error:', err)
             errorAlert.show({
                 message:
-                    err.message || 'Failed to send email verification link.',
+                    err.message ||
+                    i18n.t('Failed to send email verification link.'),
             })
         } finally {
             setIsLoading(false)
@@ -57,7 +60,7 @@ export function VerifyEmail({ userEmail }) {
                 onClick={handleEmailVerification}
                 disabled={isButtonDisabled}
             >
-                Verify Email
+                {i18n.t('Verify Email')}
             </Button>
             {isLoading && <CircularLoader small />}
         </div>
