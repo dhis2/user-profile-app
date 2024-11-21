@@ -3,7 +3,6 @@ import { Button, CircularLoader } from '@dhis2/ui'
 import { getInstance as getD2 } from 'd2'
 import PropTypes from 'prop-types'
 import React, { useState } from 'react'
-import { DEV_BASE_URL } from '../constants.js'
 import i18n from '../locales/index.js'
 
 const systemSettingsQuery = {
@@ -35,7 +34,6 @@ export function VerifyEmail({ userEmail }) {
         try {
             const d2 = await getD2()
             const api = d2.Api.getApi()
-            api.baseUrl = DEV_BASE_URL
 
             await api.post('account/sendEmailVerification')
             successAlert.show({
