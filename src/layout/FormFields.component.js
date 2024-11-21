@@ -235,6 +235,13 @@ function createAvatarEditor(fieldBase, d2, valueStore) {
     })
 }
 
+function createVerifyButton(fieldBase, valueStore) {
+    return Object.assign({}, fieldBase, {
+        component: VerifyEmail,
+        props: { userEmail: valueStore.state['email'] || '' },
+    })
+}
+
 function createFieldBaseObject(fieldName, mapping, valueStore) {
     if (!mapping) {
         log.warn(`Mapping not found for field: ${fieldName}`)
@@ -271,6 +278,7 @@ function createFieldBaseObject(fieldName, mapping, valueStore) {
 function createField(fieldName, valueStore, d2) {
     const mapping = userSettingsKeyMapping[fieldName]
     const fieldBase = createFieldBaseObject(fieldName, mapping, valueStore)
+
     switch (mapping.type) {
         case 'textfield':
             return createTextField(fieldBase, mapping)
@@ -284,6 +292,8 @@ function createField(fieldName, valueStore, d2) {
             return createAccountEditor(fieldBase, d2, valueStore)
         case 'avatar':
             return createAvatarEditor(fieldBase, d2, valueStore)
+        case 'submit':
+            return createVerifyButton(fieldBase, valueStore)
         default:
             log.warn(
                 `Unknown control type "${mapping.type}" encountered for field "${fieldName}"`
@@ -363,20 +373,6 @@ class FormFields extends Component {
             .map((fieldName) => createField(fieldName, valueStore, d2))
             .filter((field) => !!field.name)
             .map((field) => wrapFieldWithLabel(field))
-
-        // Append the Verify Email button after the 'email' field
-        const emailFieldIndex = fieldNames.indexOf('email')
-        if (emailFieldIndex !== -1) {
-            // check if user has an email configured
-            const emailValue = valueStore.state['email'] || ''
-            const verifyEmailField = {
-                name: 'emailVerification',
-                component: VerifyEmail,
-                props: { userEmail: emailValue },
-            }
-
-            fields.splice(emailFieldIndex + 1, 0, verifyEmailField)
-        }
 
         return (
             <Card style={styles.card}>

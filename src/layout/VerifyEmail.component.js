@@ -1,69 +1,57 @@
-import { useAlert, useDataQuery } from '@dhis2/app-runtime'
-import { Button, CircularLoader } from '@dhis2/ui'
-import { getInstance as getD2 } from 'd2'
+import { useAlert, useDataMutation, useConfig } from '@dhis2/app-runtime'
+import { Button } from '@dhis2/ui'
 import PropTypes from 'prop-types'
-import React, { useState } from 'react'
+import React from 'react'
 import i18n from '../locales/index.js'
 
-const systemSettingsQuery = {
-    systemSettings: {
-        resource: 'systemSettings',
-    },
+const sendEmailVerificationMutation = {
+    resource: 'account/sendEmailVerification',
+    type: 'create',
 }
 
 export function VerifyEmail({ userEmail }) {
     const errorAlert = useAlert(({ message }) => message, { critical: true })
     const successAlert = useAlert(({ message }) => message, { success: true })
-    const [isLoading, setIsLoading] = useState(false)
-    const { data, loading: systemInfoLoading } =
-        useDataQuery(systemSettingsQuery)
+    const { systemInfo } = useConfig()
 
-    const keyEmailHostname = data?.systemSettings?.keyEmailHostname
-    const keyEmailUsername = data?.systemSettings?.keyEmailUsername
+    const [mutateEmailVerification, { loading: mutationLoading }] =
+        useDataMutation(sendEmailVerificationMutation, {
+            onComplete: () => {
+                successAlert.show({
+                    message: i18n.t(
+                        'Email verification link sent successfully!'
+                    ),
+                })
+            },
+            onError: (err) => {
+                errorAlert.show({
+                    message:
+                        err.message ||
+                        i18n.t('Failed to send email verification link.'),
+                })
+            },
+        })
 
-    const emailConfigured = !!keyEmailHostname && !!keyEmailUsername
+    const emailConfigured = systemInfo?.emailConfigured
 
-    const isButtonDisabled =
-        systemInfoLoading || !emailConfigured || !userEmail?.trim() || isLoading
-
-    if (systemInfoLoading) {
-        return <CircularLoader />
-    }
-    const handleEmailVerification = async () => {
-        setIsLoading(true)
-        try {
-            const d2 = await getD2()
-            const api = d2.Api.getApi()
-
-            await api.post('account/sendEmailVerification')
-            successAlert.show({
-                message: i18n.t('Email verification link sent successfully!'),
-            })
-        } catch (err) {
-            console.error('Error:', err)
-            errorAlert.show({
-                message:
-                    err.message ||
-                    i18n.t('Failed to send email verification link.'),
-            })
-        } finally {
-            setIsLoading(false)
-        }
+    if (!emailConfigured) {
+        return null // If emailConfigured is false, don't display the button
     }
 
     return (
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             <Button
                 secondary
-                onClick={handleEmailVerification}
-                disabled={isButtonDisabled}
+                onClick={mutateEmailVerification}
+                disabled={mutationLoading || !userEmail}
+                loading={mutationLoading}
             >
                 {i18n.t('Verify Email')}
             </Button>
-            {isLoading && <CircularLoader small />}
         </div>
     )
 }
+
 VerifyEmail.propTypes = {
     userEmail: PropTypes.string.isRequired,
 }

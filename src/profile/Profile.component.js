@@ -9,6 +9,7 @@ function EditProfile() {
         'firstName',
         'surname',
         'email',
+        'emailVerification',
         'avatar',
         'phoneNumber',
         'introduction',
@@ -25,7 +26,6 @@ function EditProfile() {
         'skype',
         'telegram',
         'twitter',
-        'emailVerification',
     ]
 
     const pageLabel = i18n.t('Edit user profile')
