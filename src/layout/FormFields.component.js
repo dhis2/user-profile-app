@@ -361,10 +361,6 @@ class FormFields extends Component {
         this.disposable.unsubscribe()
     }
 
-    handleEmailVerification = async () => {
-        await VerifyEmail()
-    }
-
     renderFields(fieldNames) {
         const d2 = this.context.d2
         const valueStore = this.props.valueStore
