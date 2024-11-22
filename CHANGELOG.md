@@ -1,3 +1,17 @@
+# [100.1.0](https://github.com/dhis2/user-profile-app/compare/v100.0.6...v100.1.0) (2024-11-22)
+
+
+### Bug Fixes
+
+* get emailConfigured state from use config ([4b68240](https://github.com/dhis2/user-profile-app/commit/4b6824091c32d5b216834154e2d3dfd27f19b9b3))
+
+
+### Features
+
+* add send email verification button ([1249b5a](https://github.com/dhis2/user-profile-app/commit/1249b5aaf7263b0ccfacdf9babab11f7da16ef45))
+* check for keyEmailHostname and keyEmailUsername in user settings ([13df357](https://github.com/dhis2/user-profile-app/commit/13df357f53624bf7c76e04d5d770f31bee87835a))
+* track loading state ([211ce07](https://github.com/dhis2/user-profile-app/commit/211ce07a451330772a9229c961c1c6f51fe1f5f6))
+
 ## [100.0.6](https://github.com/dhis2/user-profile-app/compare/v100.0.5...v100.0.6) (2024-11-17)
 
 
