@@ -9,6 +9,7 @@ function EditProfile() {
         'firstName',
         'surname',
         'email',
+        'emailVerification',
         'avatar',
         'phoneNumber',
         'introduction',

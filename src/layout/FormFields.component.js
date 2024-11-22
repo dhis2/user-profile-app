@@ -16,6 +16,7 @@ import userSettingsStore from '../settings/userSettings.store.js'
 import userSettingsKeyMapping from '../userSettingsMapping.js'
 import AvatarEditor from './AvatarEditor.component.js'
 import AppTheme from './theme.js'
+import { VerifyEmail } from './VerifyEmail.component.js'
 
 const styles = {
     header: {
@@ -234,9 +235,21 @@ function createAvatarEditor(fieldBase, d2, valueStore) {
     })
 }
 
+function createVerifyButton(fieldBase, valueStore) {
+    return Object.assign({}, fieldBase, {
+        component: VerifyEmail,
+        props: { userEmail: valueStore.state['email'] || '' },
+    })
+}
+
 function createFieldBaseObject(fieldName, mapping, valueStore) {
+    if (!mapping) {
+        log.warn(`Mapping not found for field: ${fieldName}`)
+        return null // Skip this field
+    }
+
     const state = valueStore.state
-    const hintText = mapping.hintText
+    const hintText = mapping.hintText || ''
 
     const valueString = Object.prototype.hasOwnProperty.call(state, fieldName)
         ? String(state[fieldName]).trim()
@@ -265,6 +278,7 @@ function createFieldBaseObject(fieldName, mapping, valueStore) {
 function createField(fieldName, valueStore, d2) {
     const mapping = userSettingsKeyMapping[fieldName]
     const fieldBase = createFieldBaseObject(fieldName, mapping, valueStore)
+
     switch (mapping.type) {
         case 'textfield':
             return createTextField(fieldBase, mapping)
@@ -278,6 +292,8 @@ function createField(fieldName, valueStore, d2) {
             return createAccountEditor(fieldBase, d2, valueStore)
         case 'avatar':
             return createAvatarEditor(fieldBase, d2, valueStore)
+        case 'submit':
+            return createVerifyButton(fieldBase, valueStore)
         default:
             log.warn(
                 `Unknown control type "${mapping.type}" encountered for field "${fieldName}"`
@@ -348,7 +364,7 @@ class FormFields extends Component {
     renderFields(fieldNames) {
         const d2 = this.context.d2
         const valueStore = this.props.valueStore
-
+        // Create the regular fields
         const fields = fieldNames
             .map((fieldName) => createField(fieldName, valueStore, d2))
             .filter((field) => !!field.name)

@@ -32,6 +32,11 @@ const settingsKeyMapping = {
         type: 'textfield',
         validators: ['email'],
     },
+    emailVerification: {
+        name: 'emailVerification',
+        label: i18n.t('E-mail Verification'),
+        type: 'submit',
+    },
     phoneNumber: {
         label: i18n.t('Mobile phone number'),
         type: 'textfield',
