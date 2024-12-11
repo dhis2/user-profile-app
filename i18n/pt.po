@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
+"POT-Creation-Date: 2024-11-21T08:20:57.566Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
 "Last-Translator: Helton Dias, 2024\n"
 "Language-Team: Portuguese (https://app.transifex.com/hisp-uio/teams/100509/pt/)\n"
@@ -63,13 +63,14 @@ msgid "Last analytics table runtime"
 msgstr "Tempo de execução da última tabela de análise"
 
 msgid "Last continuous analytics table update"
-msgstr ""
+msgstr "Última atualização da tabela de análise contínua"
 
 msgid "Time since last continuous analytics table update"
 msgstr ""
+"Tempo decorrido desde a última actualização da tabela de análise contínua"
 
 msgid "Last continuous analytics table runtime"
-msgstr ""
+msgstr "Último tempo de execução da tabela de análise contínua"
 
 msgid "Environment variable"
 msgstr "Variável de ambiente"
@@ -171,6 +172,8 @@ msgid ""
 "Password should be at least 8 characters with at least 1 digit, 1 uppercase "
 "letter and 1 special character"
 msgstr ""
+"A palavra-passe deve ter pelo menos 8 caracteres, com pelo menos 1 dígito, 1"
+" letra maiúscula e 1 carácter especial"
 
 msgid "Repeat new password"
 msgstr "Repita a nova senha"
@@ -185,6 +188,8 @@ msgid ""
 "This account is linked to an OpenID Connect identity. Visit the Open ID "
 "Connect provider to manage this account's settings."
 msgstr ""
+"Esta conta está associada a uma identidade OpenID Connect. Visite o "
+"fornecedor do Open ID Connect para gerir as definições desta conta."
 
 msgid "Password changed successfully"
 msgstr "Senha alterada com sucesso"
@@ -200,89 +205,109 @@ msgid "Failed to update password"
 msgstr "Falha na atualização da senha"
 
 msgid "Two-factor Authentication"
-msgstr ""
+msgstr "Autenticação de dois factores"
 
 msgid "Turn off two-factor authentication"
-msgstr ""
+msgstr "Desativar a autenticação de dois factores"
 
 msgid "Open your authenticator app."
-msgstr ""
+msgstr "Abra a sua aplicação de autenticação."
 
 msgid ""
 "Now, enter the authentication code below and click the \"Turn off\" button."
 msgstr ""
+"Agora, introduza o código de autenticação abaixo e clique no botão "
+"\"Desligar\"."
 
 msgid "Remove two-factor account"
-msgstr ""
+msgstr "Remover a conta de dois factores"
 
 msgid ""
 "Two-factor authentication is now turned off. It is recommended to remove the"
 " account from your authenticator app now to prevent any future issues re-"
 "enabling two-factor authentication."
 msgstr ""
+"A autenticação de dois factores está agora desactivada. Recomenda-se que "
+"remova a conta da sua aplicação de autenticação agora para evitar quaisquer "
+"problemas futuros ao reativar a autenticação de dois factores."
 
 msgid "Play store"
-msgstr ""
+msgstr "Play store"
 
 msgid "App store"
 msgstr "Loja de aplicativos"
 
 msgid "Turn on two-factor authentication"
-msgstr ""
+msgstr "Activar a autenticação de dois factores"
 
 msgid ""
 "Make sure you have an authenticator app installed on your device. We "
 "recommend Google Authenticator"
 msgstr ""
+"Certifique-se de que tem uma aplicação de autenticação instalada no seu "
+"dispositivo. Recomendamos o Google Authenticator"
 
 msgid ""
 "Now, enter the code from your authenticator app below and click the \"Turn "
 "on\" button."
 msgstr ""
+"Agora, introduza o código da sua aplicação de autenticação abaixo e clique "
+"no botão \"Activar\"."
 
 msgid "Already set up two-factor authentication before?"
-msgstr ""
+msgstr "Já configurou a autenticação de dois factores antes?"
 
 msgid ""
 "If you have set up two-factor authentication for this account before, you "
 "need to remove that entry from your authenticator app before setting it up "
 "again."
 msgstr ""
+"Se já tiver configurado anteriormente a autenticação de dois factores para "
+"esta conta, tem de remover essa entrada da sua aplicação de autenticação "
+"antes de a configurar novamente."
 
 msgid ""
 "Two-factor authentication protects your account with an extra layer of "
 "security. With two-factor authentication turned on, you will need to enter "
 "an authentication code from your device every time you log in."
 msgstr ""
+"A autenticação de dois factores protege a sua conta com uma camada extra de "
+"segurança. Com a autenticação de dois factores activada, terá de introduzir "
+"um código de autenticação do seu dispositivo sempre que iniciar sessão."
 
 msgid "Two-factor authentication is on."
-msgstr ""
+msgstr "A autenticação de dois factores está activada."
 
 msgid "Two-factor authentication is off."
-msgstr ""
+msgstr "A autenticação de dois factores está desactivada."
 
 msgid "Could not update two-factor authentication"
-msgstr ""
+msgstr "Não foi possível actualizar a autenticação de dois factores"
 
 msgid ""
 "This code does not look right. Enter the six digit code from your "
 "authentication app."
 msgstr ""
+"Este código não parece correto. Introduza o código de seis dígitos da sua "
+"aplicação de autenticação."
 
 msgid "Six digit authentication code"
-msgstr ""
+msgstr "Código de autenticação de seis dígitos"
 
 msgid "Could not enable 2 Factor Authentication"
-msgstr ""
+msgstr "Não foi possível activar a autenticação de 2 factores"
 
 msgid "Two factor authentication was enabled successfully"
-msgstr ""
+msgstr "A autenticação de dois factores foi activada com êxito"
 
 msgid "Could not disable two factor authentication"
-msgstr ""
+msgstr "Não foi possível desativar a autenticação de dois factores"
 
 msgid "Two factor authentication was disabled successfully"
-msgstr ""
+msgstr "A autenticação de dois factores foi desactivada com êxito"
+
+msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
+msgstr "Escolha um avatar de perfil com menos de {{- maxSize}}MB de tamanho."
 
 msgid "Failed to upload profile picture"
 msgstr "Falha ao carregar a foto do perfil"
@@ -303,7 +328,7 @@ msgid "This field is required"
 msgstr "Este campo é obrigatorio"
 
 msgid "This field should be a URL"
-msgstr ""
+msgstr "Este campo deve ser um URL"
 
 msgid "This field should contain a list of URLs"
 msgstr "Este campo deve conter uma lista de URLs"
@@ -315,7 +340,7 @@ msgid "This field should be a positive number"
 msgstr "Este campo deve ser um número positivo"
 
 msgid "This field should be an email"
-msgstr ""
+msgstr "Este campo deve ser um endereço eletrónico"
 
 msgid "Please enter a valid international phone number (+0123456789)"
 msgstr "Digite um número de telefone internacional válido (+0123456789)"
@@ -348,134 +373,153 @@ msgid "Account settings"
 msgstr "Configurações da conta"
 
 msgid "Two factor authentication"
-msgstr ""
+msgstr "Autenticação de dois factores"
 
 msgid "Full profile"
-msgstr ""
+msgstr "Perfil completo"
 
 msgid "Personal access tokens"
-msgstr ""
+msgstr "Tokens de acesso pessoal"
 
 msgid "About DHIS2"
 msgstr "Sobre DHIS2"
 
+msgid "Email verification link sent successfully!"
+msgstr "Ligação de verificação de correio eletrónico enviada com sucesso!"
+
+msgid "Failed to send email verification link."
+msgstr "Falha ao enviar a ligação de verificação por correio eletrónico."
+
+msgid "Verify Email"
+msgstr "Verificar o correio eletrónico"
+
 msgid "Manage personal access tokens"
-msgstr ""
+msgstr "Gerir tokens de acesso pessoal"
 
 msgid "Generate new token"
-msgstr ""
+msgstr "Gerar novo token"
 
 msgid "Error loading personal access tokens"
-msgstr ""
+msgstr "Erro ao carregar tokens de acesso pessoal"
 
 msgid "You don't have any active personal access tokens"
-msgstr ""
+msgstr "Não tem quaisquer tokens de acesso pessoal activos"
 
 msgid "You'll only be shown your token once"
-msgstr ""
+msgstr "Só lhe será mostrado o seu token uma vez"
 
 msgid ""
 "Make sure to copy your personal access token now. You won't be able to see "
 "it again"
 msgstr ""
+"Certifique-se de que copia o seu token de acesso pessoal agora. Não o poderá"
+" voltar a ver"
 
 msgid "Invalid IP address '{{- ipAddress}}'"
-msgstr ""
+msgstr "Endereço IP inválido '{{- ipAddress}}'"
 
 msgid "Allowed IP addresses"
-msgstr ""
+msgstr "Endereços IP permitidos"
 
 msgid "List one IP address per line."
-msgstr ""
+msgstr "Indique um endereço IP por linha."
 
 msgid "Allowed HTTP methods"
-msgstr ""
+msgstr "Métodos HTTP permitidos"
 
 msgid "GET"
-msgstr ""
+msgstr "OBTER"
 
 msgid "POST"
-msgstr ""
+msgstr "POST"
 
 msgid "PUT"
-msgstr ""
+msgstr "COLOCAR"
 
 msgid "PATCH"
-msgstr ""
+msgstr "PATCH"
 
 msgid "DELETE"
-msgstr ""
+msgstr "APAGAR"
 
 msgid "Only choose the HTTP methods this token needs to allow."
-msgstr ""
+msgstr "Escolha apenas os métodos HTTP que este token deve permitir."
 
 msgid "Invalid referrer '{{- referrer}}'"
-msgstr ""
+msgstr "Referenciador inválido '{{- referrer}}'"
 
 msgid "Allowed referrers"
-msgstr ""
+msgstr "Referenciadores permitidos"
 
 msgid "List one referrer per line."
-msgstr ""
+msgstr "Indique um referenciador por linha."
 
 msgid "Error fetching your authorities"
-msgstr ""
+msgstr "Erro ao obter as suas autoridades"
 
 msgid "Retry loading authorities"
-msgstr ""
+msgstr "Repetir o carregamento de autoridades"
 
 msgid "This token will have the following authorities"
-msgstr ""
+msgstr "Esta ficha terá as seguintes competências"
 
 msgid ""
 "Important: this is not a security feature. The referrer header can easily be"
 " spoofed. This setting is intended to discourage unauthorised third-party "
 "developers from connecting to public access instances."
 msgstr ""
+"Importante: esta não é uma caraterística de segurança. O cabeçalho do "
+"referenciador pode ser facilmente falsificado. Esta definição destina-se a "
+"desencorajar os programadores terceiros não autorizados de se ligarem a "
+"instâncias de acesso público."
 
 msgid "Choose the context where this token will be used."
-msgstr ""
+msgstr "Escolha o contexto em que este token será utilizado."
 
 msgid "Server/script context"
-msgstr ""
+msgstr "Contexto do servidor/script"
 
 msgid "Used for integrations and scripts that won't be accessed by a browser."
 msgstr ""
+"Utilizado para integrações e scripts que não serão acedidos por um "
+"navegador."
 
 msgid "Browser context"
-msgstr ""
+msgstr "Contexto do navegador"
 
 msgid ""
 "Used for applications, like public portals, that will be accessed with a web"
 " browser."
 msgstr ""
+"Utilizado para aplicações, como portais públicos, que serão acedidos através"
+" de um navegador Web."
 
 msgid "Token expiration date must be in the future"
-msgstr ""
+msgstr "A data de expiração do token deve ser no futuro"
 
 msgid "7 days"
-msgstr ""
+msgstr "7 dias"
 
 msgid "30 days"
-msgstr ""
+msgstr "30 dias"
 
 msgid "60 days"
-msgstr ""
+msgstr "60 dias"
 
 msgid "90 days"
-msgstr ""
+msgstr "90 dias"
 
 msgid "Custom..."
-msgstr ""
+msgstr "Personalizado..."
 
 msgid "The token will expire on {{- tokenExpirationDate}}."
-msgstr ""
+msgstr "O token expirará em {{- tokenExpirationDate}}."
 
 msgid "Expiration (required)"
-msgstr ""
+msgstr "Prazo de validade (obrigatório)"
 
 msgid "Custom expiration date (required)"
-msgstr ""
+msgstr "Data de expiração personalizada (obrigatório)"
 
 msgid ""
 "Personal access tokens should only be used in a browser context for public "
@@ -483,9 +527,13 @@ msgid ""
 "passwords and be kept private — requests should instead be routed through a "
 "proxy."
 msgstr ""
+"Os tokens de acesso pessoal só devem ser utilizados num contexto de "
+"navegador para instâncias de acesso público. Para instâncias privadas, os "
+"tokens devem ser tratados como palavras-passe e mantidos privados - os "
+"pedidos devem ser encaminhados através de um proxy."
 
 msgid "Token details"
-msgstr ""
+msgstr "Detalhes do token"
 
 msgid "Cancel"
 msgstr "Cancelar"
@@ -495,32 +543,37 @@ msgid ""
 " can be spoofed. For security, make sure a load balancer or reverse proxy "
 "overwrites this header."
 msgstr ""
+"Importante: A validação do endereço IP baseia-se no cabeçalho X-Forwarded-"
+"For, que pode ser falsificado. Por motivos de segurança, certifique-se de "
+"que um balanceador de carga ou proxy reverso substitui este cabeçalho."
 
 msgid "Are you sure you want to delete this token?"
-msgstr ""
+msgstr "Tem a certeza de que pretende apagar este token?"
 
 msgid "Error deleting token"
-msgstr ""
+msgstr "Erro ao eliminar o token"
 
 msgid ""
 "Any application or script using this token will no longer be able to access "
 "this instance's API. You cannot undo this action."
 msgstr ""
+"Qualquer aplicação ou script que utilize este token deixará de poder aceder "
+"à API desta instância. Não é possível anular esta acção."
 
 msgid "Delete token"
-msgstr ""
+msgstr "Apagar ficha"
 
 msgid "Expires"
-msgstr ""
+msgstr "Expirações"
 
 msgid "Created"
 msgstr "Criado"
 
 msgid "Copied token to clipboard"
-msgstr ""
+msgstr "Token copiado para a área de transferência"
 
 msgid "Newly created token"
-msgstr ""
+msgstr "Token recém-criado"
 
 msgid "Copy to clipboard"
 msgstr "Copiar para área de transferência"
@@ -566,6 +619,9 @@ msgstr "Outro"
 
 msgid "E-mail"
 msgstr "e-mail"
+
+msgid "E-mail Verification"
+msgstr "Verificação de correio eletrónico"
 
 msgid "Mobile phone number"
 msgstr "Número de telemóvel"
@@ -616,7 +672,7 @@ msgid "Twitter"
 msgstr "Twitter"
 
 msgid "Account editor"
-msgstr ""
+msgstr "Editor de contas"
 
 msgid "Interface language"
 msgstr "Idioma da interface"
@@ -644,20 +700,20 @@ msgstr "Ver o perfil completo"
 
 msgctxt "HTTP method"
 msgid "GET"
-msgstr ""
+msgstr "OBTER"
 
 msgctxt "HTTP method"
 msgid "POST"
-msgstr ""
+msgstr "POST"
 
 msgctxt "HTTP method"
 msgid "PUT"
-msgstr ""
+msgstr "PUT"
 
 msgctxt "HTTP method"
 msgid "PATCH"
-msgstr ""
+msgstr "PATCH"
 
 msgctxt "HTTP method"
 msgid "DELETE"
-msgstr ""
+msgstr "APAGAR"
