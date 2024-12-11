@@ -9,6 +9,8 @@ const sendEmailVerificationMutation = {
     type: 'create',
 }
 
+const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i
+
 export function VerifyEmail({ userEmail }) {
     const errorAlert = useAlert(({ message }) => message, { critical: true })
     const successAlert = useAlert(({ message }) => message, { success: true })
@@ -34,8 +36,10 @@ export function VerifyEmail({ userEmail }) {
 
     const emailConfigured = systemInfo?.emailConfigured
 
+    const isValidEmail = emailRegex.test(userEmail)
+
     if (!emailConfigured) {
-        return null // If emailConfigured is false, don't display the button
+        return null 
     }
 
     return (
@@ -43,7 +47,7 @@ export function VerifyEmail({ userEmail }) {
             <Button
                 secondary
                 onClick={mutateEmailVerification}
-                disabled={mutationLoading || !userEmail}
+                disabled={mutationLoading || !isValidEmail || !userEmail}
                 loading={mutationLoading}
             >
                 {i18n.t('Verify Email')}
