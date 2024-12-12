@@ -9,8 +9,8 @@ const sendEmailVerificationMutation = {
     type: 'create',
 }
 
-const emailRegex =
-    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i
+const emailRegExp =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
 
 export function VerifyEmail({ userEmail }) {
     const errorAlert = useAlert(({ message }) => message, { critical: true })
@@ -37,7 +37,7 @@ export function VerifyEmail({ userEmail }) {
 
     const emailConfigured = systemInfo?.emailConfigured
 
-    const isValidEmail = emailRegex.test(userEmail)
+    const isValidEmail = emailRegExp.test(userEmail)
 
     if (!emailConfigured) {
         return null
