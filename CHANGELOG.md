@@ -1,3 +1,10 @@
+# [100.2.0](https://github.com/dhis2/user-profile-app/compare/v100.1.1...v100.2.0) (2024-12-13)
+
+
+### Features
+
+* disable verify email button if email is not valid ([c6f3014](https://github.com/dhis2/user-profile-app/commit/c6f3014c8acea65e7dc29b60f03263e23236173d))
+
 ## [100.1.1](https://github.com/dhis2/user-profile-app/compare/v100.1.0...v100.1.1) (2024-12-08)
 
 
