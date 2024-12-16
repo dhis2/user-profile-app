@@ -17,6 +17,7 @@ import userSettingsKeyMapping from '../userSettingsMapping.js'
 import AvatarEditor from './AvatarEditor.component.js'
 import AppTheme from './theme.js'
 import { VerifyEmail } from './VerifyEmail.component.js'
+import  VerifyEmailWarning  from './VerifyEmailWarning.js'
 
 const styles = {
     header: {
@@ -387,6 +388,7 @@ class FormFields extends Component {
             <div className="content-area">
                 <div style={styles.header}>{this.props.pageLabel}</div>
                 <form autoComplete="off">
+                    <VerifyEmailWarning />
                     {this.renderFields(this.props.fieldKeys)}
                 </form>
             </div>
