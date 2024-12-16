@@ -1,8 +1,7 @@
-import React from 'react'
-import { useDataQuery, useConfig } from '@dhis2/app-runtime'
+import { useDataQuery, useAlert } from '@dhis2/app-runtime'
 import i18n from '@dhis2/d2-i18n'
 import { NoticeBox } from '@dhis2/ui'
-import { useAlert } from '@dhis2/app-runtime'
+import React from 'react'
 
 const getUserProfileQuery = {
     me: {
