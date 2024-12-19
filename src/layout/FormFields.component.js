@@ -17,7 +17,7 @@ import userSettingsKeyMapping from '../userSettingsMapping.js'
 import AvatarEditor from './AvatarEditor.component.js'
 import AppTheme from './theme.js'
 import { VerifyEmail } from './VerifyEmail.component.js'
-import VerifyEmailWarning from './VerifyEmailWarning.js'
+import { VerifyEmailWarning } from './VerifyEmailWarning.js'
 
 const styles = {
     header: {
