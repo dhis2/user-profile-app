@@ -26,6 +26,10 @@ html, body {
   margin: 0;
 }
 
+.noticebox-wrapper{
+  margin-right: 15px;
+}
+
 .info-cell-name {
   color: #777;
   font-size: 12pt;
