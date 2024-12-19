@@ -388,7 +388,9 @@ class FormFields extends Component {
             <div className="content-area">
                 <div style={styles.header}>{this.props.pageLabel}</div>
                 <form autoComplete="off">
-                    <VerifyEmailWarning />
+                    {this.context?.d2 && (
+                        <VerifyEmailWarning config={this.context.d2} />
+                    )}
                     {this.renderFields(this.props.fieldKeys)}
                 </form>
             </div>
