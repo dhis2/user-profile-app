@@ -7,13 +7,14 @@
 # Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2022
 # Philip Larsen Donnelly, 2022
 # Helton Dias, 2024
+# Martins Matola, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
 "PO-Revision-Date: 2022-10-15 22:33+0000\n"
-"Last-Translator: Helton Dias, 2024\n"
+"Last-Translator: Martins Matola, 2024\n"
 "Language-Team: Portuguese (https://app.transifex.com/hisp-uio/teams/100509/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,25 +29,25 @@ msgid "Invalid date"
 msgstr "Data inválida"
 
 msgid "Web API"
-msgstr "Interface Web"
+msgstr "API Web"
 
 msgid "Browse it here"
-msgstr "Navegue por aqui"
+msgstr "Pesquisar aqui"
 
 msgid "Current user"
-msgstr "Utilizador corrente"
+msgstr "Utilizador activo"
 
 msgid "Version"
 msgstr "Versão"
 
 msgid "Build revision"
-msgstr "Revisão da Construção"
+msgstr "Revisão do Build"
 
 msgid "Build date"
 msgstr "Data construção"
 
 msgid "Jasper reports version"
-msgstr "Versão de relatórios do Jasper"
+msgstr "Versão do Jasper Report"
 
 msgid "User agent"
 msgstr "Agente de utilizador"
@@ -98,7 +99,7 @@ msgid "Read replica count"
 msgstr "Ler contagem de réplicas"
 
 msgid "Java opts"
-msgstr "Opções Java"
+msgstr "Java opts"
 
 msgid "Java version"
 msgstr "Versão do Java"
@@ -158,7 +159,7 @@ msgid "Please provide your old password"
 msgstr "Forneça sua senha antiga"
 
 msgid "Username"
-msgstr "Nome de usuário"
+msgstr "Nome de utilizador"
 
 msgid "Old password"
 msgstr "Senha anterior"
@@ -295,13 +296,13 @@ msgid "This field is required"
 msgstr "Este campo é obrigatorio"
 
 msgid "This field should be a URL"
-msgstr "Este campo deve ser um URL"
+msgstr "Este campo deve ser uma URL"
 
 msgid "This field should contain a list of URLs"
 msgstr "Este campo deve conter uma lista de URLs"
 
 msgid "This field should be a number"
-msgstr "Este campo deve ser um número"
+msgstr "Este campo deve ser numérico"
 
 msgid "This field should be a positive number"
 msgstr "Este campo deve ser um número positivo"
@@ -325,10 +326,10 @@ msgid "System default"
 msgstr "Padrão do sistema"
 
 msgid "User profile"
-msgstr "Perfil do usuário"
+msgstr "Perfil do utilizador"
 
 msgid "User settings"
-msgstr "Configurações do usuário"
+msgstr "Configurações do utilizador"
 
 msgid "Account settings"
 msgstr "Configurações da conta"
@@ -377,7 +378,7 @@ msgid "Allowed HTTP methods"
 msgstr "Métodos HTTP permitidos"
 
 msgid "GET"
-msgstr "OBTER"
+msgstr "GET"
 
 msgid "POST"
 msgstr "POST"
