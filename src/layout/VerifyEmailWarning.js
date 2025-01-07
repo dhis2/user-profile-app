@@ -6,7 +6,8 @@ import React from 'react'
 export function VerifyEmailWarning({ config }) {
     const enforceVerifiedEmail =
         config?.system?.settings?.enforceVerifiedEmail || false
-    const emailVerified = config?.currentUser?.emailVerified || false
+    const emailVerified =
+        config.system?.settings?.settings?.enforceVerifiedEmail || false
 
     if (enforceVerifiedEmail && !emailVerified) {
         return (

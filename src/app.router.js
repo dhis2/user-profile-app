@@ -50,7 +50,7 @@ class AppRouter extends Component {
 
     getDefaultRedirect() {
         const enforceVerifiedEmail =
-            this.props.d2.system.settings.settings.enforceVerifiedEmail
+            this.props.d2?.system?.settings?.settings?.enforceVerifiedEmail
         const emailVerified = this.props.d2.currentUser.emailVerified
 
         // Redirect to the profile page if email is unverified and the setting is enforced
