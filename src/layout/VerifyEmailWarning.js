@@ -5,9 +5,8 @@ import React from 'react'
 
 export function VerifyEmailWarning({ config }) {
     const enforceVerifiedEmail =
-        config?.system?.settings?.enforceVerifiedEmail || false
-    const emailVerified =
         config.system?.settings?.settings?.enforceVerifiedEmail || false
+    const emailVerified = config.currentUser?.emailVerified || false
 
     if (enforceVerifiedEmail && !emailVerified) {
         return (
@@ -31,7 +30,9 @@ VerifyEmailWarning.propTypes = {
         }),
         system: PropTypes.shape({
             settings: PropTypes.shape({
-                enforceVerifiedEmail: PropTypes.bool,
+                settings: PropTypes.shape({
+                    enforceVerifiedEmail: PropTypes.bool,
+                }),
             }),
         }),
     }).isRequired,
