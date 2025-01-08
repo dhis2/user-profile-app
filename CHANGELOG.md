@@ -1,3 +1,17 @@
+# [100.3.0](https://github.com/dhis2/user-profile-app/compare/v100.2.0...v100.3.0) (2025-01-08)
+
+
+### Bug Fixes
+
+* lint errors and proptypes ([5ac9cf2](https://github.com/dhis2/user-profile-app/commit/5ac9cf20d2c84852ae5b2f7e2cc465dbfe0fabe1))
+* update fixes ([4264a3f](https://github.com/dhis2/user-profile-app/commit/4264a3fcf4b0a81a50ea73de191d780d3ce9594f))
+
+
+### Features
+
+* add the verify email warning ([d4c0c36](https://github.com/dhis2/user-profile-app/commit/d4c0c36b3f29e5109575c9fe50254c117d7c1d29))
+* get data from d2 config ([cc9a5ec](https://github.com/dhis2/user-profile-app/commit/cc9a5ec2cb4b0f94663e9a63d4b3a591d11a0888))
+
 # [100.2.0](https://github.com/dhis2/user-profile-app/compare/v100.1.1...v100.2.0) (2024-12-13)
 
 
