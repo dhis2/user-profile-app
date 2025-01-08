@@ -48,7 +48,20 @@ class AppRouter extends Component {
         return { baseUrl, apiVersion }
     }
 
+    getDefaultRedirect() {
+        const enforceVerifiedEmail =
+            this.props.d2?.system?.settings?.settings?.enforceVerifiedEmail
+        const emailVerified = this.props.d2.currentUser.emailVerified
+
+        // Redirect to the profile page if email is unverified and the setting is enforced
+        return enforceVerifiedEmail && !emailVerified
+            ? '/profile'
+            : '/viewProfile'
+    }
+
     render() {
+        const defaultRedirect = this.getDefaultRedirect()
+
         return (
             <DataProvider {...this.getDataProviderProps()}>
                 <CssVariables colors spacers />
@@ -77,7 +90,7 @@ class AppRouter extends Component {
                                     component={PersonalAccessTokens}
                                 />
                                 <Route path="aboutPage" component={AboutPage} />
-                                <Redirect from="/" to="/viewProfile" />
+                                <Redirect from="/" to={defaultRedirect} />
                             </Route>
                         </Router>
                     </div>
