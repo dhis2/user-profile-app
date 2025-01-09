@@ -6,7 +6,6 @@ import React, { Component } from 'react'
 import appActions from '../app.actions.js'
 import i18n from '../locales/index.js'
 import accountActions from './account.actions.js'
-import isValidPassword from './isValidPassword.js'
 
 const styles = {
     notification: {
@@ -96,8 +95,16 @@ class AccountEditor extends Component {
         this.setState({ [e]: v })
     }
 
+    validatePassword = (val, regEx) => (!val ? true : regEx.test(val))
+
     render() {
         const usesOpenIdConnect = this.context.d2.currentUser.externalAuth
+        const {
+            minPasswordLength,
+            maxPasswordLength,
+            passwordValidationPattern = '^(?=.*[A-Z])(?=.*\\d)(?=.*[\\W_])[A-Za-z\\d\\W_]{8,32}$',
+        } = this.context.d2.system.settings.settings
+        const passwordRegEx = new RegExp(passwordValidationPattern)
         const fields = [
             {
                 name: 'username',
@@ -142,9 +149,11 @@ class AccountEditor extends Component {
                 },
                 validators: [
                     {
-                        validator: isValidPassword,
+                        validator: (val) =>
+                            this.validatePassword(val, passwordRegEx),
                         message: i18n.t(
-                            'Password should be at least 8 characters with at least 1 digit, 1 uppercase letter and 1 special character'
+                            'Password should be between {{minPasswordLength}} and {{maxPasswordLength}} characters long, with at least one lowercase character, one uppercase character, one number, and one special character.',
+                            { minPasswordLength, maxPasswordLength }
                         ),
                     },
                 ],
