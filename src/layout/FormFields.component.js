@@ -18,6 +18,7 @@ import AvatarEditor from './AvatarEditor.component.js'
 import AppTheme from './theme.js'
 import { VerifyEmail } from './VerifyEmail.component.js'
 import { VerifyEmailWarning } from './VerifyEmailWarning.js'
+import {ModalField} from "./ModalField.component";
 
 const styles = {
     header: {
@@ -243,6 +244,18 @@ function createVerifyButton(fieldBase, valueStore) {
     })
 }
 
+function createModalField(fieldBase, valueStore, onUpdate) {
+    return Object.assign({}, fieldBase, {
+        component: ModalField,
+        props: {
+            onUpdate,
+            userEmail: valueStore.state['email'] || '',
+            setUserEmail: email => {
+                valueStore.setState({...valueStore.state, email})}
+        },
+    })
+}
+
 function createFieldBaseObject(fieldName, mapping, valueStore) {
     if (!mapping) {
         log.warn(`Mapping not found for field: ${fieldName}`)
@@ -276,7 +289,7 @@ function createFieldBaseObject(fieldName, mapping, valueStore) {
     )
 }
 
-function createField(fieldName, valueStore, d2) {
+function createField(fieldName, valueStore, d2, onUpdate) {
     const mapping = userSettingsKeyMapping[fieldName]
     const fieldBase = createFieldBaseObject(fieldName, mapping, valueStore)
 
@@ -295,6 +308,8 @@ function createField(fieldName, valueStore, d2) {
             return createAvatarEditor(fieldBase, d2, valueStore)
         case 'submit':
             return createVerifyButton(fieldBase, valueStore)
+        case 'modal':
+            return createModalField(fieldBase, valueStore, onUpdate)
         default:
             log.warn(
                 `Unknown control type "${mapping.type}" encountered for field "${fieldName}"`
@@ -365,9 +380,10 @@ class FormFields extends Component {
     renderFields(fieldNames) {
         const d2 = this.context.d2
         const valueStore = this.props.valueStore
+        const onUpdate = this.props.onUpdateField
         // Create the regular fields
         const fields = fieldNames
-            .map((fieldName) => createField(fieldName, valueStore, d2))
+            .map((fieldName) => createField(fieldName, valueStore, d2, onUpdate))
             .filter((field) => !!field.name)
             .map((field) => wrapFieldWithLabel(field))
 

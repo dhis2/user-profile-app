@@ -29,7 +29,7 @@ const settingsKeyMapping = {
     },
     email: {
         label: i18n.t('E-mail'),
-        type: 'textfield',
+        type: 'modal',
         validators: ['email'],
     },
     emailVerification: {
