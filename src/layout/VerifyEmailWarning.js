@@ -3,12 +3,13 @@ import { NoticeBox } from '@dhis2/ui'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-export function VerifyEmailWarning({ config }) {
+export function VerifyEmailWarning({ config, emailUpdated }) {
     const enforceVerifiedEmail =
-        config.system?.settings?.settings?.enforceVerifiedEmail || false
-    const emailVerified = config.currentUser?.emailVerified || false
+        config.system?.settings?.settings?.enforceVerifiedEmail ?? false
+    const emailNotVerified =
+        (!config.currentUser?.emailVerified || emailUpdated) ?? false
 
-    if (enforceVerifiedEmail && !emailVerified) {
+    if (enforceVerifiedEmail && emailNotVerified) {
         return (
             <div className="noticebox-wrapper">
                 <NoticeBox warning>
@@ -36,4 +37,5 @@ VerifyEmailWarning.propTypes = {
             }),
         }),
     }).isRequired,
+    emailUpdated: PropTypes.bool,
 }

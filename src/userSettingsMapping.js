@@ -30,7 +30,6 @@ const settingsKeyMapping = {
     email: {
         label: i18n.t('E-mail'),
         type: 'modal',
-        validators: ['email'],
     },
     emailVerification: {
         name: 'emailVerification',

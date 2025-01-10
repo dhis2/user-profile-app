@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2025-01-08T13:52:44.921Z\n"
-"PO-Revision-Date: 2025-01-08T13:52:44.921Z\n"
+"POT-Creation-Date: 2025-01-09T15:27:50.496Z\n"
+"PO-Revision-Date: 2025-01-09T15:27:50.496Z\n"
 
 msgid "Never"
 msgstr "Never"
@@ -346,6 +346,42 @@ msgstr "No options"
 msgid "System default"
 msgstr "System default"
 
+msgid "No email provided"
+msgstr "No email provided"
+
+msgid "Email is invalid"
+msgstr "Email is invalid"
+
+msgid "Emails must match"
+msgstr "Emails must match"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Update email"
+msgstr "Update email"
+
+msgid "Your email is currently verified"
+msgstr "Your email is currently verified"
+
+msgid "If you change your email, you may need to reverify your email."
+msgstr "If you change your email, you may need to reverify your email."
+
+msgid "Current email"
+msgstr "Current email"
+
+msgid "Enter new email"
+msgstr "Enter new email"
+
+msgid "Confirm new email"
+msgstr "Confirm new email"
+
+msgid "Cancel"
+msgstr "Cancel"
+
+msgid "Save"
+msgstr "Save"
+
 msgid "User profile"
 msgstr "User profile"
 
@@ -521,9 +557,6 @@ msgstr ""
 
 msgid "Token details"
 msgstr "Token details"
-
-msgid "Cancel"
-msgstr "Cancel"
 
 msgid ""
 "Important: IP address validation relies on the X-Forwarded-For header, "

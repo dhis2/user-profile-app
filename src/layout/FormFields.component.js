@@ -15,10 +15,10 @@ import optionValueStore from '../optionValue.store.js'
 import userSettingsStore from '../settings/userSettings.store.js'
 import userSettingsKeyMapping from '../userSettingsMapping.js'
 import AvatarEditor from './AvatarEditor.component.js'
+import { ModalField } from './ModalField.component.js'
 import AppTheme from './theme.js'
 import { VerifyEmail } from './VerifyEmail.component.js'
 import { VerifyEmailWarning } from './VerifyEmailWarning.js'
-import {ModalField} from "./ModalField.component";
 
 const styles = {
     header: {
@@ -244,14 +244,18 @@ function createVerifyButton(fieldBase, valueStore) {
     })
 }
 
-function createModalField(fieldBase, valueStore, onUpdate) {
+function createModalField({ fieldBase, valueStore, onUpdate, d2 }) {
     return Object.assign({}, fieldBase, {
         component: ModalField,
         props: {
             onUpdate,
             userEmail: valueStore.state['email'] || '',
-            setUserEmail: email => {
-                valueStore.setState({...valueStore.state, email})}
+            userEmailVerified: d2?.currentUser?.emailVerified,
+            setUserEmail: (email) => {
+                valueStore.state['email'] = email
+                valueStore.state['emailUpdated'] = true
+                valueStore.setState(valueStore.state)
+            },
         },
     })
 }
@@ -289,7 +293,7 @@ function createFieldBaseObject(fieldName, mapping, valueStore) {
     )
 }
 
-function createField(fieldName, valueStore, d2, onUpdate) {
+function createField({ fieldName, valueStore, d2, onUpdate }) {
     const mapping = userSettingsKeyMapping[fieldName]
     const fieldBase = createFieldBaseObject(fieldName, mapping, valueStore)
 
@@ -309,7 +313,7 @@ function createField(fieldName, valueStore, d2, onUpdate) {
         case 'submit':
             return createVerifyButton(fieldBase, valueStore)
         case 'modal':
-            return createModalField(fieldBase, valueStore, onUpdate)
+            return createModalField({ fieldBase, valueStore, onUpdate, d2 })
         default:
             log.warn(
                 `Unknown control type "${mapping.type}" encountered for field "${fieldName}"`
@@ -383,7 +387,9 @@ class FormFields extends Component {
         const onUpdate = this.props.onUpdateField
         // Create the regular fields
         const fields = fieldNames
-            .map((fieldName) => createField(fieldName, valueStore, d2, onUpdate))
+            .map((fieldName) =>
+                createField({ fieldName, valueStore, d2, onUpdate })
+            )
             .filter((field) => !!field.name)
             .map((field) => wrapFieldWithLabel(field))
 
@@ -405,7 +411,12 @@ class FormFields extends Component {
                 <div style={styles.header}>{this.props.pageLabel}</div>
                 <form autoComplete="off">
                     {this.context?.d2 && (
-                        <VerifyEmailWarning config={this.context.d2} />
+                        <VerifyEmailWarning
+                            config={this.context.d2}
+                            emailUpdated={
+                                this.props?.valueStore?.state?.emailUpdated
+                            }
+                        />
                     )}
                     {this.renderFields(this.props.fieldKeys)}
                 </form>
