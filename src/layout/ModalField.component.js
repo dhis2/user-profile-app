@@ -134,13 +134,13 @@ export function ModalField({
                     {i18n.t('Change email')}
                 </Button>
                 <TooltipWrapper
-                    disabled={!userEmail}
+                    disabled={!userEmail || userEmail?.trim() === ''}
                     content={i18n.t('There is no email to remove')}
                 >
                     <Button
                         destructive
                         onClick={() => setRemoveModalOpen(true)}
-                        disabled={!userEmail}
+                        disabled={!userEmail || userEmail?.trim() === ''}
                     >
                         {i18n.t('Remove email')}
                     </Button>
