@@ -165,7 +165,7 @@ export function ModalField({
                     <InputField
                         label={i18n.t('Current email')}
                         value={
-                            userEmail !== ''
+                            userEmail?.trim() !== ''
                                 ? userEmail
                                 : i18n.t('no current email')
                         }

@@ -406,6 +406,9 @@ class FormFields extends Component {
                             emailUpdated={
                                 this.props?.valueStore?.state?.emailUpdated
                             }
+                            userEmail={
+                                this.props?.valueStore?.state?.email ?? ''
+                            }
                         />
                     )}
                     {this.renderFields(this.props.fieldKeys)}
