@@ -17,7 +17,6 @@ import userSettingsKeyMapping from '../userSettingsMapping.js'
 import AvatarEditor from './AvatarEditor.component.js'
 import { ModalField } from './ModalField.component.js'
 import AppTheme from './theme.js'
-import { VerifyEmail } from './VerifyEmail.component.js'
 import { VerifyEmailWarning } from './VerifyEmailWarning.js'
 
 const styles = {
@@ -237,13 +236,6 @@ function createAvatarEditor(fieldBase, d2, valueStore) {
     })
 }
 
-function createVerifyButton(fieldBase, valueStore) {
-    return Object.assign({}, fieldBase, {
-        component: VerifyEmail,
-        props: { userEmail: valueStore.state['email'] || '' },
-    })
-}
-
 function createModalField({ fieldBase, valueStore, onUpdate, d2 }) {
     return Object.assign({}, fieldBase, {
         component: ModalField,
@@ -310,8 +302,6 @@ function createField({ fieldName, valueStore, d2, onUpdate }) {
             return createAccountEditor(fieldBase, d2, valueStore)
         case 'avatar':
             return createAvatarEditor(fieldBase, d2, valueStore)
-        case 'submit':
-            return createVerifyButton(fieldBase, valueStore)
         case 'modal':
             return createModalField({ fieldBase, valueStore, onUpdate, d2 })
         default:

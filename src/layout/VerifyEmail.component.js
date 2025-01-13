@@ -41,16 +41,14 @@ export function VerifyEmail({ userEmail }) {
     }
 
     return (
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <Button
-                secondary
-                onClick={mutateEmailVerification}
-                disabled={mutationLoading || isInvalidEmail || !userEmail}
-                loading={mutationLoading}
-            >
-                {i18n.t('Verify email')}
-            </Button>
-        </div>
+        <Button
+            secondary
+            onClick={mutateEmailVerification}
+            disabled={mutationLoading || isInvalidEmail || !userEmail}
+            loading={mutationLoading}
+        >
+            {i18n.t('Verify email')}
+        </Button>
     )
 }
 

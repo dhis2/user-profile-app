@@ -9,3 +9,8 @@
 .emailModalItem {
     margin-block-end: 16px;
 }
+
+.buttonContainer {
+    display: flex;
+    gap: 8px;
+}

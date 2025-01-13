@@ -15,6 +15,7 @@ import TextField from 'd2-ui/lib/form-fields/TextField'
 import PropTypes from 'prop-types'
 import React, { useMemo, useState } from 'react'
 import styles from './ModalField.component.module.css'
+import { VerifyEmail } from './VerifyEmail.component.js'
 
 const TooltipWrapper = ({ disabled, content, children }) => {
     if (!disabled) {
@@ -39,6 +40,56 @@ const getSaveDisabledContent = ({ newEmail, emailValidationMessage }) => {
     return i18n.t('Emails must match')
 }
 
+const RemoveModal = ({
+    removeModalOpen,
+    closeModal,
+    userEmailVerified,
+    setUserEmail,
+    onUpdate,
+}) => (
+    <Modal hide={!removeModalOpen} onClose={closeModal}>
+        <ModalTitle>{i18n.t('Remove email')}</ModalTitle>
+
+        <ModalContent>
+            {userEmailVerified && (
+                <NoticeBox
+                    className={styles.emailModalItem}
+                    title={i18n.t('Your email is currently verified')}
+                    warning
+                ></NoticeBox>
+            )}
+            <div>{i18n.t('Are you sure you want to remove your email?')}</div>
+        </ModalContent>
+
+        <ModalActions>
+            <ButtonStrip end>
+                <Button onClick={() => closeModal()} secondary>
+                    {i18n.t('Cancel')}
+                </Button>
+
+                <Button
+                    onClick={() => {
+                        setUserEmail(null)
+                        onUpdate('email', '')
+                        closeModal()
+                    }}
+                    destructive
+                >
+                    {i18n.t('Remove email')}
+                </Button>
+            </ButtonStrip>
+        </ModalActions>
+    </Modal>
+)
+
+RemoveModal.propTypes = {
+    closeModal: PropTypes.func,
+    removeModalOpen: PropTypes.bool,
+    setUserEmail: PropTypes.bool,
+    userEmailVerified: PropTypes.bool,
+    onUpdate: PropTypes.func,
+}
+
 export function ModalField({
     userEmail,
     userEmailVerified,
@@ -46,9 +97,10 @@ export function ModalField({
     onUpdate,
 }) {
     const [modalOpen, setModalOpen] = useState()
+    const [removeModalOpen, setRemoveModalOpen] = useState()
     const [newEmail, setNewEmail] = useState()
     const [newEmailConfirm, setNewEmailConfirm] = useState()
-    const [newEmailTouched, setNewEmailTouched] = useState(false)
+    const [newEmailConfirmTouched, setNewEmailConfirmTouched] = useState(false)
     const emailValidationMessage = useMemo(
         () => emailValidator(newEmail),
         [newEmail]
@@ -63,9 +115,10 @@ export function ModalField({
 
     const closeModal = () => {
         setModalOpen(false)
+        setRemoveModalOpen(false)
         setNewEmail()
         setNewEmailConfirm()
-        setNewEmailTouched(false)
+        setNewEmailConfirmTouched(false)
     }
     return (
         <div className={styles.emailModalContainer}>
@@ -75,13 +128,26 @@ export function ModalField({
                 floatingLabelText={i18n.t('Email')}
                 style={{ width: '100%' }}
             />
-            <div>
+            <div className={styles.buttonContainer}>
+                <VerifyEmail userEmail={userEmail} />
                 <Button secondary onClick={() => setModalOpen(true)}>
-                    {i18n.t('Update email')}
+                    {i18n.t('Change email')}
                 </Button>
+                <TooltipWrapper
+                    disabled={!userEmail}
+                    content={i18n.t('There is no email to remove')}
+                >
+                    <Button
+                        destructive
+                        onClick={() => setRemoveModalOpen(true)}
+                        disabled={!userEmail}
+                    >
+                        {i18n.t('Remove email')}
+                    </Button>
+                </TooltipWrapper>
             </div>
             <Modal hide={!modalOpen} onClose={closeModal}>
-                <ModalTitle>{i18n.t('Update email')}</ModalTitle>
+                <ModalTitle>{i18n.t('Change email')}</ModalTitle>
 
                 <ModalContent>
                     {userEmailVerified && (
@@ -98,7 +164,11 @@ export function ModalField({
 
                     <InputField
                         label={i18n.t('Current email')}
-                        value={userEmail}
+                        value={
+                            userEmail !== ''
+                                ? userEmail
+                                : i18n.t('no current email')
+                        }
                         type="email"
                         disabled
                         className={styles.emailModalItem}
@@ -117,14 +187,14 @@ export function ModalField({
                         label={i18n.t('Confirm new email')}
                         value={newEmailConfirm}
                         type="email"
-                        error={newEmailTouched && !emailsMatch}
+                        error={newEmailConfirmTouched && !emailsMatch}
                         validationText={
-                            emailsMatch || !newEmailTouched
+                            emailsMatch || !newEmailConfirmTouched
                                 ? undefined
                                 : i18n.t('Emails must match')
                         }
                         onChange={(newValue) => {
-                            setNewEmailTouched(true)
+                            setNewEmailConfirmTouched(true)
                             setNewEmailConfirm(newValue.value)
                         }}
                         className={styles.emailModalItem}
@@ -156,6 +226,13 @@ export function ModalField({
                     </ButtonStrip>
                 </ModalActions>
             </Modal>
+            <RemoveModal
+                removeModalOpen={removeModalOpen}
+                closeModal={closeModal}
+                userEmailVerified={userEmailVerified}
+                setUserEmail={setUserEmail}
+                onUpdate={onUpdate}
+            />
         </div>
     )
 }

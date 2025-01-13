@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2025-01-09T15:27:50.496Z\n"
-"PO-Revision-Date: 2025-01-09T15:27:50.496Z\n"
+"POT-Creation-Date: 2025-01-13T13:12:31.582Z\n"
+"PO-Revision-Date: 2025-01-13T13:12:31.583Z\n"
 
 msgid "Never"
 msgstr "Never"
@@ -355,14 +355,26 @@ msgstr "Email is invalid"
 msgid "Emails must match"
 msgstr "Emails must match"
 
-msgid "Email"
-msgstr "Email"
-
-msgid "Update email"
-msgstr "Update email"
+msgid "Remove email"
+msgstr "Remove email"
 
 msgid "Your email is currently verified"
 msgstr "Your email is currently verified"
+
+msgid "Are you sure you want to remove your email?"
+msgstr "Are you sure you want to remove your email?"
+
+msgid "Cancel"
+msgstr "Cancel"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Change email"
+msgstr "Change email"
+
+msgid "There is no email to remove"
+msgstr "There is no email to remove"
 
 msgid "If you change your email, you may need to reverify your email."
 msgstr "If you change your email, you may need to reverify your email."
@@ -370,14 +382,14 @@ msgstr "If you change your email, you may need to reverify your email."
 msgid "Current email"
 msgstr "Current email"
 
+msgid "no current email"
+msgstr "no current email"
+
 msgid "Enter new email"
 msgstr "Enter new email"
 
 msgid "Confirm new email"
 msgstr "Confirm new email"
-
-msgid "Cancel"
-msgstr "Cancel"
 
 msgid "Save"
 msgstr "Save"
@@ -409,8 +421,8 @@ msgstr "Email verification link sent successfully!"
 msgid "Failed to send email verification link."
 msgstr "Failed to send email verification link."
 
-msgid "Verify Email"
-msgstr "Verify Email"
+msgid "Verify email"
+msgstr "Verify email"
 
 msgid ""
 "Your email is not verified. Please verify your email to continue using the "
@@ -639,9 +651,6 @@ msgstr "Other"
 
 msgid "E-mail"
 msgstr "E-mail"
-
-msgid "E-mail Verification"
-msgstr "E-mail Verification"
 
 msgid "Mobile phone number"
 msgstr "Mobile phone number"
