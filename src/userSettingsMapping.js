@@ -29,7 +29,7 @@ const settingsKeyMapping = {
     },
     email: {
         label: i18n.t('E-mail'),
-        type: 'modal',
+        type: 'emailModal',
     },
     phoneNumber: {
         label: i18n.t('Mobile phone number'),

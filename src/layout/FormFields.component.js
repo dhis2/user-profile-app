@@ -15,7 +15,7 @@ import optionValueStore from '../optionValue.store.js'
 import userSettingsStore from '../settings/userSettings.store.js'
 import userSettingsKeyMapping from '../userSettingsMapping.js'
 import AvatarEditor from './AvatarEditor.component.js'
-import { ModalField } from './ModalField.component.js'
+import { EmailField } from './EmailField.component.js'
 import AppTheme from './theme.js'
 import { VerifyEmailWarning } from './VerifyEmailWarning.js'
 
@@ -236,18 +236,16 @@ function createAvatarEditor(fieldBase, d2, valueStore) {
     })
 }
 
-function createModalField({ fieldBase, valueStore, onUpdate, d2 }) {
+function createEmailField({ fieldBase, valueStore, onUpdate, d2 }) {
     return Object.assign({}, fieldBase, {
-        component: ModalField,
+        component: EmailField,
         props: {
-            onUpdate,
+            onUpdate: (newEmail) => {
+                onUpdate('email', newEmail)
+                onUpdate('emailUpdated', true)
+            },
             userEmail: valueStore.state['email'] || '',
             userEmailVerified: d2?.currentUser?.emailVerified,
-            setUserEmail: (email) => {
-                valueStore.state['email'] = email
-                valueStore.state['emailUpdated'] = true
-                valueStore.setState(valueStore.state)
-            },
         },
     })
 }
@@ -302,8 +300,13 @@ function createField({ fieldName, valueStore, d2, onUpdate }) {
             return createAccountEditor(fieldBase, d2, valueStore)
         case 'avatar':
             return createAvatarEditor(fieldBase, d2, valueStore)
-        case 'modal':
-            return createModalField({ fieldBase, valueStore, onUpdate, d2 })
+        case 'emailModal':
+            return createEmailField({
+                fieldBase,
+                valueStore,
+                onUpdate,
+                d2,
+            })
         default:
             log.warn(
                 `Unknown control type "${mapping.type}" encountered for field "${fieldName}"`

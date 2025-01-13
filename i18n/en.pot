@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2025-01-13T15:15:24.364Z\n"
-"PO-Revision-Date: 2025-01-13T15:15:24.364Z\n"
+"POT-Creation-Date: 2025-01-13T17:35:56.021Z\n"
+"PO-Revision-Date: 2025-01-13T17:35:56.021Z\n"
 
 msgid "Never"
 msgstr "Never"
@@ -307,6 +307,54 @@ msgstr "Select profile picture"
 msgid "Remove profile picture"
 msgstr "Remove profile picture"
 
+msgid "No email provided"
+msgstr "No email provided"
+
+msgid "Email is invalid"
+msgstr "Email is invalid"
+
+msgid "Emails must match"
+msgstr "Emails must match"
+
+msgid "Remove email"
+msgstr "Remove email"
+
+msgid "Your email is currently verified"
+msgstr "Your email is currently verified"
+
+msgid "Are you sure you want to remove your email?"
+msgstr "Are you sure you want to remove your email?"
+
+msgid "Cancel"
+msgstr "Cancel"
+
+msgid "Change email"
+msgstr "Change email"
+
+msgid "If you change your email, you may need to reverify your email."
+msgstr "If you change your email, you may need to reverify your email."
+
+msgid "Current email"
+msgstr "Current email"
+
+msgid "no current email"
+msgstr "no current email"
+
+msgid "Enter new email"
+msgstr "Enter new email"
+
+msgid "Confirm new email"
+msgstr "Confirm new email"
+
+msgid "Save"
+msgstr "Save"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "There is no email to remove"
+msgstr "There is no email to remove"
+
 msgid "This field is required"
 msgstr "This field is required"
 
@@ -345,54 +393,6 @@ msgstr "No options"
 
 msgid "System default"
 msgstr "System default"
-
-msgid "No email provided"
-msgstr "No email provided"
-
-msgid "Email is invalid"
-msgstr "Email is invalid"
-
-msgid "Emails must match"
-msgstr "Emails must match"
-
-msgid "Remove email"
-msgstr "Remove email"
-
-msgid "Your email is currently verified"
-msgstr "Your email is currently verified"
-
-msgid "Are you sure you want to remove your email?"
-msgstr "Are you sure you want to remove your email?"
-
-msgid "Cancel"
-msgstr "Cancel"
-
-msgid "Email"
-msgstr "Email"
-
-msgid "Change email"
-msgstr "Change email"
-
-msgid "There is no email to remove"
-msgstr "There is no email to remove"
-
-msgid "If you change your email, you may need to reverify your email."
-msgstr "If you change your email, you may need to reverify your email."
-
-msgid "Current email"
-msgstr "Current email"
-
-msgid "no current email"
-msgstr "no current email"
-
-msgid "Enter new email"
-msgstr "Enter new email"
-
-msgid "Confirm new email"
-msgstr "Confirm new email"
-
-msgid "Save"
-msgstr "Save"
 
 msgid "User profile"
 msgstr "User profile"
