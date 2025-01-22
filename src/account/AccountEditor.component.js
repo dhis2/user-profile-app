@@ -100,11 +100,14 @@ class AccountEditor extends Component {
     render() {
         const usesOpenIdConnect = this.context.d2.currentUser.externalAuth
         const {
-            minPasswordLength,
-            maxPasswordLength,
-            passwordValidationPattern = '^(?=.*[A-Z])(?=.*\\d)(?=.*[\\W_])[A-Za-z\\d\\W_]{8,32}$',
+            minPasswordLength = 8,
+            maxPasswordLength = 34, // this is the default we have used on the front end ()
+            passwordValidationPattern,
         } = this.context.d2.system.settings.settings
-        const passwordRegEx = new RegExp(passwordValidationPattern)
+        const defaultPasswordValidationPattern = `^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[\\W_])[A-Za-z\\d\\W_]{${minPasswordLength},${maxPasswordLength}}$`
+        const passwordRegEx = new RegExp(
+            passwordValidationPattern ?? defaultPasswordValidationPattern
+        )
         const fields = [
             {
                 name: 'username',
