@@ -29,13 +29,7 @@ const settingsKeyMapping = {
     },
     email: {
         label: i18n.t('E-mail'),
-        type: 'textfield',
-        validators: ['email'],
-    },
-    emailVerification: {
-        name: 'emailVerification',
-        label: i18n.t('E-mail Verification'),
-        type: 'submit',
+        type: 'emailModal',
     },
     phoneNumber: {
         label: i18n.t('Mobile phone number'),
