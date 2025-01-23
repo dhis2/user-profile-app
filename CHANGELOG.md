@@ -1,3 +1,10 @@
+# [100.4.0](https://github.com/dhis2/user-profile-app/compare/v100.3.0...v100.4.0) (2025-01-23)
+
+
+### Features
+
+* change email updating workflow [DHIS2-18493] ([#1470](https://github.com/dhis2/user-profile-app/issues/1470)) ([ba03ba6](https://github.com/dhis2/user-profile-app/commit/ba03ba69eb2f16f303234eed0bc3bb1847b7e856))
+
 # [100.3.0](https://github.com/dhis2/user-profile-app/compare/v100.2.0...v100.3.0) (2025-01-08)
 
 
