@@ -283,7 +283,7 @@ function createFieldBaseObject(fieldName, mapping, valueStore) {
     )
 }
 
-function createField({ fieldName, valueStore, d2, onUpdate }) {
+function createField({ fieldName, valueStore, d2, featureToggle, onUpdate }) {
     const mapping = userSettingsKeyMapping[fieldName]
     const fieldBase = createFieldBaseObject(fieldName, mapping, valueStore)
 
@@ -301,12 +301,14 @@ function createField({ fieldName, valueStore, d2, onUpdate }) {
         case 'avatar':
             return createAvatarEditor(fieldBase, d2, valueStore)
         case 'emailModal':
-            return createEmailField({
-                fieldBase,
-                valueStore,
-                onUpdate,
-                d2,
-            })
+            return featureToggle?.emailFieldAsModal
+                ? createEmailField({
+                      fieldBase,
+                      valueStore,
+                      onUpdate,
+                      d2,
+                  })
+                : createTextField(fieldBase, mapping)
         default:
             log.warn(
                 `Unknown control type "${mapping.type}" encountered for field "${fieldName}"`
@@ -376,12 +378,19 @@ class FormFields extends Component {
 
     renderFields(fieldNames) {
         const d2 = this.context.d2
+        const featureToggle = this.context.featureToggle
         const valueStore = this.props.valueStore
         const onUpdate = this.props.onUpdateField
         // Create the regular fields
         const fields = fieldNames
             .map((fieldName) =>
-                createField({ fieldName, valueStore, d2, onUpdate })
+                createField({
+                    fieldName,
+                    valueStore,
+                    d2,
+                    featureToggle,
+                    onUpdate,
+                })
             )
             .filter((field) => !!field.name)
             .map((field) => wrapFieldWithLabel(field))
@@ -429,6 +438,7 @@ FormFields.propTypes = {
 }
 FormFields.contextTypes = {
     d2: PropTypes.object.isRequired,
+    featureToggle: PropTypes.object.isRequired,
 }
 
 export default FormFields

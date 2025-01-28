@@ -30,6 +30,7 @@ const settingsKeyMapping = {
     email: {
         label: i18n.t('E-mail'),
         type: 'emailModal',
+        validators: ['email'],
     },
     phoneNumber: {
         label: i18n.t('Mobile phone number'),
