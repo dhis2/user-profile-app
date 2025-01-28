@@ -1,3 +1,10 @@
+## [100.4.1](https://github.com/dhis2/user-profile-app/compare/v100.4.0...v100.4.1) (2025-01-28)
+
+
+### Bug Fixes
+
+* add feature toggle for email changes [DHIS2-18493] ([#1471](https://github.com/dhis2/user-profile-app/issues/1471)) ([45a0dd6](https://github.com/dhis2/user-profile-app/commit/45a0dd6b5f4651ba8ed604f5c8237946f85c6001))
+
 # [100.4.0](https://github.com/dhis2/user-profile-app/compare/v100.3.0...v100.4.0) (2025-01-23)
 
 
