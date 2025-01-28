@@ -86,6 +86,8 @@ class InfoCard extends Component {
                 return this.getUserOrgUnitsValue()
             case 'userRoles':
                 return this.getUserRolesValue()
+            case 'emailModal':
+                return labelValue
             default:
                 return `${labelValue} value not found`
         }

@@ -34,6 +34,9 @@ class AppRouter extends Component {
         return {
             d2: this.props.d2,
             muiTheme: AppTheme,
+            featureToggle: {
+                emailFieldAsModal: this.props?.d2?.system?.version?.minor > 41,
+            },
         }
     }
 
@@ -104,6 +107,7 @@ AppRouter.propTypes = { d2: PropTypes.object.isRequired }
 AppRouter.childContextTypes = {
     d2: PropTypes.object,
     muiTheme: PropTypes.object,
+    featureToggle: PropTypes.object,
 }
 
 export default AppRouter
