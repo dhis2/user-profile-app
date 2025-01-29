@@ -35,6 +35,7 @@ function EditProfile() {
             fieldKeys={fieldKeys}
             valueStore={userProfileStore}
             onUpdateField={userProfileActions.save}
+            showEmailWarning={true}
         />
     )
 }
