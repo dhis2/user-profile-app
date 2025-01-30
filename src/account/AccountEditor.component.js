@@ -17,7 +17,7 @@ const styles = {
 
 // from our frontend validator https://github.com/dhis2/ui/blob/master/collections/forms/src/validators/dhis2Password.js
 const DEFAULT_MIN_PASSWORD_LENGTH = 8
-const DEFAULT_MAX_PASSWORD_LENGTH = 34
+const DEFAULT_MAX_PASSWORD_LENGTH = 72
 
 class AccountEditor extends Component {
     constructor(props) {
@@ -106,7 +106,6 @@ class AccountEditor extends Component {
         const {
             minPasswordLength = DEFAULT_MIN_PASSWORD_LENGTH,
             maxPasswordLength = DEFAULT_MAX_PASSWORD_LENGTH,
-            passwordValidationPattern,
         } = this.context.d2.system.settings.settings
         const defaultPasswordValidationPattern = `^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[\\W_])[A-Za-z\\d\\W_]{${
             Number.isInteger(Number(minPasswordLength))
@@ -117,9 +116,7 @@ class AccountEditor extends Component {
                 ? Number(maxPasswordLength)
                 : DEFAULT_MAX_PASSWORD_LENGTH
         }}$`
-        const passwordRegEx = new RegExp(
-            passwordValidationPattern ?? defaultPasswordValidationPattern
-        )
+        const passwordRegEx = new RegExp(defaultPasswordValidationPattern)
         const fields = [
             {
                 name: 'username',
