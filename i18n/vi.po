@@ -4,14 +4,14 @@
 # Philip Larsen Donnelly, 2021
 # Thuy Nguyen <thuynguyen@hispvietnam.org>, 2022
 # Mai Nguyen <thanhmai.jica@gmail.com>, 2023
-# Em Le <em.hispvietnam@gmail.com>, 2024
+# Em Le <em.hispvietnam@gmail.com>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2024-11-21T08:20:57.566Z\n"
+"POT-Creation-Date: 2025-01-28T09:28:24.549Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Em Le <em.hispvietnam@gmail.com>, 2024\n"
+"Last-Translator: Em Le <em.hispvietnam@gmail.com>, 2025\n"
 "Language-Team: Vietnamese (https://app.transifex.com/hisp-uio/teams/100509/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -318,6 +318,54 @@ msgstr "Chọn ảnh hồ sơ"
 msgid "Remove profile picture"
 msgstr "Xóa ảnh hồ sơ"
 
+msgid "No email provided"
+msgstr ""
+
+msgid "Email is invalid"
+msgstr ""
+
+msgid "Emails must match"
+msgstr ""
+
+msgid "Remove email"
+msgstr ""
+
+msgid "Your email is currently verified"
+msgstr ""
+
+msgid "Are you sure you want to remove your email?"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Hủy"
+
+msgid "Change email"
+msgstr ""
+
+msgid "If you change your email, you may need to reverify your email."
+msgstr ""
+
+msgid "Current email"
+msgstr ""
+
+msgid "no current email"
+msgstr ""
+
+msgid "Enter new email"
+msgstr ""
+
+msgid "Confirm new email"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Email"
+msgstr "Email"
+
+msgid "There is no email to remove"
+msgstr ""
+
 msgid "This field is required"
 msgstr "Trường này yêu cầu"
 
@@ -384,8 +432,16 @@ msgstr "Liên kết xác minh email đã được gửi thành công!"
 msgid "Failed to send email verification link."
 msgstr "Không gửi được liên kết xác minh email."
 
-msgid "Verify Email"
-msgstr "Xác minh Email"
+msgid "Verify email"
+msgstr ""
+
+msgid ""
+"Your email is not verified. Please verify your email to continue using the "
+"system."
+msgstr ""
+
+msgid "Please provide an email and verify it to continue using the system."
+msgstr ""
 
 msgid "Manage personal access tokens"
 msgstr "Quản lý mã truy cập cá nhân"
@@ -528,9 +584,6 @@ msgstr ""
 msgid "Token details"
 msgstr "Chi tiết mã truy cập"
 
-msgid "Cancel"
-msgstr "Hủy"
-
 msgid ""
 "Important: IP address validation relies on the X-Forwarded-For header, which"
 " can be spoofed. For security, make sure a load balancer or reverse proxy "
@@ -613,9 +666,6 @@ msgstr "Khác"
 
 msgid "E-mail"
 msgstr "Thư điện tử"
-
-msgid "E-mail Verification"
-msgstr "Xác nhận Email"
 
 msgid "Mobile phone number"
 msgstr "Số điện thoại di động"
