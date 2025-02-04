@@ -412,7 +412,7 @@ class FormFields extends Component {
             <div className="content-area">
                 <div style={styles.header}>{this.props.pageLabel}</div>
                 <form autoComplete="off">
-                    {this.context?.d2 && (
+                    {this.context?.d2 && this.props.showEmailWarning && (
                         <VerifyEmailWarning
                             config={this.context.d2}
                             emailUpdated={
@@ -435,6 +435,7 @@ FormFields.propTypes = {
     pageLabel: PropTypes.string.isRequired,
     valueStore: PropTypes.object.isRequired,
     onUpdateField: PropTypes.func.isRequired,
+    showEmailWarning: PropTypes.bool,
 }
 FormFields.contextTypes = {
     d2: PropTypes.object.isRequired,
