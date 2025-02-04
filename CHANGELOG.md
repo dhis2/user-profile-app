@@ -1,3 +1,10 @@
+## [100.4.3](https://github.com/dhis2/user-profile-app/compare/v100.4.2...v100.4.3) (2025-02-04)
+
+
+### Bug Fixes
+
+* only show verify email warning on edit user profile page [DHIS2-18920] ([#1472](https://github.com/dhis2/user-profile-app/issues/1472)) ([9f662b9](https://github.com/dhis2/user-profile-app/commit/9f662b944c5ec37d78785bf0bd3664bf62d1a96b))
+
 ## [100.4.2](https://github.com/dhis2/user-profile-app/compare/v100.4.1...v100.4.2) (2025-02-04)
 
 
