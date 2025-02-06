@@ -6,7 +6,6 @@ import React, { Component } from 'react'
 import appActions from '../app.actions.js'
 import i18n from '../locales/index.js'
 import accountActions from './account.actions.js'
-import isValidPassword from './isValidPassword.js'
 
 const styles = {
     notification: {
@@ -15,6 +14,10 @@ const styles = {
         padding: 12,
     },
 }
+
+// from our frontend validator https://github.com/dhis2/ui/blob/master/collections/forms/src/validators/dhis2Password.js
+const DEFAULT_MIN_PASSWORD_LENGTH = 8
+const DEFAULT_MAX_PASSWORD_LENGTH = 72
 
 class AccountEditor extends Component {
     constructor(props) {
@@ -96,8 +99,24 @@ class AccountEditor extends Component {
         this.setState({ [e]: v })
     }
 
+    validatePassword = (val, regEx) => (!val ? true : regEx.test(val))
+
     render() {
         const usesOpenIdConnect = this.context.d2.currentUser.externalAuth
+        const { minPasswordLength, maxPasswordLength } =
+            this.context.d2.system.settings.settings
+
+        const minLength = Number.isInteger(Number(minPasswordLength))
+            ? Number(minPasswordLength)
+            : DEFAULT_MIN_PASSWORD_LENGTH
+        const maxLength = Number.isInteger(Number(maxPasswordLength))
+            ? Number(maxPasswordLength)
+            : DEFAULT_MAX_PASSWORD_LENGTH
+
+        const passwordRegEx = new RegExp(
+            `^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[\\W_])[A-Za-z\\d\\W_]{${minLength},${maxLength}}$`
+        )
+
         const fields = [
             {
                 name: 'username',
@@ -142,9 +161,11 @@ class AccountEditor extends Component {
                 },
                 validators: [
                     {
-                        validator: isValidPassword,
+                        validator: (val) =>
+                            this.validatePassword(val, passwordRegEx),
                         message: i18n.t(
-                            'Password should be at least 8 characters with at least 1 digit, 1 uppercase letter and 1 special character'
+                            'Password should be between {{minPasswordLength}} and {{maxPasswordLength}} characters long, with at least one lowercase character, one uppercase character, one number, and one special character.',
+                            { minPasswordLength, maxPasswordLength }
                         ),
                     },
                 ],
