@@ -1,7 +1,7 @@
 import Sidebar from 'd2-ui/lib/sidebar/Sidebar.component.js'
 import PropTypes from 'prop-types'
 import React from 'react'
-import appActions from '../app.actions.js'
+import appActions from '../app.actions.jsx'
 import i18n from '../locales/index.js'
 
 function SidebarWrapper(props) {

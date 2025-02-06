@@ -2,9 +2,9 @@ import { IconWarning16 } from '@dhis2/ui'
 import PropTypes from 'prop-types'
 import React from 'react'
 import i18n from '../../locales/index.js'
-import AllowedMethodsFF from './AllowedMethodsFF.component.js'
-import AllowedReferrersFF from './AllowedReferrersFF.component.js'
-import ExpirationDateFF from './ExpirationDateFF.component.js'
+import AllowedMethodsFF from './AllowedMethodsFF.component.jsx'
+import AllowedReferrersFF from './AllowedReferrersFF.component.jsx'
+import ExpirationDateFF from './ExpirationDateFF.component.jsx'
 import styles from './Form.module.css'
 
 const BrowserForm = ({ values }) => (

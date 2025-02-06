@@ -15,7 +15,7 @@ import TextField from 'd2-ui/lib/form-fields/TextField'
 import PropTypes from 'prop-types'
 import React, { useMemo, useState } from 'react'
 import styles from './EmailField.component.module.css'
-import { VerifyEmail } from './VerifyEmail.component.js'
+import { VerifyEmail } from './VerifyEmail.component.jsx'
 
 const TooltipWrapper = ({ disabled, content, children }) => {
     if (!disabled) {

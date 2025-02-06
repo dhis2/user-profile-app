@@ -1,5 +1,5 @@
 import React from 'react'
-import FormFields from '../layout/FormFields.component.js'
+import FormFields from '../layout/FormFields.component.jsx'
 import i18n from '../locales/index.js'
 import userProfileActions from '../profile/profile.actions.js'
 import userProfileStore from '../profile/profile.store.js'
