@@ -1,3 +1,10 @@
+## [100.4.4](https://github.com/dhis2/user-profile-app/compare/v100.4.3...v100.4.4) (2025-02-06)
+
+
+### Bug Fixes
+
+* use password regex [DHIS2-15704] ([#1469](https://github.com/dhis2/user-profile-app/issues/1469)) ([f3102dc](https://github.com/dhis2/user-profile-app/commit/f3102dc39d31d0fb14b9f3bae3b940bfd835323b))
+
 ## [100.4.3](https://github.com/dhis2/user-profile-app/compare/v100.4.2...v100.4.3) (2025-02-04)
 
 
