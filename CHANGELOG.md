@@ -1,3 +1,31 @@
+## [100.4.3](https://github.com/dhis2/user-profile-app/compare/v100.4.2...v100.4.3) (2025-02-04)
+
+
+### Bug Fixes
+
+* only show verify email warning on edit user profile page [DHIS2-18920] ([#1472](https://github.com/dhis2/user-profile-app/issues/1472)) ([9f662b9](https://github.com/dhis2/user-profile-app/commit/9f662b944c5ec37d78785bf0bd3664bf62d1a96b))
+
+## [100.4.2](https://github.com/dhis2/user-profile-app/compare/v100.4.1...v100.4.2) (2025-02-04)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([8a28611](https://github.com/dhis2/user-profile-app/commit/8a286119c5e144bcfa71b3b2e50141faf7ca848e))
+
+## [100.4.1](https://github.com/dhis2/user-profile-app/compare/v100.4.0...v100.4.1) (2025-01-28)
+
+
+### Bug Fixes
+
+* add feature toggle for email changes [DHIS2-18493] ([#1471](https://github.com/dhis2/user-profile-app/issues/1471)) ([45a0dd6](https://github.com/dhis2/user-profile-app/commit/45a0dd6b5f4651ba8ed604f5c8237946f85c6001))
+
+# [100.4.0](https://github.com/dhis2/user-profile-app/compare/v100.3.0...v100.4.0) (2025-01-23)
+
+
+### Features
+
+* change email updating workflow [DHIS2-18493] ([#1470](https://github.com/dhis2/user-profile-app/issues/1470)) ([ba03ba6](https://github.com/dhis2/user-profile-app/commit/ba03ba69eb2f16f303234eed0bc3bb1847b7e856))
+
 # [100.3.0](https://github.com/dhis2/user-profile-app/compare/v100.2.0...v100.3.0) (2025-01-08)
 
 

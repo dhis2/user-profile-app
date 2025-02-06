@@ -1,18 +1,18 @@
 # 
 # Translators:
-# Viktor Varland <viktor@dhis2.org>, 2021
 # Sheila André <sandre@saudigitus.org>, 2021
 # Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2021
 # Philip Larsen Donnelly, 2021
 # Ge Joao <gsimango@saudigitus.org>, 2023
 # Helton Dias, 2024
+# Viktor Varland <viktor@dhis2.org>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2024-11-21T08:20:57.566Z\n"
+"POT-Creation-Date: 2025-01-28T09:28:24.549Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Helton Dias, 2024\n"
+"Last-Translator: Viktor Varland <viktor@dhis2.org>, 2025\n"
 "Language-Team: Portuguese (https://app.transifex.com/hisp-uio/teams/100509/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -324,6 +324,54 @@ msgstr "Selecionar foto do perfil"
 msgid "Remove profile picture"
 msgstr "Remover foto de perfil"
 
+msgid "No email provided"
+msgstr ""
+
+msgid "Email is invalid"
+msgstr ""
+
+msgid "Emails must match"
+msgstr ""
+
+msgid "Remove email"
+msgstr ""
+
+msgid "Your email is currently verified"
+msgstr ""
+
+msgid "Are you sure you want to remove your email?"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Change email"
+msgstr ""
+
+msgid "If you change your email, you may need to reverify your email."
+msgstr ""
+
+msgid "Current email"
+msgstr ""
+
+msgid "no current email"
+msgstr ""
+
+msgid "Enter new email"
+msgstr ""
+
+msgid "Confirm new email"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "There is no email to remove"
+msgstr ""
+
 msgid "This field is required"
 msgstr "Este campo é obrigatorio"
 
@@ -390,8 +438,16 @@ msgstr "Ligação de verificação de correio eletrónico enviada com sucesso!"
 msgid "Failed to send email verification link."
 msgstr "Falha ao enviar a ligação de verificação por correio eletrónico."
 
-msgid "Verify Email"
-msgstr "Verificar o correio eletrónico"
+msgid "Verify email"
+msgstr ""
+
+msgid ""
+"Your email is not verified. Please verify your email to continue using the "
+"system."
+msgstr ""
+
+msgid "Please provide an email and verify it to continue using the system."
+msgstr ""
 
 msgid "Manage personal access tokens"
 msgstr "Gerir tokens de acesso pessoal"
@@ -535,9 +591,6 @@ msgstr ""
 msgid "Token details"
 msgstr "Detalhes do token"
 
-msgid "Cancel"
-msgstr "Cancelar"
-
 msgid ""
 "Important: IP address validation relies on the X-Forwarded-For header, which"
 " can be spoofed. For security, make sure a load balancer or reverse proxy "
@@ -619,9 +672,6 @@ msgstr "Outro"
 
 msgid "E-mail"
 msgstr "e-mail"
-
-msgid "E-mail Verification"
-msgstr "Verificação de correio eletrónico"
 
 msgid "Mobile phone number"
 msgstr "Número de telemóvel"
