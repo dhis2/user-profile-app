@@ -1,16 +1,16 @@
 # 
 # Translators:
 # Cherise Beek <cherise.beek@gmail.com>, 2021
-# Rica Zamora Duchateau, 2022
 # Charel van den Elsen, 2023
 # Philip Larsen Donnelly, 2024
+# Rica, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
+"POT-Creation-Date: 2025-02-05T15:02:02.227Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Philip Larsen Donnelly, 2024\n"
+"Last-Translator: Rica, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/hisp-uio/teams/100509/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -167,11 +167,10 @@ msgid "New password"
 msgstr "Nieuw paswoord"
 
 msgid ""
-"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
-"letter and 1 special character"
+"Password should be between {{minPasswordLength}} and {{maxPasswordLength}} "
+"characters long, with at least one lowercase character, one uppercase "
+"character, one number, and one special character."
 msgstr ""
-"Paswoord moet ten minste 8 lettertekens lang zijn met ten minste 1 cijfer, 1"
-" hoofdletter en 1 speciaal letterteken"
 
 msgid "Repeat new password"
 msgstr "Herhaal nieuw paswoord"
@@ -303,6 +302,9 @@ msgstr "Kan twee-factor-authenticatie niet uitschakelen"
 msgid "Two factor authentication was disabled successfully"
 msgstr "Twee-factor-authenticatie is uitgeschakeld"
 
+msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
+msgstr ""
+
 msgid "Failed to upload profile picture"
 msgstr "Uploaden profielfoto gefaald"
 
@@ -317,6 +319,54 @@ msgstr "Selecteer profielfoto"
 
 msgid "Remove profile picture"
 msgstr "Verwijder profielfoto"
+
+msgid "No email provided"
+msgstr ""
+
+msgid "Email is invalid"
+msgstr ""
+
+msgid "Emails must match"
+msgstr ""
+
+msgid "Remove email"
+msgstr ""
+
+msgid "Your email is currently verified"
+msgstr ""
+
+msgid "Are you sure you want to remove your email?"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Annuleer"
+
+msgid "Change email"
+msgstr ""
+
+msgid "If you change your email, you may need to reverify your email."
+msgstr ""
+
+msgid "Current email"
+msgstr ""
+
+msgid "no current email"
+msgstr ""
+
+msgid "Enter new email"
+msgstr ""
+
+msgid "Confirm new email"
+msgstr ""
+
+msgid "Save"
+msgstr "Sla op"
+
+msgid "Email"
+msgstr "Emailadres"
+
+msgid "There is no email to remove"
+msgstr ""
 
 msgid "This field is required"
 msgstr "Dit veld is verplicht."
@@ -377,6 +427,23 @@ msgstr "Persoonlijke toegangstokens"
 
 msgid "About DHIS2"
 msgstr "Over DHIS2"
+
+msgid "Email verification link sent successfully!"
+msgstr ""
+
+msgid "Failed to send email verification link."
+msgstr ""
+
+msgid "Verify email"
+msgstr ""
+
+msgid ""
+"Your email is not verified. Please verify your email to continue using the "
+"system."
+msgstr ""
+
+msgid "Please provide an email and verify it to continue using the system."
+msgstr ""
 
 msgid "Manage personal access tokens"
 msgstr "Beheer persoonlijke toegangstokens"
@@ -519,9 +586,6 @@ msgstr ""
 
 msgid "Token details"
 msgstr "Tokengegevens"
-
-msgid "Cancel"
-msgstr "Annuleer"
 
 msgid ""
 "Important: IP address validation relies on the X-Forwarded-For header, which"
