@@ -1,14 +1,14 @@
 # 
 # Translators:
-# phil_dhis2, 2021
+# Philip Larsen Donnelly, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
+"POT-Creation-Date: 2025-02-05T15:02:02.227Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: phil_dhis2, 2021\n"
-"Language-Team: Khmer (https://www.transifex.com/hisp-uio/teams/100509/km/)\n"
+"Last-Translator: Philip Larsen Donnelly, 2025\n"
+"Language-Team: Khmer (https://app.transifex.com/hisp-uio/teams/100509/km/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -163,8 +163,9 @@ msgid "New password"
 msgstr "ពាក្យ​សម្ងាត់​ថ្មី"
 
 msgid ""
-"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
-"letter and 1 special character"
+"Password should be between {{minPasswordLength}} and {{maxPasswordLength}} "
+"characters long, with at least one lowercase character, one uppercase "
+"character, one number, and one special character."
 msgstr ""
 
 msgid "Repeat new password"
@@ -193,71 +194,92 @@ msgstr ""
 msgid "Failed to update password"
 msgstr ""
 
-msgid "2-Factor successfully turned ON"
+msgid "Two-factor Authentication"
 msgstr ""
 
-msgid "2-Factor successfully turned OFF"
+msgid "Turn off two-factor authentication"
 msgstr ""
 
-msgid "Failed to turn ON 2-Factor"
-msgstr ""
-
-msgid "Failed to turn OFF 2-Factor"
-msgstr ""
-
-msgid "Barcode/QR code to scan"
-msgstr ""
-
-msgid "No"
-msgstr "ទេ"
-
-msgid "Yes"
-msgstr "បាទ/ចាស"
-
-msgid "Turn OFF"
-msgstr ""
-
-msgid "Turn ON"
-msgstr ""
-
-msgid "2-Factor Verification is ON"
-msgstr ""
-
-msgid "2-Factor Verification is OFF"
-msgstr ""
-
-msgid "Do you want to turn OFF 2-Factor?"
-msgstr ""
-
-msgid "Do you want to turn ON 2-Factor?"
-msgstr ""
-
-msgid "Download the Authenticator app"
-msgstr ""
-
-msgid "What kind of phone/tablet do you have?"
-msgstr ""
-
-msgid "Download the Authenticator App from the "
-msgstr ""
-
-msgid "In the Authenticator App select "
-msgstr ""
-
-msgid "Begin setup."
-msgstr ""
-
-msgid "Choose "
-msgstr ""
-
-msgid "Scan a barcode."
+msgid "Open your authenticator app."
 msgstr ""
 
 msgid ""
-"With 2-Factor authentication turned on you will be asked to enter a second "
-"verification code when you log in. To generate this verification code you "
-"must use the Authenticator app. If you do not have this app you must "
-"download it on your phone/tablet."
+"Now, enter the authentication code below and click the \"Turn off\" button."
+msgstr ""
+
+msgid "Remove two-factor account"
+msgstr ""
+
+msgid ""
+"Two-factor authentication is now turned off. It is recommended to remove the"
+" account from your authenticator app now to prevent any future issues re-"
+"enabling two-factor authentication."
+msgstr ""
+
+msgid "Play store"
+msgstr ""
+
+msgid "App store"
+msgstr ""
+
+msgid "Turn on two-factor authentication"
+msgstr ""
+
+msgid ""
+"Make sure you have an authenticator app installed on your device. We "
+"recommend Google Authenticator"
+msgstr ""
+
+msgid ""
+"Now, enter the code from your authenticator app below and click the \"Turn "
+"on\" button."
+msgstr ""
+
+msgid "Already set up two-factor authentication before?"
+msgstr ""
+
+msgid ""
+"If you have set up two-factor authentication for this account before, you "
+"need to remove that entry from your authenticator app before setting it up "
+"again."
+msgstr ""
+
+msgid ""
+"Two-factor authentication protects your account with an extra layer of "
+"security. With two-factor authentication turned on, you will need to enter "
+"an authentication code from your device every time you log in."
+msgstr ""
+
+msgid "Two-factor authentication is on."
+msgstr ""
+
+msgid "Two-factor authentication is off."
+msgstr ""
+
+msgid "Could not update two-factor authentication"
+msgstr ""
+
+msgid ""
+"This code does not look right. Enter the six digit code from your "
+"authentication app."
+msgstr ""
+
+msgid "Six digit authentication code"
+msgstr ""
+
+msgid "Could not enable 2 Factor Authentication"
+msgstr ""
+
+msgid "Two factor authentication was enabled successfully"
+msgstr ""
+
+msgid "Could not disable two factor authentication"
+msgstr ""
+
+msgid "Two factor authentication was disabled successfully"
+msgstr ""
+
+msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
 msgstr ""
 
 msgid "Failed to upload profile picture"
@@ -273,6 +295,54 @@ msgid "Select profile picture"
 msgstr ""
 
 msgid "Remove profile picture"
+msgstr ""
+
+msgid "No email provided"
+msgstr ""
+
+msgid "Email is invalid"
+msgstr ""
+
+msgid "Emails must match"
+msgstr ""
+
+msgid "Remove email"
+msgstr ""
+
+msgid "Your email is currently verified"
+msgstr ""
+
+msgid "Are you sure you want to remove your email?"
+msgstr ""
+
+msgid "Cancel"
+msgstr "បោះបង់"
+
+msgid "Change email"
+msgstr ""
+
+msgid "If you change your email, you may need to reverify your email."
+msgstr ""
+
+msgid "Current email"
+msgstr ""
+
+msgid "no current email"
+msgstr ""
+
+msgid "Enter new email"
+msgstr ""
+
+msgid "Confirm new email"
+msgstr ""
+
+msgid "Save"
+msgstr "រក្សាទុក​"
+
+msgid "Email"
+msgstr ""
+
+msgid "There is no email to remove"
 msgstr ""
 
 msgid "This field is required"
@@ -296,6 +366,12 @@ msgstr ""
 msgid "Please enter a valid international phone number (+0123456789)"
 msgstr ""
 
+msgid "Yes"
+msgstr "បាទ/ចាស"
+
+msgid "No"
+msgstr "ទេ"
+
 msgid "No value"
 msgstr "មិនមានតម្លៃ"
 
@@ -317,6 +393,9 @@ msgstr "ការ​កំណត់​​អ្នក​ប្រើប្រា
 msgid "Account settings"
 msgstr ""
 
+msgid "Two factor authentication"
+msgstr ""
+
 msgid "Full profile"
 msgstr ""
 
@@ -324,6 +403,23 @@ msgid "Personal access tokens"
 msgstr ""
 
 msgid "About DHIS2"
+msgstr ""
+
+msgid "Email verification link sent successfully!"
+msgstr ""
+
+msgid "Failed to send email verification link."
+msgstr ""
+
+msgid "Verify email"
+msgstr ""
+
+msgid ""
+"Your email is not verified. Please verify your email to continue using the "
+"system."
+msgstr ""
+
+msgid "Please provide an email and verify it to continue using the system."
 msgstr ""
 
 msgid "Manage personal access tokens"
@@ -453,9 +549,6 @@ msgstr ""
 
 msgid "Token details"
 msgstr ""
-
-msgid "Cancel"
-msgstr "បោះបង់"
 
 msgid ""
 "Important: IP address validation relies on the X-Forwarded-For header, which"

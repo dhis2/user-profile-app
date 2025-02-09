@@ -6,13 +6,14 @@
 # Ge Joao <gsimango@saudigitus.org>, 2023
 # Helton Dias, 2024
 # Viktor Varland <viktor@dhis2.org>, 2025
+# David Júnior <davidjr.mondlane@gmail.com>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2025-01-28T09:28:24.549Z\n"
+"POT-Creation-Date: 2025-02-05T15:02:02.227Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Viktor Varland <viktor@dhis2.org>, 2025\n"
+"Last-Translator: David Júnior <davidjr.mondlane@gmail.com>, 2025\n"
 "Language-Team: Portuguese (https://app.transifex.com/hisp-uio/teams/100509/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -169,11 +170,10 @@ msgid "New password"
 msgstr "Nova senha"
 
 msgid ""
-"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
-"letter and 1 special character"
+"Password should be between {{minPasswordLength}} and {{maxPasswordLength}} "
+"characters long, with at least one lowercase character, one uppercase "
+"character, one number, and one special character."
 msgstr ""
-"A palavra-passe deve ter pelo menos 8 caracteres, com pelo menos 1 dígito, 1"
-" letra maiúscula e 1 carácter especial"
 
 msgid "Repeat new password"
 msgstr "Repita a nova senha"
@@ -364,7 +364,7 @@ msgid "Confirm new email"
 msgstr ""
 
 msgid "Save"
-msgstr ""
+msgstr "Salve "
 
 msgid "Email"
 msgstr "E-mail"
