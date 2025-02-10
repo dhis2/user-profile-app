@@ -22,6 +22,7 @@ const AppWrapper = () => {
                 api.get('userSettings', { useFallback: false }),
                 d2.system.settings.all(),
                 api.get('2fa/enabled'),
+                api.get('configuration/twoFactorMethods'),
             ]).then(
                 (results) => {
                     const styles = (results[0] || []).map((style) => ({
@@ -57,6 +58,7 @@ const AppWrapper = () => {
                         uiLocales,
                         dbLocales,
                         systemDefault,
+                        twoFactorMethods: results[6],
                     })
 
                     log.debug(

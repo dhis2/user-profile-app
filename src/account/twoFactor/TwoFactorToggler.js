@@ -53,7 +53,6 @@ const TwoFactorToggler = ({ error, isTwoFaEnabled, loading, toggleTwoFa }) => {
                     setTwoFaConfirmationCode('')
                 }}
                 primary
-                className={styles.button}
                 type="submit"
             >
                 {isTwoFaEnabled

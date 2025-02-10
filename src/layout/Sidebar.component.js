@@ -3,8 +3,15 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import appActions from '../app.actions.js'
 import i18n from '../locales/index.js'
+import optionValueStore from '../optionValue.store.js'
 
 function SidebarWrapper(props) {
+    const twoFactorMethods = optionValueStore?.state.twoFactorMethods
+    const showTwoFactorMethods = twoFactorMethods
+        ? Object.entries(twoFactorMethods).filter(([, value]) => value).length >
+          0
+        : false
+
     const sideBarSections = [
         {
             key: 'profile',
@@ -21,11 +28,13 @@ function SidebarWrapper(props) {
             label: i18n.t('Account settings'),
             icon: 'settings',
         },
-        {
-            key: 'twoFactor',
-            label: i18n.t('Two factor authentication'),
-            icon: 'phonelink_lock',
-        },
+        showTwoFactorMethods
+            ? {
+                  key: 'twoFactor',
+                  label: i18n.t('Two factor authentication'),
+                  icon: 'phonelink_lock',
+              }
+            : undefined,
         {
             key: 'viewProfile',
             label: i18n.t('Full profile'),
@@ -41,7 +50,7 @@ function SidebarWrapper(props) {
             label: i18n.t('About DHIS2'),
             icon: 'public',
         },
-    ]
+    ].filter((section) => section)
 
     return (
         <Sidebar

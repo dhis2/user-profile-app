@@ -33,7 +33,7 @@ const QRCode = () => {
     )
 }
 
-const TwoFactorEnableInstructions = () => (
+const TwoFactorOPTEnableInstructions = () => (
     <>
         <p className={styles.instructionsHeader}>
             {i18n.t('Turn on two-factor authentication', {
@@ -72,4 +72,4 @@ const TwoFactorEnableInstructions = () => (
     </>
 )
 
-export default TwoFactorEnableInstructions
+export default TwoFactorOPTEnableInstructions

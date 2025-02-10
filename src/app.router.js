@@ -8,6 +8,7 @@ import AboutPage from './aboutPage/AboutPage.component.js'
 import Account from './account/Account.component.js'
 import PasswordChangeSuccessDialog from './account/PasswordChangeSuccessDialog.js'
 import TwoFactor from './account/twoFactor/TwoFactor.js'
+import TwoFactorOld from './account/twoFactor/TwoFactorOld.js'
 import Sidebar from './layout/Sidebar.component.js'
 import Snackbar from './layout/Snackbar.component.js'
 import AppTheme from './layout/theme.js'
@@ -30,12 +31,17 @@ WrappedApp.propTypes = {
 }
 
 class AppRouter extends Component {
+    get minorVersion() {
+        return this.props?.d2?.system?.version?.minor || 'Unknown'
+    }
+
     getChildContext() {
         return {
             d2: this.props.d2,
             muiTheme: AppTheme,
             featureToggle: {
-                emailFieldAsModal: this.props?.d2?.system?.version?.minor > 41,
+                emailFieldAsModal: this.minorVersion > 41,
+                twoFactorAuthByType: this.minorVersion > 42,
             },
         }
     }
@@ -79,7 +85,14 @@ class AppRouter extends Component {
                                 />
                                 <Route path="profile" component={Profile} />
                                 <Route path="account" component={Account} />
-                                <Route path="twoFactor" component={TwoFactor} />
+                                <Route
+                                    path="twoFactor"
+                                    component={
+                                        this.minorVersion > 41
+                                            ? TwoFactor
+                                            : TwoFactorOld
+                                    }
+                                />
                                 <Route
                                     path="passwordChanged"
                                     component={PasswordChangeSuccessDialog}

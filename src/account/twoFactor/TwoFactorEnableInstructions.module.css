@@ -16,6 +16,25 @@
     line-height: 19px;
 }
 
+.stepWithAction {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacers-dp8);
+    margin-bottom: var(--spacers-dp24);
+}
+
+.buttonWithIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacers-dp4);
+}
+
+.errorMessage{
+    color: #d3302f;
+    margin: var(--spacers-dp4);
+}
 .orderedList li + li {
     margin-top: var(--spacers-dp8);
 }
