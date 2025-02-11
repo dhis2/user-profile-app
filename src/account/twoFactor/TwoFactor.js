@@ -165,8 +165,12 @@ const TwoFactor = () => {
                 {toggleEmail2faForbidden ? (
                     <NoticeBox warning>
                         {i18n.t(
-                            'Your email is not verified. Please verify your email to enable or disable two-factor authentication via email.'
+                            'Your email is not verified. You must verify or your email to enable or disable two-factor authentication via email.'
                         )}
+                        <br />
+                        <a href="#/profile">
+                            {i18n.t('Verify your email here.')}
+                        </a>
                     </NoticeBox>
                 ) : (
                     <TwoFactorInstructions

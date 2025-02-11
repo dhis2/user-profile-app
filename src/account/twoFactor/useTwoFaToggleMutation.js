@@ -11,23 +11,27 @@ const twoFactorBackendTypesToAuthTypes = {
     TOTP_ENABLED: twoFactorAuthTypes.totp,
     EMAIL_ENABLED: twoFactorAuthTypes.email,
 }
+const getAvailableTwoFAType = (BEAvailableTwoFAType) =>
+    BEAvailableTwoFAType
+        ? Object.entries(BEAvailableTwoFAType)
+              .filter(([, value]) => value) // Keep only entries where value is "true"
+              .map(([key]) => getTWOFAType(key))
+              .filter((type) => type !== null)
+        : []
+
+const getTWOFAType = (BETwoFAType) =>
+    twoFactorBackendTypesToAuthTypes[BETwoFAType] || null
 
 export default function useTwoFaToggleMutation() {
-    const getTWOFAType = (BETwoFAType) =>
-        twoFactorBackendTypesToAuthTypes[BETwoFAType] || null
     const [enabledTwoFAType, setEnabledTwoFAType] = useState(
         getTWOFAType(userProfileStore.state.twoFactorType)
     )
-    const getAvailableTwoFAType = (BEAvailableTwoFAType) =>
-        BEAvailableTwoFAType
-            ? Object.entries(BEAvailableTwoFAType)
-                  .filter(([, value]) => value) // Keep only entries where value is "true"
-                  .map(([key]) => getTWOFAType(key))
-                  .filter((type) => type !== null)
-            : []
     const [availableTwoFAType, setAvailableTwoFAType] = useState(
         getAvailableTwoFAType(optionValueStore?.state.twoFactorMethods)
     )
+    // const [availableTwoFAType, setAvailableTwoFAType] = useState(
+    //     [twoFactorAuthTypes.email]
+    // )
     const { emailVerified } = userProfileStore.state
 
     const resetTwoFactorType = (twoFactorType) => {
