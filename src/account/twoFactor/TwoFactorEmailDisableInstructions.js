@@ -1,7 +1,7 @@
 import { useDataMutation } from '@dhis2/app-runtime'
 import i18n from '@dhis2/d2-i18n'
-import { Button, IconCheckmark24, IconErrorFilled24 } from '@dhis2/ui'
 import React from 'react'
+import TwoFactorEmailCodeButton from './TwoFactorEmailCodeButton.js'
 import styles from './TwoFactorEnableInstructions.module.css'
 
 const enroll2FAViaEmailMutationDefinition = {
@@ -23,29 +23,10 @@ const TwoFactorEmailDisableInstructions = () => {
             </p>
             <ol className={styles.orderedList}>
                 <li>
-                    <span className={styles.stepWithAction}>
-                        {i18n.t('Send a code to your email')}
-                        <span className={styles.buttonWithIcon}>
-                            <Button
-                                onClick={turnOff2FAViaEmail}
-                                secondary
-                                loading={turnOff2FAViaEmailMutation.loading}
-                            >
-                                Send code
-                            </Button>
-                            {turnOff2FAViaEmailMutation.error && (
-                                <IconErrorFilled24 color={'#d3302f'} />
-                            )}
-                            {turnOff2FAViaEmailMutation.data && (
-                                <IconCheckmark24 color={'#1a5e20'} />
-                            )}
-                        </span>
-                        {turnOff2FAViaEmailMutation.error && (
-                            <p className={styles.errorMessage}>
-                                {turnOff2FAViaEmailMutation.error?.message}
-                            </p>
-                        )}
-                    </span>
+                    <TwoFactorEmailCodeButton
+                        onClick={turnOff2FAViaEmail}
+                        mutation={turnOff2FAViaEmailMutation}
+                    />
                 </li>
                 <li>
                     <span>{i18n.t('Open your email to get the code')}</span>

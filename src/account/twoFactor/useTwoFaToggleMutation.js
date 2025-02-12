@@ -31,9 +31,6 @@ export default function useTwoFaToggleMutation() {
     const [availableTwoFAType, setAvailableTwoFAType] = useState(
         getAvailableTwoFAType(optionValueStore?.state.twoFactorMethods)
     )
-    // const [availableTwoFAType, setAvailableTwoFAType] = useState(
-    //     [twoFactorAuthTypes.email]
-    // )
     const { emailVerified } = userProfileStore.state
 
     const resetTwoFactorType = (twoFactorType) => {

@@ -1,16 +1,12 @@
 import { useAlert, useDataMutation } from '@dhis2/app-runtime'
 import i18n from '@dhis2/d2-i18n'
-import { Card, NoticeBox, Radio } from '@dhis2/ui'
+import { Card, Radio } from '@dhis2/ui'
 import cx from 'classnames'
-import PropTypes from 'prop-types'
 import React, { useMemo, useState } from 'react'
 import styles from './TwoFactor.module.css'
 import TwoFactorDisableNoticeBox from './TwoFactorDisableNoticeBox.js'
-import TwoFactorEmailDisableInstructions from './TwoFactorEmailDisableInstructions.js'
-import TwoFactorEmailEnableInstructions from './TwoFactorEmailEnableInstructions.js'
 import TwoFactorEnableNotice from './TwoFactorEnableNotice.js'
-import TwoFactorOPTEnableInstructions from './TwoFactorOPTEnableInstructions.js'
-import TwoFactorOTPDisableInstructions from './TwoFactorOTPDisableInstructions.js'
+import TwoFactorInstructions from './TwoFactorInstructions.js'
 import TwoFactorStatus from './TwoFactorStatus.js'
 import TwoFactorToggler from './TwoFactorToggler.js'
 import useTwoFaToggleMutation, {
@@ -60,26 +56,6 @@ const getAlertMessage = ({ attemptingToEnableTwoFa, error }) => {
 const getAlertOptions = ({ error }) =>
     error ? { critical: true } : { success: true }
 
-const TwoFactorInstructions = ({ is2faEnabled, twoFactorAuthToToShow }) => {
-    return (
-        <>
-            {twoFactorAuthToToShow === twoFactorAuthTypes.totp &&
-                !is2faEnabled && <TwoFactorOPTEnableInstructions />}
-            {twoFactorAuthToToShow === twoFactorAuthTypes.totp &&
-                is2faEnabled && <TwoFactorOTPDisableInstructions />}
-            {twoFactorAuthToToShow === twoFactorAuthTypes.email &&
-                !is2faEnabled && <TwoFactorEmailEnableInstructions />}
-            {twoFactorAuthToToShow === twoFactorAuthTypes.email &&
-                is2faEnabled && <TwoFactorEmailDisableInstructions />}
-        </>
-    )
-}
-
-TwoFactorInstructions.propTypes = {
-    is2faEnabled: PropTypes.bool.isRequired,
-    twoFactorAuthToToShow: PropTypes.string,
-}
-
 const TwoFactor = () => {
     const {
         enabledTwoFAType,
@@ -87,6 +63,7 @@ const TwoFactor = () => {
         resetTwoFactorType,
         emailVerified,
     } = useTwoFaToggleMutation()
+
     const defaultTwoFactorAuthToShow =
         enabledTwoFAType ||
         (availableTwoFAType.length === 1 && availableTwoFAType[0]) ||
@@ -110,7 +87,6 @@ const TwoFactor = () => {
                 setLastActionWasTwoFaDisableSuccess(!attemptingToEnableTwoFa)
                 showAlert({ attemptingToEnableTwoFa })
             },
-
             onError: (error) => {
                 console.error(error)
                 setLastActionWasTwoFaDisableSuccess(false)
@@ -162,22 +138,11 @@ const TwoFactor = () => {
                             disabled={enabledTwoFAType}
                         />
                     ))}
-                {toggleEmail2faForbidden ? (
-                    <NoticeBox warning className={styles.emailVerificationWarning}>
-                        {i18n.t(
-                            'Your email is not verified. You must verify or your email to enable or disable two-factor authentication via email.'
-                        )}
-                        <br />
-                        <a href="#/profile">
-                            {i18n.t('Verify your email here.')}
-                        </a>
-                    </NoticeBox>
-                ) : (
-                    <TwoFactorInstructions
-                        is2faEnabled={enabledTwoFAType !== null}
-                        twoFactorAuthToToShow={twoFactorAuthToToShow}
-                    />
-                )}
+                <TwoFactorInstructions
+                    is2faEnabled={enabledTwoFAType !== null}
+                    twoFactorAuthToToShow={twoFactorAuthToToShow}
+                    toggleEmail2faForbidden={toggleEmail2faForbidden}
+                />
                 {twoFactorAuthToToShow && !toggleEmail2faForbidden && (
                     <TwoFactorToggler
                         isTwoFaEnabled={enabledTwoFAType !== null}
