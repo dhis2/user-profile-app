@@ -19,3 +19,7 @@
     margin: 0 0 var(--spacers-dp24);
     color: var(--colors-grey700);
 }
+
+.emailVerificationWarning {
+    margin: var(--spacers-dp24) 0;
+}

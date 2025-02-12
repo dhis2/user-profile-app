@@ -38,7 +38,7 @@ const TwoFactorEmailEnableInstructions = () => {
                                 <IconErrorFilled24 color={'#d3302f'} />
                             )}
                             {enroll2FAViaEmailMutation.data && (
-                                <IconCheckmark24 color={'#f0f8ff'} />
+                                <IconCheckmark24 color={'#1a5e20'} />
                             )}
                         </span>
                         {enroll2FAViaEmailMutation.error && (

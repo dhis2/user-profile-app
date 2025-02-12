@@ -7,7 +7,7 @@ import styles from './TwoFactorEnableInstructions.module.css'
 const enroll2FAViaEmailMutationDefinition = {
     type: 'create',
     resource: '/2fa/disable ',
-    data: undefined,
+    data: {},
 }
 const TwoFactorEmailDisableInstructions = () => {
     const [turnOff2FAViaEmail, turnOff2FAViaEmailMutation] = useDataMutation(
@@ -37,7 +37,7 @@ const TwoFactorEmailDisableInstructions = () => {
                                 <IconErrorFilled24 color={'#d3302f'} />
                             )}
                             {turnOff2FAViaEmailMutation.data && (
-                                <IconCheckmark24 color={'#f0f8ff'} />
+                                <IconCheckmark24 color={'#1a5e20'} />
                             )}
                         </span>
                         {turnOff2FAViaEmailMutation.error && (

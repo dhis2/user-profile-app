@@ -10,6 +10,8 @@ export const twoFactorAuthTypes = {
 const twoFactorBackendTypesToAuthTypes = {
     TOTP_ENABLED: twoFactorAuthTypes.totp,
     EMAIL_ENABLED: twoFactorAuthTypes.email,
+    totp2faEnabled: twoFactorAuthTypes.totp,
+    email2faEnabled: twoFactorAuthTypes.email,
 }
 const getAvailableTwoFAType = (BEAvailableTwoFAType) =>
     BEAvailableTwoFAType

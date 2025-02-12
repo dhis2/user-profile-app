@@ -163,7 +163,7 @@ const TwoFactor = () => {
                         />
                     ))}
                 {toggleEmail2faForbidden ? (
-                    <NoticeBox warning>
+                    <NoticeBox warning className={styles.emailVerificationWarning}>
                         {i18n.t(
                             'Your email is not verified. You must verify or your email to enable or disable two-factor authentication via email.'
                         )}
