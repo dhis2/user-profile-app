@@ -9,26 +9,13 @@ import {
     ModalContent,
     ModalTitle,
     NoticeBox,
-    Tooltip,
 } from '@dhis2/ui'
 import TextField from 'd2-ui/lib/form-fields/TextField'
 import PropTypes from 'prop-types'
 import React, { useMemo, useState } from 'react'
 import styles from './EmailField.component.module.css'
+import TooltipWrapper from './TooltipWrapper.js'
 import { VerifyEmail } from './VerifyEmail.component.js'
-
-const TooltipWrapper = ({ disabled, content, children }) => {
-    if (!disabled) {
-        return <>{children}</>
-    }
-    return <Tooltip content={content}>{children}</Tooltip>
-}
-
-TooltipWrapper.propTypes = {
-    children: PropTypes.node,
-    content: PropTypes.string,
-    disabled: PropTypes.bool,
-}
 
 const getSaveDisabledContent = ({ newEmail, emailValidationMessage }) => {
     if (!newEmail) {
@@ -223,7 +210,7 @@ export function EmailField({ userEmail, userEmailVerified, onUpdate }) {
                     {i18n.t('Change email')}
                 </Button>
                 <TooltipWrapper
-                    disabled={!userEmail || userEmail?.trim() === ''}
+                    show={!userEmail || userEmail?.trim() === ''}
                     content={i18n.t('There is no email to remove')}
                 >
                     <Button
