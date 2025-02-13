@@ -16,10 +16,23 @@ const TwoFactorEmailCodeButton = ({ onClick, error, loading, success }) => {
                 }
             )}
             {success ? (
-                <span className={styles.successMessage}>
-                    <IconCheckmark16 color={'#1a5e20'} />{' '}
-                    {i18n.t('Authentication code sent')}
-                </span>
+                <>
+                    <span className={styles.successMessage}>
+                        <IconCheckmark16 color={'#1a5e20'} />{' '}
+                        {i18n.t('Authentication code sent')}
+                    </span>
+                    <span className={styles.sendNewCodeInstructions}>
+                        {i18n.t(
+                            "If you didn't receive the code, check your spam/junk folder. Few minutes have passed and you haven't received the code yet?"
+                        ) + ' '}
+                        <span
+                            className={styles.sendNewCodeButton}
+                            onClick={onClick}
+                        >
+                            {i18n.t('Send a new code')}
+                        </span>
+                    </span>
+                </>
             ) : (
                 <>
                     <span className={styles.buttonWithIcon}>

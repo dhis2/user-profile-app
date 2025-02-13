@@ -37,6 +37,24 @@
     gap: var(--spacers-dp8);;
     margin: var(--spacers-dp4);
 }
+.sendNewCodeInstructions {
+    color: var(--colors-grey800);
+    font-size: 13px;
+    line-height: 19px;
+    margin: 0 0 0 var(--spacers-dp24);
+}
+
+.sendNewCodeButton {
+    color: blue;         /* Standard link color */
+    text-decoration: underline; /* Adds the underline like a link */
+    cursor: pointer;     /* Makes it look clickable */
+}
+
+.sendNewCodeButton:hover {
+    color: darkblue;     /* Darker color on hover like a real link */
+    text-decoration: none; /* Remove underline on hover (optional) */
+}
+
 .orderedList li + li {
     margin-top: var(--spacers-dp8);
 }
