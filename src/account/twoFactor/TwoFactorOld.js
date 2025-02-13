@@ -33,6 +33,19 @@ const TwoFactorOld = () => {
                     <TwoFactorDisableNoticeBox />
                 )}
                 {isTwoFaEnabled ? (
+                    <p className={styles.instructionsHeader}>
+                        {i18n.t('Turn off two-factor authentication', {
+                            keySeparator: '<|>',
+                        })}
+                    </p>
+                ) : (
+                    <p className={styles.instructionsHeader}>
+                        {i18n.t('Turn on two-factor authentication', {
+                            keySeparator: '<|>',
+                        })}
+                    </p>
+                )}
+                {isTwoFaEnabled ? (
                     <TwoFactorOTPDisableInstructions />
                 ) : (
                     <TwoFactorOPTEnableInstructions />

@@ -35,11 +35,6 @@ const QRCode = () => {
 
 const TwoFactorOPTEnableInstructions = () => (
     <>
-        <p className={styles.instructionsHeader}>
-            {i18n.t('Turn on two-factor authentication', {
-                keySeparator: '<|>',
-            })}
-        </p>
         <ol className={styles.orderedList}>
             <li>
                 {i18n.t(

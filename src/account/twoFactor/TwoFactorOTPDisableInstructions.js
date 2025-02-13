@@ -4,11 +4,6 @@ import styles from './TwoFactorDisableInstructions.module.css'
 
 const TwoFactorOTPDisableInstructions = () => (
     <>
-        <p className={styles.instructionsHeader}>
-            {i18n.t('Turn off two-factor authentication', {
-                keySeparator: '<|>',
-            })}
-        </p>
         <ol className={styles.orderedList}>
             <li>
                 {i18n.t('Open your authenticator app.', {

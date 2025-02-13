@@ -16,24 +16,26 @@ const TwoFactorEmailDisableInstructions = () => {
 
     return (
         <>
-            <p className={styles.instructionsHeader}>
-                {i18n.t('Turn off two-factor authentication via email', {
-                    keySeparator: '<|>',
-                })}
-            </p>
             <ol className={styles.orderedList}>
                 <li>
                     <TwoFactorEmailCodeButton
                         onClick={turnOff2FAViaEmail}
-                        mutation={turnOff2FAViaEmailMutation}
+                        loading={turnOff2FAViaEmailMutation.loading}
+                        success={
+                            turnOff2FAViaEmailMutation.error &&
+                            turnOff2FAViaEmailMutation.error.details
+                                ?.httpStatusCode === 409
+                        }
+                        error={
+                            turnOff2FAViaEmailMutation.error?.details
+                                ?.httpStatusCode !== 409 &&
+                            turnOff2FAViaEmailMutation.error?.message
+                        }
                     />
                 </li>
                 <li>
-                    <span>{i18n.t('Open your email to get the code')}</span>
-                </li>
-                <li>
                     {i18n.t(
-                        'Now, enter the code from your email below and click the "Turn off" button.'
+                        'Enter the 6 digit authentication code in the email.'
                     )}
                 </li>
             </ol>

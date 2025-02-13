@@ -35,7 +35,6 @@ const TwoFactorToggler = ({ error, isTwoFaEnabled, loading, toggleTwoFa }) => {
     return (
         <form className={styles.container}>
             <InputField
-                label={i18n.t('Six digit authentication code')}
                 value={twoFaConfirmationCode}
                 onChange={({ value }) => setTwoFaConfirmationCode(value)}
                 onBlur={() => setTouched(true)}
@@ -44,6 +43,7 @@ const TwoFactorToggler = ({ error, isTwoFaEnabled, loading, toggleTwoFa }) => {
                 required
                 disabled={loading}
                 inputWidth="200px"
+                placeholder={i18n.t('6 digit code')}
             />
             <Button
                 disabled={!isTwoFaConfirmationCodeValid || loading}

@@ -10,7 +10,7 @@ import TwoFactorOTPDisableInstructions from './TwoFactorOTPDisableInstructions.j
 import { twoFactorAuthTypes } from './useTwoFaToggleMutation.js'
 
 const TwoFactorInstructions = ({
-    is2faEnabled,
+    isTwoFaEnabled,
     twoFactorAuthToToShow,
     toggleEmail2faForbidden,
 }) => {
@@ -28,19 +28,19 @@ const TwoFactorInstructions = ({
     return (
         <>
             {twoFactorAuthToToShow === twoFactorAuthTypes.totp &&
-                !is2faEnabled && <TwoFactorOPTEnableInstructions />}
+                !isTwoFaEnabled && <TwoFactorOPTEnableInstructions />}
             {twoFactorAuthToToShow === twoFactorAuthTypes.totp &&
-                is2faEnabled && <TwoFactorOTPDisableInstructions />}
+                isTwoFaEnabled && <TwoFactorOTPDisableInstructions />}
             {twoFactorAuthToToShow === twoFactorAuthTypes.email &&
-                !is2faEnabled && <TwoFactorEmailEnableInstructions />}
+                !isTwoFaEnabled && <TwoFactorEmailEnableInstructions />}
             {twoFactorAuthToToShow === twoFactorAuthTypes.email &&
-                is2faEnabled && <TwoFactorEmailDisableInstructions />}
+                isTwoFaEnabled && <TwoFactorEmailDisableInstructions />}
         </>
     )
 }
 
 TwoFactorInstructions.propTypes = {
-    is2faEnabled: PropTypes.bool.isRequired,
+    isTwoFaEnabled: PropTypes.bool.isRequired,
     toggleEmail2faForbidden: PropTypes.bool.isRequired,
     twoFactorAuthToToShow: PropTypes.string,
 }

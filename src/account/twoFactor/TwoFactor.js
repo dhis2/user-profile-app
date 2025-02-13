@@ -1,6 +1,6 @@
 import { useAlert, useDataMutation } from '@dhis2/app-runtime'
 import i18n from '@dhis2/d2-i18n'
-import { Card, Radio } from '@dhis2/ui'
+import { Card, SegmentedControl } from '@dhis2/ui'
 import cx from 'classnames'
 import React, { useMemo, useState } from 'react'
 import styles from './TwoFactor.module.css'
@@ -14,8 +14,8 @@ import useTwoFaToggleMutation, {
 } from './useTwoFaToggleMutation.js'
 
 const enableRadioLabels = {
-    [twoFactorAuthTypes.totp]: i18n.t('Two factor authentication via app'),
-    [twoFactorAuthTypes.email]: i18n.t('Two factor authentication via email'),
+    [twoFactorAuthTypes.totp]: i18n.t('Authenticator app'),
+    [twoFactorAuthTypes.email]: i18n.t('Email'),
 }
 
 const mutationDefinitionBase = {
@@ -66,7 +66,7 @@ const TwoFactor = () => {
 
     const defaultTwoFactorAuthToShow =
         enabledTwoFAType ||
-        (availableTwoFAType.length === 1 && availableTwoFAType[0]) ||
+        (availableTwoFAType.length > 0 && availableTwoFAType[0]) ||
         null
     const [twoFactorAuthToToShow, setTwoFactorAuthToShow] = useState(
         defaultTwoFactorAuthToShow
@@ -110,6 +110,7 @@ const TwoFactor = () => {
 
     const loading = currentMutation.loading || currentMutation.fetching
     const error = currentMutation.error
+    const isTwoFaEnabled = enabledTwoFAType !== null
 
     return (
         <div className={cx('content-area', styles.container)}>
@@ -123,29 +124,49 @@ const TwoFactor = () => {
                         { keySeparator: '<|>' }
                     )}
                 </p>
-                <TwoFactorStatus isTwoFaEnabled={!!enabledTwoFAType} />
-                {availableTwoFAType?.length > 1 &&
-                    availableTwoFAType.map((twoFactorMethod) => (
-                        <Radio
-                            key={twoFactorMethod}
-                            checked={twoFactorMethod === twoFactorAuthToToShow}
-                            value={twoFactorMethod}
-                            name={'twoFactorAuthToToShow'}
-                            label={enableRadioLabels[twoFactorMethod]}
-                            onChange={() =>
-                                setTwoFactorAuthToShow(twoFactorMethod)
+                <TwoFactorStatus isTwoFaEnabled={isTwoFaEnabled} />
+                {isTwoFaEnabled ? (
+                    <p className={styles.instructionsHeader}>
+                        {i18n.t('Turn off two-factor authentication', {
+                            keySeparator: '<|>',
+                        })}
+                    </p>
+                ) : (
+                    <p className={styles.instructionsHeader}>
+                        {i18n.t('Turn on two-factor authentication', {
+                            keySeparator: '<|>',
+                        })}
+                    </p>
+                )}
+                {availableTwoFAType?.length > 1 && (
+                    <div className={styles.twoFactorTypeToggle}>
+                        <SegmentedControl
+                            options={availableTwoFAType.map(
+                                (twoFactorType) => ({
+                                    value: twoFactorType,
+                                    label: enableRadioLabels[twoFactorType],
+                                    disabled: enabledTwoFAType,
+                                })
+                            )}
+                            selected={
+                                twoFactorAuthToToShow || availableTwoFAType[0]
                             }
+                            onChange={({ value }) => {
+                                setTwoFactorAuthToShow(value)
+                            }}
                             disabled={enabledTwoFAType}
+                            ariaLabel={i18n.t('Two factor authentication type')}
                         />
-                    ))}
+                    </div>
+                )}
                 <TwoFactorInstructions
-                    is2faEnabled={enabledTwoFAType !== null}
+                    isTwoFaEnabled={isTwoFaEnabled}
                     twoFactorAuthToToShow={twoFactorAuthToToShow}
                     toggleEmail2faForbidden={toggleEmail2faForbidden}
                 />
                 {twoFactorAuthToToShow && !toggleEmail2faForbidden && (
                     <TwoFactorToggler
-                        isTwoFaEnabled={enabledTwoFAType !== null}
+                        isTwoFaEnabled={isTwoFaEnabled}
                         toggleTwoFa={toggleTwoFa}
                         error={error}
                         loading={loading}

@@ -17,24 +17,18 @@ const TwoFactorEmailEnableInstructions = () => {
 
     return (
         <>
-            <p className={styles.instructionsHeader}>
-                {i18n.t('Turn on two-factor authentication via email', {
-                    keySeparator: '<|>',
-                })}
-            </p>
             <ol className={styles.orderedList}>
                 <li>
                     <TwoFactorEmailCodeButton
                         onClick={enroll2FAViaEmail}
-                        mutation={enroll2FAViaEmailMutation}
+                        error={enroll2FAViaEmailMutation.error?.message}
+                        loading={enroll2FAViaEmailMutation.loading}
+                        success={enroll2FAViaEmailMutation.data}
                     />
                 </li>
                 <li>
-                    <span>{i18n.t('Open your email to get the code')}</span>
-                </li>
-                <li>
                     {i18n.t(
-                        'Now, enter the code from your email below and click the "Turn on" button.'
+                        'Enter the 6 digit authentication code in the email.'
                     )}
                 </li>
             </ol>

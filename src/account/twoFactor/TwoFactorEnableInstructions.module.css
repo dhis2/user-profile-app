@@ -4,11 +4,6 @@
     display: block;
 }
 
-.instructionsHeader {
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--colors-grey900);
-}
 
 .orderedList {
     padding-inline-start: 24px;
@@ -33,6 +28,13 @@
 
 .errorMessage{
     color: #d3302f;
+    margin: var(--spacers-dp4);
+}
+
+.successMessage{
+    display: flex;
+    align-items: center;
+    gap: var(--spacers-dp8);;
     margin: var(--spacers-dp4);
 }
 .orderedList li + li {
