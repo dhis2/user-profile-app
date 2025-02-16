@@ -1,5 +1,5 @@
 import React from 'react'
-import InfoCard from '../layout/InfoCard.component.js'
+import InfoCard from '../layout/InfoCard.component.jsx'
 import i18n from '../locales/index.js'
 import profileSettingsStore from '../profile/profile.store.js'
 

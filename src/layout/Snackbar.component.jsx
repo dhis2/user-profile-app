@@ -1,6 +1,6 @@
 import Snackbar from 'material-ui/Snackbar'
 import React, { Component } from 'react'
-import appActions from '../app.actions.js'
+import appActions from '../app.actions.jsx'
 
 const messageStatus = {
     warning: { backgroundColor: '#FFA726' },

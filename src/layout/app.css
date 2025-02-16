@@ -1,47 +1,46 @@
-
-html, body {
-  background-color: #f3f3f3;
-  font-family: Roboto, Arial, sans-serif;
-  padding: 0;
-  margin: 0;
+html,
+body {
+    background-color: #f3f3f3;
+    font-family: Roboto, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 .content-wrap {
-  display: flex;
+    display: flex;
 }
 
 .left-bar {
-  width: 295px;
-  flex-grow: 0;
+    width: 295px;
+    flex-grow: 0;
 }
 
 .content-area {
-  max-width: 960px;
-  flex-grow: 1;
-  margin-bottom: 64px;
+    max-width: 960px;
+    flex-grow: 1;
+    margin-bottom: 64px;
 }
 
 .info-content {
-  width: 100%;
-  margin: 0;
+    width: 100%;
+    margin: 0;
 }
 
 .noticebox-wrapper {
-  margin-inline-end: 15px;
+    margin-inline-end: 15px;
 }
 
-
 .info-cell-name {
-  color: #777;
-  font-size: 12pt;
-  width: 110px;
-  white-space: nowrap;
-  vertical-align: top;
-  padding: 4px 20px 4px 0;
+    color: #777;
+    font-size: 12pt;
+    width: 110px;
+    white-space: nowrap;
+    vertical-align: top;
+    padding: 4px 20px 4px 0;
 }
 
 .info-cell-value {
-  font-size: 12pt;
-  max-width: 510px;
-  padding: 4px 0;
+    font-size: 12pt;
+    max-width: 510px;
+    padding: 4px 0;
 }

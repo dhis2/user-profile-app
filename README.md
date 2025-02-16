@@ -1,3 +1,5 @@
+![React 18](https://img.shields.io/badge/react-18-blue)
+
 # DHIS2 User Profile App
 
 The user profile app is used for changing user profile information, user settings, and user passwords.

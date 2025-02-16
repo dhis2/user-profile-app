@@ -1,6 +1,6 @@
 import { FlatButton, Dialog } from 'material-ui'
 import React from 'react'
-import appActions from '../app.actions.js'
+import appActions from '../app.actions.jsx'
 import i18n from '../locales/index.js'
 
 // In development environments this won't provide the correct behavior

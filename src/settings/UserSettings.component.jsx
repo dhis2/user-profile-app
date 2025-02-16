@@ -1,5 +1,5 @@
 import React from 'react'
-import FormFields from '../layout/FormFields.component.js'
+import FormFields from '../layout/FormFields.component.jsx'
 import i18n from '../locales/index.js'
 import userSettingsActions from './userSettings.actions.js'
 import userSettingsStore from './userSettings.store.js'
