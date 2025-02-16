@@ -1,3 +1,10 @@
+## [100.4.6](https://github.com/dhis2/user-profile-app/compare/v100.4.5...v100.4.6) (2025-02-16)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([b8980b9](https://github.com/dhis2/user-profile-app/commit/b8980b93e45885162c61c4dde48d95b0da336b59))
+
 ## [100.4.5](https://github.com/dhis2/user-profile-app/compare/v100.4.4...v100.4.5) (2025-02-09)
 
 
