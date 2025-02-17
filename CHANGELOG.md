@@ -1,3 +1,10 @@
+# [100.5.0](https://github.com/dhis2/user-profile-app/compare/v100.4.6...v100.5.0) (2025-02-17)
+
+
+### Features
+
+* disable verify email button if already verified ([dd5bb49](https://github.com/dhis2/user-profile-app/commit/dd5bb498bb19762001e32d5e5bedffd6df0877db))
+
 ## [100.4.6](https://github.com/dhis2/user-profile-app/compare/v100.4.5...v100.4.6) (2025-02-16)
 
 
