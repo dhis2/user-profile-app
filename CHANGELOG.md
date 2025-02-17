@@ -1,3 +1,10 @@
+## [100.5.1](https://github.com/dhis2/user-profile-app/compare/v100.5.0...v100.5.1) (2025-02-17)
+
+
+### Bug Fixes
+
+* update email verification status after changing email ([0e114b9](https://github.com/dhis2/user-profile-app/commit/0e114b936848c2d6c03f138d5a13db7cfbff7277))
+
 # [100.5.0](https://github.com/dhis2/user-profile-app/compare/v100.4.6...v100.5.0) (2025-02-17)
 
 
