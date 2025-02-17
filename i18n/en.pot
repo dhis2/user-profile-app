@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2025-02-13T12:24:07.871Z\n"
-"PO-Revision-Date: 2025-02-13T12:24:07.871Z\n"
+"POT-Creation-Date: 2025-02-17T12:18:36.863Z\n"
+"PO-Revision-Date: 2025-02-17T12:18:36.864Z\n"
 
 msgid "Never"
 msgstr "Never"
@@ -318,6 +318,27 @@ msgstr "Email is invalid"
 msgid "Emails must match"
 msgstr "Emails must match"
 
+msgid "Email update not allowed"
+msgstr "Email update not allowed"
+
+msgid "Your email is currently used for two factor authentication"
+msgstr "Your email is currently used for two factor authentication"
+
+msgid ""
+"To update your email, you must first disable two factor authentication by "
+"email. After this has been disabled, you can change your email and then set "
+"up two factor authentication again."
+msgstr ""
+"To update your email, you must first disable two factor authentication by "
+"email. After this has been disabled, you can change your email and then set "
+"up two factor authentication again."
+
+msgid "Disable two factor authentication here"
+msgstr "Disable two factor authentication here"
+
+msgid "Cancel"
+msgstr "Cancel"
+
 msgid "Remove email"
 msgstr "Remove email"
 
@@ -326,9 +347,6 @@ msgstr "Your email is currently verified"
 
 msgid "Are you sure you want to remove your email?"
 msgstr "Are you sure you want to remove your email?"
-
-msgid "Cancel"
-msgstr "Cancel"
 
 msgid "Change email"
 msgstr "Change email"
@@ -422,6 +440,9 @@ msgstr "Email verification link sent successfully!"
 
 msgid "Failed to send email verification link."
 msgstr "Failed to send email verification link."
+
+msgid "Email already verified"
+msgstr "Email already verified"
 
 msgid "Verify email"
 msgstr "Verify email"

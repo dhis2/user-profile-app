@@ -10,6 +10,10 @@
     margin-block-end: 16px;
 }
 
+.emailModalText div {
+    margin-block-end: 8px;
+}
+
 .buttonContainer {
     display: flex;
     gap: 8px;

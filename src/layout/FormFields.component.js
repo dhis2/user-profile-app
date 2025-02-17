@@ -246,6 +246,8 @@ function createEmailField({ fieldBase, valueStore, onUpdate, d2 }) {
             },
             userEmail: valueStore.state['email'] || '',
             userEmailVerified: d2?.currentUser?.emailVerified,
+            twoFaByEmailInUse:
+                d2?.currentUser?.twoFactorType === 'EMAIL_ENABLED',
         },
     })
 }
