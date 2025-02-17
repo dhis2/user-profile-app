@@ -5,8 +5,8 @@ import React from 'react'
 import styles from './TwoFactor.module.css'
 import TwoFactorEmailDisableInstructions from './TwoFactorEmailDisableInstructions.js'
 import TwoFactorEmailEnableInstructions from './TwoFactorEmailEnableInstructions.js'
-import TwoFactorOPTEnableInstructions from './TwoFactorOPTEnableInstructions.js'
 import TwoFactorOTPDisableInstructions from './TwoFactorOTPDisableInstructions.js'
+import TwoFactorOTPEnableInstructions from './TwoFactorOTPEnableInstructions.js'
 import { twoFactorAuthTypes } from './useTwoFaToggleMutation.js'
 
 const TwoFactorInstructions = ({
@@ -18,7 +18,7 @@ const TwoFactorInstructions = ({
         return (
             <NoticeBox warning className={styles.emailVerificationWarning}>
                 {i18n.t(
-                    'Your email is not verified. You must verify or your email to enable or disable two-factor authentication via email.'
+                    'Your email is not verified. You must verify or your email to enable or disable two-factor authentication via email. If you have recently verified your email, you may need to refresh this page.'
                 )}
                 <br />
                 <a href="#/profile">{i18n.t('Verify your email here.')}</a>
@@ -28,7 +28,7 @@ const TwoFactorInstructions = ({
     return (
         <>
             {twoFactorAuthToToShow === twoFactorAuthTypes.totp &&
-                !isTwoFaEnabled && <TwoFactorOPTEnableInstructions />}
+                !isTwoFaEnabled && <TwoFactorOTPEnableInstructions />}
             {twoFactorAuthToToShow === twoFactorAuthTypes.totp &&
                 isTwoFaEnabled && <TwoFactorOTPDisableInstructions />}
             {twoFactorAuthToToShow === twoFactorAuthTypes.email &&

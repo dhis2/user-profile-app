@@ -33,7 +33,7 @@ const QRCode = () => {
     )
 }
 
-const TwoFactorOPTEnableInstructions = () => (
+const TwoFactorOTPEnableInstructions = () => (
     <>
         <ol className={styles.orderedList}>
             <li>
@@ -67,4 +67,4 @@ const TwoFactorOPTEnableInstructions = () => (
     </>
 )
 
-export default TwoFactorOPTEnableInstructions
+export default TwoFactorOTPEnableInstructions

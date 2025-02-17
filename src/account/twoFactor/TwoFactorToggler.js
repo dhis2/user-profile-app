@@ -68,10 +68,10 @@ const TwoFactorToggler = ({ error, isTwoFaEnabled, loading, toggleTwoFa }) => {
 }
 
 TwoFactorToggler.propTypes = {
-    error: PropTypes.object.isRequired,
     isTwoFaEnabled: PropTypes.bool.isRequired,
-    loading: PropTypes.bool.isRequired,
     toggleTwoFa: PropTypes.func.isRequired,
+    error: PropTypes.object,
+    loading: PropTypes.bool,
 }
 
 export default TwoFactorToggler

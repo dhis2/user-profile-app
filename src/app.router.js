@@ -8,7 +8,7 @@ import AboutPage from './aboutPage/AboutPage.component.js'
 import Account from './account/Account.component.js'
 import PasswordChangeSuccessDialog from './account/PasswordChangeSuccessDialog.js'
 import TwoFactor from './account/twoFactor/TwoFactor.js'
-import TwoFactorOld from './account/twoFactor/TwoFactorOld.js'
+import TwoFactor41AndLower from './account/twoFactor/TwoFactor41AndLower.js'
 import Sidebar from './layout/Sidebar.component.js'
 import Snackbar from './layout/Snackbar.component.js'
 import AppTheme from './layout/theme.js'
@@ -20,14 +20,19 @@ import ViewProfile from './viewProfile/ViewProfile.component.js'
 function WrappedApp(props) {
     return (
         <div className="content-wrap">
-            <Sidebar currentSection={props.routes[1].path} />
+            <Sidebar
+                currentSection={props.routes[1].path}
+                twoFactorAuthByType={props.twoFactorMethods}
+            />
             {props.children}
         </div>
     )
 }
+
 WrappedApp.propTypes = {
     children: PropTypes.any.isRequired,
     routes: PropTypes.array.isRequired,
+    twoFactorMethods: PropTypes.bool.isRequired,
 }
 
 class AppRouter extends Component {
@@ -41,7 +46,6 @@ class AppRouter extends Component {
             muiTheme: AppTheme,
             featureToggle: {
                 emailFieldAsModal: this.minorVersion > 41,
-                twoFactorAuthByType: this.minorVersion > 42,
             },
         }
     }
@@ -78,7 +82,18 @@ class AppRouter extends Component {
                     <div className="app-wrapper">
                         <Snackbar />
                         <Router history={hashHistory}>
-                            <Route component={WrappedApp}>
+                            <Route
+                                getComponent={(location, callback) =>
+                                    callback(null, (props) => (
+                                        <WrappedApp
+                                            {...props}
+                                            twoFactorMethods={
+                                                this.minorVersion > 41
+                                            }
+                                        />
+                                    ))
+                                }
+                            >
                                 <Route
                                     path="settings"
                                     component={UserSettings}
@@ -90,7 +105,7 @@ class AppRouter extends Component {
                                     component={
                                         this.minorVersion > 41
                                             ? TwoFactor
-                                            : TwoFactorOld
+                                            : TwoFactor41AndLower
                                     }
                                 />
                                 <Route

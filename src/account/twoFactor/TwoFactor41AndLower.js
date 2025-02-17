@@ -6,20 +6,20 @@ import styles from './TwoFactor.module.css'
 import TwoFactorDisableNoticeBox from './TwoFactorDisableNoticeBox.js'
 import TwoFactorEnableNotice from './TwoFactorEnableNotice.js'
 import TwoFactorIntroduction from './TwoFactorIntroduction.js'
-import TwoFactorOPTEnableInstructions from './TwoFactorOPTEnableInstructions.js'
 import TwoFactorOTPDisableInstructions from './TwoFactorOTPDisableInstructions.js'
+import TwoFactorOTPEnableInstructions from './TwoFactorOTPEnableInstructions.js'
 import TwoFactorStatus from './TwoFactorStatus.js'
 import TwoFactorToggler from './TwoFactorToggler.js'
-import useTwoFaToggleMutationOld from './useTwoFaToggleMutationOld.js'
+import useTwoFaToggleMutation41AndLower from './useTwoFaToggleMutation41AndLower.js'
 
-const TwoFactorOld = () => {
+const TwoFactor41AndLower = () => {
     const {
         isTwoFaEnabled,
         toggleTwoFa,
         loading,
         error,
         lastActionWasTwoFaDisableSuccess,
-    } = useTwoFaToggleMutationOld()
+    } = useTwoFaToggleMutation41AndLower()
 
     return (
         <div className={cx('content-area', styles.container)}>
@@ -48,7 +48,7 @@ const TwoFactorOld = () => {
                 {isTwoFaEnabled ? (
                     <TwoFactorOTPDisableInstructions />
                 ) : (
-                    <TwoFactorOPTEnableInstructions />
+                    <TwoFactorOTPEnableInstructions />
                 )}
                 <TwoFactorToggler
                     isTwoFaEnabled={isTwoFaEnabled}
@@ -64,4 +64,4 @@ const TwoFactorOld = () => {
     )
 }
 
-export default TwoFactorOld
+export default TwoFactor41AndLower

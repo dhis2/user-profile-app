@@ -23,7 +23,7 @@ const TwoFactorEmailCodeButton = ({ onClick, error, loading, success }) => {
                     </span>
                     <span className={styles.sendNewCodeInstructions}>
                         {i18n.t(
-                            "If you didn't receive the code, check your spam/junk folder. Few minutes have passed and you haven't received the code yet?"
+                            "If you didn't receive the code, check your spam/junk folder. Have you waited a few minutes and still not received the code?"
                         ) + ' '}
                         <span
                             className={styles.sendNewCodeButton}

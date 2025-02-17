@@ -22,58 +22,66 @@ const AppWrapper = () => {
                 api.get('userSettings', { useFallback: false }),
                 d2.system.settings.all(),
                 api.get('2fa/enabled'),
-                api.get('configuration/twoFactorMethods'),
-            ]).then(
-                (results) => {
-                    const styles = (results[0] || []).map((style) => ({
-                        id: style.path,
-                        displayName: style.name,
-                    }))
-                    const uiLocales = (results[1] || []).map((locale) => ({
-                        id: locale.locale,
-                        displayName:
-                            locale.name === locale.displayName
-                                ? locale.name
-                                : `${locale.name} — ${locale.displayName}`,
-                    }))
-                    const dbLocales = (results[2] || []).map((locale) => ({
-                        id: locale.locale,
-                        displayName:
-                            locale.name === locale.displayName
-                                ? locale.name
-                                : `${locale.name} — ${locale.displayName}`,
-                    }))
-                    const systemDefault = { ...results[4] }
+            ])
+                .then(
+                    (results) => {
+                        const styles = (results[0] || []).map((style) => ({
+                            id: style.path,
+                            displayName: style.name,
+                        }))
+                        const uiLocales = (results[1] || []).map((locale) => ({
+                            id: locale.locale,
+                            displayName:
+                                locale.name === locale.displayName
+                                    ? locale.name
+                                    : `${locale.name} — ${locale.displayName}`,
+                        }))
+                        const dbLocales = (results[2] || []).map((locale) => ({
+                            id: locale.locale,
+                            displayName:
+                                locale.name === locale.displayName
+                                    ? locale.name
+                                    : `${locale.name} — ${locale.displayName}`,
+                        }))
+                        const systemDefault = { ...results[4] }
 
-                    // Deleting this property because this is no longer valid
-                    // it will be removed from the response object in the
-                    // future, but until then, we remove it here...
-                    delete d2.currentUser.twoFA
+                        // Deleting this property because this is no longer valid
+                        // it will be removed from the response object in the
+                        // future, but until then, we remove it here...
+                        delete d2.currentUser.twoFA
 
-                    userProfileStore.setState(d2.currentUser)
-                    userProfileStore.state.twoFaEnabled = results[5]
-                    userSettingsStore.setState(results[3])
-                    optionValueStore.setState({
-                        styles,
-                        uiLocales,
-                        dbLocales,
-                        systemDefault,
-                        twoFactorMethods: results[6],
-                    })
+                        userProfileStore.setState(d2.currentUser)
+                        userProfileStore.state.twoFaEnabled = results[5]
+                        userSettingsStore.setState(results[3])
+                        optionValueStore.setState({
+                            styles,
+                            uiLocales,
+                            dbLocales,
+                            systemDefault,
+                        })
 
-                    log.debug(
-                        'Current user profile loaded:',
-                        userProfileStore.state
-                    )
-                    log.debug(
-                        'Current user settings loaded:',
-                        userSettingsStore.state
-                    )
-                },
-                (error) => {
-                    log.error('Failed to load user settings:', error)
-                }
-            )
+                        log.debug(
+                            'Current user profile loaded:',
+                            userProfileStore.state
+                        )
+                        log.debug(
+                            'Current user settings loaded:',
+                            userSettingsStore.state
+                        )
+                    },
+                    (error) => {
+                        log.error('Failed to load user settings:', error)
+                    }
+                )
+                .then(() => api.get('configuration/twoFactorMethods'))
+                .then(
+                    (results) => {
+                        optionValueStore.state.twoFactorMethods = results
+                    },
+                    () => {
+                        optionValueStore.state.twoFactorMethods = undefined
+                    }
+                )
         },
     })
 

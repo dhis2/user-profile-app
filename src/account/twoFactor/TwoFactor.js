@@ -36,7 +36,7 @@ const getAlertMessage = ({ attemptingToEnableTwoFa, error }) => {
         if (error) {
             return (
                 error?.message ??
-                i18n.t('Could not enable 2 Factor Authentication')
+                i18n.t('Could not enable two factor authentication')
             )
         } else {
             return i18n.t('Two factor authentication was enabled successfully')
@@ -84,7 +84,10 @@ const TwoFactor = () => {
         return {
             onComplete: () => {
                 resetTwoFactorType(twoFactorAuthToToShow)
-                setLastActionWasTwoFaDisableSuccess(!attemptingToEnableTwoFa)
+                twoFactorAuthToToShow === twoFactorAuthTypes.totp &&
+                    setLastActionWasTwoFaDisableSuccess(
+                        !attemptingToEnableTwoFa
+                    )
                 showAlert({ attemptingToEnableTwoFa })
             },
             onError: (error) => {
@@ -120,7 +123,7 @@ const TwoFactor = () => {
             <Card className={styles.card}>
                 <p className={styles.introductionText}>
                     {i18n.t(
-                        'Two-factor authentication protects your account with an extra layer of security. With two-factor authentication turned on, you will need to enter an authentication code from your device or email every time you log in.',
+                        'Two-factor authentication protects your account with an extra layer of security. With two-factor authentication turned on, you will need to enter an authentication code every time you log in.',
                         { keySeparator: '<|>' }
                     )}
                 </p>

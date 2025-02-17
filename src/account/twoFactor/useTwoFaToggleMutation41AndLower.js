@@ -41,7 +41,7 @@ const getAlertMessage = ({ attemptingToEnableTwoFa, error }) => {
 const getAlertOptions = ({ error }) =>
     error ? { critical: true } : { success: true }
 
-export default function useTwoFaToggleMutationOld() {
+export default function useTwoFaToggleMutation41AndLower() {
     const [isTwoFaEnabled, setIsTwoFaEnabled] = useState(
         userProfileStore.state.twoFaEnabled
     )
