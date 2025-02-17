@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2025-02-13T12:24:07.871Z\n"
-"PO-Revision-Date: 2025-02-13T12:24:07.871Z\n"
+"POT-Creation-Date: 2025-02-17T12:12:28.815Z\n"
+"PO-Revision-Date: 2025-02-17T12:12:28.815Z\n"
 
 msgid "Never"
 msgstr "Never"
@@ -422,6 +422,9 @@ msgstr "Email verification link sent successfully!"
 
 msgid "Failed to send email verification link."
 msgstr "Failed to send email verification link."
+
+msgid "Email already verified"
+msgstr "Email already verified"
 
 msgid "Verify email"
 msgstr "Verify email"
