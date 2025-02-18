@@ -1,3 +1,10 @@
+# [100.7.0](https://github.com/dhis2/user-profile-app/compare/v100.6.0...v100.7.0) (2025-02-18)
+
+
+### Features
+
+* show email update warning with email 2fa [DHIS2-18832] ([#1482](https://github.com/dhis2/user-profile-app/issues/1482)) ([73ba4d8](https://github.com/dhis2/user-profile-app/commit/73ba4d8e489485e535611851aa83c7b17c854ada))
+
 # [100.6.0](https://github.com/dhis2/user-profile-app/compare/v100.5.1...v100.6.0) (2025-02-18)
 
 
