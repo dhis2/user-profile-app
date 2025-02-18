@@ -1,6 +1,7 @@
 import Sidebar from 'd2-ui/lib/sidebar/Sidebar.component.js'
 import PropTypes from 'prop-types'
 import React from 'react'
+import { getTWOFAType } from '../account/twoFactor/useTwoFaToggleMutation.js'
 import appActions from '../app.actions.js'
 import i18n from '../locales/index.js'
 import optionValueStore from '../optionValue.store.js'
@@ -8,7 +9,9 @@ import userProfileStore from '../profile/profile.store.js'
 
 function SidebarWrapper(props) {
     const twoFactorMethods = optionValueStore?.state.twoFactorMethods
-    const hasEnabledTwoFactorMethods = !!userProfileStore.state.twoFactorType
+    const hasEnabledTwoFactorMethods = !!getTWOFAType(
+        userProfileStore.state.twoFactorType
+    )
 
     const hasTwoFactorMethods = twoFactorMethods
         ? Object.values(twoFactorMethods).some(Boolean)

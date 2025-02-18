@@ -13,7 +13,7 @@ const twoFactorBackendTypesToAuthTypes = {
     totp2faEnabled: twoFactorAuthTypes.totp,
     email2faEnabled: twoFactorAuthTypes.email,
 }
-const getAvailableTwoFAType = (BEAvailableTwoFAType) =>
+export const getAvailableTwoFAType = (BEAvailableTwoFAType) =>
     BEAvailableTwoFAType
         ? Object.entries(BEAvailableTwoFAType)
               .filter(([, value]) => value) // Keep only entries where value is "true"
@@ -21,7 +21,7 @@ const getAvailableTwoFAType = (BEAvailableTwoFAType) =>
               .filter((type) => type !== null)
         : []
 
-const getTWOFAType = (BETwoFAType) =>
+export const getTWOFAType = (BETwoFAType) =>
     twoFactorBackendTypesToAuthTypes[BETwoFAType] || null
 
 export default function useTwoFaToggleMutation() {
