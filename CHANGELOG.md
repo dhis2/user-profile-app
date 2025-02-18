@@ -1,3 +1,28 @@
+# [100.6.0](https://github.com/dhis2/user-profile-app/compare/v100.5.1...v100.6.0) (2025-02-18)
+
+
+### Bug Fixes
+
+* address comments from PR review ([3a0a50e](https://github.com/dhis2/user-profile-app/commit/3a0a50eed78efedb92d879f6f0447c9ba92410f0))
+* do not show two factor auth in sidebar if user has no 2fa and system is not configured ([4334d9d](https://github.com/dhis2/user-profile-app/commit/4334d9d6afb7c0375dd9955373902c73bc4ae8c0))
+* minor bugs after testing ([96f142a](https://github.com/dhis2/user-profile-app/commit/96f142a835bd2e8da46856ca4a27f2bd3d7fa7bb))
+* small refactor ([9b0540b](https://github.com/dhis2/user-profile-app/commit/9b0540ba8c65309d62f73e576ace37884457d39d))
+
+
+### Features
+
+* 2fa via email enabling and disabling ([37a0505](https://github.com/dhis2/user-profile-app/commit/37a050570fc7101f91f0eed7f5fbac967f6f9efd))
+* add link to warning saying to verify email ([e271799](https://github.com/dhis2/user-profile-app/commit/e271799eb5d5178f09045b42cb2fc4669919c9dc))
+* change designs of 2fa via email ([9876233](https://github.com/dhis2/user-profile-app/commit/9876233c6a1996b341a8feb8c4e280c73f940b80))
+* send a new code text ([c65feb8](https://github.com/dhis2/user-profile-app/commit/c65feb86e97c7aec78805a1e4bbcc772ddb2dd27))
+
+## [100.5.1](https://github.com/dhis2/user-profile-app/compare/v100.5.0...v100.5.1) (2025-02-17)
+
+
+### Bug Fixes
+
+* update email verification status after changing email ([0e114b9](https://github.com/dhis2/user-profile-app/commit/0e114b936848c2d6c03f138d5a13db7cfbff7277))
+
 # [100.5.0](https://github.com/dhis2/user-profile-app/compare/v100.4.6...v100.5.0) (2025-02-17)
 
 

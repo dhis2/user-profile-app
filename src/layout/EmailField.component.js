@@ -14,6 +14,7 @@ import TextField from 'd2-ui/lib/form-fields/TextField'
 import PropTypes from 'prop-types'
 import React, { useMemo, useState } from 'react'
 import { Link } from 'react-router'
+import userProfileStore from '../profile/profile.store.js'
 import styles from './EmailField.component.module.css'
 import TooltipWrapper from './TooltipWrapper.js'
 import { VerifyEmail } from './VerifyEmail.component.js'
@@ -223,6 +224,10 @@ const EmailModal = ({
                             onClick={() => {
                                 onUpdate(newEmail)
                                 setEmailModalOpen(false)
+                                userProfileStore.state.emailVerified = false
+                                userProfileStore.setState(
+                                    userProfileStore.state
+                                )
                             }}
                             primary
                             disabled={saveDisabled}
