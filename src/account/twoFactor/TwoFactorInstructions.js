@@ -2,6 +2,7 @@ import i18n from '@dhis2/d2-i18n'
 import { NoticeBox } from '@dhis2/ui'
 import PropTypes from 'prop-types'
 import React from 'react'
+import { Link } from 'react-router'
 import styles from './TwoFactor.module.css'
 import TwoFactorEmailDisableInstructions from './TwoFactorEmailDisableInstructions.js'
 import TwoFactorEmailEnableInstructions from './TwoFactorEmailEnableInstructions.js'
@@ -21,7 +22,7 @@ const TwoFactorInstructions = ({
                     'Your email is not verified. You must verify or your email to enable or disable two-factor authentication via email. If you have recently verified your email, you may need to refresh this page.'
                 )}
                 <br />
-                <a href="#/profile">{i18n.t('Verify your email here.')}</a>
+                <Link to="/profile">{i18n.t('Verify your email here.')}</Link>
             </NoticeBox>
         )
     }
