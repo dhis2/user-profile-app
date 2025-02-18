@@ -4,16 +4,55 @@
     display: block;
 }
 
-.instructionsHeader {
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--colors-grey900);
-}
 
 .orderedList {
     padding-inline-start: 24px;
     font-size: 14px;
     line-height: 19px;
+}
+
+.stepWithAction {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacers-dp8);
+    margin-bottom: var(--spacers-dp24);
+}
+
+.buttonWithIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacers-dp4);
+}
+
+.errorMessage{
+    color: #d3302f;
+    margin: var(--spacers-dp4);
+}
+
+.successMessage{
+    display: flex;
+    align-items: center;
+    gap: var(--spacers-dp8);;
+    margin: var(--spacers-dp4);
+}
+.sendNewCodeInstructions {
+    color: var(--colors-grey800);
+    font-size: 13px;
+    line-height: 19px;
+    margin: 0 0 0 var(--spacers-dp24);
+}
+
+.sendNewCodeButton {
+    color: blue;         /* Standard link color */
+    text-decoration: underline; /* Adds the underline like a link */
+    cursor: pointer;     /* Makes it look clickable */
+}
+
+.sendNewCodeButton:hover {
+    color: darkblue;     /* Darker color on hover like a real link */
+    text-decoration: none; /* Remove underline on hover (optional) */
 }
 
 .orderedList li + li {

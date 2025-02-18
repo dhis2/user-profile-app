@@ -1,95 +1,68 @@
-import { useDataMutation, useAlert } from '@dhis2/app-runtime'
-import i18n from '@dhis2/d2-i18n'
-import { useMemo, useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
+import optionValueStore from '../../optionValue.store.js'
 import userProfileStore from '../../profile/profile.store.js'
 
-const mutationDefinitionBase = {
-    type: 'create',
-    data: ({ code }) => ({ code }),
-}
-const enableMutationDefinition = {
-    ...mutationDefinitionBase,
-    resource: '/2fa/enabled',
-}
-const disableMutationDefinition = {
-    ...mutationDefinitionBase,
-    resource: '/2fa/disabled',
+export const twoFactorAuthTypes = {
+    totp: 'totp',
+    email: 'email',
 }
 
-const getAlertMessage = ({ attemptingToEnableTwoFa, error }) => {
-    if (attemptingToEnableTwoFa) {
-        if (error) {
-            return (
-                error?.message ??
-                i18n.t('Could not enable 2 Factor Authentication')
-            )
-        } else {
-            return i18n.t('Two factor authentication was enabled successfully')
-        }
-    } else {
-        if (error) {
-            return (
-                error?.message ??
-                i18n.t('Could not disable two factor authentication')
-            )
-        } else {
-            return i18n.t('Two factor authentication was disabled successfully')
-        }
-    }
+const twoFactorBackendTypesToAuthTypes = {
+    TOTP_ENABLED: twoFactorAuthTypes.totp,
+    EMAIL_ENABLED: twoFactorAuthTypes.email,
+    totp2faEnabled: twoFactorAuthTypes.totp,
+    email2faEnabled: twoFactorAuthTypes.email,
 }
+export const getAvailableTwoFAType = (BEAvailableTwoFAType) =>
+    BEAvailableTwoFAType
+        ? Object.entries(BEAvailableTwoFAType)
+              .filter(([, value]) => value) // Keep only entries where value is "true"
+              .map(([key]) => getTWOFAType(key))
+              .filter((type) => type !== null)
+        : []
 
-const getAlertOptions = ({ error }) =>
-    error ? { critical: true } : { success: true }
+export const getTWOFAType = (BETwoFAType) =>
+    twoFactorBackendTypesToAuthTypes[BETwoFAType] || null
 
 export default function useTwoFaToggleMutation() {
-    const [isTwoFaEnabled, setIsTwoFaEnabled] = useState(
-        userProfileStore.state.twoFaEnabled
+    const [enabledTwoFAType, setEnabledTwoFAType] = useState(
+        getTWOFAType(userProfileStore.state.twoFactorType)
     )
-    const [
-        lastActionWasTwoFaDisableSuccess,
-        setLastActionWasTwoFaDisableSuccess,
-    ] = useState(false)
-    const { show: showAlert } = useAlert(getAlertMessage, getAlertOptions)
-    const mutationOptions = useMemo(() => {
-        const attemptingToEnableTwoFa = !isTwoFaEnabled
-        return {
-            onComplete: () => {
-                userProfileStore.state.twoFaEnabled = attemptingToEnableTwoFa
-                userProfileStore.setState(userProfileStore.state)
-                setLastActionWasTwoFaDisableSuccess(!attemptingToEnableTwoFa)
-                showAlert({ attemptingToEnableTwoFa })
-            },
-            onError: (error) => {
-                console.error(error)
-                setLastActionWasTwoFaDisableSuccess(false)
-                showAlert({ attemptingToEnableTwoFa, error })
-            },
-        }
-    }, [isTwoFaEnabled, showAlert])
-    const enableDataMutation = useDataMutation(
-        enableMutationDefinition,
-        mutationOptions
+    const [availableTwoFAType, setAvailableTwoFAType] = useState(
+        getAvailableTwoFAType(optionValueStore?.state.twoFactorMethods)
     )
-    const disableDataMutation = useDataMutation(
-        disableMutationDefinition,
-        mutationOptions
-    )
-    const [toggleTwoFa, currentMutation] = isTwoFaEnabled
-        ? disableDataMutation
-        : enableDataMutation
+    const { emailVerified } = userProfileStore.state
+
+    const resetTwoFactorType = (twoFactorType) => {
+        const BETwoFactorBackendType = Object.entries(
+            twoFactorBackendTypesToAuthTypes
+        ).find(([, type]) => type === twoFactorType)?.[0]
+        userProfileStore.state.twoFactorType = enabledTwoFAType
+            ? undefined
+            : BETwoFactorBackendType
+        userProfileStore.setState(userProfileStore.state)
+    }
 
     useEffect(() => {
-        const subscription = userProfileStore.subscribe(({ twoFaEnabled }) => {
-            setIsTwoFaEnabled(twoFaEnabled)
+        const subscription = userProfileStore.subscribe(({ twoFactorType }) => {
+            setEnabledTwoFAType(getTWOFAType(twoFactorType))
         })
         return () => subscription.unsubscribe()
     }, [])
 
+    useEffect(() => {
+        const subscription = optionValueStore.subscribe(
+            ({ twoFactorMethods }) => {
+                setAvailableTwoFAType(getAvailableTwoFAType(twoFactorMethods))
+            }
+        )
+        return () => subscription.unsubscribe()
+    }, [])
+
     return {
-        isTwoFaEnabled,
-        loading: currentMutation.loading || currentMutation.fetching,
-        error: currentMutation.error,
-        toggleTwoFa,
-        lastActionWasTwoFaDisableSuccess,
+        enabledTwoFAType,
+        availableTwoFAType,
+        resetTwoFactorType,
+        emailVerified,
     }
 }
