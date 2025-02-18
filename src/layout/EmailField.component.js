@@ -318,8 +318,6 @@ export function EmailField({
             <TwoFAWarningModal
                 twoFAWarningModalOpen={twoFAWarningModalOpen}
                 setTwoFAWarningModalOpen={setTwoFAWarningModalOpen}
-                userEmailVerified={userEmailVerified}
-                onUpdate={onUpdate}
             />
         </div>
     )
