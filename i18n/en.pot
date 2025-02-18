@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2025-02-17T12:18:36.863Z\n"
-"PO-Revision-Date: 2025-02-17T12:18:36.864Z\n"
+"POT-Creation-Date: 2025-02-18T16:33:28.306Z\n"
+"PO-Revision-Date: 2025-02-18T16:33:28.307Z\n"
 
 msgid "Never"
 msgstr "Never"
@@ -192,17 +192,44 @@ msgstr "Login"
 msgid "Failed to update password"
 msgstr "Failed to update password"
 
+msgid "Authenticator app"
+msgstr "Authenticator app"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Could not enable two factor authentication"
+msgstr "Could not enable two factor authentication"
+
+msgid "Two factor authentication was enabled successfully"
+msgstr "Two factor authentication was enabled successfully"
+
+msgid "Could not disable two factor authentication"
+msgstr "Could not disable two factor authentication"
+
+msgid "Two factor authentication was disabled successfully"
+msgstr "Two factor authentication was disabled successfully"
+
 msgid "Two-factor Authentication"
 msgstr "Two-factor Authentication"
+
+msgid ""
+"Two-factor authentication protects your account with an extra layer of "
+"security. With two-factor authentication turned on, you will need to enter "
+"an authentication code every time you log in."
+msgstr ""
+"Two-factor authentication protects your account with an extra layer of "
+"security. With two-factor authentication turned on, you will need to enter "
+"an authentication code every time you log in."
 
 msgid "Turn off two-factor authentication"
 msgstr "Turn off two-factor authentication"
 
-msgid "Open your authenticator app."
-msgstr "Open your authenticator app."
+msgid "Turn on two-factor authentication"
+msgstr "Turn on two-factor authentication"
 
-msgid "Now, enter the authentication code below and click the \"Turn off\" button."
-msgstr "Now, enter the authentication code below and click the \"Turn off\" button."
+msgid "Two factor authentication type"
+msgstr "Two factor authentication type"
 
 msgid "Remove two-factor account"
 msgstr "Remove two-factor account"
@@ -216,28 +243,27 @@ msgstr ""
 "the account from your authenticator app now to prevent any future issues "
 "re-enabling two-factor authentication."
 
-msgid "Play store"
-msgstr "Play store"
+msgid "Send authentication code to your verified email address: {{emailAddress}}"
+msgstr "Send authentication code to your verified email address: {{emailAddress}}"
 
-msgid "App store"
-msgstr "App store"
-
-msgid "Turn on two-factor authentication"
-msgstr "Turn on two-factor authentication"
+msgid "Authentication code sent"
+msgstr "Authentication code sent"
 
 msgid ""
-"Make sure you have an authenticator app installed on your device. We "
-"recommend Google Authenticator"
+"If you didn't receive the code, check your spam/junk folder. Have you "
+"waited a few minutes and still not received the code?"
 msgstr ""
-"Make sure you have an authenticator app installed on your device. We "
-"recommend Google Authenticator"
+"If you didn't receive the code, check your spam/junk folder. Have you "
+"waited a few minutes and still not received the code?"
 
-msgid ""
-"Now, enter the code from your authenticator app below and click the \"Turn "
-"on\" button."
-msgstr ""
-"Now, enter the code from your authenticator app below and click the \"Turn "
-"on\" button."
+msgid "Send a new code"
+msgstr "Send a new code"
+
+msgid "Send authentication code"
+msgstr "Send authentication code"
+
+msgid "Enter the 6 digit authentication code in the email."
+msgstr "Enter the 6 digit authentication code in the email."
 
 msgid "Already set up two-factor authentication before?"
 msgstr "Already set up two-factor authentication before?"
@@ -252,6 +278,18 @@ msgstr ""
 "again."
 
 msgid ""
+"Your email is not verified. You must verify or your email to enable or "
+"disable two-factor authentication via email. If you have recently verified "
+"your email, you may need to refresh this page."
+msgstr ""
+"Your email is not verified. You must verify or your email to enable or "
+"disable two-factor authentication via email. If you have recently verified "
+"your email, you may need to refresh this page."
+
+msgid "Verify your email here."
+msgstr "Verify your email here."
+
+msgid ""
 "Two-factor authentication protects your account with an extra layer of "
 "security. With two-factor authentication turned on, you will need to enter "
 "an authentication code from your device every time you log in."
@@ -259,6 +297,32 @@ msgstr ""
 "Two-factor authentication protects your account with an extra layer of "
 "security. With two-factor authentication turned on, you will need to enter "
 "an authentication code from your device every time you log in."
+
+msgid "Open your authenticator app."
+msgstr "Open your authenticator app."
+
+msgid "Now, enter the authentication code below and click the \"Turn off\" button."
+msgstr "Now, enter the authentication code below and click the \"Turn off\" button."
+
+msgid "Play store"
+msgstr "Play store"
+
+msgid "App store"
+msgstr "App store"
+
+msgid ""
+"Make sure you have an authenticator app installed on your device. We "
+"recommend Google Authenticator"
+msgstr ""
+"Make sure you have an authenticator app installed on your device. We "
+"recommend Google Authenticator"
+
+msgid ""
+"Now, enter the code from your authenticator app below and click the \"Turn "
+"on\" button."
+msgstr ""
+"Now, enter the code from your authenticator app below and click the \"Turn "
+"on\" button."
 
 msgid "Two-factor authentication is on."
 msgstr "Two-factor authentication is on."
@@ -276,20 +340,11 @@ msgstr ""
 "This code does not look right. Enter the six digit code from your "
 "authentication app."
 
-msgid "Six digit authentication code"
-msgstr "Six digit authentication code"
+msgid "6 digit code"
+msgstr "6 digit code"
 
 msgid "Could not enable 2 Factor Authentication"
 msgstr "Could not enable 2 Factor Authentication"
-
-msgid "Two factor authentication was enabled successfully"
-msgstr "Two factor authentication was enabled successfully"
-
-msgid "Could not disable two factor authentication"
-msgstr "Could not disable two factor authentication"
-
-msgid "Two factor authentication was disabled successfully"
-msgstr "Two factor authentication was disabled successfully"
 
 msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
 msgstr "Please choose a profile avatar less than {{- maxSize}}MB in size."
@@ -368,9 +423,6 @@ msgstr "Confirm new email"
 
 msgid "Save"
 msgstr "Save"
-
-msgid "Email"
-msgstr "Email"
 
 msgid "There is no email to remove"
 msgstr "There is no email to remove"

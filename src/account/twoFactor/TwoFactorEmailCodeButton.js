@@ -13,6 +13,7 @@ const TwoFactorEmailCodeButton = ({ onClick, error, loading, success }) => {
                 'Send authentication code to your verified email address: {{emailAddress}}',
                 {
                     emailAddress: emailAddress,
+                    nsSeparator: '-:-',
                 }
             )}
             {success ? (
