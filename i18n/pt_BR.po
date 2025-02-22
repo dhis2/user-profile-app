@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2025-02-05T15:02:02.227Z\n"
+"POT-Creation-Date: 2025-02-18T16:33:28.306Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
 "Last-Translator: Philip Larsen Donnelly, 2025\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/hisp-uio/teams/100509/pt_BR/)\n"
@@ -199,20 +199,41 @@ msgstr "Entrar"
 msgid "Failed to update password"
 msgstr "Falha na alteração da senha"
 
+msgid "Authenticator app"
+msgstr ""
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Could not enable two factor authentication"
+msgstr ""
+
+msgid "Two factor authentication was enabled successfully"
+msgstr "A autenticação de dois fatores foi ativada com êxito"
+
+msgid "Could not disable two factor authentication"
+msgstr "Não foi possível desativar a autenticação de dois fatores"
+
+msgid "Two factor authentication was disabled successfully"
+msgstr "A autenticação de dois fatores foi desativada com sucesso"
+
 msgid "Two-factor Authentication"
 msgstr "Autenticação de dois fatores"
+
+msgid ""
+"Two-factor authentication protects your account with an extra layer of "
+"security. With two-factor authentication turned on, you will need to enter "
+"an authentication code every time you log in."
+msgstr ""
 
 msgid "Turn off two-factor authentication"
 msgstr "Desativar a autenticação de dois fatores"
 
-msgid "Open your authenticator app."
-msgstr "Abra o aplicativo autenticador."
+msgid "Turn on two-factor authentication"
+msgstr "Ativar a autenticação de dois fatores"
 
-msgid ""
-"Now, enter the authentication code below and click the \"Turn off\" button."
+msgid "Two factor authentication type"
 msgstr ""
-"Agora, digite o código de autenticação abaixo e clique no botão "
-"\"Desativar\"."
 
 msgid "Remove two-factor account"
 msgstr "Remover a conta de dois fatores"
@@ -226,28 +247,26 @@ msgstr ""
 " conta do aplicativo autenticador agora para evitar problemas futuros ao "
 "reativar a autenticação de dois fatores."
 
-msgid "Play store"
-msgstr "Loja de aplicativos"
+msgid ""
+"Send authentication code to your verified email address: {{emailAddress}}"
+msgstr ""
 
-msgid "App store"
-msgstr "Loja de aplicativos"
-
-msgid "Turn on two-factor authentication"
-msgstr "Ativar a autenticação de dois fatores"
+msgid "Authentication code sent"
+msgstr ""
 
 msgid ""
-"Make sure you have an authenticator app installed on your device. We "
-"recommend Google Authenticator"
+"If you didn't receive the code, check your spam/junk folder. Have you waited"
+" a few minutes and still not received the code?"
 msgstr ""
-"Certifique-se de ter um aplicativo autenticador instalado em seu "
-"dispositivo. Recomendamos o Google Authenticator"
 
-msgid ""
-"Now, enter the code from your authenticator app below and click the \"Turn "
-"on\" button."
+msgid "Send a new code"
 msgstr ""
-"Agora, digite o código do seu aplicativo autenticador abaixo e clique no "
-"botão \"Ativar\"."
+
+msgid "Send authentication code"
+msgstr ""
+
+msgid "Enter the 6 digit authentication code in the email."
+msgstr ""
 
 msgid "Already set up two-factor authentication before?"
 msgstr "Já configurou a autenticação de dois fatores antes?"
@@ -262,6 +281,15 @@ msgstr ""
 "antes de configurá-la novamente."
 
 msgid ""
+"Your email is not verified. You must verify or your email to enable or "
+"disable two-factor authentication via email. If you have recently verified "
+"your email, you may need to refresh this page."
+msgstr ""
+
+msgid "Verify your email here."
+msgstr ""
+
+msgid ""
 "Two-factor authentication protects your account with an extra layer of "
 "security. With two-factor authentication turned on, you will need to enter "
 "an authentication code from your device every time you log in."
@@ -269,6 +297,35 @@ msgstr ""
 "A autenticação de dois fatores protege sua conta com uma camada extra de "
 "segurança. Com a autenticação de dois fatores ativada, você precisará "
 "inserir um código de autenticação do seu dispositivo sempre que fizer login."
+
+msgid "Open your authenticator app."
+msgstr "Abra o aplicativo autenticador."
+
+msgid ""
+"Now, enter the authentication code below and click the \"Turn off\" button."
+msgstr ""
+"Agora, digite o código de autenticação abaixo e clique no botão "
+"\"Desativar\"."
+
+msgid "Play store"
+msgstr "Loja de aplicativos"
+
+msgid "App store"
+msgstr "Loja de aplicativos"
+
+msgid ""
+"Make sure you have an authenticator app installed on your device. We "
+"recommend Google Authenticator"
+msgstr ""
+"Certifique-se de ter um aplicativo autenticador instalado em seu "
+"dispositivo. Recomendamos o Google Authenticator"
+
+msgid ""
+"Now, enter the code from your authenticator app below and click the \"Turn "
+"on\" button."
+msgstr ""
+"Agora, digite o código do seu aplicativo autenticador abaixo e clique no "
+"botão \"Ativar\"."
 
 msgid "Two-factor authentication is on."
 msgstr "A autenticação de dois fatores está ativada."
@@ -286,20 +343,11 @@ msgstr ""
 "Este código não parece estar correto. Digite o código de seis dígitos do seu"
 " aplicativo de autenticação."
 
-msgid "Six digit authentication code"
-msgstr "Código de autenticação de seis dígitos"
+msgid "6 digit code"
+msgstr ""
 
 msgid "Could not enable 2 Factor Authentication"
 msgstr "Não foi possível ativar a autenticação de 2 fatores"
-
-msgid "Two factor authentication was enabled successfully"
-msgstr "A autenticação de dois fatores foi ativada com êxito"
-
-msgid "Could not disable two factor authentication"
-msgstr "Não foi possível desativar a autenticação de dois fatores"
-
-msgid "Two factor authentication was disabled successfully"
-msgstr "A autenticação de dois fatores foi desativada com sucesso"
 
 msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
 msgstr ""
@@ -328,6 +376,24 @@ msgstr ""
 msgid "Emails must match"
 msgstr ""
 
+msgid "Email update not allowed"
+msgstr ""
+
+msgid "Your email is currently used for two factor authentication"
+msgstr ""
+
+msgid ""
+"To update your email, you must first disable two factor authentication by "
+"email. After this has been disabled, you can change your email and then set "
+"up two factor authentication again."
+msgstr ""
+
+msgid "Disable two factor authentication here"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Cancelar"
+
 msgid "Remove email"
 msgstr ""
 
@@ -336,9 +402,6 @@ msgstr ""
 
 msgid "Are you sure you want to remove your email?"
 msgstr ""
-
-msgid "Cancel"
-msgstr "Cancelar"
 
 msgid "Change email"
 msgstr ""
@@ -360,9 +423,6 @@ msgstr ""
 
 msgid "Save"
 msgstr "Salvar"
-
-msgid "Email"
-msgstr "E-mail"
 
 msgid "There is no email to remove"
 msgstr ""
@@ -431,6 +491,9 @@ msgid "Email verification link sent successfully!"
 msgstr ""
 
 msgid "Failed to send email verification link."
+msgstr ""
+
+msgid "Email already verified"
 msgstr ""
 
 msgid "Verify email"
