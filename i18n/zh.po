@@ -200,13 +200,13 @@ msgid "Failed to update password"
 msgstr "密码更新失败"
 
 msgid "Authenticator app"
-msgstr ""
+msgstr "身份验证程序"
 
 msgid "Email"
 msgstr "邮件"
 
 msgid "Could not enable two factor authentication"
-msgstr ""
+msgstr "无法启用双因素身份验证"
 
 msgid "Two factor authentication was enabled successfully"
 msgstr "双重身份验证已成功启用"
@@ -224,7 +224,7 @@ msgid ""
 "Two-factor authentication protects your account with an extra layer of "
 "security. With two-factor authentication turned on, you will need to enter "
 "an authentication code every time you log in."
-msgstr ""
+msgstr "双因素身份验证为您的账户提供额外的安全保护。开启双因素身份验证后，您每次登录时都需要输入验证码。"
 
 msgid "Turn off two-factor authentication"
 msgstr "关闭双因素身份验证"
@@ -233,7 +233,7 @@ msgid "Turn on two-factor authentication"
 msgstr "启用双因素身份验证"
 
 msgid "Two factor authentication type"
-msgstr ""
+msgstr "双因素认证类型"
 
 msgid "Remove two-factor account"
 msgstr "删除双因素帐户"
@@ -246,24 +246,24 @@ msgstr "双因素身份验证现已关闭。建议现在就从身份验证程序
 
 msgid ""
 "Send authentication code to your verified email address: {{emailAddress}}"
-msgstr ""
+msgstr "将验证码发送到您已验证的电子邮件地址：{{emailAddress}}"
 
 msgid "Authentication code sent"
-msgstr ""
+msgstr "发送验证码"
 
 msgid ""
 "If you didn't receive the code, check your spam/junk folder. Have you waited"
 " a few minutes and still not received the code?"
-msgstr ""
+msgstr "如果您没有收到验证码，请检查您的垃圾邮件文件夹。您是否等了几分钟仍未收到验证码？"
 
 msgid "Send a new code"
-msgstr ""
+msgstr "发送新代码"
 
 msgid "Send authentication code"
-msgstr ""
+msgstr "发送验证码"
 
 msgid "Enter the 6 digit authentication code in the email."
-msgstr ""
+msgstr "输入电子邮件中的 6 位验证码。"
 
 msgid "Already set up two-factor authentication before?"
 msgstr "之前已经设置了双因素身份验证？"
@@ -278,10 +278,10 @@ msgid ""
 "Your email is not verified. You must verify or your email to enable or "
 "disable two-factor authentication via email. If you have recently verified "
 "your email, you may need to refresh this page."
-msgstr ""
+msgstr "您的电子邮件未经验证。要启用或禁用电子邮件双因素身份验证，您必须验证您的电子邮件。如果您最近验证过电子邮件，可能需要刷新此页面。"
 
 msgid "Verify your email here."
-msgstr ""
+msgstr "在此验证您的电子邮件。"
 
 msgid ""
 "Two-factor authentication protects your account with an extra layer of "
@@ -327,7 +327,7 @@ msgid ""
 msgstr "这段代码看起来不对。输入来自您的身份验证应用程序的六位数代码。"
 
 msgid "6 digit code"
-msgstr ""
+msgstr "6 位数字代码"
 
 msgid "Could not enable 2 Factor Authentication"
 msgstr "无法启用 2 因素身份验证"
@@ -360,19 +360,19 @@ msgid "Emails must match"
 msgstr "电子邮件必须匹配"
 
 msgid "Email update not allowed"
-msgstr ""
+msgstr "不允许电子邮件更新"
 
 msgid "Your email is currently used for two factor authentication"
-msgstr ""
+msgstr "您的电子邮件目前用于双因素身份验证"
 
 msgid ""
 "To update your email, you must first disable two factor authentication by "
 "email. After this has been disabled, you can change your email and then set "
 "up two factor authentication again."
-msgstr ""
+msgstr "要更新电子邮件，必须先禁用电子邮件双因素身份验证。禁用后，您可以更改电子邮件，然后重新设置双因素身份验证。"
 
 msgid "Disable two factor authentication here"
-msgstr ""
+msgstr "在此禁用双因素身份验证"
 
 msgid "Cancel"
 msgstr "取消"
@@ -477,7 +477,7 @@ msgid "Failed to send email verification link."
 msgstr "发送电子邮件验证链接失败。"
 
 msgid "Email already verified"
-msgstr ""
+msgstr "电子邮件已验证"
 
 msgid "Verify email"
 msgstr "验证电子邮件"
