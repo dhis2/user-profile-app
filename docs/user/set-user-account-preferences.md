@@ -1,10 +1,8 @@
 # Set user account preferences { #user_account_preferences }
 
-In **Edit user profile**, you can add personal information to your profile
-such as your email address, mobile phone number, date of birth, profile
-picture and more. When you send messages, the person receiving the message can see these
-profile details. You can also provide account names for various direct
-messaging services, which will be used by the system.
+In **Edit user profile**, you can update personal information like your email address, mobile number, date of birth, profile picture, and more. These details are visible to others when you send messages. You can also provide account names for direct messaging services used by the system. If your email address is set and the system is configured to send emails, a Verify Email button will appear next to your email address.
+
+If your email is not verified, a warning will prompt you to verify it. Clicking the Verify Email button will initiate the verification process by sending a confirmation email with a verification link. Once you click the link in the email, your email address will be marked as verified, allowing you to access certain features and ensuring you can receive important system notifications. If your email remains unverified, a message will notify you that you need to verify your email before performing certain actions, such as receiving system updates or using specific functionalities that require a verified email.
 
 In **Edit user settings**, you can change the display language of DHIS2 and
 the language of the database. The database language is the translated
@@ -29,15 +27,14 @@ newly generated personal access tokens are only visible right after generating.
 
 In the **About DHIS2** section, you find a list of details about the DHIS2 instance.
 
-
 ## Setting up Two-Factor Authentication (2FA)
 
 ### What is 2FA?
 
 Two-Factor Authentication (2FA) is an extra layer of security for your DHIS2 account. When 2FA is enabled, you’ll need to provide a second verification method (in addition to your password) to access your account. The available methods for 2FA are:
 
-- **OTP (One-Time Password)**: Typically, this is configured via an app such as Google Authenticator or Authy.
-- **Email-based verification**: A code will be sent to your email address, which you will need to enter to complete the login process.
+-   **OTP (One-Time Password)**: Typically, this is configured via an app such as Google Authenticator or Authy.
+-   **Email-based verification**: A code will be sent to your email address, which you will need to enter to complete the login process.
 
 > **Note**: 2FA is highly recommended for added account security.
 
@@ -57,8 +54,8 @@ To enable or disable 2FA on your account, follow these steps:
 
 Depending on your DHIS2 instance’s configuration, you may have one or both of the following 2FA options available:
 
-- **OTP (One-Time Password)**: This option allows you to authenticate via an authenticator app like Google Authenticator or Authy.
-- **Email-based 2FA**: This option sends a code to your email address, which you need to enter to complete the login process.
+-   **OTP (One-Time Password)**: This option allows you to authenticate via an authenticator app like Google Authenticator or Authy.
+-   **Email-based 2FA**: This option sends a code to your email address, which you need to enter to complete the login process.
 
 The system will display the available 2FA options based on what has been configured by your administrator.
 
@@ -70,9 +67,9 @@ The system will display the available 2FA options based on what has been configu
 
 If you have not set up 2FA yet, you will be presented with the following flow:
 
-- **Radio Button Selection**: You’ll see a radio button selector to choose between OTP or email-based 2FA. This option will depend on the system configuration.
-   - If both options are enabled, you must select one method to configure.
-   - If only one method is available, you will be guided through the relevant setup workflow.
+-   **Radio Button Selection**: You’ll see a radio button selector to choose between OTP or email-based 2FA. This option will depend on the system configuration.
+    -   If both options are enabled, you must select one method to configure.
+    -   If only one method is available, you will be guided through the relevant setup workflow.
 
 ---
 
@@ -89,8 +86,9 @@ If you have not set up 2FA yet, you will be presented with the following flow:
 If you choose to set up **email-based 2FA**, the following steps will apply:
 
 1. **Email Verification**: If your email has not been verified yet, you will receive a warning informing you that you must first verify your email address before enabling email-based 2FA.
-   - You will be provided with a link to the **Edit User Profile** page, where you can verify your email.
-   - Once your email is verified, you can proceed with enabling email-based 2FA.
+
+    - You will be provided with a link to the **Edit User Profile** page, where you can verify your email.
+    - Once your email is verified, you can proceed with enabling email-based 2FA.
 
 2. **Enter the Code**: After verifying your email, a code will be sent to your email address. Enter the code into the provided field on the 2FA settings page to complete the setup.
 
@@ -107,18 +105,13 @@ If you have already enabled 2FA, the system will show the current method that is
 If you wish to disable 2FA, follow these steps:
 
 1. **Disabling OTP 2FA**: The process to disable OTP-based 2FA is the same as enabling it. You’ll need to provide a verification code or follow a confirmation step.
-   
 2. **Disabling Email-based 2FA**: Disabling email-based 2FA is similar to the setup process. You’ll receive a code in your email, which you’ll need to enter to disable 2FA.
-
-
 
 > **Important Notes**
 >
-> - **Single 2FA Configuration at a Time**: You can only have one method of 2FA enabled at a time (either OTP or email). If both methods are available, you will be required to choose one to configure and use.
+> -   **Single 2FA Configuration at a Time**: You can only have one method of 2FA enabled at a time (either OTP or email). If both methods are available, you will be required to choose one to configure and use.
 >
-> - **Email Verification Required for Email-based 2FA**: Before enabling email-based 2FA, make sure your email address is verified. You won’t be able to set up email-based 2FA until this step is completed.
-
-
+> -   **Email Verification Required for Email-based 2FA**: Before enabling email-based 2FA, make sure your email address is verified. You won’t be able to set up email-based 2FA until this step is completed.
 
 For detailed information on the 2FA setup for your system, refer to the system settings section or contact your DHIS2 administrator.
 
