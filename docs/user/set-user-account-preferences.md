@@ -11,9 +11,7 @@ also choose a display style, and enable or disable SMS and email
 notifications. If you wish to, you can choose to display a short name,
 such as "Joe" in the analysis modules, rather than your full name.
 
-In **Edit account settings**, you can reset your password and setup 2-Factor
-authentication. Setting up 2-Factor authentication will require you to
-download the Google Authenticator app on you mobile device.
+In **Edit account settings**, you can reset your password and set up 2-Factor Authentication (2FA). Depending on your system configuration, you can choose between methods like TOTP or email-based verification to complete the setup.
 
 In the **View full profile** section, you find a summary of your profile details.
 This section includes a few fields that you cannot edit yourself,
