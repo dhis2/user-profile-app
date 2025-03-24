@@ -1,17 +1,17 @@
 # 
 # Translators:
-# Viktor Varland <viktor@dhis2.org>, 2021
-# Philip Larsen Donnelly, 2021
 # Thuy Nguyen <thuynguyen@hispvietnam.org>, 2022
 # Namwan Chanthavisouk, 2024
 # Saysamone Sibounma, 2024
+# Viktor Varland <viktor@dhis2.org>, 2025
+# Philip Larsen Donnelly, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
+"POT-Creation-Date: 2025-02-18T16:33:28.306Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Saysamone Sibounma, 2024\n"
+"Last-Translator: Philip Larsen Donnelly, 2025\n"
 "Language-Team: Lao (https://app.transifex.com/hisp-uio/teams/100509/lo/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -167,11 +167,10 @@ msgid "New password"
 msgstr "ລະຫັດໃໝ່"
 
 msgid ""
-"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
-"letter and 1 special character"
+"Password should be between {{minPasswordLength}} and {{maxPasswordLength}} "
+"characters long, with at least one lowercase character, one uppercase "
+"character, one number, and one special character."
 msgstr ""
-"ລະຫັດຜ່ານຄວນມີຄວາມຍາວຢ່າງໜ້ອຍ 8 ຕົວອັກສອນທີ່ມີຢ່າງໜ້ອຍ 1 ຕົວເລກ, 1 "
-"ຕົວພິມໃຫຍ່ ແລະ 1 ສັນຍາລັກພິເສດ"
 
 msgid "Repeat new password"
 msgstr "ຢືນຢັນລະຫັດໃໝ່ອີກຄັ້ງ"
@@ -201,18 +200,41 @@ msgstr "ເຂົ້າສູ່ລະບົບ"
 msgid "Failed to update password"
 msgstr "ອັບເດດລະຫັດຜ່ານຫຼົ້ມເຫຼວ"
 
+msgid "Authenticator app"
+msgstr ""
+
+msgid "Email"
+msgstr "ອີເມວ"
+
+msgid "Could not enable two factor authentication"
+msgstr ""
+
+msgid "Two factor authentication was enabled successfully"
+msgstr "ເປິດໃຊ້ງານການກວດສອບຄວາມຖືກຕ້ອງແບບ 2 ຂັ້ນສຳເລັດແລ້ວ"
+
+msgid "Could not disable two factor authentication"
+msgstr "ບໍ່ສາມາດປິດໃຊ້ງານການກວດສອບຄວາມຖຶກຕ້ອງແບບ 2 ຂັ້ນໄດ້"
+
+msgid "Two factor authentication was disabled successfully"
+msgstr "ປິດໃຊ້ງານການກວດສອບຄວາມຖຶກຕ້ອງແບບ 2 ຂັ້ນສຳເລັດແລ້ວ"
+
 msgid "Two-factor Authentication"
 msgstr "ກວດສອບຄວາມຖືກຕ້ອງແບບ 2 ຂັ້ນ"
+
+msgid ""
+"Two-factor authentication protects your account with an extra layer of "
+"security. With two-factor authentication turned on, you will need to enter "
+"an authentication code every time you log in."
+msgstr ""
 
 msgid "Turn off two-factor authentication"
 msgstr "ປິດໃຊ້ງານການກວດສອບຄວາມຖືກຕ້ອງແບບ 2 ຂັ້ນ"
 
-msgid "Open your authenticator app."
-msgstr "ເປິດແອ໋ບກວດສອບຄວາມຖືກຕ້ອງຂອງທ່ານ"
+msgid "Turn on two-factor authentication"
+msgstr "ເປິດໃຊ້ງານການກວດສອບຄວາມຖືກຕ້ອງແບບ 2 ຂັ້ນ"
 
-msgid ""
-"Now, enter the authentication code below and click the \"Turn off\" button."
-msgstr "ຕອນນີ້ໃຫ້ປ້ອນລະຫັດຢືນຢັນດ້ານລຸ່ມ ແລະ ກົດໃສ່ປຸ່ມ \"ປິດ\""
+msgid "Two factor authentication type"
+msgstr ""
 
 msgid "Remove two-factor account"
 msgstr "ລົບບັນຊີກວດສອບຄວາມຖືກຕ້ອງແບບ 2 ຂັ້ນ"
@@ -226,26 +248,26 @@ msgstr ""
 "ຂໍແນະນຳໃຫ້ລົບບັນຊີອອກຈາກແອ໋ບກວດສອບຄວາມຖຶກຕ້ອງທັນທີເພື່ອປ້ອງກັນບັນຫາທີ່ຈະເກີດຂື້ນຈາກການເປິດໃຊ້ງານການກວດສອບແບບ"
 " 2 ຂັ້ນຕອນອີກຄັ້ງ"
 
-msgid "Play store"
-msgstr "Play store"
-
-msgid "App store"
-msgstr "ຮ້ານຄ້າແອ໋ບ"
-
-msgid "Turn on two-factor authentication"
-msgstr "ເປິດໃຊ້ງານການກວດສອບຄວາມຖືກຕ້ອງແບບ 2 ຂັ້ນ"
-
 msgid ""
-"Make sure you have an authenticator app installed on your device. We "
-"recommend Google Authenticator"
+"Send authentication code to your verified email address: {{emailAddress}}"
 msgstr ""
-"ກວດສອບໃຫ້ແນ່ໃຈວ່າທ່ານໄດ້ຕິດຕັ້ງແອ໋ບໃນອຸປະກອນຂອງທ່ານແລ້ວ ເຮົາຂໍແນະນຳ "
-"ຕົວກວດສອບຄວາມຖືກຕ້ອງຂອງ google"
+
+msgid "Authentication code sent"
+msgstr ""
 
 msgid ""
-"Now, enter the code from your authenticator app below and click the \"Turn "
-"on\" button."
-msgstr "ຕອນນີ້ໃຫ້ປ້ອນລະຫັດຢືນຢັນດ້ານລຸ່ມ ແລະ ກົດໃສ່ປຸ່ມ \"ເປິດ\""
+"If you didn't receive the code, check your spam/junk folder. Have you waited"
+" a few minutes and still not received the code?"
+msgstr ""
+
+msgid "Send a new code"
+msgstr ""
+
+msgid "Send authentication code"
+msgstr ""
+
+msgid "Enter the 6 digit authentication code in the email."
+msgstr ""
 
 msgid "Already set up two-factor authentication before?"
 msgstr "ເຄີຍຕັ້ງຄ່າການຢືນຢັນຕົວຕົນແບບ 2 ຂັ້ນຕອນມາກ່ອນແລ້ວຫຼືບໍ?"
@@ -260,6 +282,15 @@ msgstr ""
 "ກວດສອບຄວາມຖຶກຕ້ອງຂອງທ່ານກ່ອນທີ່ຈະຕັ້ງຄ່າມັນອີກເທື່ອຫນຶ່ງ."
 
 msgid ""
+"Your email is not verified. You must verify or your email to enable or "
+"disable two-factor authentication via email. If you have recently verified "
+"your email, you may need to refresh this page."
+msgstr ""
+
+msgid "Verify your email here."
+msgstr ""
+
+msgid ""
 "Two-factor authentication protects your account with an extra layer of "
 "security. With two-factor authentication turned on, you will need to enter "
 "an authentication code from your device every time you log in."
@@ -267,6 +298,31 @@ msgstr ""
 "ການຢືນຢັນຕົວຕົນແບບສອງຂັ້ນຕອນຈະປົກປ້ອງບັນຊີຂອງທ່ານ ດ້ວຍຂັ້ນຄວາມປອດໄພພິເສດ. "
 "ເມື່ອເປິດໃຊ້ງານການຢືນຢັນຕົວຕົນແບບສອງຂັ້ນຕອນ "
 "ທ່ານຈະຕ້ອງປ້ອນລະຫັດຢືນຢັນຕົວຕົນຈາກອຸປະກອນຂອງທ່ານທຸກຄັ້ງເມື່ອທ່ານເຂົ້າສູ່ລະບົບ"
+
+msgid "Open your authenticator app."
+msgstr "ເປິດແອ໋ບກວດສອບຄວາມຖືກຕ້ອງຂອງທ່ານ"
+
+msgid ""
+"Now, enter the authentication code below and click the \"Turn off\" button."
+msgstr "ຕອນນີ້ໃຫ້ປ້ອນລະຫັດຢືນຢັນດ້ານລຸ່ມ ແລະ ກົດໃສ່ປຸ່ມ \"ປິດ\""
+
+msgid "Play store"
+msgstr "Play store"
+
+msgid "App store"
+msgstr "ຮ້ານຄ້າແອ໋ບ"
+
+msgid ""
+"Make sure you have an authenticator app installed on your device. We "
+"recommend Google Authenticator"
+msgstr ""
+"ກວດສອບໃຫ້ແນ່ໃຈວ່າທ່ານໄດ້ຕິດຕັ້ງແອ໋ບໃນອຸປະກອນຂອງທ່ານແລ້ວ ເຮົາຂໍແນະນຳ "
+"ຕົວກວດສອບຄວາມຖືກຕ້ອງຂອງ google"
+
+msgid ""
+"Now, enter the code from your authenticator app below and click the \"Turn "
+"on\" button."
+msgstr "ຕອນນີ້ໃຫ້ປ້ອນລະຫັດຢືນຢັນດ້ານລຸ່ມ ແລະ ກົດໃສ່ປຸ່ມ \"ເປິດ\""
 
 msgid "Two-factor authentication is on."
 msgstr "ກວດສອບຄວາມຖືກຕ້ອງແບບ 2 ຂັ້ນເປີດຢູ່"
@@ -282,20 +338,14 @@ msgid ""
 "authentication app."
 msgstr "ລະຫັດນີ້ບໍ່ຖືກຕ້ອງ. ໃສ່ລະຫັດຫົກຕົວເລກຈາກແອັບຢືນຢັນຕົວຕົນຂອງທ່ານ."
 
-msgid "Six digit authentication code"
-msgstr "ລະຫັດຢືນຢັນຕົວຕົນ 6 ຕົວ"
+msgid "6 digit code"
+msgstr ""
 
 msgid "Could not enable 2 Factor Authentication"
 msgstr "ບໍ່ສາມາດເປິດໃຊ້ການການກວດສອບຄວາມຖືກຕ້ອງແບບ 2 ຂັ້ນໄດ້"
 
-msgid "Two factor authentication was enabled successfully"
-msgstr "ເປິດໃຊ້ງານການກວດສອບຄວາມຖືກຕ້ອງແບບ 2 ຂັ້ນສຳເລັດແລ້ວ"
-
-msgid "Could not disable two factor authentication"
-msgstr "ບໍ່ສາມາດປິດໃຊ້ງານການກວດສອບຄວາມຖຶກຕ້ອງແບບ 2 ຂັ້ນໄດ້"
-
-msgid "Two factor authentication was disabled successfully"
-msgstr "ປິດໃຊ້ງານການກວດສອບຄວາມຖຶກຕ້ອງແບບ 2 ຂັ້ນສຳເລັດແລ້ວ"
+msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
+msgstr ""
 
 msgid "Failed to upload profile picture"
 msgstr "ບໍ່ສາມາດອັບໂຫຼດຮູບໂປຣຟາຍໄດ້"
@@ -311,6 +361,66 @@ msgstr "ເລືອກຮູບໂປຣຟາຍ"
 
 msgid "Remove profile picture"
 msgstr "ລົບຮູບໂປຣຟາຍ"
+
+msgid "No email provided"
+msgstr ""
+
+msgid "Email is invalid"
+msgstr ""
+
+msgid "Emails must match"
+msgstr ""
+
+msgid "Email update not allowed"
+msgstr ""
+
+msgid "Your email is currently used for two factor authentication"
+msgstr ""
+
+msgid ""
+"To update your email, you must first disable two factor authentication by "
+"email. After this has been disabled, you can change your email and then set "
+"up two factor authentication again."
+msgstr ""
+
+msgid "Disable two factor authentication here"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Cancel"
+
+msgid "Remove email"
+msgstr ""
+
+msgid "Your email is currently verified"
+msgstr ""
+
+msgid "Are you sure you want to remove your email?"
+msgstr ""
+
+msgid "Change email"
+msgstr ""
+
+msgid "If you change your email, you may need to reverify your email."
+msgstr ""
+
+msgid "Current email"
+msgstr ""
+
+msgid "no current email"
+msgstr ""
+
+msgid "Enter new email"
+msgstr ""
+
+msgid "Confirm new email"
+msgstr ""
+
+msgid "Save"
+msgstr "ບັນທຶກ"
+
+msgid "There is no email to remove"
+msgstr ""
 
 msgid "This field is required"
 msgstr "This field is required"
@@ -371,6 +481,26 @@ msgstr "ໂທເຄັນການເຂົ້າເຖີງສ່ວນບຸ
 
 msgid "About DHIS2"
 msgstr "ກ່ຽວກັບ DHIS2"
+
+msgid "Email verification link sent successfully!"
+msgstr ""
+
+msgid "Failed to send email verification link."
+msgstr ""
+
+msgid "Email already verified"
+msgstr ""
+
+msgid "Verify email"
+msgstr ""
+
+msgid ""
+"Your email is not verified. Please verify your email to continue using the "
+"system."
+msgstr ""
+
+msgid "Please provide an email and verify it to continue using the system."
+msgstr ""
 
 msgid "Manage personal access tokens"
 msgstr "ຈັດການ tokens ການເຂົ້າເຖີງສ່ວນບຸກຄົນ"
@@ -511,9 +641,6 @@ msgstr ""
 
 msgid "Token details"
 msgstr "ລາຍລະອຽດ Token"
-
-msgid "Cancel"
-msgstr "Cancel"
 
 msgid ""
 "Important: IP address validation relies on the X-Forwarded-For header, which"

@@ -8,6 +8,7 @@ import AboutPage from './aboutPage/AboutPage.component.jsx'
 import Account from './account/Account.component.jsx'
 import PasswordChangeSuccessDialog from './account/PasswordChangeSuccessDialog.jsx'
 import TwoFactor from './account/twoFactor/TwoFactor.jsx'
+import TwoFactor41AndLower from './account/twoFactor/TwoFactor41AndLower.jsx'
 import Sidebar from './layout/Sidebar.component.jsx'
 import Snackbar from './layout/Snackbar.component.jsx'
 import AppTheme from './layout/theme.js'
@@ -19,23 +20,32 @@ import ViewProfile from './viewProfile/ViewProfile.component.jsx'
 function WrappedApp(props) {
     return (
         <div className="content-wrap">
-            <Sidebar currentSection={props.routes[1].path} />
+            <Sidebar
+                currentSection={props.routes[1].path}
+                twoFactorAuthByType={props.twoFactorMethods}
+            />
             {props.children}
         </div>
     )
 }
+
 WrappedApp.propTypes = {
     children: PropTypes.any.isRequired,
     routes: PropTypes.array.isRequired,
+    twoFactorMethods: PropTypes.bool.isRequired,
 }
 
 class AppRouter extends Component {
+    get minorVersion() {
+        return this.props?.d2?.system?.version?.minor || 'Unknown'
+    }
+
     getChildContext() {
         return {
             d2: this.props.d2,
             muiTheme: AppTheme,
             featureToggle: {
-                emailFieldAsModal: this.props?.d2?.system?.version?.minor > 41,
+                emailFieldAsModal: this.minorVersion > 41,
             },
         }
     }
@@ -72,14 +82,32 @@ class AppRouter extends Component {
                     <div className="app-wrapper">
                         <Snackbar />
                         <Router history={hashHistory}>
-                            <Route component={WrappedApp}>
+                            <Route
+                                getComponent={(location, callback) =>
+                                    callback(null, (props) => (
+                                        <WrappedApp
+                                            {...props}
+                                            twoFactorMethods={
+                                                this.minorVersion > 41
+                                            }
+                                        />
+                                    ))
+                                }
+                            >
                                 <Route
                                     path="settings"
                                     component={UserSettings}
                                 />
                                 <Route path="profile" component={Profile} />
                                 <Route path="account" component={Account} />
-                                <Route path="twoFactor" component={TwoFactor} />
+                                <Route
+                                    path="twoFactor"
+                                    component={
+                                        this.minorVersion > 41
+                                            ? TwoFactor
+                                            : TwoFactor41AndLower
+                                    }
+                                />
                                 <Route
                                     path="passwordChanged"
                                     component={PasswordChangeSuccessDialog}

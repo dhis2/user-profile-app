@@ -1,21 +1,21 @@
 # 
 # Translators:
-# Viktor Varland <viktor@dhis2.org>, 2021
 # Karoline Tufte Lien <karoline@dhis2.org>, 2021
 # Yayra Gomado <ygomado@hispwca.org>, 2021
 # Edem Kossi <ekossi@hispwca.org>, 2021
 # Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2021
-# Yao Selom SAKA (HISP WCA) <ysaka@hispwca.org>, 2022
 # tx_e2f_fr r25 <tx_e2f_fr_r25@ate2f.com>, 2023
 # Philip Larsen Donnelly, 2024
 # Elise Desailly, 2024
+# Viktor Varland <viktor@dhis2.org>, 2025
+# Yao Selom SAKA (HISP WCA) <ysaka@hispwca.org>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
+"POT-Creation-Date: 2025-02-18T16:33:28.306Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Elise Desailly, 2024\n"
+"Last-Translator: Yao Selom SAKA (HISP WCA) <ysaka@hispwca.org>, 2025\n"
 "Language-Team: French (https://app.transifex.com/hisp-uio/teams/100509/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -175,11 +175,10 @@ msgid "New password"
 msgstr "Nouveau mot de passe"
 
 msgid ""
-"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
-"letter and 1 special character"
+"Password should be between {{minPasswordLength}} and {{maxPasswordLength}} "
+"characters long, with at least one lowercase character, one uppercase "
+"character, one number, and one special character."
 msgstr ""
-"Le mot de passe devrait contenir au moins 8 caractères dont au moins un "
-"chiffre et une lettre majuscule"
 
 msgid "Repeat new password"
 msgstr "Répéter le mot de passe"
@@ -211,17 +210,40 @@ msgstr "Connexion"
 msgid "Failed to update password"
 msgstr "Impossible de mettre à jour le mot de passe"
 
+msgid "Authenticator app"
+msgstr ""
+
+msgid "Email"
+msgstr "Adresse e-mail"
+
+msgid "Could not enable two factor authentication"
+msgstr ""
+
+msgid "Two factor authentication was enabled successfully"
+msgstr ""
+
+msgid "Could not disable two factor authentication"
+msgstr ""
+
+msgid "Two factor authentication was disabled successfully"
+msgstr ""
+
 msgid "Two-factor Authentication"
+msgstr ""
+
+msgid ""
+"Two-factor authentication protects your account with an extra layer of "
+"security. With two-factor authentication turned on, you will need to enter "
+"an authentication code every time you log in."
 msgstr ""
 
 msgid "Turn off two-factor authentication"
 msgstr ""
 
-msgid "Open your authenticator app."
-msgstr ""
+msgid "Turn on two-factor authentication"
+msgstr "Activer l'authentification à deux facteurs"
 
-msgid ""
-"Now, enter the authentication code below and click the \"Turn off\" button."
+msgid "Two factor authentication type"
 msgstr ""
 
 msgid "Remove two-factor account"
@@ -233,23 +255,25 @@ msgid ""
 "enabling two-factor authentication."
 msgstr ""
 
-msgid "Play store"
+msgid ""
+"Send authentication code to your verified email address: {{emailAddress}}"
 msgstr ""
 
-msgid "App store"
-msgstr "App Store"
-
-msgid "Turn on two-factor authentication"
-msgstr "Activer l'authentification à deux facteurs"
-
-msgid ""
-"Make sure you have an authenticator app installed on your device. We "
-"recommend Google Authenticator"
+msgid "Authentication code sent"
 msgstr ""
 
 msgid ""
-"Now, enter the code from your authenticator app below and click the \"Turn "
-"on\" button."
+"If you didn't receive the code, check your spam/junk folder. Have you waited"
+" a few minutes and still not received the code?"
+msgstr ""
+
+msgid "Send a new code"
+msgstr ""
+
+msgid "Send authentication code"
+msgstr ""
+
+msgid "Enter the 6 digit authentication code in the email."
 msgstr ""
 
 msgid "Already set up two-factor authentication before?"
@@ -262,9 +286,41 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Your email is not verified. You must verify or your email to enable or "
+"disable two-factor authentication via email. If you have recently verified "
+"your email, you may need to refresh this page."
+msgstr ""
+
+msgid "Verify your email here."
+msgstr ""
+
+msgid ""
 "Two-factor authentication protects your account with an extra layer of "
 "security. With two-factor authentication turned on, you will need to enter "
 "an authentication code from your device every time you log in."
+msgstr ""
+
+msgid "Open your authenticator app."
+msgstr ""
+
+msgid ""
+"Now, enter the authentication code below and click the \"Turn off\" button."
+msgstr ""
+
+msgid "Play store"
+msgstr ""
+
+msgid "App store"
+msgstr "App Store"
+
+msgid ""
+"Make sure you have an authenticator app installed on your device. We "
+"recommend Google Authenticator"
+msgstr ""
+
+msgid ""
+"Now, enter the code from your authenticator app below and click the \"Turn "
+"on\" button."
 msgstr ""
 
 msgid "Two-factor authentication is on."
@@ -283,19 +339,13 @@ msgstr ""
 "Ce code semble incorrect. Saisissez le code à six chiffres de votre "
 "application d'authentification."
 
-msgid "Six digit authentication code"
-msgstr "Code d'identification à six chiffres"
+msgid "6 digit code"
+msgstr ""
 
 msgid "Could not enable 2 Factor Authentication"
 msgstr ""
 
-msgid "Two factor authentication was enabled successfully"
-msgstr ""
-
-msgid "Could not disable two factor authentication"
-msgstr ""
-
-msgid "Two factor authentication was disabled successfully"
+msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
 msgstr ""
 
 msgid "Failed to upload profile picture"
@@ -312,6 +362,66 @@ msgstr "Sélectionner une photo de profil"
 
 msgid "Remove profile picture"
 msgstr "Supprimer la photo de profil"
+
+msgid "No email provided"
+msgstr ""
+
+msgid "Email is invalid"
+msgstr ""
+
+msgid "Emails must match"
+msgstr ""
+
+msgid "Email update not allowed"
+msgstr ""
+
+msgid "Your email is currently used for two factor authentication"
+msgstr ""
+
+msgid ""
+"To update your email, you must first disable two factor authentication by "
+"email. After this has been disabled, you can change your email and then set "
+"up two factor authentication again."
+msgstr ""
+
+msgid "Disable two factor authentication here"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Annuler"
+
+msgid "Remove email"
+msgstr ""
+
+msgid "Your email is currently verified"
+msgstr ""
+
+msgid "Are you sure you want to remove your email?"
+msgstr ""
+
+msgid "Change email"
+msgstr ""
+
+msgid "If you change your email, you may need to reverify your email."
+msgstr ""
+
+msgid "Current email"
+msgstr ""
+
+msgid "no current email"
+msgstr ""
+
+msgid "Enter new email"
+msgstr ""
+
+msgid "Confirm new email"
+msgstr ""
+
+msgid "Save"
+msgstr "Sauvegarder"
+
+msgid "There is no email to remove"
+msgstr ""
 
 msgid "This field is required"
 msgstr "Ce champs est requis"
@@ -373,6 +483,26 @@ msgstr "Tokens d'accès personnels"
 
 msgid "About DHIS2"
 msgstr "A propos de DHIS2"
+
+msgid "Email verification link sent successfully!"
+msgstr ""
+
+msgid "Failed to send email verification link."
+msgstr ""
+
+msgid "Email already verified"
+msgstr ""
+
+msgid "Verify email"
+msgstr ""
+
+msgid ""
+"Your email is not verified. Please verify your email to continue using the "
+"system."
+msgstr ""
+
+msgid "Please provide an email and verify it to continue using the system."
+msgstr ""
 
 msgid "Manage personal access tokens"
 msgstr "Gérer les tokens d'accès personnels"
@@ -515,9 +645,6 @@ msgstr ""
 
 msgid "Token details"
 msgstr "Détails du token"
-
-msgid "Cancel"
-msgstr "Annuler"
 
 msgid ""
 "Important: IP address validation relies on the X-Forwarded-For header, which"

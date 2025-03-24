@@ -1,16 +1,16 @@
 # 
 # Translators:
 # Cherise Beek <cherise.beek@gmail.com>, 2021
-# Rica Zamora Duchateau, 2022
 # Charel van den Elsen, 2023
 # Philip Larsen Donnelly, 2024
+# Rica, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
+"POT-Creation-Date: 2025-02-18T16:33:28.306Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Philip Larsen Donnelly, 2024\n"
+"Last-Translator: Rica, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/hisp-uio/teams/100509/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -167,11 +167,10 @@ msgid "New password"
 msgstr "Nieuw paswoord"
 
 msgid ""
-"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
-"letter and 1 special character"
+"Password should be between {{minPasswordLength}} and {{maxPasswordLength}} "
+"characters long, with at least one lowercase character, one uppercase "
+"character, one number, and one special character."
 msgstr ""
-"Paswoord moet ten minste 8 lettertekens lang zijn met ten minste 1 cijfer, 1"
-" hoofdletter en 1 speciaal letterteken"
 
 msgid "Repeat new password"
 msgstr "Herhaal nieuw paswoord"
@@ -201,20 +200,41 @@ msgstr "Login"
 msgid "Failed to update password"
 msgstr "Updaten van paswoord gefaald"
 
+msgid "Authenticator app"
+msgstr ""
+
+msgid "Email"
+msgstr "Emailadres"
+
+msgid "Could not enable two factor authentication"
+msgstr ""
+
+msgid "Two factor authentication was enabled successfully"
+msgstr "Twee-factor-authenticatie is ingeschakeld"
+
+msgid "Could not disable two factor authentication"
+msgstr "Kan twee-factor-authenticatie niet uitschakelen"
+
+msgid "Two factor authentication was disabled successfully"
+msgstr "Twee-factor-authenticatie is uitgeschakeld"
+
 msgid "Two-factor Authentication"
 msgstr "Twee-factor-authenticatie"
+
+msgid ""
+"Two-factor authentication protects your account with an extra layer of "
+"security. With two-factor authentication turned on, you will need to enter "
+"an authentication code every time you log in."
+msgstr ""
 
 msgid "Turn off two-factor authentication"
 msgstr "Schakel tweefactorauthenticatie uit"
 
-msgid "Open your authenticator app."
-msgstr "Open uw authenticatie-app."
+msgid "Turn on two-factor authentication"
+msgstr "Schakel tweefactorauthenticatie in"
 
-msgid ""
-"Now, enter the authentication code below and click the \"Turn off\" button."
+msgid "Two factor authentication type"
 msgstr ""
-"Voer nu de onderstaande authenticatiecode in en klik op de knop "
-"\"Uitschakelen\"."
 
 msgid "Remove two-factor account"
 msgstr "Tweefactoraccount verwijderen"
@@ -228,28 +248,26 @@ msgstr ""
 "account nu uit uw authenticator-app te verwijderen om toekomstige problemen "
 "met het opnieuw inschakelen van tweefactorauthenticatie te voorkomen."
 
-msgid "Play store"
-msgstr "Play store"
+msgid ""
+"Send authentication code to your verified email address: {{emailAddress}}"
+msgstr ""
 
-msgid "App store"
-msgstr "App store"
-
-msgid "Turn on two-factor authentication"
-msgstr "Schakel tweefactorauthenticatie in"
+msgid "Authentication code sent"
+msgstr ""
 
 msgid ""
-"Make sure you have an authenticator app installed on your device. We "
-"recommend Google Authenticator"
+"If you didn't receive the code, check your spam/junk folder. Have you waited"
+" a few minutes and still not received the code?"
 msgstr ""
-"Zorg ervoor dat er een authenticatie-app op uw apparaat is geïnstalleerd. We"
-" raden Google Authenticator aan"
 
-msgid ""
-"Now, enter the code from your authenticator app below and click the \"Turn "
-"on\" button."
+msgid "Send a new code"
 msgstr ""
-"Voer nu de code van uw authenticator-app hieronder in en klik op de knop "
-"\"Inschakelen\"."
+
+msgid "Send authentication code"
+msgstr ""
+
+msgid "Enter the 6 digit authentication code in the email."
+msgstr ""
 
 msgid "Already set up two-factor authentication before?"
 msgstr "Heb je twee-factor-authenticatie al eerder ingesteld?"
@@ -264,6 +282,15 @@ msgstr ""
 "instelt."
 
 msgid ""
+"Your email is not verified. You must verify or your email to enable or "
+"disable two-factor authentication via email. If you have recently verified "
+"your email, you may need to refresh this page."
+msgstr ""
+
+msgid "Verify your email here."
+msgstr ""
+
+msgid ""
 "Two-factor authentication protects your account with an extra layer of "
 "security. With two-factor authentication turned on, you will need to enter "
 "an authentication code from your device every time you log in."
@@ -271,6 +298,35 @@ msgstr ""
 "Tweefactorauthenticatie beschermt uw account met een extra beveiligingslaag."
 " Als tweefactorauthenticatie is ingeschakeld, moet u elke keer dat u zich "
 "aanmeldt een authenticatiecode van uw apparaat invoeren."
+
+msgid "Open your authenticator app."
+msgstr "Open uw authenticatie-app."
+
+msgid ""
+"Now, enter the authentication code below and click the \"Turn off\" button."
+msgstr ""
+"Voer nu de onderstaande authenticatiecode in en klik op de knop "
+"\"Uitschakelen\"."
+
+msgid "Play store"
+msgstr "Play store"
+
+msgid "App store"
+msgstr "App store"
+
+msgid ""
+"Make sure you have an authenticator app installed on your device. We "
+"recommend Google Authenticator"
+msgstr ""
+"Zorg ervoor dat er een authenticatie-app op uw apparaat is geïnstalleerd. We"
+" raden Google Authenticator aan"
+
+msgid ""
+"Now, enter the code from your authenticator app below and click the \"Turn "
+"on\" button."
+msgstr ""
+"Voer nu de code van uw authenticator-app hieronder in en klik op de knop "
+"\"Inschakelen\"."
 
 msgid "Two-factor authentication is on."
 msgstr "Twee-factor-authenticatie staat aan."
@@ -288,20 +344,14 @@ msgstr ""
 "Deze code ziet er niet goed uit. Voer de zescijferige code van uw "
 "authenticatie-app in."
 
-msgid "Six digit authentication code"
-msgstr "Zescijferige authenticatiecode"
+msgid "6 digit code"
+msgstr ""
 
 msgid "Could not enable 2 Factor Authentication"
 msgstr "Kan 2-factor-authenticatie niet inschakelen"
 
-msgid "Two factor authentication was enabled successfully"
-msgstr "Twee-factor-authenticatie is ingeschakeld"
-
-msgid "Could not disable two factor authentication"
-msgstr "Kan twee-factor-authenticatie niet uitschakelen"
-
-msgid "Two factor authentication was disabled successfully"
-msgstr "Twee-factor-authenticatie is uitgeschakeld"
+msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
+msgstr ""
 
 msgid "Failed to upload profile picture"
 msgstr "Uploaden profielfoto gefaald"
@@ -317,6 +367,66 @@ msgstr "Selecteer profielfoto"
 
 msgid "Remove profile picture"
 msgstr "Verwijder profielfoto"
+
+msgid "No email provided"
+msgstr ""
+
+msgid "Email is invalid"
+msgstr ""
+
+msgid "Emails must match"
+msgstr ""
+
+msgid "Email update not allowed"
+msgstr ""
+
+msgid "Your email is currently used for two factor authentication"
+msgstr ""
+
+msgid ""
+"To update your email, you must first disable two factor authentication by "
+"email. After this has been disabled, you can change your email and then set "
+"up two factor authentication again."
+msgstr ""
+
+msgid "Disable two factor authentication here"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Annuleer"
+
+msgid "Remove email"
+msgstr ""
+
+msgid "Your email is currently verified"
+msgstr ""
+
+msgid "Are you sure you want to remove your email?"
+msgstr ""
+
+msgid "Change email"
+msgstr ""
+
+msgid "If you change your email, you may need to reverify your email."
+msgstr ""
+
+msgid "Current email"
+msgstr ""
+
+msgid "no current email"
+msgstr ""
+
+msgid "Enter new email"
+msgstr ""
+
+msgid "Confirm new email"
+msgstr ""
+
+msgid "Save"
+msgstr "Sla op"
+
+msgid "There is no email to remove"
+msgstr ""
 
 msgid "This field is required"
 msgstr "Dit veld is verplicht."
@@ -377,6 +487,26 @@ msgstr "Persoonlijke toegangstokens"
 
 msgid "About DHIS2"
 msgstr "Over DHIS2"
+
+msgid "Email verification link sent successfully!"
+msgstr ""
+
+msgid "Failed to send email verification link."
+msgstr ""
+
+msgid "Email already verified"
+msgstr ""
+
+msgid "Verify email"
+msgstr ""
+
+msgid ""
+"Your email is not verified. Please verify your email to continue using the "
+"system."
+msgstr ""
+
+msgid "Please provide an email and verify it to continue using the system."
+msgstr ""
 
 msgid "Manage personal access tokens"
 msgstr "Beheer persoonlijke toegangstokens"
@@ -519,9 +649,6 @@ msgstr ""
 
 msgid "Token details"
 msgstr "Tokengegevens"
-
-msgid "Cancel"
-msgstr "Annuleer"
 
 msgid ""
 "Important: IP address validation relies on the X-Forwarded-For header, which"

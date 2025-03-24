@@ -9,26 +9,15 @@ import {
     ModalContent,
     ModalTitle,
     NoticeBox,
-    Tooltip,
 } from '@dhis2/ui'
 import TextField from 'd2-ui/lib/form-fields/TextField'
 import PropTypes from 'prop-types'
 import React, { useMemo, useState } from 'react'
+import { Link } from 'react-router'
+import userProfileStore from '../profile/profile.store.js'
 import styles from './EmailField.component.module.css'
+import TooltipWrapper from './TooltipWrapper.jsx'
 import { VerifyEmail } from './VerifyEmail.component.jsx'
-
-const TooltipWrapper = ({ disabled, content, children }) => {
-    if (!disabled) {
-        return <>{children}</>
-    }
-    return <Tooltip content={content}>{children}</Tooltip>
-}
-
-TooltipWrapper.propTypes = {
-    children: PropTypes.node,
-    content: PropTypes.string,
-    disabled: PropTypes.bool,
-}
 
 const getSaveDisabledContent = ({ newEmail, emailValidationMessage }) => {
     if (!newEmail) {
@@ -38,6 +27,57 @@ const getSaveDisabledContent = ({ newEmail, emailValidationMessage }) => {
         return i18n.t('Email is invalid')
     }
     return i18n.t('Emails must match')
+}
+
+const TwoFAWarningModal = ({
+    twoFAWarningModalOpen,
+    setTwoFAWarningModalOpen,
+}) => (
+    <Modal
+        hide={!twoFAWarningModalOpen}
+        onClose={() => setTwoFAWarningModalOpen(false)}
+    >
+        <ModalTitle>{i18n.t('Email update not allowed')}</ModalTitle>
+
+        <ModalContent>
+            <NoticeBox
+                className={styles.emailModalItem}
+                title={i18n.t(
+                    'Your email is currently used for two factor authentication'
+                )}
+                warning
+            >
+                <div className={styles.emailModalText}>
+                    <div>
+                        {i18n.t(
+                            'To update your email, you must first disable two factor authentication by email. After this has been disabled, you can change your email and then set up two factor authentication again.'
+                        )}
+                    </div>
+                    <Link to="/twoFactor">
+                        <div>
+                            {i18n.t('Disable two factor authentication here')}
+                        </div>
+                    </Link>
+                </div>
+            </NoticeBox>
+        </ModalContent>
+
+        <ModalActions>
+            <ButtonStrip end>
+                <Button
+                    onClick={() => setTwoFAWarningModalOpen(false)}
+                    secondary
+                >
+                    {i18n.t('Cancel')}
+                </Button>
+            </ButtonStrip>
+        </ModalActions>
+    </Modal>
+)
+
+TwoFAWarningModal.propTypes = {
+    setTwoFAWarningModalOpen: PropTypes.func,
+    twoFAWarningModalOpen: PropTypes.bool,
 }
 
 const RemoveModal = ({
@@ -184,6 +224,10 @@ const EmailModal = ({
                             onClick={() => {
                                 onUpdate(newEmail)
                                 setEmailModalOpen(false)
+                                userProfileStore.state.emailVerified = false
+                                userProfileStore.setState(
+                                    userProfileStore.state
+                                )
                             }}
                             primary
                             disabled={saveDisabled}
@@ -205,9 +249,15 @@ EmailModal.propTypes = {
     onUpdate: PropTypes.func,
 }
 
-export function EmailField({ userEmail, userEmailVerified, onUpdate }) {
+export function EmailField({
+    userEmail,
+    userEmailVerified,
+    twoFaByEmailInUse,
+    onUpdate,
+}) {
     const [emailModalOpen, setEmailModalOpen] = useState()
     const [removeModalOpen, setRemoveModalOpen] = useState()
+    const [twoFAWarningModalOpen, setTwoFAWarningModalOpen] = useState()
 
     return (
         <div className={styles.emailModalContainer}>
@@ -219,16 +269,31 @@ export function EmailField({ userEmail, userEmailVerified, onUpdate }) {
             />
             <div className={styles.buttonContainer}>
                 <VerifyEmail userEmail={userEmail} />
-                <Button secondary onClick={() => setEmailModalOpen(true)}>
+                <Button
+                    secondary
+                    onClick={() => {
+                        if (twoFaByEmailInUse) {
+                            setTwoFAWarningModalOpen(true)
+                        } else {
+                            setEmailModalOpen(true)
+                        }
+                    }}
+                >
                     {i18n.t('Change email')}
                 </Button>
                 <TooltipWrapper
-                    disabled={!userEmail || userEmail?.trim() === ''}
+                    show={!userEmail || userEmail?.trim() === ''}
                     content={i18n.t('There is no email to remove')}
                 >
                     <Button
                         destructive
-                        onClick={() => setRemoveModalOpen(true)}
+                        onClick={() => {
+                            if (twoFaByEmailInUse) {
+                                setTwoFAWarningModalOpen(true)
+                            } else {
+                                setRemoveModalOpen(true)
+                            }
+                        }}
                         disabled={!userEmail || userEmail?.trim() === ''}
                     >
                         {i18n.t('Remove email')}
@@ -250,11 +315,16 @@ export function EmailField({ userEmail, userEmailVerified, onUpdate }) {
                 userEmailVerified={userEmailVerified}
                 onUpdate={onUpdate}
             />
+            <TwoFAWarningModal
+                twoFAWarningModalOpen={twoFAWarningModalOpen}
+                setTwoFAWarningModalOpen={setTwoFAWarningModalOpen}
+            />
         </div>
     )
 }
 
 EmailField.propTypes = {
+    twoFaByEmailInUse: PropTypes.bool,
     userEmail: PropTypes.string,
     userEmailVerified: PropTypes.bool,
     onUpdate: PropTypes.func,

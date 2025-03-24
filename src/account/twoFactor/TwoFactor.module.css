@@ -11,3 +11,25 @@
     max-width: 960px;
     height: auto;
 }
+
+.introductionText {
+    font-size: 14px;
+    line-height: 19px;
+    max-width: 720px;
+    margin: 0 0 var(--spacers-dp24);
+    color: var(--colors-grey700);
+}
+
+.emailVerificationWarning {
+    margin: var(--spacers-dp24) 0;
+}
+
+.instructionsHeader {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--colors-grey900);
+}
+
+.twoFactorTypeToggle {
+    margin: var(--spacers-dp24) 0;
+}

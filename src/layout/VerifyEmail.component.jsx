@@ -3,6 +3,8 @@ import { Button, email as emailValidator } from '@dhis2/ui'
 import PropTypes from 'prop-types'
 import React from 'react'
 import i18n from '../locales/index.js'
+import userProfileStore from '../profile/profile.store.js'
+import TooltipWrapper from './TooltipWrapper.jsx'
 
 const sendEmailVerificationMutation = {
     resource: 'account/sendEmailVerification',
@@ -13,6 +15,7 @@ export function VerifyEmail({ userEmail }) {
     const errorAlert = useAlert(({ message }) => message, { critical: true })
     const successAlert = useAlert(({ message }) => message, { success: true })
     const { systemInfo } = useConfig()
+    const { emailVerified } = userProfileStore.state
 
     const [mutateEmailVerification, { loading: mutationLoading }] =
         useDataMutation(sendEmailVerificationMutation, {
@@ -41,14 +44,30 @@ export function VerifyEmail({ userEmail }) {
     }
 
     return (
-        <Button
-            secondary
-            onClick={mutateEmailVerification}
-            disabled={mutationLoading || isInvalidEmail || !userEmail}
-            loading={mutationLoading}
+        <TooltipWrapper
+            show={emailVerified || isInvalidEmail}
+            content={
+                emailVerified
+                    ? i18n.t('Email already verified')
+                    : isInvalidEmail
+                    ? i18n.t('Email is invalid')
+                    : ''
+            }
         >
-            {i18n.t('Verify email')}
-        </Button>
+            <Button
+                secondary
+                onClick={mutateEmailVerification}
+                disabled={
+                    mutationLoading ||
+                    isInvalidEmail ||
+                    !userEmail ||
+                    emailVerified
+                }
+                loading={mutationLoading}
+            >
+                {i18n.t('Verify email')}
+            </Button>
+        </TooltipWrapper>
     )
 }
 

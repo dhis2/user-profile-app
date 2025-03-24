@@ -1,13 +1,13 @@
 # 
 # Translators:
-# Jiří Podhorecký, 2023
+# Jiří Podhorecký <jirka.p@volny.cz>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
+"POT-Creation-Date: 2025-02-05T15:02:02.227Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Jiří Podhorecký, 2023\n"
+"Last-Translator: Jiří Podhorecký <jirka.p@volny.cz>, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/hisp-uio/teams/100509/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -163,11 +163,10 @@ msgid "New password"
 msgstr "Nové heslo"
 
 msgid ""
-"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
-"letter and 1 special character"
+"Password should be between {{minPasswordLength}} and {{maxPasswordLength}} "
+"characters long, with at least one lowercase character, one uppercase "
+"character, one number, and one special character."
 msgstr ""
-"Heslo by mělo mít alespoň 8 znaků, alespoň 1 číslici, 1 velké písmeno a 1 "
-"speciální znak"
 
 msgid "Repeat new password"
 msgstr "opakujte nové heslo"
@@ -296,6 +295,9 @@ msgstr ""
 msgid "Two factor authentication was disabled successfully"
 msgstr ""
 
+msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
+msgstr ""
+
 msgid "Failed to upload profile picture"
 msgstr "Nepodařilo se nahrát profilový obrázek"
 
@@ -310,6 +312,54 @@ msgstr "Vyberte profilový obrázek"
 
 msgid "Remove profile picture"
 msgstr "Odebrat profilový obrázek"
+
+msgid "No email provided"
+msgstr ""
+
+msgid "Email is invalid"
+msgstr ""
+
+msgid "Emails must match"
+msgstr ""
+
+msgid "Remove email"
+msgstr ""
+
+msgid "Your email is currently verified"
+msgstr ""
+
+msgid "Are you sure you want to remove your email?"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Zrušit"
+
+msgid "Change email"
+msgstr ""
+
+msgid "If you change your email, you may need to reverify your email."
+msgstr ""
+
+msgid "Current email"
+msgstr ""
+
+msgid "no current email"
+msgstr ""
+
+msgid "Enter new email"
+msgstr ""
+
+msgid "Confirm new email"
+msgstr ""
+
+msgid "Save"
+msgstr "Uložit"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "There is no email to remove"
+msgstr ""
 
 msgid "This field is required"
 msgstr "Toto pole je povinné"
@@ -370,6 +420,23 @@ msgstr "Osobní přístupové tokeny"
 
 msgid "About DHIS2"
 msgstr "O DHIS2"
+
+msgid "Email verification link sent successfully!"
+msgstr ""
+
+msgid "Failed to send email verification link."
+msgstr ""
+
+msgid "Verify email"
+msgstr ""
+
+msgid ""
+"Your email is not verified. Please verify your email to continue using the "
+"system."
+msgstr ""
+
+msgid "Please provide an email and verify it to continue using the system."
+msgstr ""
 
 msgid "Manage personal access tokens"
 msgstr "Spravovat osobní přístupové tokeny"
@@ -508,9 +575,6 @@ msgstr ""
 
 msgid "Token details"
 msgstr "Podrobnosti o tokenu"
-
-msgid "Cancel"
-msgstr "Zrušit"
 
 msgid ""
 "Important: IP address validation relies on the X-Forwarded-For header, which"

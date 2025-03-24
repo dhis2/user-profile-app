@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2025-01-28T09:28:24.549Z\n"
+"POT-Creation-Date: 2025-02-18T16:33:28.306Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
 "Last-Translator: Em Le <em.hispvietnam@gmail.com>, 2025\n"
 "Language-Team: Vietnamese (https://app.transifex.com/hisp-uio/teams/100509/vi/)\n"
@@ -167,11 +167,10 @@ msgid "New password"
 msgstr "Mật khẩu mới"
 
 msgid ""
-"Password should be at least 8 characters with at least 1 digit, 1 uppercase "
-"letter and 1 special character"
+"Password should be between {{minPasswordLength}} and {{maxPasswordLength}} "
+"characters long, with at least one lowercase character, one uppercase "
+"character, one number, and one special character."
 msgstr ""
-"Mật khẩu phải có ít nhất 8 ký tự với ít nhất 1 chữ số, 1 chữ cái viết hoa và"
-" 1 ký tự đặc biệt"
 
 msgid "Repeat new password"
 msgstr "Gõ lại mật khẩu mới"
@@ -201,18 +200,41 @@ msgstr "Đăng nhập"
 msgid "Failed to update password"
 msgstr "Không thể cập nhật mật khẩu"
 
+msgid "Authenticator app"
+msgstr ""
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Could not enable two factor authentication"
+msgstr ""
+
+msgid "Two factor authentication was enabled successfully"
+msgstr "Xác thực hai yếu tố đã được bật thành công"
+
+msgid "Could not disable two factor authentication"
+msgstr "Không thể vô hiệu hóa xác thực hai yếu tố"
+
+msgid "Two factor authentication was disabled successfully"
+msgstr "Xác thực hai yếu tố đã được vô hiệu hóa thành công"
+
 msgid "Two-factor Authentication"
 msgstr "Xác thực hai yếu tố"
+
+msgid ""
+"Two-factor authentication protects your account with an extra layer of "
+"security. With two-factor authentication turned on, you will need to enter "
+"an authentication code every time you log in."
+msgstr ""
 
 msgid "Turn off two-factor authentication"
 msgstr "Tắt tính năng Xác thực hai yếu tố"
 
-msgid "Open your authenticator app."
-msgstr "Mở ứng dụng xác thực của bạn."
+msgid "Turn on two-factor authentication"
+msgstr "Bật xác thực hai yếu tố"
 
-msgid ""
-"Now, enter the authentication code below and click the \"Turn off\" button."
-msgstr "Bây giờ, hãy nhập mã xác thực bên dưới và nhấp vào nút \"Tắt\"."
+msgid "Two factor authentication type"
+msgstr ""
 
 msgid "Remove two-factor account"
 msgstr "Xóa tài khoản hai yếu tố"
@@ -226,14 +248,68 @@ msgstr ""
 "thực ngay bây giờ để tránh mọi sự cố trong tương lai khi bật lại xác thực "
 "hai yếu tố."
 
+msgid ""
+"Send authentication code to your verified email address: {{emailAddress}}"
+msgstr ""
+
+msgid "Authentication code sent"
+msgstr ""
+
+msgid ""
+"If you didn't receive the code, check your spam/junk folder. Have you waited"
+" a few minutes and still not received the code?"
+msgstr ""
+
+msgid "Send a new code"
+msgstr ""
+
+msgid "Send authentication code"
+msgstr ""
+
+msgid "Enter the 6 digit authentication code in the email."
+msgstr ""
+
+msgid "Already set up two-factor authentication before?"
+msgstr "Bạn đã thiết lập xác thực hai yếu tố chưa?"
+
+msgid ""
+"If you have set up two-factor authentication for this account before, you "
+"need to remove that entry from your authenticator app before setting it up "
+"again."
+msgstr ""
+"Nếu bạn đã thiết lập xác thực hai yếu tố cho tài khoản này trước đó, bạn cần"
+" xóa mục đó khỏi ứng dụng xác thực trước khi thiết lập lại."
+
+msgid ""
+"Your email is not verified. You must verify or your email to enable or "
+"disable two-factor authentication via email. If you have recently verified "
+"your email, you may need to refresh this page."
+msgstr ""
+
+msgid "Verify your email here."
+msgstr ""
+
+msgid ""
+"Two-factor authentication protects your account with an extra layer of "
+"security. With two-factor authentication turned on, you will need to enter "
+"an authentication code from your device every time you log in."
+msgstr ""
+"Xác thực hai yếu tố bảo vệ tài khoản của bạn bằng một lớp bảo mật bổ sung. "
+"Khi bật xác thực hai yếu tố, bạn sẽ cần nhập mã xác thực từ thiết bị của "
+"mình mỗi lần đăng nhập."
+
+msgid "Open your authenticator app."
+msgstr "Mở ứng dụng xác thực của bạn."
+
+msgid ""
+"Now, enter the authentication code below and click the \"Turn off\" button."
+msgstr "Bây giờ, hãy nhập mã xác thực bên dưới và nhấp vào nút \"Tắt\"."
+
 msgid "Play store"
 msgstr "Cửa hàng ứng dụng"
 
 msgid "App store"
 msgstr "Kho ứng dụng"
-
-msgid "Turn on two-factor authentication"
-msgstr "Bật xác thực hai yếu tố"
 
 msgid ""
 "Make sure you have an authenticator app installed on your device. We "
@@ -248,26 +324,6 @@ msgid ""
 msgstr ""
 "Bây giờ, hãy nhập mã từ ứng dụng xác thực của bạn bên dưới và nhấp vào nút "
 "\"Bật\"."
-
-msgid "Already set up two-factor authentication before?"
-msgstr "Bạn đã thiết lập xác thực hai yếu tố chưa?"
-
-msgid ""
-"If you have set up two-factor authentication for this account before, you "
-"need to remove that entry from your authenticator app before setting it up "
-"again."
-msgstr ""
-"Nếu bạn đã thiết lập xác thực hai yếu tố cho tài khoản này trước đó, bạn cần"
-" xóa mục đó khỏi ứng dụng xác thực trước khi thiết lập lại."
-
-msgid ""
-"Two-factor authentication protects your account with an extra layer of "
-"security. With two-factor authentication turned on, you will need to enter "
-"an authentication code from your device every time you log in."
-msgstr ""
-"Xác thực hai yếu tố bảo vệ tài khoản của bạn bằng một lớp bảo mật bổ sung. "
-"Khi bật xác thực hai yếu tố, bạn sẽ cần nhập mã xác thực từ thiết bị của "
-"mình mỗi lần đăng nhập."
 
 msgid "Two-factor authentication is on."
 msgstr "Xác thực hai yếu tố đang được bật."
@@ -285,20 +341,11 @@ msgstr ""
 "Mã này có vẻ không đúng. Hãy nhập mã sáu chữ số từ ứng dụng xác thực của "
 "bạn."
 
-msgid "Six digit authentication code"
-msgstr "Mã xác thực sáu chữ số"
+msgid "6 digit code"
+msgstr ""
 
 msgid "Could not enable 2 Factor Authentication"
 msgstr "Không thể bật Xác thực 2 yếu tố"
-
-msgid "Two factor authentication was enabled successfully"
-msgstr "Xác thực hai yếu tố đã được bật thành công"
-
-msgid "Could not disable two factor authentication"
-msgstr "Không thể vô hiệu hóa xác thực hai yếu tố"
-
-msgid "Two factor authentication was disabled successfully"
-msgstr "Xác thực hai yếu tố đã được vô hiệu hóa thành công"
 
 msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
 msgstr "Hãy chọn hình đại diện với dung lượng nhỏ hơn {{- maxSize}}MB"
@@ -327,6 +374,24 @@ msgstr ""
 msgid "Emails must match"
 msgstr ""
 
+msgid "Email update not allowed"
+msgstr ""
+
+msgid "Your email is currently used for two factor authentication"
+msgstr ""
+
+msgid ""
+"To update your email, you must first disable two factor authentication by "
+"email. After this has been disabled, you can change your email and then set "
+"up two factor authentication again."
+msgstr ""
+
+msgid "Disable two factor authentication here"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Hủy"
+
 msgid "Remove email"
 msgstr ""
 
@@ -335,9 +400,6 @@ msgstr ""
 
 msgid "Are you sure you want to remove your email?"
 msgstr ""
-
-msgid "Cancel"
-msgstr "Hủy"
 
 msgid "Change email"
 msgstr ""
@@ -358,10 +420,7 @@ msgid "Confirm new email"
 msgstr ""
 
 msgid "Save"
-msgstr ""
-
-msgid "Email"
-msgstr "Email"
+msgstr "Lưu"
 
 msgid "There is no email to remove"
 msgstr ""
@@ -431,6 +490,9 @@ msgstr "Liên kết xác minh email đã được gửi thành công!"
 
 msgid "Failed to send email verification link."
 msgstr "Không gửi được liên kết xác minh email."
+
+msgid "Email already verified"
+msgstr ""
 
 msgid "Verify email"
 msgstr ""
