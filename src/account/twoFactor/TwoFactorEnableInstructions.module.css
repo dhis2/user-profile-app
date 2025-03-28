@@ -4,7 +4,6 @@
     display: block;
 }
 
-
 .orderedList {
     padding-inline-start: 24px;
     font-size: 14px;
@@ -26,15 +25,15 @@
     gap: var(--spacers-dp4);
 }
 
-.errorMessage{
+.errorMessage {
     color: #d3302f;
     margin: var(--spacers-dp4);
 }
 
-.successMessage{
+.successMessage {
     display: flex;
     align-items: center;
-    gap: var(--spacers-dp8);;
+    gap: var(--spacers-dp8);
     margin: var(--spacers-dp4);
 }
 .sendNewCodeInstructions {
@@ -45,13 +44,13 @@
 }
 
 .sendNewCodeButton {
-    color: blue;         /* Standard link color */
+    color: blue; /* Standard link color */
     text-decoration: underline; /* Adds the underline like a link */
-    cursor: pointer;     /* Makes it look clickable */
+    cursor: pointer; /* Makes it look clickable */
 }
 
 .sendNewCodeButton:hover {
-    color: darkblue;     /* Darker color on hover like a real link */
+    color: darkblue; /* Darker color on hover like a real link */
     text-decoration: none; /* Remove underline on hover (optional) */
 }
 

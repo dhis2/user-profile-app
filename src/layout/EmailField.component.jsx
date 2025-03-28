@@ -16,8 +16,8 @@ import React, { useMemo, useState } from 'react'
 import { Link } from 'react-router'
 import userProfileStore from '../profile/profile.store.js'
 import styles from './EmailField.component.module.css'
-import TooltipWrapper from './TooltipWrapper.js'
-import { VerifyEmail } from './VerifyEmail.component.js'
+import TooltipWrapper from './TooltipWrapper.jsx'
+import { VerifyEmail } from './VerifyEmail.component.jsx'
 
 const getSaveDisabledContent = ({ newEmail, emailValidationMessage }) => {
     if (!newEmail) {

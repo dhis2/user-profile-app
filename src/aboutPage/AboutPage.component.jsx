@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import i18n from '../locales/index.js'
-import AboutSection from './AboutSection.component.js'
+import AboutSection from './AboutSection.component.jsx'
 
 const parseDateFromUTCString = (utcString, d2, hideIfEmpty) => {
     try {

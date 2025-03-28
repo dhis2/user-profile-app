@@ -11,12 +11,12 @@ import {
 import PropTypes from 'prop-types'
 import React, { useState } from 'react'
 import i18n from '../../locales/index.js'
-import AuthoritiesWarning from './AuthoritiesWarning.component.js'
-import BrowserForm from './BrowserForm.component.js'
-import ContextSelector from './ContextSelector.component.js'
+import AuthoritiesWarning from './AuthoritiesWarning.component.jsx'
+import BrowserForm from './BrowserForm.component.jsx'
+import ContextSelector from './ContextSelector.component.jsx'
 import formStyles from './Form.module.css'
 import getTokenExpirationDate from './getTokenExpirationDate.js'
-import ServerForm from './ServerForm.component.js'
+import ServerForm from './ServerForm.component.jsx'
 
 const renderContext = ({ context, values }) => {
     switch (context) {
