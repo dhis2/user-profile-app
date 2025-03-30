@@ -3,7 +3,7 @@ import FormBuilder from 'd2-ui/lib/forms/FormBuilder.component'
 import { FlatButton, RaisedButton } from 'material-ui'
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import appActions from '../app.actions.js'
+import appActions from '../app.actions.jsx'
 import i18n from '../locales/index.js'
 import accountActions from './account.actions.js'
 

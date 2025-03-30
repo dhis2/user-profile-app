@@ -3,9 +3,9 @@ import { Card, Button } from '@dhis2/ui'
 import React, { useState } from 'react'
 import i18n from '../locales/index.js'
 import userProfileStore from '../profile/profile.store.js'
-import GenerateTokenModal from './generateTokenModal/GenerateTokenModal.component.js'
+import GenerateTokenModal from './generateTokenModal/GenerateTokenModal.component.jsx'
 import styles from './PersonalAccessTokens.module.css'
-import TokensList from './TokensList.component.js'
+import TokensList from './TokensList.component.jsx'
 import { useModal } from './use-modal.js'
 
 const query = {

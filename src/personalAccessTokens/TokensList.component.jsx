@@ -2,7 +2,7 @@ import { CenteredContent, CircularLoader, NoticeBox } from '@dhis2/ui'
 import PropTypes from 'prop-types'
 import React from 'react'
 import i18n from '../locales/index.js'
-import TokenCard from './tokenCard/TokenCard.component.js'
+import TokenCard from './tokenCard/TokenCard.component.jsx'
 import styles from './TokensList.module.css'
 
 const TokensList = ({ loading, error, tokens, onDelete }) => {
