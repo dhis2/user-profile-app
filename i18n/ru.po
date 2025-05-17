@@ -4,13 +4,14 @@
 # Valeriu Plesca <vplesca@gmail.com>, 2021
 # Yury Rogachev <yury@dhis2.org>, 2025
 # Philip Larsen Donnelly, 2025
+# Nadiia <semchuk@aph.org.ua>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2025-02-05T15:02:02.227Z\n"
+"POT-Creation-Date: 2025-03-18T18:29:13.632Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Philip Larsen Donnelly, 2025\n"
+"Last-Translator: Nadiia <semchuk@aph.org.ua>, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/hisp-uio/teams/100509/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -199,17 +200,40 @@ msgstr ""
 msgid "Failed to update password"
 msgstr "Не удалось обновить пароль"
 
+msgid "Authenticator app"
+msgstr ""
+
+msgid "Email"
+msgstr "Адрес электронной почты"
+
+msgid "Could not enable two factor authentication"
+msgstr ""
+
+msgid "Two factor authentication was enabled successfully"
+msgstr ""
+
+msgid "Could not disable two factor authentication"
+msgstr ""
+
+msgid "Two factor authentication was disabled successfully"
+msgstr ""
+
 msgid "Two-factor Authentication"
+msgstr ""
+
+msgid ""
+"Two-factor authentication protects your account with an extra layer of "
+"security. With two-factor authentication turned on, you will need to enter "
+"an authentication code every time you log in."
 msgstr ""
 
 msgid "Turn off two-factor authentication"
 msgstr ""
 
-msgid "Open your authenticator app."
+msgid "Turn on two-factor authentication"
 msgstr ""
 
-msgid ""
-"Now, enter the authentication code below and click the \"Turn off\" button."
+msgid "Two factor authentication type"
 msgstr ""
 
 msgid "Remove two-factor account"
@@ -221,23 +245,25 @@ msgid ""
 "enabling two-factor authentication."
 msgstr ""
 
-msgid "Play store"
+msgid ""
+"Send authentication code to your verified email address: {{emailAddress}}"
 msgstr ""
 
-msgid "App store"
-msgstr ""
-
-msgid "Turn on two-factor authentication"
+msgid "Authentication code sent"
 msgstr ""
 
 msgid ""
-"Make sure you have an authenticator app installed on your device. We "
-"recommend Google Authenticator"
+"If you didn't receive the code, check your spam/junk folder. Have you waited"
+" a few minutes and still not received the code?"
 msgstr ""
 
-msgid ""
-"Now, enter the code from your authenticator app below and click the \"Turn "
-"on\" button."
+msgid "Send a new code"
+msgstr ""
+
+msgid "Send authentication code"
+msgstr ""
+
+msgid "Enter the 6 digit authentication code in the email."
 msgstr ""
 
 msgid "Already set up two-factor authentication before?"
@@ -250,9 +276,41 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Your email is not verified. You must verify or your email to enable or "
+"disable two-factor authentication via email. If you have recently verified "
+"your email, you may need to refresh this page."
+msgstr ""
+
+msgid "Verify your email here."
+msgstr ""
+
+msgid ""
 "Two-factor authentication protects your account with an extra layer of "
 "security. With two-factor authentication turned on, you will need to enter "
 "an authentication code from your device every time you log in."
+msgstr ""
+
+msgid "Open your authenticator app."
+msgstr ""
+
+msgid ""
+"Now, enter the authentication code below and click the \"Turn off\" button."
+msgstr ""
+
+msgid "Play store"
+msgstr ""
+
+msgid "App store"
+msgstr ""
+
+msgid ""
+"Make sure you have an authenticator app installed on your device. We "
+"recommend Google Authenticator"
+msgstr ""
+
+msgid ""
+"Now, enter the code from your authenticator app below and click the \"Turn "
+"on\" button."
 msgstr ""
 
 msgid "Two-factor authentication is on."
@@ -269,19 +327,10 @@ msgid ""
 "authentication app."
 msgstr ""
 
-msgid "Six digit authentication code"
+msgid "6 digit code"
 msgstr ""
 
 msgid "Could not enable 2 Factor Authentication"
-msgstr ""
-
-msgid "Two factor authentication was enabled successfully"
-msgstr ""
-
-msgid "Could not disable two factor authentication"
-msgstr ""
-
-msgid "Two factor authentication was disabled successfully"
 msgstr ""
 
 msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
@@ -311,6 +360,24 @@ msgstr ""
 msgid "Emails must match"
 msgstr ""
 
+msgid "Email update not allowed"
+msgstr ""
+
+msgid "Your email is currently used for two factor authentication"
+msgstr ""
+
+msgid ""
+"To update your email, you must first disable two factor authentication by "
+"email. After this has been disabled, you can change your email and then set "
+"up two factor authentication again."
+msgstr ""
+
+msgid "Disable two factor authentication here"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Отмена"
+
 msgid "Remove email"
 msgstr ""
 
@@ -319,9 +386,6 @@ msgstr ""
 
 msgid "Are you sure you want to remove your email?"
 msgstr ""
-
-msgid "Cancel"
-msgstr "Отмена"
 
 msgid "Change email"
 msgstr ""
@@ -343,9 +407,6 @@ msgstr ""
 
 msgid "Save"
 msgstr "Сохранить"
-
-msgid "Email"
-msgstr "Адрес электронной почты"
 
 msgid "There is no email to remove"
 msgstr ""
@@ -414,6 +475,9 @@ msgid "Email verification link sent successfully!"
 msgstr ""
 
 msgid "Failed to send email verification link."
+msgstr ""
+
+msgid "Email already verified"
 msgstr ""
 
 msgid "Verify email"
@@ -588,7 +652,7 @@ msgid "Newly created token"
 msgstr ""
 
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Копировать в буфер обмена"
 
 msgid "Delete"
 msgstr "Удалить"
