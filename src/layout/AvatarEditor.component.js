@@ -82,14 +82,16 @@ class AvatarEditor extends Component {
                 avatarSrc: this.parseAvatarSrc(imageId),
             })
         } catch (error) {
+            const serverMessage =
+                i18n.t(error?.message) ||
+                i18n.t('Failed to upload profile picture')
             userSettingsActions.showSnackbarMessage({
-                message: i18n.t('Failed to upload profile picture'),
+                message: serverMessage,
                 status: 'error',
+                permanent: true,
             })
-            console.error(
-                'POST request to fileResources endpoint failed: ',
-                error
-            )
+
+            this.setState({ loading: false })
         }
     }
 
