@@ -2,9 +2,9 @@ import { getInstance as getD2 } from 'd2'
 import Action from 'd2-ui/lib/action/Action.js'
 import log from 'loglevel'
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import { hashHistory } from 'react-router'
-import AppRouter from './app.router.js'
+import AppRouter from './app.router.jsx'
 import optionValueStore from './optionValue.store.js'
 import userProfileStore from './profile/profile.store.js'
 import userSettingsStore from './settings/userSettings.store.js'
@@ -66,10 +66,9 @@ appActions.init.subscribe(() => {
                     'Current user settings loaded:',
                     userSettingsStore.state
                 )
-                ReactDOM.render(
-                    <AppRouter d2={d2} />,
-                    document.querySelector('#app')
-                )
+                const container = document.querySelector('#app')
+                const root = createRoot(container)
+                root.render(<AppRouter d2={d2} />)
             },
             (error) => {
                 log.error('Failed to load user settings:', error)

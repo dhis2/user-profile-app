@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import i18n from '../locales/index.js'
 import userProfileStore from '../profile/profile.store.js'
-import TooltipWrapper from './TooltipWrapper.js'
+import TooltipWrapper from './TooltipWrapper.jsx'
 
 const sendEmailVerificationMutation = {
     resource: 'account/sendEmailVerification',

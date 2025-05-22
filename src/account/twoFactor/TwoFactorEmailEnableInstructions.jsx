@@ -1,7 +1,7 @@
 import { useDataMutation } from '@dhis2/app-runtime'
 import i18n from '@dhis2/d2-i18n'
 import React from 'react'
-import TwoFactorEmailCodeButton from './TwoFactorEmailCodeButton.js'
+import TwoFactorEmailCodeButton from './TwoFactorEmailCodeButton.jsx'
 import styles from './TwoFactorEnableInstructions.module.css'
 
 const enroll2FAViaEmailMutationDefinition = {

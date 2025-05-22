@@ -1,7 +1,7 @@
 import { useD2 } from '@dhis2/app-runtime-adapter-d2'
 import log from 'loglevel'
 import React from 'react'
-import AppRouter from './app.router.js'
+import AppRouter from './app.router.jsx'
 import optionValueStore from './optionValue.store.js'
 import userProfileStore from './profile/profile.store.js'
 import userSettingsStore from './settings/userSettings.store.js'

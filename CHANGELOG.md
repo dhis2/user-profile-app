@@ -1,3 +1,10 @@
+## [100.7.3](https://github.com/dhis2/user-profile-app/compare/v100.7.2...v100.7.3) (2025-03-30)
+
+
+### Bug Fixes
+
+* **app-platform:** upgrade platform tools to use vite and react 18 ([#1476](https://github.com/dhis2/user-profile-app/issues/1476)) ([44f0800](https://github.com/dhis2/user-profile-app/commit/44f08007179f5e4f198082d1eb0faf2965ead57c))
+
 ## [100.7.2](https://github.com/dhis2/user-profile-app/compare/v100.7.1...v100.7.2) (2025-03-16)
 
 
