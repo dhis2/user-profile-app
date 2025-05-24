@@ -1,15 +1,15 @@
 # 
 # Translators:
-# easylin <lin_xd@126.com>, 2022
 # 晓东 林 <13981924470@126.com>, 2022
+# easylin <lin_xd@126.com>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
 "PO-Revision-Date: 2022-10-15 22:33+0000\n"
-"Last-Translator: 晓东 林 <13981924470@126.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/hisp-uio/teams/100509/zh_CN/)\n"
+"Last-Translator: easylin <lin_xd@126.com>, 2025\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/hisp-uio/teams/100509/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -284,7 +284,7 @@ msgid "This field is required"
 msgstr "这个字段是必填的"
 
 msgid "This field should be a URL"
-msgstr ""
+msgstr "该字段应为网址"
 
 msgid "This field should contain a list of URLs"
 msgstr "该字段应该是包括一个url列表"
@@ -296,7 +296,7 @@ msgid "This field should be a positive number"
 msgstr "该字段应该是一个正数"
 
 msgid "This field should be an email"
-msgstr ""
+msgstr "该字段应为电子邮件"
 
 msgid "Please enter a valid international phone number (+0123456789)"
 msgstr "请输入有效的国际电话号码"
@@ -308,7 +308,7 @@ msgid "Use system default"
 msgstr "使用系统缺省"
 
 msgid "No options"
-msgstr ""
+msgstr "没有选择"
 
 msgid "System default"
 msgstr "系统缺省"
