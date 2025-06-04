@@ -1,3 +1,11 @@
+## [100.7.4](https://github.com/dhis2/user-profile-app/compare/v100.7.3...v100.7.4) (2025-06-04)
+
+
+### Bug Fixes
+
+* improve error handling and user feedback for avatar upload failures ([9522c21](https://github.com/dhis2/user-profile-app/commit/9522c212cb263943f24a7eea1341a682fd7824b8))
+* improve error message handling for avatar upload failures ([3c7758e](https://github.com/dhis2/user-profile-app/commit/3c7758e2b16249e4fdc92d1aaba969be1af0aec7))
+
 ## [100.7.3](https://github.com/dhis2/user-profile-app/compare/v100.7.2...v100.7.3) (2025-03-30)
 
 
