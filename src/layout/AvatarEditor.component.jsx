@@ -83,8 +83,7 @@ class AvatarEditor extends Component {
             })
         } catch (error) {
             const serverMessage =
-                error?.message ||
-                i18n.t('Failed to upload profile picture')
+                error?.message || i18n.t('Failed to upload profile picture')
             userSettingsActions.showSnackbarMessage({
                 message: serverMessage,
                 status: 'error',
