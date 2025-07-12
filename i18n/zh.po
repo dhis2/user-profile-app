@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2025-02-18T16:33:28.306Z\n"
+"POT-Creation-Date: 2025-03-18T18:29:13.632Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
 "Last-Translator: easylin <lin_xd@126.com>, 2025\n"
 "Language-Team: Chinese (https://app.transifex.com/hisp-uio/teams/100509/zh/)\n"
@@ -597,7 +597,7 @@ msgid "90 days"
 msgstr "90 天"
 
 msgid "Custom..."
-msgstr "风俗..."
+msgstr "自定义..."
 
 msgid "The token will expire on {{- tokenExpirationDate}}."
 msgstr "令牌将在 {{- tokenExpirationDate}} 到期。"
