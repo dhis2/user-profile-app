@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2025-08-07T19:11:36.629Z\n"
-"PO-Revision-Date: 2025-08-07T19:11:36.629Z\n"
+"POT-Creation-Date: 2025-08-28T14:06:57.244Z\n"
+"PO-Revision-Date: 2025-08-28T14:06:57.244Z\n"
 
 msgid "Never"
 msgstr "Never"
@@ -289,6 +289,9 @@ msgstr "Could not disable two factor authentication"
 msgid "Two factor authentication was disabled successfully"
 msgstr "Two factor authentication was disabled successfully"
 
+msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
+msgstr "Please choose a profile avatar less than {{- maxSize}}MB in size."
+
 msgid "Failed to upload profile picture"
 msgstr "Failed to upload profile picture"
 
@@ -398,11 +401,11 @@ msgstr "List one IP address per line."
 msgid "Allowed HTTP methods"
 msgstr "Allowed HTTP methods"
 
-msgid "GET"
-msgstr "GET"
-
 msgid "HEAD"
 msgstr "HEAD"
+
+msgid "GET"
+msgstr "GET"
 
 msgid "POST"
 msgstr "POST"
@@ -445,6 +448,12 @@ msgstr ""
 "Important: this is not a security feature. The referrer header can easily "
 "be spoofed. This setting is intended to discourage unauthorised third-party "
 "developers from connecting to public access instances."
+
+msgid "Token name"
+msgstr "Token name"
+
+msgid "A unique name for this token."
+msgstr "A unique name for this token."
 
 msgid "Choose the context where this token will be used."
 msgstr "Choose the context where this token will be used."
@@ -491,6 +500,9 @@ msgstr "Expiration (required)"
 
 msgid "Custom expiration date (required)"
 msgstr "Custom expiration date (required)"
+
+msgid "Token name already exists"
+msgstr "Token name already exists"
 
 msgid ""
 "Personal access tokens should only be used in a browser context for public "
@@ -545,6 +557,9 @@ msgstr "Copied token to clipboard"
 
 msgid "Newly created token"
 msgstr "Newly created token"
+
+msgid "Token Name"
+msgstr "Token Name"
 
 msgid "Copy to clipboard"
 msgstr "Copy to clipboard"
@@ -667,12 +682,12 @@ msgid "View full profile"
 msgstr "View full profile"
 
 msgctxt "HTTP method"
-msgid "GET"
-msgstr "GET"
-
-msgctxt "HTTP method"
 msgid "HEAD"
 msgstr "HEAD"
+
+msgctxt "HTTP method"
+msgid "GET"
+msgstr "GET"
 
 msgctxt "HTTP method"
 msgid "POST"

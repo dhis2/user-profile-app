@@ -42,7 +42,7 @@ Item.propTypes = {
 }
 
 const ExistingToken = ({ token }) => {
-    const { attributes, createdAt, expiresAt } = token
+    const { attributes, createdAt, expiresAt, code } = token
     const allowedMethods = getAttribute(
         attributes,
         'MethodAllowedList',
@@ -57,6 +57,11 @@ const ExistingToken = ({ token }) => {
 
     return (
         <dl className={styles.items}>
+            {code && (
+                <Item title={i18n.t('Token name')} singleLine>
+                    {code ?? ''}
+                </Item>
+            )}
             <Item title={i18n.t('Expires')} singleLine>
                 <RelativeDateTime dateTime={expiresAt} />
             </Item>
