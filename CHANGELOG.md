@@ -1,3 +1,10 @@
+## [100.7.5](https://github.com/dhis2/user-profile-app/compare/v100.7.4...v100.7.5) (2025-07-22)
+
+
+### Bug Fixes
+
+* run GH workflow on different PRs events ([#1496](https://github.com/dhis2/user-profile-app/issues/1496)) ([bd1de52](https://github.com/dhis2/user-profile-app/commit/bd1de5267b2b47548454c44381d7b7f5b1054dde))
+
 ## [100.7.4](https://github.com/dhis2/user-profile-app/compare/v100.7.3...v100.7.4) (2025-06-04)
 
 
