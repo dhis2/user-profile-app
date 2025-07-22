@@ -1,6 +1,9 @@
 name: test-and-release
 
-on: push
+on:
+    push:
+    pull_request:
+        types: ['opened', 'edited', 'reopened']
 
 concurrency:
     group: ${{ github.workflow }}-${{ github.ref }}
