@@ -1,5 +1,5 @@
 import { useDataQuery } from '@dhis2/app-runtime'
-import { Card, Button } from '@dhis2/ui'
+import { Button, Card } from '@dhis2/ui'
 import React, { useState } from 'react'
 import i18n from '../locales/index.js'
 import userProfileStore from '../profile/profile.store.js'
@@ -12,7 +12,7 @@ const query = {
     tokens: {
         resource: 'apiToken',
         params: ({ userId }) => ({
-            fields: ['id', 'created', 'expire', 'attributes'],
+            fields: ['id', 'code', 'created', 'expire', 'attributes'],
             paging: false,
             filter: `createdBy.id:eq:${userId}`,
         }),
@@ -28,9 +28,10 @@ const PersonalAccessTokens = () => {
     const generateTokenModal = useModal()
 
     const tokens = data?.tokens.apiToken
-        .map(({ id, created, expire, attributes }) => {
+        .map(({ id, created, expire, attributes, code }) => {
             return {
                 id,
+                code,
                 attributes,
                 createdAt: new Date(created),
                 expiresAt: new Date(expire),
