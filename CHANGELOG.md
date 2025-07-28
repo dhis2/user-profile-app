@@ -1,3 +1,10 @@
+## [100.7.6](https://github.com/dhis2/user-profile-app/compare/v100.7.5...v100.7.6) (2025-07-28)
+
+
+### Bug Fixes
+
+* **DHIS2-19863:** introduced token name field in api tokens ([2992ca4](https://github.com/dhis2/user-profile-app/commit/2992ca45885aa9eb633ec37bd8c1647b5c69b987))
+
 ## [100.7.5](https://github.com/dhis2/user-profile-app/compare/v100.7.4...v100.7.5) (2025-07-22)
 
 
