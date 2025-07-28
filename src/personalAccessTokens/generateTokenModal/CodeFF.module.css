@@ -1,0 +1,3 @@
+.container {
+    max-width: min(360px, 100%);
+}
