@@ -3,22 +3,23 @@ import React from 'react'
 import i18n from '../../locales/index.js'
 import styles from './AllowedMethodsFF.module.css'
 
+
 const AllowedMethodsFF = () => (
     <>
         <h3 className={styles.header}>{i18n.t('Allowed HTTP methods')}</h3>
-        <ReactFinalForm.Field
-            name="allowedMethodsGET"
-            label={i18n.t('GET', { context: 'HTTP method' })}
-            type="checkbox"
-            component={CheckboxFieldFF}
-            initialValue={true}
-        />
         <ReactFinalForm.Field
             name="allowedMethodsHEAD"
             label={i18n.t('HEAD', { context: 'HTTP method' })}
             type="checkbox"
             component={CheckboxFieldFF}
             initialValue={false}
+        />
+        <ReactFinalForm.Field
+            name="allowedMethodsGET"
+            label={i18n.t('GET', { context: 'HTTP method' })}
+            type="checkbox"
+            component={CheckboxFieldFF}
+            initialValue={true}
         />
         <ReactFinalForm.Field
             name="allowedMethodsPOST"
