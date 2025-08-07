@@ -14,6 +14,13 @@ const AllowedMethodsFF = () => (
             initialValue={true}
         />
         <ReactFinalForm.Field
+            name="allowedMethodsHEAD"
+            label={i18n.t('HEAD', { context: 'HTTP method' })}
+            type="checkbox"
+            component={CheckboxFieldFF}
+            initialValue={false}
+        />
+        <ReactFinalForm.Field
             name="allowedMethodsPOST"
             label={i18n.t('POST', { context: 'HTTP method' })}
             type="checkbox"
