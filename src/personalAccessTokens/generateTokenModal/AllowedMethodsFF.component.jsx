@@ -3,7 +3,6 @@ import React from 'react'
 import i18n from '../../locales/index.js'
 import styles from './AllowedMethodsFF.module.css'
 
-
 const AllowedMethodsFF = () => (
     <>
         <h3 className={styles.header}>{i18n.t('Allowed HTTP methods')}</h3>
