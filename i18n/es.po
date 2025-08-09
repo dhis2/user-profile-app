@@ -4,18 +4,18 @@
 # ericbp <ericbarredap@gmail.com>, 2021
 # Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2021
 # Pablo Pajuelo Cabezas <pablo@dhis2.org>, 2021
-# Carlos Tejo Alonso, 2022
 # Enzo Nicolas Rossi <enzo@dhis2.org>, 2023
 # Janeth Cruz, 2023
 # Philip Larsen Donnelly, 2025
 # Pablo Del Médico, 2025
+# Carlos Tejo Alonso, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2025-03-18T18:29:13.632Z\n"
+"POT-Creation-Date: 2025-07-22T12:12:24.931Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Pablo Del Médico, 2025\n"
+"Last-Translator: Carlos Tejo Alonso, 2025\n"
 "Language-Team: Spanish (https://app.transifex.com/hisp-uio/teams/100509/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -597,6 +597,12 @@ msgstr ""
 "disuadir a los desarrolladores externos no autorizados de conectarse a "
 "instancias de acceso público."
 
+msgid "Token name"
+msgstr ""
+
+msgid "A unique name for this token."
+msgstr ""
+
 msgid "Choose the context where this token will be used."
 msgstr "Seleccione el contexto en el que se utilizará este token."
 
@@ -644,6 +650,9 @@ msgstr "Caducidad (obligatorio)"
 
 msgid "Custom expiration date (required)"
 msgstr "Fecha de caducidad personalizada (obligatoria)"
+
+msgid "Token name already exists"
+msgstr ""
 
 msgid ""
 "Personal access tokens should only be used in a browser context for public "
@@ -695,6 +704,9 @@ msgstr "Copiar token al portapapeles"
 
 msgid "Newly created token"
 msgstr "Token recién creado"
+
+msgid "Token Name"
+msgstr ""
 
 msgid "Copy to clipboard"
 msgstr "Copiar al portapapeles"
@@ -835,3 +847,11 @@ msgstr "PATCH"
 msgctxt "HTTP method"
 msgid "DELETE"
 msgstr "DELETE"
+
+msgctxt "Application title"
+msgid "__MANIFEST_APP_TITLE"
+msgstr "Perfil de usuario"
+
+msgctxt "Application description"
+msgid "__MANIFEST_APP_DESCRIPTION"
+msgstr ""
