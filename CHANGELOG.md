@@ -1,3 +1,15 @@
+# [100.8.0](https://github.com/dhis2/user-profile-app/compare/v100.7.6...v100.8.0) (2025-08-13)
+
+
+### Bug Fixes
+
+* update i18n ([#1501](https://github.com/dhis2/user-profile-app/issues/1501)) ([d652cf4](https://github.com/dhis2/user-profile-app/commit/d652cf40e251ce111680ff779dbb7f7c69a079b3))
+
+
+### Features
+
+* add HEAD method to token generation modal ([#1499](https://github.com/dhis2/user-profile-app/issues/1499)) ([74ef977](https://github.com/dhis2/user-profile-app/commit/74ef9772009d487c67a3396a8d2d5866af9aeae0))
+
 ## [100.7.6](https://github.com/dhis2/user-profile-app/compare/v100.7.5...v100.7.6) (2025-07-28)
 
 
