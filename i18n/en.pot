@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
-"PO-Revision-Date: 2023-02-27T14:55:39.217Z\n"
+"POT-Creation-Date: 2025-08-07T19:11:36.629Z\n"
+"PO-Revision-Date: 2025-08-07T19:11:36.629Z\n"
 
 msgid "Never"
 msgstr "Never"
@@ -401,6 +401,9 @@ msgstr "Allowed HTTP methods"
 msgid "GET"
 msgstr "GET"
 
+msgid "HEAD"
+msgstr "HEAD"
+
 msgid "POST"
 msgstr "POST"
 
@@ -666,6 +669,10 @@ msgstr "View full profile"
 msgctxt "HTTP method"
 msgid "GET"
 msgstr "GET"
+
+msgctxt "HTTP method"
+msgid "HEAD"
+msgstr "HEAD"
 
 msgctxt "HTTP method"
 msgid "POST"
