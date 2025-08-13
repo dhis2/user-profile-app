@@ -7,6 +7,13 @@ const AllowedMethodsFF = () => (
     <>
         <h3 className={styles.header}>{i18n.t('Allowed HTTP methods')}</h3>
         <ReactFinalForm.Field
+            name="allowedMethodsHEAD"
+            label={i18n.t('HEAD', { context: 'HTTP method' })}
+            type="checkbox"
+            component={CheckboxFieldFF}
+            initialValue={false}
+        />
+        <ReactFinalForm.Field
             name="allowedMethodsGET"
             label={i18n.t('GET', { context: 'HTTP method' })}
             type="checkbox"
