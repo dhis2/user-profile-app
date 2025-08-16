@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
+"POT-Creation-Date: 2025-08-07T19:11:36.629Z\n"
 "PO-Revision-Date: 2023-05-22 19:26+0000\n"
 "Last-Translator: Helton Dias, 2024\n"
 "Language-Team: Portuguese (https://app.transifex.com/hisp-uio/teams/100509/pt/)\n"
@@ -419,6 +419,9 @@ msgstr "Métodos HTTP permitidos"
 msgid "GET"
 msgstr "OBTER"
 
+msgid "HEAD"
+msgstr ""
+
 msgid "POST"
 msgstr "POST"
 
@@ -687,6 +690,10 @@ msgstr "Ver o perfil completo"
 msgctxt "HTTP method"
 msgid "GET"
 msgstr "OBTER"
+
+msgctxt "HTTP method"
+msgid "HEAD"
+msgstr ""
 
 msgctxt "HTTP method"
 msgid "POST"
