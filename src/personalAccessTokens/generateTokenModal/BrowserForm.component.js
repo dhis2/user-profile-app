@@ -4,11 +4,15 @@ import React from 'react'
 import i18n from '../../locales/index.js'
 import AllowedMethodsFF from './AllowedMethodsFF.component.js'
 import AllowedReferrersFF from './AllowedReferrersFF.component.js'
+import CodeFF from './CodeFF.component.js'
 import ExpirationDateFF from './ExpirationDateFF.component.js'
 import styles from './Form.module.css'
 
 const BrowserForm = ({ values }) => (
     <>
+        <div className={styles.field}>
+            <CodeFF />
+        </div>
         <div className={styles.field}>
             <ExpirationDateFF values={values} />
         </div>

@@ -1,11 +1,11 @@
-import { useDataMutation, useAlert } from '@dhis2/app-runtime'
+import { useAlert, useDataMutation } from '@dhis2/app-runtime'
 import {
     Button,
     ButtonStrip,
     Modal,
-    ModalTitle,
-    ModalContent,
     ModalActions,
+    ModalContent,
+    ModalTitle,
     ReactFinalForm,
 } from '@dhis2/ui'
 import PropTypes from 'prop-types'
@@ -90,6 +90,13 @@ const getAllowedReferersAttribute = ({ allowedReferrers }) => {
     }
 }
 
+const getImportError = ({ report }) => {
+    if (report.errorCode === 'E5003' && report?.errorProperty === 'code') {
+        return i18n.t('Token name already exists')
+    }
+    return report.message
+}
+
 const GenerateTokenModal = ({ onGenerate, onClose }) => {
     const errorAlert = useAlert(({ error }) => error.message, {
         critical: true,
@@ -103,6 +110,21 @@ const GenerateTokenModal = ({ onGenerate, onClose }) => {
                 onClose()
             },
             onError: (error) => {
+                const errorCode = error.details.httpStatusCode
+                if (errorCode === 409) {
+                    const errorReports =
+                        error?.details?.response?.errorReports ?? []
+                    if (errorReports.length > 0) {
+                        for (const report of errorReports) {
+                            errorAlert.show({
+                                error: {
+                                    message: getImportError({ report }),
+                                },
+                            })
+                        }
+                        return
+                    }
+                }
                 errorAlert.show({ error })
             },
         }
@@ -123,6 +145,7 @@ const GenerateTokenModal = ({ onGenerate, onClose }) => {
 
         const params = {
             expire: getExpire(formParams),
+            code: formParams.code,
             attributes: [
                 getAllowedIpsAttribute(formParams),
                 getAllowedMethodsAttribute(formParams),

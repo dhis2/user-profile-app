@@ -5,6 +5,22 @@
     margin-bottom: var(--spacers-dp4);
 }
 
+.item {
+    display: grid;
+    gap: var(--spacers-dp8);
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin-bottom: var(--spacers-dp8);
+}
+
+.itemTitle {
+    font-weight: 500;
+}
+
+.itemValue {
+    margin: 0;
+}
+
 .token {
     display: flex;
     align-items: center;
