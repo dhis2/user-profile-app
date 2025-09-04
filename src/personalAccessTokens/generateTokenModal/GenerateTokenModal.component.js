@@ -58,7 +58,6 @@ const getAllowedIpsAttribute = ({ allowedIps }) => {
 
 const getAllowedMethodsAttribute = ({
     allowedMethodsGET,
-    allowedMethodsHEAD,
     allowedMethodsPOST,
     allowedMethodsPUT,
     allowedMethodsPATCH,
@@ -68,7 +67,6 @@ const getAllowedMethodsAttribute = ({
         type: 'MethodAllowedList',
         allowedMethods: [
             allowedMethodsGET && 'GET',
-            allowedMethodsHEAD && 'HEAD',
             allowedMethodsPOST && 'POST',
             allowedMethodsPUT && 'PUT',
             allowedMethodsPATCH && 'PATCH',
