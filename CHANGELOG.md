@@ -1,3 +1,10 @@
+## [100.8.1](https://github.com/dhis2/user-profile-app/compare/v100.8.0...v100.8.1) (2025-09-12)
+
+
+### Bug Fixes
+
+* feature toggle head method for v43+ [DHIS2-20080] ([#1503](https://github.com/dhis2/user-profile-app/issues/1503)) ([04a4e19](https://github.com/dhis2/user-profile-app/commit/04a4e196a6a5a3d3d60a47bdc0a7d525b29b7af3))
+
 # [100.8.0](https://github.com/dhis2/user-profile-app/compare/v100.7.6...v100.8.0) (2025-08-13)
 
 
