@@ -56,6 +56,7 @@ const getAllowedIpsAttribute = ({ allowedIps }) => {
     }
 }
 
+// note: allowedMethodsHead will not be in formParams when not feature toggled to show in UI
 const getAllowedMethodsAttribute = ({
     allowedMethodsGET,
     allowedMethodsHEAD,
