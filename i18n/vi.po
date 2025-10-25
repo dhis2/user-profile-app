@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2025-02-18T16:33:28.306Z\n"
+"POT-Creation-Date: 2025-08-13T11:18:49.717Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
 "Last-Translator: Em Le <em.hispvietnam@gmail.com>, 2025\n"
 "Language-Team: Vietnamese (https://app.transifex.com/hisp-uio/teams/100509/vi/)\n"
@@ -171,6 +171,9 @@ msgid ""
 "characters long, with at least one lowercase character, one uppercase "
 "character, one number, and one special character."
 msgstr ""
+"Độ dài mật khẩu phải tối thiểu {{minPasswordLength}} và tối đa "
+"{{maxPasswordLength}} kí tự, với ít nhất một chữ viết thường, một chữ viết "
+"hoa, một con số, và một kí tự đặc biệt."
 
 msgid "Repeat new password"
 msgstr "Gõ lại mật khẩu mới"
@@ -201,13 +204,13 @@ msgid "Failed to update password"
 msgstr "Không thể cập nhật mật khẩu"
 
 msgid "Authenticator app"
-msgstr ""
+msgstr "Ứng dụng xác thực"
 
 msgid "Email"
 msgstr "Email"
 
 msgid "Could not enable two factor authentication"
-msgstr ""
+msgstr "Không thể bật Xác thực 2 yếu tố"
 
 msgid "Two factor authentication was enabled successfully"
 msgstr "Xác thực hai yếu tố đã được bật thành công"
@@ -226,6 +229,9 @@ msgid ""
 "security. With two-factor authentication turned on, you will need to enter "
 "an authentication code every time you log in."
 msgstr ""
+"Xác thực hai yếu tố bảo vệ tài khoản của bạn bằng một lớp bảo mật bổ sung. "
+"Khi bật xác thực hai yếu tố, bạn sẽ cần nhập mã xác thực từ thiết bị của "
+"mình mỗi lần đăng nhập."
 
 msgid "Turn off two-factor authentication"
 msgstr "Tắt tính năng Xác thực hai yếu tố"
@@ -234,7 +240,7 @@ msgid "Turn on two-factor authentication"
 msgstr "Bật xác thực hai yếu tố"
 
 msgid "Two factor authentication type"
-msgstr ""
+msgstr "Loại xác thực hai yếu tố"
 
 msgid "Remove two-factor account"
 msgstr "Xóa tài khoản hai yếu tố"
@@ -251,23 +257,26 @@ msgstr ""
 msgid ""
 "Send authentication code to your verified email address: {{emailAddress}}"
 msgstr ""
+"Gửi mã xác thực đến địa chỉ email đã xác minh của bạn: {{emailAddress}}"
 
 msgid "Authentication code sent"
-msgstr ""
+msgstr "Mã xác thực đã được gửi"
 
 msgid ""
 "If you didn't receive the code, check your spam/junk folder. Have you waited"
 " a few minutes and still not received the code?"
 msgstr ""
+"Nếu bạn không nhận được mã, hãy kiểm tra thư mục thư rác/thư rác. Bạn đã đợi"
+" vài phút mà vẫn chưa nhận được mã?"
 
 msgid "Send a new code"
-msgstr ""
+msgstr "Gửi một mã mới"
 
 msgid "Send authentication code"
-msgstr ""
+msgstr "Gửi mã xác thực"
 
 msgid "Enter the 6 digit authentication code in the email."
-msgstr ""
+msgstr "Nhập mã xác thực gồm 6 chữ số vào email."
 
 msgid "Already set up two-factor authentication before?"
 msgstr "Bạn đã thiết lập xác thực hai yếu tố chưa?"
@@ -285,9 +294,12 @@ msgid ""
 "disable two-factor authentication via email. If you have recently verified "
 "your email, you may need to refresh this page."
 msgstr ""
+"Email của bạn chưa được xác minh. Bạn phải xác minh email của mình để bật "
+"hoặc tắt xác thực hai yếu tố qua email. Nếu bạn đã xác minh email gần đây, "
+"bạn có thể cần làm mới trang này."
 
 msgid "Verify your email here."
-msgstr ""
+msgstr "Xác minh email của bạn tại đây."
 
 msgid ""
 "Two-factor authentication protects your account with an extra layer of "
@@ -342,7 +354,7 @@ msgstr ""
 "bạn."
 
 msgid "6 digit code"
-msgstr ""
+msgstr "6 chữ số"
 
 msgid "Could not enable 2 Factor Authentication"
 msgstr "Không thể bật Xác thực 2 yếu tố"
@@ -366,64 +378,66 @@ msgid "Remove profile picture"
 msgstr "Xóa ảnh hồ sơ"
 
 msgid "No email provided"
-msgstr ""
+msgstr "Không cung cấp email"
 
 msgid "Email is invalid"
-msgstr ""
+msgstr "Email không hợp lệ"
 
 msgid "Emails must match"
-msgstr ""
+msgstr "Email phải khớp"
 
 msgid "Email update not allowed"
-msgstr ""
+msgstr "Không được phép cập nhật qua email"
 
 msgid "Your email is currently used for two factor authentication"
-msgstr ""
+msgstr "Email của bạn hiện đang được sử dụng để xác thực hai yếu tố"
 
 msgid ""
 "To update your email, you must first disable two factor authentication by "
 "email. After this has been disabled, you can change your email and then set "
 "up two factor authentication again."
 msgstr ""
+"Để cập nhật email, trước tiên bạn phải tắt xác thực hai yếu tố qua email. "
+"Sau khi tắt, bạn có thể thay đổi email và thiết lập lại xác thực hai yếu tố."
 
 msgid "Disable two factor authentication here"
-msgstr ""
+msgstr "Vô hiệu hóa xác thực hai yếu tố ở đây"
 
 msgid "Cancel"
 msgstr "Hủy"
 
 msgid "Remove email"
-msgstr ""
+msgstr "Xóa email"
 
 msgid "Your email is currently verified"
-msgstr ""
+msgstr "Email của bạn hiện đang được xác minh"
 
 msgid "Are you sure you want to remove your email?"
-msgstr ""
+msgstr "Bạn có chắc chắn muốn xóa email của mình không?"
 
 msgid "Change email"
-msgstr ""
+msgstr "Thay đổi email"
 
 msgid "If you change your email, you may need to reverify your email."
-msgstr ""
+msgstr "Nếu bạn thay đổi email, bạn có thể cần phải xác minh lại email."
 
 msgid "Current email"
-msgstr ""
+msgstr "Email hiện tại"
 
 msgid "no current email"
-msgstr ""
+msgstr "không có email hiện tại"
 
 msgid "Enter new email"
-msgstr ""
+msgstr "Nhập email mới"
 
 msgid "Confirm new email"
-msgstr ""
+msgstr "Xác nhận email mới"
 
 msgid "Save"
 msgstr "Lưu"
 
 msgid "There is no email to remove"
-msgstr ""
+msgstr "Không có email nào để xóa"
 
 msgid "This field is required"
 msgstr "Trường này yêu cầu"
@@ -492,18 +506,20 @@ msgid "Failed to send email verification link."
 msgstr "Không gửi được liên kết xác minh email."
 
 msgid "Email already verified"
-msgstr ""
+msgstr "Email đã được xác minh"
 
 msgid "Verify email"
-msgstr ""
+msgstr "Xác minh email"
 
 msgid ""
 "Your email is not verified. Please verify your email to continue using the "
 "system."
 msgstr ""
+"Email của bạn chưa được xác minh. Vui lòng xác minh email để tiếp tục sử "
+"dụng hệ thống."
 
 msgid "Please provide an email and verify it to continue using the system."
-msgstr ""
+msgstr "Vui lòng cung cấp email và xác minh để tiếp tục sử dụng hệ thống."
 
 msgid "Manage personal access tokens"
 msgstr "Quản lý mã truy cập cá nhân"
@@ -538,6 +554,9 @@ msgstr "Liệt kê một địa chỉ IP trên mỗi dòng."
 
 msgid "Allowed HTTP methods"
 msgstr "Các phương thức HTTP được phép"
+
+msgid "HEAD"
+msgstr "HEAD"
 
 msgid "GET"
 msgstr "GET"
@@ -585,6 +604,12 @@ msgstr ""
 "phát triển bên thứ ba trái phép kết nối với các phiên bản truy cập công "
 "khai."
 
+msgid "Token name"
+msgstr "Tên mã thông báo"
+
+msgid "A unique name for this token."
+msgstr "Tên duy nhất cho mã thông báo này."
+
 msgid "Choose the context where this token will be used."
 msgstr "Chọn bối cảnh mà mã truy cập này sẽ được sử dụng."
 
@@ -631,6 +656,9 @@ msgstr "Ngày hết hạn (bắt buộc)"
 
 msgid "Custom expiration date (required)"
 msgstr "Tùy chỉnh ngày hết hạn (bắt buộc)"
+
+msgid "Token name already exists"
+msgstr "Tên mã thông báo đã tồn tại"
 
 msgid ""
 "Personal access tokens should only be used in a browser context for public "
@@ -683,6 +711,9 @@ msgstr "Đã sao chép mã truy cập vào bảng tạm"
 
 msgid "Newly created token"
 msgstr "Mã truy cập mới được tạo"
+
+msgid "Token Name"
+msgstr "Tên mã thông báo"
 
 msgid "Copy to clipboard"
 msgstr "Sao chép vào bộ nhớ tạm"
@@ -805,6 +836,10 @@ msgid "View full profile"
 msgstr "Xem hồ sơ đầy đủ"
 
 msgctxt "HTTP method"
+msgid "HEAD"
+msgstr "HEAD"
+
+msgctxt "HTTP method"
 msgid "GET"
 msgstr "GET"
 
@@ -823,3 +858,11 @@ msgstr "PATCH"
 msgctxt "HTTP method"
 msgid "DELETE"
 msgstr "DELETE"
+
+msgctxt "Application title"
+msgid "__MANIFEST_APP_TITLE"
+msgstr "Hồ Sơ Người Dùng"
+
+msgctxt "Application description"
+msgid "__MANIFEST_APP_DESCRIPTION"
+msgstr "Ứng dụng Hồ sơ Người dùng cho DHIS2"
