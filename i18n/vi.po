@@ -4,14 +4,14 @@
 # Philip Larsen Donnelly, 2023
 # Viktor Varland <viktor@dhis2.org>, 2023
 # Mai Nguyen <thanhmai.jica@gmail.com>, 2023
-# Em Le <em.hispvietnam@gmail.com>, 2024
+# Em Le <em.hispvietnam@gmail.com>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
+"POT-Creation-Date: 2025-08-28T14:06:57.244Z\n"
 "PO-Revision-Date: 2023-05-22 19:26+0000\n"
-"Last-Translator: Em Le <em.hispvietnam@gmail.com>, 2024\n"
+"Last-Translator: Em Le <em.hispvietnam@gmail.com>, 2025\n"
 "Language-Team: Vietnamese (https://app.transifex.com/hisp-uio/teams/100509/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -300,6 +300,9 @@ msgstr "Không thể vô hiệu hóa xác thực hai yếu tố"
 msgid "Two factor authentication was disabled successfully"
 msgstr "Xác thực hai yếu tố đã được vô hiệu hóa thành công"
 
+msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
+msgstr "Hãy chọn hình đại diện với dung lượng nhỏ hơn {{- maxSize}}MB"
+
 msgid "Failed to upload profile picture"
 msgstr "Không thể tải ảnh hồ sơ"
 
@@ -409,6 +412,9 @@ msgstr "Liệt kê một địa chỉ IP trên mỗi dòng."
 msgid "Allowed HTTP methods"
 msgstr "Các phương thức HTTP được phép"
 
+msgid "HEAD"
+msgstr "HEAD"
+
 msgid "GET"
 msgstr "GET"
 
@@ -454,6 +460,12 @@ msgstr ""
 " có thể dễ dàng bị giả mạo. Thiết lập này nhằm mục đích ngăn chặn các nhà "
 "phát triển bên thứ ba trái phép kết nối với các phiên bản truy cập công "
 "khai."
+
+msgid "Token name"
+msgstr "Tên mã thông báo"
+
+msgid "A unique name for this token."
+msgstr "Tên duy nhất cho mã thông báo này."
 
 msgid "Choose the context where this token will be used."
 msgstr "Chọn bối cảnh mà mã truy cập này sẽ được sử dụng."
@@ -501,6 +513,9 @@ msgstr "Ngày hết hạn (bắt buộc)"
 
 msgid "Custom expiration date (required)"
 msgstr "Tùy chỉnh ngày hết hạn (bắt buộc)"
+
+msgid "Token name already exists"
+msgstr "Tên mã thông báo đã tồn tại"
 
 msgid ""
 "Personal access tokens should only be used in a browser context for public "
@@ -556,6 +571,9 @@ msgstr "Đã sao chép mã truy cập vào bảng tạm"
 
 msgid "Newly created token"
 msgstr "Mã truy cập mới được tạo"
+
+msgid "Token Name"
+msgstr "Tên mã thông báo"
 
 msgid "Copy to clipboard"
 msgstr "Sao chép vào bộ nhớ tạm"
@@ -676,6 +694,10 @@ msgstr "Cho phép gửi thông báo SMS"
 
 msgid "View full profile"
 msgstr "Xem hồ sơ đầy đủ"
+
+msgctxt "HTTP method"
+msgid "HEAD"
+msgstr "HEAD"
 
 msgctxt "HTTP method"
 msgid "GET"
