@@ -1,7 +1,8 @@
 # 
 # Translators:
-# phil_dhis2, 2021
+# Philip Larsen Donnelly, 2021
 # Karoline Tufte Lien <karoline@dhis2.org>, 2021
+# Esther Tokouli, 2025
 # 
 #, fuzzy
 msgid ""
@@ -10,8 +11,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-01 00:28-0400\n"
 "PO-Revision-Date: 2021-03-09 23:24+0000\n"
-"Last-Translator: Karoline Tufte Lien <karoline@dhis2.org>, 2021\n"
-"Language-Team: French (https://www.transifex.com/hisp-uio/teams/100509/fr/)\n"
+"Last-Translator: Esther Tokouli, 2025\n"
+"Language-Team: French (https://app.transifex.com/hisp-uio/teams/100509/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -69,7 +70,7 @@ msgstr "Numéro de téléphone portable"
 
 #: job_title
 msgid "Job title"
-msgstr "Intitulé de l'emploi"
+msgstr "Titre de la tâche"
 
 #: introduction
 msgid "Introduction"
@@ -123,7 +124,7 @@ msgstr "Employeur"
 
 #: education
 msgid "Education"
-msgstr "Éducation"
+msgstr "Parcours académique"
 
 #: interests
 msgid "Interests"
@@ -176,11 +177,11 @@ msgstr "Langue de l'interface"
 
 #: enable_message_email_notifications
 msgid "Enable message email notifications"
-msgstr "Autoriser les notifications de messages email"
+msgstr "Autoriser les notifications de messages par email"
 
 #: enable_message_sms_notifications
 msgid "Enable message SMS notifications"
-msgstr "Autoriser les notifications de messages SMS"
+msgstr "Autoriser les notifications de messages par SMS"
 
 #: analysis_module
 msgctxt "analysis_module"
@@ -229,7 +230,7 @@ msgstr "Les valeurs saisies ne correspondent pas. Veuillez resaisir."
 
 #: use_system_default
 msgid "Use system default"
-msgstr "Utiliser les paramètres du système"
+msgstr "Utiliser la valeur par défaut du système"
 
 #: true_notifications
 msgid "Yes"
