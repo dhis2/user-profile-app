@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2025-07-22T12:12:24.931Z\n"
+"POT-Creation-Date: 2025-08-13T11:18:49.717Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
 "Last-Translator: easylin <lin_xd@126.com>, 2025\n"
 "Language-Team: Chinese (https://app.transifex.com/hisp-uio/teams/100509/zh/)\n"
@@ -522,6 +522,9 @@ msgstr "每行列出一个 IP 地址。"
 msgid "Allowed HTTP methods"
 msgstr "允许的 HTTP 方法"
 
+msgid "HEAD"
+msgstr "总负责人"
+
 msgid "GET"
 msgstr "GET"
 
@@ -781,6 +784,10 @@ msgstr "打开消息短信通知"
 
 msgid "View full profile"
 msgstr "查看全部简历"
+
+msgctxt "HTTP method"
+msgid "HEAD"
+msgstr "总负责人"
 
 msgctxt "HTTP method"
 msgid "GET"

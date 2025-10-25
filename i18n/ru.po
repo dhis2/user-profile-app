@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2025-03-18T18:29:13.632Z\n"
+"POT-Creation-Date: 2025-08-13T11:18:49.717Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
 "Last-Translator: Nadiia <semchuk@aph.org.ua>, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/hisp-uio/teams/100509/ru/)\n"
@@ -137,7 +137,7 @@ msgid "Database"
 msgstr ""
 
 msgid "Edit account settings"
-msgstr ""
+msgstr "Редактирование настроек учетной записи"
 
 msgid "No changes have been made"
 msgstr "Изменения не производились"
@@ -154,7 +154,7 @@ msgid "The entered values do not match. Please re-enter."
 msgstr "Введенные значения не совпадают. Пожалуйста, введите снова."
 
 msgid "Please provide your old password"
-msgstr ""
+msgstr "Укажите ваш старый пароль"
 
 msgid "Username"
 msgstr "Имя пользователя"
@@ -173,6 +173,9 @@ msgid ""
 "characters long, with at least one lowercase character, one uppercase "
 "character, one number, and one special character."
 msgstr ""
+"Пароль должен содержать от {{minPasswordLength}} до {{maxPasswordLength}} "
+"символов, по крайней мере один строчный символ, один прописной, одну цифру и"
+" один специальный символ."
 
 msgid "Repeat new password"
 msgstr "Повторите новый пароль"
@@ -189,13 +192,14 @@ msgid ""
 msgstr ""
 
 msgid "Password changed successfully"
-msgstr ""
+msgstr "Пароль успешно изменен"
 
 msgid "You need to login again to continue using the application."
 msgstr ""
+"Чтобы продолжить работу с приложением, необходимо снова войти в систему."
 
 msgid "Login"
-msgstr ""
+msgstr "Войти в систему"
 
 msgid "Failed to update password"
 msgstr "Не удалось обновить пароль"
@@ -328,7 +332,7 @@ msgid ""
 msgstr ""
 
 msgid "6 digit code"
-msgstr ""
+msgstr "6-значный код"
 
 msgid "Could not enable 2 Factor Authentication"
 msgstr ""
@@ -463,7 +467,7 @@ msgid "Two factor authentication"
 msgstr ""
 
 msgid "Full profile"
-msgstr ""
+msgstr "Полный профиль"
 
 msgid "Personal access tokens"
 msgstr ""
@@ -523,6 +527,9 @@ msgstr ""
 msgid "Allowed HTTP methods"
 msgstr ""
 
+msgid "HEAD"
+msgstr ""
+
 msgid "GET"
 msgstr ""
 
@@ -563,6 +570,12 @@ msgid ""
 "Important: this is not a security feature. The referrer header can easily be"
 " spoofed. This setting is intended to discourage unauthorised third-party "
 "developers from connecting to public access instances."
+msgstr ""
+
+msgid "Token name"
+msgstr ""
+
+msgid "A unique name for this token."
 msgstr ""
 
 msgid "Choose the context where this token will be used."
@@ -609,6 +622,9 @@ msgstr ""
 msgid "Custom expiration date (required)"
 msgstr ""
 
+msgid "Token name already exists"
+msgstr ""
+
 msgid ""
 "Personal access tokens should only be used in a browser context for public "
 "access instances. For private instances, tokens should be treated like "
@@ -651,6 +667,9 @@ msgstr ""
 msgid "Newly created token"
 msgstr ""
 
+msgid "Token Name"
+msgstr ""
+
 msgid "Copy to clipboard"
 msgstr "Копировать в буфер обмена"
 
@@ -658,7 +677,7 @@ msgid "Delete"
 msgstr "Удалить"
 
 msgid "Edit user profile"
-msgstr ""
+msgstr "Редактирование профиля пользователя"
 
 msgid "User profile updated"
 msgstr "Профиль пользователя обновлен"
@@ -667,7 +686,7 @@ msgid "Failed to update user profile"
 msgstr "Не удалось обновить профиль пользователя"
 
 msgid "Edit user settings"
-msgstr ""
+msgstr "Редактирование настроек пользователя"
 
 msgid "Settings updated"
 msgstr "Настройки обновлены"
@@ -709,7 +728,7 @@ msgid "User roles"
 msgstr "Уровень доступа"
 
 msgid "User org units"
-msgstr ""
+msgstr "Организационные единицы пользователя"
 
 msgid "Birthday"
 msgstr "День рождения"
@@ -769,6 +788,10 @@ msgid "Enable message SMS notifications"
 msgstr "Включить SMS-уведомления о сообщениях"
 
 msgid "View full profile"
+msgstr "Посмотреть полный профиль"
+
+msgctxt "HTTP method"
+msgid "HEAD"
 msgstr ""
 
 msgctxt "HTTP method"
@@ -790,3 +813,11 @@ msgstr ""
 msgctxt "HTTP method"
 msgid "DELETE"
 msgstr ""
+
+msgctxt "Application title"
+msgid "__MANIFEST_APP_TITLE"
+msgstr "Профиль пользователя"
+
+msgctxt "Application description"
+msgid "__MANIFEST_APP_DESCRIPTION"
+msgstr "Приложение \"Профиль пользователя\" для DHIS2"

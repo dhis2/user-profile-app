@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2025-02-05T15:02:02.227Z\n"
+"POT-Creation-Date: 2025-08-13T11:18:49.717Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
 "Last-Translator: Jiří Podhorecký <jirka.p@volny.cz>, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/hisp-uio/teams/100509/cs/)\n"
@@ -167,6 +167,9 @@ msgid ""
 "characters long, with at least one lowercase character, one uppercase "
 "character, one number, and one special character."
 msgstr ""
+"Heslo by mělo mít délku od {{minPasswordLength}} do {{maxPasswordLength}} a "
+"obsahovat alespoň jeden malý znak, jeden velký znak, jednu číslici a jeden "
+"speciální znak."
 
 msgid "Repeat new password"
 msgstr "opakujte nové heslo"
@@ -196,18 +199,41 @@ msgstr "Přihlásit se"
 msgid "Failed to update password"
 msgstr "Aktualizace hesla se nezdařila"
 
+msgid "Authenticator app"
+msgstr ""
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Could not enable two factor authentication"
+msgstr ""
+
+msgid "Two factor authentication was enabled successfully"
+msgstr ""
+
+msgid "Could not disable two factor authentication"
+msgstr ""
+
+msgid "Two factor authentication was disabled successfully"
+msgstr ""
+
 msgid "Two-factor Authentication"
 msgstr "Dvoufaktorová autentizace"
+
+msgid ""
+"Two-factor authentication protects your account with an extra layer of "
+"security. With two-factor authentication turned on, you will need to enter "
+"an authentication code every time you log in."
+msgstr ""
 
 msgid "Turn off two-factor authentication"
 msgstr "Jak vypnout dvoufaktorové ověřování"
 
-msgid "Open your authenticator app."
-msgstr "Otevřete aplikaci pro ověřování."
+msgid "Turn on two-factor authentication"
+msgstr "Jak zapnout dvoufaktorové ověřování"
 
-msgid ""
-"Now, enter the authentication code below and click the \"Turn off\" button."
-msgstr "Nyní zadejte ověřovací kód níže a klikněte na tlačítko „Vypnout“."
+msgid "Two factor authentication type"
+msgstr ""
 
 msgid "Remove two-factor account"
 msgstr "Odstraňte dvoufaktorový účet"
@@ -221,14 +247,68 @@ msgstr ""
 "aplikace pro ověřování, abyste předešli případným budoucím problémům s "
 "opětovným povolením dvoufaktorového ověřování."
 
+msgid ""
+"Send authentication code to your verified email address: {{emailAddress}}"
+msgstr ""
+
+msgid "Authentication code sent"
+msgstr ""
+
+msgid ""
+"If you didn't receive the code, check your spam/junk folder. Have you waited"
+" a few minutes and still not received the code?"
+msgstr ""
+
+msgid "Send a new code"
+msgstr ""
+
+msgid "Send authentication code"
+msgstr ""
+
+msgid "Enter the 6 digit authentication code in the email."
+msgstr ""
+
+msgid "Already set up two-factor authentication before?"
+msgstr "Už jste si dříve nastavili dvoufaktorové ověřování?"
+
+msgid ""
+"If you have set up two-factor authentication for this account before, you "
+"need to remove that entry from your authenticator app before setting it up "
+"again."
+msgstr ""
+"Pokud jste pro tento účet dříve nastavili dvoufaktorové ověřování, musíte "
+"tento záznam z aplikace pro ověřování odstranit, než jej znovu nastavíte."
+
+msgid ""
+"Your email is not verified. You must verify or your email to enable or "
+"disable two-factor authentication via email. If you have recently verified "
+"your email, you may need to refresh this page."
+msgstr ""
+
+msgid "Verify your email here."
+msgstr ""
+
+msgid ""
+"Two-factor authentication protects your account with an extra layer of "
+"security. With two-factor authentication turned on, you will need to enter "
+"an authentication code from your device every time you log in."
+msgstr ""
+"Dvoufaktorové ověřování chrání váš účet další vrstvou zabezpečení. Se "
+"zapnutou dvoufaktorovou autentizací budete muset při každém přihlášení zadat"
+" ověřovací kód z vašeho zařízení."
+
+msgid "Open your authenticator app."
+msgstr "Otevřete aplikaci pro ověřování."
+
+msgid ""
+"Now, enter the authentication code below and click the \"Turn off\" button."
+msgstr "Nyní zadejte ověřovací kód níže a klikněte na tlačítko „Vypnout“."
+
 msgid "Play store"
 msgstr "Play store"
 
 msgid "App store"
 msgstr "Obchod s aplikacemi"
-
-msgid "Turn on two-factor authentication"
-msgstr "Jak zapnout dvoufaktorové ověřování"
 
 msgid ""
 "Make sure you have an authenticator app installed on your device. We "
@@ -243,26 +323,6 @@ msgid ""
 msgstr ""
 "Nyní níže zadejte kód z vaší ověřovací aplikace a klikněte na tlačítko "
 "„Zapnout“."
-
-msgid "Already set up two-factor authentication before?"
-msgstr "Už jste si dříve nastavili dvoufaktorové ověřování?"
-
-msgid ""
-"If you have set up two-factor authentication for this account before, you "
-"need to remove that entry from your authenticator app before setting it up "
-"again."
-msgstr ""
-"Pokud jste pro tento účet dříve nastavili dvoufaktorové ověřování, musíte "
-"tento záznam z aplikace pro ověřování odstranit, než jej znovu nastavíte."
-
-msgid ""
-"Two-factor authentication protects your account with an extra layer of "
-"security. With two-factor authentication turned on, you will need to enter "
-"an authentication code from your device every time you log in."
-msgstr ""
-"Dvoufaktorové ověřování chrání váš účet další vrstvou zabezpečení. Se "
-"zapnutou dvoufaktorovou autentizací budete muset při každém přihlášení zadat"
-" ověřovací kód z vašeho zařízení."
 
 msgid "Two-factor authentication is on."
 msgstr "Je zapnuté dvoufaktorové ověřování."
@@ -280,19 +340,10 @@ msgstr ""
 "Tento kód nevypadá správně. Zadejte šestimístný kód z vaší ověřovací "
 "aplikace."
 
-msgid "Six digit authentication code"
+msgid "6 digit code"
 msgstr ""
 
 msgid "Could not enable 2 Factor Authentication"
-msgstr ""
-
-msgid "Two factor authentication was enabled successfully"
-msgstr ""
-
-msgid "Could not disable two factor authentication"
-msgstr ""
-
-msgid "Two factor authentication was disabled successfully"
 msgstr ""
 
 msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
@@ -322,6 +373,24 @@ msgstr ""
 msgid "Emails must match"
 msgstr ""
 
+msgid "Email update not allowed"
+msgstr ""
+
+msgid "Your email is currently used for two factor authentication"
+msgstr ""
+
+msgid ""
+"To update your email, you must first disable two factor authentication by "
+"email. After this has been disabled, you can change your email and then set "
+"up two factor authentication again."
+msgstr ""
+
+msgid "Disable two factor authentication here"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Zrušit"
+
 msgid "Remove email"
 msgstr ""
 
@@ -330,9 +399,6 @@ msgstr ""
 
 msgid "Are you sure you want to remove your email?"
 msgstr ""
-
-msgid "Cancel"
-msgstr "Zrušit"
 
 msgid "Change email"
 msgstr ""
@@ -354,9 +420,6 @@ msgstr ""
 
 msgid "Save"
 msgstr "Uložit"
-
-msgid "Email"
-msgstr "E-mail"
 
 msgid "There is no email to remove"
 msgstr ""
@@ -410,7 +473,7 @@ msgid "Account settings"
 msgstr "Nastavení účtu"
 
 msgid "Two factor authentication"
-msgstr ""
+msgstr "Dvoufaktorové ověřování"
 
 msgid "Full profile"
 msgstr "Celý profil"
@@ -425,6 +488,9 @@ msgid "Email verification link sent successfully!"
 msgstr ""
 
 msgid "Failed to send email verification link."
+msgstr ""
+
+msgid "Email already verified"
 msgstr ""
 
 msgid "Verify email"
@@ -470,6 +536,9 @@ msgstr "Uveďte jednu IP adresu na řádek."
 msgid "Allowed HTTP methods"
 msgstr "Povolené metody HTTP"
 
+msgid "HEAD"
+msgstr ""
+
 msgid "GET"
 msgstr "GET"
 
@@ -514,6 +583,12 @@ msgstr ""
 "Důležité: toto není bezpečnostní funkce. Záhlaví doporučení lze snadno "
 "podvrhnout. Toto nastavení má odradit neautorizované vývojáře třetích stran "
 "od připojení k veřejně přístupným instancím."
+
+msgid "Token name"
+msgstr ""
+
+msgid "A unique name for this token."
+msgstr ""
 
 msgid "Choose the context where this token will be used."
 msgstr "Vyberte kontext, ve kterém bude tento token použit."
@@ -561,6 +636,9 @@ msgstr "Expirace (povinné)"
 
 msgid "Custom expiration date (required)"
 msgstr "Vlastní datum vypršení platnosti (povinné)"
+
+msgid "Token name already exists"
+msgstr ""
 
 msgid ""
 "Personal access tokens should only be used in a browser context for public "
@@ -612,6 +690,9 @@ msgstr "Token byl zkopírován do schránky"
 
 msgid "Newly created token"
 msgstr "Nově vytvořený token"
+
+msgid "Token Name"
+msgstr ""
 
 msgid "Copy to clipboard"
 msgstr "Zkopírovat do schránky"
@@ -734,6 +815,10 @@ msgid "View full profile"
 msgstr "Zobrazit celý profil"
 
 msgctxt "HTTP method"
+msgid "HEAD"
+msgstr ""
+
+msgctxt "HTTP method"
 msgid "GET"
 msgstr "GET"
 
@@ -752,3 +837,11 @@ msgstr "PATCH"
 msgctxt "HTTP method"
 msgid "DELETE"
 msgstr "DELETE"
+
+msgctxt "Application title"
+msgid "__MANIFEST_APP_TITLE"
+msgstr ""
+
+msgctxt "Application description"
+msgid "__MANIFEST_APP_DESCRIPTION"
+msgstr ""
