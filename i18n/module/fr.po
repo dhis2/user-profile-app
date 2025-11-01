@@ -264,7 +264,7 @@ msgstr ""
 
 #: password_update_success
 msgid "Your password was updated successfully"
-msgstr "Votre mot de passe a été changé avec succès"
+msgstr "Votre mot de passe a été mis à jour avec succès"
 
 #: password_update_failed
 msgid "Failed to update password"
