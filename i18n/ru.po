@@ -4,13 +4,14 @@
 # Valeriu Plesca <vplesca@gmail.com>, 2021
 # Yury Rogachev <yury@dhis2.org>, 2025
 # Philip Larsen Donnelly, 2025
+# Nadiia <semchuk@aph.org.ua>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2025-02-05T15:02:02.227Z\n"
+"POT-Creation-Date: 2025-08-13T11:18:49.717Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Philip Larsen Donnelly, 2025\n"
+"Last-Translator: Nadiia <semchuk@aph.org.ua>, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/hisp-uio/teams/100509/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -136,7 +137,7 @@ msgid "Database"
 msgstr ""
 
 msgid "Edit account settings"
-msgstr ""
+msgstr "Редактирование настроек учетной записи"
 
 msgid "No changes have been made"
 msgstr "Изменения не производились"
@@ -153,7 +154,7 @@ msgid "The entered values do not match. Please re-enter."
 msgstr "Введенные значения не совпадают. Пожалуйста, введите снова."
 
 msgid "Please provide your old password"
-msgstr ""
+msgstr "Укажите ваш старый пароль"
 
 msgid "Username"
 msgstr "Имя пользователя"
@@ -172,6 +173,9 @@ msgid ""
 "characters long, with at least one lowercase character, one uppercase "
 "character, one number, and one special character."
 msgstr ""
+"Пароль должен содержать от {{minPasswordLength}} до {{maxPasswordLength}} "
+"символов, по крайней мере один строчный символ, один прописной, одну цифру и"
+" один специальный символ."
 
 msgid "Repeat new password"
 msgstr "Повторите новый пароль"
@@ -188,28 +192,52 @@ msgid ""
 msgstr ""
 
 msgid "Password changed successfully"
-msgstr ""
+msgstr "Пароль успешно изменен"
 
 msgid "You need to login again to continue using the application."
 msgstr ""
+"Чтобы продолжить работу с приложением, необходимо снова войти в систему."
 
 msgid "Login"
-msgstr ""
+msgstr "Войти в систему"
 
 msgid "Failed to update password"
 msgstr "Не удалось обновить пароль"
 
+msgid "Authenticator app"
+msgstr ""
+
+msgid "Email"
+msgstr "Адрес электронной почты"
+
+msgid "Could not enable two factor authentication"
+msgstr ""
+
+msgid "Two factor authentication was enabled successfully"
+msgstr ""
+
+msgid "Could not disable two factor authentication"
+msgstr ""
+
+msgid "Two factor authentication was disabled successfully"
+msgstr ""
+
 msgid "Two-factor Authentication"
+msgstr ""
+
+msgid ""
+"Two-factor authentication protects your account with an extra layer of "
+"security. With two-factor authentication turned on, you will need to enter "
+"an authentication code every time you log in."
 msgstr ""
 
 msgid "Turn off two-factor authentication"
 msgstr ""
 
-msgid "Open your authenticator app."
+msgid "Turn on two-factor authentication"
 msgstr ""
 
-msgid ""
-"Now, enter the authentication code below and click the \"Turn off\" button."
+msgid "Two factor authentication type"
 msgstr ""
 
 msgid "Remove two-factor account"
@@ -221,23 +249,25 @@ msgid ""
 "enabling two-factor authentication."
 msgstr ""
 
-msgid "Play store"
+msgid ""
+"Send authentication code to your verified email address: {{emailAddress}}"
 msgstr ""
 
-msgid "App store"
-msgstr ""
-
-msgid "Turn on two-factor authentication"
+msgid "Authentication code sent"
 msgstr ""
 
 msgid ""
-"Make sure you have an authenticator app installed on your device. We "
-"recommend Google Authenticator"
+"If you didn't receive the code, check your spam/junk folder. Have you waited"
+" a few minutes and still not received the code?"
 msgstr ""
 
-msgid ""
-"Now, enter the code from your authenticator app below and click the \"Turn "
-"on\" button."
+msgid "Send a new code"
+msgstr ""
+
+msgid "Send authentication code"
+msgstr ""
+
+msgid "Enter the 6 digit authentication code in the email."
 msgstr ""
 
 msgid "Already set up two-factor authentication before?"
@@ -250,9 +280,41 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Your email is not verified. You must verify or your email to enable or "
+"disable two-factor authentication via email. If you have recently verified "
+"your email, you may need to refresh this page."
+msgstr ""
+
+msgid "Verify your email here."
+msgstr ""
+
+msgid ""
 "Two-factor authentication protects your account with an extra layer of "
 "security. With two-factor authentication turned on, you will need to enter "
 "an authentication code from your device every time you log in."
+msgstr ""
+
+msgid "Open your authenticator app."
+msgstr ""
+
+msgid ""
+"Now, enter the authentication code below and click the \"Turn off\" button."
+msgstr ""
+
+msgid "Play store"
+msgstr ""
+
+msgid "App store"
+msgstr ""
+
+msgid ""
+"Make sure you have an authenticator app installed on your device. We "
+"recommend Google Authenticator"
+msgstr ""
+
+msgid ""
+"Now, enter the code from your authenticator app below and click the \"Turn "
+"on\" button."
 msgstr ""
 
 msgid "Two-factor authentication is on."
@@ -269,19 +331,10 @@ msgid ""
 "authentication app."
 msgstr ""
 
-msgid "Six digit authentication code"
-msgstr ""
+msgid "6 digit code"
+msgstr "6-значный код"
 
 msgid "Could not enable 2 Factor Authentication"
-msgstr ""
-
-msgid "Two factor authentication was enabled successfully"
-msgstr ""
-
-msgid "Could not disable two factor authentication"
-msgstr ""
-
-msgid "Two factor authentication was disabled successfully"
 msgstr ""
 
 msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
@@ -311,6 +364,24 @@ msgstr ""
 msgid "Emails must match"
 msgstr ""
 
+msgid "Email update not allowed"
+msgstr ""
+
+msgid "Your email is currently used for two factor authentication"
+msgstr ""
+
+msgid ""
+"To update your email, you must first disable two factor authentication by "
+"email. After this has been disabled, you can change your email and then set "
+"up two factor authentication again."
+msgstr ""
+
+msgid "Disable two factor authentication here"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Отмена"
+
 msgid "Remove email"
 msgstr ""
 
@@ -319,9 +390,6 @@ msgstr ""
 
 msgid "Are you sure you want to remove your email?"
 msgstr ""
-
-msgid "Cancel"
-msgstr "Отмена"
 
 msgid "Change email"
 msgstr ""
@@ -343,9 +411,6 @@ msgstr ""
 
 msgid "Save"
 msgstr "Сохранить"
-
-msgid "Email"
-msgstr "Адрес электронной почты"
 
 msgid "There is no email to remove"
 msgstr ""
@@ -402,7 +467,7 @@ msgid "Two factor authentication"
 msgstr ""
 
 msgid "Full profile"
-msgstr ""
+msgstr "Полный профиль"
 
 msgid "Personal access tokens"
 msgstr ""
@@ -414,6 +479,9 @@ msgid "Email verification link sent successfully!"
 msgstr ""
 
 msgid "Failed to send email verification link."
+msgstr ""
+
+msgid "Email already verified"
 msgstr ""
 
 msgid "Verify email"
@@ -459,6 +527,9 @@ msgstr ""
 msgid "Allowed HTTP methods"
 msgstr ""
 
+msgid "HEAD"
+msgstr ""
+
 msgid "GET"
 msgstr ""
 
@@ -499,6 +570,12 @@ msgid ""
 "Important: this is not a security feature. The referrer header can easily be"
 " spoofed. This setting is intended to discourage unauthorised third-party "
 "developers from connecting to public access instances."
+msgstr ""
+
+msgid "Token name"
+msgstr ""
+
+msgid "A unique name for this token."
 msgstr ""
 
 msgid "Choose the context where this token will be used."
@@ -545,6 +622,9 @@ msgstr ""
 msgid "Custom expiration date (required)"
 msgstr ""
 
+msgid "Token name already exists"
+msgstr ""
+
 msgid ""
 "Personal access tokens should only be used in a browser context for public "
 "access instances. For private instances, tokens should be treated like "
@@ -587,14 +667,17 @@ msgstr ""
 msgid "Newly created token"
 msgstr ""
 
-msgid "Copy to clipboard"
+msgid "Token Name"
 msgstr ""
+
+msgid "Copy to clipboard"
+msgstr "Копировать в буфер обмена"
 
 msgid "Delete"
 msgstr "Удалить"
 
 msgid "Edit user profile"
-msgstr ""
+msgstr "Редактирование профиля пользователя"
 
 msgid "User profile updated"
 msgstr "Профиль пользователя обновлен"
@@ -603,7 +686,7 @@ msgid "Failed to update user profile"
 msgstr "Не удалось обновить профиль пользователя"
 
 msgid "Edit user settings"
-msgstr ""
+msgstr "Редактирование настроек пользователя"
 
 msgid "Settings updated"
 msgstr "Настройки обновлены"
@@ -645,7 +728,7 @@ msgid "User roles"
 msgstr "Уровень доступа"
 
 msgid "User org units"
-msgstr ""
+msgstr "Организационные единицы пользователя"
 
 msgid "Birthday"
 msgstr "День рождения"
@@ -705,6 +788,10 @@ msgid "Enable message SMS notifications"
 msgstr "Включить SMS-уведомления о сообщениях"
 
 msgid "View full profile"
+msgstr "Посмотреть полный профиль"
+
+msgctxt "HTTP method"
+msgid "HEAD"
 msgstr ""
 
 msgctxt "HTTP method"
@@ -726,3 +813,11 @@ msgstr ""
 msgctxt "HTTP method"
 msgid "DELETE"
 msgstr ""
+
+msgctxt "Application title"
+msgid "__MANIFEST_APP_TITLE"
+msgstr "Профиль пользователя"
+
+msgctxt "Application description"
+msgid "__MANIFEST_APP_DESCRIPTION"
+msgstr "Приложение \"Профиль пользователя\" для DHIS2"
