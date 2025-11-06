@@ -17,7 +17,7 @@ const exitImpersonationMutation = {
     type: 'create',
 }
 
-function Impersonation(props) {
+function Impersonation() {
     const [username, setUsername] = useState('')
     const [successMessage, setSuccessMessage] = useState('')
     const [errorMessage, setErrorMessage] = useState('')
@@ -52,13 +52,16 @@ function Impersonation(props) {
             )
             // Redirect to root page to reflect the impersonated user's profile
             setTimeout(() => {
-                globalThis.location.hash = '#/'
-                globalThis.location.reload()
+                window.location.hash = '#/'
+                window.location.reload()
             }, 1500)
         } catch (error) {
             console.error('Impersonate error:', error)
-            const errorMsg = error?.message || error?.details?.message || error?.toString() ||
-                    i18n.t('Failed to impersonate user. Please try again.')
+            const errorMsg =
+                error?.message ||
+                error?.details?.message ||
+                error?.toString() ||
+                i18n.t('Failed to impersonate user. Please try again.')
             setErrorMessage(errorMsg)
         }
     }
@@ -72,13 +75,16 @@ function Impersonation(props) {
             setSuccessMessage(i18n.t('Successfully exited impersonation mode'))
             // Redirect to root page to reflect the original user's profile
             setTimeout(() => {
-                globalThis.location.hash = '#/'
-                globalThis.location.reload()
+                window.location.hash = '#/'
+                window.location.reload()
             }, 1500)
         } catch (error) {
             console.error('Exit impersonation error:', error)
-            const errorMsg = error?.message || error?.details?.message || error?.toString() ||
-                    i18n.t('Failed to exit impersonation mode. Please try again.')
+            const errorMsg =
+                error?.message ||
+                error?.details?.message ||
+                error?.toString() ||
+                i18n.t('Failed to exit impersonation mode. Please try again.')
             setErrorMessage(errorMsg)
         }
     }
@@ -94,9 +100,7 @@ function Impersonation(props) {
     return (
         <div className={styles.container}>
             <div className={styles.content}>
-                <h2 className={styles.title}>
-                    {i18n.t('User impersonation')}
-                </h2>
+                <h2 className={styles.title}>{i18n.t('User impersonation')}</h2>
 
                 {!isImpersonating && (
                     <NoticeBox warning title={i18n.t('Warning')}>
@@ -136,9 +140,7 @@ function Impersonation(props) {
                             onClick={handleExitImpersonation}
                             disabled={loading}
                             icon={
-                                loading ? (
-                                    <CircularLoader small />
-                                ) : undefined
+                                loading ? <CircularLoader small /> : undefined
                             }
                         >
                             {loading
@@ -164,9 +166,7 @@ function Impersonation(props) {
                             onClick={handleImpersonate}
                             disabled={loading || !username.trim()}
                             icon={
-                                loading ? (
-                                    <CircularLoader small />
-                                ) : undefined
+                                loading ? <CircularLoader small /> : undefined
                             }
                         >
                             {loading
@@ -185,4 +185,3 @@ Impersonation.contextTypes = {
 }
 
 export default Impersonation
-
