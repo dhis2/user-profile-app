@@ -55,7 +55,7 @@ class AppRouter extends Component {
         const baseUrl = this.props.d2.system.systemInfo.contextPath
         const apiUrl = this.props.d2.system.settings.api.baseUrl
         const versionString = apiUrl.split('/').pop()
-        const apiVersion = isNaN(parseInt(versionString, 10))
+        const apiVersion = Number.isNaN(Number.parseInt(versionString, 10))
             ? ''
             : versionString
 

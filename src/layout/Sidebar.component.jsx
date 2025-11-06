@@ -82,7 +82,7 @@ function SidebarWrapper(props) {
                   icon: 'admin_panel_settings',
               }
             : undefined,
-    ].filter((section) => section)
+    ].filter(Boolean)
 
     return (
         <Sidebar

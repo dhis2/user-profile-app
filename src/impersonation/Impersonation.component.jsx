@@ -52,8 +52,8 @@ function Impersonation(props) {
             )
             // Redirect to root page to reflect the impersonated user's profile
             setTimeout(() => {
-                window.location.hash = '#/'
-                window.location.reload()
+                globalThis.location.hash = '#/'
+                globalThis.location.reload()
             }, 1500)
         } catch (error) {
             console.error('Impersonate error:', error)
@@ -72,8 +72,8 @@ function Impersonation(props) {
             setSuccessMessage(i18n.t('Successfully exited impersonation mode'))
             // Redirect to root page to reflect the original user's profile
             setTimeout(() => {
-                window.location.hash = '#/'
-                window.location.reload()
+                globalThis.location.hash = '#/'
+                globalThis.location.reload()
             }, 1500)
         } catch (error) {
             console.error('Exit impersonation error:', error)
@@ -129,7 +129,24 @@ function Impersonation(props) {
                     </NoticeBox>
                 )}
 
-                {!isImpersonating ? (
+                {isImpersonating ? (
+                    <div className={styles.form}>
+                        <Button
+                            primary
+                            onClick={handleExitImpersonation}
+                            disabled={loading}
+                            icon={
+                                loading ? (
+                                    <CircularLoader small />
+                                ) : undefined
+                            }
+                        >
+                            {loading
+                                ? i18n.t('Exiting...')
+                                : i18n.t('Exit impersonation')}
+                        </Button>
+                    </div>
+                ) : (
                     <div className={styles.form}>
                         <Input
                             label={i18n.t('Username')}
@@ -155,23 +172,6 @@ function Impersonation(props) {
                             {loading
                                 ? i18n.t('Impersonating...')
                                 : i18n.t('Impersonate user')}
-                        </Button>
-                    </div>
-                ) : (
-                    <div className={styles.form}>
-                        <Button
-                            primary
-                            onClick={handleExitImpersonation}
-                            disabled={loading}
-                            icon={
-                                loading ? (
-                                    <CircularLoader small />
-                                ) : undefined
-                            }
-                        >
-                            {loading
-                                ? i18n.t('Exiting...')
-                                : i18n.t('Exit impersonation')}
                         </Button>
                     </div>
                 )}
