@@ -22,6 +22,21 @@ function SidebarWrapper(props) {
         hasTwoFactorMethods ||
         hasEnabledTwoFactorMethods
 
+    // Check if user has impersonation authority or is currently being impersonated
+    const authorities = userProfileStore.state.authorities
+    
+    // The d2 UserAuthorities object implements a Set-like interface with a has() method
+    // We use has() directly instead of converting to an array
+    const hasImpersonateAuthority = authorities
+        ? authorities.has('ALL') || authorities.has('F_IMPERSONATE_USER')
+        : false
+    
+    // Check if currently being impersonated (impersonate field contains original user's username)
+    const isBeingImpersonated = !!userProfileStore.state.impersonate
+    
+    // Show menu if user can impersonate OR is currently being impersonated (to allow exit)
+    const canImpersonate = hasImpersonateAuthority || isBeingImpersonated
+
     const sideBarSections = [
         {
             key: 'profile',
@@ -60,6 +75,13 @@ function SidebarWrapper(props) {
             label: i18n.t('About DHIS2'),
             icon: 'public',
         },
+        canImpersonate
+            ? {
+                  key: 'impersonation',
+                  label: i18n.t('User impersonation'),
+                  icon: 'admin_panel_settings',
+              }
+            : undefined,
     ].filter((section) => section)
 
     return (

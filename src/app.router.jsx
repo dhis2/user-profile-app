@@ -9,6 +9,7 @@ import Account from './account/Account.component.jsx'
 import PasswordChangeSuccessDialog from './account/PasswordChangeSuccessDialog.jsx'
 import TwoFactor from './account/twoFactor/TwoFactor.jsx'
 import TwoFactor41AndLower from './account/twoFactor/TwoFactor41AndLower.jsx'
+import Impersonation from './impersonation/Impersonation.component.jsx'
 import Sidebar from './layout/Sidebar.component.jsx'
 import Snackbar from './layout/Snackbar.component.jsx'
 import AppTheme from './layout/theme.js'
@@ -121,6 +122,10 @@ class AppRouter extends Component {
                                     component={PersonalAccessTokens}
                                 />
                                 <Route path="aboutPage" component={AboutPage} />
+                                <Route
+                                    path="impersonation"
+                                    component={Impersonation}
+                                />
                                 <Redirect from="/" to={defaultRedirect} />
                             </Route>
                         </Router>

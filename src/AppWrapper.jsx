@@ -22,6 +22,7 @@ const AppWrapper = () => {
                 api.get('userSettings', { useFallback: false }),
                 d2.system.settings.all(),
                 api.get('2fa/enabled'),
+                api.get('me', { fields: 'id,impersonation' }),
             ])
                 .then(
                     (results) => {
@@ -52,6 +53,17 @@ const AppWrapper = () => {
 
                         userProfileStore.setState(d2.currentUser)
                         userProfileStore.state.twoFaEnabled = results[5]
+                        
+                        // Ensure authorities are available in the store
+                        if (d2.currentUser.authorities) {
+                            userProfileStore.state.authorities = d2.currentUser.authorities
+                        }
+                        
+                        // Store impersonation field (username of original user when impersonating)
+                        const impersonationValue = d2.currentUser.impersonation || results[6]?.impersonation
+                        if (impersonationValue) {
+                            userProfileStore.state.impersonate = impersonationValue
+                        }
                         userSettingsStore.setState(results[3])
                         optionValueStore.setState({
                             styles,
