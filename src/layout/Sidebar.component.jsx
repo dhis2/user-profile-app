@@ -22,6 +22,14 @@ function SidebarWrapper(props) {
         hasTwoFactorMethods ||
         hasEnabledTwoFactorMethods
 
+    // Check if user can impersonate (backend determines this)
+    // or is currently being impersonated (to allow exit)
+    const canImpersonate = userProfileStore.state.canImpersonate ?? false
+    const isBeingImpersonated = !!userProfileStore.state.impersonate
+
+    // Show menu if user can impersonate OR is currently being impersonated (to allow exit)
+    const showImpersonationMenu = canImpersonate || isBeingImpersonated
+
     const sideBarSections = [
         {
             key: 'profile',
@@ -60,7 +68,14 @@ function SidebarWrapper(props) {
             label: i18n.t('About DHIS2'),
             icon: 'public',
         },
-    ].filter((section) => section)
+        showImpersonationMenu
+            ? {
+                  key: 'impersonation',
+                  label: i18n.t('User impersonation'),
+                  icon: 'admin_panel_settings',
+              }
+            : undefined,
+    ].filter(Boolean)
 
     return (
         <Sidebar

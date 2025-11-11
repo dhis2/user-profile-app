@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2025-08-13T11:18:49.717Z\n"
-"PO-Revision-Date: 2025-08-13T11:18:49.717Z\n"
+"POT-Creation-Date: 2025-11-06T07:43:47.101Z\n"
+"PO-Revision-Date: 2025-11-06T07:43:47.101Z\n"
 
 msgid "Never"
 msgstr "Never"
@@ -345,6 +345,66 @@ msgstr "6 digit code"
 
 msgid "Could not enable 2 Factor Authentication"
 msgstr "Could not enable 2 Factor Authentication"
+
+msgid "Please enter a username"
+msgstr "Please enter a username"
+
+msgid "Failed to impersonate user. Please try again."
+msgstr "Failed to impersonate user. Please try again."
+
+msgid "Successfully exited impersonation mode"
+msgstr "Successfully exited impersonation mode"
+
+msgid "Failed to exit impersonation mode. Please try again."
+msgstr "Failed to exit impersonation mode. Please try again."
+
+msgid "User impersonation"
+msgstr "User impersonation"
+
+msgid "Warning"
+msgstr "Warning"
+
+msgid ""
+"You are about to impersonate another user. While impersonating, you will "
+"have the same access rights and permissions as that user. Please exercise "
+"caution and use this feature responsibly. All actions performed while "
+"impersonating will be attributed to the impersonated user."
+msgstr ""
+"You are about to impersonate another user. While impersonating, you will "
+"have the same access rights and permissions as that user. Please exercise "
+"caution and use this feature responsibly. All actions performed while "
+"impersonating will be attributed to the impersonated user."
+
+msgid "Currently in impersonation mode"
+msgstr "Currently in impersonation mode"
+
+msgid ""
+"You are currently impersonating another user. Click the button below to "
+"exit impersonation mode and return to your original account."
+msgstr ""
+"You are currently impersonating another user. Click the button below to "
+"exit impersonation mode and return to your original account."
+
+msgid "Success"
+msgstr "Success"
+
+msgid "Error"
+msgstr "Error"
+
+msgid "Exiting..."
+msgstr "Exiting..."
+
+msgid "Exit impersonation"
+msgstr "Exit impersonation"
+
+msgid "Enter the username to impersonate"
+msgstr "Enter the username to impersonate"
+
+msgid "Impersonating..."
+msgstr "Impersonating..."
+
+msgid "Impersonate user"
+msgstr "Impersonate user"
 
 msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
 msgstr "Please choose a profile avatar less than {{- maxSize}}MB in size."
