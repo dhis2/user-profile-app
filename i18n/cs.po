@@ -282,22 +282,23 @@ msgstr ""
 "aplikace."
 
 msgid "Six digit authentication code"
-msgstr ""
+msgstr "Šestimístný ověřovací kód"
 
 msgid "Could not enable 2 Factor Authentication"
-msgstr ""
+msgstr "Nepodařilo se povolit dvoufaktorové ověřování"
 
 msgid "Two factor authentication was enabled successfully"
-msgstr ""
+msgstr "Dvoufaktorové ověřování bylo úspěšně povoleno"
 
 msgid "Could not disable two factor authentication"
-msgstr ""
+msgstr "Nelze zakázat dvoufaktorové ověřování"
 
 msgid "Two factor authentication was disabled successfully"
-msgstr ""
+msgstr "Dvoufaktorové ověřování bylo úspěšně zakázáno"
 
 msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
 msgstr ""
+"Vyberte si prosím profilový avatar o velikosti menší než {{- maxSize}}MB."
 
 msgid "Failed to upload profile picture"
 msgstr "Nepodařilo se nahrát profilový obrázek"
@@ -407,7 +408,7 @@ msgid "Allowed HTTP methods"
 msgstr "Povolené metody HTTP"
 
 msgid "HEAD"
-msgstr ""
+msgstr "HEAD"
 
 msgid "GET"
 msgstr "GET"
@@ -455,10 +456,10 @@ msgstr ""
 "od připojení k veřejně přístupným instancím."
 
 msgid "Token name"
-msgstr ""
+msgstr "Název tokenu"
 
 msgid "A unique name for this token."
-msgstr ""
+msgstr "Jedinečný název tohoto tokenu."
 
 msgid "Choose the context where this token will be used."
 msgstr "Vyberte kontext, ve kterém bude tento token použit."
@@ -508,7 +509,7 @@ msgid "Custom expiration date (required)"
 msgstr "Vlastní datum vypršení platnosti (povinné)"
 
 msgid "Token name already exists"
-msgstr ""
+msgstr "Název tokenu již existuje"
 
 msgid ""
 "Personal access tokens should only be used in a browser context for public "
@@ -565,7 +566,7 @@ msgid "Newly created token"
 msgstr "Nově vytvořený token"
 
 msgid "Token Name"
-msgstr ""
+msgstr "Název tokenu"
 
 msgid "Copy to clipboard"
 msgstr "Zkopírovat do schránky"
@@ -689,7 +690,7 @@ msgstr "Zobrazit celý profil"
 
 msgctxt "HTTP method"
 msgid "HEAD"
-msgstr ""
+msgstr "HEAD"
 
 msgctxt "HTTP method"
 msgid "GET"
