@@ -200,22 +200,22 @@ msgid "Failed to update password"
 msgstr "Aktualizace hesla se nezdařila"
 
 msgid "Authenticator app"
-msgstr ""
+msgstr "Aplikace Authenticator"
 
 msgid "Email"
 msgstr "E-mail"
 
 msgid "Could not enable two factor authentication"
-msgstr ""
+msgstr "Nepodařilo se povolit dvoufaktorové ověřování"
 
 msgid "Two factor authentication was enabled successfully"
-msgstr ""
+msgstr "Dvoufaktorové ověřování bylo úspěšně povoleno"
 
 msgid "Could not disable two factor authentication"
-msgstr ""
+msgstr "Nelze zakázat dvoufaktorové ověřování"
 
 msgid "Two factor authentication was disabled successfully"
-msgstr ""
+msgstr "Dvoufaktorové ověřování bylo úspěšně zakázáno"
 
 msgid "Two-factor Authentication"
 msgstr "Dvoufaktorová autentizace"
@@ -225,6 +225,9 @@ msgid ""
 "security. With two-factor authentication turned on, you will need to enter "
 "an authentication code every time you log in."
 msgstr ""
+"Dvoufaktorové ověřování chrání váš účet další vrstvou zabezpečení. Při "
+"zapnutém dvoufaktorovém ověřování budete muset při každém přihlášení zadat "
+"ověřovací kód."
 
 msgid "Turn off two-factor authentication"
 msgstr "Jak vypnout dvoufaktorové ověřování"
@@ -233,7 +236,7 @@ msgid "Turn on two-factor authentication"
 msgstr "Jak zapnout dvoufaktorové ověřování"
 
 msgid "Two factor authentication type"
-msgstr ""
+msgstr "Typ dvoufaktorového ověřování"
 
 msgid "Remove two-factor account"
 msgstr "Odstraňte dvoufaktorový účet"
@@ -250,23 +253,26 @@ msgstr ""
 msgid ""
 "Send authentication code to your verified email address: {{emailAddress}}"
 msgstr ""
+"Ověřovací kód odešlete na ověřenou e-mailovou adresu: {{emailAddress}}"
 
 msgid "Authentication code sent"
-msgstr ""
+msgstr "Ověřovací kód odeslán"
 
 msgid ""
 "If you didn't receive the code, check your spam/junk folder. Have you waited"
 " a few minutes and still not received the code?"
 msgstr ""
+"Pokud jste kód neobdrželi, zkontrolujte složku nevyžádané pošty. Čekali jste"
+" několik minut a kód jste stále neobdrželi?"
 
 msgid "Send a new code"
-msgstr ""
+msgstr "Odeslání nového kódu"
 
 msgid "Send authentication code"
-msgstr ""
+msgstr "Odeslání ověřovacího kódu"
 
 msgid "Enter the 6 digit authentication code in the email."
-msgstr ""
+msgstr "Zadejte šestimístný ověřovací kód který máte v e-mailu."
 
 msgid "Already set up two-factor authentication before?"
 msgstr "Už jste si dříve nastavili dvoufaktorové ověřování?"
@@ -284,9 +290,12 @@ msgid ""
 "disable two-factor authentication via email. If you have recently verified "
 "your email, you may need to refresh this page."
 msgstr ""
+"Váš e-mail není ověřen. Chcete-li povolit nebo zakázat dvoufaktorové "
+"ověřování prostřednictvím e-mailu, musíte ověřit nebo svůj e-mail. Pokud "
+"jste svůj e-mail nedávno ověřili, bude možná nutné tuto stránku obnovit."
 
 msgid "Verify your email here."
-msgstr ""
+msgstr "Zde si ověřte svůj e-mail."
 
 msgid ""
 "Two-factor authentication protects your account with an extra layer of "
@@ -341,13 +350,14 @@ msgstr ""
 "aplikace."
 
 msgid "6 digit code"
-msgstr ""
+msgstr "6místný kód"
 
 msgid "Could not enable 2 Factor Authentication"
-msgstr ""
+msgstr "Nepodařilo se povolit dvoufaktorové ověřování"
 
 msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
 msgstr ""
+"Vyberte si prosím profilový avatar o velikosti menší než {{- maxSize}}MB."
 
 msgid "Failed to upload profile picture"
 msgstr "Nepodařilo se nahrát profilový obrázek"
@@ -365,64 +375,67 @@ msgid "Remove profile picture"
 msgstr "Odebrat profilový obrázek"
 
 msgid "No email provided"
-msgstr ""
+msgstr "Nebyl poskytnut žádný e-mail"
 
 msgid "Email is invalid"
-msgstr ""
+msgstr "E-mail je neplatný"
 
 msgid "Emails must match"
-msgstr ""
+msgstr "E-maily se musí shodovat"
 
 msgid "Email update not allowed"
-msgstr ""
+msgstr "Aktualizace e-mailu není povolena"
 
 msgid "Your email is currently used for two factor authentication"
-msgstr ""
+msgstr "Váš e-mail se v současné době používá pro dvoufaktorové ověřování."
 
 msgid ""
 "To update your email, you must first disable two factor authentication by "
 "email. After this has been disabled, you can change your email and then set "
 "up two factor authentication again."
 msgstr ""
+"Chcete-li aktualizovat svůj e-mail, musíte nejprve zakázat dvoufaktorové "
+"ověřování e-mailem. Po jeho vypnutí můžete změnit svůj e-mail a poté znovu "
+"nastavit dvoufaktorové ověřování."
 
 msgid "Disable two factor authentication here"
-msgstr ""
+msgstr "Zde vypněte dvoufaktorové ověřování"
 
 msgid "Cancel"
 msgstr "Zrušit"
 
 msgid "Remove email"
-msgstr ""
+msgstr "Odebrat e-mail"
 
 msgid "Your email is currently verified"
-msgstr ""
+msgstr "Váš e-mail je v současné době ověřen"
 
 msgid "Are you sure you want to remove your email?"
-msgstr ""
+msgstr "Opravdu chcete svůj e-mail odstranit?"
 
 msgid "Change email"
-msgstr ""
+msgstr "Změnit e-mail"
 
 msgid "If you change your email, you may need to reverify your email."
-msgstr ""
+msgstr "Pokud změníte svůj e-mail, bude možná nutné jej znovu ověřit."
 
 msgid "Current email"
-msgstr ""
+msgstr "Aktuální e-mail"
 
 msgid "no current email"
-msgstr ""
+msgstr "žádný aktuální e-mail"
 
 msgid "Enter new email"
-msgstr ""
+msgstr "Zadejte nový e-mail"
 
 msgid "Confirm new email"
-msgstr ""
+msgstr "Potvrdit nový e-mail"
 
 msgid "Save"
 msgstr "Uložit"
 
 msgid "There is no email to remove"
-msgstr ""
+msgstr "Není žádný e-mail, k odstranění"
 
 msgid "This field is required"
 msgstr "Toto pole je povinné"
@@ -485,24 +498,26 @@ msgid "About DHIS2"
 msgstr "O DHIS2"
 
 msgid "Email verification link sent successfully!"
-msgstr ""
+msgstr "E-mailový ověřovací odkaz byl úspěšně odeslán!"
 
 msgid "Failed to send email verification link."
-msgstr ""
+msgstr "Nepodařilo se odeslat e-mailový ověřovací odkaz."
 
 msgid "Email already verified"
-msgstr ""
+msgstr "E-mail již byl ověřen"
 
 msgid "Verify email"
-msgstr ""
+msgstr "Ověření e-mailu"
 
 msgid ""
 "Your email is not verified. Please verify your email to continue using the "
 "system."
 msgstr ""
+"Váš e-mail není ověřen. Chcete-li pokračovat v používání systému, ověřte "
+"prosím svůj e-mail."
 
 msgid "Please provide an email and verify it to continue using the system."
-msgstr ""
+msgstr "Pro další používání systému uveďte e-mail a ověřte jej."
 
 msgid "Manage personal access tokens"
 msgstr "Spravovat osobní přístupové tokeny"
@@ -537,7 +552,7 @@ msgid "Allowed HTTP methods"
 msgstr "Povolené metody HTTP"
 
 msgid "HEAD"
-msgstr ""
+msgstr "HEAD"
 
 msgid "GET"
 msgstr "GET"
@@ -585,10 +600,10 @@ msgstr ""
 "od připojení k veřejně přístupným instancím."
 
 msgid "Token name"
-msgstr ""
+msgstr "Název tokenu"
 
 msgid "A unique name for this token."
-msgstr ""
+msgstr "Jedinečný název tohoto tokenu."
 
 msgid "Choose the context where this token will be used."
 msgstr "Vyberte kontext, ve kterém bude tento token použit."
@@ -638,7 +653,7 @@ msgid "Custom expiration date (required)"
 msgstr "Vlastní datum vypršení platnosti (povinné)"
 
 msgid "Token name already exists"
-msgstr ""
+msgstr "Název tokenu již existuje"
 
 msgid ""
 "Personal access tokens should only be used in a browser context for public "
@@ -692,7 +707,7 @@ msgid "Newly created token"
 msgstr "Nově vytvořený token"
 
 msgid "Token Name"
-msgstr ""
+msgstr "Název tokenu"
 
 msgid "Copy to clipboard"
 msgstr "Zkopírovat do schránky"
@@ -816,7 +831,7 @@ msgstr "Zobrazit celý profil"
 
 msgctxt "HTTP method"
 msgid "HEAD"
-msgstr ""
+msgstr "HEAD"
 
 msgctxt "HTTP method"
 msgid "GET"
@@ -840,8 +855,8 @@ msgstr "DELETE"
 
 msgctxt "Application title"
 msgid "__MANIFEST_APP_TITLE"
-msgstr ""
+msgstr "Profil uživatele"
 
 msgctxt "Application description"
 msgid "__MANIFEST_APP_DESCRIPTION"
-msgstr ""
+msgstr "Aplikace uživatelského profilu pro DHIS2"
