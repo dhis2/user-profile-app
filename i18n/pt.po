@@ -6,14 +6,14 @@
 # Philip Larsen Donnelly, 2023
 # Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2023
 # Ge Joao <gsimango@saudigitus.org>, 2023
-# Helton Dias, 2024
+# Helton Dias, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
+"POT-Creation-Date: 2025-08-28T14:06:57.244Z\n"
 "PO-Revision-Date: 2023-05-22 19:26+0000\n"
-"Last-Translator: Helton Dias, 2024\n"
+"Last-Translator: Helton Dias, 2025\n"
 "Language-Team: Portuguese (https://app.transifex.com/hisp-uio/teams/100509/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -307,6 +307,9 @@ msgstr "Não foi possível desativar a autenticação de dois factores"
 msgid "Two factor authentication was disabled successfully"
 msgstr "A autenticação de dois factores foi desactivada com êxito"
 
+msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
+msgstr "Escolha um avatar de perfil com menos de {{- maxSize}}MB de tamanho."
+
 msgid "Failed to upload profile picture"
 msgstr "Falha ao carregar a foto do perfil"
 
@@ -416,6 +419,9 @@ msgstr "Indique um endereço IP por linha."
 msgid "Allowed HTTP methods"
 msgstr "Métodos HTTP permitidos"
 
+msgid "HEAD"
+msgstr ""
+
 msgid "GET"
 msgstr "OBTER"
 
@@ -461,6 +467,12 @@ msgstr ""
 "referenciador pode ser facilmente falsificado. Esta definição destina-se a "
 "desencorajar os programadores terceiros não autorizados de se ligarem a "
 "instâncias de acesso público."
+
+msgid "Token name"
+msgstr ""
+
+msgid "A unique name for this token."
+msgstr ""
 
 msgid "Choose the context where this token will be used."
 msgstr "Escolha o contexto em que este token será utilizado."
@@ -509,6 +521,9 @@ msgstr "Prazo de validade (obrigatório)"
 
 msgid "Custom expiration date (required)"
 msgstr "Data de expiração personalizada (obrigatório)"
+
+msgid "Token name already exists"
+msgstr ""
 
 msgid ""
 "Personal access tokens should only be used in a browser context for public "
@@ -563,6 +578,9 @@ msgstr "Token copiado para a área de transferência"
 
 msgid "Newly created token"
 msgstr "Token recém-criado"
+
+msgid "Token Name"
+msgstr ""
 
 msgid "Copy to clipboard"
 msgstr "Copiar para área de transferência"
@@ -683,6 +701,10 @@ msgstr "Receber notificações de SMS"
 
 msgid "View full profile"
 msgstr "Ver o perfil completo"
+
+msgctxt "HTTP method"
+msgid "HEAD"
+msgstr ""
 
 msgctxt "HTTP method"
 msgid "GET"

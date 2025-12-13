@@ -1,65 +1,61 @@
 # 
 # Translators:
-# Philip Larsen Donnelly, 2023
-# Valeriu Plesca <vplesca@gmail.com>, 2023
-# Viktor Varland <viktor@dhis2.org>, 2023
-# Yury Rogachev <yury@dhis2.org>, 2024
-# Nadiia <semchuk@aph.org.ua>, 2025
+# Rohit Wadhwani, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2025-08-28T14:06:57.244Z\n"
 "PO-Revision-Date: 2023-05-22 19:26+0000\n"
-"Last-Translator: Nadiia <semchuk@aph.org.ua>, 2025\n"
-"Language-Team: Russian (https://app.transifex.com/hisp-uio/teams/100509/ru/)\n"
+"Last-Translator: Rohit Wadhwani, 2025\n"
+"Language-Team: English (United States) (https://app.transifex.com/hisp-uio/teams/100509/en_US/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Never"
-msgstr "Никогда"
+msgstr ""
 
 msgid "Invalid date"
 msgstr ""
 
 msgid "Web API"
-msgstr "Сетевой ИПП (интерфейс программирования приложений)"
+msgstr ""
 
 msgid "Browse it here"
-msgstr "Просмотрите это здесь"
+msgstr ""
 
 msgid "Current user"
-msgstr "Текущий пользователь"
+msgstr ""
 
 msgid "Version"
-msgstr "Версия"
+msgstr ""
 
 msgid "Build revision"
-msgstr "Пересмотр конфигурации"
+msgstr ""
 
 msgid "Build date"
-msgstr "Дата конфигурации"
+msgstr ""
 
 msgid "Jasper reports version"
-msgstr "Версия отчетов Jasper"
+msgstr ""
 
 msgid "User agent"
-msgstr "Агент пользователь"
+msgstr ""
 
 msgid "Server date"
-msgstr "Дата сервера"
+msgstr ""
 
 msgid "Last analytics table generation"
-msgstr "Генерация последней аналитической таблицы"
+msgstr ""
 
 msgid "Time since last analytics table generation"
-msgstr "Время с момента создания последней аналитической таблицы"
+msgstr ""
 
 msgid "Last analytics table runtime"
-msgstr "Время генерации последней аналитической таблицы"
+msgstr ""
 
 msgid "Last continuous analytics table update"
 msgstr ""
@@ -71,61 +67,61 @@ msgid "Last continuous analytics table runtime"
 msgstr ""
 
 msgid "Environment variable"
-msgstr "Переменная среды"
+msgstr ""
 
 msgid "System ID"
-msgstr "ID системы"
+msgstr ""
 
 msgid "Last monitoring success"
 msgstr ""
 
 msgid "External configuration directory"
-msgstr "Внешняя директория конфигурации"
+msgstr ""
 
 msgid "File store provider"
-msgstr "Провайдер хранилища файлов"
+msgstr ""
 
 msgid "Node ID"
-msgstr "ID узла"
+msgstr ""
 
 msgid "Cache provider"
-msgstr "Провайдер кэша"
+msgstr ""
 
 msgid "Read replica count"
-msgstr "Количество реплик чтения"
+msgstr ""
 
 msgid "Java opts"
-msgstr "Опции Java"
+msgstr ""
 
 msgid "Java version"
-msgstr "Версия Java"
+msgstr ""
 
 msgid "Java vendor"
-msgstr "Производитель Java"
+msgstr ""
 
 msgid "OS name"
-msgstr "Название ОС"
+msgstr ""
 
 msgid "OS architecture"
-msgstr "Архитектура ОС"
+msgstr ""
 
 msgid "OS version"
-msgstr "Версия ОС"
+msgstr ""
 
 msgid "Memory info"
 msgstr ""
 
 msgid "CPU cores"
-msgstr "память CPU/микропроцессора"
+msgstr ""
 
 msgid "Calendar"
-msgstr "Календарь"
+msgstr ""
 
 msgid "Name"
-msgstr "Название"
+msgstr ""
 
 msgid "User"
-msgstr "Пользователь"
+msgstr ""
 
 msgid "Spatial support"
 msgstr ""
@@ -137,36 +133,34 @@ msgid "Database"
 msgstr ""
 
 msgid "Edit account settings"
-msgstr "Редактирование настроек учетной записи"
+msgstr ""
 
 msgid "No changes have been made"
-msgstr "Изменения не производились"
+msgstr ""
 
 msgid "The form is currently being validated. Please try again."
 msgstr ""
-"Форма в настоящее время проходит проверку. Пожалуйста, попробуйте еще раз."
 
 msgid "The form contains errors. Please fix the errors and try again."
 msgstr ""
-"Форма содержит ошибки. Пожалуйста, исправьте ошибки и попробуйте снова."
 
 msgid "The entered values do not match. Please re-enter."
-msgstr "Введенные значения не совпадают. Пожалуйста, введите снова."
+msgstr ""
 
 msgid "Please provide your old password"
-msgstr "Укажите ваш старый пароль"
+msgstr ""
 
 msgid "Username"
-msgstr "Имя пользователя"
+msgstr ""
 
 msgid "Old password"
-msgstr "Старый пароль"
+msgstr ""
 
 msgid "This field can't be left blank"
-msgstr "Это поле не должно быть пустым"
+msgstr ""
 
 msgid "New password"
-msgstr "Новый пароль"
+msgstr ""
 
 msgid ""
 "Password should be at least 8 characters with at least 1 digit, 1 uppercase "
@@ -174,13 +168,13 @@ msgid ""
 msgstr ""
 
 msgid "Repeat new password"
-msgstr "Повторите новый пароль"
+msgstr ""
 
 msgid "Setup 2-Factor"
 msgstr ""
 
 msgid "Update password"
-msgstr "Обновить пароль"
+msgstr ""
 
 msgid ""
 "This account is linked to an OpenID Connect identity. Visit the Open ID "
@@ -188,17 +182,16 @@ msgid ""
 msgstr ""
 
 msgid "Password changed successfully"
-msgstr "Пароль успешно изменен"
+msgstr ""
 
 msgid "You need to login again to continue using the application."
 msgstr ""
-"Чтобы продолжить работу с приложением, необходимо снова войти в систему."
 
 msgid "Login"
-msgstr "Войти в систему"
+msgstr ""
 
 msgid "Failed to update password"
-msgstr "Не удалось обновить пароль"
+msgstr ""
 
 msgid "Two-factor Authentication"
 msgstr ""
@@ -304,19 +297,19 @@ msgid "Remove profile picture"
 msgstr ""
 
 msgid "This field is required"
-msgstr "Это поле обязательно к заполнению"
+msgstr ""
 
 msgid "This field should be a URL"
 msgstr ""
 
 msgid "This field should contain a list of URLs"
-msgstr "Это поле должно содержать список URL"
+msgstr ""
 
 msgid "This field should be a number"
-msgstr "Это поле должно содержать число"
+msgstr ""
 
 msgid "This field should be a positive number"
-msgstr "Это поле должно содержать положительное число"
+msgstr ""
 
 msgid "This field should be an email"
 msgstr ""
@@ -325,43 +318,43 @@ msgid "Please enter a valid international phone number (+0123456789)"
 msgstr ""
 
 msgid "Yes"
-msgstr "Да"
+msgstr "हाँ"
 
 msgid "No"
-msgstr "Нет"
+msgstr "नहीं"
 
 msgid "No value"
-msgstr "Нет значения"
+msgstr ""
 
 msgid "Use system default"
-msgstr "Использовать значения по умолчанию"
+msgstr ""
 
 msgid "No options"
 msgstr ""
 
 msgid "System default"
-msgstr "Системные установки по умолчанию"
+msgstr ""
 
 msgid "User profile"
-msgstr "Профиль пользователя"
+msgstr ""
 
 msgid "User settings"
-msgstr "Пользовательские настройки"
+msgstr ""
 
 msgid "Account settings"
-msgstr "Настройки аккаунта"
+msgstr ""
 
 msgid "Two factor authentication"
 msgstr ""
 
 msgid "Full profile"
-msgstr "Полный профиль"
+msgstr ""
 
 msgid "Personal access tokens"
 msgstr ""
 
 msgid "About DHIS2"
-msgstr "О DHIS2"
+msgstr ""
 
 msgid "Manage personal access tokens"
 msgstr ""
@@ -504,7 +497,7 @@ msgid "Token details"
 msgstr ""
 
 msgid "Cancel"
-msgstr "Отмена"
+msgstr "कैंसल"
 
 msgid ""
 "Important: IP address validation relies on the X-Forwarded-For header, which"
@@ -530,7 +523,7 @@ msgid "Expires"
 msgstr ""
 
 msgid "Created"
-msgstr "Создано"
+msgstr ""
 
 msgid "Copied token to clipboard"
 msgstr ""
@@ -542,124 +535,124 @@ msgid "Token Name"
 msgstr ""
 
 msgid "Copy to clipboard"
-msgstr "Копировать в буфер обмена"
+msgstr ""
 
 msgid "Delete"
-msgstr "Удалить"
+msgstr "डिलीट"
 
 msgid "Edit user profile"
-msgstr "Редактирование профиля пользователя"
+msgstr ""
 
 msgid "User profile updated"
-msgstr "Профиль пользователя обновлен"
+msgstr ""
 
 msgid "Failed to update user profile"
-msgstr "Не удалось обновить профиль пользователя"
+msgstr ""
 
 msgid "Edit user settings"
-msgstr "Редактирование настроек пользователя"
+msgstr ""
 
 msgid "Settings updated"
-msgstr "Настройки обновлены"
+msgstr ""
 
 msgid "Failed to update settings"
-msgstr "Не удалось обновить настройки"
+msgstr ""
 
 msgid "First name"
-msgstr "Имя"
+msgstr ""
 
 msgid "Surname"
-msgstr "Фамилия"
+msgstr ""
 
 msgid "Gender"
-msgstr "Пол"
+msgstr ""
 
 msgid "Male"
-msgstr "Мужчина"
+msgstr ""
 
 msgid "Female"
-msgstr "Женщина"
+msgstr ""
 
 msgid "Other"
-msgstr "Другое"
+msgstr ""
 
 msgid "E-mail"
-msgstr "адрес электронной почты"
+msgstr ""
 
 msgid "Mobile phone number"
-msgstr "Номер мобильного телефона"
+msgstr ""
 
 msgid "Introduction"
-msgstr "Представление"
+msgstr ""
 
 msgid "Job title"
-msgstr "Специальность"
+msgstr ""
 
 msgid "User roles"
-msgstr "Уровень доступа"
+msgstr ""
 
 msgid "User org units"
-msgstr "Организационные единицы пользователя"
+msgstr ""
 
 msgid "Birthday"
-msgstr "День рождения"
+msgstr ""
 
 msgid "Nationality"
-msgstr "Национальность"
+msgstr ""
 
 msgid "Employer"
-msgstr "Работодатель"
+msgstr ""
 
 msgid "Education"
-msgstr "Образование"
+msgstr ""
 
 msgid "Interests"
-msgstr "Интересы"
+msgstr ""
 
 msgid "Languages"
-msgstr "Знание языков"
+msgstr ""
 
 msgid "WhatsApp"
-msgstr "WhatsApp"
+msgstr ""
 
 msgid "Facebook Messenger"
-msgstr "Facebook Messenger"
+msgstr ""
 
 msgid "Skype"
-msgstr "Skype"
+msgstr ""
 
 msgid "Telegram"
-msgstr "Telegram"
+msgstr ""
 
 msgid "Twitter"
-msgstr "Twitter"
+msgstr ""
 
 msgid "Account editor"
 msgstr ""
 
 msgid "Interface language"
-msgstr "Язык интерфейса"
+msgstr ""
 
 msgid "Database language"
-msgstr "Язык базы данных"
+msgstr ""
 
 msgid "Style"
-msgstr "Стиль"
+msgstr ""
 
 msgid "Property to display in analysis modules"
-msgstr "Свойство для отображения в модулях анализа"
+msgstr ""
 
 msgid "Short name"
-msgstr "Короткое название"
+msgstr ""
 
 msgid "Enable message email notifications"
-msgstr "Включить уведомления по электронной почте"
+msgstr ""
 
 msgid "Enable message SMS notifications"
-msgstr "Включить SMS-уведомления о сообщениях"
+msgstr ""
 
 msgid "View full profile"
-msgstr "Посмотреть полный профиль"
+msgstr ""
 
 msgctxt "HTTP method"
 msgid "HEAD"

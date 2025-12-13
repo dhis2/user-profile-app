@@ -3,20 +3,21 @@
 # Edem Kossi <ekossi@hispwca.org>, 2023
 # Viktor Varland <viktor@dhis2.org>, 2023
 # Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2023
-# tx_e2f_frfr r6 <tx_e2f_frfr_r661@ate2f.com>, 2023
 # Yao Selom SAKA (HISP WCA) <ysaka@hispwca.org>, 2023
 # tx_e2f_fr r25 <tx_e2f_fr_r25@ate2f.com>, 2023
-# Yayra Gomado <ygomado@hispwca.org>, 2023
 # Karoline Tufte Lien <karoline@dhis2.org>, 2023
+# Yayra Gomado <ygomado@hispwca.org>, 2023
 # Philip Larsen Donnelly, 2024
 # Elise Desailly, 2024
+# Esther Tokouli, 2025
+# Cyrille Kabrane, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2023-02-27T14:55:39.217Z\n"
+"POT-Creation-Date: 2025-08-28T14:06:57.244Z\n"
 "PO-Revision-Date: 2023-05-22 19:26+0000\n"
-"Last-Translator: Elise Desailly, 2024\n"
+"Last-Translator: Cyrille Kabrane, 2025\n"
 "Language-Team: French (https://app.transifex.com/hisp-uio/teams/100509/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,7 +35,7 @@ msgid "Web API"
 msgstr "API Web"
 
 msgid "Browse it here"
-msgstr "Parcourir ici"
+msgstr "À consulter ici"
 
 msgid "Current user"
 msgstr "Utilisateur actuel"
@@ -43,13 +44,13 @@ msgid "Version"
 msgstr "Version"
 
 msgid "Build revision"
-msgstr "Version"
+msgstr "Version de compilation"
 
 msgid "Build date"
-msgstr "Date de création"
+msgstr "Date de compilation"
 
 msgid "Jasper reports version"
-msgstr "Version du rapport Jasper"
+msgstr "Version de Jasper reports"
 
 msgid "User agent"
 msgstr "Agent utilisateur"
@@ -58,33 +59,32 @@ msgid "Server date"
 msgstr "Date du serveur"
 
 msgid "Last analytics table generation"
-msgstr "Dernière génération des tables analytiques"
+msgstr "Dernière génération de la table analytique"
 
 msgid "Time since last analytics table generation"
-msgstr "Durée depuis dernière création des tables analytiques"
+msgstr "Temps écoulé depuis la dernière génération de la table analytique"
 
 msgid "Last analytics table runtime"
-msgstr "Dernier runtime tables analytiques"
+msgstr "Dernière exécution de la table analytique "
 
 msgid "Last continuous analytics table update"
-msgstr "Dernière mise à jour du table d'analytique continue"
+msgstr "Dernière mise à jour continue de la table analytique"
 
 msgid "Time since last continuous analytics table update"
 msgstr ""
-"Temps écoulé depuis la dernière mise à jour de la table d'analytique "
-"continue"
+"Temps écoulé depuis la dernière mise à jour continue de la table analytique"
 
 msgid "Last continuous analytics table runtime"
-msgstr "Dernière exécution de la table d'analytique continue"
+msgstr "Dernière exécution continue de la table analytique"
 
 msgid "Environment variable"
 msgstr "Variable d'environnement"
 
 msgid "System ID"
-msgstr "ID du système"
+msgstr "Identifiant du système"
 
 msgid "Last monitoring success"
-msgstr "Dernier succès de surveillance"
+msgstr "Dernière surveillance réussie "
 
 msgid "External configuration directory"
 msgstr "Répertoire de configuration externe"
@@ -93,13 +93,13 @@ msgid "File store provider"
 msgstr "Fournisseur du magasin de fichiers"
 
 msgid "Node ID"
-msgstr "ID du nœud"
+msgstr "Identifiant du nœud"
 
 msgid "Cache provider"
 msgstr "Fournisseur de cache"
 
 msgid "Read replica count"
-msgstr "Lire le nombre de répétitions"
+msgstr "Lire le nombre de répliques"
 
 msgid "Java opts"
 msgstr "Options Java"
@@ -108,22 +108,22 @@ msgid "Java version"
 msgstr "Version de Java"
 
 msgid "Java vendor"
-msgstr "Fournisseur Java"
+msgstr "Fournisseur de Java"
 
 msgid "OS name"
-msgstr "Nom de l'OS"
+msgstr "Nom du système d'exploitation"
 
 msgid "OS architecture"
-msgstr "architecture de l'OS"
+msgstr "Architecture du système d'exploitation"
 
 msgid "OS version"
-msgstr "Version de l'OS"
+msgstr "Version du système d'exploitation"
 
 msgid "Memory info"
-msgstr "Infos mémoire"
+msgstr "Informations sur la mémoire"
 
 msgid "CPU cores"
-msgstr "noyaux CPU"
+msgstr "Noyaux CPU"
 
 msgid "Calendar"
 msgstr "Calendrier"
@@ -135,30 +135,29 @@ msgid "User"
 msgstr "Utilisateur"
 
 msgid "Spatial support"
-msgstr "Soutien géographique"
+msgstr "Support spatial"
 
 msgid "System info"
-msgstr "Infos système"
+msgstr "Informations du système"
 
 msgid "Database"
-msgstr "La base de données"
+msgstr "Base de données"
 
 msgid "Edit account settings"
-msgstr "Modifier paramètres de compte"
+msgstr "Modifier les paramètres de compte"
 
 msgid "No changes have been made"
 msgstr "Aucune modification effectuée"
 
 msgid "The form is currently being validated. Please try again."
-msgstr "Le formulaire est en cours de validation. Veuillez ressayer."
+msgstr "Le formulaire est en cours de validation. Veuillez réessayer. "
 
 msgid "The form contains errors. Please fix the errors and try again."
 msgstr ""
-"Le formulaire contient des erreurs. Veuillez corriger les erreurs puis "
-"ressayer."
+"Le formulaire contient des erreurs. Veuillez les corriger puis réessayer."
 
 msgid "The entered values do not match. Please re-enter."
-msgstr "Les valeurs saisies ne correspondent pas. Veuillez resaisir."
+msgstr "Les valeurs saisies ne correspondent pas. Veuillez saisir à nouveau."
 
 msgid "Please provide your old password"
 msgstr "Veuillez indiquer votre ancien mot de passe"
@@ -179,17 +178,17 @@ msgid ""
 "Password should be at least 8 characters with at least 1 digit, 1 uppercase "
 "letter and 1 special character"
 msgstr ""
-"Le mot de passe devrait contenir au moins 8 caractères dont au moins un "
-"chiffre et une lettre majuscule"
+"Le mot de passe doit contenir au moins 8 caractères dont au moins un "
+"chiffre, une lettre majuscule et un caractère spécial."
 
 msgid "Repeat new password"
-msgstr "Répéter le mot de passe"
+msgstr "Saisir à nouveau le nouveau mot de passe"
 
 msgid "Setup 2-Factor"
 msgstr "Configurer la vérification à 2 facteurs"
 
 msgid "Update password"
-msgstr "Mettre à jour un mot de passe"
+msgstr "Mettre à jour le mot de passe"
 
 msgid ""
 "This account is linked to an OpenID Connect identity. Visit the Open ID "
@@ -203,8 +202,7 @@ msgstr "Mot de passe modifié avec succès"
 
 msgid "You need to login again to continue using the application."
 msgstr ""
-"Vous devez de nouveau vous connecter afin de poursuivre l’utilisation de "
-"l’application."
+"Vous devez vous connecter à nouveau pour continuer à utiliser l'application."
 
 msgid "Login"
 msgstr "Se connecter"
@@ -213,29 +211,35 @@ msgid "Failed to update password"
 msgstr "Impossible de mettre à jour le mot de passe"
 
 msgid "Two-factor Authentication"
-msgstr ""
+msgstr "Authentification à deux facteurs "
 
 msgid "Turn off two-factor authentication"
-msgstr ""
+msgstr "Désactiver l'authentification à deux facteurs"
 
 msgid "Open your authenticator app."
-msgstr ""
+msgstr "Ouvrez votre application authenticator."
 
 msgid ""
 "Now, enter the authentication code below and click the \"Turn off\" button."
 msgstr ""
+"Maintenant, entrez le code d'authentification ci-dessous et cliquez sur le "
+"bouton « Désactiver »."
 
 msgid "Remove two-factor account"
-msgstr "Retirer l'authentification à deux facteurs"
+msgstr "Supprimer le compte de l'authentification à deux facteurs"
 
 msgid ""
 "Two-factor authentication is now turned off. It is recommended to remove the"
 " account from your authenticator app now to prevent any future issues re-"
 "enabling two-factor authentication."
 msgstr ""
+"L'authentification à deux facteurs est désormais désactivée. Il est "
+"recommandé de supprimer immédiatement le compte de votre application "
+"d'authentification afin d'éviter tout problème futur lors de la réactivation"
+" de l'authentification à deux facteurs."
 
 msgid "Play store"
-msgstr ""
+msgstr "Play store"
 
 msgid "App store"
 msgstr "App Store"
@@ -247,26 +251,37 @@ msgid ""
 "Make sure you have an authenticator app installed on your device. We "
 "recommend Google Authenticator"
 msgstr ""
+"Assurez-vous d'avoir une application d'authentification installée sur votre "
+"appareil. Nous recommandons Google Authenticator."
 
 msgid ""
 "Now, enter the code from your authenticator app below and click the \"Turn "
 "on\" button."
 msgstr ""
+"Maintenant, entrez le code provenant de votre application d'authentification"
+" ci-dessous et cliquez sur le bouton « Activer »."
 
 msgid "Already set up two-factor authentication before?"
-msgstr ""
+msgstr "Avez-vous déjà eu à configurer l'authentification à deux facteurs ?"
 
 msgid ""
 "If you have set up two-factor authentication for this account before, you "
 "need to remove that entry from your authenticator app before setting it up "
 "again."
 msgstr ""
+"Si vous avez déjà eu à configurer l'authentification à deux facteurs pour ce"
+" compte, vous devez supprimer cette entrée de votre application "
+"d'authentification avant de la configurer à nouveau."
 
 msgid ""
 "Two-factor authentication protects your account with an extra layer of "
 "security. With two-factor authentication turned on, you will need to enter "
 "an authentication code from your device every time you log in."
 msgstr ""
+"L'authentification à deux facteurs protège votre compte grâce à un niveau de"
+" sécurité supplémentaire. Lorsque l'authentification à deux facteurs est "
+"activée, vous devez saisir un code d'authentification provenant de votre "
+"appareil à chaque connexion."
 
 msgid "Two-factor authentication is on."
 msgstr "L'authentification à deux facteurs est activée."
@@ -275,29 +290,34 @@ msgid "Two-factor authentication is off."
 msgstr "L'authentification à deux facteurs est désactivée."
 
 msgid "Could not update two-factor authentication"
-msgstr ""
+msgstr "Impossible de mettre à jour l'authentification à deux facteurs"
 
 msgid ""
 "This code does not look right. Enter the six digit code from your "
 "authentication app."
 msgstr ""
-"Ce code semble incorrect. Saisissez le code à six chiffres de votre "
-"application d'authentification."
+"Ce code semble incorrect. Saisissez le code à six chiffres provenant de "
+"votre application d'authentification."
 
 msgid "Six digit authentication code"
 msgstr "Code d'identification à six chiffres"
 
 msgid "Could not enable 2 Factor Authentication"
-msgstr ""
+msgstr "Impossible d'activer l'authentification à 2 facteurs"
 
 msgid "Two factor authentication was enabled successfully"
-msgstr ""
+msgstr "L'authentification à deux facteurs a été activée avec succès"
 
 msgid "Could not disable two factor authentication"
-msgstr ""
+msgstr "Impossible de désactiver l'authentification à deux facteurs"
 
 msgid "Two factor authentication was disabled successfully"
+msgstr "L'authentification à deux facteurs a été désactivée avec succès"
+
+msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
 msgstr ""
+"Veuillez choisir un avatar comme profil d'une taille inférieure à {{- "
+"maxSize}}MB."
 
 msgid "Failed to upload profile picture"
 msgstr "Échec du téléchargement de la photo de profil"
@@ -315,7 +335,7 @@ msgid "Remove profile picture"
 msgstr "Supprimer la photo de profil"
 
 msgid "This field is required"
-msgstr "Ce champs est requis"
+msgstr "Ce champ est requis"
 
 msgid "This field should be a URL"
 msgstr "Ce champ doit être une URL"
@@ -346,16 +366,16 @@ msgid "No value"
 msgstr "Pas de valeur"
 
 msgid "Use system default"
-msgstr "Utiliser les paramètres du système"
+msgstr "Utiliser les paramètres par défaut du système"
 
 msgid "No options"
 msgstr "Aucune option"
 
 msgid "System default"
-msgstr "Valeur par défaut du système"
+msgstr "Paramètres par défaut du système"
 
 msgid "User profile"
-msgstr "Profil utilisateur"
+msgstr "Profil d'utilisateur"
 
 msgid "User settings"
 msgstr "Paramètres d'utilisateur"
@@ -370,32 +390,32 @@ msgid "Full profile"
 msgstr "Profil complet"
 
 msgid "Personal access tokens"
-msgstr "Tokens d'accès personnels"
+msgstr "Jetons d'accès personnel"
 
 msgid "About DHIS2"
-msgstr "A propos de DHIS2"
+msgstr "À propos de DHIS2"
 
 msgid "Manage personal access tokens"
-msgstr "Gérer les tokens d'accès personnels"
+msgstr "Gérer les jetons d'accès personnels"
 
 msgid "Generate new token"
-msgstr "Générer un nouveau token"
+msgstr "Générer un nouveau jeton"
 
 msgid "Error loading personal access tokens"
-msgstr "Erreur de chargement des tokens d'accès personnels"
+msgstr "Erreur de chargement des jetons d'accès personnels"
 
 msgid "You don't have any active personal access tokens"
-msgstr "Vous n'avez pas de tokens d'accès personnels actifs"
+msgstr "Vous n'avez pas de jetons d'accès personnels actifs"
 
 msgid "You'll only be shown your token once"
-msgstr "Votre token ne vous sera montré qu'une seule fois"
+msgstr "Votre jeton ne vous sera montré qu'une seule fois"
 
 msgid ""
 "Make sure to copy your personal access token now. You won't be able to see "
 "it again"
 msgstr ""
-"Veillez à copier votre token d'accès personnel maintenant. Vous ne pourrez "
-"plus le voir"
+"Veillez à copier votre jeton d'accès personnel maintenant. Vous ne pourrez "
+"plus le voir."
 
 msgid "Invalid IP address '{{- ipAddress}}'"
 msgstr "Adresse IP non valide '{{- ipAddress}}'"
@@ -404,28 +424,31 @@ msgid "Allowed IP addresses"
 msgstr "Adresses IP autorisées"
 
 msgid "List one IP address per line."
-msgstr "Indiquez une adresse IP par ligne."
+msgstr "Indiquer une adresse IP par ligne."
 
 msgid "Allowed HTTP methods"
 msgstr "Méthodes HTTP autorisées"
 
+msgid "HEAD"
+msgstr "HEAD"
+
 msgid "GET"
-msgstr "OBTENIR"
+msgstr "GET"
 
 msgid "POST"
-msgstr "POSTER"
+msgstr "POST"
 
 msgid "PUT"
-msgstr "METTRE"
+msgstr "PUT"
 
 msgid "PATCH"
-msgstr "CORIGER"
+msgstr "PATCH"
 
 msgid "DELETE"
-msgstr "SUPPRIMER"
+msgstr "DELETE"
 
 msgid "Only choose the HTTP methods this token needs to allow."
-msgstr "Choisir uniquement les méthodes HTTP que ce token doit autoriser."
+msgstr "Choisir uniquement les méthodes HTTP que ce jeton doit autoriser."
 
 msgid "Invalid referrer '{{- referrer}}'"
 msgstr "Référent non valide '{{- referrer}}'."
@@ -434,29 +457,35 @@ msgid "Allowed referrers"
 msgstr "Référents autorisés"
 
 msgid "List one referrer per line."
-msgstr "Indiquez un référent par ligne."
+msgstr "Indiquer un référent par ligne."
 
 msgid "Error fetching your authorities"
-msgstr "Erreur de récupération de vos autorités"
+msgstr "Erreur lors de la récupération de vos autorités"
 
 msgid "Retry loading authorities"
 msgstr "Réessayer le chargement des autorités"
 
 msgid "This token will have the following authorities"
-msgstr "Ce token aura les autorités suivantes"
+msgstr "Ce jeton aura les autorisations suivantes"
 
 msgid ""
 "Important: this is not a security feature. The referrer header can easily be"
 " spoofed. This setting is intended to discourage unauthorised third-party "
 "developers from connecting to public access instances."
 msgstr ""
-"Attention : il ne s'agit pas d'une fonction de sécurité. L'en-tête referrer "
-"peut facilement être usurpé. Ce paramètre est destiné à décourager les "
-"développeurs tiers non autorisés qui pourraient se connecter à des instances"
-" d'accès public."
+"Attention : il ne s'agit pas d'une fonctionnalité de sécurité. L'en-tête du "
+"référant peut facilement être usurpé. Ce paramètre est destiné à décourager "
+"les développeurs tiers non autorisés qui pourraient se connecter à des "
+"instances d'accès public."
+
+msgid "Token name"
+msgstr "Nom du jeton"
+
+msgid "A unique name for this token."
+msgstr "Un nom unique pour ce jeton."
 
 msgid "Choose the context where this token will be used."
-msgstr "Choisissez le contexte dans lequel ce token sera utilisé."
+msgstr "Choisir le contexte dans lequel ce jeton sera utilisé."
 
 msgid "Server/script context"
 msgstr "Contexte du serveur/script"
@@ -474,10 +503,10 @@ msgid ""
 " browser."
 msgstr ""
 "Utilisé pour les applications, comme les portails publics, qui seront "
-"accessibles au moyen d'un navigateur web."
+"accessibles à partir d'un navigateur web."
 
 msgid "Token expiration date must be in the future"
-msgstr "La date d'expiration du token doit être dans le futur"
+msgstr "La date d'expiration du jeton doit être dans le futur"
 
 msgid "7 days"
 msgstr "7 jours"
@@ -495,7 +524,7 @@ msgid "Custom..."
 msgstr "Personnalisé..."
 
 msgid "The token will expire on {{- tokenExpirationDate}}."
-msgstr "Le token expire le {{- tokenExpirationDate}}."
+msgstr "Le jeton expire le {{- tokenExpirationDate}}."
 
 msgid "Expiration (required)"
 msgstr "Expiration (requise)"
@@ -503,19 +532,22 @@ msgstr "Expiration (requise)"
 msgid "Custom expiration date (required)"
 msgstr "Date d'expiration personnalisée (requise)"
 
+msgid "Token name already exists"
+msgstr "Le nom du jeton existe déjà"
+
 msgid ""
 "Personal access tokens should only be used in a browser context for public "
 "access instances. For private instances, tokens should be treated like "
 "passwords and be kept private — requests should instead be routed through a "
 "proxy."
 msgstr ""
-"Les tokens d'accès personnels ne doivent être utilisés que dans un contexte "
+"Les jetons d'accès personnels ne doivent être utilisés que dans un contexte "
 "de navigation pour les instances d'accès public. Pour les instances privées,"
-" les tokens doivent être traités comme des mots de passe et rester privés - "
+" les jetons doivent être traités comme des mots de passe et rester privés - "
 "les requêtes doivent être acheminées via un proxy."
 
 msgid "Token details"
-msgstr "Détails du token"
+msgstr "Détails du jeton"
 
 msgid "Cancel"
 msgstr "Annuler"
@@ -530,20 +562,20 @@ msgstr ""
 "équilibreur de charge ou un proxy inverse écrase cet en-tête."
 
 msgid "Are you sure you want to delete this token?"
-msgstr "Etes-vous sûr de vouloir supprimer ce token?"
+msgstr "Êtes-vous sûr de vouloir supprimer ce jeton ?"
 
 msgid "Error deleting token"
-msgstr "Erreur lors de la suppression du token"
+msgstr "Erreur lors de la suppression du jeton"
 
 msgid ""
 "Any application or script using this token will no longer be able to access "
 "this instance's API. You cannot undo this action."
 msgstr ""
-"Toute application ou script utilisant ce token ne pourra plus accéder à "
+"Toute application ou script qui utilise ce jeton ne pourra plus accéder à "
 "l'API de cette instance. Vous ne pouvez pas annuler cette action."
 
 msgid "Delete token"
-msgstr "Supprimer le token"
+msgstr "Supprimer le jeton"
 
 msgid "Expires"
 msgstr "Expire"
@@ -552,10 +584,13 @@ msgid "Created"
 msgstr "Créé"
 
 msgid "Copied token to clipboard"
-msgstr "Copie du token dans le presse-papier"
+msgstr "Jeton copié dans le presse-papier"
 
 msgid "Newly created token"
-msgstr "Token nouvellement créé"
+msgstr "Jeton nouvellement créé"
+
+msgid "Token Name"
+msgstr "Nom du Jeton"
 
 msgid "Copy to clipboard"
 msgstr "Copier dans le presse-papier"
@@ -564,16 +599,16 @@ msgid "Delete"
 msgstr "Supprimer"
 
 msgid "Edit user profile"
-msgstr "Modifier profil utilisateur"
+msgstr "Modifier le profil d'utilisateur"
 
 msgid "User profile updated"
-msgstr "Profil d’utilisateur mis à jour."
+msgstr "Profil d’utilisateur mis à jour"
 
 msgid "Failed to update user profile"
-msgstr "Echec de la mise à jour du profil utilisateur"
+msgstr "Échec de la mise à jour du profil d'utilisateur"
 
 msgid "Edit user settings"
-msgstr "Modifier paramètres utilisateur"
+msgstr "Modifier les paramètres d'utilisateur"
 
 msgid "Settings updated"
 msgstr "Paramètres mis à jour"
@@ -600,7 +635,7 @@ msgid "Other"
 msgstr "Autre"
 
 msgid "E-mail"
-msgstr "Adresse email"
+msgstr "Adresse e-mail"
 
 msgid "Mobile phone number"
 msgstr "Numéro de téléphone portable"
@@ -609,13 +644,13 @@ msgid "Introduction"
 msgstr "Introduction"
 
 msgid "Job title"
-msgstr "Intitulé de l'emploi"
+msgstr "Titre du poste"
 
 msgid "User roles"
 msgstr "Rôles d'utilisateur"
 
 msgid "User org units"
-msgstr "Unités d'organisation utilisateur"
+msgstr "Unités d'organisation de l'utilisateur"
 
 msgid "Birthday"
 msgstr "Date de naissance"
@@ -651,7 +686,7 @@ msgid "Twitter"
 msgstr "Twitter"
 
 msgid "Account editor"
-msgstr "Editeur de comptes"
+msgstr "Éditeur de comptes"
 
 msgid "Interface language"
 msgstr "Langue de l'interface"
@@ -663,36 +698,40 @@ msgid "Style"
 msgstr "Style"
 
 msgid "Property to display in analysis modules"
-msgstr "Propriété à afficher dans les modules analytiques"
+msgstr "Propriété à afficher dans les modules d'analyse"
 
 msgid "Short name"
 msgstr "Nom court"
 
 msgid "Enable message email notifications"
-msgstr "Autoriser les notifications de messages email"
+msgstr "Activer les notifications par e-mail"
 
 msgid "Enable message SMS notifications"
-msgstr "Autoriser les notifications de messages SMS"
+msgstr "Activer les notifications par SMS"
 
 msgid "View full profile"
 msgstr "Voir le profil complet"
 
 msgctxt "HTTP method"
+msgid "HEAD"
+msgstr "HEAD"
+
+msgctxt "HTTP method"
 msgid "GET"
-msgstr "OBTENIR"
+msgstr "GET"
 
 msgctxt "HTTP method"
 msgid "POST"
-msgstr "POSTER"
+msgstr "POST"
 
 msgctxt "HTTP method"
 msgid "PUT"
-msgstr "METTRE"
+msgstr "PUT"
 
 msgctxt "HTTP method"
 msgid "PATCH"
-msgstr "CORIGER"
+msgstr "PATCH"
 
 msgctxt "HTTP method"
 msgid "DELETE"
-msgstr "SUPPRIMER"
+msgstr "DELETE"
