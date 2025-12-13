@@ -1,62 +1,61 @@
 # 
 # Translators:
-# 晓东 林 <13981924470@126.com>, 2022
-# easylin <lin_xd@126.com>, 2025
+# Rohit Wadhwani, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
 "PO-Revision-Date: 2022-04-20 11:06+0000\n"
-"Last-Translator: easylin <lin_xd@126.com>, 2025\n"
-"Language-Team: Chinese (China) (https://app.transifex.com/hisp-uio/teams/100509/zh_CN/)\n"
+"Last-Translator: Rohit Wadhwani, 2025\n"
+"Language-Team: English (United States) (https://app.transifex.com/hisp-uio/teams/100509/en_US/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Never"
-msgstr "从不"
+msgstr ""
 
 msgid "Invalid date"
-msgstr "无效的的日期"
+msgstr ""
 
 msgid "Web API"
-msgstr "Web API"
+msgstr ""
 
 msgid "Browse it here"
-msgstr "浏览这里"
+msgstr ""
 
 msgid "Current user"
-msgstr "当前用户"
+msgstr ""
 
 msgid "Version"
-msgstr "版本"
+msgstr ""
 
 msgid "Build revision"
-msgstr "创建版本"
+msgstr ""
 
 msgid "Build date"
-msgstr "创建日期"
+msgstr ""
 
 msgid "Jasper reports version"
-msgstr "JASPER报表版本"
+msgstr ""
 
 msgid "User agent"
-msgstr "用户代理"
+msgstr ""
 
 msgid "Server date"
-msgstr "服务器日期"
+msgstr ""
 
 msgid "Last analytics table generation"
-msgstr "最近分析表生成"
+msgstr ""
 
 msgid "Time since last analytics table generation"
-msgstr "自从上次分析表生成"
+msgstr ""
 
 msgid "Last analytics table runtime"
-msgstr "最近分析表运行时"
+msgstr ""
 
 msgid "Last continuous analytics table update"
 msgstr ""
@@ -68,100 +67,100 @@ msgid "Last continuous analytics table runtime"
 msgstr ""
 
 msgid "Environment variable"
-msgstr "环境变量"
+msgstr ""
 
 msgid "System ID"
-msgstr "系统ID"
+msgstr ""
 
 msgid "Last monitoring success"
-msgstr "上次监视成功"
+msgstr ""
 
 msgid "External configuration directory"
-msgstr "外部配置目录"
+msgstr ""
 
 msgid "File store provider"
-msgstr "文件存储提供者"
+msgstr ""
 
 msgid "Node ID"
-msgstr "节点标识"
+msgstr ""
 
 msgid "Cache provider"
-msgstr "缓存提供者"
+msgstr ""
 
 msgid "Read replica count"
-msgstr "读副本数量"
+msgstr ""
 
 msgid "Java opts"
-msgstr "Java选项"
+msgstr ""
 
 msgid "Java version"
-msgstr "Java版本"
+msgstr ""
 
 msgid "Java vendor"
-msgstr "java 供应商"
+msgstr ""
 
 msgid "OS name"
-msgstr "OS名称"
+msgstr ""
 
 msgid "OS architecture"
-msgstr "OS体系"
+msgstr ""
 
 msgid "OS version"
-msgstr "操作系统版本"
+msgstr ""
 
 msgid "Memory info"
-msgstr "内存信息"
+msgstr ""
 
 msgid "CPU cores"
-msgstr "CPU核数"
+msgstr ""
 
 msgid "Calendar"
-msgstr "日历"
+msgstr ""
 
 msgid "Name"
-msgstr "名称"
+msgstr ""
 
 msgid "User"
-msgstr "用户"
+msgstr ""
 
 msgid "Spatial support"
-msgstr "空间分析支持"
+msgstr ""
 
 msgid "System info"
-msgstr "系统信息"
+msgstr ""
 
 msgid "Database"
-msgstr "数据库"
+msgstr ""
 
 msgid "Edit account settings"
-msgstr "编辑账户设置"
+msgstr ""
 
 msgid "No changes have been made"
-msgstr "没有改变"
+msgstr ""
 
 msgid "The form is currently being validated. Please try again."
-msgstr "The form is currently being validated. Please try again."
+msgstr ""
 
 msgid "The form contains errors. Please fix the errors and try again."
-msgstr "The form contains errors. Please fix the errors and try again."
+msgstr ""
 
 msgid "The entered values do not match. Please re-enter."
-msgstr "The entered values do not match. Please re-enter."
+msgstr ""
 
 msgid "Please provide your old password"
-msgstr "请提供旧口令"
+msgstr ""
 
 msgid "Username"
-msgstr "用户名"
+msgstr ""
 
 msgid "Old password"
-msgstr "旧口令"
+msgstr ""
 
 msgid "This field can't be left blank"
-msgstr "该字段不能为空"
+msgstr ""
 
 msgid "New password"
-msgstr "新口令"
+msgstr ""
 
 msgid ""
 "Password should be at least 8 characters with at least 1 digit, 1 uppercase "
@@ -169,13 +168,13 @@ msgid ""
 msgstr ""
 
 msgid "Repeat new password"
-msgstr "重复新口令"
+msgstr ""
 
 msgid "Setup 2-Factor"
-msgstr "设置 2-Factor"
+msgstr ""
 
 msgid "Update password"
-msgstr "更新口令"
+msgstr ""
 
 msgid ""
 "This account is linked to an OpenID Connect identity. Visit the Open ID "
@@ -183,61 +182,61 @@ msgid ""
 msgstr ""
 
 msgid "Password changed successfully"
-msgstr "口令修改成功"
+msgstr ""
 
 msgid "You need to login again to continue using the application."
-msgstr "你需要再次登录才能继续使用应用"
+msgstr ""
 
 msgid "Login"
-msgstr "登录"
+msgstr ""
 
 msgid "Failed to update password"
-msgstr "Failed to update password"
+msgstr ""
 
 msgid "2-Factor successfully turned ON"
-msgstr "2-Factor 成功打开"
+msgstr ""
 
 msgid "2-Factor successfully turned OFF"
-msgstr "2-Factor 成功关闭"
+msgstr ""
 
 msgid "Failed to turn ON 2-Factor"
-msgstr "打开ON 2-Factor失败"
+msgstr ""
 
 msgid "Failed to turn OFF 2-Factor"
 msgstr ""
 
 msgid "Barcode/QR code to scan"
-msgstr "扫描的二维码"
+msgstr ""
 
 msgid "No"
-msgstr "否"
+msgstr "नहीं"
 
 msgid "Yes"
-msgstr "是"
+msgstr "हाँ"
 
 msgid "Turn OFF"
-msgstr "关闭"
+msgstr ""
 
 msgid "Turn ON"
-msgstr "打开"
+msgstr ""
 
 msgid "2-Factor Verification is ON"
-msgstr "2-因子认证已经打开"
+msgstr ""
 
 msgid "2-Factor Verification is OFF"
-msgstr "双因子认证已经关闭"
+msgstr ""
 
 msgid "Do you want to turn OFF 2-Factor?"
-msgstr "你要关闭双因子认证?"
+msgstr ""
 
 msgid "Do you want to turn ON 2-Factor?"
-msgstr "你要打开双因子认证?"
+msgstr ""
 
 msgid "Download the Authenticator app"
-msgstr "下载认证  app"
+msgstr ""
 
 msgid "What kind of phone/tablet do you have?"
-msgstr "What kind of phone/tablet do you have?"
+msgstr ""
 
 msgid "Download the Authenticator App from the "
 msgstr ""
@@ -246,13 +245,13 @@ msgid "In the Authenticator App select "
 msgstr ""
 
 msgid "Begin setup."
-msgstr "开始设置."
+msgstr ""
 
 msgid "Choose "
 msgstr ""
 
 msgid "Scan a barcode."
-msgstr "扫描二维码."
+msgstr ""
 
 msgid ""
 "With 2-Factor authentication turned on you will be asked to enter a second "
@@ -260,67 +259,63 @@ msgid ""
 "must use the Authenticator app. If you do not have this app you must "
 "download it on your phone/tablet."
 msgstr ""
-"With 2-Factor authentication turned on you will be asked to enter a second "
-"verification code when you log in. To generate this verification code you "
-"must use the Authenticator app. If you do not have this app you must "
-"download it on your phone/tablet."
 
 msgid "Failed to upload profile picture"
-msgstr "更新简历照片失败"
+msgstr ""
 
 msgid "Profile picture"
-msgstr "简历照片"
+msgstr ""
 
 msgid "No profile picture available"
-msgstr "没有简历照片"
+msgstr ""
 
 msgid "Select profile picture"
-msgstr "选择简历照片"
+msgstr ""
 
 msgid "Remove profile picture"
-msgstr "移除简历照片"
+msgstr ""
 
 msgid "This field is required"
-msgstr "这个字段是必填的"
+msgstr ""
 
 msgid "This field should be a URL"
-msgstr "该字段应为网址"
+msgstr ""
 
 msgid "This field should contain a list of URLs"
-msgstr "该字段应该是包括一个url列表"
+msgstr ""
 
 msgid "This field should be a number"
-msgstr "该字段应该是一个数字"
+msgstr ""
 
 msgid "This field should be a positive number"
-msgstr "该字段应该是一个正数"
+msgstr ""
 
 msgid "This field should be an email"
-msgstr "该字段应为电子邮件"
+msgstr ""
 
 msgid "Please enter a valid international phone number (+0123456789)"
-msgstr "请输入有效的国际电话号码"
+msgstr ""
 
 msgid "No value"
-msgstr "没有值"
+msgstr ""
 
 msgid "Use system default"
-msgstr "使用系统缺省"
+msgstr ""
 
 msgid "No options"
-msgstr "没有选择"
+msgstr ""
 
 msgid "System default"
-msgstr "系统缺省"
+msgstr ""
 
 msgid "User profile"
-msgstr "用户基本信息"
+msgstr ""
 
 msgid "User settings"
-msgstr "用户设置"
+msgstr ""
 
 msgid "Account settings"
-msgstr "帐号设置"
+msgstr ""
 
 msgid "Full profile"
 msgstr ""
@@ -329,7 +324,7 @@ msgid "Personal access tokens"
 msgstr ""
 
 msgid "About DHIS2"
-msgstr "关于DHIS2"
+msgstr ""
 
 msgid "Manage personal access tokens"
 msgstr ""
@@ -460,7 +455,7 @@ msgid "Token details"
 msgstr ""
 
 msgid "Cancel"
-msgstr "取消"
+msgstr "कैंसल"
 
 msgid ""
 "Important: IP address validation relies on the X-Forwarded-For header, which"
@@ -486,7 +481,7 @@ msgid "Expires"
 msgstr ""
 
 msgid "Created"
-msgstr "已创建"
+msgstr ""
 
 msgid "Copied token to clipboard"
 msgstr ""
@@ -495,124 +490,124 @@ msgid "Newly created token"
 msgstr ""
 
 msgid "Copy to clipboard"
-msgstr "复制到剪贴板"
+msgstr ""
 
 msgid "Delete"
-msgstr "删除"
+msgstr "डिलीट"
 
 msgid "Edit user profile"
-msgstr "编辑用户简历"
+msgstr ""
 
 msgid "User profile updated"
-msgstr "用户概要已经更新"
+msgstr ""
 
 msgid "Failed to update user profile"
-msgstr "Failed to update user profile"
+msgstr ""
 
 msgid "Edit user settings"
-msgstr "编辑用户设置"
+msgstr ""
 
 msgid "Settings updated"
-msgstr "设置已经更新"
+msgstr ""
 
 msgid "Failed to update settings"
-msgstr "Failed to update settings"
+msgstr ""
 
 msgid "First name"
-msgstr "姓"
+msgstr ""
 
 msgid "Surname"
-msgstr "姓"
+msgstr ""
 
 msgid "Gender"
-msgstr "性别"
+msgstr ""
 
 msgid "Male"
-msgstr "男性"
+msgstr ""
 
 msgid "Female"
-msgstr "女性"
+msgstr ""
 
 msgid "Other"
-msgstr "其它"
+msgstr ""
 
 msgid "E-mail"
-msgstr "电子邮件"
+msgstr ""
 
 msgid "Mobile phone number"
-msgstr "电话号码"
+msgstr ""
 
 msgid "Introduction"
-msgstr "介绍"
+msgstr ""
 
 msgid "Job title"
-msgstr "工作头衔"
+msgstr ""
 
 msgid "User roles"
-msgstr "用户角色"
+msgstr ""
 
 msgid "User org units"
-msgstr "用户机构"
+msgstr ""
 
 msgid "Birthday"
-msgstr "生日"
+msgstr ""
 
 msgid "Nationality"
-msgstr "国籍"
+msgstr ""
 
 msgid "Employer"
-msgstr "雇主"
+msgstr ""
 
 msgid "Education"
-msgstr "教育"
+msgstr ""
 
 msgid "Interests"
-msgstr "兴趣"
+msgstr ""
 
 msgid "Languages"
-msgstr "语言"
+msgstr ""
 
 msgid "WhatsApp"
-msgstr "WhatsApp"
+msgstr ""
 
 msgid "Facebook Messenger"
-msgstr "Facebook Messenger"
+msgstr ""
 
 msgid "Skype"
-msgstr "Skype"
+msgstr ""
 
 msgid "Telegram"
-msgstr "电报"
+msgstr ""
 
 msgid "Twitter"
-msgstr "Twitter"
+msgstr ""
 
 msgid "Account editor"
 msgstr ""
 
 msgid "Interface language"
-msgstr "接口语言"
+msgstr ""
 
 msgid "Database language"
-msgstr "数据库语言"
+msgstr ""
 
 msgid "Style"
-msgstr "风格"
+msgstr ""
 
 msgid "Property to display in analysis modules"
-msgstr "在分析模块中显示的属性"
+msgstr ""
 
 msgid "Short name"
-msgstr "缩写"
+msgstr ""
 
 msgid "Enable message email notifications"
-msgstr "激活发送邮件通知"
+msgstr ""
 
 msgid "Enable message SMS notifications"
-msgstr "激活发送短信通知"
+msgstr ""
 
 msgid "View full profile"
-msgstr "查看全部简历"
+msgstr ""
 
 msgctxt "HTTP method"
 msgid "GET"
