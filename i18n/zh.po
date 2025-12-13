@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2025-02-18T16:33:28.306Z\n"
+"POT-Creation-Date: 2025-08-13T11:18:49.717Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
 "Last-Translator: easylin <lin_xd@126.com>, 2025\n"
 "Language-Team: Chinese (https://app.transifex.com/hisp-uio/teams/100509/zh/)\n"
@@ -522,6 +522,9 @@ msgstr "每行列出一个 IP 地址。"
 msgid "Allowed HTTP methods"
 msgstr "允许的 HTTP 方法"
 
+msgid "HEAD"
+msgstr "总负责人"
+
 msgid "GET"
 msgstr "GET"
 
@@ -564,6 +567,12 @@ msgid ""
 "developers from connecting to public access instances."
 msgstr "重要提示：这不是安全功能。引荐来源标头很容易被欺骗。此设置旨在阻止未经授权的第三方开发人员连接到公共访问实例。"
 
+msgid "Token name"
+msgstr "令牌名称"
+
+msgid "A unique name for this token."
+msgstr "该令牌的唯一名称。"
+
 msgid "Choose the context where this token will be used."
 msgstr "选择将使用此令牌的上下文。"
 
@@ -597,7 +606,7 @@ msgid "90 days"
 msgstr "90 天"
 
 msgid "Custom..."
-msgstr "风俗..."
+msgstr "自定义..."
 
 msgid "The token will expire on {{- tokenExpirationDate}}."
 msgstr "令牌将在 {{- tokenExpirationDate}} 到期。"
@@ -607,6 +616,9 @@ msgstr "到期（必填）"
 
 msgid "Custom expiration date (required)"
 msgstr "自定义到期日期（必填）"
+
+msgid "Token name already exists"
+msgstr "令牌名称已存在"
 
 msgid ""
 "Personal access tokens should only be used in a browser context for public "
@@ -649,6 +661,9 @@ msgstr "将令牌复制到剪贴板"
 
 msgid "Newly created token"
 msgstr "新创建的令牌"
+
+msgid "Token Name"
+msgstr "令牌名称"
 
 msgid "Copy to clipboard"
 msgstr "复制到剪贴板"
@@ -771,6 +786,10 @@ msgid "View full profile"
 msgstr "查看全部简历"
 
 msgctxt "HTTP method"
+msgid "HEAD"
+msgstr "总负责人"
+
+msgctxt "HTTP method"
 msgid "GET"
 msgstr "GET"
 
@@ -789,3 +808,11 @@ msgstr "PATCH"
 msgctxt "HTTP method"
 msgid "DELETE"
 msgstr "DELETE"
+
+msgctxt "Application title"
+msgid "__MANIFEST_APP_TITLE"
+msgstr "用户资料"
+
+msgctxt "Application description"
+msgid "__MANIFEST_APP_DESCRIPTION"
+msgstr "用于 DHIS2 的用户配置文件应用程序"
