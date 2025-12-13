@@ -1,9 +1,6 @@
 # 
 # Translators:
-# Philip Larsen Donnelly, 2021
-# Karoline Tufte Lien <karoline@dhis2.org>, 2021
-# Esther Tokouli, 2025
-# Cyrille Kabrane, 2025
+# Rohit Wadhwani, 2025
 # 
 #, fuzzy
 msgid ""
@@ -12,260 +9,257 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-01 00:28-0400\n"
 "PO-Revision-Date: 2021-03-09 23:24+0000\n"
-"Last-Translator: Cyrille Kabrane, 2025\n"
-"Language-Team: French (https://app.transifex.com/hisp-uio/teams/100509/fr/)\n"
+"Last-Translator: Rohit Wadhwani, 2025\n"
+"Language-Team: English (United States) (https://app.transifex.com/hisp-uio/teams/100509/en_US/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Translate Toolkit 2.0.0b3\n"
 
 #: user_profile
 msgid "User profile"
-msgstr "Profil d'utilisateur"
+msgstr ""
 
 #: account_settings
 msgid "Account settings"
-msgstr "Paramètres de compte"
+msgstr ""
 
 #: user_settings
 msgid "User settings"
-msgstr "Paramètres d'utilisateur"
+msgstr ""
 
 #: user_email_address
 msgid "E-mail"
-msgstr "Courrier électronique"
+msgstr ""
 
 #: surname
 msgid "Surname"
-msgstr "Nom de famille"
+msgstr ""
 
 #: first_name
 msgid "First name"
-msgstr "Prénom"
+msgstr ""
 
 #: old_password
 msgid "Old password"
-msgstr "Ancien mot de passe"
+msgstr ""
 
 #: new_password
 msgid "New password"
-msgstr "Nouveau mot de passe"
+msgstr ""
 
 #: repeat_new_password
 msgid "Repeat new password"
-msgstr "Répéter le mot de passe"
+msgstr ""
 
 #: openid
 msgid "OpenID"
-msgstr "OpenID"
+msgstr ""
 
 #: username
 msgid "Username"
-msgstr "Nom d'utilisateur"
+msgstr ""
 
 #: phone_number
 msgid "Mobile phone number"
-msgstr "Numéro de téléphone portable"
+msgstr ""
 
 #: job_title
 msgid "Job title"
-msgstr "Titre du poste"
+msgstr ""
 
 #: introduction
 msgid "Introduction"
-msgstr "Introduction"
+msgstr ""
 
 #: gender
 msgid "Gender"
-msgstr "Sexe"
+msgstr ""
 
 #: male
 msgctxt "male"
 msgid "Male"
-msgstr "Masculin"
+msgstr ""
 
 #: female
 msgctxt "female"
 msgid "Female"
-msgstr "Féminin"
+msgstr ""
 
 #: other
 msgctxt "other"
 msgid "Other"
-msgstr "Autre"
+msgstr ""
 
 #: gender_male
 msgctxt "gender_male"
 msgid "Male"
-msgstr "Masculin"
+msgstr ""
 
 #: gender_female
 msgctxt "gender_female"
 msgid "Female"
-msgstr "Féminin"
+msgstr ""
 
 #: gender_other
 msgctxt "gender_other"
 msgid "Other"
-msgstr "Autre"
+msgstr ""
 
 #: birthday
 msgid "Birthday"
-msgstr "Date de naissance"
+msgstr ""
 
 #: nationality
 msgid "Nationality"
-msgstr "Nationalité"
+msgstr ""
 
 #: employer
 msgid "Employer"
-msgstr "Employeur"
+msgstr ""
 
 #: education
 msgid "Education"
-msgstr "Parcours académique"
+msgstr ""
 
 #: interests
 msgid "Interests"
-msgstr "Intérêts"
+msgstr ""
 
 #: languages
 msgid "Languages"
-msgstr "Langues"
+msgstr ""
 
 #: update_user_profile_success
 msgid "User profile updated"
-msgstr "Profil d’utilisateur mis à jour"
+msgstr ""
 
 #: settings
 msgid "Settings"
-msgstr "Paramètres"
+msgstr ""
 
 #: property_to_display_in_analysis_modules
 msgctxt "property_to_display_in_analysis_modules"
 msgid "Property to display in analysis modules"
-msgstr "Propriété à afficher dans les modules d'analyse"
+msgstr ""
 
 #: general
 msgid "General"
-msgstr "Général"
+msgstr ""
 
 #: message
 msgid "Message"
-msgstr "Message"
+msgstr ""
 
 #: settings_updated
 msgid "Settings updated"
-msgstr "Paramètres mis à jour"
+msgstr ""
 
 #: failed_to_update_settings
 msgid "Failed to update settings"
-msgstr "Échec de l'enregistrement des paramètres"
+msgstr ""
 
 #: style
 msgid "Style"
-msgstr "Style"
+msgstr ""
 
 #: db_language
 msgid "Database language"
-msgstr "Langue de la base de données"
+msgstr ""
 
 #: language
 msgid "Interface language"
-msgstr "Langue de l'interface"
+msgstr ""
 
 #: enable_message_email_notifications
 msgid "Enable message email notifications"
-msgstr "Activer les notifications par e-mail"
+msgstr ""
 
 #: enable_message_sms_notifications
 msgid "Enable message SMS notifications"
-msgstr "Activer les notifications par SMS"
+msgstr ""
 
 #: analysis_module
 msgctxt "analysis_module"
 msgid "Property to display in analysis modules"
-msgstr "Propriété à afficher dans les modules d'analyse"
+msgstr ""
 
 #: name
 msgid "Name"
-msgstr "Nom"
+msgstr ""
 
 #: short_name
 msgid "Short name"
-msgstr "Nom court"
+msgstr ""
 
 #: system_default
 msgid "System default"
-msgstr "Paramètres par défaut du système"
+msgstr ""
 
 #: value_should_be_an_email
 msgid "Please enter a valid email address"
-msgstr "Veuillez saisir une adresse e-mail valide"
+msgstr ""
 
 #: update_user_profile_fail
 msgid "Failed to update user profile"
-msgstr "Échec de la mise à jour du profil d'utilisateur"
+msgstr ""
 
 #: update_settings_fail
 msgid "Fialed to update user settings"
-msgstr "Échec de la mise à jour des paramètres utilisateur"
+msgstr ""
 
 #: update_password
 msgid "Update password"
-msgstr "Mettre à jour un mot de passe"
+msgstr ""
 
 #: invalid_password
 msgid ""
 "Password should be at least 8 characters with at least 1 digit and 1 "
 "uppercase letter"
 msgstr ""
-"Le mot de passe doit contenir au moins 8 caractères dont au moins un chiffre"
-" et une lettre majuscule"
 
 #: passwords_do_not_match
 msgid "The entered values do not match. Please re-enter."
-msgstr "Les valeurs saisies ne correspondent pas. Veuillez saisir à nouveau."
+msgstr ""
 
 #: use_system_default
 msgid "Use system default"
-msgstr "Utiliser les paramètres par défaut du système"
+msgstr ""
 
 #: true_notifications
 msgid "Yes"
-msgstr "Oui"
+msgstr "हाँ"
 
 #: false_notifications
 msgid "No"
-msgstr "Non"
+msgstr "नहीं"
 
 #: value_required
 msgid "This field can't be left blank"
-msgstr "Ce champ ne peut rester vide"
+msgstr ""
 
 #: please_enter_the_correct_password
 msgid "Please enter the correct password"
-msgstr "Veuillez saisir votre mot de passe correcte"
+msgstr ""
 
 #: no_changes_have_been_made
 msgid "No changes have been made"
-msgstr "Aucune modification effectuée"
+msgstr ""
 
 #: validating_please_try_again
 msgid "The form is currently being validated. Please try again."
-msgstr "Le formulaire est en cours de validation. Veuillez réessayer. "
+msgstr ""
 
 #: fix_errors_and_try_again
 msgid "The form contains errors. Please fix the errors and try again."
 msgstr ""
-"Le formulaire contient des erreurs. Veuillez les corriger puis réessayer."
 
 #: password_update_success
 msgid "Your password was updated successfully"
-msgstr "Votre mot de passe a été mis à jour avec succès"
+msgstr ""
 
 #: password_update_failed
 msgid "Failed to update password"
-msgstr "Impossible de mettre à jour le mot de passe"
+msgstr ""
