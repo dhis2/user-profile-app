@@ -4,13 +4,14 @@
 # Valeriu Plesca <vplesca@gmail.com>, 2022
 # Philip Larsen Donnelly, 2022
 # Yury Rogachev <yury@dhis2.org>, 2024
+# Nadiia <semchuk@aph.org.ua>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2021-10-22T15:09:53.622Z\n"
 "PO-Revision-Date: 2022-10-15 22:33+0000\n"
-"Last-Translator: Yury Rogachev <yury@dhis2.org>, 2024\n"
+"Last-Translator: Nadiia <semchuk@aph.org.ua>, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/hisp-uio/teams/100509/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -136,7 +137,7 @@ msgid "Database"
 msgstr ""
 
 msgid "Edit account settings"
-msgstr ""
+msgstr "Редактирование настроек учетной записи"
 
 msgid "No changes have been made"
 msgstr "Изменения не производились"
@@ -153,7 +154,7 @@ msgid "The entered values do not match. Please re-enter."
 msgstr "Введенные значения не совпадают. Пожалуйста, введите снова."
 
 msgid "Please provide your old password"
-msgstr ""
+msgstr "Укажите ваш старый пароль"
 
 msgid "Username"
 msgstr "Имя пользователя"
@@ -187,13 +188,14 @@ msgid ""
 msgstr ""
 
 msgid "Password changed successfully"
-msgstr ""
+msgstr "Пароль успешно изменен"
 
 msgid "You need to login again to continue using the application."
 msgstr ""
+"Чтобы продолжить работу с приложением, необходимо снова войти в систему."
 
 msgid "Login"
-msgstr ""
+msgstr "Войти в систему"
 
 msgid "Failed to update password"
 msgstr "Не удалось обновить пароль"
@@ -323,7 +325,7 @@ msgid "Account settings"
 msgstr "Настройки аккаунта"
 
 msgid "Full profile"
-msgstr ""
+msgstr "Полный профиль"
 
 msgid "Personal access tokens"
 msgstr ""
@@ -495,13 +497,13 @@ msgid "Newly created token"
 msgstr ""
 
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Копировать в буфер обмена"
 
 msgid "Delete"
 msgstr "Удалить"
 
 msgid "Edit user profile"
-msgstr ""
+msgstr "Редактирование профиля пользователя"
 
 msgid "User profile updated"
 msgstr "Профиль пользователя обновлен"
@@ -510,7 +512,7 @@ msgid "Failed to update user profile"
 msgstr "Не удалось обновить профиль пользователя"
 
 msgid "Edit user settings"
-msgstr ""
+msgstr "Редактирование настроек пользователя"
 
 msgid "Settings updated"
 msgstr "Настройки обновлены"
@@ -552,7 +554,7 @@ msgid "User roles"
 msgstr "Уровень доступа"
 
 msgid "User org units"
-msgstr ""
+msgstr "Организационные единицы пользователя"
 
 msgid "Birthday"
 msgstr "День рождения"
@@ -612,7 +614,7 @@ msgid "Enable message SMS notifications"
 msgstr "Включить SMS-уведомления о сообщениях"
 
 msgid "View full profile"
-msgstr ""
+msgstr "Посмотреть полный профиль"
 
 msgctxt "HTTP method"
 msgid "GET"
