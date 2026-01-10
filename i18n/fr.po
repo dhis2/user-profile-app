@@ -10,14 +10,14 @@
 # Philip Larsen Donnelly, 2024
 # Elise Desailly, 2024
 # Esther Tokouli, 2025
-# Cyrille Kabrane, 2025
+# Cyrille Kabrane, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2025-08-28T14:06:57.244Z\n"
 "PO-Revision-Date: 2023-05-22 19:26+0000\n"
-"Last-Translator: Cyrille Kabrane, 2025\n"
+"Last-Translator: Cyrille Kabrane, 2026\n"
 "Language-Team: French (https://app.transifex.com/hisp-uio/teams/100509/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -662,7 +662,7 @@ msgid "Employer"
 msgstr "Employeur"
 
 msgid "Education"
-msgstr "Éducation"
+msgstr "Parcours académique"
 
 msgid "Interests"
 msgstr "Intérêts"
