@@ -110,6 +110,25 @@ function getNameValidator(name) {
     return false
 }
 
+function findItemById(items, searchId) {
+    if (!items || !Array.isArray(items) || !searchId) {
+        return undefined
+    }
+
+    const foundItem = items.find((item) => item.id === searchId)
+    if (foundItem) {
+        return foundItem
+    }
+
+    const normalizedSearchId = String(searchId).toLowerCase()
+    return items.find(
+        (item) =>
+            String(item.id).toLowerCase() === normalizedSearchId ||
+            String(item.id).replace(/_/g, '-') === searchId ||
+            String(item.id).replace(/-/g, '_') === searchId
+    )
+}
+
 function createTextField(fieldBase, mapping) {
     return Object.assign({}, fieldBase, {
         props: Object.assign({}, fieldBase.props, {
@@ -153,13 +172,6 @@ function createCheckBox(fieldBase, fieldName) {
 
 // eslint-disable-next-line max-params
 function createDropDown(fieldBase, fieldName, valueStore, mapping) {
-    const value =
-        valueStore.state[fieldName] || valueStore.state[fieldName] === false
-            ? valueStore.state[fieldName].toString()
-            : mapping.showSystemDefault
-            ? 'system_default'
-            : 'null'
-
     const menuItems = (
         mapping.source
             ? (optionValueStore.state &&
@@ -171,6 +183,21 @@ function createDropDown(fieldBase, fieldName, valueStore, mapping) {
               })
     ).slice()
 
+    // Normalize the value to match a menuItem.id, handling format variations
+    let value
+    if (valueStore.state[fieldName] || valueStore.state[fieldName] === false) {
+        const rawValue = valueStore.state[fieldName].toString()
+        if (rawValue === 'system_default' || rawValue === 'null') {
+            value = rawValue
+        } else {
+            // Try to find a matching menuItem to get the correct ID format
+            const foundItem = findItemById(menuItems, rawValue)
+            value = foundItem ? foundItem.id : rawValue
+        }
+    } else {
+        value = mapping.showSystemDefault ? 'system_default' : 'null'
+    }
+
     const systemSettingValue =
         optionValueStore.state &&
         optionValueStore.state.systemDefault &&
@@ -180,10 +207,11 @@ function createDropDown(fieldBase, fieldName, valueStore, mapping) {
     if (typeof systemSettingValue === 'boolean') {
         systemSettingLabel = systemSettingValue ? i18n.t('Yes') : i18n.t('No')
     } else if (optionValueStore.state[mapping.source]) {
-        systemSettingLabel =
-            optionValueStore.state[mapping.source]
-                .filter((x) => x.id === systemSettingValue)
-                .map((x) => x.displayName)[0] || i18n.t('No value')
+        const foundItem = findItemById(
+            optionValueStore.state[mapping.source],
+            systemSettingValue
+        )
+        systemSettingLabel = foundItem?.displayName || i18n.t('No value')
     } else if (
         systemSettingValue === 'null' ||
         systemSettingValue === 'system_default' ||
@@ -344,16 +372,16 @@ function wrapFieldWithLabel(field) {
         let systemValueLabel = systemValue
 
         if (mapping.source && actualSystemValue) {
-            systemValueLabel = optionValueStore.state[mapping.source].find(
-                (item) => item.id === systemValue
-            ).displayName
+            const foundItem = findItemById(
+                optionValueStore.state[mapping.source],
+                systemValue
+            )
+            systemValueLabel = foundItem?.displayName || systemValue
         } else if (field.props.menuItems && actualSystemValue) {
-            systemValueLabel = field.props.menuItems.find(
-                (item) =>
-                    item.id === systemValue || String(systemValue) === item.id
-            ).displayName
+            const foundItem = findItemById(field.props.menuItems, systemValue)
+            systemValueLabel = foundItem?.displayName || systemValue
         } else {
-            systemValueLabel = mapping.options[systemValue]
+            systemValueLabel = mapping.options?.[systemValue] || systemValue
         }
 
         // TODO: use i18n interpolation here
