@@ -110,23 +110,58 @@ function getNameValidator(name) {
     return false
 }
 
+/**
+ * Normalizes locale codes from API format to dropdown format
+ * Converts uz-UZ-x-lvariant-Cyrl -> uz_UZ_Cyrl
+ * Converts uz-UZ-x-lvariant-Latn -> uz_UZ_Latn
+ */
+function normalizeLocaleCode(localeCode) {
+    if (!localeCode) {
+        return localeCode
+    }
+
+    const code = String(localeCode).toLowerCase()
+
+    if (code.includes('uz') && code.includes('x-lvariant')) {
+        if (code.includes('cyrl')) {
+            return 'uz_UZ_Cyrl'
+        }
+        if (code.includes('latn')) {
+            return 'uz_UZ_Latn'
+        }
+    }
+
+    return localeCode
+}
+
 function findItemById(items, searchId) {
     if (!items || !Array.isArray(items) || !searchId) {
         return undefined
     }
 
-    const foundItem = items.find((item) => item.id === searchId)
-    if (foundItem) {
-        return foundItem
+    // Try exact match first
+    const exactMatch = items.find((item) => item.id === searchId)
+    if (exactMatch) {
+        return exactMatch
     }
 
-    const normalizedSearchId = String(searchId).toLowerCase()
-    return items.find(
-        (item) =>
-            String(item.id).toLowerCase() === normalizedSearchId ||
-            String(item.id).replace(/_/g, '-') === searchId ||
-            String(item.id).replace(/-/g, '_') === searchId
-    )
+    // Try with normalized locale code
+    const normalizedId = normalizeLocaleCode(searchId)
+    const normalizedMatch = items.find((item) => item.id === normalizedId)
+    if (normalizedMatch) {
+        return normalizedMatch
+    }
+
+    // Try underscore/hyphen variations
+    const searchStr = String(searchId)
+    return items.find((item) => {
+        const itemId = String(item.id)
+        return (
+            itemId.toLowerCase() === searchStr.toLowerCase() ||
+            itemId.replace(/_/g, '-') === searchStr ||
+            itemId.replace(/-/g, '_') === searchStr
+        )
+    })
 }
 
 function createTextField(fieldBase, mapping) {
@@ -175,12 +210,12 @@ function createDropDown(fieldBase, fieldName, valueStore, mapping) {
     const menuItems = (
         mapping.source
             ? (optionValueStore.state &&
-                  optionValueStore.state[mapping.source]) ||
-              []
+                optionValueStore.state[mapping.source]) ||
+            []
             : Object.keys(mapping.options).map((id) => {
-                  const displayName = mapping.options[id]
-                  return { id, displayName }
-              })
+                const displayName = mapping.options[id]
+                return { id, displayName }
+            })
     ).slice()
 
     // Normalize the value to match a menuItem.id, handling format variations
@@ -333,11 +368,11 @@ function createField({ fieldName, valueStore, d2, featureToggle, onUpdate }) {
         case 'emailModal':
             return featureToggle?.emailFieldAsModal
                 ? createEmailField({
-                      fieldBase,
-                      valueStore,
-                      onUpdate,
-                      d2,
-                  })
+                    fieldBase,
+                    valueStore,
+                    onUpdate,
+                    d2,
+                })
                 : createTextField(fieldBase, mapping)
         default:
             log.warn(
