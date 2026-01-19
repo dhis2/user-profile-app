@@ -210,22 +210,20 @@ function createDropDown(fieldBase, fieldName, valueStore, mapping) {
     const menuItems = (
         mapping.source
             ? (optionValueStore.state &&
-                optionValueStore.state[mapping.source]) ||
-            []
+                  optionValueStore.state[mapping.source]) ||
+              []
             : Object.keys(mapping.options).map((id) => {
-                const displayName = mapping.options[id]
-                return { id, displayName }
-            })
+                  const displayName = mapping.options[id]
+                  return { id, displayName }
+              })
     ).slice()
 
-    // Normalize the value to match a menuItem.id, handling format variations
     let value
     if (valueStore.state[fieldName] || valueStore.state[fieldName] === false) {
         const rawValue = valueStore.state[fieldName].toString()
         if (rawValue === 'system_default' || rawValue === 'null') {
             value = rawValue
         } else {
-            // Try to find a matching menuItem to get the correct ID format
             const foundItem = findItemById(menuItems, rawValue)
             value = foundItem ? foundItem.id : rawValue
         }
@@ -368,11 +366,11 @@ function createField({ fieldName, valueStore, d2, featureToggle, onUpdate }) {
         case 'emailModal':
             return featureToggle?.emailFieldAsModal
                 ? createEmailField({
-                    fieldBase,
-                    valueStore,
-                    onUpdate,
-                    d2,
-                })
+                      fieldBase,
+                      valueStore,
+                      onUpdate,
+                      d2,
+                  })
                 : createTextField(fieldBase, mapping)
         default:
             log.warn(
