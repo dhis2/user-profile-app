@@ -110,6 +110,63 @@ function getNameValidator(name) {
     return false
 }
 
+/**
+ * Normalizes locale codes from API format to dropdown format
+ * Converts uz-UZ-x-lvariant-Cyrl -> uz_UZ_Cyrl
+ * Converts uz-UZ-x-lvariant-Latn -> uz_UZ_Latn
+ */
+function normalizeLocaleCode(localeCode) {
+    if (!localeCode) {
+        return localeCode
+    }
+
+    const code = String(localeCode).toLowerCase()
+
+    if (code.includes('uz') && code.includes('x-lvariant')) {
+        if (code.includes('cyrl')) {
+            return 'uz_UZ_Cyrl'
+        }
+        if (code.includes('latn')) {
+            return 'uz_UZ_Latn'
+        }
+    }
+
+    return localeCode
+}
+
+function matchesItemVariation(itemId, searchStr) {
+    return (
+        itemId.toLowerCase() === searchStr.toLowerCase() ||
+        itemId.replaceAll('_', '-') === searchStr ||
+        itemId.replaceAll('-', '_') === searchStr
+    )
+}
+
+function findItemById(items, searchId) {
+    if (!items || !Array.isArray(items) || !searchId) {
+        return undefined
+    }
+
+    // Try exact match first
+    const exactMatch = items.find((item) => item.id === searchId)
+    if (exactMatch) {
+        return exactMatch
+    }
+
+    // Try with normalized locale code
+    const normalizedId = normalizeLocaleCode(searchId)
+    const normalizedMatch = items.find((item) => item.id === normalizedId)
+    if (normalizedMatch) {
+        return normalizedMatch
+    }
+
+    // Try underscore/hyphen variations
+    const searchStr = String(searchId)
+    return items.find((item) =>
+        matchesItemVariation(String(item.id), searchStr)
+    )
+}
+
 function createTextField(fieldBase, mapping) {
     return Object.assign({}, fieldBase, {
         props: Object.assign({}, fieldBase.props, {
@@ -151,15 +208,44 @@ function createCheckBox(fieldBase, fieldName) {
     })
 }
 
+function getSystemSettingLabel(systemSettingValue, mapping) {
+    if (typeof systemSettingValue === 'boolean') {
+        return systemSettingValue ? i18n.t('Yes') : i18n.t('No')
+    }
+
+    if (optionValueStore.state[mapping.source]) {
+        const foundItem = findItemById(
+            optionValueStore.state[mapping.source],
+            systemSettingValue
+        )
+        return foundItem?.displayName || i18n.t('No value')
+    }
+
+    if (
+        systemSettingValue === 'null' ||
+        systemSettingValue === 'system_default' ||
+        typeof systemSettingValue === 'undefined'
+    ) {
+        return i18n.t('No value')
+    }
+
+    return systemSettingValue
+}
+
+function getDropdownValue({ fieldName, valueStore, mapping, menuItems }) {
+    if (valueStore.state[fieldName] || valueStore.state[fieldName] === false) {
+        const rawValue = valueStore.state[fieldName].toString()
+        if (rawValue === 'system_default' || rawValue === 'null') {
+            return rawValue
+        }
+        const foundItem = findItemById(menuItems, rawValue)
+        return foundItem ? foundItem.id : rawValue
+    }
+    return mapping.showSystemDefault ? 'system_default' : 'null'
+}
+
 // eslint-disable-next-line max-params
 function createDropDown(fieldBase, fieldName, valueStore, mapping) {
-    const value =
-        valueStore.state[fieldName] || valueStore.state[fieldName] === false
-            ? valueStore.state[fieldName].toString()
-            : mapping.showSystemDefault
-            ? 'system_default'
-            : 'null'
-
     const menuItems = (
         mapping.source
             ? (optionValueStore.state &&
@@ -171,28 +257,22 @@ function createDropDown(fieldBase, fieldName, valueStore, mapping) {
               })
     ).slice()
 
+    const value = getDropdownValue({
+        fieldName,
+        valueStore,
+        mapping,
+        menuItems,
+    })
+
     const systemSettingValue =
         optionValueStore.state &&
         optionValueStore.state.systemDefault &&
         optionValueStore.state.systemDefault[fieldName]
 
-    let systemSettingLabel
-    if (typeof systemSettingValue === 'boolean') {
-        systemSettingLabel = systemSettingValue ? i18n.t('Yes') : i18n.t('No')
-    } else if (optionValueStore.state[mapping.source]) {
-        systemSettingLabel =
-            optionValueStore.state[mapping.source]
-                .filter((x) => x.id === systemSettingValue)
-                .map((x) => x.displayName)[0] || i18n.t('No value')
-    } else if (
-        systemSettingValue === 'null' ||
-        systemSettingValue === 'system_default' ||
-        typeof systemSettingValue === 'undefined'
-    ) {
-        systemSettingLabel = i18n.t('No value')
-    } else {
-        systemSettingLabel = systemSettingValue
-    }
+    const systemSettingLabel = getSystemSettingLabel(
+        systemSettingValue,
+        mapping
+    )
 
     if (mapping.showSystemDefault) {
         menuItems.unshift({
@@ -344,16 +424,16 @@ function wrapFieldWithLabel(field) {
         let systemValueLabel = systemValue
 
         if (mapping.source && actualSystemValue) {
-            systemValueLabel = optionValueStore.state[mapping.source].find(
-                (item) => item.id === systemValue
-            ).displayName
+            const foundItem = findItemById(
+                optionValueStore.state[mapping.source],
+                systemValue
+            )
+            systemValueLabel = foundItem?.displayName || systemValue
         } else if (field.props.menuItems && actualSystemValue) {
-            systemValueLabel = field.props.menuItems.find(
-                (item) =>
-                    item.id === systemValue || String(systemValue) === item.id
-            ).displayName
+            const foundItem = findItemById(field.props.menuItems, systemValue)
+            systemValueLabel = foundItem?.displayName || systemValue
         } else {
-            systemValueLabel = mapping.options[systemValue]
+            systemValueLabel = mapping.options?.[systemValue] || systemValue
         }
 
         // TODO: use i18n interpolation here
