@@ -9,14 +9,14 @@
 # Yao Selom SAKA (HISP WCA) <ysaka@hispwca.org>, 2022
 # Philip Larsen Donnelly, 2024
 # Esther Tokouli, 2025
-# Cyrille Kabrane, 2025
+# Cyrille Kabrane, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2021-10-22T15:14:54.283Z\n"
 "PO-Revision-Date: 2021-09-04 00:45+0000\n"
-"Last-Translator: Cyrille Kabrane, 2025\n"
+"Last-Translator: Cyrille Kabrane, 2026\n"
 "Language-Team: French (https://app.transifex.com/hisp-uio/teams/100509/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -300,19 +300,19 @@ msgid "This field is required"
 msgstr "Ce champ est requis"
 
 msgid "This field should be a URL"
-msgstr "Ce champ doit être une URL"
+msgstr "Ce champ doit contenir une URL"
 
 msgid "This field should contain a list of URLs"
 msgstr "Ce champ doit contenir une liste d'URL"
 
 msgid "This field should be a number"
-msgstr "Ce champ doit être un nombre"
+msgstr "Ce champ doit contenir un nombre"
 
 msgid "This field should be a positive number"
-msgstr "Ce champ doit être un nombre positif"
+msgstr "Ce champ doit contenir un nombre positif"
 
 msgid "This field should be an email"
-msgstr "Ce champ doit être un e-mail"
+msgstr "Ce champ doit contenir une adresse e-mail"
 
 msgid "Please enter a valid international phone number (+0123456789)"
 msgstr ""
