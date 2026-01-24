@@ -469,19 +469,19 @@ msgid "This field is required"
 msgstr "Ce champ est requis"
 
 msgid "This field should be a URL"
-msgstr "Ce champ doit être une URL"
+msgstr "Ce champ doit contenir une URL"
 
 msgid "This field should contain a list of URLs"
 msgstr "Ce champ doit contenir une liste d'URL"
 
 msgid "This field should be a number"
-msgstr "Ce champ doit être un nombre"
+msgstr "Ce champ doit contenir un nombre"
 
 msgid "This field should be a positive number"
-msgstr "Ce champ doit être un nombre positif"
+msgstr "Ce champ doit contenir un nombre positif"
 
 msgid "This field should be an email"
-msgstr "Ce champ doit être un e-mail"
+msgstr "Ce champ doit contenir une adresse e-mail"
 
 msgid "Please enter a valid international phone number (+0123456789)"
 msgstr ""
