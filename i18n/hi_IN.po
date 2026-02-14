@@ -122,7 +122,7 @@ msgid "Name"
 msgstr "नाम"
 
 msgid "User"
-msgstr ""
+msgstr "यूज़र"
 
 msgid "Spatial support"
 msgstr ""
@@ -152,7 +152,7 @@ msgid "Please provide your old password"
 msgstr ""
 
 msgid "Username"
-msgstr ""
+msgstr "यूज़रनेम"
 
 msgid "Old password"
 msgstr ""
@@ -199,7 +199,7 @@ msgid "Authenticator app"
 msgstr ""
 
 msgid "Email"
-msgstr ""
+msgstr "ईमेल"
 
 msgid "Could not enable two factor authentication"
 msgstr ""
@@ -407,7 +407,7 @@ msgid "There is no email to remove"
 msgstr ""
 
 msgid "This field is required"
-msgstr ""
+msgstr "यह फ़ील्ड आवश्यक है"
 
 msgid "This field should be a URL"
 msgstr ""
@@ -686,7 +686,7 @@ msgid "Failed to update settings"
 msgstr ""
 
 msgid "First name"
-msgstr ""
+msgstr "पहला नाम"
 
 msgid "Surname"
 msgstr ""
