@@ -1,3 +1,10 @@
+## [100.8.2](https://github.com/dhis2/user-profile-app/compare/v100.8.1...v100.8.2) (2026-02-23)
+
+
+### Bug Fixes
+
+* use new remove avatar endpoint ([#1508](https://github.com/dhis2/user-profile-app/issues/1508)) ([4562ef6](https://github.com/dhis2/user-profile-app/commit/4562ef6d85139044b83096360ed599cf4f14ef62))
+
 ## [100.8.1](https://github.com/dhis2/user-profile-app/compare/v100.8.0...v100.8.1) (2025-09-12)
 
 
