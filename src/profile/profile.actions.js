@@ -46,7 +46,6 @@ userProfileActions.save.subscribe(({ data, complete, error }) => {
             key,
             value,
             payload,
-            userId: userProfileStore.state.id,
             d2,
         })
             .then(() => {
@@ -68,26 +67,23 @@ userProfileActions.save.subscribe(({ data, complete, error }) => {
     })
 })
 
-function getProfileUpdatePromise({ key, value, payload, userId, d2 }) {
+export function getProfileUpdatePromise({ key, value, payload, d2 }) {
     const api = d2.Api.getApi()
     if (key === 'avatar') {
         if (value) {
             // Set avatar
             return api.update('me', { avatar: { id: value.id } })
         } else {
-            // Clear avatar
-            return removeAvatar(userId, api)
+            // Remove avatar using the dedicated endpoint (DHIS2-16366)
+            return removeAvatar(api)
         }
     }
 
     return api.update('me', payload)
 }
 
-async function removeAvatar(userId, api) {
-    const url = `/users/${userId}`
-    const user = await api.get(url, { fields: ':owner' })
-    delete user.avatar
-    return api.update(url, user)
+async function removeAvatar(api) {
+    return api.delete('me/avatar')
 }
 
 export default userProfileActions
