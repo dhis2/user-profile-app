@@ -1,26 +1,26 @@
-# 
 # Translators:
 # Thuy Nguyen <thuynguyen@hispvietnam.org>, 2022
 # Namwan Chanthavisouk, 2024
-# Saysamone Sibounma, 2024
 # Viktor Varland <viktor@dhis2.org>, 2025
 # Philip Larsen Donnelly, 2025
+# Em Le <em.hispvietnam@gmail.com>, 2025
+# Saysamone Sibounma, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2025-02-18T16:33:28.306Z\n"
+"POT-Creation-Date: 2026-02-17T14:49:52.098Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Philip Larsen Donnelly, 2025\n"
+"Last-Translator: Saysamone Sibounma, 2026\n"
 "Language-Team: Lao (https://app.transifex.com/hisp-uio/teams/100509/lo/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: lo\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Never"
-msgstr "Never"
+msgstr "ບໍ່ເຄີຍ"
 
 msgid "Invalid date"
 msgstr "ວັນທີ່ບໍ່ຖືກຕ້ອງ"
@@ -125,7 +125,7 @@ msgid "Name"
 msgstr "ຊື່"
 
 msgid "User"
-msgstr "User"
+msgstr "ຜູ້ໃຊ້"
 
 msgid "Spatial support"
 msgstr "ສະໜັບສະໜູນທາງດ້ານຟື້ນທີ່"
@@ -171,6 +171,9 @@ msgid ""
 "characters long, with at least one lowercase character, one uppercase "
 "character, one number, and one special character."
 msgstr ""
+"ລະຫັດຜ່ານຄວນມີຄວາມຍາວລະຫວ່າງ {{minPasswordLength}} ຫາ {{maxPasswordLength}} "
+"ຕົວອັກສອນ, ໂດຍມີຢ່າງໜ້ອຍ ຕົວອັກສອນພິມນ້ອຍໜຶ່ງຕົວ, ຕົວອັກສອນພິມໃຫຍ່ໜຶ່ງຕົວ, "
+"ຕົວເລກໜຶ່ງຕົວ ແລະ ຕົວອັກສອນພິເສດໜຶ່ງຕົວ."
 
 msgid "Repeat new password"
 msgstr "ຢືນຢັນລະຫັດໃໝ່ອີກຄັ້ງ"
@@ -201,13 +204,13 @@ msgid "Failed to update password"
 msgstr "ອັບເດດລະຫັດຜ່ານຫຼົ້ມເຫຼວ"
 
 msgid "Authenticator app"
-msgstr ""
+msgstr "ແອັບຢືນຢັນຕົວຕົນ"
 
 msgid "Email"
 msgstr "ອີເມວ"
 
 msgid "Could not enable two factor authentication"
-msgstr ""
+msgstr "ບໍ່ສາມາດເປີດໃຊ້ງານການຢືນຢັນຕົວຕົນແບບສອງຂັ້ນຕອນໄດ້"
 
 msgid "Two factor authentication was enabled successfully"
 msgstr "ເປິດໃຊ້ງານການກວດສອບຄວາມຖືກຕ້ອງແບບ 2 ຂັ້ນສຳເລັດແລ້ວ"
@@ -226,6 +229,9 @@ msgid ""
 "security. With two-factor authentication turned on, you will need to enter "
 "an authentication code every time you log in."
 msgstr ""
+"ການຢືນຢັນຕົວຕົນແບບສອງຂັ້ນຕອນຈະປົກປ້ອງບັນຊີຂອງທ່ານດ້ວຍລະບົບຄວາມປອດໄພອີກຊັ້ນໜຶ່ງ."
+" ເມື່ອເປີດໃຊ້ງານແລ້ວ, "
+"ທ່ານຈະຕ້ອງໄດ້ປ້ອນລະຫັດຢືນຢັນຕົວຕົນທຸກຄັ້ງທີ່ທ່ານເຂົ້າສູ່ລະບົບ."
 
 msgid "Turn off two-factor authentication"
 msgstr "ປິດໃຊ້ງານການກວດສອບຄວາມຖືກຕ້ອງແບບ 2 ຂັ້ນ"
@@ -234,7 +240,7 @@ msgid "Turn on two-factor authentication"
 msgstr "ເປິດໃຊ້ງານການກວດສອບຄວາມຖືກຕ້ອງແບບ 2 ຂັ້ນ"
 
 msgid "Two factor authentication type"
-msgstr ""
+msgstr "ປະເພດການຢືນຢັນຕົວຕົນແບບສອງຂັ້ນຕອນ"
 
 msgid "Remove two-factor account"
 msgstr "ລົບບັນຊີກວດສອບຄວາມຖືກຕ້ອງແບບ 2 ຂັ້ນ"
@@ -251,23 +257,27 @@ msgstr ""
 msgid ""
 "Send authentication code to your verified email address: {{emailAddress}}"
 msgstr ""
+"ສົ່ງລະຫັດຢືນຢັນຕົວຕົນໄປຍັງທີ່ຢູ່ອີເມວທີ່ໄດ້ຮັບການຢືນຢັນຂອງທ່ານ: "
+"{{emailAddress}}"
 
 msgid "Authentication code sent"
-msgstr ""
+msgstr "ສົ່ງລະຫັດຢືນຢັນຕົວຕົນແລ້ວ"
 
 msgid ""
 "If you didn't receive the code, check your spam/junk folder. Have you waited"
 " a few minutes and still not received the code?"
 msgstr ""
+"ຫາກທ່ານບໍ່ໄດ້ຮັບລະຫັດ, ກະລຸນາກວດເບິ່ງໃນໂຟນເດີອີເມວຂີ້ເຫຍື້ອ (Spam/Junk). "
+"ຫາກລໍຖ້າສອງສາມນາທີແລ້ວຍັງບໍ່ໄດ້ຮັບລະຫັດເທື່ອ?"
 
 msgid "Send a new code"
-msgstr ""
+msgstr "ສົ່ງລະຫັດໃໝ່"
 
 msgid "Send authentication code"
-msgstr ""
+msgstr "ສົ່ງລະຫັດຢືນຢັນຕົວຕົນ"
 
 msgid "Enter the 6 digit authentication code in the email."
-msgstr ""
+msgstr "ປ້ອນລະຫັດຢືນຢັນຕົວຕົນ 6 ຫຼັກທີ່ໄດ້ຮັບໃນອີເມວ."
 
 msgid "Already set up two-factor authentication before?"
 msgstr "ເຄີຍຕັ້ງຄ່າການຢືນຢັນຕົວຕົນແບບ 2 ຂັ້ນຕອນມາກ່ອນແລ້ວຫຼືບໍ?"
@@ -286,9 +296,12 @@ msgid ""
 "disable two-factor authentication via email. If you have recently verified "
 "your email, you may need to refresh this page."
 msgstr ""
+"ອີເມວຂອງທ່ານຍັງບໍ່ທັນໄດ້ຮັບການຢືນຢັນ. ທ່ານຕ້ອງຢືນຢັນອີເມວຂອງທ່ານກ່ອນ "
+"ເພື່ອເປີດ ຫຼື ປິດການຢືນຢັນຕົວຕົນແບບສອງຂັ້ນຕອນຜ່ານທາງອີເມວ. "
+"ຫາກທ່ານຫາກໍ່ຢືນຢັນອີເມວໄປ, ທ່ານອາດຈະຕ້ອງໂຫຼດໜ້ານີ້ໃໝ່."
 
 msgid "Verify your email here."
-msgstr ""
+msgstr "ຢືນຢັນອີເມວຂອງທ່ານຢູ່ບ່ອນນີ້."
 
 msgid ""
 "Two-factor authentication protects your account with an extra layer of "
@@ -339,13 +352,13 @@ msgid ""
 msgstr "ລະຫັດນີ້ບໍ່ຖືກຕ້ອງ. ໃສ່ລະຫັດຫົກຕົວເລກຈາກແອັບຢືນຢັນຕົວຕົນຂອງທ່ານ."
 
 msgid "6 digit code"
-msgstr ""
+msgstr "ລະຫັດ 6 ຫຼັກ"
 
 msgid "Could not enable 2 Factor Authentication"
 msgstr "ບໍ່ສາມາດເປິດໃຊ້ການການກວດສອບຄວາມຖືກຕ້ອງແບບ 2 ຂັ້ນໄດ້"
 
 msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
-msgstr ""
+msgstr "ກະລຸນາເລືອກຮູບໂປຣຟາຍທີ່ມີຂະໜາດນ້ອຍກວ່າ {{- maxSize}}MB."
 
 msgid "Failed to upload profile picture"
 msgstr "ບໍ່ສາມາດອັບໂຫຼດຮູບໂປຣຟາຍໄດ້"
@@ -363,64 +376,67 @@ msgid "Remove profile picture"
 msgstr "ລົບຮູບໂປຣຟາຍ"
 
 msgid "No email provided"
-msgstr ""
+msgstr "ບໍ່ມີການລະບຸອີເມວ"
 
 msgid "Email is invalid"
-msgstr ""
+msgstr "ອີເມວບໍ່ຖືກຕ້ອງ"
 
 msgid "Emails must match"
-msgstr ""
+msgstr "ອີເມວຕ້ອງກົງກັນ"
 
 msgid "Email update not allowed"
-msgstr ""
+msgstr "ບໍ່ອະນຸຍາດໃຫ້ອັບເດດອີເມວ"
 
 msgid "Your email is currently used for two factor authentication"
-msgstr ""
+msgstr "ອີເມວຂອງທ່ານກຳລັງຖືກນຳໃຊ້ສຳລັບການຢືນຢັນຕົວຕົນແບບສອງຂັ້ນຕອນ"
 
 msgid ""
 "To update your email, you must first disable two factor authentication by "
 "email. After this has been disabled, you can change your email and then set "
 "up two factor authentication again."
 msgstr ""
+"ເພື່ອອັບເດດອີເມວຂອງທ່ານ, "
+"ທ່ານຕ້ອງປິດການຢືນຢັນຕົວຕົນແບບສອງຂັ້ນຕອນຜ່ານອີເມວກ່ອນ. ຫຼັງຈາກປິດແລ້ວ, "
+"ທ່ານຈຶ່ງສາມາດປ່ຽນອີເມວ ແລະ ຕັ້ງຄ່າການຢືນຢັນຕົວຕົນແບບສອງຂັ້ນຕອນຄືນໃໝ່ໄດ້."
 
 msgid "Disable two factor authentication here"
-msgstr ""
+msgstr "ປິດການຢືນຢັນຕົວຕົນແບບສອງຂັ້ນຕອນຢູ່ບ່ອນນີ້"
 
 msgid "Cancel"
 msgstr "Cancel"
 
 msgid "Remove email"
-msgstr ""
+msgstr "ລຶບອີເມວອອກ"
 
 msgid "Your email is currently verified"
-msgstr ""
+msgstr "ອີເມວຂອງທ່ານໄດ້ຮັບການຢືນຢັນແລ້ວໃນປັດຈຸບັນ"
 
 msgid "Are you sure you want to remove your email?"
-msgstr ""
+msgstr "ທ່ານແນ່ໃຈຫຼືບໍ່ວ່າຕ້ອງການລຶບອີເມວຂອງທ່ານອອກ?"
 
 msgid "Change email"
-msgstr ""
+msgstr "ປ່ຽນອີເມວ"
 
 msgid "If you change your email, you may need to reverify your email."
-msgstr ""
+msgstr "ຫາກທ່ານປ່ຽນອີເມວ, ທ່ານອາດຈະຕ້ອງໄດ້ຢືນຢັນອີເມວຂອງທ່ານຄືນໃໝ່."
 
 msgid "Current email"
-msgstr ""
+msgstr "ອີເມວປັດຈຸບັນ"
 
 msgid "no current email"
-msgstr ""
+msgstr "ບໍ່ມີອີເມວປັດຈຸບັນ"
 
 msgid "Enter new email"
-msgstr ""
+msgstr "ປ້ອນອີເມວໃໝ່"
 
 msgid "Confirm new email"
-msgstr ""
+msgstr "ຢືນຢັນອີເມວໃໝ່"
 
 msgid "Save"
 msgstr "ບັນທຶກ"
 
 msgid "There is no email to remove"
-msgstr ""
+msgstr "ບໍ່ມີອີເມວທີ່ຈະລຶບອອກ"
 
 msgid "This field is required"
 msgstr "This field is required"
@@ -483,24 +499,26 @@ msgid "About DHIS2"
 msgstr "ກ່ຽວກັບ DHIS2"
 
 msgid "Email verification link sent successfully!"
-msgstr ""
+msgstr "ສົ່ງລິ້ງຢືນຢັນອີເມວສຳເລັດແລ້ວ!"
 
 msgid "Failed to send email verification link."
-msgstr ""
+msgstr "ການສົ່ງລິ້ງຢືນຢັນອີເມວຫຼົ້ມເຫຼວ."
 
 msgid "Email already verified"
-msgstr ""
+msgstr "ອີເມວໄດ້ຮັບການຢືນຢັນແລ້ວ"
 
 msgid "Verify email"
-msgstr ""
+msgstr "ຢືນຢັນອີເມວ"
 
 msgid ""
 "Your email is not verified. Please verify your email to continue using the "
 "system."
 msgstr ""
+"ອີເມວຂອງທ່ານຍັງບໍ່ທັນໄດ້ຮັບການຢືນຢັນ. "
+"ກະລຸນາຢືນຢັນອີເມວຂອງທ່ານເພື່ອໃຊ້ງານລະບົບຕໍ່ໄປ."
 
 msgid "Please provide an email and verify it to continue using the system."
-msgstr ""
+msgstr "ກະລຸນາລະບຸອີເມວ ແລະ ຢືນຢັນມັນເພື່ອໃຊ້ງານລະບົບຕໍ່ໄປ."
 
 msgid "Manage personal access tokens"
 msgstr "ຈັດການ tokens ການເຂົ້າເຖີງສ່ວນບຸກຄົນ"
@@ -535,6 +553,9 @@ msgstr "ບອກທີ່ຢູ່ IP ຕໍ່ແຖວ."
 
 msgid "Allowed HTTP methods"
 msgstr "ອານຸຍາດວິທີການ HTTP "
+
+msgid "HEAD"
+msgstr "HEAD"
 
 msgid "GET"
 msgstr "GET"
@@ -581,6 +602,12 @@ msgstr ""
 "ການຕັ້ງຄ່ານີ້ມີວັດຖຸປະສົງເພື່ອປ້ອງກັນ "
 "ບໍ່ໃຫ້ຜູ້ພັດທະນາບຸກຄົນທີ່ສາມທີ່ບໍ່ໄດ້ຮັບອານຸຍາດເຊື່ອມຕໍ່ກັບທາງເວັບໄຊ້ສາທາລະນະ"
 
+msgid "Token name"
+msgstr "ຊື່ Token"
+
+msgid "A unique name for this token."
+msgstr "ຊື່ສະເພາະສຳລັບ Token ນີ້."
+
 msgid "Choose the context where this token will be used."
 msgstr "ເລືອກສະພາບການທີ່ token ນີ້ຈະຖືກໃຊ້."
 
@@ -626,6 +653,9 @@ msgstr "ວັນໝົດອາຍຸ (ຈຳເປັນ)"
 
 msgid "Custom expiration date (required)"
 msgstr "ກຳນົດວັນໝົດອາຍຸເອງ (ຈຳເປັນ)"
+
+msgid "Token name already exists"
+msgstr "ຊື່ Token ນີ້ມີຢູ່ແລ້ວ"
 
 msgid ""
 "Personal access tokens should only be used in a browser context for public "
@@ -678,6 +708,9 @@ msgstr "ສຳເນົາ token ໄປຫາ ຄິບບອດແລ້ວ"
 
 msgid "Newly created token"
 msgstr "Token ທີ່ສ້າງຂື້ນໃໝ່"
+
+msgid "Token Name"
+msgstr "ຊື່ Token"
 
 msgid "Copy to clipboard"
 msgstr "ສຳເນົາໄປຫາ ຄິບບອດ"
@@ -800,6 +833,10 @@ msgid "View full profile"
 msgstr "ສະແດງໂປຟາຍ"
 
 msgctxt "HTTP method"
+msgid "HEAD"
+msgstr "HEAD"
+
+msgctxt "HTTP method"
 msgid "GET"
 msgstr "GET"
 
@@ -818,3 +855,11 @@ msgstr "PATCH"
 msgctxt "HTTP method"
 msgid "DELETE"
 msgstr "ລົບ"
+
+msgctxt "Application title"
+msgid "__MANIFEST_APP_TITLE"
+msgstr "ໂປຣຟາຍຜູ້ໃຊ້"
+
+msgctxt "Application description"
+msgid "__MANIFEST_APP_DESCRIPTION"
+msgstr "ແອັບພລິເຄຊັນສຳລັບຈັດການໂປຣຟາຍຜູ້ໃຊ້ ແລະ ການຕັ້ງຄ່າບັນຊີໃນ DHIS2."
