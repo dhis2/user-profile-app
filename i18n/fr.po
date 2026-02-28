@@ -1,4 +1,3 @@
-# 
 # Translators:
 # Edem Kossi <ekossi@hispwca.org>, 2021
 # Viktor Varland <viktor@dhis2.org>, 2021
@@ -19,7 +18,7 @@ msgstr ""
 "Last-Translator: Cyrille Kabrane, 2026\n"
 "Language-Team: French (https://app.transifex.com/hisp-uio/teams/100509/fr/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr\n"
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
@@ -43,13 +42,13 @@ msgid "Version"
 msgstr "Version"
 
 msgid "Build revision"
-msgstr "Version de compilation"
+msgstr "Révision du build"
 
 msgid "Build date"
 msgstr "Date de compilation"
 
 msgid "Jasper reports version"
-msgstr "Version de Jasper reports"
+msgstr "Version de Jasper Reports"
 
 msgid "User agent"
 msgstr "Agent utilisateur"
@@ -83,7 +82,7 @@ msgid "System ID"
 msgstr "Identifiant du système"
 
 msgid "Last monitoring success"
-msgstr "Dernière surveillance réussie "
+msgstr "Dernier suivi réussi"
 
 msgid "External configuration directory"
 msgstr "Répertoire de configuration externe"
@@ -143,7 +142,7 @@ msgid "Database"
 msgstr "Base de données"
 
 msgid "Edit account settings"
-msgstr "Modifier les paramètres de compte"
+msgstr "Éditer les paramètres de compte"
 
 msgid "No changes have been made"
 msgstr "Aucune modification effectuée"
@@ -193,8 +192,8 @@ msgid ""
 "This account is linked to an OpenID Connect identity. Visit the Open ID "
 "Connect provider to manage this account's settings."
 msgstr ""
-"Ce compte est lié à une identité OpenID Connect. Consultez le fournisseur "
-"Open ID Connect pour gérer les paramètres de ce compte."
+"Ce compte est lié à une identité OpenID Connect. Consultez le fournisseur de"
+" Open ID Connect pour gérer les paramètres de ce compte."
 
 msgid "Password changed successfully"
 msgstr "Mot de passe modifié avec succès"
@@ -252,7 +251,7 @@ msgid "Download the Authenticator app"
 msgstr "Télécharger l’application Authenticator"
 
 msgid "What kind of phone/tablet do you have?"
-msgstr "De quel type de téléphone/tablette disposez-vous ?"
+msgstr "Quel type de téléphone/tablette avez-vous ?"
 
 msgid "Download the Authenticator App from the "
 msgstr "Télécharger l’application Authenticator à partir de"
@@ -297,7 +296,7 @@ msgid "Remove profile picture"
 msgstr "Supprimer la photo de profil"
 
 msgid "This field is required"
-msgstr "Ce champ est requis"
+msgstr "Ce champ est obligatoire"
 
 msgid "This field should be a URL"
 msgstr "Ce champ doit contenir une URL"
@@ -367,7 +366,7 @@ msgid ""
 "Make sure to copy your personal access token now. You won't be able to see "
 "it again"
 msgstr ""
-"Veillez à copier votre jeton d'accès personnel maintenant. Vous ne pourrez "
+"Veuillez copier votre jeton d'accès personnel maintenant. Vous ne pourrez "
 "plus le voir."
 
 msgid "Invalid IP address '{{- ipAddress}}'"
@@ -423,7 +422,7 @@ msgid ""
 " spoofed. This setting is intended to discourage unauthorised third-party "
 "developers from connecting to public access instances."
 msgstr ""
-"Attention : il ne s'agit pas d'une fonctionnalité de sécurité. L'en-tête du "
+"Attention : ceci n'est pas une fonctionnalité de sécurité. L'en-tête du "
 "référant peut facilement être usurpé. Ce paramètre est destiné à décourager "
 "les développeurs tiers non autorisés qui pourraient se connecter à des "
 "instances d'accès public."
@@ -446,7 +445,7 @@ msgid ""
 "Used for applications, like public portals, that will be accessed with a web"
 " browser."
 msgstr ""
-"Utilisé pour les applications, comme les portails publics, qui seront "
+"Utilisé pour les applications, telles que les portails publics, qui seront "
 "accessibles à partir d'un navigateur web."
 
 msgid "Token expiration date must be in the future"
@@ -471,10 +470,10 @@ msgid "The token will expire on {{- tokenExpirationDate}}."
 msgstr "Le jeton expire le {{- tokenExpirationDate}}."
 
 msgid "Expiration (required)"
-msgstr "Expiration (requise)"
+msgstr "Expiration (obligatoire)"
 
 msgid "Custom expiration date (required)"
-msgstr "Date d'expiration personnalisée (requise)"
+msgstr "Date d'expiration personnalisée (obligatoire)"
 
 msgid ""
 "Personal access tokens should only be used in a browser context for public "
@@ -552,7 +551,7 @@ msgid "Settings updated"
 msgstr "Paramètres mis à jour"
 
 msgid "Failed to update settings"
-msgstr "Échec de l'enregistrement des paramètres"
+msgstr "Échec de la mise à jour des paramètres"
 
 msgid "First name"
 msgstr "Prénom"
