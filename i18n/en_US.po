@@ -1,19 +1,18 @@
 # 
 # Translators:
-# Siddharth Agarwal, 2025
-# Rohit Wadhwani, 2026
+# Rohit Wadhwani, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2021-10-22T15:14:54.283Z\n"
 "PO-Revision-Date: 2021-09-04 00:45+0000\n"
-"Last-Translator: Rohit Wadhwani, 2026\n"
-"Language-Team: Hindi (India) (https://app.transifex.com/hisp-uio/teams/100509/hi_IN/)\n"
+"Last-Translator: Rohit Wadhwani, 2025\n"
+"Language-Team: English (United States) (https://app.transifex.com/hisp-uio/teams/100509/en_US/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hi_IN\n"
+"Language: en_US\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Never"
@@ -119,10 +118,10 @@ msgid "Calendar"
 msgstr ""
 
 msgid "Name"
-msgstr "नाम"
+msgstr ""
 
 msgid "User"
-msgstr "यूज़र"
+msgstr ""
 
 msgid "Spatial support"
 msgstr ""
@@ -152,7 +151,7 @@ msgid "Please provide your old password"
 msgstr ""
 
 msgid "Username"
-msgstr "यूज़रनेम"
+msgstr ""
 
 msgid "Old password"
 msgstr ""
@@ -277,7 +276,7 @@ msgid "Remove profile picture"
 msgstr ""
 
 msgid "This field is required"
-msgstr "यह फ़ील्ड आवश्यक है"
+msgstr ""
 
 msgid "This field should be a URL"
 msgstr ""
@@ -456,7 +455,7 @@ msgid "Token details"
 msgstr ""
 
 msgid "Cancel"
-msgstr "रद्द करें"
+msgstr "कैंसल"
 
 msgid ""
 "Important: IP address validation relies on the X-Forwarded-For header, which"
@@ -482,7 +481,7 @@ msgid "Expires"
 msgstr ""
 
 msgid "Created"
-msgstr "बनाया गया"
+msgstr ""
 
 msgid "Copied token to clipboard"
 msgstr ""
@@ -494,7 +493,7 @@ msgid "Copy to clipboard"
 msgstr ""
 
 msgid "Delete"
-msgstr "हटाएं"
+msgstr "डिलीट"
 
 msgid "Edit user profile"
 msgstr ""
@@ -515,7 +514,7 @@ msgid "Failed to update settings"
 msgstr ""
 
 msgid "First name"
-msgstr "पहला नाम"
+msgstr ""
 
 msgid "Surname"
 msgstr ""
@@ -524,10 +523,10 @@ msgid "Gender"
 msgstr ""
 
 msgid "Male"
-msgstr "पुरूष"
+msgstr ""
 
 msgid "Female"
-msgstr "महिला"
+msgstr ""
 
 msgid "Other"
 msgstr ""
