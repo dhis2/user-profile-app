@@ -1,7 +1,6 @@
 # 
 # Translators:
-# Siddharth Agarwal, 2025
-# Rohit Wadhwani, 2026
+# Rohit Wadhwani, 2025
 # 
 #, fuzzy
 msgid ""
@@ -10,12 +9,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-01 00:28-0400\n"
 "PO-Revision-Date: 2021-03-09 23:24+0000\n"
-"Last-Translator: Rohit Wadhwani, 2026\n"
-"Language-Team: Hindi (India) (https://app.transifex.com/hisp-uio/teams/100509/hi_IN/)\n"
+"Last-Translator: Rohit Wadhwani, 2025\n"
+"Language-Team: English (United States) (https://app.transifex.com/hisp-uio/teams/100509/en_US/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hi_IN\n"
+"Language: en_US\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Translate Toolkit 2.0.0b3\n"
 
@@ -41,7 +40,7 @@ msgstr ""
 
 #: first_name
 msgid "First name"
-msgstr "पहला नाम"
+msgstr ""
 
 #: old_password
 msgid "Old password"
@@ -61,7 +60,7 @@ msgstr ""
 
 #: username
 msgid "Username"
-msgstr "यूज़रनेम"
+msgstr ""
 
 #: phone_number
 msgid "Mobile phone number"
@@ -82,12 +81,12 @@ msgstr ""
 #: male
 msgctxt "male"
 msgid "Male"
-msgstr "पुरूष"
+msgstr ""
 
 #: female
 msgctxt "female"
 msgid "Female"
-msgstr "महिला"
+msgstr ""
 
 #: other
 msgctxt "other"
@@ -97,12 +96,12 @@ msgstr ""
 #: gender_male
 msgctxt "gender_male"
 msgid "Male"
-msgstr "पुरूष"
+msgstr ""
 
 #: gender_female
 msgctxt "gender_female"
 msgid "Female"
-msgstr "महिला"
+msgstr ""
 
 #: gender_other
 msgctxt "gender_other"
@@ -139,7 +138,7 @@ msgstr ""
 
 #: settings
 msgid "Settings"
-msgstr "सेटिंग्स"
+msgstr ""
 
 #: property_to_display_in_analysis_modules
 msgctxt "property_to_display_in_analysis_modules"
@@ -152,7 +151,7 @@ msgstr ""
 
 #: message
 msgid "Message"
-msgstr "संदेश"
+msgstr ""
 
 #: settings_updated
 msgid "Settings updated"
@@ -189,7 +188,7 @@ msgstr ""
 
 #: name
 msgid "Name"
-msgstr "नाम"
+msgstr ""
 
 #: short_name
 msgid "Short name"
