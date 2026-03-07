@@ -429,7 +429,7 @@ msgstr ""
 "instances d'accès public."
 
 msgid "Choose the context where this token will be used."
-msgstr "Choisissez le contexte dans lequel ce jeton sera utilisé."
+msgstr "Choisir le contexte dans lequel ce jeton sera utilisé."
 
 msgid "Server/script context"
 msgstr "Contexte du serveur/script"
@@ -471,10 +471,10 @@ msgid "The token will expire on {{- tokenExpirationDate}}."
 msgstr "Le jeton expire le {{- tokenExpirationDate}}."
 
 msgid "Expiration (required)"
-msgstr "Expiration (requise)"
+msgstr "Expiration (obligatoire)"
 
 msgid "Custom expiration date (required)"
-msgstr "Date d'expiration personnalisée (requise)"
+msgstr "Date d'expiration personnalisée (obligatoire)"
 
 msgid ""
 "Personal access tokens should only be used in a browser context for public "
