@@ -2,13 +2,13 @@
 # Edem Kossi <ekossi@hispwca.org>, 2023
 # Viktor Varland <viktor@dhis2.org>, 2023
 # Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2023
-# Yao Selom SAKA (HISP WCA) <ysaka@hispwca.org>, 2023
 # tx_e2f_fr r25 <tx_e2f_fr_r25@ate2f.com>, 2023
 # Karoline Tufte Lien <karoline@dhis2.org>, 2023
 # Yayra Gomado <ygomado@hispwca.org>, 2023
 # Philip Larsen Donnelly, 2024
 # Elise Desailly, 2024
 # Esther Tokouli, 2025
+# Yao Selom SAKA (HISP WCA) <ysaka@hispwca.org>, 2026
 # Cyrille Kabrane, 2026
 # 
 msgid ""
@@ -49,7 +49,7 @@ msgid "Build date"
 msgstr "Date de compilation"
 
 msgid "Jasper reports version"
-msgstr "Version de Jasper reports"
+msgstr "Version de Jasper Reports"
 
 msgid "User agent"
 msgstr "Agent utilisateur"
@@ -143,7 +143,7 @@ msgid "Database"
 msgstr "Base de données"
 
 msgid "Edit account settings"
-msgstr "Modifier les paramètres de compte"
+msgstr "Éditer les paramètres de compte"
 
 msgid "No changes have been made"
 msgstr "Aucune modification effectuée"
@@ -216,7 +216,7 @@ msgid "Turn off two-factor authentication"
 msgstr "Désactiver l'authentification à deux facteurs"
 
 msgid "Open your authenticator app."
-msgstr "Ouvrez votre application authenticator."
+msgstr "Ouvrez votre application Authenticator."
 
 msgid ""
 "Now, enter the authentication code below and click the \"Turn off\" button."
@@ -225,7 +225,7 @@ msgstr ""
 "bouton « Désactiver »."
 
 msgid "Remove two-factor account"
-msgstr "Supprimer le compte de l'authentification à deux facteurs"
+msgstr "Supprimer le compte utilisé pour l'authentification à deux facteurs"
 
 msgid ""
 "Two-factor authentication is now turned off. It is recommended to remove the"
@@ -333,7 +333,7 @@ msgid "Remove profile picture"
 msgstr "Supprimer la photo de profil"
 
 msgid "This field is required"
-msgstr "Ce champ est requis"
+msgstr "Ce champ est obligatoire"
 
 msgid "This field should be a URL"
 msgstr "Ce champ doit contenir une URL"
@@ -525,10 +525,10 @@ msgid "The token will expire on {{- tokenExpirationDate}}."
 msgstr "Le jeton expire le {{- tokenExpirationDate}}."
 
 msgid "Expiration (required)"
-msgstr "Expiration (requise)"
+msgstr "Expiration (obligatoire)"
 
 msgid "Custom expiration date (required)"
-msgstr "Date d'expiration personnalisée (requise)"
+msgstr "Date d'expiration personnalisée (obligatoire)"
 
 msgid "Token name already exists"
 msgstr "Le nom du jeton existe déjà"
