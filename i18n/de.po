@@ -1,376 +1,423 @@
 # Translators:
-# Siddharth Agarwal, 2025
-# Rohit Wadhwani, 2026
+# Brar Piening, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "POT-Creation-Date: 2026-02-17T14:49:52.098Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Rohit Wadhwani, 2026\n"
-"Language-Team: Hindi (India) (https://app.transifex.com/hisp-uio/teams/100509/hi_IN/)\n"
+"Last-Translator: Brar Piening, 2026\n"
+"Language-Team: German (https://app.transifex.com/hisp-uio/teams/100509/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hi_IN\n"
+"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Never"
-msgstr ""
+msgstr "Nie"
 
 msgid "Invalid date"
-msgstr ""
+msgstr "Ungültiges Datum"
 
 msgid "Web API"
-msgstr ""
+msgstr "Web API"
 
 msgid "Browse it here"
-msgstr ""
+msgstr "Hier durchsuchen"
 
 msgid "Current user"
-msgstr ""
+msgstr "Aktueller Benutzer"
 
 msgid "Version"
-msgstr ""
+msgstr "Version"
 
 msgid "Build revision"
-msgstr ""
+msgstr "Build-Revision"
 
 msgid "Build date"
-msgstr ""
+msgstr "Build-Datum"
 
 msgid "Jasper reports version"
-msgstr ""
+msgstr "JasperReports-Version"
 
 msgid "User agent"
-msgstr ""
+msgstr "User Agent"
 
 msgid "Server date"
-msgstr ""
+msgstr "Serverdatum"
 
 msgid "Last analytics table generation"
-msgstr ""
+msgstr "Letzte Analysetabellen-Erstellung"
 
 msgid "Time since last analytics table generation"
-msgstr ""
+msgstr "Zeit seit letzter Analysetabellen-Erstellung"
 
 msgid "Last analytics table runtime"
-msgstr ""
+msgstr "Letzte Analysetabellen-Laufzeit"
 
 msgid "Last continuous analytics table update"
-msgstr ""
+msgstr "Letzte kontinuierliche Analysetabellen-Aktualisierung"
 
 msgid "Time since last continuous analytics table update"
-msgstr ""
+msgstr "Zeit seit letzter kontinuierlicher Analysetabellen-Aktualisierung"
 
 msgid "Last continuous analytics table runtime"
-msgstr ""
+msgstr "Zeit seit letzter kontinuierlicher Analysetabellen-Aktualisierung"
 
 msgid "Environment variable"
-msgstr ""
+msgstr "Umgebungsvariable"
 
 msgid "System ID"
-msgstr ""
+msgstr "System-ID"
 
 msgid "Last monitoring success"
-msgstr ""
+msgstr "Letzter Monitoring-Erfolg"
 
 msgid "External configuration directory"
-msgstr ""
+msgstr "Externes Konfigurationsverzeichnis"
 
 msgid "File store provider"
-msgstr ""
+msgstr "Dateispeicher-Provider"
 
 msgid "Node ID"
-msgstr ""
+msgstr "Node-ID"
 
 msgid "Cache provider"
-msgstr ""
+msgstr "Cache-Provider"
 
 msgid "Read replica count"
-msgstr ""
+msgstr "Lese-Replica-Anzahl"
 
 msgid "Java opts"
-msgstr ""
+msgstr "Java opts"
 
 msgid "Java version"
-msgstr ""
+msgstr "Java-Version"
 
 msgid "Java vendor"
-msgstr ""
+msgstr "Java-Anbieter"
 
 msgid "OS name"
-msgstr ""
+msgstr "Betriebssystem-Name"
 
 msgid "OS architecture"
-msgstr ""
+msgstr "Betriebssystem-Architektur"
 
 msgid "OS version"
-msgstr ""
+msgstr "Betriebssystem-Version"
 
 msgid "Memory info"
-msgstr ""
+msgstr "Speicherinformationen"
 
 msgid "CPU cores"
-msgstr ""
+msgstr "CPU-Kerne"
 
 msgid "Calendar"
-msgstr ""
+msgstr "Kalender"
 
 msgid "Name"
-msgstr "नाम"
+msgstr "Name"
 
 msgid "User"
-msgstr "यूज़र"
+msgstr "Benutzer"
 
 msgid "Spatial support"
-msgstr ""
+msgstr "Unterstützung raumbezogener Informationen"
 
 msgid "System info"
-msgstr ""
+msgstr "Systeminformationen"
 
 msgid "Database"
-msgstr ""
+msgstr "Datenbank"
 
 msgid "Edit account settings"
-msgstr ""
+msgstr "Kontoinformationen bearbeiten"
 
 msgid "No changes have been made"
-msgstr ""
+msgstr "Es wurden keine Änderungen vorgenommen"
 
 msgid "The form is currently being validated. Please try again."
-msgstr ""
+msgstr "Das Formular wird gerade überprüft. Bitte versuchen Sie es erneut."
 
 msgid "The form contains errors. Please fix the errors and try again."
 msgstr ""
+"Das Formular enthält Fehler. Bitte beheben Sie die Fehler und versuchen Sie "
+"es erneut. "
 
 msgid "The entered values do not match. Please re-enter."
 msgstr ""
+"Die eingegebenen Werte stimmen nicht überein. Bitte geben Sie sie erneut "
+"ein."
 
 msgid "Please provide your old password"
-msgstr ""
+msgstr "Bitte geben Sie Ihr altes Passwort ein"
 
 msgid "Username"
-msgstr "यूज़रनेम"
+msgstr "Benutzername"
 
 msgid "Old password"
-msgstr ""
+msgstr "Altes Passwort"
 
 msgid "This field can't be left blank"
-msgstr ""
+msgstr "Dieses Feld darf nicht leer bleiben"
 
 msgid "New password"
-msgstr ""
+msgstr "Neues Passwort"
 
 msgid ""
 "Password should be between {{minPasswordLength}} and {{maxPasswordLength}} "
 "characters long, with at least one lowercase character, one uppercase "
 "character, one number, and one special character."
 msgstr ""
+"Das Passwort muss zwischen {{minPasswordLength}} und {{maxPasswordLength}} "
+"Zeichen lang sein und mindestens einen Kleinbuchstaben, einen "
+"Großbuchstaben, eine Ziffer und ein Sonderzeichen enthalten. "
 
 msgid "Repeat new password"
-msgstr ""
+msgstr "Neues Passwort wiederholen"
 
 msgid "Setup 2-Factor"
-msgstr ""
+msgstr "2-Faktor einrichten"
 
 msgid "Update password"
-msgstr ""
+msgstr "Passwort aktualisieren"
 
 msgid ""
 "This account is linked to an OpenID Connect identity. Visit the Open ID "
 "Connect provider to manage this account's settings."
 msgstr ""
+"Dieses Konto ist mit einer OpenID Connect-Identität verknüpft. Rufen Sie den"
+" OpenID Connect-Anbieter auf, um die Einstellungen dieses Kontos zu "
+"verwalten."
 
 msgid "Password changed successfully"
-msgstr ""
+msgstr "Passwort erfolgreich geändert"
 
 msgid "You need to login again to continue using the application."
 msgstr ""
+"Sie müssen sich erneut anmelden, um die Anwendung weiter nutzen zu können."
 
 msgid "Login"
-msgstr ""
+msgstr "Anmelden"
 
 msgid "Failed to update password"
-msgstr ""
+msgstr "Das Passwort konnte nicht aktualisiert werden"
 
 msgid "Authenticator app"
-msgstr ""
+msgstr "Authentifizierungs-App"
 
 msgid "Email"
-msgstr "ईमेल"
+msgstr "E-Mail"
 
 msgid "Could not enable two factor authentication"
-msgstr ""
+msgstr "Die Zwei-Faktor-Authentifizierung konnte nicht aktiviert werden"
 
 msgid "Two factor authentication was enabled successfully"
-msgstr ""
+msgstr "Die Zwei-Faktor-Authentifizierung wurde erfolgreich aktiviert"
 
 msgid "Could not disable two factor authentication"
-msgstr ""
+msgstr "Die Zwei-Faktor-Authentifizierung konnte nicht deaktiviert werden"
 
 msgid "Two factor authentication was disabled successfully"
-msgstr ""
+msgstr "Die Zwei-Faktor-Authentifizierung wurde erfolgreich deaktiviert"
 
 msgid "Two-factor Authentication"
-msgstr ""
+msgstr "Zwei-Faktor-Authentifizierung"
 
 msgid ""
 "Two-factor authentication protects your account with an extra layer of "
 "security. With two-factor authentication turned on, you will need to enter "
 "an authentication code every time you log in."
 msgstr ""
+"Die Zwei-Faktor-Authentifizierung schützt Ihr Konto durch eine zusätzliche "
+"Sicherheitsschicht. Wenn die Zwei-Faktor-Authentifizierung aktiviert ist, "
+"müssen Sie bei jeder Anmeldung einen Authentifizierungscode eingeben."
 
 msgid "Turn off two-factor authentication"
-msgstr ""
+msgstr "Zwei-Faktor-Authentifizierung deaktivieren"
 
 msgid "Turn on two-factor authentication"
-msgstr ""
+msgstr "Zwei-Faktor-Authentifizierung aktivieren"
 
 msgid "Two factor authentication type"
-msgstr ""
+msgstr "Art der Zwei-Faktor-Authentifizierung"
 
 msgid "Remove two-factor account"
-msgstr ""
+msgstr "Zwei-Faktor-Konto entfernen"
 
 msgid ""
 "Two-factor authentication is now turned off. It is recommended to remove the"
 " account from your authenticator app now to prevent any future issues re-"
 "enabling two-factor authentication."
 msgstr ""
+"Die Zwei-Faktor-Authentifizierung ist nun deaktiviert. Es wird empfohlen, "
+"das Konto jetzt aus Ihrer Authentifizierungs-App zu entfernen, um spätere "
+"Probleme bei der erneuten Aktivierung der Zwei-Faktor-Authentifizierung zu "
+"vermeiden."
 
 msgid ""
 "Send authentication code to your verified email address: {{emailAddress}}"
 msgstr ""
+"Authentifizierungscode an Ihre verifizierte E-Mail-Adresse senden: "
+"{{emailAddress}}"
 
 msgid "Authentication code sent"
-msgstr ""
+msgstr "Authentifizierungscode gesendet"
 
 msgid ""
 "If you didn't receive the code, check your spam/junk folder. Have you waited"
 " a few minutes and still not received the code?"
 msgstr ""
+"Falls Sie den Code nicht erhalten haben, sehen Sie bitte in Ihrem "
+"Spam-/Junk-Ordner nach. Haben Sie einige Minuten gewartet und den Code immer"
+" noch nicht erhalten?"
 
 msgid "Send a new code"
-msgstr ""
+msgstr "Neuen Code senden"
 
 msgid "Send authentication code"
-msgstr ""
+msgstr "Authentifizierungscode senden"
 
 msgid "Enter the 6 digit authentication code in the email."
-msgstr ""
+msgstr "Geben Sie den 6-stelligen Bestätigungscode aus der E-Mail ein."
 
 msgid "Already set up two-factor authentication before?"
-msgstr ""
+msgstr "Haben Sie die Zwei-Faktor-Authentifizierung bereits eingerichtet?"
 
 msgid ""
 "If you have set up two-factor authentication for this account before, you "
 "need to remove that entry from your authenticator app before setting it up "
 "again."
 msgstr ""
+"Falls Sie für dieses Konto bereits eine Zwei-Faktor-Authentifizierung "
+"eingerichtet haben, müssen Sie diesen Eintrag aus Ihrer Authentifizierungs-"
+"App entfernen, bevor Sie die Authentifizierung erneut einrichten."
 
 msgid ""
 "Your email is not verified. You must verify or your email to enable or "
 "disable two-factor authentication via email. If you have recently verified "
 "your email, you may need to refresh this page."
 msgstr ""
+"Ihre E-Mail-Adresse ist noch nicht bestätigt. Sie müssen Ihre E-Mail-Adresse"
+" bestätigen, um die Zwei-Faktor-Authentifizierung per E-Mail zu aktivieren "
+"oder zu deaktivieren. Falls Sie Ihre E-Mail-Adresse erst kürzlich bestätigt "
+"haben, müssen Sie diese Seite möglicherweise neu laden."
 
 msgid "Verify your email here."
-msgstr ""
+msgstr "Bestätigen Sie hier Ihre E-Mail-Adresse."
 
 msgid ""
 "Two-factor authentication protects your account with an extra layer of "
 "security. With two-factor authentication turned on, you will need to enter "
 "an authentication code from your device every time you log in."
 msgstr ""
+"Die Zwei-Faktor-Authentifizierung schützt Ihr Konto durch eine zusätzliche "
+"Sicherheitsschicht. Wenn die Zwei-Faktor-Authentifizierung aktiviert ist, "
+"müssen Sie bei jeder Anmeldung einen Authentifizierungscode von Ihrem Gerät "
+"eingeben."
 
 msgid "Open your authenticator app."
-msgstr ""
+msgstr "Öffnen Sie Ihre Authentifizierungs-App."
 
 msgid ""
 "Now, enter the authentication code below and click the \"Turn off\" button."
 msgstr ""
+"Geben Sie nun den Bestätigungscode unten ein und klicken Sie auf die "
+"Schaltfläche „Deaktivieren“."
 
 msgid "Play store"
-msgstr ""
+msgstr "Play Store"
 
 msgid "App store"
-msgstr ""
+msgstr "App Store"
 
 msgid ""
 "Make sure you have an authenticator app installed on your device. We "
 "recommend Google Authenticator"
 msgstr ""
+"Stellen Sie sicher, dass auf Ihrem Gerät eine Authentifizierungs-App "
+"installiert ist. Wir empfehlen Google Authenticator"
 
 msgid ""
 "Now, enter the code from your authenticator app below and click the \"Turn "
 "on\" button."
 msgstr ""
+"Geben Sie nun unten den Bestätigungscode aus Ihrer Authentifizierungs-App "
+"ein und klicken Sie auf die Schaltfläche „Aktivieren“."
 
 msgid "Two-factor authentication is on."
-msgstr ""
+msgstr "Die Zwei-Faktor-Authentifizierung ist aktiviert."
 
 msgid "Two-factor authentication is off."
-msgstr ""
+msgstr "Die Zwei-Faktor-Authentifizierung ist deaktiviert."
 
 msgid "Could not update two-factor authentication"
-msgstr ""
+msgstr "Die Zwei-Faktor-Authentifizierung konnte nicht aktualisiert werden"
 
 msgid ""
 "This code does not look right. Enter the six digit code from your "
 "authentication app."
 msgstr ""
+"Dieser Code sieht nicht richtig aus. Geben Sie den sechsstelligen Code aus "
+"Ihrer Authentifizierungs-App ein."
 
 msgid "6 digit code"
-msgstr ""
+msgstr "6-stelliger Code"
 
 msgid "Could not enable 2 Factor Authentication"
-msgstr ""
+msgstr "Die 2-Faktor-Authentifizierung konnte nicht aktiviert werden"
 
 msgid "Please choose a profile avatar less than {{- maxSize}}MB in size."
-msgstr ""
+msgstr "Bitte wähle ein Profilbild aus, das kleiner als {{- maxSize}} MB ist."
 
 msgid "Failed to upload profile picture"
-msgstr ""
+msgstr "Das Hochladen des Profilbilds ist fehlgeschlagen"
 
 msgid "Profile picture"
-msgstr ""
+msgstr "Profilbild"
 
 msgid "No profile picture available"
-msgstr ""
+msgstr "Kein Profilbild verfügbar"
 
 msgid "Select profile picture"
-msgstr ""
+msgstr "Profilbild auswählen"
 
 msgid "Remove profile picture"
-msgstr ""
+msgstr "Profilbild entfernen"
 
 msgid "No email provided"
-msgstr ""
+msgstr "Keine E-Mail-Adresse angegeben"
 
 msgid "Email is invalid"
-msgstr ""
+msgstr "Die E-Mail-Adresse ist ungültig"
 
 msgid "Emails must match"
-msgstr ""
+msgstr "Die E-Mail-Adressen müssen übereinstimmen"
 
 msgid "Email update not allowed"
-msgstr ""
+msgstr "E-Mail-Aktualisierung nicht zulässig"
 
 msgid "Your email is currently used for two factor authentication"
 msgstr ""
+"Ihre E-Mail-Adresse wird derzeit für die Zwei-Faktor-Authentifizierung "
+"verwendet"
 
 msgid ""
 "To update your email, you must first disable two factor authentication by "
 "email. After this has been disabled, you can change your email and then set "
 "up two factor authentication again."
 msgstr ""
+"Um Ihre E-Mail-Adresse zu aktualisieren, müssen Sie zunächst die Zwei-"
+"Faktor-Authentifizierung per E-Mail deaktivieren. Sobald diese deaktiviert "
+"ist, können Sie Ihre E-Mail-Adresse ändern und anschließend die Zwei-Faktor-"
+"Authentifizierung wieder einrichten."
 
 msgid "Disable two factor authentication here"
 msgstr ""
 
 msgid "Cancel"
-msgstr "रद्द करें"
+msgstr ""
 
 msgid "Remove email"
 msgstr ""
@@ -400,13 +447,13 @@ msgid "Confirm new email"
 msgstr ""
 
 msgid "Save"
-msgstr "सहेजें"
+msgstr ""
 
 msgid "There is no email to remove"
 msgstr ""
 
 msgid "This field is required"
-msgstr "यह फ़ील्ड आवश्यक है"
+msgstr ""
 
 msgid "This field should be a URL"
 msgstr ""
@@ -427,10 +474,10 @@ msgid "Please enter a valid international phone number (+0123456789)"
 msgstr ""
 
 msgid "Yes"
-msgstr "हाँ"
+msgstr ""
 
 msgid "No"
-msgstr "नहीं"
+msgstr ""
 
 msgid "No value"
 msgstr ""
@@ -649,7 +696,7 @@ msgid "Expires"
 msgstr ""
 
 msgid "Created"
-msgstr "बनाया गया"
+msgstr ""
 
 msgid "Copied token to clipboard"
 msgstr ""
@@ -664,7 +711,7 @@ msgid "Copy to clipboard"
 msgstr ""
 
 msgid "Delete"
-msgstr "हटाएं"
+msgstr ""
 
 msgid "Edit user profile"
 msgstr ""
@@ -685,7 +732,7 @@ msgid "Failed to update settings"
 msgstr ""
 
 msgid "First name"
-msgstr "पहला नाम"
+msgstr ""
 
 msgid "Surname"
 msgstr ""
@@ -694,13 +741,13 @@ msgid "Gender"
 msgstr ""
 
 msgid "Male"
-msgstr "पुरूष"
+msgstr ""
 
 msgid "Female"
-msgstr "महिला"
+msgstr ""
 
 msgid "Other"
-msgstr "दूसरा"
+msgstr ""
 
 msgid "E-mail"
 msgstr ""
