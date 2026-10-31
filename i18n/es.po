@@ -1,24 +1,23 @@
-# 
 # Translators:
+# Viktor Varland <viktor@dhis2.org>, 2021
 # ericbp <ericbarredap@gmail.com>, 2021
 # Gabriela Rodriguez <grodriguezcoronado@gmail.com>, 2021
 # Pablo Pajuelo Cabezas <pablo@dhis2.org>, 2021
-# Carlos Tejo Alonso, 2022
 # Enzo Nicolas Rossi <enzo@dhis2.org>, 2023
 # Janeth Cruz, 2023
-# Pablo Del Médico, 2023
-# Viktor Varland <viktor@dhis2.org>, 2025
 # Philip Larsen Donnelly, 2025
+# Pablo Del Médico, 2025
+# Carlos Tejo Alonso, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2025-02-18T16:33:28.306Z\n"
+"POT-Creation-Date: 2026-02-17T14:49:52.098Z\n"
 "PO-Revision-Date: 2021-03-17 23:49+0000\n"
-"Last-Translator: Philip Larsen Donnelly, 2025\n"
+"Last-Translator: Carlos Tejo Alonso, 2025\n"
 "Language-Team: Spanish (https://app.transifex.com/hisp-uio/teams/100509/es/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
@@ -120,7 +119,7 @@ msgid "Memory info"
 msgstr "Información de memoria"
 
 msgid "CPU cores"
-msgstr "Nucleos del CPU"
+msgstr "Núcleos de la CPU"
 
 msgid "Calendar"
 msgstr "Calendario"
@@ -211,7 +210,7 @@ msgid "Authenticator app"
 msgstr ""
 
 msgid "Email"
-msgstr "Correo-e"
+msgstr "Correo electrónico"
 
 msgid "Could not enable two factor authentication"
 msgstr ""
@@ -551,6 +550,9 @@ msgstr "Indique una dirección IP por línea."
 msgid "Allowed HTTP methods"
 msgstr "Métodos HTTP permitidos"
 
+msgid "HEAD"
+msgstr ""
+
 msgid "GET"
 msgstr "GET"
 
@@ -596,6 +598,12 @@ msgstr ""
 " se puede falsificar fácilmente. Esta configuración tiene como objetivo "
 "disuadir a los desarrolladores externos no autorizados de conectarse a "
 "instancias de acceso público."
+
+msgid "Token name"
+msgstr ""
+
+msgid "A unique name for this token."
+msgstr ""
 
 msgid "Choose the context where this token will be used."
 msgstr "Seleccione el contexto en el que se utilizará este token."
@@ -644,6 +652,9 @@ msgstr "Caducidad (obligatorio)"
 
 msgid "Custom expiration date (required)"
 msgstr "Fecha de caducidad personalizada (obligatoria)"
+
+msgid "Token name already exists"
+msgstr ""
 
 msgid ""
 "Personal access tokens should only be used in a browser context for public "
@@ -695,6 +706,9 @@ msgstr "Copiar token al portapapeles"
 
 msgid "Newly created token"
 msgstr "Token recién creado"
+
+msgid "Token Name"
+msgstr ""
 
 msgid "Copy to clipboard"
 msgstr "Copiar al portapapeles"
@@ -817,6 +831,10 @@ msgid "View full profile"
 msgstr "Ver perfil completo"
 
 msgctxt "HTTP method"
+msgid "HEAD"
+msgstr ""
+
+msgctxt "HTTP method"
 msgid "GET"
 msgstr "GET"
 
@@ -835,3 +853,11 @@ msgstr "PATCH"
 msgctxt "HTTP method"
 msgid "DELETE"
 msgstr "DELETE"
+
+msgctxt "Application title"
+msgid "__MANIFEST_APP_TITLE"
+msgstr "Perfil de usuario"
+
+msgctxt "Application description"
+msgid "__MANIFEST_APP_DESCRIPTION"
+msgstr ""
